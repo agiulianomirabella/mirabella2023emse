@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbd6x4ie3b5k_PostCoupons,200,"{
+  ""id"": ""mf18yN4c"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084788,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iv9uc7ndma0k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QjXkYNwP8WOymY?t=1685084793"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qdpzacxl14ki_PostCoupons,200,"{
+  ""id"": ""43UpRWNDd9CYq9btTq"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084800,
+  ""currency"": ""kmf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 18,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 42.0,
+  ""redeem_by"": 1806638232,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_soen40ifogu1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jYxtQz5Gn3iwUE?t=1685084805"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbt0gphakl7p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_fl326adYPt8JXo?t=1685084811"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

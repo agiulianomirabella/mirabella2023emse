@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyfh3aopql2v_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_qdvhnzm0abzs_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_rhaikb8a5sfk_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""eDYHTa29Xn2B7Pu-XWaa7NH8fik"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 4
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_s1b69yn1n5f9_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""dewMo2G5-QC_sp-5UvmTOULKMwg"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 42
+  }
+}
+",application/json; charset=UTF-8,false,"This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one."
+test_vbsij2lfzrcl_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.

@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibebcnkhsg2p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_k3IJEDQPqvR2we?t=1686929755"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iynba2qqkhf5_PostCoupons,200,"{
+  ""id"": ""o9tnyFjSUPe0IxA"",
+  ""object"": ""coupon"",
+  ""amount_off"": 6,
+  ""created"": 1686929760,
+  ""currency"": ""std"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 74,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""contritely"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t89nronb1un6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_G38kpOhDPl2FjJ?t=1686929766"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7znh577xe8z_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ItBq1DadDKoFnd?t=1686929772"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvjra3iefz1s_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jiwILUgYMROhbn?t=1686929777"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

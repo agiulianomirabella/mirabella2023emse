@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr5vt1pqke3p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_cL6YVyvXFtkc47?t=1685060694"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhlnochz7sxl_PostCoupons,200,"{
+  ""id"": ""vjZYKV5OfwvsiVqd"",
+  ""object"": ""coupon"",
+  ""amount_off"": 11,
+  ""created"": 1685060700,
+  ""currency"": ""bdt"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1858997485,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s1dy20fixdgi_PostCoupons,200,"{
+  ""id"": ""34HQjiBvmz"",
+  ""object"": ""coupon"",
+  ""amount_off"": 61,
+  ""created"": 1685060706,
+  ""currency"": ""bob"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 38,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trzorn56bkfr_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_GMdXHNHNsNKqpe?t=1685060711"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_us0pmfsdvub8_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HEJvvz0azYSev4?t=1685060717"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

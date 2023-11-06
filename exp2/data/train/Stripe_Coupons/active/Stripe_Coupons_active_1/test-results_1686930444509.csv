@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyoejii7x44x_PostCoupons,200,"{
+  ""id"": ""hfZiJCBe"",
+  ""object"": ""coupon"",
+  ""amount_off"": 76,
+  ""created"": 1686930461,
+  ""currency"": ""cdf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhowx9eatxko_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4LxdRS4Tll2A2S?t=1686930466"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl67c3q918ah_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_IhNPAsEf0Txnbq?t=1686930472"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_toohzx4xbckj_PostCoupons,200,"{
+  ""id"": ""WXfufbMQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 28,
+  ""created"": 1686930478,
+  ""currency"": ""uyu"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 98,
+  ""metadata"": {},
+  ""name"": ""cheerfully"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vb91s6knu9nm_PostCoupons,200,"{
+  ""id"": ""KliVcofluYRfDzs"",
+  ""object"": ""coupon"",
+  ""amount_off"": 62,
+  ""created"": 1686930483,
+  ""currency"": ""tzs"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 2,
+  ""livemode"": false,
+  ""max_redemptions"": 97,
+  ""metadata"": {},
+  ""name"": ""cleanly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

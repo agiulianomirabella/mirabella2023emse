@@ -1,0 +1,28 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7oo29nivalh_getMultiHotelOffers,500,"
+            {
+                ""errors"": [
+                        {
+                            ""code"": 38189,
+                            ""title"": ""Internal error"",
+                            ""detail"": ""An internal error occurred, please contact your administrator"",
+                            ""status"": 500
+                        }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,Status code 5XX with valid request.
+test_1iuspg1q1xiy8_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_1jyg2wb2pg75d_getMultiHotelOffers,500,"
+            {
+                ""errors"": [
+                        {
+                            ""code"": 38189,
+                            ""title"": ""Internal error"",
+                            ""detail"": ""An internal error occurred, please contact your administrator"",
+                            ""status"": 500
+                        }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,Status code 5XX with invalid request: inter_parameter_dependency
+test_to1u9arcvlma_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_ure34v9cgsvk_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

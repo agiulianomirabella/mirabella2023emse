@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7zspn3hyzas_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,true,none
+test_1hbj9k4nwio2t_getBusinesses,400,"{""error"": {""code"": ""OPEN_AT_AND_NOW_PROVIDED"", ""description"": ""You must specify either open_at or open_now, not both.""}}",application/json,true,none
+test_qxkzhvdm2vjp_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -84.02433, ""latitude"": 37.037952}}}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t4yhgwb3rby0_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_u7rd0g65y1bo_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,true,none

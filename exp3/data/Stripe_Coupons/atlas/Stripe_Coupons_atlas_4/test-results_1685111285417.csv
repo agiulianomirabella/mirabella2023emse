@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jy7r4d7audlt_PostCoupons,200,"{
+  ""id"": ""hz3jhuS8"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111302,
+  ""currency"": ""nok"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 42,
+  ""metadata"": {},
+  ""name"": ""ombu"",
+  ""percent_off"": 13.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_soknccs9e3c2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9SLGb2KG7F66m4?t=1685111308"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urmb9msjxb20_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FyqxkSGQ5BGWje?t=1685111314"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urserg512jxf_PostCoupons,200,"{
+  ""id"": ""jUlxdyuZhj"",
+  ""object"": ""coupon"",
+  ""amount_off"": 6,
+  ""created"": 1685111319,
+  ""currency"": ""eur"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1758689986,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vb6d41wmnupg_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_kppQ1Wvd2w8mgh?t=1685111325"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

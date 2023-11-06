@@ -1,0 +1,171 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jeaf1ih9vk8k_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""AQzF4vOyqGNMTDfOFEkb7WjaziU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 50
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1ji79arixni9e_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rhroozaexf79_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_skstal0eri3p_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_ts1y5o1plgz6_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""7y9YdL2J1b43woNxwg13pMT-ABE"",
+  ""nextPageToken"": ""QURTSl9pMkFpcEVHVHE3MDh5bUlKOTNzQWZIRFRlLWNHdFhtajA1eGNsWlVRWGxqbnpURlJuNUxXVUk1d2pLUm5JWE83M1h3TDJ4ZFBQZw=="",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cUSL-Hb9EQNPwBVN-GP1CiumoPo"",
+      ""id"": ""UgwZbHoYjGekB_Gsuud4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0VIHlVeOqeBuftLKX9iBvdtfRo4"",
+      ""id"": ""Ugy-bPAE9M5MgAT81op4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_dCzVQGZ3ynLXJT5t7iY7jwrUnE"",
+      ""id"": ""UgyBTKY1xrWyc8Cppe54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0RA4nibJRsUwVqYVpmZY5PXyVQI"",
+      ""id"": ""UgwkKuklPEsgCWu4rQp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""kbIHdDsdeLc0BczNr2IJLcu8W00"",
+      ""id"": ""UgzJNaIDle5YYwb4_k94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cyvo5xC_3pmkRQnnkgXYCFLJ0p4"",
+      ""id"": ""UgwPIMt7zznCEYFTT5d4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""eib5sXeWwBpU3fxUbV76puR8R0w"",
+      ""id"": ""UgyQmqnk3WLmAQoe6J54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-_CvIeeoKW0ShGhYqOUi7wzragE"",
+      ""id"": ""UgzGSvzEutgs3eayz0t4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""F0aV0AVcJdMZ-IrvlJ25_eWFelg"",
+      ""id"": ""Ugzf6BvIA6Gd3V-zbJJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gzcIlG-u8ApO8vUQ9aFv1GiqPGI"",
+      ""id"": ""UgywNJ7ZbcPfLz_E-X94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nNxosRwKA4xztpXTzjnHOBwNerY"",
+      ""id"": ""UgzCznekqS_KOc7z9GF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""d9hrxycCI1Bkz4xIILrROthwM9Y"",
+      ""id"": ""UgzRrFwfDD8g-3fR6q54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""dnRT8xr54r3QS6-Eo-2R7qyu_jI"",
+      ""id"": ""Ugznw6KPV3pBetzQUgR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JajNl_NGifyaCZm_N_HbYZ56zfk"",
+      ""id"": ""UgxjMn83UQjweEfU0I54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WpfFJOh2omm6lEu9otiUB2_6JoY"",
+      ""id"": ""UgwNdkdpuT9r6QiS9Z54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""X9zutLqUoMZqavpqEdZqjzLDD3U"",
+      ""id"": ""UgwuDGZdGNKBr16n8bd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nie5WsuDTJe07atq2IsMd6MKJoI"",
+      ""id"": ""UgwwlNbf2pTkm-BgXZ94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""rgXYDiTNU0koS51raKpE86P_k5E"",
+      ""id"": ""UgxcLNdvbGZ_MrPZTZh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""35Fhw_2-NwN36dCRoNNP3UzALk8"",
+      ""id"": ""UgzO-RFY0IR8jkiWEVF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5u7wkCHkKs26Vp0LeAxu_G0aHtk"",
+      ""id"": ""UgxIRYmtHXYPQX6KMNV4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

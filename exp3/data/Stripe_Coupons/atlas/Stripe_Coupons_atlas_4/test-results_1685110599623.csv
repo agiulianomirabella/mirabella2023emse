@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1k252g6sro0o6_PostCoupons,200,"{
+  ""id"": ""q96840jBxhIlgZ3HbX"",
+  ""object"": ""coupon"",
+  ""amount_off"": 4,
+  ""created"": 1685110616,
+  ""currency"": ""sgd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 14,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qec5eotmqeld_PostCoupons,200,"{
+  ""id"": ""jpPIvTV5"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110622,
+  ""currency"": ""scr"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 44,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 52.0,
+  ""redeem_by"": 1718998587,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1dcedf7uzp5_PostCoupons,200,"{
+  ""id"": ""yNfCZS21"",
+  ""object"": ""coupon"",
+  ""amount_off"": 7,
+  ""created"": 1685110627,
+  ""currency"": ""kgs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 11,
+  ""metadata"": {},
+  ""name"": ""abeam"",
+  ""percent_off"": null,
+  ""redeem_by"": 1834347876,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u7p0rc998to2_PostCoupons,200,"{
+  ""id"": ""IZvMTAa9"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110633,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 100,
+  ""livemode"": false,
+  ""max_redemptions"": 64,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 39.0,
+  ""redeem_by"": 1816015560,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u8apewyixf07_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ty1ZbUBTAyBmFf?t=1685110638"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

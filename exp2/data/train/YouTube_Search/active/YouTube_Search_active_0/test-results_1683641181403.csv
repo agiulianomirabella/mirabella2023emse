@@ -1,0 +1,65 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrs1aiskmlb9_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_1ibeayurcsc36_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_1iepzz7w6ni9e_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""qqMDAOCeR7Cq0_4DiC_OLB7eO4c"",
+  ""regionCode"": ""PT"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jelh1qnxcegm_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1jhzt5cus10_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

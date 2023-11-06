@@ -1,0 +1,63 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyn9pkirfzn6_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qdq15zovz8du_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qe9cv2kw7ktw_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_rlan870j47qu_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""Ld17tzpzZ42qEHJMMS5z6CWfD1g"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 47
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_t4yh2r9cp46d_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""ZVaPqtKsBWjrqiMGUSkbM2-T7xY"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""mYRZJ5iWppuIZjtzbibBOHVIwrg"",
+      ""id"": ""UgzhMIgtuhjemzfoObp4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none

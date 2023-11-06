@@ -1,0 +1,75 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7zt6cwjasz5_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrjr4sr2gqb6_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rhrnwx1rf1h5_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""AUqX7SWAlFhXZsDVxzLCwjxvIis"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 73
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_u8e0af2x9g6x_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbn05rqf7jn9_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

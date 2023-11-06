@@ -1,0 +1,95 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rh5j9x101r35_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""DCv8u79rz_Z5yPVlSxf2awnPWTQ"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rhiv1znkwx89_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_s1jgidrhqkbm_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""FafMg9EYwKpct_Huf8Z4QmTb0aA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""xhQsdSVIPkRvd030wPHMP3FNs9M"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Uznbtb0Q38E""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-06-28T23:35:48Z"",
+        ""channelId"": ""UC6IvYvXGjBCKINH6xe4fSdQ"",
+        ""title"": ""Yousican | blink-182 first date [tab]"",
+        ""description"": ""Hola amigos les dejo este tuturial de como tocar para bajo \""first date\"" de blink 182 espero que les ayude."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Uznbtb0Q38E/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Uznbtb0Q38E/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Uznbtb0Q38E/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Diego Vader"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-06-28T23:35:48Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_trwvr19wn777_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""wheiR-aIcGzazUTxxC2VTmQSso4"",
+  ""regionCode"": ""JP"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vb6unxk69tfc_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

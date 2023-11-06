@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7u7ojojyxpz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_PoXb89qow8FaZJ?t=1685113903"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jewk5ac9cw1g_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_vw9fLM1JCwJVws?t=1685113909"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhtyj8l5acs2_PostCoupons,200,"{
+  ""id"": ""XWqb3kPC"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685113914,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""down"",
+  ""percent_off"": 50.0,
+  ""redeem_by"": 1812953321,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ts56aududjjt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_CPtvdXfq8zbCLk?t=1685113920"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uv8ltxrnqwdi_PostCoupons,200,"{
+  ""id"": ""MTAIysxW"",
+  ""object"": ""coupon"",
+  ""amount_off"": 100,
+  ""created"": 1685113926,
+  ""currency"": ""bwp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

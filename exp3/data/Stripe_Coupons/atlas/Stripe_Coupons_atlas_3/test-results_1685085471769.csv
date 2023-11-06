@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv9aj87msz8m_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_acF2KrZe0FWqpw?t=1685085488"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhsw4bvbqb8i_PostCoupons,200,"{
+  ""id"": ""7Urng6jG"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085494,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 26,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 3.0,
+  ""redeem_by"": 1756048786,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhr7jkkn6xx3_PostCoupons,200,"{
+  ""id"": ""AEiy9Fa3F6qo"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685085500,
+  ""currency"": ""bdt"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 60,
+  ""metadata"": {},
+  ""name"": ""iaa"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s4unwmbko5kl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The currency hrk is no longer supported. Use eur instead. See https://support.stripe.com/questions/croatian-kuna-(hrk)-currency-transition-to-euro-(eur) for more details."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_E7LKGi0wBy1vp0?t=1685085505"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urp3w1z0w661_PostCoupons,200,"{
+  ""id"": ""DEbRUjqe07hVkLi9"",
+  ""object"": ""coupon"",
+  ""amount_off"": 73,
+  ""created"": 1685085511,
+  ""currency"": ""vuv"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""coeval"",
+  ""percent_off"": null,
+  ""redeem_by"": 1760983934,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_s1jg42t9fhgw_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_sopokw80blmb_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":5489,""title"":""NOTHING FOUND FOR REQUESTED CRITERIA""}]}",application/vnd.amadeus+json,true,none
+test_t4c8xj5v5po4_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_u7wux6tqt92s_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u8053dafz3ab_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

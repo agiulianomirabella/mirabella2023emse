@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv1jvfemc7z5_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_qxyur984bkmv_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": 2.3421478271484375, ""latitude"": 48.86195860677958}}}",application/json,false,"This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one."
+test_trquns5azos1_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -97.93799, ""latitude"": 36.54971}}}",application/json,true,none
+test_u8apeun004dv_getBusinesses,400,"{""error"": {""code"": ""LOCATION_NOT_FOUND"", ""description"": ""Could not execute search, try specifying a more exact location.""}}",application/json,true,none
+test_vbhd3o5fhap2_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none

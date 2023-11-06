@@ -1,0 +1,87 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbm1q3j698ab_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""-Pf2pKo2F4RTzIaH8jFITmGN_rA"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""iKAaQ-6AOSn7awnrHnRe5uRGhK8"",
+      ""id"": ""yDgLFOxnQ8Y"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Entertainment"",
+          ""https://en.wikipedia.org/wiki/Television_program""
+        ]
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1ibh1kp871kqg_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iuy9rvkb8568_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jy4ykf87koj8_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_us3helgh3oz8_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

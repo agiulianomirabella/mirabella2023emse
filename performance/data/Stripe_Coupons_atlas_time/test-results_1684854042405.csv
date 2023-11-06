@@ -1,0 +1,56 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h84ty0l3bq77_PostCoupons,200,"{
+  ""id"": ""CE3xrjY9"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1684854067,
+  ""currency"": ""sbd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 20.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ibec4rtiewkl_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_o6xGRWTd2LVohc?t=1684854073"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iusntc64p2ea_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_X0CXLztOcMZ1FK?t=1684854079"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxi9a7jg7bqq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wO8hDYAPJAKHBH?t=1684854084"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s50nw9bkv78j_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_1oAZTlmASgljmm?t=1684854090"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

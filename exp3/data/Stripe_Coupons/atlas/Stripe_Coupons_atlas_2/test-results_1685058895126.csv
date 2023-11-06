@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbagp5mco5kp_PostCoupons,200,"{
+  ""id"": ""1Ookf1hbrXzMyI"",
+  ""object"": ""coupon"",
+  ""amount_off"": 32,
+  ""created"": 1685058911,
+  ""currency"": ""php"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""sanctimonious"",
+  ""percent_off"": null,
+  ""redeem_by"": 1769139822,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jidby3g2qyqs_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hnF3aBbL7LvgmK?t=1685058917"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u8dgv84a04kx_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6lV99r9ZiUlKgs?t=1685058923"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vb9l9a9eqcs3_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_1TWMLFGBgZ2Hvm?t=1685058928"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbmzdljp9hde_PostCoupons,200,"{
+  ""id"": ""kq9lOY96sFe"",
+  ""object"": ""coupon"",
+  ""amount_off"": 17,
+  ""created"": 1685058934,
+  ""currency"": ""ron"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 13,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

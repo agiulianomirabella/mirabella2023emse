@@ -1,0 +1,49 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ji4ylu0fazxe_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k25389csyg4y_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, channelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, channelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rhr7jcois3sp_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

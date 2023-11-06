@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iay70yqo7gwx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_vqp8bGJErSUzWV?t=1685108366"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iv9tk5gnpk54_PostCoupons,200,"{
+  ""id"": ""sV9teMKT"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108372,
+  ""currency"": ""eur"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""contradictorily"",
+  ""percent_off"": 36.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rh5ja0yq97oy_PostCoupons,200,"{
+  ""id"": ""iWW2qlBl54"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108378,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 12,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 38.0,
+  ""redeem_by"": 1839346118,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vb94wdgz5tf9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_d0QaHbyHQcv28j?t=1685108383"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vevedfsojmsy_PostCoupons,200,"{
+  ""id"": ""pLTJNO7u"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108389,
+  ""currency"": ""cop"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""rashly"",
+  ""percent_off"": 56.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

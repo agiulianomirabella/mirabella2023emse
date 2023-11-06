@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7fuew76zqk2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_s2rUtt2F63n281?t=1686925741"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hv2r5m470uw3_PostCoupons,200,"{
+  ""id"": ""SQW3tucXIeCzjcGAja1B"",
+  ""object"": ""coupon"",
+  ""amount_off"": 42,
+  ""created"": 1686925747,
+  ""currency"": ""kes"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1695393550,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qe11jl36gcbo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_R8u47KAD5ZNyFU?t=1686925753"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxficmtg32w2_PostCoupons,200,"{
+  ""id"": ""rbsLDIZ2"",
+  ""object"": ""coupon"",
+  ""amount_off"": 19,
+  ""created"": 1686925758,
+  ""currency"": ""shp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1854292314,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1h5t7p1l5bs_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_I6L8hSzzDT33sf?t=1686925764"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

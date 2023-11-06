@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jecoia0h4r3q_PostCoupons,200,"{
+  ""id"": ""CUFypJgLdmfjTY4kuIT"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1684854311,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""pensive"",
+  ""percent_off"": 88.0,
+  ""redeem_by"": 1736018139,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jeytxad6g0mv_PostCoupons,200,"{
+  ""id"": ""UdXOckLz"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1684854317,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""hypertensive"",
+  ""percent_off"": 72.0,
+  ""redeem_by"": 1775385982,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ji1q2iknh9ib_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QwwGDNOznKsT5i?t=1684854323"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uv5sw4kuvjhg_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3n0YNUTae17Gll?t=1684854328"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vf1fs5mw9mqq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Jq32QFracipcZ7?t=1684854334"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrrjoo5ki6gl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jVo6sz5yzq6DZN?t=1685057054"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ibhjkolseypl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_MnD6pmqMlv6KCP?t=1685057059"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iusoo71v7wvp_PostCoupons,200,"{
+  ""id"": ""0bRJwVf5"",
+  ""object"": ""coupon"",
+  ""amount_off"": 99,
+  ""created"": 1685057065,
+  ""currency"": ""nzd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1832325680,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxw63cg3yiwl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Gf0t7Ov7HPnRa1?t=1685057071"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ure13t554vu8_PostCoupons,200,"{
+  ""id"": ""QhLEwpEZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 65,
+  ""created"": 1685057076,
+  ""currency"": ""kgs"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 29,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7ly8bhh0660_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_1hbahxz955fll_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1ib0wuoyy1fzl_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,true,none
+test_1jer1arylqqg4_getMultiHotelOffers,429,"
+            {
+                ""errors"": [
+                    {
+                        ""code"": 38194,
+                        ""title"": ""Too many requests"",
+                        ""detail"": ""The network rate limit is exceeded, please try again later"",
+                        ""status"": 429
+                    }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,OAS disconformity: Response status 429 not defined for path '/shopping/hotel-offers'.
+test_1jyg1qf96cyt2_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none

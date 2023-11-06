@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyaihu4rzupe_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yrqr5jginAyXPG?t=1685108572"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhq20azit8x0_PostCoupons,200,"{
+  ""id"": ""AdWwBRNk"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108577,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""anon"",
+  ""percent_off"": 13.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_sl3f5wwl5ysl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jGPJrwbzCxrZkd?t=1685108583"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4telnee12lf_PostCoupons,200,"{
+  ""id"": ""SueXJpz7ZN0Q1DlqIy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108589,
+  ""currency"": ""afn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 100,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 8.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uve5gnzdbgpt_PostCoupons,200,"{
+  ""id"": ""q1Kriry030ns7"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108595,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""surely"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jia088a9i0c7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid currency: sll. Stripe accounts in ES do not support sll. Your account currently supports these currencies: usd, aed, afn, all, amd, ang, aoa, ars, aud, awg, azn, bam, bbd, bdt, bgn, bif, bmd, bnd, bob, brl, bsd, bwp, byn, bzd, cad, cdf, chf, clp, cny, cop, crc, cve, czk, djf, dkk, dop, dzd, egp, etb, eur, fjd, fkp, gbp, gel, gip, gmd, gnf, gtq, gyd, hkd, hnl, hrk, htg, huf, idr, ils, inr, isk, jmd, jpy, kes, kgs, khr, kmf, krw, kyd, kzt, lak, lbp, lkr, lrd, lsl, mad, mdl, mga, mkd, mmk, mnt, mop, mro, mur, mvr, mwk, mxn, myr, mzn, nad, ngn, nio, nok, npr, nzd, pab, pen, pgk, php, pkr, pln, pyg, qar, ron, rsd, rub, rwf, sar, sbd, scr, sek, sgd, shp, sle, sos, srd, std, szl, thb, tjs, top, try, ttd, twd, tzs, uah, ugx, uyu, uzs, vnd, vuv, wst, xaf, xcd, xof, xpf, yer, zar, zmw."",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FmmoT4tCif0geK?t=1685083201"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qeexyp68muk0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FfRaWNTKJggB3Z?t=1685083206"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4rvtiema43b_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_MHALFJOBFCrgmn?t=1685083212"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t87dx7tjnvhy_PostCoupons,200,"{
+  ""id"": ""8mHDq2qF"",
+  ""object"": ""coupon"",
+  ""amount_off"": 2,
+  ""created"": 1685083218,
+  ""currency"": ""rwf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 47,
+  ""metadata"": {},
+  ""name"": ""allegorize"",
+  ""percent_off"": null,
+  ""redeem_by"": 1837382234,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_tru4d1005qnn_PostCoupons,200,"{
+  ""id"": ""FQPTxKRdTsE1q4dD2Bkk"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083223,
+  ""currency"": ""pen"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""abrase"",
+  ""percent_off"": 7.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrj8cyp8mjow_PostCoupons,200,"{
+  ""id"": ""1TvQdQdVuR"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081525,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 33,
+  ""metadata"": {},
+  ""name"": ""zoophilism"",
+  ""percent_off"": 12.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhufb02g4e2b_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Kf8oNRotI3b0tB?t=1685081533"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skyd8fr5yvqs_PostCoupons,200,"{
+  ""id"": ""ql28pGq126xvMzXy"",
+  ""object"": ""coupon"",
+  ""amount_off"": 91,
+  ""created"": 1685081542,
+  ""currency"": ""thb"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 77,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urxhv85bpaus_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_nQFHpgvsI4bNIz?t=1685081554"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbk6481zl4qc_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QSVsXO5CGDVMox?t=1685081560"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

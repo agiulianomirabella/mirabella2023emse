@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jxzgn0xgzgac_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_p21Ly39ubykI2o?t=1685110563"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jyg37r1er48p_PostCoupons,200,"{
+  ""id"": ""XhPPhW4U"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110569,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""pragmatically"",
+  ""percent_off"": 80.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rl5lzp6q57j6_PostCoupons,200,"{
+  ""id"": ""lORcW2DI"",
+  ""object"": ""coupon"",
+  ""amount_off"": 2,
+  ""created"": 1685110575,
+  ""currency"": ""brl"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 3,
+  ""metadata"": {},
+  ""name"": ""speculatively"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s12u91ns26w1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rm9OVw35ldq65m?t=1685110581"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4yy5iyjpobo_PostCoupons,200,"{
+  ""id"": ""hwEUlXBrUy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110586,
+  ""currency"": ""jmd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""impenitently"",
+  ""percent_off"": 14.0,
+  ""redeem_by"": 1775208075,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

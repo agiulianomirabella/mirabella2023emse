@@ -1,0 +1,55 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7leqtnt5i02_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_03QRFm0c0lZoiM?t=1685112374"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s1gmpje9k4s0_PostCoupons,200,"{
+  ""id"": ""xFqP37LM"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112380,
+  ""currency"": ""gbp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 31,
+  ""metadata"": {},
+  ""name"": ""anabaptism"",
+  ""percent_off"": 14.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t8cdwrdgza03_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZLAU5WUfYtY2Uw?t=1685112387"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvgz3z12zwbp_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_E0mSVAJpcoAtVO?t=1685112392"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvjrcibj5zl0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Bb738fXHv6Riys?t=1685112398"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

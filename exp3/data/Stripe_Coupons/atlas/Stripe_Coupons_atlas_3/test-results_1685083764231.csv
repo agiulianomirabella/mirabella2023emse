@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hvb3bs70frqw_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_fauIebqWzP6mpg?t=1685083781"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ieuz9i6u8v1x_PostCoupons,200,"{
+  ""id"": ""aP9gZ5zkqh7hUsPJsXb"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083786,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 96,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 91.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jictkcu8h4df_PostCoupons,200,"{
+  ""id"": ""zFMffJL2ENhALivUzp0l"",
+  ""object"": ""coupon"",
+  ""amount_off"": 53,
+  ""created"": 1685083792,
+  ""currency"": ""dkk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""tacitly"",
+  ""percent_off"": null,
+  ""redeem_by"": 1831115734,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jy504i0r8u3m_PostCoupons,200,"{
+  ""id"": ""0gsAWfeePbM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 3,
+  ""created"": 1685083797,
+  ""currency"": ""scr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rhaiy24lm6uv_PostCoupons,200,"{
+  ""id"": ""42RXTXOi3tMUkzkhDu"",
+  ""object"": ""coupon"",
+  ""amount_off"": 75,
+  ""created"": 1685083803,
+  ""currency"": ""twd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 72,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

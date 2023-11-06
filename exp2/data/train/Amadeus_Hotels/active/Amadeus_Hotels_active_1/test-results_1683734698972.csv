@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrs2s6g5g27l_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jiaixbou4i8x_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_qxi8hxsjmqer_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""XKPAR321"",""chainCode"":""XK"",""name"":""GRG"",""cityCode"":""PAR"",""latitude"":48.85801,""longitude"":2.34661},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=XKPAR321&adults=7&currency=KRW""}]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_rlb606zegab8_getMultiHotelOffers,429,"
+            {
+                ""errors"": [
+                    {
+                        ""code"": 38194,
+                        ""title"": ""Too many requests"",
+                        ""detail"": ""The network rate limit is exceeded, please try again later"",
+                        ""status"": 429
+                    }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,OAS disconformity: Response status 429 not defined for path '/shopping/hotel-offers'.
+test_s13b0bo29xsx_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

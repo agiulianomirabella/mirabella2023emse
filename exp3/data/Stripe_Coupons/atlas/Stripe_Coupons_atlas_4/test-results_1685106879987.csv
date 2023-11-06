@@ -1,0 +1,43 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hb7nfvo7ten5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_0RlftOjt2Tz2he?t=1685106896"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k2524ofo712t_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_gbbQh9Sk9DouuC?t=1685106902"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s1jxkzk71duq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_x4U8vpYYPXlMl6?t=1685106908"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4l589rz8x9e_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_J9iBKPvSrgm2ss?t=1685106914"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4vq2zn1phro_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QsOxQElFNGFzQN?t=1685106919"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

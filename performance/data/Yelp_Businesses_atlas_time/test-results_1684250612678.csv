@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h85apiku07xy_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": 144.96734619140625, ""latitude"": -37.81787593178502}}}",application/json,true,none
+test_skyesgm0o20h_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_u82f9cuy5bg8_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -102.81981, ""latitude"": 39.79055}}}",application/json,false,"This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one."
+test_urmc49rdsbau_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_us2z2t541o3c_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none

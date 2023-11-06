@@ -1,0 +1,79 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbd650qaijj5_PostCoupons,200,"{
+  ""id"": ""W871Mj4JZcn7SRo3"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685110140,
+  ""currency"": ""nzd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 55,
+  ""metadata"": {},
+  ""name"": ""mangily"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qhvmnll3t838_PostCoupons,200,"{
+  ""id"": ""RO7KGcXUDxw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110146,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""admirably"",
+  ""percent_off"": 8.0,
+  ""redeem_by"": 1849008525,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxw45atrw8xi_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_c967DLz3yuSLwo?t=1685110151"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_tode4bm11d10_PostCoupons,200,"{
+  ""id"": ""OXnOZLHC"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110158,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 2,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""centrally"",
+  ""percent_off"": 40.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vey3qikji0qg_PostCoupons,200,"{
+  ""id"": ""XUL9LbWs"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685110163,
+  ""currency"": ""kzt"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 99,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

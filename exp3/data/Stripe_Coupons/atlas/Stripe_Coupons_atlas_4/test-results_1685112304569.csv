@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyfgp9kj3yoz_PostCoupons,200,"{
+  ""id"": ""2cxzIzgQiHMvbAP5MdO8"",
+  ""object"": ""coupon"",
+  ""amount_off"": 26,
+  ""created"": 1685112321,
+  ""currency"": ""kyd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1735462006,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qhncw278q2jo_PostCoupons,200,"{
+  ""id"": ""tCuC4ML4"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112327,
+  ""currency"": ""gnf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 21,
+  ""metadata"": {},
+  ""name"": ""honey"",
+  ""percent_off"": 12.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qhtefrzr1x6e_PostCoupons,200,"{
+  ""id"": ""fI7zhuOgzzJONa2ft2c"",
+  ""object"": ""coupon"",
+  ""amount_off"": 5,
+  ""created"": 1685112332,
+  ""currency"": ""xpf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 73,
+  ""metadata"": {},
+  ""name"": ""deprive"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhoxroubglkn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dPr7uW2f16xbJt?t=1685112338"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u805ek6wdaw2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Jh4mcnR59oxrKd?t=1685112344"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

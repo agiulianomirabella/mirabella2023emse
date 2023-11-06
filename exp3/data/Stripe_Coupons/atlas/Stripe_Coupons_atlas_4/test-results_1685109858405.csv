@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7zbkikj7gx1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Sef9xN0LkFw78b?t=1685109875"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hv89j8h8wcag_PostCoupons,200,"{
+  ""id"": ""SvCJUn7j"",
+  ""object"": ""coupon"",
+  ""amount_off"": 53,
+  ""created"": 1685109881,
+  ""currency"": ""dkk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 43,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jed6tpt8oz01_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JBw23EEhB1HaoO?t=1685109888"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r1fle9lpo3fq_PostCoupons,200,"{
+  ""id"": ""3sJjqOvY3p2DK5Oq"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685109893,
+  ""currency"": ""kmf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 48,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 10.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vf1fs21likir_PostCoupons,200,"{
+  ""id"": ""3cC7rWTU"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685109899,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 20,
+  ""metadata"": {},
+  ""name"": ""alone"",
+  ""percent_off"": 13.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

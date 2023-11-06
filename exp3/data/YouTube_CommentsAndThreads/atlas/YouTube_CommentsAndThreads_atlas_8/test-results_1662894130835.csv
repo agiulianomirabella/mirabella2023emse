@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hvb1dj2z9cmv_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""cer41CL9nbcWXyKIHHupl121vN0"",
+  ""nextPageToken"": ""QURTSl9pMnRubWZZS0lEUWJnOS0xUW5FZk9fMy13aTZuWnFYd2xYWnBiZEtTSEFaMGtzV1BlaC02eEdmQUFYSkFQeUJxVjYxblhyb3ZlajI5NFFRczNBZzZybktUYTBhd3lJV25oUlhEcTRyZV9NVVpPcXI1TU5qaWdXcjgtRFhiRDUzRzVhcV9jaXFHaWpvRVlCOXlVYzQ4NjlaQzV6c0dYQnlpa3FpT2p3WHZoenhlM3dIWnFaYnllU3Q0a1RjaExVYWJ3NGhadWk1MGVr"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 83
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1iev1aa2uck0x_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jel1gcrw8htk_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_sksa4g0ckl7l_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, allThreadsRelatedToChannelId, channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, allThreadsRelatedToChannelId, channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4flakkpqtyq_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""AUqX7SWAlFhXZsDVxzLCwjxvIis"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 73
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

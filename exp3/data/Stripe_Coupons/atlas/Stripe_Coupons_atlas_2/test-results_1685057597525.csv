@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7incuy9uq0h_PostCoupons,200,"{
+  ""id"": ""AImN8Kroa7oo"",
+  ""object"": ""coupon"",
+  ""amount_off"": 98,
+  ""created"": 1685057614,
+  ""currency"": ""mvr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1838901085,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qhsu64c8aw69_PostCoupons,200,"{
+  ""id"": ""E2vZignc"",
+  ""object"": ""coupon"",
+  ""amount_off"": 84,
+  ""created"": 1685057619,
+  ""currency"": ""nzd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""sideward"",
+  ""percent_off"": null,
+  ""redeem_by"": 1801518230,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1ivy32vz0x2_PostCoupons,200,"{
+  ""id"": ""HRNtvNsO"",
+  ""object"": ""coupon"",
+  ""amount_off"": 85,
+  ""created"": 1685057625,
+  ""currency"": ""mnt"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 32,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1743141228,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1efl6fzxws0_PostCoupons,200,"{
+  ""id"": ""nKLB3ZH0pJljYrS"",
+  ""object"": ""coupon"",
+  ""amount_off"": 69,
+  ""created"": 1685057631,
+  ""currency"": ""usd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""fashionably"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_uvbfmrt8d7j9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_bfEgTHTgA2vfjd?t=1685057636"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrdqfke45942_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_XM9ZEjzT6w5z4t?t=1685084841"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrrk2n90f0ah_PostCoupons,200,"{
+  ""id"": ""VkdVAibF"",
+  ""object"": ""coupon"",
+  ""amount_off"": 32,
+  ""created"": 1685084847,
+  ""currency"": ""tjs"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 57,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iuvfnwo4yiba_PostCoupons,200,"{
+  ""id"": ""nPEcpZLc"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084853,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 4,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 91.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxr27lrml3cg_PostCoupons,200,"{
+  ""id"": ""w1Beu4d8"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084858,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""fearsomely"",
+  ""percent_off"": 90.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uvbwbqlohhyr_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_N9A1b07rSURSVF?t=1685084865"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

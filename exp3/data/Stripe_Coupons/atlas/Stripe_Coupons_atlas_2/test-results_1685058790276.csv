@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hb862k8l2zxe_PostCoupons,200,"{
+  ""id"": ""1fhGX4RP"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058807,
+  ""currency"": ""sek"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 49,
+  ""metadata"": {},
+  ""name"": ""incommodious"",
+  ""percent_off"": 98.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iauxpj3jl751_PostCoupons,200,"{
+  ""id"": ""NkGrC0gRLz8"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058812,
+  ""currency"": ""gmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""definite"",
+  ""percent_off"": 77.0,
+  ""redeem_by"": 1861174155,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ji7qdlhoyw50_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_psWaLKiiljTVCn?t=1685058818"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k1wrl17png3d_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_pbK3H8ke8ikoHO?t=1685058824"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubup1e3x3ejp_PostCoupons,200,"{
+  ""id"": ""NzDRo0iAMp1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058830,
+  ""currency"": ""mdl"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 39,
+  ""metadata"": {},
+  ""name"": ""gynecological"",
+  ""percent_off"": 91.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

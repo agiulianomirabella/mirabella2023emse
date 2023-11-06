@@ -1,0 +1,135 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1je9x3z65sr3o_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""QfWCa1j-odAYRawiXJWGrsi9_vo"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""oNKrrk7fWSl9kV7YpL7X-2hxS9o"",
+      ""id"": ""yDgLFOxnQ8Y"",
+      ""snippet"": {
+        ""publishedAt"": ""2015-11-04T21:56:04Z"",
+        ""channelId"": ""UC84t25xqhPEPpGY7NBZJ_eA"",
+        ""title"": ""Joaquín: \""No tenía ni idea de hablar italiano\"" - El Hormiguero 3.0"",
+        ""description"": ""Joaquín nos ha contado cómo vivió su salida de Italia y su vuelta a casa. \""Ya no podía más\"", ha dicho el jugador. Con él también hemos repasado sus trabas a la hora de aprender idiomas."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/yDgLFOxnQ8Y/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/yDgLFOxnQ8Y/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/yDgLFOxnQ8Y/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/yDgLFOxnQ8Y/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/yDgLFOxnQ8Y/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Antena 3"",
+        ""tags"": [
+          ""Antena 3 (TV Network)"",
+          ""Joaquín (Football Player)"",
+          ""Pablo Motos (TV Personality)"",
+          ""el hormiguer""
+        ],
+        ""categoryId"": ""25"",
+        ""liveBroadcastContent"": ""none"",
+        ""localized"": {
+          ""title"": ""Joaquín: \""No tenía ni idea de hablar italiano\"" - El Hormiguero 3.0"",
+          ""description"": ""Joaquín nos ha contado cómo vivió su salida de Italia y su vuelta a casa. \""Ya no podía más\"", ha dicho el jugador. Con él también hemos repasado sus trabas a la hora de aprender idiomas.""
+        }
+      },
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jy7odvl1med0_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k1zkuoz2al9z_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""oExq_pX8KADakSm05Zuec75aevs"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""cR0Ni3OzBozwjf2oe2FclNLJ6ZQ"",
+      ""id"": ""9bZkp7q19f0"",
+      ""statistics"": {
+        ""viewCount"": ""4782149738"",
+        ""likeCount"": ""26889137"",
+        ""favoriteCount"": ""0"",
+        ""commentCount"": ""5338189""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s4ukuyl5p9pd_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_vbnhdjc55isl_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""RuuXzTIr0OoDqI4S0RU6n4FqKEM"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

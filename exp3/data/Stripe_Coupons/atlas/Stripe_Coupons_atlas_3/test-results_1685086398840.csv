@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7iowvgoz141_PostCoupons,200,"{
+  ""id"": ""2wDXXNPi"",
+  ""object"": ""coupon"",
+  ""amount_off"": 82,
+  ""created"": 1685086415,
+  ""currency"": ""try"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 83,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1859184857,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jettxd0rv4v5_PostCoupons,200,"{
+  ""id"": ""8xXdFuFzGlnA"",
+  ""object"": ""coupon"",
+  ""amount_off"": 6,
+  ""created"": 1685086421,
+  ""currency"": ""vuv"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""cross-index"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_sksuebwh4869_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FxWUrYuLf4HPoY?t=1685086427"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t81v5k1zuyjl_PostCoupons,200,"{
+  ""id"": ""4eqnJ7Hj"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685086432,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 80,
+  ""metadata"": {},
+  ""name"": ""haze"",
+  ""percent_off"": 10.0,
+  ""redeem_by"": 1738557458,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urhbzisb225d_PostCoupons,200,"{
+  ""id"": ""G9uGfoHiJw43"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685086438,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 10,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 11.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

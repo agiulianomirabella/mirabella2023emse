@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyexaidmivdt_PostCoupons,200,"{
+  ""id"": ""H8JUHZSf"",
+  ""object"": ""coupon"",
+  ""amount_off"": 4,
+  ""created"": 1685107960,
+  ""currency"": ""inr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 65,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe3tp0m2aotv_PostCoupons,200,"{
+  ""id"": ""GrUy45DyiCyG3DRt"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107965,
+  ""currency"": ""uah"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 75,
+  ""metadata"": {},
+  ""name"": ""cark"",
+  ""percent_off"": 18.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_toa4hpi7hhlw_PostCoupons,200,"{
+  ""id"": ""AAuVWCuw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107971,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 55,
+  ""metadata"": {},
+  ""name"": ""apostatize"",
+  ""percent_off"": 20.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u7oi4bhnsbap_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_UYCIQKmhyXEM4P?t=1685107977"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uve5go07396b_PostCoupons,200,"{
+  ""id"": ""xOMXURGb"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107982,
+  ""currency"": ""amd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 51.0,
+  ""redeem_by"": 1807031867,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

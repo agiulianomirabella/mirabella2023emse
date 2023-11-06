@@ -1,0 +1,68 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7inqugz838m_PostCoupons,200,"{
+  ""id"": ""ALfosJMUtw64PsB8gwp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685193428,
+  ""currency"": ""krw"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 51.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1hbgikbdk9jqr_PostCoupons,200,"{
+  ""id"": ""wkN0Br5a"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685193433,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 65,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 22.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ubguk43vrgag_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YcpRaEY5X0NvOt?t=1685193439"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ure0bukc348m_PostCoupons,200,"{
+  ""id"": ""32NOve7rADBo"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685193445,
+  ""currency"": ""egp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 94,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 71.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_uve7pwfdpi5y_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YccwnO8TJl3S0H?t=1685193450"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

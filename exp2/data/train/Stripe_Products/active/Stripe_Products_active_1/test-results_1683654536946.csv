@@ -1,0 +1,37 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hruu5tmxfvp4_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxljriln66nr_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skmqypgg15y9_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ts4n72kbdgz4_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbbwnzswsn6r_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none

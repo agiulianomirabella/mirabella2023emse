@@ -1,0 +1,55 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbdp8ardwgmp_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_inWjMJC00WCwgZ?t=1685293817"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ib0gh8vet6id_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7u87lbgZecstvv?t=1685293822"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qdyu17bjakog_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_EUYM56rLWi4NbQ?t=1685293828"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhq3hn72nk1f_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_J2Eg91XMQqmQoM?t=1685293834"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t84kzg9ak8qg_PostCoupons,200,"{
+  ""id"": ""wL2zvhyp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685293840,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 53,
+  ""metadata"": {},
+  ""name"": ""sharia"",
+  ""percent_off"": 79.0,
+  ""redeem_by"": 1820509952,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

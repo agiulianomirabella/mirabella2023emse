@@ -1,0 +1,45 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv5zdbaaoxm9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HPi6k4W80WRyYk?t=1685017411"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhnbbq9270x1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hzToTIxZ4lfaGZ?t=1685017417"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4rvckc8v8mc_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_p2NOvZmkpqVhG4?t=1685017423"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvbx3gzvowo4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_971o0z4cshccUF?t=1685017428"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbf5lc026xx2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yGttcmD13aZS4m?t=1685017434"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

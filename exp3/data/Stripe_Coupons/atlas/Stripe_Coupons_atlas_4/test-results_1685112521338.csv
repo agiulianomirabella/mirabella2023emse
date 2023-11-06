@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyjbtja4jfhz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_lq08PpIku1FEWT?t=1685112538"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qe75ckjj9krm_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DDkpm7KuGwKOQ7?t=1685112543"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhq2powh5zqv_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_RqdmOvjY1LkVoE?t=1685112549"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skscj9cowhmb_PostCoupons,200,"{
+  ""id"": ""3lTKpfen5Gdha"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112554,
+  ""currency"": ""tzs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""distastefully"",
+  ""percent_off"": 47.0,
+  ""redeem_by"": 1833424474,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vevwamu8jrdy_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_xTvXKaSOGPw7zx?t=1685112560"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

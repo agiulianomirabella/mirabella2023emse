@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jeyv3bq49a9f_PostCoupons,200,"{
+  ""id"": ""V1KKXYcnSeZxAPa"",
+  ""object"": ""coupon"",
+  ""amount_off"": 90,
+  ""created"": 1685112053,
+  ""currency"": ""all"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 77,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1837913359,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1a2oym1kfg8_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_81tD2wtvhgnSpw?t=1685112059"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubgtpn2f14j7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QzyJFHhIUvYExj?t=1685112065"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubj3y30a7bjn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_P62EqqppoPgNfe?t=1685112070"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vb6u9mjfw9x2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_GUe6qsCI67OUjR?t=1685112076"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

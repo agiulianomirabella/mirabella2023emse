@@ -1,0 +1,189 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jeo97pzc6wys_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qxfgsqbkxnau_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""A9V6go4GzSUOFE6rGW2qiAp8lnE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 27
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_sl0lgbpnmjw7_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, allThreadsRelatedToChannelId, channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, allThreadsRelatedToChannelId, channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uvbe02zc7fi1_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""WK9vJ8V-UU_ZCnZ9ZJt45I86_7s"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 63
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fChq07I3uwMaY5ocZQVV69bHDLA"",
+      ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""-vAJCOpLtCEBaY1p90ZVkRiLKxQ"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr9-HghWsXOnh"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""General Luke Productions damn no replies I got you fam 👍🏼"",
+              ""textOriginal"": ""General Luke Productions damn no replies I got you fam 👍🏼"",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""floodrl"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_-_aJyeepHk2P5Ui3dJzuJigTAklbgBGcwG3sn=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC147TjshMVn7hMLk5whKSUQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC147TjshMVn7hMLk5whKSUQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 21,
+              ""publishedAt"": ""2019-09-25T01:15:28Z"",
+              ""updatedAt"": ""2019-09-25T01:15:28Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""_fU15Fc09dOGYZrg_8fRWbpVSME"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr9-Le3J8nAxn"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""Yep"",
+              ""textOriginal"": ""Yep"",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Brokensh3ll"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9sUnm36ixXWLgXcZ7nCZ6ImaFEO7fd7x8s2iT6Qg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMa4Bk_-w16IS8uo9t_YEJA"",
+              ""authorChannelId"": {
+                ""value"": ""UCMa4Bk_-w16IS8uo9t_YEJA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2019-09-26T14:09:19Z"",
+              ""updatedAt"": ""2019-09-26T14:09:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""cZKvuCtHK-tmG5c9S-wYNAxHSp0"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr9-oLx7HMSs4"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""That&#39;s the truest thing I&#39;ve heard all week."",
+              ""textOriginal"": ""That's the truest thing I've heard all week."",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Ianski22"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/rTBhYkO8pwHzBCzda4QEuWsEc-nVbHqitQuTtZyMae6-MfaNIdMVUxK5RbUrIAioF7eNtFkvllg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCw0IjofMIAE70_PgDASC9Vw"",
+              ""authorChannelId"": {
+                ""value"": ""UCw0IjofMIAE70_PgDASC9Vw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 6,
+              ""publishedAt"": ""2019-10-08T02:59:32Z"",
+              ""updatedAt"": ""2019-10-08T02:59:32Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""8cJHtExnfmovKV8_y2SmxWmpQ64"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr90G2OIfEn1t"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""Yep. To this day the camera guy gets fooled so the viewers get lost in the play."",
+              ""textOriginal"": ""Yep. To this day the camera guy gets fooled so the viewers get lost in the play."",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Mark"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8k72w1K9u0MTKd_8QVOwGGP2HIDeJ1eJZi0u6V0A=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCoJJqzk_uLDjyfrz0q6lZVg"",
+              ""authorChannelId"": {
+                ""value"": ""UCoJJqzk_uLDjyfrz0q6lZVg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2019-10-19T06:26:35Z"",
+              ""updatedAt"": ""2019-10-19T06:26:35Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""xGh2Bfq3u8ErhNqDdiztptVNCUM"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr92zaUKeYRUP"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""Exactly"",
+              ""textOriginal"": ""Exactly"",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Blaze"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/NQHYruzpQgr2uvky2vVieBlX4MowLrcmR2eCKSWi5MlIvdYru3DYRooBhotJlp8gf4zH118gxA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKjf6ofWW1WnBrdFBfEfnXA"",
+              ""authorChannelId"": {
+                ""value"": ""UCKjf6ofWW1WnBrdFBfEfnXA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2019-12-26T01:21:06Z"",
+              ""updatedAt"": ""2019-12-26T01:21:06Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_vbhwzao9155t_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.

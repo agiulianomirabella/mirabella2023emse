@@ -1,0 +1,216 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7ldkod3arms_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1h7qx7315n67q_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1ib0fpk3rqnud_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jefh2a1nmomt_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skk1553u2uld_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""z7zOnPII1fjv4kXsLPMPeiWcPPk"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""crQe2Yl5_Hfvkl7EI5cZMVP5yQo"",
+      ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""9Ffm_X-ppFo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""vk5mgNEGbUzpIA2oADdVKMs3Bh0"",
+          ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""9Ffm_X-ppFo"",
+            ""textDisplay"": ""You know it&#39;s a good fake when the camera goes the wrong way"",
+            ""textOriginal"": ""You know it's a good fake when the camera goes the wrong way"",
+            ""authorDisplayName"": ""General Luke"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/UgSzOMI2CU757-FHZzwPndEOSodRib8x3ZYpGUNUGaGvkFFKTZW62Oj1r7V3ntQT6-u77N4MXQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjEHn5FWjR6kN3iqMgz3nOg"",
+            ""authorChannelId"": {
+              ""value"": ""UCjEHn5FWjR6kN3iqMgz3nOg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 3503,
+            ""publishedAt"": ""2019-09-12T03:40:44Z"",
+            ""updatedAt"": ""2019-09-12T03:40:44Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 11,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""uMEM0QD1z_4dysUyLBMD6m4UcG0"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr9-HghWsXOnh"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""General Luke Productions damn no replies I got you fam 👍🏼"",
+              ""textOriginal"": ""General Luke Productions damn no replies I got you fam 👍🏼"",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""floodrl"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNTV9Cw9j5YejwmCh514RmqAGsUnkNAx8KLbdzS=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC147TjshMVn7hMLk5whKSUQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC147TjshMVn7hMLk5whKSUQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 21,
+              ""publishedAt"": ""2019-09-25T01:15:28Z"",
+              ""updatedAt"": ""2019-09-25T01:15:28Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""vgFkttVsOMRzvX4GTejBEO_4kUc"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr9-Le3J8nAxn"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""Yep"",
+              ""textOriginal"": ""Yep"",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Brokensh3ll"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOspRoBP85-zPXEsvpbJf9kIkEgpq1vfEVrHIuEAg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMa4Bk_-w16IS8uo9t_YEJA"",
+              ""authorChannelId"": {
+                ""value"": ""UCMa4Bk_-w16IS8uo9t_YEJA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2019-09-26T14:09:19Z"",
+              ""updatedAt"": ""2019-09-26T14:09:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""cZKvuCtHK-tmG5c9S-wYNAxHSp0"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr9-oLx7HMSs4"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""That&#39;s the truest thing I&#39;ve heard all week."",
+              ""textOriginal"": ""That's the truest thing I've heard all week."",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Ianski22"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/rTBhYkO8pwHzBCzda4QEuWsEc-nVbHqitQuTtZyMae6-MfaNIdMVUxK5RbUrIAioF7eNtFkvllg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCw0IjofMIAE70_PgDASC9Vw"",
+              ""authorChannelId"": {
+                ""value"": ""UCw0IjofMIAE70_PgDASC9Vw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 6,
+              ""publishedAt"": ""2019-10-08T02:59:32Z"",
+              ""updatedAt"": ""2019-10-08T02:59:32Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""F25xFgIGdwJ4Bl5k1C4vaBwdDVI"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr90G2OIfEn1t"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""Yep. To this day the camera guy gets fooled so the viewers get lost in the play."",
+              ""textOriginal"": ""Yep. To this day the camera guy gets fooled so the viewers get lost in the play."",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Mark"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOyyutXM27XFHdYtCm4cRFOAnYgPwEgfe6ztftfCw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCoJJqzk_uLDjyfrz0q6lZVg"",
+              ""authorChannelId"": {
+                ""value"": ""UCoJJqzk_uLDjyfrz0q6lZVg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2019-10-19T06:26:35Z"",
+              ""updatedAt"": ""2019-10-19T06:26:35Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""z9AWGkm7VyzXN9S5p1u8Ws-eZ1c"",
+            ""id"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg.8zlU-3lUWxr92zaUKeYRUP"",
+            ""snippet"": {
+              ""videoId"": ""9Ffm_X-ppFo"",
+              ""textDisplay"": ""Exactly"",
+              ""textOriginal"": ""Exactly"",
+              ""parentId"": ""Ugx1AZtPUKL7ZAxswUB4AaABAg"",
+              ""authorDisplayName"": ""Blazeqb"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/50lH4GF51ob_0RRuVVvaChlVm0HRgliWwwR58ASJQm_sW9uZSGzv9ihs42N7yRLMXGT-KkSFjvg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKjf6ofWW1WnBrdFBfEfnXA"",
+              ""authorChannelId"": {
+                ""value"": ""UCKjf6ofWW1WnBrdFBfEfnXA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2019-12-26T01:21:06Z"",
+              ""updatedAt"": ""2019-12-26T01:21:06Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

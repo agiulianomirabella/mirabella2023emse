@@ -1,0 +1,290 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrgy6vyetzz8_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k1x9u4tgl25v_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: forDeveloper, relatedToVideoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: forDeveloper, relatedToVideoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_qxnudrt8cf1x_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_s0ui2p9g0fn4_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""D_rikL762kTSRePqSIpQL3zC3rQ"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""pageInfo"": {
+    ""totalResults"": 174,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""4TaA7HsN_oAPtqHKOkj0uERCPCs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""dxbVdyVYGcQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2023-04-15T22:48:15Z"",
+        ""channelId"": ""UCWJ2lWNubArHWmf3FIHbfcQ"",
+        ""title"": ""The Top 100 Plays of the 2022-23 NBA Season 🔥"",
+        ""description"": ""Never miss a moment with the latest news, trending stories and highlights to bring you closer to your favorite players and teams.\nDownload now ➡ https://app.link.nba.com/APP22\n\nSubscribe to the NBA: https://on.nba.com/2JX5gSN"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/dxbVdyVYGcQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/dxbVdyVYGcQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/dxbVdyVYGcQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/dxbVdyVYGcQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/dxbVdyVYGcQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""NBA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2023-04-15T22:48:15Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""pHPDfmxBaSk2AdkZ0Li-JnEVTYE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""NHhTMh0nURA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2023-03-14T18:48:50Z"",
+        ""channelId"": ""UCWJ2lWNubArHWmf3FIHbfcQ"",
+        ""title"": ""Stephen Curry's Top 35 Career Plays"",
+        ""description"": ""In honor of his 35th birthday today, take a look at Steph’s top 35 career plays!\n\nNever miss a moment with the latest news, trending stories and highlights to bring you closer to your favorite players and teams.\nDownload now ➡ https://app.link.nba.com/APP22\n\nSubscribe to the NBA: https://on.nba.com/2JX5gSN"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/NHhTMh0nURA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/NHhTMh0nURA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/NHhTMh0nURA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/NHhTMh0nURA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/NHhTMh0nURA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""NBA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2023-03-14T18:48:50Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""OugWZaBiRwCQHcdIw56_bNNUjiY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""yxVKhvGhAKM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-16T06:16:32Z"",
+        ""channelId"": ""UCqQo7ewe87aYAe7ub5UqXMw"",
+        ""title"": ""The Last Minute of the Last 28 NBA Finals (1995-2022)"",
+        ""description"": ""Check out the final minute of the last 28 NBA Finals from 1995 till 2022!\nBy @GDsHighlights \n\n📌 Follow our Instagram: https://www.instagram.com/houseofhighlights\n📌 Follow our TikTok: https://www.tiktok.com/@houseofhighlights\n📌 Follow our Facebook: https://www.facebook.com/houseofhighlight\n\n#HouseofHighlights #NBA"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""House of Highlights"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-16T06:16:32Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ajztZSbTPFiY58DusADUfrt7YwQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""pS036KpTis0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-01-02T06:19:28Z"",
+        ""channelId"": ""UCWJ2lWNubArHWmf3FIHbfcQ"",
+        ""title"": ""Every NBA Team's Best Play Of The Decade"",
+        ""description"": ""Check out every NBA team's best play of the decade!\n\nSubscribe to the NBA: https://on.nba.com/2JX5gSN \n\nFull Game Highlights Playlist: https://on.nba.com/2rjGMge\n\nFor news, stories, highlights and more, go to our official website at https://nba_webonly.app.link/nbasite\n\nGet NBA LEAGUE PASS: https://nba.app.link/nbaleaguepass5"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/pS036KpTis0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/pS036KpTis0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/pS036KpTis0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/pS036KpTis0/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/pS036KpTis0/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""NBA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-01-02T06:19:28Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""jJEkQ3doMQ1AuNEISEvAwASQvhE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""9gIVGJQ3xWE""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-03-16T14:12:07Z"",
+        ""channelId"": ""UCeFlXzfdGnMWSqd_6vzXmEA"",
+        ""title"": ""NBA \""Most Impossible\"" MOMENTS"",
+        ""description"": ""NBA \""Most Impossible\"" MOMENTS includes players such as Stephen Curry, Kyrie Irving, LeBron James, Ja Morant, Kevin Durant, Zion Williamson and many more NBA Superstars!\n\nSocial Media\nInstragram: kingswishig\nTwitter: iamkingswish\nSnapchat iamkingswish\n\nNBA video clips used in content on this channel are licensed through partnership with NBA Playmakers."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""KingSwish"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-03-16T14:12:07Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u7okdvfx6t6d_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.

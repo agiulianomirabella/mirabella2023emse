@@ -1,0 +1,829 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7lwo4pgw5ly_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hbaxug1it54p_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1hr5dhhmh4e2e_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1hruacnkiazi0_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqvuvLm6nYJTKo"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1583392992,
+      ""default_price"": ""plan_GqvvYiJm16Rqxp"",
+      ""description"": ""cleanly"",
+      ""images"": [
+        ""inconsistently""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""chitter"",
+      ""package_dimensions"": {
+        ""height"": 55.0,
+        ""length"": 42.0,
+        ""weight"": 95.0,
+        ""width"": 16.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32010001"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1652486602,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_Gqvu271tZyj1HY"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583392944,
+      ""default_price"": null,
+      ""description"": ""white-lipped"",
+      ""images"": [
+        ""shellack""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""downstairs"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 97.0,
+        ""weight"": 11.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635459557,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_GqlEEiYohkggIq"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583353262,
+      ""default_price"": null,
+      ""description"": ""labial"",
+      ""images"": [
+        ""smite""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dasymeter"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 27.0,
+        ""weight"": 47.0,
+        ""width"": 80.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31040002"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635477746,
+      ""url"": ""technically""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]"
+test_1hv37imtwf6sy_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqvuvLm6nYJTKo"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1583392992,
+      ""default_price"": ""plan_GqvvYiJm16Rqxp"",
+      ""description"": ""cleanly"",
+      ""images"": [
+        ""inconsistently""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""chitter"",
+      ""package_dimensions"": {
+        ""height"": 55.0,
+        ""length"": 42.0,
+        ""weight"": 95.0,
+        ""width"": 16.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32010001"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1652486602,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_Gqvu271tZyj1HY"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583392944,
+      ""default_price"": null,
+      ""description"": ""white-lipped"",
+      ""images"": [
+        ""shellack""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""downstairs"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 97.0,
+        ""weight"": 11.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635459557,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_GqlEEiYohkggIq"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583353262,
+      ""default_price"": null,
+      ""description"": ""labial"",
+      ""images"": [
+        ""smite""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dasymeter"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 27.0,
+        ""weight"": 47.0,
+        ""width"": 80.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31040002"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635477746,
+      ""url"": ""technically""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]"
+test_1iavfbpybmqn6_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1ibbi0v89aipg_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ibhko96dlxly_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1if0itdf4h4qe_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1iv6kbocl7d4l_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1iyl0psz8t5px_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1iyq31yxlpxrr_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1jei84e4gqj50_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1jiflptmmn0oj_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy4zqkhwzpkh_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdy9g3bw9vzk_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_qdybbk6c00fk_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_qdysxocxqq7n_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_qxfz1nmd7dwz_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_qxw2z9gir5ur_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qy1ppymt0oyp_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_r1ie0q1n3q5s_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhg1bwotno12_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhm5x3xlvigl_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_rhr5o5nsowmo_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""s3u6PABpNDmClYM8F"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001855,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""alveolitis"",
+      ""package_dimensions"": {
+        ""height"": 23.0,
+        ""length"": 56.0,
+        ""weight"": 37.0,
+        ""width"": 10.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10304000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001855,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMtKTUXJVfH4M"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001845,
+      ""default_price"": null,
+      ""description"": ""yelp"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""iridotomy"",
+      ""package_dimensions"": {
+        ""height"": 81.0,
+        ""length"": 97.0,
+        ""weight"": 53.0,
+        ""width"": 3.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": ""strychnine"",
+      ""tax_code"": ""txcd_32050015"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001845,
+      ""url"": ""nexus""
+    },
+    {
+      ""id"": ""EW5q5RsXCvlEMNI"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001843,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""normalization"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10503000"",
+      ""type"": ""service"",
+      ""unit_label"": ""SVmBjm"",
+      ""updated"": 1637001843,
+      ""url"": ""sightreader""
+    },
+    {
+      ""id"": ""prod_KbMt4KbZQUg6as"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001843,
+      ""default_price"": null,
+      ""description"": ""underrun"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""serger"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10102000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001843,
+      ""url"": null
+    },
+    {
+      ""id"": ""Lq3FlrDQdpIK2wdBx"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001842,
+      ""default_price"": null,
+      ""description"": ""launch"",
+      ""images"": [
+        ""literally""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""counterbore"",
+      ""package_dimensions"": {
+        ""height"": 22.0,
+        ""length"": 38.0,
+        ""weight"": 8.0,
+        ""width"": 6.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": ""defender"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001842,
+      ""url"": ""tayra""
+    },
+    {
+      ""id"": ""prod_KbMtviCw4b6lBX"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001841,
+      ""default_price"": null,
+      ""description"": ""acquire"",
+      ""images"": [
+        ""fearsomely""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""strip-jack-naked"",
+      ""package_dimensions"": {
+        ""height"": 16.0,
+        ""length"": 40.0,
+        ""weight"": 4.0,
+        ""width"": 76.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32050007"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001842,
+      ""url"": ""copout""
+    },
+    {
+      ""id"": ""fzUjfP9c6UEYSW"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001839,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""impossibly""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""hypernatremia"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_36010001"",
+      ""type"": ""service"",
+      ""unit_label"": ""0a68BvNntrg"",
+      ""updated"": 1637001839,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMoQKFT9mIsYU"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001541,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""memorialise"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": ""roundabout"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001541,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMoNAht2fVYEj"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001538,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""lam"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001538,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMotfVd6SlA6H"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001533,
+      ""default_price"": null,
+      ""description"": ""pinion"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""smatter"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001533,
+      ""url"": ""terribly""
+    }
+  ],
+  ""has_more"": true,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2"
+test_s4scw09jbxo4_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_s4v5ge3dh73m_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4xck5qohb91_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_skq30eujo4s0_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_sksa732ldpwh_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_sksc2fyz475k_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_skv5eq39q929_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_skydxz7ip8hi_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_sl652bur00mr_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sohuenv6hq2f_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4a093cvswv8_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4nvu1wotk4z_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8cxv072hv78_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqvuvLm6nYJTKo"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1583392992,
+      ""default_price"": ""plan_GqvvYiJm16Rqxp"",
+      ""description"": ""cleanly"",
+      ""images"": [
+        ""inconsistently""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""chitter"",
+      ""package_dimensions"": {
+        ""height"": 55.0,
+        ""length"": 42.0,
+        ""weight"": 95.0,
+        ""width"": 16.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32010001"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1652486602,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_Gqvu271tZyj1HY"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583392944,
+      ""default_price"": null,
+      ""description"": ""white-lipped"",
+      ""images"": [
+        ""shellack""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""downstairs"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 97.0,
+        ""weight"": 11.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635459557,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_GqlEEiYohkggIq"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583353262,
+      ""default_price"": null,
+      ""description"": ""labial"",
+      ""images"": [
+        ""smite""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dasymeter"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 27.0,
+        ""weight"": 47.0,
+        ""width"": 80.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31040002"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635477746,
+      ""url"": ""technically""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]"
+test_tnz2vk0cno0x_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_to1tk34l4th3_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_toogtvqa03fq_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_tooidwlghgl3_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_ts4qp87n95cy_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_u7ol8iq6m0c4_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7u3m154cjle_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u85pf3ki2zow_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubj4q76t79kh_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_urhat7wz9v1i_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_uv95bvdsukiu_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_uvep9nr3es6u_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none

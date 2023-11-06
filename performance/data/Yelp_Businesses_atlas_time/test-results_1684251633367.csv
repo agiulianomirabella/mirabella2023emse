@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iykjvwkwhkdi_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,true,none
+test_1jeir5671n5nm_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -105.133, ""latitude"": 42.67884}}}",application/json,false,"This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one."
+test_r1ix42t024ol_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_rhln7j554d9v_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_ts2frb5emerb_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -104.19652, ""latitude"": 43.630985}}}",application/json,true,none

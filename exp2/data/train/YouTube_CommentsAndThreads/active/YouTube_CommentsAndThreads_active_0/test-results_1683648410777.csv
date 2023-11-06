@@ -1,0 +1,75 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib389kh7bsxl_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1ib8rf0riz5mb_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1ji27oh6vcd43_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_s0xb0kepmulf_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""yUpK7Ei9_t-cI7eQI4oxEwhhQYE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 48
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vey3f1thd2zo_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.

@@ -1,0 +1,3145 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7fu0qt0fq06_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1h7gd6xtrv9sz_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1h7qyd4eovt5u_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1h7wzrvvsbb6s_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""cbjCk1L3vhXJBWrnv3nF29M-Xj0"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 164,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aY9X9zX_CDZG9fqzgiU8rQA_waw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Pg1eebAdhr4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-19T20:08:02Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista al Gran Wyoming | Parte 2 | #LaResistencia 19.12.2019"",
+        ""description"": ""La Resistencia 3x58 | Segunda parte de la entrevista al cómico José Miguel Monzón, presentador de El intermedio.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-19T20:08:02Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""NyQSnB0uQp3xpMdt70PeXO3wW1E"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""_DalzenKr4k""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-12-22T21:18:07Z"",
+        ""channelId"": ""UC2MXy4PrVCDt9nduHrdPtuQ"",
+        ""title"": ""LATE MOTIV - Berto Romero y David Broncano... juntos | #LateMotivNavidad"",
+        ""description"": ""Esto es un regalo navideño, Berto Romero y David Broncano compartiendo sección. ¡Qué lo disfrutéis!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Late Motiv en Movistar+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-12-22T21:18:07Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""qW1SwZZRoxaxr4K1ClaKaLEW0Dg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""3n4GNPbqYpY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-02-01T21:05:19Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Carlos Sobera | #LaResistencia 01.02.2021"",
+        ""description"": ""La Resistencia 4x71 | Carlos Sobera presenta la obra de teatro que protagoniza, ‘Asesinos todos’.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-02-01T21:05:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""YcgU48H9ppfFstNo8X7JZ1Bjy-M"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""FclCrLq6XIQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-02-07T20:32:17Z"",
+        ""channelId"": ""UC2MXy4PrVCDt9nduHrdPtuQ"",
+        ""title"": ""LATE MOTIV -  El Gran Wyoming. “El relator” | #LateMotiv500"",
+        ""description"": ""Dice que se entera de lo que opina cuando lo dice en voz alta, que a los políticos se les exige menos que a cualquier ciudadano, y que el público es sagrado. Habla y habla, y habla muy bien, pero lo que le apasiona es rocanrolear, y eso también lo ha hecho con nosotros.\nHoy os dedicamos #LateMotiv500 a vosotros, los que estáis al otro lado.\n\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: http://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Late Motiv en Movistar+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-02-07T20:32:17Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1hrj8f7zdn1o7_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1hv2of633dano_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""NPPt6gEedG96AqtGmVgUDMManr4"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 188,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""fDiw_VY5ZFrWKJk9gPr3h-DkQUY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""B0pYDrb_nzI""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-29T16:15:41Z"",
+        ""channelId"": ""UCWJ2lWNubArHWmf3FIHbfcQ"",
+        ""title"": ""NBA's Top 100 Crossovers Of The Decade"",
+        ""description"": ""Check out the top 100 crossovers and handle plays of the decade!\n\nSubscribe to the NBA: https://on.nba.com/2JX5gSN\n\nFull Game Highlights Playlist: https://on.nba.com/2rjGMge\n\nFor news, stories, highlights and more, go to our official website at https://nba_webonly.app.link/nbasite\n\nGet NBA LEAGUE PASS: https://nba.app.link/nbaleaguepass5"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/B0pYDrb_nzI/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/B0pYDrb_nzI/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/B0pYDrb_nzI/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/B0pYDrb_nzI/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/B0pYDrb_nzI/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""NBA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-29T16:15:41Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""lW4s82B-8jr4ckUFaz6RsNhDZ-E"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""cT5nZ3-5Vmo""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-31T21:22:23Z"",
+        ""channelId"": ""UCJdl3Paao2f3ha5JXMYUCIA"",
+        ""title"": ""Top 100 Plays of the 2010s!"",
+        ""description"": ""Check out the top 100 plays of the 2010s!\n\nThe NFL Throwback is your home for all things NFL history.\n\nCheck out our other channels:\nNFL Films - YouTube.com/NFLFilms\nNFL Network- YouTube.com/NFLNetwork\nNFL Rush - YouTube.com/NFLRush\nNFL - YouTube.com/NFL\n\n#NFL #NFLThrowback #NFLHistory #Football #AmericanFootball #NFLVault"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/cT5nZ3-5Vmo/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/cT5nZ3-5Vmo/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/cT5nZ3-5Vmo/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/cT5nZ3-5Vmo/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/cT5nZ3-5Vmo/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""NFL Throwback"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-31T21:22:23Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ZPQZ5h3Yk5bMxYSQ9QW6yHDxjFw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""w7B2yJsN39c""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-07-02T00:40:51Z"",
+        ""channelId"": ""UCVepIJedg6BMQeSgjPY4e6A"",
+        ""title"": ""Times Michael Jordan HUMILIATED His Opponents.."",
+        ""description"": ""These Are The Times Michael Jordan HUMILIATED His Opponents..\n\nRebound Social Media:\nTwitter: https://twitter.com/ReboundCentral\nInstagram: https://www.instagram.com/Rebound_Central\n\nInstrumentals By:\nLCS: https://www.youtube.com/channel/UCc-LuGddmv1ETE5X-UiN6iQ\nYondo Beats: https://www.youtube.com/user/jethalebeats\nEpidemic Sounds: https://www.epidemicsound.com/\nKevin MacLeod: https://incompetech.com/music/"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/w7B2yJsN39c/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/w7B2yJsN39c/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/w7B2yJsN39c/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/w7B2yJsN39c/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/w7B2yJsN39c/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""REBOUND"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-07-02T00:40:51Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""W60QBGKkFwG6c4eJmw-5lIFdvC0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""yxVKhvGhAKM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-16T06:16:32Z"",
+        ""channelId"": ""UCqQo7ewe87aYAe7ub5UqXMw"",
+        ""title"": ""The Last Minute of the Last 28 NBA Finals (1995-2022)"",
+        ""description"": ""Check out the final minute of the last 28 NBA Finals from 1995 till 2022!\nBy @GD's Highlights \n\n📌 Follow our Instagram: https://www.instagram.com/houseofhighlights\n📌 Follow our TikTok: https://www.tiktok.com/@houseofhighlights\n📌 Follow our Facebook: https://www.facebook.com/houseofhighlight\n\n#HouseofHighlights #NBA"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/yxVKhvGhAKM/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""House of Highlights"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-16T06:16:32Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""jJEkQ3doMQ1AuNEISEvAwASQvhE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""9gIVGJQ3xWE""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-03-16T14:12:07Z"",
+        ""channelId"": ""UCeFlXzfdGnMWSqd_6vzXmEA"",
+        ""title"": ""NBA \""Most Impossible\"" MOMENTS"",
+        ""description"": ""NBA \""Most Impossible\"" MOMENTS includes players such as Stephen Curry, Kyrie Irving, LeBron James, Ja Morant, Kevin Durant, Zion Williamson and many more NBA Superstars!\n\nSocial Media\nInstragram: kingswishig\nTwitter: iamkingswish\nSnapchat iamkingswish\n\nNBA video clips used in content on this channel are licensed through partnership with NBA Playmakers."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/9gIVGJQ3xWE/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""KingSwish"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-03-16T14:12:07Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1hv2q25hy057o_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""Go3vcrnDIDiI0kCq5c8ryDreDZ8"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 165,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aY9X9zX_CDZG9fqzgiU8rQA_waw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Pg1eebAdhr4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-19T20:08:02Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista al Gran Wyoming | Parte 2 | #LaResistencia 19.12.2019"",
+        ""description"": ""La Resistencia 3x58 | Segunda parte de la entrevista al cómico José Miguel Monzón, presentador de El intermedio.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-19T20:08:02Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""NyQSnB0uQp3xpMdt70PeXO3wW1E"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""_DalzenKr4k""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-12-22T21:18:07Z"",
+        ""channelId"": ""UC2MXy4PrVCDt9nduHrdPtuQ"",
+        ""title"": ""LATE MOTIV - Berto Romero y David Broncano... juntos | #LateMotivNavidad"",
+        ""description"": ""Esto es un regalo navideño, Berto Romero y David Broncano compartiendo sección. ¡Qué lo disfrutéis!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Late Motiv en Movistar+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-12-22T21:18:07Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""qW1SwZZRoxaxr4K1ClaKaLEW0Dg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""3n4GNPbqYpY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-02-01T21:05:19Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Carlos Sobera | #LaResistencia 01.02.2021"",
+        ""description"": ""La Resistencia 4x71 | Carlos Sobera presenta la obra de teatro que protagoniza, ‘Asesinos todos’.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-02-01T21:05:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""YcgU48H9ppfFstNo8X7JZ1Bjy-M"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""FclCrLq6XIQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-02-07T20:32:17Z"",
+        ""channelId"": ""UC2MXy4PrVCDt9nduHrdPtuQ"",
+        ""title"": ""LATE MOTIV -  El Gran Wyoming. “El relator” | #LateMotiv500"",
+        ""description"": ""Dice que se entera de lo que opina cuando lo dice en voz alta, que a los políticos se les exige menos que a cualquier ciudadano, y que el público es sagrado. Habla y habla, y habla muy bien, pero lo que le apasiona es rocanrolear, y eso también lo ha hecho con nosotros.\nHoy os dedicamos #LateMotiv500 a vosotros, los que estáis al otro lado.\n\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: http://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Late Motiv en Movistar+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-02-07T20:32:17Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1hv38awjfefjo_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""lUv23pxyBlx9FBfviJq6H7yYCZY"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""PT"",
+  ""pageInfo"": {
+    ""totalResults"": 156,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""b7dBOdCI0YoENmSFQ8QvMZ7aiNg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""fbqHK8i-HdA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-10-29T09:00:14Z"",
+        ""channelId"": ""UCTtEhdlWz5erVK734-Gn0VQ"",
+        ""title"": ""Markus Eder's The Ultimate Run - The Most Insane Ski Run Ever Imagined"",
+        ""description"": ""Watch the exclusive behind the scenes on Red Bull TV 👉 https://www.redbull.com/int-en/episodes/the-ultimate-run-s1-e2\n\n“Sometimes my mind goes kind of crazy about skiing and I ask myself, what if...?” - Markus Eder\n\nWhat if you could link every powder turn, every rail, every cliff drop, every comp run and every kicker nailed into one ultimate run? Well, Markus Eder did just that in ‘The Ultimate Run’!\n\nThis is Markus’ Opus Magnum, a medley of face shots, massive tricks and even bigger drops, which was documented by Innsbruck based production company Legs of Steel over the past two years.\n\nMarkus has been visualizing the ultimate run since 2015. It may look like a simple undertaking in the final editbut for arguably the most versatile skier on the planet, it meant taking his skill levels in every form and style of contemporary freeskiing to the next level.\n\n“All aspects of freeskiing have fascinated me since the beginning”, states Markus.\n\nThe Ultimate Run kicks off on the lofty extremities of Zermatt as Markus drops into a sheer expanse of powder, before shredding his way through glacial blocks the size of buses, jumping off ice cliffs and then slips into the belly of the glacier, only to reappear above his home resort of Klausberg. Carving fields of fresh powder he joins a session with his buddies at his local snowpark, before boosting back off into the backcountry for some more face shots. The firecrackers keep on popping as he enters the snow covered architecture of Taufer castle and a mining museum. As the sun sets over the mountains Markus slides out onto the valley floor, six years of dream skiing condensed into ten minutes of pure joy and adrenaline. \n\nThis edit took over 90 days to film, entirely in the Alps in Markus’ home region. “The Ultimate Run is Markus’ dream project,” says Tobi Reindl from Legs of Steel, “and it also became one of the biggest and most thrilling projects we have done so far.”\n\nWith the first snow falling in the Alps, ‘The Ultimate Run’ is a must watch for all winter sports enthusiasts. It will reignite the passion for winter in even the most laid back snow fans for the coming season.\n\nClick play in the video above and find the answer to the question, “what if?”...\n\nFind out more about The Ultimate Run: www.redbull.com/ultimaterun\n___\nExperience the world of Red Bull Snow like you have never seen it before. With the best snow action sports clips on YouTube and original series,  from skiing to snowboarding, prepare for your \""stoke factor\"" to be at an all time high.\n\nSubscribe to Red Bull Snow on Youtube: https://win.gs/SubToRedBullSnow\n\nGet the FREE Red Bull TV apps for all your devices:  https://go.onelink.me/351027264/35a30660\n\nRed Bull Snow on Facebook: https://www.facebook.com/RedBullSnow/\n\nRed Bull Snow on Instagram: https://www.instagram.com/redbullsnow"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Red Bull Snow"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-10-29T09:00:14Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""EbofoN79o2ydz73dQNrVdXfehSs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2Gw4K7oqK08""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-11T15:35:24Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro: Top 10 Animal Encounters"",
+        ""description"": ""Hey all you cool cats and kittens, we're taking a look at our Top 10 animal encounters. Did your favorite make the cut?\n\nShot 100% on GoPro: https://bit.ly/3fDtFuN\nGet stoked and subscribe: http://goo.gl/HgVXpQ\n\nFeatured videos:\n10. Great White Shark Encounter - https://youtu.be/LfckFEO_72I\n9. Owl Dance Off - https://youtu.be/SILvPVVAhBo\n8. Squirrel Fail - https://youtu.be/uK7vfMdQNxc\n7. Snow Leopard Meets MAX - https://youtu.be/3SMSUBgZPjQ\n6. Lion Mouth Cam - https://youtu.be/8_T5oSUP-Kc\n5. Surfing with Dolphins - https://youtu.be/P_UpdaGv2bU\n4. Orca vs Paddleboard - https://youtu.be/Vaq4pHxM5P4\n3. Gorilla Tickling at the GRACE Center - https://youtu.be/uFDPLyAWpVg\n2. Enchanting Scuba Dive with 1 Million Fish - https://youtu.be/poF-_lqwG3E\n1. Lion Hug - https://youtu.be/ZRd3lrukxu8\n\n00:00 Intro\n00:16 #10 - Great White Shark Encounter\n00:55 #9 - Owl Dance Off\n01:11 #8 - Squirrel Fail\n01:31 #7 - Snow Leopard Meets MAX\n01:57 #6 - Lion Mouth Cam\n02:27 #5 - Surfing with Dolphins\n02:53 #4 - Orca vs. Paddle Board\n03:15 #3 - Gorilla Tickling\n03:48 #2 - Scuba Dive with 1 Million Fish\n04:15 #1 - Lion Hug\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n#GoPro"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-11T15:35:24Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aVmly4SeIZoxLP2Z3CtX9tmSTgY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""vr0qNXmkUJ8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-09-14T19:44:35Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO6: This Is the Moment in 4K"",
+        ""description"": ""Live the moment. Capture the moment. Share the moment. HERO6 is here, and the moment is now. #GoPro #GoProHERO6\n\nShot 100% on GoPro – https://goo.gl/Umakhk\n\nFeatured Characters:\nSki/Snowboard - Chris Benchetler, Travis Rice, Torstein Horgmo\n\nKayak - Aniol & Gerd Serrasolses\n\nSurf - Felicity Palmateer, Tatiana Weston-Webb, Kai Lenny, Anthony Walsh, Mikala Jones, Marlon Gerber\n\nFreedive - Ashleigh Baird, Camila Jaber, Ocean Ramsey\n\nMoto - Ronnie Renner\n\nCongo - Baby Lulingu\n\nBali - Gloria Atanmo, Chris Rogers\n\nAustralia - Brinkley Davies & Little Bunji\n\nUSA - Rory Kramer\n\n\nGet more from each moment with breakout stories coming in October!\n\nSubscribe now for updates: http://goo.gl/HgVXpQ\n\nMusic\nODESZA\n\""A Moment Apart\""\nLink to buy: https://odesza.lnk.to/ama-gopro \n\n\nSpecial Thanks:\nGorilla Rehabilitation and Conservation (GRACE) Center - http://gracegorillas.org\nSpaceport America - https://spaceportamerica.com\nIndies Trader Marine Adventures - https://www.indiestrader.com/\nAndy Casagrande\nJohnny Lo\nSam Evans\nGoran Kugal\nSo Ueyama\nAbysse\nDiveR\nAqualung\nCressi\nFilm In Iceland http://www.filminiceland.com\nESRA - The Experimental Sounding Rocket Association: http://www.soundingrocket.org\n\nComment below on your favorite part!\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n\nWARNING: Do not attempt. Professional driver, closed course."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-09-14T19:44:35Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cZ0egEXFzBOkpYIbkyd-BYAGgo0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wTcNtgA6gHs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-09-29T09:57:27Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO4: The Adventure of Life in 4K"",
+        ""description"": ""All around the world GoPro users are capturing incredible experiences, from the heart-stopping to the heartfelt. Into the caldron of an active volcano, the neon streets of Japan, a refuge for wild mustangs, scaling an iceberg, the world’s biggest dance party, or a whale rescue mission, GoPros have documented every moment. See how GoPro’s new line of our most advanced cameras ever allow you to beautifully and authentically capture and share the experiences that bring purpose, adventure, and joy to your life.\n \nShot 100% on the new GoPro HERO4 camera from http://GoPro.com.\n#GoPro  \n\nThe HERO4 features ultra high resolution quality of 4K at 30 frames per second + high frames rates at 1080p120. Incredible low light capabilities, including our new nightlapse setting. 2X the high fidelity sound. Faster processing. Protune settings that unlock manual control of many of your GoPro’s features, and so much more. Learn more and be inspired by the most advanced GoPro cameras yet: http://GoPro.com\n\nIt’s your life. BE A HERO. \n\nMUSIC\n\""Run Boy Run\"" performed by Woodkid\nCourtesy of Interscope Records under license from Universal Music Enterprises \n\nFEATURED CHARACTERS \n\nTOMORROWLAND (Boom, Belgium)\nErin Edenholm\nJoanna Piotrowska\nSteve Aoki\nKrewella - Jahan Yousaf and Jasmine Yousaf\nDimitri Vegas\nLike Mike\n\nLAVA LAKE (Ambrym Island, Vanuatu)\nGeoff Mackley\nBrad Ambrose\n\nICEBERG CLIMB (Ilulissat, Greenland)\nKlemen Premrl\nAljaz Anderle\nThierry Dubois\n\nWILD MUSTANGS (Wells, Nevada)\nClay Nannini\n\nJAPAN STREETS (Tokyo, Japan)\nAkira Nakai\nShinichi Moroboshi\nNanami Tsukamoto\n\nORCA RESCUE (Whangarei, New Zealand)\nDr. Ingrid Visser\nTerry Hardie\nDian and her two baby orca\n\n\nSPECIAL THANKS\nTomorrowland (http://www.tomorrowland.com)\nMichael Dujardin\nVanuatu Heli (http://www.vanuatuhelicopters.com)\nAndy Martin\nBlack Diamond (http://www.blackdiamondequipment.com)\nMadeline Pickens (http://mustangmonument.com) (http://savingamericasmustangs.org)\nOrca Research Trust (http://orcaresearch.org)\nAndy Casagrande (http://www.abc4explore.com/)\nSteve Hathaway\nLily Kozman"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-09-29T09:57:27Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1iynsffj5ecf7_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""BCoy_KNOvRntk64iSDBIVMZthR8"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""FR"",
+  ""pageInfo"": {
+    ""totalResults"": 156,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""b7dBOdCI0YoENmSFQ8QvMZ7aiNg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""fbqHK8i-HdA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-10-29T09:00:14Z"",
+        ""channelId"": ""UCTtEhdlWz5erVK734-Gn0VQ"",
+        ""title"": ""Markus Eder's The Ultimate Run - The Most Insane Ski Run Ever Imagined"",
+        ""description"": ""Watch the exclusive behind the scenes on Red Bull TV 👉 https://www.redbull.com/int-en/episodes/the-ultimate-run-s1-e2\n\n“Sometimes my mind goes kind of crazy about skiing and I ask myself, what if...?” - Markus Eder\n\nWhat if you could link every powder turn, every rail, every cliff drop, every comp run and every kicker nailed into one ultimate run? Well, Markus Eder did just that in ‘The Ultimate Run’!\n\nThis is Markus’ Opus Magnum, a medley of face shots, massive tricks and even bigger drops, which was documented by Innsbruck based production company Legs of Steel over the past two years.\n\nMarkus has been visualizing the ultimate run since 2015. It may look like a simple undertaking in the final editbut for arguably the most versatile skier on the planet, it meant taking his skill levels in every form and style of contemporary freeskiing to the next level.\n\n“All aspects of freeskiing have fascinated me since the beginning”, states Markus.\n\nThe Ultimate Run kicks off on the lofty extremities of Zermatt as Markus drops into a sheer expanse of powder, before shredding his way through glacial blocks the size of buses, jumping off ice cliffs and then slips into the belly of the glacier, only to reappear above his home resort of Klausberg. Carving fields of fresh powder he joins a session with his buddies at his local snowpark, before boosting back off into the backcountry for some more face shots. The firecrackers keep on popping as he enters the snow covered architecture of Taufer castle and a mining museum. As the sun sets over the mountains Markus slides out onto the valley floor, six years of dream skiing condensed into ten minutes of pure joy and adrenaline. \n\nThis edit took over 90 days to film, entirely in the Alps in Markus’ home region. “The Ultimate Run is Markus’ dream project,” says Tobi Reindl from Legs of Steel, “and it also became one of the biggest and most thrilling projects we have done so far.”\n\nWith the first snow falling in the Alps, ‘The Ultimate Run’ is a must watch for all winter sports enthusiasts. It will reignite the passion for winter in even the most laid back snow fans for the coming season.\n\nClick play in the video above and find the answer to the question, “what if?”...\n\nFind out more about The Ultimate Run: www.redbull.com/ultimaterun\n___\nExperience the world of Red Bull Snow like you have never seen it before. With the best snow action sports clips on YouTube and original series,  from skiing to snowboarding, prepare for your \""stoke factor\"" to be at an all time high.\n\nSubscribe to Red Bull Snow on Youtube: https://win.gs/SubToRedBullSnow\n\nGet the FREE Red Bull TV apps for all your devices:  https://go.onelink.me/351027264/35a30660\n\nRed Bull Snow on Facebook: https://www.facebook.com/RedBullSnow/\n\nRed Bull Snow on Instagram: https://www.instagram.com/redbullsnow"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Red Bull Snow"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-10-29T09:00:14Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""EbofoN79o2ydz73dQNrVdXfehSs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2Gw4K7oqK08""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-11T15:35:24Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro: Top 10 Animal Encounters"",
+        ""description"": ""Hey all you cool cats and kittens, we're taking a look at our Top 10 animal encounters. Did your favorite make the cut?\n\nShot 100% on GoPro: https://bit.ly/3fDtFuN\nGet stoked and subscribe: http://goo.gl/HgVXpQ\n\nFeatured videos:\n10. Great White Shark Encounter - https://youtu.be/LfckFEO_72I\n9. Owl Dance Off - https://youtu.be/SILvPVVAhBo\n8. Squirrel Fail - https://youtu.be/uK7vfMdQNxc\n7. Snow Leopard Meets MAX - https://youtu.be/3SMSUBgZPjQ\n6. Lion Mouth Cam - https://youtu.be/8_T5oSUP-Kc\n5. Surfing with Dolphins - https://youtu.be/P_UpdaGv2bU\n4. Orca vs Paddleboard - https://youtu.be/Vaq4pHxM5P4\n3. Gorilla Tickling at the GRACE Center - https://youtu.be/uFDPLyAWpVg\n2. Enchanting Scuba Dive with 1 Million Fish - https://youtu.be/poF-_lqwG3E\n1. Lion Hug - https://youtu.be/ZRd3lrukxu8\n\n00:00 Intro\n00:16 #10 - Great White Shark Encounter\n00:55 #9 - Owl Dance Off\n01:11 #8 - Squirrel Fail\n01:31 #7 - Snow Leopard Meets MAX\n01:57 #6 - Lion Mouth Cam\n02:27 #5 - Surfing with Dolphins\n02:53 #4 - Orca vs. Paddle Board\n03:15 #3 - Gorilla Tickling\n03:48 #2 - Scuba Dive with 1 Million Fish\n04:15 #1 - Lion Hug\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n#GoPro"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-11T15:35:24Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aVmly4SeIZoxLP2Z3CtX9tmSTgY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""vr0qNXmkUJ8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-09-14T19:44:35Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO6: This Is the Moment in 4K"",
+        ""description"": ""Live the moment. Capture the moment. Share the moment. HERO6 is here, and the moment is now. #GoPro #GoProHERO6\n\nShot 100% on GoPro – https://goo.gl/Umakhk\n\nFeatured Characters:\nSki/Snowboard - Chris Benchetler, Travis Rice, Torstein Horgmo\n\nKayak - Aniol & Gerd Serrasolses\n\nSurf - Felicity Palmateer, Tatiana Weston-Webb, Kai Lenny, Anthony Walsh, Mikala Jones, Marlon Gerber\n\nFreedive - Ashleigh Baird, Camila Jaber, Ocean Ramsey\n\nMoto - Ronnie Renner\n\nCongo - Baby Lulingu\n\nBali - Gloria Atanmo, Chris Rogers\n\nAustralia - Brinkley Davies & Little Bunji\n\nUSA - Rory Kramer\n\n\nGet more from each moment with breakout stories coming in October!\n\nSubscribe now for updates: http://goo.gl/HgVXpQ\n\nMusic\nODESZA\n\""A Moment Apart\""\nLink to buy: https://odesza.lnk.to/ama-gopro \n\n\nSpecial Thanks:\nGorilla Rehabilitation and Conservation (GRACE) Center - http://gracegorillas.org\nSpaceport America - https://spaceportamerica.com\nIndies Trader Marine Adventures - https://www.indiestrader.com/\nAndy Casagrande\nJohnny Lo\nSam Evans\nGoran Kugal\nSo Ueyama\nAbysse\nDiveR\nAqualung\nCressi\nFilm In Iceland http://www.filminiceland.com\nESRA - The Experimental Sounding Rocket Association: http://www.soundingrocket.org\n\nComment below on your favorite part!\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n\nWARNING: Do not attempt. Professional driver, closed course."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-09-14T19:44:35Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cZ0egEXFzBOkpYIbkyd-BYAGgo0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wTcNtgA6gHs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-09-29T09:57:27Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO4: The Adventure of Life in 4K"",
+        ""description"": ""All around the world GoPro users are capturing incredible experiences, from the heart-stopping to the heartfelt. Into the caldron of an active volcano, the neon streets of Japan, a refuge for wild mustangs, scaling an iceberg, the world’s biggest dance party, or a whale rescue mission, GoPros have documented every moment. See how GoPro’s new line of our most advanced cameras ever allow you to beautifully and authentically capture and share the experiences that bring purpose, adventure, and joy to your life.\n \nShot 100% on the new GoPro HERO4 camera from http://GoPro.com.\n#GoPro  \n\nThe HERO4 features ultra high resolution quality of 4K at 30 frames per second + high frames rates at 1080p120. Incredible low light capabilities, including our new nightlapse setting. 2X the high fidelity sound. Faster processing. Protune settings that unlock manual control of many of your GoPro’s features, and so much more. Learn more and be inspired by the most advanced GoPro cameras yet: http://GoPro.com\n\nIt’s your life. BE A HERO. \n\nMUSIC\n\""Run Boy Run\"" performed by Woodkid\nCourtesy of Interscope Records under license from Universal Music Enterprises \n\nFEATURED CHARACTERS \n\nTOMORROWLAND (Boom, Belgium)\nErin Edenholm\nJoanna Piotrowska\nSteve Aoki\nKrewella - Jahan Yousaf and Jasmine Yousaf\nDimitri Vegas\nLike Mike\n\nLAVA LAKE (Ambrym Island, Vanuatu)\nGeoff Mackley\nBrad Ambrose\n\nICEBERG CLIMB (Ilulissat, Greenland)\nKlemen Premrl\nAljaz Anderle\nThierry Dubois\n\nWILD MUSTANGS (Wells, Nevada)\nClay Nannini\n\nJAPAN STREETS (Tokyo, Japan)\nAkira Nakai\nShinichi Moroboshi\nNanami Tsukamoto\n\nORCA RESCUE (Whangarei, New Zealand)\nDr. Ingrid Visser\nTerry Hardie\nDian and her two baby orca\n\n\nSPECIAL THANKS\nTomorrowland (http://www.tomorrowland.com)\nMichael Dujardin\nVanuatu Heli (http://www.vanuatuhelicopters.com)\nAndy Martin\nBlack Diamond (http://www.blackdiamondequipment.com)\nMadeline Pickens (http://mustangmonument.com) (http://savingamericasmustangs.org)\nOrca Research Trust (http://orcaresearch.org)\nAndy Casagrande (http://www.abc4explore.com/)\nSteve Hathaway\nLily Kozman"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-09-29T09:57:27Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1iynto00d9vmr_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1jenro9r6gj1f_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""hu5pDMuijpRFB6ygl5ER0FFcLJU"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""PT"",
+  ""pageInfo"": {
+    ""totalResults"": 1221,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""t10Khm2vYAcy1-dtGy3pLkfsblk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ivcH_n8pQS8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-09-24T17:18:48Z"",
+        ""channelId"": ""UCklUxCSyT8rU_GmM_65klGg"",
+        ""title"": ""&quot;Uchalas&quot; Canción de Halloween y Día de Muertos"",
+        ""description"": ""Canción para el día de Halloween o día de muertos. Letra y voz de Sofia Carolina Camacho. Sofia es una niña de 7 años de ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ivcH_n8pQS8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ivcH_n8pQS8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ivcH_n8pQS8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Alf Camacho"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-09-24T17:18:48Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""_2qrIk5mCHorV39liYTfvtbETE4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""rx-X2BYs03o""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2008-12-22T22:23:53Z"",
+        ""channelId"": ""UCpNnv_kL4Jk8YG_VflnZpmg"",
+        ""title"": ""Terremoto en Ciudad de México - 1985"",
+        ""description"": ""Esta producción describe los problemas sanitarios y las actividades de socorro realizadas a raíz de los terremotos del 19 y 20 de ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/rx-X2BYs03o/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/rx-X2BYs03o/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/rx-X2BYs03o/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""PAHO TV"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2008-12-22T22:23:53Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""8CXuXRRaVwdxMwIFYB8v0oCmMUA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""rJD5bTcYBpQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2011-08-19T17:50:28Z"",
+        ""channelId"": ""UC7JXRIRbLKuf3hsFWhvtHEQ"",
+        ""title"": ""Mi Lupita - Pito Perez HD"",
+        ""description"": ""Este video con un humor romantico-gracioso \""mi lupita\"" tuvo gran éxito en las listas mexicanas, en MTV y Telehit. de la banda ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/rJD5bTcYBpQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/rJD5bTcYBpQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/rJD5bTcYBpQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""nervbeatle jr"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2011-08-19T17:50:28Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""fEXreQXQLy86itmBioJWCDpmSP8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""IBL3-zCoZ3s""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2009-02-16T17:14:24Z"",
+        ""channelId"": ""UCPveIekXWYSMDMX4mOvHacA"",
+        ""title"": ""Ritmo Peligroso / Marielito"",
+        ""description"": ""Marielito - Videoclip sacado de un documental realizado-dirigido por Pablo Jato. Entrevistas y videos musicales exclusivos de ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/IBL3-zCoZ3s/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/IBL3-zCoZ3s/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/IBL3-zCoZ3s/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Pablo Jato"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2009-02-16T17:14:24Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""wNErk-O4fts8CF1oXqZk657e5mI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""IvPwWpxvSxw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2012-10-13T02:26:04Z"",
+        ""channelId"": ""UC9s6po3gCy2dPx8uJWoY1Sw"",
+        ""title"": ""Gabriel Najera - 2012 Si Yo Puedo Tu Puedes"",
+        ""description"": ""Gabriel Najera es un conferencista profesional e internacional de alta inspiración y motivación con un gran sentido del humor ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/IvPwWpxvSxw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/IvPwWpxvSxw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/IvPwWpxvSxw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Gabriel Najera"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2012-10-13T02:26:04Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1jeo8qrx58box_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1jeoaawp0419h_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1ji1o6xrtl834_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1jicrzyix9vsm_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1jy7rwdgp90s3_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1k2294ef5c0ts_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""UBAOiXjvY0CZ7Ub9tJDO9bUtsU8"",
+  ""regionCode"": ""US"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qdt8lkzynqcw_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""i1DFcC1n_h4ZdDGIrhZWKsWvcRs"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 169,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""2iHX-nWheG-xjaiF84XUxQH9gPs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""AmR5LoyZ4jw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2015-12-02T07:55:28Z"",
+        ""channelId"": ""UCf63jfFN-KLVukMja7hv6CQ"",
+        ""title"": ""Star Wars duel on Fencing World Championships. BEST SOUND"",
+        ""description"": ""Watch our fastest lightsaber duel ever: https://youtu.be/w8ixfe5qXv4\n\nWanna handle a lightsaber like a true jedi (or sith)? Email us at school@saberfighter.com for the best online lightsaber training experience!\n\nVisit our TikTok channel for free tutorials: @School of Saberfighting \n\nJedi Knight fights with Sith Lord on \nFencing Senior World Championships Moscow 2015\n\nSchool of Saberfighting is one of the first teams in the world that specialises in public performance of duels inspired by Star Wars, and also provides training for those who wish to learn this form of stage fencing. \nMany of our trainees have won the highest stage fencing athletic titles in various Russian championships, and acted in fencing combat scenes in theatre and films. They also collaborated with a Combat Choreographer from Hollywood, and performed during the World Fencing Championship 2015.\n\nhttps://www.facebook.com/saberfighting\nsemenikhindv@mail.ru"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""School of Saberfighting"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2015-12-02T07:55:28Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""MFb3WgbgsCAqWWtx1WoodAAHLQc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ubyo5eZz_Jc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-06-28T17:31:05Z"",
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""title"": ""Why Samuel L. Jackson has a purple light sabre | The Graham Norton Show - BBC"",
+        ""description"": ""Subscribe and 🔔 to the BBC 👉 https://bit.ly/BBCYouTubeSub\nWatch the BBC first on iPlayer 👉 https://bbc.in/iPlayer-Home Samuel L. Jackson chats about his purple light sabre and Graham gives him a toy one to play with.\n\nChat show. Graham is joined by Oscar-winning actress Sandra Bullock who talks about new comedy The Heat. Also on the sofa are actor Samuel L Jackson and comedian and writer Nick Frost who stars with Simon Pegg in The World's End. Music comes from Jake Bugg.\n\nThe Graham Norton Show | Series 13 Episode 13 | BBC One\n\n#bbc #BBCTheGrahamNortonShow #TheGrahamNortonShow\nAll our TV channels and S4C are available to watch live through BBC iPlayer, although some programmes may not be available to stream online due to rights. If you would like to read more on what types of programmes are available to watch live, check the 'Are all programmes that are broadcast available on BBC iPlayer?' FAQ 👉 https://bbc.in/2m8ks6v."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""BBC"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-06-28T17:31:05Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""-OQoFRqGNLFaQiJtj8U2PWFS3bw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""3Hrni0z871A""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-02-12T19:43:39Z"",
+        ""channelId"": ""UCRIrQow4WjlBmbzfYS9cj0Q"",
+        ""title"": ""Ray Park (Darth Maul) and a double-bladed lightsaber"",
+        ""description"": ""Star Wars Celebration 2015 in Anaheim, CA"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/3Hrni0z871A/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/3Hrni0z871A/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/3Hrni0z871A/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/3Hrni0z871A/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/3Hrni0z871A/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Conrad Gonzales"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-02-12T19:43:39Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""Gew4SWXRlfj_W_EvrcuTFADNMUw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""IOk_QzEgY2Q""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-05-25T02:29:12Z"",
+        ""channelId"": ""UC8-Th83bH_thdKZDJCrn88g"",
+        ""title"": ""Ewan McGregor Struggled to Relearn Obi-Wan Kenobi's Accent | The Tonight Show Starring Jimmy Fallon"",
+        ""description"": ""Ewan McGregor talks about the time he did a dangerous motorcycle stunt for The Tonight Show, what inspired him to learn how to ride motorcycles and his Star Wars series, Obi-Wan Kenobi.\n\nThe Tonight Show Starring Jimmy Fallon.  Stream now on Peacock: https://bit.ly/3gZJaNy\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n \nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\n \nGet more The Tonight Show Starring Jimmy Fallon: https://www.nbc.com/the-tonight-show\n \nJIMMY FALLON ON SOCIAL\nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\nFollow Jimmy: https://www.instagram.com/jimmyfallon/\n \nTHE TONIGHT SHOW ON SOCIAL\nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nFollow The Tonight Show: https://www.instagram.com/fallontonight/\nTonight Show Tumblr: http://fallontonight.tumblr.com\n \nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show, including comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n \nGET MORE NBC\nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Instagram: http://instagram.com/nbc\nNBC Tumblr: http://nbctv.tumblr.com/\n \nEwan McGregor Struggled to Relearn Obi-Wan Kenobi's Accent | The Tonight Show Starring Jimmy Fallon\nhttp://www.youtube.com/fallontonight\n\n#FallonTonight\n#EwanMcGregor\n#JimmyFallon"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/IOk_QzEgY2Q/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/IOk_QzEgY2Q/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/IOk_QzEgY2Q/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/IOk_QzEgY2Q/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/IOk_QzEgY2Q/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""The Tonight Show Starring Jimmy Fallon"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-05-25T02:29:12Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_qdy9rfdnc94i_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""TUyn-4tO5zyHi0f5jpXPSV--WGs"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qdyb03egb8te_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""xzpnHD6X1L4syyqgCln97wKmAHo"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 154,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""b7dBOdCI0YoENmSFQ8QvMZ7aiNg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""fbqHK8i-HdA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-10-29T09:00:14Z"",
+        ""channelId"": ""UCTtEhdlWz5erVK734-Gn0VQ"",
+        ""title"": ""Markus Eder's The Ultimate Run - The Most Insane Ski Run Ever Imagined"",
+        ""description"": ""Watch the exclusive behind the scenes on Red Bull TV 👉 https://www.redbull.com/int-en/episodes/the-ultimate-run-s1-e2\n\n“Sometimes my mind goes kind of crazy about skiing and I ask myself, what if...?” - Markus Eder\n\nWhat if you could link every powder turn, every rail, every cliff drop, every comp run and every kicker nailed into one ultimate run? Well, Markus Eder did just that in ‘The Ultimate Run’!\n\nThis is Markus’ Opus Magnum, a medley of face shots, massive tricks and even bigger drops, which was documented by Innsbruck based production company Legs of Steel over the past two years.\n\nMarkus has been visualizing the ultimate run since 2015. It may look like a simple undertaking in the final editbut for arguably the most versatile skier on the planet, it meant taking his skill levels in every form and style of contemporary freeskiing to the next level.\n\n“All aspects of freeskiing have fascinated me since the beginning”, states Markus.\n\nThe Ultimate Run kicks off on the lofty extremities of Zermatt as Markus drops into a sheer expanse of powder, before shredding his way through glacial blocks the size of buses, jumping off ice cliffs and then slips into the belly of the glacier, only to reappear above his home resort of Klausberg. Carving fields of fresh powder he joins a session with his buddies at his local snowpark, before boosting back off into the backcountry for some more face shots. The firecrackers keep on popping as he enters the snow covered architecture of Taufer castle and a mining museum. As the sun sets over the mountains Markus slides out onto the valley floor, six years of dream skiing condensed into ten minutes of pure joy and adrenaline. \n\nThis edit took over 90 days to film, entirely in the Alps in Markus’ home region. “The Ultimate Run is Markus’ dream project,” says Tobi Reindl from Legs of Steel, “and it also became one of the biggest and most thrilling projects we have done so far.”\n\nWith the first snow falling in the Alps, ‘The Ultimate Run’ is a must watch for all winter sports enthusiasts. It will reignite the passion for winter in even the most laid back snow fans for the coming season.\n\nClick play in the video above and find the answer to the question, “what if?”...\n\nFind out more about The Ultimate Run: www.redbull.com/ultimaterun\n___\nExperience the world of Red Bull Snow like you have never seen it before. With the best snow action sports clips on YouTube and original series,  from skiing to snowboarding, prepare for your \""stoke factor\"" to be at an all time high.\n\nSubscribe to Red Bull Snow on Youtube: https://win.gs/SubToRedBullSnow\n\nGet the FREE Red Bull TV apps for all your devices:  https://go.onelink.me/351027264/35a30660\n\nRed Bull Snow on Facebook: https://www.facebook.com/RedBullSnow/\n\nRed Bull Snow on Instagram: https://www.instagram.com/redbullsnow"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Red Bull Snow"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-10-29T09:00:14Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""EbofoN79o2ydz73dQNrVdXfehSs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2Gw4K7oqK08""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-11T15:35:24Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro: Top 10 Animal Encounters"",
+        ""description"": ""Hey all you cool cats and kittens, we're taking a look at our Top 10 animal encounters. Did your favorite make the cut?\n\nShot 100% on GoPro: https://bit.ly/3fDtFuN\nGet stoked and subscribe: http://goo.gl/HgVXpQ\n\nFeatured videos:\n10. Great White Shark Encounter - https://youtu.be/LfckFEO_72I\n9. Owl Dance Off - https://youtu.be/SILvPVVAhBo\n8. Squirrel Fail - https://youtu.be/uK7vfMdQNxc\n7. Snow Leopard Meets MAX - https://youtu.be/3SMSUBgZPjQ\n6. Lion Mouth Cam - https://youtu.be/8_T5oSUP-Kc\n5. Surfing with Dolphins - https://youtu.be/P_UpdaGv2bU\n4. Orca vs Paddleboard - https://youtu.be/Vaq4pHxM5P4\n3. Gorilla Tickling at the GRACE Center - https://youtu.be/uFDPLyAWpVg\n2. Enchanting Scuba Dive with 1 Million Fish - https://youtu.be/poF-_lqwG3E\n1. Lion Hug - https://youtu.be/ZRd3lrukxu8\n\n00:00 Intro\n00:16 #10 - Great White Shark Encounter\n00:55 #9 - Owl Dance Off\n01:11 #8 - Squirrel Fail\n01:31 #7 - Snow Leopard Meets MAX\n01:57 #6 - Lion Mouth Cam\n02:27 #5 - Surfing with Dolphins\n02:53 #4 - Orca vs. Paddle Board\n03:15 #3 - Gorilla Tickling\n03:48 #2 - Scuba Dive with 1 Million Fish\n04:15 #1 - Lion Hug\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n#GoPro"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-11T15:35:24Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aVmly4SeIZoxLP2Z3CtX9tmSTgY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""vr0qNXmkUJ8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-09-14T19:44:35Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO6: This Is the Moment in 4K"",
+        ""description"": ""Live the moment. Capture the moment. Share the moment. HERO6 is here, and the moment is now. #GoPro #GoProHERO6\n\nShot 100% on GoPro – https://goo.gl/Umakhk\n\nFeatured Characters:\nSki/Snowboard - Chris Benchetler, Travis Rice, Torstein Horgmo\n\nKayak - Aniol & Gerd Serrasolses\n\nSurf - Felicity Palmateer, Tatiana Weston-Webb, Kai Lenny, Anthony Walsh, Mikala Jones, Marlon Gerber\n\nFreedive - Ashleigh Baird, Camila Jaber, Ocean Ramsey\n\nMoto - Ronnie Renner\n\nCongo - Baby Lulingu\n\nBali - Gloria Atanmo, Chris Rogers\n\nAustralia - Brinkley Davies & Little Bunji\n\nUSA - Rory Kramer\n\n\nGet more from each moment with breakout stories coming in October!\n\nSubscribe now for updates: http://goo.gl/HgVXpQ\n\nMusic\nODESZA\n\""A Moment Apart\""\nLink to buy: https://odesza.lnk.to/ama-gopro \n\n\nSpecial Thanks:\nGorilla Rehabilitation and Conservation (GRACE) Center - http://gracegorillas.org\nSpaceport America - https://spaceportamerica.com\nIndies Trader Marine Adventures - https://www.indiestrader.com/\nAndy Casagrande\nJohnny Lo\nSam Evans\nGoran Kugal\nSo Ueyama\nAbysse\nDiveR\nAqualung\nCressi\nFilm In Iceland http://www.filminiceland.com\nESRA - The Experimental Sounding Rocket Association: http://www.soundingrocket.org\n\nComment below on your favorite part!\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n\nWARNING: Do not attempt. Professional driver, closed course."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-09-14T19:44:35Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cZ0egEXFzBOkpYIbkyd-BYAGgo0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wTcNtgA6gHs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-09-29T09:57:27Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO4: The Adventure of Life in 4K"",
+        ""description"": ""All around the world GoPro users are capturing incredible experiences, from the heart-stopping to the heartfelt. Into the caldron of an active volcano, the neon streets of Japan, a refuge for wild mustangs, scaling an iceberg, the world’s biggest dance party, or a whale rescue mission, GoPros have documented every moment. See how GoPro’s new line of our most advanced cameras ever allow you to beautifully and authentically capture and share the experiences that bring purpose, adventure, and joy to your life.\n \nShot 100% on the new GoPro HERO4 camera from http://GoPro.com.\n#GoPro  \n\nThe HERO4 features ultra high resolution quality of 4K at 30 frames per second + high frames rates at 1080p120. Incredible low light capabilities, including our new nightlapse setting. 2X the high fidelity sound. Faster processing. Protune settings that unlock manual control of many of your GoPro’s features, and so much more. Learn more and be inspired by the most advanced GoPro cameras yet: http://GoPro.com\n\nIt’s your life. BE A HERO. \n\nMUSIC\n\""Run Boy Run\"" performed by Woodkid\nCourtesy of Interscope Records under license from Universal Music Enterprises \n\nFEATURED CHARACTERS \n\nTOMORROWLAND (Boom, Belgium)\nErin Edenholm\nJoanna Piotrowska\nSteve Aoki\nKrewella - Jahan Yousaf and Jasmine Yousaf\nDimitri Vegas\nLike Mike\n\nLAVA LAKE (Ambrym Island, Vanuatu)\nGeoff Mackley\nBrad Ambrose\n\nICEBERG CLIMB (Ilulissat, Greenland)\nKlemen Premrl\nAljaz Anderle\nThierry Dubois\n\nWILD MUSTANGS (Wells, Nevada)\nClay Nannini\n\nJAPAN STREETS (Tokyo, Japan)\nAkira Nakai\nShinichi Moroboshi\nNanami Tsukamoto\n\nORCA RESCUE (Whangarei, New Zealand)\nDr. Ingrid Visser\nTerry Hardie\nDian and her two baby orca\n\n\nSPECIAL THANKS\nTomorrowland (http://www.tomorrowland.com)\nMichael Dujardin\nVanuatu Heli (http://www.vanuatuhelicopters.com)\nAndy Martin\nBlack Diamond (http://www.blackdiamondequipment.com)\nMadeline Pickens (http://mustangmonument.com) (http://savingamericasmustangs.org)\nOrca Research Trust (http://orcaresearch.org)\nAndy Casagrande (http://www.abc4explore.com/)\nSteve Hathaway\nLily Kozman"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-09-29T09:57:27Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_qhkket7j3q75_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""UBAOiXjvY0CZ7Ub9tJDO9bUtsU8"",
+  ""regionCode"": ""US"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qhted2yitd89_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_qxnsttb85ylf_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""DCv8u79rz_Z5yPVlSxf2awnPWTQ"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qxtbl97hplyc_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qxwloksd87xu_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""92z_9JXwNEsAqhRzNHDOwyVafh4"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 167,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""0mXnjdEg6xiIy4GObhiFEuphGGQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ASO_zypdnsQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-04-13T10:58:21Z"",
+        ""channelId"": ""UCrDkAvwZum-UTjHmzDI2iIw"",
+        ""title"": ""PSY - GENTLEMAN M/V"",
+        ""description"": ""PSY - ‘I LUV IT’ M/V @ https://youtu.be/Xvjnoagk6GU\nPSY - ‘New Face’ M/V @https://youtu.be/OwJPPaEyqhI\n\nPSY - 8TH ALBUM '4X2=8' on iTunes @\nhttps://smarturl.it/PSY_8thAlbum\n\nPSY - GENTLEMAN on iTunes @ http://smarturl.it/PsyGentlemaniT\n \n#PSY #싸이 #GENTLEMAN #젠틀맨\n\nMore about PSY@\nhttp://www.youtube.com/officialpsy\nhttp://www.facebook.com/officialpsy\nhttp://twitter.com/psy_oppa\nhttps://www.instagram.com/42psy42\nhttp://iTunes.com/PSY\nhttp://sptfy.com/PSY\nhttp://weibo.com/psyoppa"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""officialpsy"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-04-13T10:58:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""rXs4BW2SNpeNpY7G4zqAHBd09pA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""msSc7Mv0QHY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-11-06T11:45:09Z"",
+        ""channelId"": ""UCpIMOJmLiDq8ikUzrjezMIA"",
+        ""title"": ""J.Geco - Chicken Song"",
+        ""description"": ""OUTNOW! Chicken Dance 2022!!!!!!!\nhttps://youtu.be/Tc2F7yhP_wQ\n\n📷 Instagram https://www.instagram.com/jgeco_official/\n\n🎥 Chicken Song Miniseries https://www.youtube.com/playlist?list=PLoO8l0BJX3hG3NkdJJOZvT5tg8RmFLesh\n\n💿 Music\n1) On Spotify https://goo.gl/dNKAeK\n2) On iTunes https://goo.gl/fKvRUJ \n3) On Google Music https://goo.gl/z8cNwt\n\n🐔🐔🐔🐔 Stay Tuned for new content in 2021 o.o 🐔🐔🐔🐔"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""J. Geco"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-11-06T11:45:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""JyT4KjEhrcAgMJJwKWIuOhyIuZU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""k85mRPqvMbE""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2009-06-17T04:10:40Z"",
+        ""channelId"": ""UC4XR0EZ0oHwSV2XhhShzX5A"",
+        ""title"": ""Crazy Frog - Axel F (Official Video)"",
+        ""description"": ""✘ Subscribe @Crazy Frog here: http://bit.ly/2Z7qT8W \n✘ Stream/Download/Buy:  https://bit.ly/33HfT4R\n#crazyfrog ✘ Hit the bell for new videos ▲ ▲ ▲ \n\n✘ Homepage: https://www.crazyfrog.tv\n✘ Instagram: https://www.instagram.com/thecrazyfrogofficial/\n✘ Tik Tok: https://www.tiktok.com/@crazyfrogofficial/\n✘ Facebook: https://www.facebook.com/thecrazyfrogofficial/\n✘ Discord: https://discordapp.com/invite/ksyszf2\n\nPLAYLIST: \n► Crazy Frog all official Videos http://bit.ly/2wUSKiZ ◀︎\n► Crazy Frog все официальные песни http://bit.ly/2wUSKiZ ◀︎\n► Crazy Frog todas as músicas oficiais http://bit.ly/2wUSKiZ ◀︎ \n► Crazy Frog tất cả các bài hát chính thức http://bit.ly/2wUSKiZ ◀︎\n► क्रेजी फ्रॉग सभी आधिकारिक गाने http://bit.ly/2wUSKiZ ◀︎\n► Crazy Frog tüm resmi şarkıları http://bit.ly/2wUSKiZ ◀︎\n► Crazy Frog tous les morceaux officiels http://bit.ly/2wUSKiZ ◀︎\n\n#axelf #CrazyFrogRemix\n\n\n\nAll music tracks are produced by Reinhard Raith, Henning Reith and Wolfgang Boss for voodoo music GmbH\nCrazy Frog (The Annoying Thing) character created by Erik Wernquist\nAll videos directed by Sigfrid Söderberg and Andreas Wicklund and produced by Kaktus Film AB for Mach 1 Records Gmbh & Co KG\n\n\n\nnovelty songs blue frog mumbai robot gangnam style dame tu cosita psy memes animation meme the king crane tiles hop faded foekoe reel 2 real"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/k85mRPqvMbE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/k85mRPqvMbE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/k85mRPqvMbE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/k85mRPqvMbE/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/k85mRPqvMbE/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Crazy Frog"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2009-06-17T04:10:40Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""3M_MT3vdULj_RaixYzOShrdFYSc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""fLexgOxsZu0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2011-04-15T22:03:14Z"",
+        ""channelId"": ""UCoUM-UJ7rirJYP8CQ0EIaHA"",
+        ""title"": ""Bruno Mars - The Lazy Song (Official Music Video)"",
+        ""description"": ""The official music video for Bruno Mars' \""The Lazy Song\"" from the album 'Doo-Wops and Hooligans''.\nStream: https://apple.co/38qBTEU\n\nDirected by Bruno Mars and Cameron Duddy\n\nChoreographed and Performed by Poreotics: http://poreotics.com\n\nComic Chimp Mask used by permission of Easter Unlimited, Inc. / FunWorld Div. All Rights Reserved. Copyright 2009.\n\n🔔 Subscribe for the latest official music videos, live performances, lyric videos, official audio, and more: https://Atlantic.lnk.to/BMsubscribe\n\nWatch All Of Bruno Mars’ Official Music Videos ➤ https://bit.ly/2U7I3mi\n\nSee Bruno Mars on tour! Visit http://brunomars.com/tour for dates and more info.\n\nGet Bruno Mars merchandise! https://brunom.rs/brunomarsstore\n\nFollow Bruno Mars:\nhttp://www.brunomars.com\nhttp://www.instagram.com/brunomars\nhttp://www.twitter.com/brunomars\nhttp://www.facebook.com/brunomars\n\nLYRICS\nToday I don't feel like doing anything\nI just wanna lay in my bed\nDon't feel like picking up my phone\nSo leave a message at the tone\n'Cause today I swear I'm not doing anything.\n\nUh!\nI'm gonna kick my feet up\nThen stare at the fan\nTurn the TV on, throw my hand in my pants\nNobody's gonna tell me I can't\n\nI'll be lounging on the couch,\nJust chillin' in my snuggie\nClick to MTV, so they can teach me how to dougie\n'Cause in my castle I'm the freaking man\n\nOh, yes I said it\nI said it\nI said it 'cause I can\n\nToday I don't feel like doing anything\nI just wanna lay in my bed\nDon't feel like picking up my phone\nSo leave a message at the tone\n'Cause today I swear I'm not doing anything\n\nNothing at all!\nOoh, hoo, ooh, hoo, ooh, ooh-ooh\nNothing at all\nOoh, hoo, ooh, hoo, ooh, ooh-ooh\n\nTomorrow I'll wake up, do some P90X\nMeet a really nice girl, have some really nice sex\nAnd she's gonna scream out: 'This is Great' (Oh my God, this is great)\nYeah\n\nI might mess around, get my college degree\nI bet my old man will be so proud of me\nBut sorry pops, you'll just have to wait\nHaha\n\nOh, yes I said it\nI said it\nI said it 'cause I can\n\nToday I don't feel like doing anything\nI just wanna lay in my bed\nDon't feel like picking up my phone\nSo leave a message at the tone\n'Cause today I swear I'm not doing anything\n\nNo, I ain't gonna comb my hair\n'Cause I ain't going anywhere\nNo, no, no, no, no, no, no, no, no\nI'll just strut in my birthday suit\nAnd let everything hang loose\nYeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah, yeah\n\nOoh\nToday I don't feel like doing anything\nI just wanna lay in my bed\nDon't feel like picking up my phone\nSo leave a message at the tone\n'Cause today I swear I'm not doing anything\n\nNothing at all\nNothing at all\nNothing at all\n\nThe official YouTube channel of Atlantic Records artist Bruno Mars. \n \n11x GRAMMY Award winner and 27x GRAMMY Award nominee Bruno Mars is a celebrated singer, songwriter, producer, and musician with iconic hits like \""The Lazy Song\"", \""That's What I Like\"", \""Just The Way You Are\"", \""24K Magic\"", \""Locked Out Of Heaven\"", and \""When I Was Your Man\"". His legendary body of work also includes blockbuster albums such as Doo-Wops & Hooligans, Unorthodox Jukebox, and 24K Magic, as well as era-defining collaborations like \""Uptown Funk\"" with Mark Ronson, \""Finesse\"" with Cardi B, and \""Nothin' On You\"" with B.o.B. Forever classic, yet supremely innovative, Bruno continues to redefine music, style, and popular culture, pushing the boundaries of pop, R&B, funk, soul, hip-hop, and dance, and remains as influential as ever.\n\n\n#BrunoMars #TheLazySong #DooWopsandHooligans #OfficialMusicVideo #AtlanticRecords"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/fLexgOxsZu0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/fLexgOxsZu0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/fLexgOxsZu0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/fLexgOxsZu0/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/fLexgOxsZu0/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Bruno Mars"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2011-04-15T22:03:14Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_qy263bjeyuk6_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""Xa9AOHvDKfqitiryBvqbPsySJoU"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 177,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""yOAgEO-Qcx70zENyFmJ0pzL0HuU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""XdnpIz05khA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-05-21T11:32:09Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""EL JUEGO DEL EGO: ¿Cuánto se gustan los artistas de LOS40 PRIMAVERA POP?"",
+        ""description"": ""Un año más, Karín Herrero pone a los artistas de LOS40 PRIMAVERA POP contra las cuerdas. ¿Conocerán las trayectorias de sus compañeros de cartel o sólo se miran el ombligo? Ana Guerra, Blas Cantó, Efecto Pasillo y Ana Mena entre otros se la juegan.\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-05-21T11:32:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""Vq7b2PApBxKORO4WNngR7VAy2LM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Rn5tKkuIBLM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-11-13T16:52:56Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""Nuestros artistas confiesan su fantasía SEXUAL y a qué partido VOTAN | Anda Ya en LOS40"",
+        ""description"": ""Nuestro Karin Herrero de Anda Ya sometió a los artistas invitados a LOS40 Music Awards a las 5 preguntas más comprometidas de sus vidas. ¿Qué vídeos porno suelen ver? ¿Cuáles son sus fantasías sexuales? ¿A qué partido político votan? ¡ Dale al play y FLIPA con sus respuestas!\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n#LOS40 #LOS40MusicAwards #AndaYa"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-11-13T16:52:56Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""R2Wki2BowwlLhc7njXdywo6kXEo"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2oIo6sKiN4o""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-07-19T15:35:06Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""El pique de los artistas de LOS40 con nuestras ‘Preguntas encadenadas’"",
+        ""description"": ""Beret, Aitana, Ava Max y otros cantantes se dejan la piel en nuestro juego más top\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-07-19T15:35:06Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""LzeF7frjsXSvf5B9WW8HR9cfFz8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""g6ccf7KG8JU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-11-30T10:26:58Z"",
+        ""channelId"": ""UC84t25xqhPEPpGY7NBZJ_eA"",
+        ""title"": ""Aitana, cuando Pablo Motos le pregunta por sus 'defectos': \""Me estás dejando fatal\"" - El Hormiguero"",
+        ""description"": ""Todos los programas de 'El Hormiguero' en ATRESplayer: https://www.atresplayer.com/antena3/programas/el-hormiguero/?so=so:sour-youtube:cn-antena3\n\nSi te ha gustado el vídeo, suscríbete a nuestro canal: http://www.youtube.com/user/antena3?sub_confirmation=1 \n\nPablo Motos ha querido saber por qué Aitana se está rompiendo un diente. \n\n#Aitana\n#ElHormiguero\n#Antena3"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/g6ccf7KG8JU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/g6ccf7KG8JU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/g6ccf7KG8JU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/g6ccf7KG8JU/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/g6ccf7KG8JU/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Antena 3"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-11-30T10:26:58Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_r1fkaesdf2ut_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_r1ic2ey0tlbs_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_rhalaapxy5ba_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""TUyn-4tO5zyHi0f5jpXPSV--WGs"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_rhlogcrlv335_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_rhrnzdvj9lcx_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_s0ujmrqlvdbk_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""DCv8u79rz_Z5yPVlSxf2awnPWTQ"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_skmtaq85qesj_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_sl3dop3iopip_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_sl652e87h9pd_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_sohv6g8yjy9i_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_somwsolfpa2a_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""UBAOiXjvY0CZ7Ub9tJDO9bUtsU8"",
+  ""regionCode"": ""US"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_t4ibi8e3g7jr_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""Lt9UMcZK0aJ13aOUGEP4wDeJ7DA"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 156,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""nFnp-Ib95OnOmtIJuUHF8ZCsPHE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Dwhmg36Xv1k""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-01-29T08:11:08Z"",
+        ""channelId"": ""UC_maHAoX1TThyPf_I0rTU6A"",
+        ""title"": ""Repairing Rotten Wooden Window Frames - GREAT TIPS"",
+        ""description"": ""A video which shows you a great way to repair rotting wood on window frames."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Dwhmg36Xv1k/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Dwhmg36Xv1k/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Dwhmg36Xv1k/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""DiyMovies SA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-01-29T08:11:08Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""i_E12u7r5r8F8I_ikWiGA2mBU-g"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ANnXYJoy-4w""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2010-10-17T22:35:19Z"",
+        ""channelId"": ""UCoFegPl-OaaGsQ9L1zqmrRw"",
+        ""title"": ""Navio da Marinha do Brasil MB enfrentando tempestade forte!"",
+        ""description"": """",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ANnXYJoy-4w/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ANnXYJoy-4w/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ANnXYJoy-4w/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""raniel pimentel"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2010-10-17T22:35:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""8q537Si8vHI8wUJkA8DPQ3bO7UU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""5D-V3NNtR-s""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-02-10T10:57:09Z"",
+        ""channelId"": ""UCrL4HtiKWddH-9jkMXgudEA"",
+        ""title"": ""2016 Red Bull King of the Air | Highlights"",
+        ""description"": ""Watch the best moments from the Red Bull King of the Air 2016, held in Cape Town, South Africa, and won by Aaron Hadlow."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/5D-V3NNtR-s/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/5D-V3NNtR-s/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/5D-V3NNtR-s/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""SurferToday"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-02-10T10:57:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""WDC0hw65eN-5bujOFYfbUZVOrSE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2Hv53jYKbP8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2010-11-10T17:52:05Z"",
+        ""channelId"": ""UCN83u6gglj3jdXP0Pz6dpMg"",
+        ""title"": ""External Fixation Removal"",
+        ""description"": ""Removal of my external fixation. I had an accident on a scooter on the 16th January. Breaking my tibia and fibula quite badly."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2Hv53jYKbP8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2Hv53jYKbP8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2Hv53jYKbP8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Martin Evans"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2010-11-10T17:52:05Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""V2QkXfLYaTFfnDo4h5T9JfIrDH8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""mMTjgpWimv8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2012-07-13T12:31:11Z"",
+        ""channelId"": ""UCx_xpxdjvSODmBBfEKHccAQ"",
+        ""title"": ""Expro Gulf Plank Walk Team Building Exercise in Cape Town"",
+        ""description"": ""https://www.tbae.co.za - Expro Gulf plankwalk team building exercise in Cape Town facilitated and coordinated by TBAE Team ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/mMTjgpWimv8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/mMTjgpWimv8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/mMTjgpWimv8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""TBAETeamBuilding"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2012-07-13T12:31:11Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_tnzk10q9c50m_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_trrc7817ursl_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""DCv8u79rz_Z5yPVlSxf2awnPWTQ"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_ts4qb945h3z7_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""BZM86kGv29be-aLAJIlx4DROnxw"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 170,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""LVDSAz4lsW6MGz1BTmtLksEW8vI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wUDbxd54lnw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-11-30T02:18:15Z"",
+        ""channelId"": ""UC8-Th83bH_thdKZDJCrn88g"",
+        ""title"": ""Slay It Don’t Spray It w/ Ariana Grande, Kelly Clarkson, Blake Shelton & John Legend | That’s My Jam"",
+        ""description"": ""Jimmy Fallon hosts the ultimate karaoke party! Ariana Grande, Blake Shelton, Kelly Clarkson and John Legend go lyric for lyric in an attempt to sing “Break Free” and “Stronger”! Watch That’s My Jam, Mondays 9/8c on NBC.\n\nABOUT THAT’S MY JAM\nHosted by Jimmy Fallon, “That’s My Jam” is an hourlong music and comedy variety game show that draws inspiration from the most popular “Tonight Show” games. Each episode features two teams of two celebrities competing for a charity of their choice in a series of music, dance, and trivia-based games and musical performances. Signature games to be played include Launch the Mic, Air Guitar, Don’t Drop the Beat, Perfect Mash-Up, Wheel of Impossible Karaoke, Slay It, Don’t Spray It and many more.\n\nThe format was brought to Universal Television Alternative Studio by Fallon, longtime “The Tonight Show” producer Jim Juvonen and writer Josh Knapp. Adam Blackstone is Musical Director and will lead the house band throughout each episode. Mike Yurchuk will serve as showrunner.\n\nThat’s My Jam Hosted by Jimmy Fallon. Stream now on Peacock: https://bit.ly/3gZJaNy\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n\nGet more That’s My Jam: https://www.nbc.com/thats-my-jam\n\nJIMMY FALLON ON SOCIAL\nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\nFollow Jimmy: https://www.instagram.com/jimmyfallon/\n\nTHAT’S MY JAM ON SOCIAL\nFollow That’s My Jam: https://mobile.twitter.com/nbcthatsmyjam\nLike That’s My Jam: https://www.facebook.com/NBCThatsMyJam\n\nGET MORE NBC\nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Instagram: http://instagram.com/nbc\nNBC Tumblr: http://nbctv.tumblr.com/\n\nSlay It Don’t Spray It w/ Ariana Grande, Kelly Clarkson, Blake Shelton & John Legend | That’s My Jam\nhttp://www.youtube.com/fallontonight\n\n#ArianaGrande\n#KellyClarkson\n#BlakeShelton"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wUDbxd54lnw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wUDbxd54lnw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wUDbxd54lnw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wUDbxd54lnw/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wUDbxd54lnw/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""The Tonight Show Starring Jimmy Fallon"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-11-30T02:18:15Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""qofNrRylV-QHFpTo-9bgfLMZ0F4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""XcjbuyrQIRg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-07T00:03:25Z"",
+        ""channelId"": ""UC8CB_Pf1REAZvz6007aKdqw"",
+        ""title"": ""CHOOSING BRIDESMAIDS DRESSES FOR HER WEDDING!!"",
+        ""description"": ""BLACK FRIDAY SALE!! CANDE COLLECTION: https://fanjoy.co/collections/cande\n\nfollow mariah!:\nIG: @mariahamato\n\nFollow our other channels here:\nCarly - https://www.youtube.com/user/carlyincontro\nErin   - https://www.youtube.com/eringilfoy\n\nSubscribe for more Vlogs ►  \nhttps://www.youtube.com/channel/UC8CB_Pf1REAZvz6007aKdqw\n\nUber code:\nCARLY: carlyi229eu\nERIN: ering604ue\n\nLyft code:\nERIN: erin3062\n\nFOLLOW OUR IG & TWITTER:\n@carlyanderin // https://www.instagram.com/carlyanderin\n@CARLYANDERlN // https://twitter.com/CARLYANDERlN\n\nPOBOX:\nCarly and Erin\nPO BOX 292265\nLos Angeles, CA 90029\n\nErin Gilfoy:\nInstagram: eringilfoy // https://www.instagram.com/eringilfoy\nTwitter: eringilfoy // https://twitter.com/eringilfoy\nSnapchat: erin_gilfoy // https://www.snapchat.com/add/erin_gilfoy\nFacebook: Erin Gilfoy \n\nCarly Incontro:\nInstagram: carlyincontro // https://www.instagram.com/carlyincontro\nTwitter: carlyincontro // https://twitter.com/carlyincontro\nSnapchat: pooopflinger // https://www.snapchat.com/add/pooopfli...\nFacebook: Carly Incontro"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/XcjbuyrQIRg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/XcjbuyrQIRg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/XcjbuyrQIRg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/XcjbuyrQIRg/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/XcjbuyrQIRg/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Carly and Erin"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-07T00:03:25Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""nVun3_Qsn9wo1FC5-0dpCizxxCo"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""hQH6bv946T4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-10-04T05:26:50Z"",
+        ""channelId"": ""UC8-Th83bH_thdKZDJCrn88g"",
+        ""title"": ""Name That Song Challenge with Taylor Swift"",
+        ""description"": ""Taylor Swift and Jimmy compete as they try to guess random songs The Roots are playing one instrument at a time, like Taylor Swift’s own \""Shake It Off.”\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n \nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\n \nGet more The Tonight Show Starring Jimmy Fallon: https://www.nbc.com/the-tonight-show\n \nJIMMY FALLON ON SOCIAL\nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\nFollow Jimmy: https://www.instagram.com/jimmyfallon/\n \nTHE TONIGHT SHOW ON SOCIAL\nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nFollow The Tonight Show: https://www.instagram.com/fallontonight/\nTonight Show Tumblr: http://fallontonight.tumblr.com\n \nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show, including comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n \nGET MORE NBC\nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Instagram: http://instagram.com/nbc\nNBC Tumblr: http://nbctv.tumblr.com/\n \nName That Song Challenge with Taylor Swift\nhttp://www.youtube.com/fallontonight\n\n#FallonTonight\n#TaylorSwift\n#JimmyFallon"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/hQH6bv946T4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/hQH6bv946T4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/hQH6bv946T4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/hQH6bv946T4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/hQH6bv946T4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""The Tonight Show Starring Jimmy Fallon"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-10-04T05:26:50Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""JRKwQ28wAWzTZTNJ5-rJBklTvd0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""c0350tpXN-Q""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-01-17T06:57:06Z"",
+        ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+        ""title"": ""1999 v 2019 Riff-Off w/ Camila Cabello"",
+        ""description"": ""When James Corden takes a moment to opine on the hits that defined 1999, Camila Cabello shows up with The Filharmonic ready to defend the biggest bops of 2019, and the only way to settle it is a riff off. Camila offers Lil Nas X's \""Old Town Road\"" and Shawn Mendes' \""If I Can't Have You,\"" and James counters with Ricky Martin's \""Livin' La Vida Loca\"" and Santana's \""Smooth,\"" before the two settle a beef over a duet of Camila's \""Señorita.\""\n\nMore Late Late Show:\nSubscribe: http://bit.ly/CordenYouTube\nWatch Full Episodes: http://bit.ly/1ENyPw4\nFacebook: http://on.fb.me/19PIHLC\nTwitter: http://bit.ly/1Iv0q6k\nInstagram: http://bit.ly/latelategram\n\nWatch The Late Late Show with James Corden weeknights at 12:35 AM ET/11:35 PM CT. Only on CBS.\n\nGet new episodes of shows you love across devices the next day, stream live TV, and watch full seasons of CBS fan favorites anytime, anywhere with CBS All Access. Try it free! http://bit.ly/1OQA29B\n\n---\nEach week night, THE LATE LATE SHOW with JAMES CORDEN throws the ultimate late night after party with a mix of celebrity guests, edgy musical acts, games and sketches. Corden differentiates his show by offering viewers a peek behind-the-scenes into the green room, bringing all of his guests out at once and lending his musical and acting talents to various sketches. Additionally, bandleader Reggie Watts and the house band provide original, improvised music throughout the show. Since Corden took the reigns as host in March 2015, he has quickly become known for generating buzzworthy viral videos, such as Carpool Karaoke.\"""",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/c0350tpXN-Q/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/c0350tpXN-Q/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/c0350tpXN-Q/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/c0350tpXN-Q/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/c0350tpXN-Q/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""The Late Late Show with James Corden"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-01-17T06:57:06Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""b6Va12cllLKl7ZHy1YyYfUFwHTI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""PxKp7_lASKI""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-10-07T01:43:56Z"",
+        ""channelId"": ""UC8-Th83bH_thdKZDJCrn88g"",
+        ""title"": ""Alessia Cara Sings \""Bad Guy\"" w/ 7 Different Impressions (One Song, Many Artists)"",
+        ""description"": ""Jimmy challenges Alessia Cara to attempt as many impressions of random singers as she can, like Ariana Grande and Cardi B, while singing Billie Eilish's \""Bad Guy.\""\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n \nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\n \nGet more The Tonight Show Starring Jimmy Fallon: https://www.nbc.com/the-tonight-show\n \nJIMMY FALLON ON SOCIAL\nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\nFollow Jimmy: https://www.instagram.com/jimmyfallon/\n \nTHE TONIGHT SHOW ON SOCIAL\nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nFollow The Tonight Show: https://www.instagram.com/fallontonight/\nTonight Show Tumblr: http://fallontonight.tumblr.com\n \nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show, including comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n \nGET MORE NBC\nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Instagram: http://instagram.com/nbc\nNBC Tumblr: http://nbctv.tumblr.com/\n \nAlessia Cara Sings \""Bad Guy\"" w/ 7 Different Impressions\nhttp://www.youtube.com/fallontonight\n\n#FallonTonight\n#AlessiaCara\n#JimmyFallon"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/PxKp7_lASKI/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/PxKp7_lASKI/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/PxKp7_lASKI/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/PxKp7_lASKI/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/PxKp7_lASKI/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""The Tonight Show Starring Jimmy Fallon"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-10-07T01:43:56Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_u7u2rhrl5pvb_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_u87z9k2zk8yr_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_ure2a22bhe8y_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""OnmxWCaPsp9PjZeiv219_-rc_uo"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""US"",
+  ""pageInfo"": {
+    ""totalResults"": 154,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""b7dBOdCI0YoENmSFQ8QvMZ7aiNg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""fbqHK8i-HdA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-10-29T09:00:14Z"",
+        ""channelId"": ""UCTtEhdlWz5erVK734-Gn0VQ"",
+        ""title"": ""Markus Eder's The Ultimate Run - The Most Insane Ski Run Ever Imagined"",
+        ""description"": ""Watch the exclusive behind the scenes on Red Bull TV 👉 https://www.redbull.com/int-en/episodes/the-ultimate-run-s1-e2\n\n“Sometimes my mind goes kind of crazy about skiing and I ask myself, what if...?” - Markus Eder\n\nWhat if you could link every powder turn, every rail, every cliff drop, every comp run and every kicker nailed into one ultimate run? Well, Markus Eder did just that in ‘The Ultimate Run’!\n\nThis is Markus’ Opus Magnum, a medley of face shots, massive tricks and even bigger drops, which was documented by Innsbruck based production company Legs of Steel over the past two years.\n\nMarkus has been visualizing the ultimate run since 2015. It may look like a simple undertaking in the final editbut for arguably the most versatile skier on the planet, it meant taking his skill levels in every form and style of contemporary freeskiing to the next level.\n\n“All aspects of freeskiing have fascinated me since the beginning”, states Markus.\n\nThe Ultimate Run kicks off on the lofty extremities of Zermatt as Markus drops into a sheer expanse of powder, before shredding his way through glacial blocks the size of buses, jumping off ice cliffs and then slips into the belly of the glacier, only to reappear above his home resort of Klausberg. Carving fields of fresh powder he joins a session with his buddies at his local snowpark, before boosting back off into the backcountry for some more face shots. The firecrackers keep on popping as he enters the snow covered architecture of Taufer castle and a mining museum. As the sun sets over the mountains Markus slides out onto the valley floor, six years of dream skiing condensed into ten minutes of pure joy and adrenaline. \n\nThis edit took over 90 days to film, entirely in the Alps in Markus’ home region. “The Ultimate Run is Markus’ dream project,” says Tobi Reindl from Legs of Steel, “and it also became one of the biggest and most thrilling projects we have done so far.”\n\nWith the first snow falling in the Alps, ‘The Ultimate Run’ is a must watch for all winter sports enthusiasts. It will reignite the passion for winter in even the most laid back snow fans for the coming season.\n\nClick play in the video above and find the answer to the question, “what if?”...\n\nFind out more about The Ultimate Run: www.redbull.com/ultimaterun\n___\nExperience the world of Red Bull Snow like you have never seen it before. With the best snow action sports clips on YouTube and original series,  from skiing to snowboarding, prepare for your \""stoke factor\"" to be at an all time high.\n\nSubscribe to Red Bull Snow on Youtube: https://win.gs/SubToRedBullSnow\n\nGet the FREE Red Bull TV apps for all your devices:  https://go.onelink.me/351027264/35a30660\n\nRed Bull Snow on Facebook: https://www.facebook.com/RedBullSnow/\n\nRed Bull Snow on Instagram: https://www.instagram.com/redbullsnow"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Red Bull Snow"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-10-29T09:00:14Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""EbofoN79o2ydz73dQNrVdXfehSs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2Gw4K7oqK08""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-11T15:35:24Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro: Top 10 Animal Encounters"",
+        ""description"": ""Hey all you cool cats and kittens, we're taking a look at our Top 10 animal encounters. Did your favorite make the cut?\n\nShot 100% on GoPro: https://bit.ly/3fDtFuN\nGet stoked and subscribe: http://goo.gl/HgVXpQ\n\nFeatured videos:\n10. Great White Shark Encounter - https://youtu.be/LfckFEO_72I\n9. Owl Dance Off - https://youtu.be/SILvPVVAhBo\n8. Squirrel Fail - https://youtu.be/uK7vfMdQNxc\n7. Snow Leopard Meets MAX - https://youtu.be/3SMSUBgZPjQ\n6. Lion Mouth Cam - https://youtu.be/8_T5oSUP-Kc\n5. Surfing with Dolphins - https://youtu.be/P_UpdaGv2bU\n4. Orca vs Paddleboard - https://youtu.be/Vaq4pHxM5P4\n3. Gorilla Tickling at the GRACE Center - https://youtu.be/uFDPLyAWpVg\n2. Enchanting Scuba Dive with 1 Million Fish - https://youtu.be/poF-_lqwG3E\n1. Lion Hug - https://youtu.be/ZRd3lrukxu8\n\n00:00 Intro\n00:16 #10 - Great White Shark Encounter\n00:55 #9 - Owl Dance Off\n01:11 #8 - Squirrel Fail\n01:31 #7 - Snow Leopard Meets MAX\n01:57 #6 - Lion Mouth Cam\n02:27 #5 - Surfing with Dolphins\n02:53 #4 - Orca vs. Paddle Board\n03:15 #3 - Gorilla Tickling\n03:48 #2 - Scuba Dive with 1 Million Fish\n04:15 #1 - Lion Hug\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n#GoPro"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-11T15:35:24Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aVmly4SeIZoxLP2Z3CtX9tmSTgY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""vr0qNXmkUJ8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-09-14T19:44:35Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO6: This Is the Moment in 4K"",
+        ""description"": ""Live the moment. Capture the moment. Share the moment. HERO6 is here, and the moment is now. #GoPro #GoProHERO6\n\nShot 100% on GoPro – https://goo.gl/Umakhk\n\nFeatured Characters:\nSki/Snowboard - Chris Benchetler, Travis Rice, Torstein Horgmo\n\nKayak - Aniol & Gerd Serrasolses\n\nSurf - Felicity Palmateer, Tatiana Weston-Webb, Kai Lenny, Anthony Walsh, Mikala Jones, Marlon Gerber\n\nFreedive - Ashleigh Baird, Camila Jaber, Ocean Ramsey\n\nMoto - Ronnie Renner\n\nCongo - Baby Lulingu\n\nBali - Gloria Atanmo, Chris Rogers\n\nAustralia - Brinkley Davies & Little Bunji\n\nUSA - Rory Kramer\n\n\nGet more from each moment with breakout stories coming in October!\n\nSubscribe now for updates: http://goo.gl/HgVXpQ\n\nMusic\nODESZA\n\""A Moment Apart\""\nLink to buy: https://odesza.lnk.to/ama-gopro \n\n\nSpecial Thanks:\nGorilla Rehabilitation and Conservation (GRACE) Center - http://gracegorillas.org\nSpaceport America - https://spaceportamerica.com\nIndies Trader Marine Adventures - https://www.indiestrader.com/\nAndy Casagrande\nJohnny Lo\nSam Evans\nGoran Kugal\nSo Ueyama\nAbysse\nDiveR\nAqualung\nCressi\nFilm In Iceland http://www.filminiceland.com\nESRA - The Experimental Sounding Rocket Association: http://www.soundingrocket.org\n\nComment below on your favorite part!\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n\nWARNING: Do not attempt. Professional driver, closed course."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-09-14T19:44:35Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cZ0egEXFzBOkpYIbkyd-BYAGgo0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wTcNtgA6gHs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-09-29T09:57:27Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO4: The Adventure of Life in 4K"",
+        ""description"": ""All around the world GoPro users are capturing incredible experiences, from the heart-stopping to the heartfelt. Into the caldron of an active volcano, the neon streets of Japan, a refuge for wild mustangs, scaling an iceberg, the world’s biggest dance party, or a whale rescue mission, GoPros have documented every moment. See how GoPro’s new line of our most advanced cameras ever allow you to beautifully and authentically capture and share the experiences that bring purpose, adventure, and joy to your life.\n \nShot 100% on the new GoPro HERO4 camera from http://GoPro.com.\n#GoPro  \n\nThe HERO4 features ultra high resolution quality of 4K at 30 frames per second + high frames rates at 1080p120. Incredible low light capabilities, including our new nightlapse setting. 2X the high fidelity sound. Faster processing. Protune settings that unlock manual control of many of your GoPro’s features, and so much more. Learn more and be inspired by the most advanced GoPro cameras yet: http://GoPro.com\n\nIt’s your life. BE A HERO. \n\nMUSIC\n\""Run Boy Run\"" performed by Woodkid\nCourtesy of Interscope Records under license from Universal Music Enterprises \n\nFEATURED CHARACTERS \n\nTOMORROWLAND (Boom, Belgium)\nErin Edenholm\nJoanna Piotrowska\nSteve Aoki\nKrewella - Jahan Yousaf and Jasmine Yousaf\nDimitri Vegas\nLike Mike\n\nLAVA LAKE (Ambrym Island, Vanuatu)\nGeoff Mackley\nBrad Ambrose\n\nICEBERG CLIMB (Ilulissat, Greenland)\nKlemen Premrl\nAljaz Anderle\nThierry Dubois\n\nWILD MUSTANGS (Wells, Nevada)\nClay Nannini\n\nJAPAN STREETS (Tokyo, Japan)\nAkira Nakai\nShinichi Moroboshi\nNanami Tsukamoto\n\nORCA RESCUE (Whangarei, New Zealand)\nDr. Ingrid Visser\nTerry Hardie\nDian and her two baby orca\n\n\nSPECIAL THANKS\nTomorrowland (http://www.tomorrowland.com)\nMichael Dujardin\nVanuatu Heli (http://www.vanuatuhelicopters.com)\nAndy Martin\nBlack Diamond (http://www.blackdiamondequipment.com)\nMadeline Pickens (http://mustangmonument.com) (http://savingamericasmustangs.org)\nOrca Research Trust (http://orcaresearch.org)\nAndy Casagrande (http://www.abc4explore.com/)\nSteve Hathaway\nLily Kozman"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-09-29T09:57:27Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_us30n3gsemoz_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""qC3Xi6xzzBGb4k0vDF3mS_03jWo"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 155,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""b7dBOdCI0YoENmSFQ8QvMZ7aiNg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""fbqHK8i-HdA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-10-29T09:00:14Z"",
+        ""channelId"": ""UCTtEhdlWz5erVK734-Gn0VQ"",
+        ""title"": ""Markus Eder's The Ultimate Run - The Most Insane Ski Run Ever Imagined"",
+        ""description"": ""Watch the exclusive behind the scenes on Red Bull TV 👉 https://www.redbull.com/int-en/episodes/the-ultimate-run-s1-e2\n\n“Sometimes my mind goes kind of crazy about skiing and I ask myself, what if...?” - Markus Eder\n\nWhat if you could link every powder turn, every rail, every cliff drop, every comp run and every kicker nailed into one ultimate run? Well, Markus Eder did just that in ‘The Ultimate Run’!\n\nThis is Markus’ Opus Magnum, a medley of face shots, massive tricks and even bigger drops, which was documented by Innsbruck based production company Legs of Steel over the past two years.\n\nMarkus has been visualizing the ultimate run since 2015. It may look like a simple undertaking in the final editbut for arguably the most versatile skier on the planet, it meant taking his skill levels in every form and style of contemporary freeskiing to the next level.\n\n“All aspects of freeskiing have fascinated me since the beginning”, states Markus.\n\nThe Ultimate Run kicks off on the lofty extremities of Zermatt as Markus drops into a sheer expanse of powder, before shredding his way through glacial blocks the size of buses, jumping off ice cliffs and then slips into the belly of the glacier, only to reappear above his home resort of Klausberg. Carving fields of fresh powder he joins a session with his buddies at his local snowpark, before boosting back off into the backcountry for some more face shots. The firecrackers keep on popping as he enters the snow covered architecture of Taufer castle and a mining museum. As the sun sets over the mountains Markus slides out onto the valley floor, six years of dream skiing condensed into ten minutes of pure joy and adrenaline. \n\nThis edit took over 90 days to film, entirely in the Alps in Markus’ home region. “The Ultimate Run is Markus’ dream project,” says Tobi Reindl from Legs of Steel, “and it also became one of the biggest and most thrilling projects we have done so far.”\n\nWith the first snow falling in the Alps, ‘The Ultimate Run’ is a must watch for all winter sports enthusiasts. It will reignite the passion for winter in even the most laid back snow fans for the coming season.\n\nClick play in the video above and find the answer to the question, “what if?”...\n\nFind out more about The Ultimate Run: www.redbull.com/ultimaterun\n___\nExperience the world of Red Bull Snow like you have never seen it before. With the best snow action sports clips on YouTube and original series,  from skiing to snowboarding, prepare for your \""stoke factor\"" to be at an all time high.\n\nSubscribe to Red Bull Snow on Youtube: https://win.gs/SubToRedBullSnow\n\nGet the FREE Red Bull TV apps for all your devices:  https://go.onelink.me/351027264/35a30660\n\nRed Bull Snow on Facebook: https://www.facebook.com/RedBullSnow/\n\nRed Bull Snow on Instagram: https://www.instagram.com/redbullsnow"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/fbqHK8i-HdA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Red Bull Snow"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-10-29T09:00:14Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""EbofoN79o2ydz73dQNrVdXfehSs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2Gw4K7oqK08""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-11T15:35:24Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro: Top 10 Animal Encounters"",
+        ""description"": ""Hey all you cool cats and kittens, we're taking a look at our Top 10 animal encounters. Did your favorite make the cut?\n\nShot 100% on GoPro: https://bit.ly/3fDtFuN\nGet stoked and subscribe: http://goo.gl/HgVXpQ\n\nFeatured videos:\n10. Great White Shark Encounter - https://youtu.be/LfckFEO_72I\n9. Owl Dance Off - https://youtu.be/SILvPVVAhBo\n8. Squirrel Fail - https://youtu.be/uK7vfMdQNxc\n7. Snow Leopard Meets MAX - https://youtu.be/3SMSUBgZPjQ\n6. Lion Mouth Cam - https://youtu.be/8_T5oSUP-Kc\n5. Surfing with Dolphins - https://youtu.be/P_UpdaGv2bU\n4. Orca vs Paddleboard - https://youtu.be/Vaq4pHxM5P4\n3. Gorilla Tickling at the GRACE Center - https://youtu.be/uFDPLyAWpVg\n2. Enchanting Scuba Dive with 1 Million Fish - https://youtu.be/poF-_lqwG3E\n1. Lion Hug - https://youtu.be/ZRd3lrukxu8\n\n00:00 Intro\n00:16 #10 - Great White Shark Encounter\n00:55 #9 - Owl Dance Off\n01:11 #8 - Squirrel Fail\n01:31 #7 - Snow Leopard Meets MAX\n01:57 #6 - Lion Mouth Cam\n02:27 #5 - Surfing with Dolphins\n02:53 #4 - Orca vs. Paddle Board\n03:15 #3 - Gorilla Tickling\n03:48 #2 - Scuba Dive with 1 Million Fish\n04:15 #1 - Lion Hug\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n#GoPro"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2Gw4K7oqK08/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-11T15:35:24Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aVmly4SeIZoxLP2Z3CtX9tmSTgY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""vr0qNXmkUJ8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-09-14T19:44:35Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO6: This Is the Moment in 4K"",
+        ""description"": ""Live the moment. Capture the moment. Share the moment. HERO6 is here, and the moment is now. #GoPro #GoProHERO6\n\nShot 100% on GoPro – https://goo.gl/Umakhk\n\nFeatured Characters:\nSki/Snowboard - Chris Benchetler, Travis Rice, Torstein Horgmo\n\nKayak - Aniol & Gerd Serrasolses\n\nSurf - Felicity Palmateer, Tatiana Weston-Webb, Kai Lenny, Anthony Walsh, Mikala Jones, Marlon Gerber\n\nFreedive - Ashleigh Baird, Camila Jaber, Ocean Ramsey\n\nMoto - Ronnie Renner\n\nCongo - Baby Lulingu\n\nBali - Gloria Atanmo, Chris Rogers\n\nAustralia - Brinkley Davies & Little Bunji\n\nUSA - Rory Kramer\n\n\nGet more from each moment with breakout stories coming in October!\n\nSubscribe now for updates: http://goo.gl/HgVXpQ\n\nMusic\nODESZA\n\""A Moment Apart\""\nLink to buy: https://odesza.lnk.to/ama-gopro \n\n\nSpecial Thanks:\nGorilla Rehabilitation and Conservation (GRACE) Center - http://gracegorillas.org\nSpaceport America - https://spaceportamerica.com\nIndies Trader Marine Adventures - https://www.indiestrader.com/\nAndy Casagrande\nJohnny Lo\nSam Evans\nGoran Kugal\nSo Ueyama\nAbysse\nDiveR\nAqualung\nCressi\nFilm In Iceland http://www.filminiceland.com\nESRA - The Experimental Sounding Rocket Association: http://www.soundingrocket.org\n\nComment below on your favorite part!\n\nFor more from GoPro, follow us:\nFacebook: https://www.facebook.com/gopro\nTwitter: https://twitter.com/gopro\nInstagram: https://instagram.com/gopro\nTumblr: http://gopro.tumblr.com/\nPinterest: http://www.pinterest.com/gopro   \nInside Line: https://gopro.com/news\nGoPro: https://gopro.com/channel/\n\nWARNING: Do not attempt. Professional driver, closed course."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/vr0qNXmkUJ8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-09-14T19:44:35Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cZ0egEXFzBOkpYIbkyd-BYAGgo0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wTcNtgA6gHs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-09-29T09:57:27Z"",
+        ""channelId"": ""UCqhnX4jA0A5paNd1v-zEysw"",
+        ""title"": ""GoPro HERO4: The Adventure of Life in 4K"",
+        ""description"": ""All around the world GoPro users are capturing incredible experiences, from the heart-stopping to the heartfelt. Into the caldron of an active volcano, the neon streets of Japan, a refuge for wild mustangs, scaling an iceberg, the world’s biggest dance party, or a whale rescue mission, GoPros have documented every moment. See how GoPro’s new line of our most advanced cameras ever allow you to beautifully and authentically capture and share the experiences that bring purpose, adventure, and joy to your life.\n \nShot 100% on the new GoPro HERO4 camera from http://GoPro.com.\n#GoPro  \n\nThe HERO4 features ultra high resolution quality of 4K at 30 frames per second + high frames rates at 1080p120. Incredible low light capabilities, including our new nightlapse setting. 2X the high fidelity sound. Faster processing. Protune settings that unlock manual control of many of your GoPro’s features, and so much more. Learn more and be inspired by the most advanced GoPro cameras yet: http://GoPro.com\n\nIt’s your life. BE A HERO. \n\nMUSIC\n\""Run Boy Run\"" performed by Woodkid\nCourtesy of Interscope Records under license from Universal Music Enterprises \n\nFEATURED CHARACTERS \n\nTOMORROWLAND (Boom, Belgium)\nErin Edenholm\nJoanna Piotrowska\nSteve Aoki\nKrewella - Jahan Yousaf and Jasmine Yousaf\nDimitri Vegas\nLike Mike\n\nLAVA LAKE (Ambrym Island, Vanuatu)\nGeoff Mackley\nBrad Ambrose\n\nICEBERG CLIMB (Ilulissat, Greenland)\nKlemen Premrl\nAljaz Anderle\nThierry Dubois\n\nWILD MUSTANGS (Wells, Nevada)\nClay Nannini\n\nJAPAN STREETS (Tokyo, Japan)\nAkira Nakai\nShinichi Moroboshi\nNanami Tsukamoto\n\nORCA RESCUE (Whangarei, New Zealand)\nDr. Ingrid Visser\nTerry Hardie\nDian and her two baby orca\n\n\nSPECIAL THANKS\nTomorrowland (http://www.tomorrowland.com)\nMichael Dujardin\nVanuatu Heli (http://www.vanuatuhelicopters.com)\nAndy Martin\nBlack Diamond (http://www.blackdiamondequipment.com)\nMadeline Pickens (http://mustangmonument.com) (http://savingamericasmustangs.org)\nOrca Research Trust (http://orcaresearch.org)\nAndy Casagrande (http://www.abc4explore.com/)\nSteve Hathaway\nLily Kozman"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wTcNtgA6gHs/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""GoPro"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-09-29T09:57:27Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_uveo5x9erejl_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vbk7oefsfmg2_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vbppo1zbpa3m_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vevw8c0w3j20_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vf0v6xp74svm_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

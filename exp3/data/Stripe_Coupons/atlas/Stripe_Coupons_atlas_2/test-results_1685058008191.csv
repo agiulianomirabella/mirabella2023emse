@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jefgnv40sacj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_kwCexUKMCK0X7x?t=1685058024"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qxnt80nw0rax_PostCoupons,200,"{
+  ""id"": ""a73BUwGBBpZU"",
+  ""object"": ""coupon"",
+  ""amount_off"": 28,
+  ""created"": 1685058030,
+  ""currency"": ""krw"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 21,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhdcodbp9jxy_PostCoupons,200,"{
+  ""id"": ""nHBoN6Ha"",
+  ""object"": ""coupon"",
+  ""amount_off"": 27,
+  ""created"": 1685058036,
+  ""currency"": ""uzs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 95,
+  ""metadata"": {},
+  ""name"": ""hagfish"",
+  ""percent_off"": null,
+  ""redeem_by"": 1808197537,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_tonzo93tu7aa_PostCoupons,200,"{
+  ""id"": ""eqrWDHC8VTYtAAu8f"",
+  ""object"": ""coupon"",
+  ""amount_off"": 37,
+  ""created"": 1685058041,
+  ""currency"": ""php"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1747822728,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ubrx6xxalm43_PostCoupons,200,"{
+  ""id"": ""5VtZJmGu"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058048,
+  ""currency"": ""bob"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 12.0,
+  ""redeem_by"": 1820306941,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

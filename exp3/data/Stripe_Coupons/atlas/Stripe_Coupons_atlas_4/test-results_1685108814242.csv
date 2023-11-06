@@ -1,0 +1,79 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv602kupoldf_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_w5x7Md8wTTn9OP?t=1685108831"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iykhjrhh7ad4_PostCoupons,200,"{
+  ""id"": ""5w6v4YkG"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108837,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 6,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 35.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_r17sdqebbvj5_PostCoupons,200,"{
+  ""id"": ""LAcLN2vy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108843,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 1.0,
+  ""redeem_by"": 1778424929,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skpl5f0psr52_PostCoupons,200,"{
+  ""id"": ""LMl3trs0"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108848,
+  ""currency"": ""nio"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""brain-stem"",
+  ""percent_off"": 9.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vbbwqmimgsx0_PostCoupons,200,"{
+  ""id"": ""rSCBHMejnNbTltUDnq1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108854,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""penuche"",
+  ""percent_off"": 95.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,89 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hb7ppfldog2u_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""Mreg40O2y4ogC9SSau13B_u_C8Q"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 19
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1jydanvcpy3w0_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""ONJzPZ2ANH76XQs94VjvI6bA3yE"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""KnOS5GB6CqVo7IpZxQmYf4jOpCE"",
+      ""id"": ""eVIozKR9p50"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      },
+      ""statistics"": {
+        ""viewCount"": ""14469610"",
+        ""likeCount"": ""76428"",
+        ""favoriteCount"": ""0"",
+        ""commentCount"": ""1294""
+      },
+      ""recordingDetails"": {}
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_to1r4zx14tib_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u7rtdp4hbote_youtubevideoslist,404,"{
+  ""error"": {
+    ""code"": 404,
+    ""message"": ""Requested entity was not found."",
+    ""errors"": [
+      {
+        ""message"": ""Requested entity was not found."",
+        ""domain"": ""global"",
+        ""reason"": ""notFound""
+      }
+    ],
+    ""status"": ""NOT_FOUND""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 404 not defined for path '/youtube/v3/videos'.
+test_uvk6uy0c027p_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

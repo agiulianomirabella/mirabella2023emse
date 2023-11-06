@@ -1,0 +1,60 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbis0r4kn039_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_KxARaRld9NHzUL?t=1685081174"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy7pkb4bxs8l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5kNWiTDDsyyEAI?t=1685081180"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_r1alc1ekgk6r_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_eDgqLul5Tn0DOq?t=1685081186"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r1iesmcx8yt5_PostCoupons,200,"{
+  ""id"": ""XxB2LI55"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081200,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 77.0,
+  ""redeem_by"": 1738510533,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s4muifu4tiyf_PostCoupons,200,"{
+  ""id"": ""WBYqQSwD"",
+  ""object"": ""coupon"",
+  ""amount_off"": 59,
+  ""created"": 1685081206,
+  ""currency"": ""usd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 69,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

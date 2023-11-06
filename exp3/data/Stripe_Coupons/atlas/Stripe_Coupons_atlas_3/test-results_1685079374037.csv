@@ -1,0 +1,52 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iay73hgfgg1c_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_cGJKfMTmgvYDxp?t=1685079400"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxi8vszx4ze9_PostCoupons,200,"{
+  ""id"": ""qjCdoYDo"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685079405,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 25,
+  ""metadata"": {},
+  ""name"": ""stargaze"",
+  ""percent_off"": 84.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhtwnpqidx6a_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ou8eKNeJJrYBAp?t=1685079411"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8f6gvbvm3at_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4JQ0rklNif6EXo?t=1685079417"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vevc15jmp17l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_mLaY9N6uorvNn3?t=1685079423"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

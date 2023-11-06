@@ -1,0 +1,35 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rl5n5uh5wd9t_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_u8dzwa0o9d84_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ubjm9d7k8j8h_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_ubu5h41dml2o_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf9qs55rnhva_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

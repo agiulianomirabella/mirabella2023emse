@@ -1,0 +1,79 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qdw0rpttjrjs_PostCoupons,200,"{
+  ""id"": ""eplgnHP1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080049,
+  ""currency"": ""sos"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 55,
+  ""metadata"": {},
+  ""name"": ""downfield"",
+  ""percent_off"": 23.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qhkis1pb4i7s_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_BruRNZN5rxLgli?t=1685080054"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxfhwesal6xw_PostCoupons,200,"{
+  ""id"": ""u7WbVl2KTIb3C"",
+  ""object"": ""coupon"",
+  ""amount_off"": 92,
+  ""created"": 1685080060,
+  ""currency"": ""gel"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 83,
+  ""metadata"": {},
+  ""name"": ""free-and-easy"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhloggpy9t9d_PostCoupons,200,"{
+  ""id"": ""r7lkB403zG6T60C5Wsb"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080066,
+  ""currency"": ""cny"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 52,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 7.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vf964egbh3jm_PostCoupons,200,"{
+  ""id"": ""VrKtttXQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 84,
+  ""created"": 1685080071,
+  ""currency"": ""czk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1731721061,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

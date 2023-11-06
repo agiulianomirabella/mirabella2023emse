@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iaxlziqrj97l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_m7kmuWtdIlGaM7?t=1685084311"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k22b2c2kz9sz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_PYUsmVzZ6WnJxW?t=1685084316"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhsxakrpsp5y_PostCoupons,200,"{
+  ""id"": ""YmIEmfH3R6s5U"",
+  ""object"": ""coupon"",
+  ""amount_off"": 68,
+  ""created"": 1685084322,
+  ""currency"": ""etb"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 67,
+  ""metadata"": {},
+  ""name"": ""arid"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_sl0o8ubtxsmw_PostCoupons,200,"{
+  ""id"": ""TtC6EHlo"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084328,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""hierarchic"",
+  ""percent_off"": 90.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_to4kjt4we8tt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_RTwUxX2w0aLMsZ?t=1685084333"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7inqw3apyzn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_gwfCIgiEDlOYhG?t=1685080717"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r1dbxg1pt73n_PostCoupons,200,"{
+  ""id"": ""HKMMynogTqke78"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080723,
+  ""currency"": ""nok"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 24,
+  ""metadata"": {},
+  ""name"": ""fibrinolysin"",
+  ""percent_off"": 54.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s15mc2csrsc4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_BuyfNl4Jjp0aAm?t=1685080729"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sksu02j4el9v_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9bBItxNRGV58wa?t=1685080737"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_tnyzrmyofqeb_PostCoupons,200,"{
+  ""id"": ""DyZTDlk2"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080743,
+  ""currency"": ""huf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 1.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

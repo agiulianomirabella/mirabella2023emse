@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h85bjx8tzfaq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_l7l5ioOKxsp0iU?t=1685060536"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy7qq29ca81j_PostCoupons,200,"{
+  ""id"": ""Pv7tTYRE3oNQnc"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060542,
+  ""currency"": ""ngn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 81.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1k201zze8oit3_PostCoupons,200,"{
+  ""id"": ""8Tmoz58i"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060548,
+  ""currency"": ""qar"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 61.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skvmjsov3ygj_PostCoupons,200,"{
+  ""id"": ""4IpfPCx9WS1p"",
+  ""object"": ""coupon"",
+  ""amount_off"": 67,
+  ""created"": 1685060554,
+  ""currency"": ""thb"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 31,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1767364217,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t49kl8bgwsoh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Rf71b2GHX3bfcJ?t=1685060559"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

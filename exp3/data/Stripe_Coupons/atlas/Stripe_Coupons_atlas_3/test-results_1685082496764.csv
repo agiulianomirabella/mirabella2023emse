@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7qxz8ua20df_PostCoupons,200,"{
+  ""id"": ""x0mvHKe5"",
+  ""object"": ""coupon"",
+  ""amount_off"": 55,
+  ""created"": 1685082514,
+  ""currency"": ""brl"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 86,
+  ""metadata"": {},
+  ""name"": ""faultily"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1h820m4o6390m_PostCoupons,200,"{
+  ""id"": ""o307MF4N"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082520,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 96.0,
+  ""redeem_by"": 1836876120,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1h84tjzv3su9k_PostCoupons,200,"{
+  ""id"": ""wazM6JIp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082527,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 76.0,
+  ""redeem_by"": 1785581744,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe9fnv267y3n_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_UUgnkL5jbjlayJ?t=1685082534"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhklyx99adt1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8ELhpztpQHFDWZ?t=1685082543"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

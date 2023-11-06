@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hraz1q111hdl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3HkEQPuIUhUa94?t=1685086032"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ibbhn2d89tf6_PostCoupons,200,"{
+  ""id"": ""UEzHQVj1WCmGr7Sy1I"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685086038,
+  ""currency"": ""wst"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""thereabout"",
+  ""percent_off"": 82.0,
+  ""redeem_by"": 1747099950,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jelhd73tx1yo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HXQa78IUIkGccF?t=1685086044"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhodfc6b5jch_PostCoupons,200,"{
+  ""id"": ""vaCdlfSOcf4w"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685086050,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 86.0,
+  ""redeem_by"": 1775104845,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ubrx9m9bwf92_PostCoupons,200,"{
+  ""id"": ""A8Au29TuEtBNA0zfwoH"",
+  ""object"": ""coupon"",
+  ""amount_off"": 95,
+  ""created"": 1685086056,
+  ""currency"": ""shp"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 54,
+  ""metadata"": {},
+  ""name"": ""scrappily"",
+  ""percent_off"": null,
+  ""redeem_by"": 1802870190,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,1815 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv37lb5noze8_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""wH_-4AdtgM7J_NdBUFhGEO5SR0M"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 79
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1jeo9lr376y45_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jicr7zwme7uc_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""E-UgoJWhq0qeZwMEAN9OGO0HJ-k"",
+  ""pageInfo"": {
+    ""totalResults"": 79,
+    ""resultsPerPage"": 97
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""j8ZfoWKt5OvwZm8-sMf6axUXnm8"",
+      ""id"": ""UgyctWMt-KzjVEts-Lp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""u1mEn0xpshrCXgYK3a7RGkJeMK8"",
+      ""id"": ""UgyQVHm27LSPDFmA3Ld4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""3q0QN-f-8NJof3d2JLTB5UXDlbg"",
+            ""id"": ""UgyQVHm27LSPDFmA3Ld4AaABAg.9LrY7yKPZs_9lFqA7AcqYs"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""@C1NNAM0NRAT 2.0 - Taking long break it was just\u003cbr\u003eMy opinion"",
+              ""textOriginal"": ""@C1NNAM0NRAT 2.0 - Taking long break it was just\nMy opinion"",
+              ""parentId"": ""UgyQVHm27LSPDFmA3Ld4AaABAg"",
+              ""authorDisplayName"": ""Midnight Samurai"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/KwZvW3cAu5LadwbGrBj5vv6bv3q7PbBPMX2Rs8Xl0VKXQQMNXJSKd-7nkospky-DltAVzdVMHw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCj62pWc6b4ez7m4HtA4pUvQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCj62pWc6b4ez7m4HtA4pUvQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2023-01-24T05:37:59Z"",
+              ""updatedAt"": ""2023-01-24T05:37:59Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""wTkR1nF4YKkUDHIjHZALjdapeJA"",
+            ""id"": ""UgyQVHm27LSPDFmA3Ld4AaABAg.9LrY7yKPZs_9eAWKwYtEyg"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""@Gareth Hayes Abraham Lincoln wasn&#39;t good"",
+              ""textOriginal"": ""@Gareth Hayes Abraham Lincoln wasn't good"",
+              ""parentId"": ""UgyQVHm27LSPDFmA3Ld4AaABAg"",
+              ""authorDisplayName"": ""Jeff Dachs"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/OCsdbykTysrrQcDml7iahbObZwOWo_sDYNR6hRHKhC0Fu9y2iE2oewVUPH9lBekl79jzzuIsFX8=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCK93petrEBA53hBTWY3Rx9A"",
+              ""authorChannelId"": {
+                ""value"": ""UCK93petrEBA53hBTWY3Rx9A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-08-01T04:20:00Z"",
+              ""updatedAt"": ""2022-08-01T04:20:00Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aUr7aG9RqS3mcTWf_wFL151a1DM"",
+            ""id"": ""UgyQVHm27LSPDFmA3Ld4AaABAg.9LrY7yKPZs_9dyUOlkQv2N"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""\u200b@Gareth Hayes Lincoln mass murdered over 800,000 citizens (of the 31 million population), so in no way can anyone mass killing that astounding number be anywhere close to &quot;the best president.&quot; He started the income tax, started the counterfeiting paper money (&quot;greenbacks) inflation scheme, and was a strong proponent of the powerful Industrialists special interests (bankers, railroads, internal improvement bureaucrats, etc.) in a new collectivism, and centralizing more power and money into the small area of legislative-executive controls in the District of Criminals/Corruption). He banished a legislator out of Ohio, eventually he was forced to leave the U.S. for Canada! How can you call #16 &quot;a great president&quot; who would do something that damaging to an opposition party legislator? And wage an illegal war against his own countrymen, merely for more power to the already powerful Industrialists special interests (with the new, far-higher import tariffs a huge burden on the 11 Southern States), forcing them to secede, that he had no Constitutional power to intervene. The Constitution was a compact among the States, and they always retained the right to leave under the Supreme Law, if the central government exceeded its limited, specified powers in the Supreme Law, which it did. Lincoln was changed from the most hated man in the U.S. to a near-God, from both parties realizing how Lincoln could be used to advance both sides--long after his near-hatred by most in the U.S., even many of those in the North who despised his special interests bias, and greed for more power and control to the big, powerful Industrialist entities!"",
+              ""textOriginal"": ""\u200b@Gareth Hayes Lincoln mass murdered over 800,000 citizens (of the 31 million population), so in no way can anyone mass killing that astounding number be anywhere close to \""the best president.\"" He started the income tax, started the counterfeiting paper money (\""greenbacks) inflation scheme, and was a strong proponent of the powerful Industrialists special interests (bankers, railroads, internal improvement bureaucrats, etc.) in a new collectivism, and centralizing more power and money into the small area of legislative-executive controls in the District of Criminals/Corruption). He banished a legislator out of Ohio, eventually he was forced to leave the U.S. for Canada! How can you call #16 \""a great president\"" who would do something that damaging to an opposition party legislator? And wage an illegal war against his own countrymen, merely for more power to the already powerful Industrialists special interests (with the new, far-higher import tariffs a huge burden on the 11 Southern States), forcing them to secede, that he had no Constitutional power to intervene. The Constitution was a compact among the States, and they always retained the right to leave under the Supreme Law, if the central government exceeded its limited, specified powers in the Supreme Law, which it did. Lincoln was changed from the most hated man in the U.S. to a near-God, from both parties realizing how Lincoln could be used to advance both sides--long after his near-hatred by most in the U.S., even many of those in the North who despised his special interests bias, and greed for more power and control to the big, powerful Industrialist entities!"",
+              ""parentId"": ""UgyQVHm27LSPDFmA3Ld4AaABAg"",
+              ""authorDisplayName"": ""freeguy77"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNX_9Y9lIf864gDNMil69LnQ9vdlqSx2mbUyq1t=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCCDmJU8OIC9TherlEfmd-4Q"",
+              ""authorChannelId"": {
+                ""value"": ""UCCDmJU8OIC9TherlEfmd-4Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-27T02:52:55Z"",
+              ""updatedAt"": ""2022-07-27T02:52:55Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""yYYHxAaSeCtjP1wxqCm1rvC5Mo0"",
+            ""id"": ""UgyQVHm27LSPDFmA3Ld4AaABAg.9LrY7yKPZs_9cJiMhYeLbN"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""Wouldn’t say \u003cb\u003eBEST\u003c/b\u003e presidentbut the guy is probably in Top 5 in my opinion \u003cb\u003eNOT SAYING HE WAS BAD, TOP 5 IS GOOD\u003c/b\u003e Probably Top 3 imo"",
+              ""textOriginal"": ""Wouldn’t say *BEST* presidentbut the guy is probably in Top 5 in my opinion *NOT SAYING HE WAS BAD, TOP 5 IS GOOD* Probably Top 3 imo"",
+              ""parentId"": ""UgyQVHm27LSPDFmA3Ld4AaABAg"",
+              ""authorDisplayName"": ""C1NNAM0NRAT 2.0 - Taking long break"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/iw1kM8Lq3zIpPxQrwSVoYGbWDSQUDdFE8R1PNrjuXuj8mgMhKK5KC6eL7Yj3wqbqqLOUUwnFAQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCBOzXOkTTQmVDLd1xlXYRwA"",
+              ""authorChannelId"": {
+                ""value"": ""UCBOzXOkTTQmVDLd1xlXYRwA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-16T01:04:12Z"",
+              ""updatedAt"": ""2022-06-16T01:04:12Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""P5we14AvxiqQEOFpmY0tZ7-OxyA"",
+            ""id"": ""UgyQVHm27LSPDFmA3Ld4AaABAg.9LrY7yKPZs_9akVKxl3nZH"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""Idk, the sex scandals probably would’ve come out by then and hurt him a lot."",
+              ""textOriginal"": ""Idk, the sex scandals probably would’ve come out by then and hurt him a lot."",
+              ""parentId"": ""UgyQVHm27LSPDFmA3Ld4AaABAg"",
+              ""authorDisplayName"": ""Schroeders Current events"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMMOA9B7fOthMZxZfqQg08Wv4FC26cha0x4DhOG=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCXqArqbTcipzkUaSqkvJhWg"",
+              ""authorChannelId"": {
+                ""value"": ""UCXqArqbTcipzkUaSqkvJhWg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2022-05-08T02:57:35Z"",
+              ""updatedAt"": ""2022-05-08T02:57:35Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zb3zz9xmFoEA0bosjcSNEsra9JE"",
+      ""id"": ""UgwDKlfZTs0oz8T1bJt4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""eAvw1rTCzQc2iLbFfN_fVCjeZ8k"",
+            ""id"": ""UgwDKlfZTs0oz8T1bJt4AaABAg.9BXbBu8njG49KU6hYJNNZ3"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""You are correct sir!!!"",
+              ""textOriginal"": ""You are correct sir!!!"",
+              ""parentId"": ""UgwDKlfZTs0oz8T1bJt4AaABAg"",
+              ""authorDisplayName"": ""Cary West"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNBajENMWrr7oSe781XlLWOYlTrBwGaaMuRBw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjAPCZ1yIcxclpvLBsxuywg"",
+              ""authorChannelId"": {
+                ""value"": ""UCjAPCZ1yIcxclpvLBsxuywg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-03-04T20:01:34Z"",
+              ""updatedAt"": ""2021-03-04T20:01:34Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ciavO3iYFGDbOgVG1qyCZzTF8rs"",
+      ""id"": ""Ugz5k1sGnheYmacuGHR4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""CSmlC48tipSGmDqYxrA2eidLTJ4"",
+            ""id"": ""Ugz5k1sGnheYmacuGHR4AaABAg.9A1cMKIHOMl9iMpOZ-Iing"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""zu4kcq04SjI"",
+              ""textDisplay"": ""I’ll never vote democrat"",
+              ""textOriginal"": ""I’ll never vote democrat"",
+              ""parentId"": ""Ugz5k1sGnheYmacuGHR4AaABAg"",
+              ""authorDisplayName"": ""shadowing mirror"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNV8L2hBXiPNroVlJV3qEDjs53lGEHbwhLPS-PEWg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqgGKpLtpmHZ85lZTmo3szw"",
+              ""authorChannelId"": {
+                ""value"": ""UCqgGKpLtpmHZ85lZTmo3szw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-11-13T09:11:43Z"",
+              ""updatedAt"": ""2022-11-13T09:11:43Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""qgsVhnbrVmHBBbZccvD03SwnzAs"",
+            ""id"": ""Ugz5k1sGnheYmacuGHR4AaABAg.9A1cMKIHOMl9daqaCSWhJ9"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""zu4kcq04SjI"",
+              ""textDisplay"": ""Democraps are the worst people to ever exist."",
+              ""textOriginal"": ""Democraps are the worst people to ever exist."",
+              ""parentId"": ""Ugz5k1sGnheYmacuGHR4AaABAg"",
+              ""authorDisplayName"": ""Whitey McPrivileged"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/NgSiayZ10Ck7WoRarPrlzrvikvSbk43PebMrVGvIe1rJRyz96qjkhOZ1fNltdmXRyFugsuhWHdM=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJQyKo-0eWRH20hhT0u4nZg"",
+              ""authorChannelId"": {
+                ""value"": ""UCJQyKo-0eWRH20hhT0u4nZg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-17T22:33:49Z"",
+              ""updatedAt"": ""2022-07-17T22:33:49Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""mYIoB6sf_NGO7whTmQik-ERcEo4"",
+            ""id"": ""Ugz5k1sGnheYmacuGHR4AaABAg.9A1cMKIHOMl9cp5dd49UT2"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""zu4kcq04SjI"",
+              ""textDisplay"": ""@Race Junkie Ok 🖐"",
+              ""textOriginal"": ""@Race Junkie Ok 🖐"",
+              ""parentId"": ""Ugz5k1sGnheYmacuGHR4AaABAg"",
+              ""authorDisplayName"": ""Lamari Piazza"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/VGZdU3Dlm7t8RUT32Xk1XPLNs3XEqxf4oR8_6JQrR4d3CwgWQx3ySM-BfGzlL6eXGt5M90cO=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCty574cFfyUbpX5VNWxRycA"",
+              ""authorChannelId"": {
+                ""value"": ""UCty574cFfyUbpX5VNWxRycA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-28T14:52:04Z"",
+              ""updatedAt"": ""2022-06-28T14:52:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""JvrUdJD0ofgo9kCtCkeDh4NHOMo"",
+            ""id"": ""Ugz5k1sGnheYmacuGHR4AaABAg.9A1cMKIHOMl9cp1V-2wkAl"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""zu4kcq04SjI"",
+              ""textDisplay"": ""@Lamari Piazza actually a lot of us think that there was fraud because of the mathematical inaccuracies. It&#39;s obvious you haven&#39;t looked into it for yourself you just made fun of this one guy saying he took Trump&#39;s word for it but you said yourself you took the FBI&#39;s f*\u003cb\u003e***\u003c/b\u003e word for it. Why don&#39;t you look into the FBI and their integrity in the past 8 or so years"",
+              ""textOriginal"": ""@Lamari Piazza actually a lot of us think that there was fraud because of the mathematical inaccuracies. It's obvious you haven't looked into it for yourself you just made fun of this one guy saying he took Trump's word for it but you said yourself you took the FBI's f****** word for it. Why don't you look into the FBI and their integrity in the past 8 or so years"",
+              ""parentId"": ""Ugz5k1sGnheYmacuGHR4AaABAg"",
+              ""authorDisplayName"": ""Race Junkie"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOlvAVFf0k5cQitkHzhbCtqscGM7WA1A3EQoE-TrWG5iz3tLvqKhVATC9DJtM-T=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCxAdkFC9HYZ1eNdkE18jygA"",
+              ""authorChannelId"": {
+                ""value"": ""UCxAdkFC9HYZ1eNdkE18jygA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-28T14:15:48Z"",
+              ""updatedAt"": ""2022-06-28T14:15:48Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""MudjWgiQkVs3GAy9AcAGm5UXusQ"",
+            ""id"": ""Ugz5k1sGnheYmacuGHR4AaABAg.9A1cMKIHOMl9cY70CzZoUU"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""zu4kcq04SjI"",
+              ""textDisplay"": ""@King Robotnik there is very little evidence that he said that."",
+              ""textOriginal"": ""@King Robotnik there is very little evidence that he said that."",
+              ""parentId"": ""Ugz5k1sGnheYmacuGHR4AaABAg"",
+              ""authorDisplayName"": ""bic"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMmkqCB6INE4EqD6UTio2gllpEAoUvWrFn5fMgS=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEgf8xVWiqsmSIQJ-KQLJJQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCEgf8xVWiqsmSIQJ-KQLJJQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-21T15:17:42Z"",
+              ""updatedAt"": ""2022-06-21T15:17:42Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""X5KQ_5BSqyW7nnLxQfexjRR5iAw"",
+      ""id"": ""UgzAEsTqUGwUNAAqrZJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YHz34MqhDvDldMLY52Kr9nhD68I"",
+      ""id"": ""UgxdpXU5SzWAAVQxf8F4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""7jVaP4DGVHtLGM5K2B5Z88oONHk"",
+            ""id"": ""UgxdpXU5SzWAAVQxf8F4AaABAg.995uCfKLn329XKjTZIlnAx"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""EQZ92qfxL68"",
+              ""textDisplay"": ""@FuSoSoSoSoSo Have any Taliban ambushes seceded I doubt it."",
+              ""textOriginal"": ""@FuSoSoSoSoSo Have any Taliban ambushes seceded I doubt it."",
+              ""parentId"": ""UgxdpXU5SzWAAVQxf8F4AaABAg"",
+              ""authorDisplayName"": ""Isaiah 53 🙏🏾"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/u0g9kDV4I_qG3hqaB9vDuHVQCGhmDxwp3D2GPCQUAyvlQmN9UPJXPXXXyTMKXv01ZsyTwbkYbA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCy-Spe0SN4jL6L8HaSr1BLA"",
+              ""authorChannelId"": {
+                ""value"": ""UCy-Spe0SN4jL6L8HaSr1BLA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-01-18T07:24:45Z"",
+              ""updatedAt"": ""2022-01-18T07:24:45Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""l6EI83z-W1UhSwHbntDluRo99kE"",
+            ""id"": ""UgxdpXU5SzWAAVQxf8F4AaABAg.995uCfKLn329WwWwgFEclR"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""EQZ92qfxL68"",
+              ""textDisplay"": ""Then the enemy discovers it and destroy the device once they capture him, or even worse, use the device to lure the americans trying to rescue him into an ambush"",
+              ""textOriginal"": ""Then the enemy discovers it and destroy the device once they capture him, or even worse, use the device to lure the americans trying to rescue him into an ambush"",
+              ""parentId"": ""UgxdpXU5SzWAAVQxf8F4AaABAg"",
+              ""authorDisplayName"": ""FuSoSoSoSoSo"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPgP52FDevTVgdTftytmwb_lsiwhN8z-LlkF_ID=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvdXrX7JjKbGYwmL0HsOZJQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCvdXrX7JjKbGYwmL0HsOZJQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-01-08T12:25:31Z"",
+              ""updatedAt"": ""2022-01-08T12:25:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""cMStYQLPjFxfv6pkTAV5_t-aApk"",
+            ""id"": ""UgxdpXU5SzWAAVQxf8F4AaABAg.995uCfKLn329CPEVcIG1Ut"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""EQZ92qfxL68"",
+              ""textDisplay"": ""👀 expensive but yes. But he did desert so pffh"",
+              ""textOriginal"": ""👀 expensive but yes. But he did desert so pffh"",
+              ""parentId"": ""UgxdpXU5SzWAAVQxf8F4AaABAg"",
+              ""authorDisplayName"": ""Papa Charlie"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOMM3ZZQnKtgNBENvk9WdiXoIXvBVKHJ_aMOxJ5tQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-zo2pMGpjdr-GnTBgiHEYQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC-zo2pMGpjdr-GnTBgiHEYQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2020-08-16T02:22:21Z"",
+              ""updatedAt"": ""2020-08-16T02:22:21Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""XhOFrDfkYw3Dr_gakfxXRsrMxYw"",
+      ""id"": ""Ugzv22n7_7u_nYrJpXd4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""WWbPECi_A7NOD62eeMlabigA6Fg"",
+            ""id"": ""Ugzv22n7_7u_nYrJpXd4AaABAg.91slPC9iBiY93LKPzj9vQb"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Tim You are absolutely wrong.  \u003cbr\u003e\u003cbr\u003eThis is Article 4 Section 1 of the C.S.A Constitution.\u003cbr\u003eSec. 2. (I) The citizens of each State shall be entitled to all the privileges and immunities of citizens in the several States; and shall have the right of transit and sojourn in any State of this Confederacy, with their slaves and other property; and the right of property in said slaves shall not be thereby impaired. \u003cbr\u003e\u003cbr\u003eArticle 4 section 3\u003cbr\u003e(3) No slave or other person held to service or labor in any State or Territory of the Confederate States, under the laws thereof, escaping or lawfully carried into another, shall, in consequence of any law or regulation therein, be discharged from such service or labor; but shall be delivered up on claim of the party to whom such slave belongs,. or to whom such service or labor may be due. \u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e    And   for the love of intelligence,  the South seceded from the Union for several reasons.   Slavery wasn&#39;t the issue, the issue was the violation of the United States Constitution concerning slaves that were not returned.    \u003cbr\u003efrom the United States Constitution.\u003cbr\u003eArticle 4 Section 2 clause 3\u003cbr\u003eNo Person held to Service or Labour in one State, under the Laws thereof, escaping into another, shall, in Consequence of any Law or Regulation therein, be discharged from such Service or Labourbut shall be delivered up on Claim of the Party to whom such Service or Labour may be due.\u003cbr\u003e\u003cbr\u003eThere were many reasons why Abraham Lincoln was the final straw.  And they were proven right. Lincoln did what they feared the most.   He very purposefully started a war.\u003cbr\u003e\u003cbr\u003eThe Southern tax dollars being used to build Northern infrastructure, light houses would be another problem. Tariffs would be another.    \u003cbr\u003e\u003cbr\u003eDC was taking good care of the North East with Southern tax dollars."",
+              ""textOriginal"": ""@Tim You are absolutely wrong.  \n\nThis is Article 4 Section 1 of the C.S.A Constitution.\nSec. 2. (I) The citizens of each State shall be entitled to all the privileges and immunities of citizens in the several States; and shall have the right of transit and sojourn in any State of this Confederacy, with their slaves and other property; and the right of property in said slaves shall not be thereby impaired. \n\nArticle 4 section 3\n(3) No slave or other person held to service or labor in any State or Territory of the Confederate States, under the laws thereof, escaping or lawfully carried into another, shall, in consequence of any law or regulation therein, be discharged from such service or labor; but shall be delivered up on claim of the party to whom such slave belongs,. or to whom such service or labor may be due. \n\n\n\n    And   for the love of intelligence,  the South seceded from the Union for several reasons.   Slavery wasn't the issue, the issue was the violation of the United States Constitution concerning slaves that were not returned.    \nfrom the United States Constitution.\nArticle 4 Section 2 clause 3\nNo Person held to Service or Labour in one State, under the Laws thereof, escaping into another, shall, in Consequence of any Law or Regulation therein, be discharged from such Service or Labourbut shall be delivered up on Claim of the Party to whom such Service or Labour may be due.\n\nThere were many reasons why Abraham Lincoln was the final straw.  And they were proven right. Lincoln did what they feared the most.   He very purposefully started a war.\n\nThe Southern tax dollars being used to build Northern infrastructure, light houses would be another problem. Tariffs would be another.    \n\nDC was taking good care of the North East with Southern tax dollars."",
+              ""parentId"": ""Ugzv22n7_7u_nYrJpXd4AaABAg"",
+              ""authorDisplayName"": ""Tom Goffnett"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNv8FbrOrViGOcrnbm9a2VkmAqB1gS0DGOyNLCQpA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCO8Z556H9qekVK42-CccIEQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCO8Z556H9qekVK42-CccIEQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-01-03T21:14:30Z"",
+              ""updatedAt"": ""2020-01-03T21:14:30Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""AtfZQcdqwhWaQhKLyYEXV-729u0"",
+            ""id"": ""Ugzv22n7_7u_nYrJpXd4AaABAg.91slPC9iBiY93LHMGmZRkr"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""&quot;And the South didn&#39;t secede because of slavery, the South seceded because of  a Northern dominated government that refused to follow the Constitution. &quot;\u003cbr\u003e\u003cbr\u003e\u003cbr\u003eThe confederates themselves disagree with you.  They put in their own words why they seceded.  Slavery, slavery and more slavery.\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e&quot;States would join the Confederate States of America&quot;\u003cbr\u003e\u003cbr\u003e\u003cbr\u003eWell they would have to make slavery legal before being admitted to the confederacy.  You know that issue you said secession had nothing to do with? Yeah in the Confederate constitution legal slavery in a state is a requirement of being admitted."",
+              ""textOriginal"": ""\""And the South didn't secede because of slavery, the South seceded because of  a Northern dominated government that refused to follow the Constitution. \""\n\n\nThe confederates themselves disagree with you.  They put in their own words why they seceded.  Slavery, slavery and more slavery.\n\n\n\""States would join the Confederate States of America\""\n\n\nWell they would have to make slavery legal before being admitted to the confederacy.  You know that issue you said secession had nothing to do with? Yeah in the Confederate constitution legal slavery in a state is a requirement of being admitted."",
+              ""parentId"": ""Ugzv22n7_7u_nYrJpXd4AaABAg"",
+              ""authorDisplayName"": ""Tim"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPjgJP4agsKyKE8AeAWpc2RE5BDMyY5mwopbaWb=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYfmpdMHkDg-JQScQO2Ba9w"",
+              ""authorChannelId"": {
+                ""value"": ""UCYfmpdMHkDg-JQScQO2Ba9w""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-01-03T20:47:46Z"",
+              ""updatedAt"": ""2020-01-03T20:47:46Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yIb98KHkebV4f7D-cGQVCuKkwrE"",
+      ""id"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""jPAX_QYeQ-quidSLF9PZFiXvAfg"",
+            ""id"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg.90r6sSZUr-e93LIgMFuC64"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Randy Bullington &quot; so to protect Lincoln&#39;s legacy for future posterity, they actually rewrote and reworded the secession documents to include many different references to slavery&quot;  Can you prove this or is this just some conspiracy theory you hatched?"",
+              ""textOriginal"": ""@Randy Bullington \"" so to protect Lincoln's legacy for future posterity, they actually rewrote and reworded the secession documents to include many different references to slavery\""  Can you prove this or is this just some conspiracy theory you hatched?"",
+              ""parentId"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg"",
+              ""authorDisplayName"": ""Tim"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPjgJP4agsKyKE8AeAWpc2RE5BDMyY5mwopbaWb=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYfmpdMHkDg-JQScQO2Ba9w"",
+              ""authorChannelId"": {
+                ""value"": ""UCYfmpdMHkDg-JQScQO2Ba9w""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-01-03T20:59:23Z"",
+              ""updatedAt"": ""2020-01-03T20:59:23Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""3JSCWeY3Tb_8D2k5T_0T29mvzE8"",
+            ""id"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg.90r6sSZUr-e93LIUcBVi72"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""Did you actually read those 5 causes? Literally all but one are directly linked with slavery.  1. This is the only one that really isnt about slavery.  2. is literally about slavery.  3. was literally about belligerent discourse about what? Oh yeah slavery.  4. Again, regarding the feds ability to limit what? Oh right slavery again.  5.  Fear of federal dominance through what now? Oh right expanding free states where there aren&#39;t uh, slaves."",
+              ""textOriginal"": ""Did you actually read those 5 causes? Literally all but one are directly linked with slavery.  1. This is the only one that really isnt about slavery.  2. is literally about slavery.  3. was literally about belligerent discourse about what? Oh yeah slavery.  4. Again, regarding the feds ability to limit what? Oh right slavery again.  5.  Fear of federal dominance through what now? Oh right expanding free states where there aren't uh, slaves."",
+              ""parentId"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg"",
+              ""authorDisplayName"": ""Tim"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPjgJP4agsKyKE8AeAWpc2RE5BDMyY5mwopbaWb=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYfmpdMHkDg-JQScQO2Ba9w"",
+              ""authorChannelId"": {
+                ""value"": ""UCYfmpdMHkDg-JQScQO2Ba9w""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-01-03T20:57:39Z"",
+              ""updatedAt"": ""2020-01-03T20:57:39Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""FIs2rcQrcPd1JtHPZiR_ywOusXc"",
+            ""id"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg.90r6sSZUr-e90r8bPIm0Iq"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""The Federal government went to war with the seceded states to make them give up slavery of the African, yet turn around and commit genocide on a completely different race of people to the tune of over a million Native American Indians in the Plains Wars..... yes, that makes perfect sense to me!\u003cbr\u003eAnd all documents back then were hand written out, and the copys themselves were hand written..... did it ever occur to you that after the war, when the Federal government discovered that not only could they not successfully convict Davis for treason,  but any further inquiry on the subject would have proven Lincoln&#39;s invasion of legally seceded states ILLEGAL.... which is something they absolutely can not ever have, since the war was already won and over..... so to protect Lincoln&#39;s legacy for future posterity, they actually rewrote and reworded the secession documents to include many different references to slavery, so forever in the future it could be pointed to as proof that secession was simply over slavery, and the north fought a justified war on a morality cause?"",
+              ""textOriginal"": ""The Federal government went to war with the seceded states to make them give up slavery of the African, yet turn around and commit genocide on a completely different race of people to the tune of over a million Native American Indians in the Plains Wars..... yes, that makes perfect sense to me!\nAnd all documents back then were hand written out, and the copys themselves were hand written..... did it ever occur to you that after the war, when the Federal government discovered that not only could they not successfully convict Davis for treason,  but any further inquiry on the subject would have proven Lincoln's invasion of legally seceded states ILLEGAL.... which is something they absolutely can not ever have, since the war was already won and over..... so to protect Lincoln's legacy for future posterity, they actually rewrote and reworded the secession documents to include many different references to slavery, so forever in the future it could be pointed to as proof that secession was simply over slavery, and the north fought a justified war on a morality cause?"",
+              ""parentId"": ""Ugwi3DJeNvDcj6DHUZt4AaABAg"",
+              ""authorDisplayName"": ""Randy Bullington"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPe7hNnr1DwmFfhEi2oPsRbYUtrtFGCT8V9Bg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb5UHoGiRjwnUcbo4kNZlRA"",
+              ""authorChannelId"": {
+                ""value"": ""UCb5UHoGiRjwnUcbo4kNZlRA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2019-11-03T01:32:05Z"",
+              ""updatedAt"": ""2019-11-03T01:32:05Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""mNSgHdDvgImU0hVvHhQs5loj1iY"",
+      ""id"": ""UgwNlPWyY5dLJUVohOt4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""ag9t3O9OGIlekRKR3GI09BI5As0"",
+            ""id"": ""UgwNlPWyY5dLJUVohOt4AaABAg.8wQMwhxewAS9CpLuTP-XFd"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Bernard S -  Why are you so desperately to defend terrorists and terrorism?\u003cbr\u003e             Here are some facts about USA history, the Electoral College, and the civil war.   The sources of this information are the USA Constitution and actual events in USA history:\r\u003cbr\u003e\r\u003cbr\u003e       The Electoral College was written by terrorists(slavers) to be nothing more than a &quot;welfare benefit&quot; for themselves and other USA terrorists.  The E C (+ the 3/5ths clause) awards excessive national governmental and political power to terrorists(slavers).  The Electoral College encouraged and rewarded the terrorism of slavery.   The Electoral College allowed terrorists to dominate the USA national government until around 1850-1860.   The USA&#39;s &quot;founding fathers&quot; were the USA&#39;s first group of &quot;welfare queens&quot;.  Ten of the first twelve presidents were terrorists.\r\u003cbr\u003e\r\u003cbr\u003e      What  happened around 1860 when abolition and the prohibition of slaver terrorism in the new territories greatly reduced the &quot;free stuff&quot; to which the terrorists had become so accustomed?\r\u003cbr\u003e\r\u003cbr\u003eOne of the biggest blows to the &quot;terrorist welfare queens&quot; was the prohibition of slaver terrorism in Western territories.  That&#39;s one of the reasons you hear that old csa/kkk terrorist propaganda phrase, &quot;WE DON&#39;T WANT TO BE RULED BY THE COASTS!&quot;.\r\u003cbr\u003e\r\u003cbr\u003eWhat happened when the terrorist &quot;welfare queens&quot; lost their &quot;free stuff&quot; from the USA government?\r\u003cbr\u003e\r\u003cbr\u003e  The csa/kkk was just a MS-13-type gang of butthurt &quot;welfare queens&quot;.\r\u003cbr\u003e\r\u003cbr\u003e      After causing the civil war, the Electoral College became  a &quot;welfare benefit&quot; for states which suppress voting.   I wonder which states LOVE to suppress voting .......... might they be the former terrorist states and terrorist sympathizer states?"",
+              ""textOriginal"": ""@Bernard S -  Why are you so desperately to defend terrorists and terrorism?\n             Here are some facts about USA history, the Electoral College, and the civil war.   The sources of this information are the USA Constitution and actual events in USA history:\r\n\r\n       The Electoral College was written by terrorists(slavers) to be nothing more than a \""welfare benefit\"" for themselves and other USA terrorists.  The E C (+ the 3/5ths clause) awards excessive national governmental and political power to terrorists(slavers).  The Electoral College encouraged and rewarded the terrorism of slavery.   The Electoral College allowed terrorists to dominate the USA national government until around 1850-1860.   The USA's \""founding fathers\"" were the USA's first group of \""welfare queens\"".  Ten of the first twelve presidents were terrorists.\r\n\r\n      What  happened around 1860 when abolition and the prohibition of slaver terrorism in the new territories greatly reduced the \""free stuff\"" to which the terrorists had become so accustomed?\r\n\r\nOne of the biggest blows to the \""terrorist welfare queens\"" was the prohibition of slaver terrorism in Western territories.  That's one of the reasons you hear that old csa/kkk terrorist propaganda phrase, \""WE DON'T WANT TO BE RULED BY THE COASTS!\"".\r\n\r\nWhat happened when the terrorist \""welfare queens\"" lost their \""free stuff\"" from the USA government?\r\n\r\n  The csa/kkk was just a MS-13-type gang of butthurt \""welfare queens\"".\r\n\r\n      After causing the civil war, the Electoral College became  a \""welfare benefit\"" for states which suppress voting.   I wonder which states LOVE to suppress voting .......... might they be the former terrorist states and terrorist sympathizer states?"",
+              ""parentId"": ""UgwNlPWyY5dLJUVohOt4AaABAg"",
+              ""authorDisplayName"": ""RB"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMqYaomx6RGfah9xhNfIpEz5mssiF9BuSdK2L2Qhg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC5r0qOZonno2GR45sxKTjKg"",
+              ""authorChannelId"": {
+                ""value"": ""UC5r0qOZonno2GR45sxKTjKg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-08-26T15:06:32Z"",
+              ""updatedAt"": ""2020-08-26T15:06:32Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""id_7q_EmteWK1GD-It8_oZ3aCDo"",
+            ""id"": ""UgwNlPWyY5dLJUVohOt4AaABAg.8wQMwhxewAS9A_mYkd-S6H"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Bernard S The Declaration of Independence was written 10 years before the Constitution, and is not a legal document in any sense.\u003cbr\u003e\u003cbr\u003eIt DID correctly describe the United States as a &quot;Union of free and independent States,&quot; because that is exactly what they were under the Articles of Union and the Articles of Confederation.\u003cbr\u003e\u003cbr\u003eThat changed with the Constitution. But even the Articles of Confederation described the Union as &quot;Indesolvable.&quot;\u003cbr\u003e\u003cbr\u003eThe Constitution asserts the supremacy of Federal Law wherever it conflicts with State Law. It also reserves to the Federal Government the right to raise armies, coin money, and make treaties with foreign nation....all things that are the prerogative of NATION STATES.\u003cbr\u003e\u003cbr\u003eIf the Founders meant for States to be able to leave the Union at will they would have written in a legal mechanism for them to do exactly that, the way they wrote in procedures for ADDING states to the Union.\u003cbr\u003e\u003cbr\u003eBut this argument has been dead and cold for 150 years. Lincoln wrapped up the illegality of secession in his 1st Inaugural Address."",
+              ""textOriginal"": ""@Bernard S The Declaration of Independence was written 10 years before the Constitution, and is not a legal document in any sense.\n\nIt DID correctly describe the United States as a \""Union of free and independent States,\"" because that is exactly what they were under the Articles of Union and the Articles of Confederation.\n\nThat changed with the Constitution. But even the Articles of Confederation described the Union as \""Indesolvable.\""\n\nThe Constitution asserts the supremacy of Federal Law wherever it conflicts with State Law. It also reserves to the Federal Government the right to raise armies, coin money, and make treaties with foreign nation....all things that are the prerogative of NATION STATES.\n\nIf the Founders meant for States to be able to leave the Union at will they would have written in a legal mechanism for them to do exactly that, the way they wrote in procedures for ADDING states to the Union.\n\nBut this argument has been dead and cold for 150 years. Lincoln wrapped up the illegality of secession in his 1st Inaugural Address."",
+              ""parentId"": ""UgwNlPWyY5dLJUVohOt4AaABAg"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-07-01T20:57:28Z"",
+              ""updatedAt"": ""2020-07-01T20:57:28Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""cb0Evd_DOu9_OceKG3sQbWQ-5WA"",
+            ""id"": ""UgwNlPWyY5dLJUVohOt4AaABAg.8wQMwhxewAS9A_d0P2taSf"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Occam Therazor Um you don&#39;t know anything about American history do you? The first state to threaten secession was MA under the Washington Administration. They didn&#39;t like the fact that a Southerner was the first president and so they threatened to leave but Adams convinced them to stay telling them that they would have their day soon and they did in 1796. MA also threatened to secede four times during the War of 1812 and effectively did so by not sending any troops to help in the war at all. MA and CT and DE met at the Hartford Conventions in the 1814-1815 winter to discuss seceding. When Jefferson was president one of his cabinet members asked him about the fact that MA kept threatening to secede and he said: &quot;If they deem it in their best interest to do so then by all means let them go&quot;. Hamilton convinced NY to go to the Ratifying conventions in the first place by telling them that &quot;the sword and the purse are inextricably linked&quot; and that because they are then NY could refuse to collect taxes for the Federal government because by doing that they would be sheathing the sword of tyranny. He even told them that if they signed onto the Constitution that they were not surrendering their sovereignty and that they could leave the union at any point if they wanted to. So when Hamilton told the NY delegates that they then went to the ratifying convention under that premise. They still demanded a guarantee from all of the Founding Fathers that they could leave if they wanted to. MA, NY, DE, VA, NC, and SC all demanded that guarantee from the Founding Fathers but DE and NC and SC dropped their demand when the Founding Fathers agreed to VA&#39;s demand because VA said that they were stating the right to leave on behalf of all other states. In fact, the VA state constitution, where the US Constitution gets the 2A from, literally says that the point in the population being able to arm themselves is so that the people of any state can have the ability to expel any military force that they deem contrary to the good of their state. That included Federal troops. That is also why Washington said that what he did with the Whiskey Rebellion was illegal and wrong and he pardoned everyone that had been arrested through it because he said it was illegal and wrong for the Federal authority to deploy troops in any state without the express permission of the governor of that state and he did not have permission from Governor Mifflin of PA to deploy troops in PA. Also, a union by definition is the coming together of free and independent entities to form a whole. That is why the Declaration of Independence defines us as &quot;a union of free and independent states that have the right that free and independent states aught to have including the right to wage war, conduct commerce, and negotiate treaties how they see fit&quot;. Aspirations of secession may mean war in Europe and Asia but that is precisely what we were founded on."",
+              ""textOriginal"": ""@Occam Therazor Um you don't know anything about American history do you? The first state to threaten secession was MA under the Washington Administration. They didn't like the fact that a Southerner was the first president and so they threatened to leave but Adams convinced them to stay telling them that they would have their day soon and they did in 1796. MA also threatened to secede four times during the War of 1812 and effectively did so by not sending any troops to help in the war at all. MA and CT and DE met at the Hartford Conventions in the 1814-1815 winter to discuss seceding. When Jefferson was president one of his cabinet members asked him about the fact that MA kept threatening to secede and he said: \""If they deem it in their best interest to do so then by all means let them go\"". Hamilton convinced NY to go to the Ratifying conventions in the first place by telling them that \""the sword and the purse are inextricably linked\"" and that because they are then NY could refuse to collect taxes for the Federal government because by doing that they would be sheathing the sword of tyranny. He even told them that if they signed onto the Constitution that they were not surrendering their sovereignty and that they could leave the union at any point if they wanted to. So when Hamilton told the NY delegates that they then went to the ratifying convention under that premise. They still demanded a guarantee from all of the Founding Fathers that they could leave if they wanted to. MA, NY, DE, VA, NC, and SC all demanded that guarantee from the Founding Fathers but DE and NC and SC dropped their demand when the Founding Fathers agreed to VA's demand because VA said that they were stating the right to leave on behalf of all other states. In fact, the VA state constitution, where the US Constitution gets the 2A from, literally says that the point in the population being able to arm themselves is so that the people of any state can have the ability to expel any military force that they deem contrary to the good of their state. That included Federal troops. That is also why Washington said that what he did with the Whiskey Rebellion was illegal and wrong and he pardoned everyone that had been arrested through it because he said it was illegal and wrong for the Federal authority to deploy troops in any state without the express permission of the governor of that state and he did not have permission from Governor Mifflin of PA to deploy troops in PA. Also, a union by definition is the coming together of free and independent entities to form a whole. That is why the Declaration of Independence defines us as \""a union of free and independent states that have the right that free and independent states aught to have including the right to wage war, conduct commerce, and negotiate treaties how they see fit\"". Aspirations of secession may mean war in Europe and Asia but that is precisely what we were founded on."",
+              ""parentId"": ""UgwNlPWyY5dLJUVohOt4AaABAg"",
+              ""authorDisplayName"": ""Bernard S"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNn12ri_-9SpYo2YI-dWxwzVMcM5n0uKm0TRtje9w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCfqM1alOwa-2pFNRz2b2KAQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCfqM1alOwa-2pFNRz2b2KAQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-07-01T19:34:08Z"",
+              ""updatedAt"": ""2020-07-01T19:34:08Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""4XT6D6kvyCRA8ok-jQ4oTKwOaTg"",
+            ""id"": ""UgwNlPWyY5dLJUVohOt4AaABAg.8wQMwhxewAS99myi2T0DBo"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I don’t know if all that is true \u003cbr\u003ebut it sure did sound damn good"",
+              ""textOriginal"": ""I don’t know if all that is true \nbut it sure did sound damn good"",
+              ""parentId"": ""UgwNlPWyY5dLJUVohOt4AaABAg"",
+              ""authorDisplayName"": ""OG-GREEN MACHINE"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNRutC76IwqxqsYMW0_arBJFWIEqi2sh2yO69saBA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC5ucB2Q111nFKu0QpX1I5YQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC5ucB2Q111nFKu0QpX1I5YQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-06-12T03:22:28Z"",
+              ""updatedAt"": ""2020-06-12T03:22:28Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""zkffMNwIIQsAZOofal0od2J2tTo"",
+            ""id"": ""UgwNlPWyY5dLJUVohOt4AaABAg.8wQMwhxewAS93Lx-gKjRoS"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""All wars ever have been over economics. The Southern planters saw the beginning of the end of slavery, which was the golden Goose of their wealth. They engineered the secession movement so that they could continue to be filthy rich. And the North fought to stop them because Nation-States don&#39;t just allow malcontented to walk off with half of their land and 1/3 of their population. Aspirations of secession generally mean war. It&#39;s pretty much a law of nature."",
+              ""textOriginal"": ""All wars ever have been over economics. The Southern planters saw the beginning of the end of slavery, which was the golden Goose of their wealth. They engineered the secession movement so that they could continue to be filthy rich. And the North fought to stop them because Nation-States don't just allow malcontented to walk off with half of their land and 1/3 of their population. Aspirations of secession generally mean war. It's pretty much a law of nature."",
+              ""parentId"": ""UgwNlPWyY5dLJUVohOt4AaABAg"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 6,
+              ""publishedAt"": ""2020-01-04T03:00:26Z"",
+              ""updatedAt"": ""2020-01-04T03:00:26Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KIC3VkiyQ6WaLyVcXrhl62KR9qc"",
+      ""id"": ""UgzWmKfiowc0Xnxea4R4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""swIjns6DPBObvmYMBC3CqQipFpc"",
+            ""id"": ""UgzWmKfiowc0Xnxea4R4AaABAg.8tOtwLFaWo490r66TH8OOz"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Randy Bullington No, the Corwin Amendment is proof that slavery was the central issue behind secession. It was a desperate attempt to give the slave-holders everything that they wanted and avoid a war. In keeping with that, it addressed everything that the slave states were mad about...except that it didn&#39;t. It was a poisoned apple, and the slave states knew it. It did not address the fact that Western Expansion was going to make the slave states a permanent minority in both houses of Congress and the Electoral College. Slavery would not have surviveded this, Corwin Amendment or no. For an example of how that would work, the text of the 14th Amendment can sit right next to the Corwin Amendment just fine. That would essentially make the children born to slaves into free citizens, which would cause slavery to wither I a generation, without ever actually banning slavery.\u003cbr\u003e\u003cbr\u003eAnd if you insist on giving Lincoln credit for the Corwin Amendment, does he hat least also get credit for the actual 13th Amendment? You know, the one he ACTUALLY DID have a hand in writing? It&#39;s pretty amazing that you want to use Lincoln&#39;s campaign speeches to say &quot;He didn&#39;t care about freeing slaves!&quot; Sure, he TALKED about not wanting to free the slaves whennthe country was about to explode on the issuebut then once the war kicked off and was winding down, he AFTUALLY FREED THE SLAVES."",
+              ""textOriginal"": ""@Randy Bullington No, the Corwin Amendment is proof that slavery was the central issue behind secession. It was a desperate attempt to give the slave-holders everything that they wanted and avoid a war. In keeping with that, it addressed everything that the slave states were mad about...except that it didn't. It was a poisoned apple, and the slave states knew it. It did not address the fact that Western Expansion was going to make the slave states a permanent minority in both houses of Congress and the Electoral College. Slavery would not have surviveded this, Corwin Amendment or no. For an example of how that would work, the text of the 14th Amendment can sit right next to the Corwin Amendment just fine. That would essentially make the children born to slaves into free citizens, which would cause slavery to wither I a generation, without ever actually banning slavery.\n\nAnd if you insist on giving Lincoln credit for the Corwin Amendment, does he hat least also get credit for the actual 13th Amendment? You know, the one he ACTUALLY DID have a hand in writing? It's pretty amazing that you want to use Lincoln's campaign speeches to say \""He didn't care about freeing slaves!\"" Sure, he TALKED about not wanting to free the slaves whennthe country was about to explode on the issuebut then once the war kicked off and was winding down, he AFTUALLY FREED THE SLAVES."",
+              ""parentId"": ""UgzWmKfiowc0Xnxea4R4AaABAg"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2019-11-03T01:10:15Z"",
+              ""updatedAt"": ""2019-11-03T01:10:15Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""NDQXZRvsdMmLqFOTyQDNn0dQPkI"",
+            ""id"": ""UgzWmKfiowc0Xnxea4R4AaABAg.8tOtwLFaWo490oc8GuTuv1"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Occam Therazor I know who the Corwin Amendment was named afterbut please sir do not insist to me that the Corwin Amendment does not get offered without the approval of the siting president! Had it been successful in ratification with the majority of the cotton states in acceptance, it would completely have forever lasting effects on Lincoln&#39;s future legacy, and he was absolutely fine with that, as long as it yielded the return of the states in secession back under his control, and the tyrannical tariff increases he demanded was had! \u003cbr\u003eBut your missing the larger point I&#39;m trying to make. It the fact of the sheer willingness to make such a deal in order to gain back what he TRULY desired.... power and money! A president TRULY interested in ending slavery does not, and would not approve of having such an offer made, because had it been accepted, he would forever been known to history as &quot;the GREAT ENSLAVER&quot;, regardless if it would have been &quot;easy&quot; to change back later! The mere existence of the Corwin Amendment proposal is absolutely proof of Lincoln&#39;s true ambitions, and the south&#39;s refusal of it is proof that slavery was not a necessity issue, or all they had to do was ratify to save the practice of slavery in the antebellum south, without a drop of blood spilled, and for how ever long it lasted..... but that&#39;s not what happened, is it?\u003cbr\u003eSo there has to be another reason why that none of the states in secession didn&#39;t not accept.... and that was unfair  and tyrannical protectionist tariffs, and a states right to self determination! You can spin and fluff the Corwin Amendment proposal all you want as &quot; no real big deal&quot;but its very disingenuous and wrong."",
+              ""textOriginal"": ""@Occam Therazor I know who the Corwin Amendment was named afterbut please sir do not insist to me that the Corwin Amendment does not get offered without the approval of the siting president! Had it been successful in ratification with the majority of the cotton states in acceptance, it would completely have forever lasting effects on Lincoln's future legacy, and he was absolutely fine with that, as long as it yielded the return of the states in secession back under his control, and the tyrannical tariff increases he demanded was had! \nBut your missing the larger point I'm trying to make. It the fact of the sheer willingness to make such a deal in order to gain back what he TRULY desired.... power and money! A president TRULY interested in ending slavery does not, and would not approve of having such an offer made, because had it been accepted, he would forever been known to history as \""the GREAT ENSLAVER\"", regardless if it would have been \""easy\"" to change back later! The mere existence of the Corwin Amendment proposal is absolutely proof of Lincoln's true ambitions, and the south's refusal of it is proof that slavery was not a necessity issue, or all they had to do was ratify to save the practice of slavery in the antebellum south, without a drop of blood spilled, and for how ever long it lasted..... but that's not what happened, is it?\nSo there has to be another reason why that none of the states in secession didn't not accept.... and that was unfair  and tyrannical protectionist tariffs, and a states right to self determination! You can spin and fluff the Corwin Amendment proposal all you want as \"" no real big deal\""but its very disingenuous and wrong."",
+              ""parentId"": ""UgzWmKfiowc0Xnxea4R4AaABAg"",
+              ""authorDisplayName"": ""Randy Bullington"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPe7hNnr1DwmFfhEi2oPsRbYUtrtFGCT8V9Bg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb5UHoGiRjwnUcbo4kNZlRA"",
+              ""authorChannelId"": {
+                ""value"": ""UCb5UHoGiRjwnUcbo4kNZlRA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-02T02:01:08Z"",
+              ""updatedAt"": ""2019-11-02T02:01:08Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""XZyhwuq7uwK4-OtJb4VJWB1NhOI"",
+            ""id"": ""UgzWmKfiowc0Xnxea4R4AaABAg.8tOtwLFaWo490o8BsU7y1r"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Randy Bullington No, the Corwin Amendment was proposed by Thomas Corwin. That&#39;s why it was called the Corwin Amendment, not the Lincoln Amendment. And if you read Lincoln&#39;s statement of approval, it is in the most passive-aggressive and luke-warm language possible. And it was unnecessary, since the President has no role in the Constitutional Amendment Process. And likely the reason he &quot;Had no Objection&quot; to it was because it did not affect the admittance of new States into the Union. Any further States admitted were certain to be Free States, and adding their anti-slavery votes to the Senate. It would still have been pretty easy to legislate slavery out of existance under these circumstances, even with the Corwin Amendment."",
+              ""textOriginal"": ""@Randy Bullington No, the Corwin Amendment was proposed by Thomas Corwin. That's why it was called the Corwin Amendment, not the Lincoln Amendment. And if you read Lincoln's statement of approval, it is in the most passive-aggressive and luke-warm language possible. And it was unnecessary, since the President has no role in the Constitutional Amendment Process. And likely the reason he \""Had no Objection\"" to it was because it did not affect the admittance of new States into the Union. Any further States admitted were certain to be Free States, and adding their anti-slavery votes to the Senate. It would still have been pretty easy to legislate slavery out of existance under these circumstances, even with the Corwin Amendment."",
+              ""parentId"": ""UgzWmKfiowc0Xnxea4R4AaABAg"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-01T21:30:45Z"",
+              ""updatedAt"": ""2019-11-01T21:30:45Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""48Gxfltyb7U0y08r_Fp0zPJl4lI"",
+            ""id"": ""UgzWmKfiowc0Xnxea4R4AaABAg.8tOtwLFaWo48tqXANKUK_Q"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""Andrew O.B., you are a regurgitator of the false victors version of history to cover up an illegal war perpetrated by Lincoln and his desire for power and revenue! Don&#39;t even suggest to me that  the Corwin Amendment got proposed without a thumbs up from Lincoln!.... which means that Lincoln was PERFECTLY WILLING to protect slavery   by Constitutional amendment, as long as the seceded states came back into the union under his thumb, AND PAY HIM HIS FRIGGIN MONEY HE DEMANDED!\u003cbr\u003eLincoln didn&#39;t give 2 fucks about the African being slaves, and the Corwin Amendment proves it! Had the Southern states all agreed and ratified his proposal, Lincoln would have forever been known to history as the GREAT ENSLAVER, instead of the great emancipator!\u003cbr\u003eAnd if slavery was truly what the the south seceded over and wanted to protect, then why didn&#39;t ONE SINGLE southern state ratify it?!"",
+              ""textOriginal"": ""Andrew O.B., you are a regurgitator of the false victors version of history to cover up an illegal war perpetrated by Lincoln and his desire for power and revenue! Don't even suggest to me that  the Corwin Amendment got proposed without a thumbs up from Lincoln!.... which means that Lincoln was PERFECTLY WILLING to protect slavery   by Constitutional amendment, as long as the seceded states came back into the union under his thumb, AND PAY HIM HIS FRIGGIN MONEY HE DEMANDED!\nLincoln didn't give 2 fucks about the African being slaves, and the Corwin Amendment proves it! Had the Southern states all agreed and ratified his proposal, Lincoln would have forever been known to history as the GREAT ENSLAVER, instead of the great emancipator!\nAnd if slavery was truly what the the south seceded over and wanted to protect, then why didn't ONE SINGLE southern state ratify it?!"",
+              ""parentId"": ""UgzWmKfiowc0Xnxea4R4AaABAg"",
+              ""authorDisplayName"": ""Randy Bullington"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPe7hNnr1DwmFfhEi2oPsRbYUtrtFGCT8V9Bg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb5UHoGiRjwnUcbo4kNZlRA"",
+              ""authorChannelId"": {
+                ""value"": ""UCb5UHoGiRjwnUcbo4kNZlRA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2019-04-17T23:36:19Z"",
+              ""updatedAt"": ""2019-04-17T23:36:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""nJi92CGGiNF8zP8AVkiGYG0dfd4"",
+            ""id"": ""UgzWmKfiowc0Xnxea4R4AaABAg.8tOtwLFaWo48tqVEP84sht"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""Lincoln DID propose the Corwin Amendment! He made mention of it in his first inaugural address, and and fully supported its issue! Stop spinning false history to fit your narrative!"",
+              ""textOriginal"": ""Lincoln DID propose the Corwin Amendment! He made mention of it in his first inaugural address, and and fully supported its issue! Stop spinning false history to fit your narrative!"",
+              ""parentId"": ""UgzWmKfiowc0Xnxea4R4AaABAg"",
+              ""authorDisplayName"": ""Randy Bullington"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPe7hNnr1DwmFfhEi2oPsRbYUtrtFGCT8V9Bg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb5UHoGiRjwnUcbo4kNZlRA"",
+              ""authorChannelId"": {
+                ""value"": ""UCb5UHoGiRjwnUcbo4kNZlRA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-04-17T23:19:23Z"",
+              ""updatedAt"": ""2019-04-17T23:19:23Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""baOFc8cgm8i9CL0KDRHWBB7oNi4"",
+      ""id"": ""Ugzx-b0dpXNFdS9pSj94AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""xp7It2Rv5W43nidk662pDMWH1XM"",
+            ""id"": ""Ugzx-b0dpXNFdS9pSj94AaABAg.8pwwMWBaSrF8q3edNq73Tm"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""mmtPBTybQ9k"",
+              ""textDisplay"": ""Clark Kastory people watch 10mins into the video and comment all this bullshit"",
+              ""textOriginal"": ""Clark Kastory people watch 10mins into the video and comment all this bullshit"",
+              ""parentId"": ""Ugzx-b0dpXNFdS9pSj94AaABAg"",
+              ""authorDisplayName"": ""annata"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/v08edsx9ue4vJm__7xMf0NJSYCf7fFSJ00SiLIku_jg1wfUfLKW5dcPvf3tFEn3JkJw26v_lOyo=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqWd2V1p0EkJhp9yK_1-9wA"",
+              ""authorChannelId"": {
+                ""value"": ""UCqWd2V1p0EkJhp9yK_1-9wA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-01-14T01:14:07Z"",
+              ""updatedAt"": ""2019-01-14T01:14:07Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""QxMdtY6o1h3WEOFpp3qhQ4kbQTk"",
+            ""id"": ""Ugzx-b0dpXNFdS9pSj94AaABAg.8pwwMWBaSrF8pzdaGfIK_u"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""mmtPBTybQ9k"",
+              ""textDisplay"": ""carbo4 Games watch to the end they explain he wasn’t killed"",
+              ""textOriginal"": ""carbo4 Games watch to the end they explain he wasn’t killed"",
+              ""parentId"": ""Ugzx-b0dpXNFdS9pSj94AaABAg"",
+              ""authorDisplayName"": ""Clark Kastory"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOjUA-4UzNEBEJlgusCs4z0-U7svnSo-_UmiXwL=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCtWHG7CjjlLit_H6g2TS1QA"",
+              ""authorChannelId"": {
+                ""value"": ""UCtWHG7CjjlLit_H6g2TS1QA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-01-12T02:28:45Z"",
+              ""updatedAt"": ""2019-01-12T02:28:45Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KBiiQvvN8h2PvuALK2t_3u6seQU"",
+      ""id"": ""UgjU0vxFDeAMUXgCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""K8ZJIBUTGTxAC81JGpLDoKepcKM"",
+            ""id"": ""UgjU0vxFDeAMUXgCoAEC.8L3ycTqXh1m8m-qW4X5ylE"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""maybe we need a revolution?"",
+              ""textOriginal"": ""maybe we need a revolution?"",
+              ""parentId"": ""UgjU0vxFDeAMUXgCoAEC"",
+              ""authorDisplayName"": ""horsluva0758"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPRhW7D3WGMTfbKNK1FO9lCctyZYNKYBFoKlw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCO6M1GPqfM4D6gxxD7DXjJQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCO6M1GPqfM4D6gxxD7DXjJQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2018-10-05T03:35:18Z"",
+              ""updatedAt"": ""2018-10-05T03:35:18Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""CpZSoIT2dnEcCr53_d8RitwOvHk"",
+            ""id"": ""UgjU0vxFDeAMUXgCoAEC.8L3ycTqXh1m8L5HG5EeR1e"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""billyisonfire are you honestly saying that our country is great now? and you arent bullshitting? the system is corrupt its nothing like it used to be or what it stood for it stood for freedom but now we have idiots in office trying to take away our freedoms and ban words that are &quot;to offensive&quot; and the fact that we even allowed someone who had commited treason to run for president is shocking and just shows how corrupt our system is or that a socialist was allowed to run for president socialism is not freedom it is the exact opposite of freedom so dont you dare say that our system is great right now and that trump will ruin it trump may turn out to not be a good fit but he cant do much worse our country is already as bad if not worse than the country our forefathers fought to secede from"",
+              ""textOriginal"": ""billyisonfire are you honestly saying that our country is great now? and you arent bullshitting? the system is corrupt its nothing like it used to be or what it stood for it stood for freedom but now we have idiots in office trying to take away our freedoms and ban words that are \""to offensive\"" and the fact that we even allowed someone who had commited treason to run for president is shocking and just shows how corrupt our system is or that a socialist was allowed to run for president socialism is not freedom it is the exact opposite of freedom so dont you dare say that our system is great right now and that trump will ruin it trump may turn out to not be a good fit but he cant do much worse our country is already as bad if not worse than the country our forefathers fought to secede from"",
+              ""parentId"": ""UgjU0vxFDeAMUXgCoAEC"",
+              ""authorDisplayName"": ""Atiniir"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/W4nz6-P-aUCq7xFAGIpjJIWIxFMP_xfhLAVEwe3HNZeVcYGaNXklNuw3U9PQB_5Zsga100_A5w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIPF3wMB2p6iIrFxtjaYwWw"",
+              ""authorChannelId"": {
+                ""value"": ""UCIPF3wMB2p6iIrFxtjaYwWw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2016-11-10T07:34:57Z"",
+              ""updatedAt"": ""2016-11-10T07:34:57Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""SrfQUzTv4wMJgi69BssHwDb-4ls"",
+      ""id"": ""Uggm86tPsptUf3gCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aqDg7qtvTM93mxfZFvpap-2ah-4"",
+            ""id"": ""Uggm86tPsptUf3gCoAEC.87I8ha83wOU9c8WkgVul8q"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Drew Hendley \u003cbr\u003eAnd why exactly did the Union need to be protected? ... Oh yeah, that&#39;s right. ... Southern Slave states rebelled to protect slavery. \u003cbr\u003eLincoln and the Republicans didn&#39;t want to have to fight a war to end slavery, they were elected on the platform of putting on its path to its end within the Union peaceablybut the South wouldn&#39;t let them. \u003cb\u003eEnding Slavery for the Republicans didn&#39;t need to be an initial war aim, as that was already their overall aim that they were elected on.\u003c/b\u003e\u003cbr\u003e\u003ci\u003e&quot;The day is now come, and Alabama must make her selection, either to secede from the Union, and assume the position of a sovereign, independent State, or she must submit to a system of policy on the part of the Federal Government that, in a short time, will compel her to abolish African Slavery.&quot;\u003c/i\u003e Speech of E.S. Dargan, in the Convention of Alabama, Jan. 11, 1861\u003cbr\u003e."",
+              ""textOriginal"": ""@Drew Hendley \nAnd why exactly did the Union need to be protected? ... Oh yeah, that's right. ... Southern Slave states rebelled to protect slavery. \nLincoln and the Republicans didn't want to have to fight a war to end slavery, they were elected on the platform of putting on its path to its end within the Union peaceablybut the South wouldn't let them. *Ending Slavery for the Republicans didn't need to be an initial war aim, as that was already their overall aim that they were elected on.*\n_\""The day is now come, and Alabama must make her selection, either to secede from the Union, and assume the position of a sovereign, independent State, or she must submit to a system of policy on the part of the Federal Government that, in a short time, will compel her to abolish African Slavery.\""_ Speech of E.S. Dargan, in the Convention of Alabama, Jan. 11, 1861\n."",
+              ""parentId"": ""Uggm86tPsptUf3gCoAEC"",
+              ""authorDisplayName"": ""Rundstedt1"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP52gIt5jQH8bDNzsklM2hVE1F_HxNRCDb2RF0h=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC65-c0ashcdfe8uI-dNSxwA"",
+              ""authorChannelId"": {
+                ""value"": ""UC65-c0ashcdfe8uI-dNSxwA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-11T16:42:23Z"",
+              ""updatedAt"": ""2022-06-11T16:43:18Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LdeZESFPcBZaMwxwwL4jTZcftJA"",
+      ""id"": ""UgiGFJOgQRqH03gCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""yA8PlMLd9oyoGxCcFEL3GkZHCzo"",
+            ""id"": ""UgiGFJOgQRqH03gCoAEC.86vmpJXJWpt8Y_W2jYsYSi"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""CaliforniaCheez, You&#39;re just upset because the Crook is right.  Secession did come first and your argument is BS. Besides you misspelled search in your previous post."",
+              ""textOriginal"": ""CaliforniaCheez, You're just upset because the Crook is right.  Secession did come first and your argument is BS. Besides you misspelled search in your previous post."",
+              ""parentId"": ""UgiGFJOgQRqH03gCoAEC"",
+              ""authorDisplayName"": ""Carter Jackson"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOg2rPk1maltf6gTsw02Hw5kQaF_4L18IeL=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC64zymc0RwoaybEZ0AR5E_w"",
+              ""authorChannelId"": {
+                ""value"": ""UC64zymc0RwoaybEZ0AR5E_w""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2017-10-11T13:28:47Z"",
+              ""updatedAt"": ""2017-10-11T13:28:47Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""0lUF6PXDS3PmEGOftnv5HQdXh_s"",
+            ""id"": ""UgiGFJOgQRqH03gCoAEC.86vmpJXJWpt8YWvsEWWuu5"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""CaliforniaCheez You fire weapons at a Fort in any country and the government, with the support of the people, is going to come after your ass.  The Confederates started the war because they lost the election. Any halfwitt can see that. SLAVERY. 4.5 million slaves. They didn&#39;t want to lose all the money they had invested in them. The election of 1860 was the beginning of the end for their social system. They could see the trend of the previous 30 years."",
+              ""textOriginal"": ""CaliforniaCheez You fire weapons at a Fort in any country and the government, with the support of the people, is going to come after your ass.  The Confederates started the war because they lost the election. Any halfwitt can see that. SLAVERY. 4.5 million slaves. They didn't want to lose all the money they had invested in them. The election of 1860 was the beginning of the end for their social system. They could see the trend of the previous 30 years."",
+              ""parentId"": ""UgiGFJOgQRqH03gCoAEC"",
+              ""authorDisplayName"": ""Carter Jackson"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPzhGc6fQxPj8WW4b2NI-cVRkXgfNxoRVkEKg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbR34LjcwBjijIUzEcYcgZg"",
+              ""authorChannelId"": {
+                ""value"": ""UCbR34LjcwBjijIUzEcYcgZg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2017-10-10T04:06:11Z"",
+              ""updatedAt"": ""2017-10-10T04:06:11Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""GikXq6y8Ie4dzJVEETopakUZWFU"",
+            ""id"": ""UgiGFJOgQRqH03gCoAEC.86vmpJXJWpt8YW_JWBMRCQ"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""CaliforniaCheez Why do you love the Confederacy so much? They used slavery to become wealthy growing and selling cotton and when they didn&#39;t get there way in an election they fired upon US military personnel with canon. Then the US president did his constitutional given job and put down the rebellion. Why is that so difficult for you to see."",
+              ""textOriginal"": ""CaliforniaCheez Why do you love the Confederacy so much? They used slavery to become wealthy growing and selling cotton and when they didn't get there way in an election they fired upon US military personnel with canon. Then the US president did his constitutional given job and put down the rebellion. Why is that so difficult for you to see."",
+              ""parentId"": ""UgiGFJOgQRqH03gCoAEC"",
+              ""authorDisplayName"": ""Carter Jackson"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPzhGc6fQxPj8WW4b2NI-cVRkXgfNxoRVkEKg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbR34LjcwBjijIUzEcYcgZg"",
+              ""authorChannelId"": {
+                ""value"": ""UCbR34LjcwBjijIUzEcYcgZg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2017-10-10T00:49:04Z"",
+              ""updatedAt"": ""2017-10-10T00:49:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""IjiLy0irKrmzysCmzlnLsPsudtk"",
+            ""id"": ""UgiGFJOgQRqH03gCoAEC.86vmpJXJWpt8YVrrUQuibb"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""CaliforniaCheez  You are naive if you think the north could dictate to the south the ending of slavery before 1861. It was only possible to get a majority of states to pass the 13th amendment until after the southern states walk out of the government. Sure some of the southern states were paying higher taxes than many of the northern states. But some weren&#39;t, when you have a beef with your fellow state Representatives you fight harder in Congress to get a more fair tax system, you don&#39;t start a civil war with an unjust cause with slavery as the backbone of your primary source of income and tax base, cotton."",
+              ""textOriginal"": ""CaliforniaCheez  You are naive if you think the north could dictate to the south the ending of slavery before 1861. It was only possible to get a majority of states to pass the 13th amendment until after the southern states walk out of the government. Sure some of the southern states were paying higher taxes than many of the northern states. But some weren't, when you have a beef with your fellow state Representatives you fight harder in Congress to get a more fair tax system, you don't start a civil war with an unjust cause with slavery as the backbone of your primary source of income and tax base, cotton."",
+              ""parentId"": ""UgiGFJOgQRqH03gCoAEC"",
+              ""authorDisplayName"": ""Carter Jackson"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPzhGc6fQxPj8WW4b2NI-cVRkXgfNxoRVkEKg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbR34LjcwBjijIUzEcYcgZg"",
+              ""authorChannelId"": {
+                ""value"": ""UCbR34LjcwBjijIUzEcYcgZg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2017-10-09T18:11:53Z"",
+              ""updatedAt"": ""2017-10-09T18:11:53Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""4XISSdMKr9vFSjQNqCTcpTWnnk4"",
+            ""id"": ""UgiGFJOgQRqH03gCoAEC.86vmpJXJWpt8YUmx6za7le"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""CaliforniaCheez  Slavery was a horrible institution. If the north had not fought to maintain the union and end slavery the southern states would have continued with slavery for decades. You should try being a slave a few years before supporting such a misrable bunch of losers."",
+              ""textOriginal"": ""CaliforniaCheez  Slavery was a horrible institution. If the north had not fought to maintain the union and end slavery the southern states would have continued with slavery for decades. You should try being a slave a few years before supporting such a misrable bunch of losers."",
+              ""parentId"": ""UgiGFJOgQRqH03gCoAEC"",
+              ""authorDisplayName"": ""Carter Jackson"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPzhGc6fQxPj8WW4b2NI-cVRkXgfNxoRVkEKg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbR34LjcwBjijIUzEcYcgZg"",
+              ""authorChannelId"": {
+                ""value"": ""UCbR34LjcwBjijIUzEcYcgZg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 3,
+              ""publishedAt"": ""2017-10-09T08:09:43Z"",
+              ""updatedAt"": ""2017-10-09T08:09:43Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PFJe90UzJl3Hl6XpyqBunMjXKjE"",
+      ""id"": ""UghnX5ybGpuIFXgCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""mgZQGDWMpIJR2-wS5RgyJsBJu_c"",
+            ""id"": ""UghnX5ybGpuIFXgCoAEC.81m0JvjlSHT91IBOeocnqg"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I like money Yes, Union destroyed a lot of stuff.and killed a lot of people in the Southern States. That I what happens when you start a rebellion and lose. The rebel armies in the field were supported by those farms and railroads that Sherman destroyed. If Southern leaders had not chosen rebellion, it would not have been necessary to set a wolf like Sherman loose amongst them. In any case,.the human rights record of a Union General is not relevant to the discussion of why the Southern States Seceded.\u003cbr\u003e\u003cbr\u003e Lee inherited slaves from his father-in-law. They were his, not his wife&#39;s. And he freed his slaves because it was a provision in his father-in-law&#39;s will. He could have freed them earlier if he had cared tobut he didn&#39;t. In fact, he wasn&#39;t.shy about having slaves who attempted to escape whipped. I&#39;m going to need a source for that bit about Lee educating his slaves. I could find no evidence of it. In fact,.it was.illegal to teach slaves to read.\u003cbr\u003e\u003cbr\u003eIf the plantation owners had used free wage labor instead of slaves,.they would have been simply &quot;Well off,&quot;.instead of &quot;Filthy Rich.&quot; Of course, you can&#39;t expect someone to show a shred of human decency if it means giving up their private islands and Rolex collections. That would be unreasonable. Wait... It \u003ca href=\""http://looks.like/\""\u003elooks.like\u003c/a\u003e you went from downplaying the significance.of slavery to the war to sympathizing with the slave owners. That is a pretty big leap.\u003cbr\u003e\u003cbr\u003eThere was nothing unconstitutional about the U.S. invading the South. Sending armies to crush an armed rebellion is just about the most Constitutional thing that the government can ever do."",
+              ""textOriginal"": ""I like money Yes, Union destroyed a lot of stuff.and killed a lot of people in the Southern States. That I what happens when you start a rebellion and lose. The rebel armies in the field were supported by those farms and railroads that Sherman destroyed. If Southern leaders had not chosen rebellion, it would not have been necessary to set a wolf like Sherman loose amongst them. In any case,.the human rights record of a Union General is not relevant to the discussion of why the Southern States Seceded.\n\n Lee inherited slaves from his father-in-law. They were his, not his wife's. And he freed his slaves because it was a provision in his father-in-law's will. He could have freed them earlier if he had cared tobut he didn't. In fact, he wasn't.shy about having slaves who attempted to escape whipped. I'm going to need a source for that bit about Lee educating his slaves. I could find no evidence of it. In fact,.it was.illegal to teach slaves to read.\n\nIf the plantation owners had used free wage labor instead of slaves,.they would have been simply \""Well off,\"".instead of \""Filthy Rich.\"" Of course, you can't expect someone to show a shred of human decency if it means giving up their private islands and Rolex collections. That would be unreasonable. Wait... It looks.like you went from downplaying the significance.of slavery to the war to sympathizing with the slave owners. That is a pretty big leap.\n\nThere was nothing unconstitutional about the U.S. invading the South. Sending armies to crush an armed rebellion is just about the most Constitutional thing that the government can ever do."",
+              ""parentId"": ""UghnX5ybGpuIFXgCoAEC"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-13T22:55:10Z"",
+              ""updatedAt"": ""2019-11-13T23:03:45Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""KRG6I19YCyDa_e-Q02_1_7Axar0"",
+            ""id"": ""UghnX5ybGpuIFXgCoAEC.81m0JvjlSHT91HYWBr7hkR"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I like money I&#39;m not just going to tell you you&#39;re wrong. I&#39;m going to tell you WHY you are wrong, and give you the correct information, and try to do it in such a way that you don&#39;t feel insulted and block me out. Why shouldn&#39;t black people be reminded of slavery when they look at a statue of Robert E. Lee? Who DID own slaves, by the way; about 60 of them. Lee owned a plantation on what is today Arlington National Cemetery. Lee fought, hard and skillfully, to create a &quot;Republic&quot; in which black people would be slaves forever. Then, after the war,.he suggested that all blacks should be deported from Virginia.\u003cbr\u003eShould there be a statue of Heinz Guderion or Herman Goering in Berlin? That is history, after all. How do you think Jewish Germans would feel about that?\u003cbr\u003e Grant owned ONE slave, that he inherited, and he set him free. Grant could have sold him. Slaves were extremely valuable. But he freed him instead. Washington had slaves, sure... 80 years before the Civil War when the tide of history had not yet turned against the practice. And Washington fought to build our country, not tear it apart.\u003cbr\u003eLee and the Confederacy are not things that Americans should look back at fondly. Lee was one of America&#39;s great generals, and tje Army of Northern Virginia was arguably the greatest killing machine in the history of American warfare. But, unfortunately,.that machine was used to slaughter American soldiers, loot American farms, and enslave Americans\u003cbr\u003e A lot of.grief and bloodshed would have been avoided if Lee had remained true to his oath.\u003cbr\u003e\u003cbr\u003eNo, you can&#39;t change historybut you can choose what is emphasized and how it is presented. A statue  of Lee perched majestically on his horse looking all heroic is not meant to educate. It is meant to glorify. In fact, a LOT of those statues were put up I the 1950&#39;s and 60&#39;s, as part of a backlash against the Civil Rights movement. More still were put up at around 1910-1912, when Jim Crow laws were being put into effect. They were a direct message of power and intimidation directed at black people."",
+              ""textOriginal"": ""I like money I'm not just going to tell you you're wrong. I'm going to tell you WHY you are wrong, and give you the correct information, and try to do it in such a way that you don't feel insulted and block me out. Why shouldn't black people be reminded of slavery when they look at a statue of Robert E. Lee? Who DID own slaves, by the way; about 60 of them. Lee owned a plantation on what is today Arlington National Cemetery. Lee fought, hard and skillfully, to create a \""Republic\"" in which black people would be slaves forever. Then, after the war,.he suggested that all blacks should be deported from Virginia.\nShould there be a statue of Heinz Guderion or Herman Goering in Berlin? That is history, after all. How do you think Jewish Germans would feel about that?\n Grant owned ONE slave, that he inherited, and he set him free. Grant could have sold him. Slaves were extremely valuable. But he freed him instead. Washington had slaves, sure... 80 years before the Civil War when the tide of history had not yet turned against the practice. And Washington fought to build our country, not tear it apart.\nLee and the Confederacy are not things that Americans should look back at fondly. Lee was one of America's great generals, and tje Army of Northern Virginia was arguably the greatest killing machine in the history of American warfare. But, unfortunately,.that machine was used to slaughter American soldiers, loot American farms, and enslave Americans\n A lot of.grief and bloodshed would have been avoided if Lee had remained true to his oath.\n\nNo, you can't change historybut you can choose what is emphasized and how it is presented. A statue  of Lee perched majestically on his horse looking all heroic is not meant to educate. It is meant to glorify. In fact, a LOT of those statues were put up I the 1950's and 60's, as part of a backlash against the Civil Rights movement. More still were put up at around 1910-1912, when Jim Crow laws were being put into effect. They were a direct message of power and intimidation directed at black people."",
+              ""parentId"": ""UghnX5ybGpuIFXgCoAEC"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-13T16:57:55Z"",
+              ""updatedAt"": ""2019-11-13T16:57:55Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""ibNc3HBrEHWRHynehx6veVpR93A"",
+            ""id"": ""UghnX5ybGpuIFXgCoAEC.81m0JvjlSHT91Gb1xZz3fr"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I like money Wait,.I thought we were talking about whether or not slavery was the cause of the war? Haven&#39;t you found any North Carolina Congressmen urging secession over tariffs? You don&#39;t have anything to say about those Virginia Secession numbers I spend to much time finding? You know what? Fine. I will take your bait.\u003cbr\u003eNot every Confederate owned a slave, surebut the slave owners were the ones in control of the political machine. You know, because they had money. It&#39;s a damn shame that so many boys died because they were drafted against their will into a treasonous rebellion. Another crime that Jefferson Davis was never hanged for. Those statues need to come down because they glorify men who violated their oaths to defend the Constitution of the United States. Also, most of those statues are in public places and maintained with tax dollars. A black family walking through a public park should not have to look at a statue glorifying a man who fought to keep their ancestors in chains. Those black people are Americans and Southerners, to."",
+              ""textOriginal"": ""I like money Wait,.I thought we were talking about whether or not slavery was the cause of the war? Haven't you found any North Carolina Congressmen urging secession over tariffs? You don't have anything to say about those Virginia Secession numbers I spend to much time finding? You know what? Fine. I will take your bait.\nNot every Confederate owned a slave, surebut the slave owners were the ones in control of the political machine. You know, because they had money. It's a damn shame that so many boys died because they were drafted against their will into a treasonous rebellion. Another crime that Jefferson Davis was never hanged for. Those statues need to come down because they glorify men who violated their oaths to defend the Constitution of the United States. Also, most of those statues are in public places and maintained with tax dollars. A black family walking through a public park should not have to look at a statue glorifying a man who fought to keep their ancestors in chains. Those black people are Americans and Southerners, to."",
+              ""parentId"": ""UghnX5ybGpuIFXgCoAEC"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-13T08:09:30Z"",
+              ""updatedAt"": ""2019-11-13T08:09:30Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""XNriSEiGUdaUUB2y4187CZ-uZK4"",
+            ""id"": ""UghnX5ybGpuIFXgCoAEC.81m0JvjlSHT91Fq5ddaLSP"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I like money Virginia and North Carolina never published Declarations of Causes. They did publish Ordinances of Secession, and no, they do not mention slavery...or any other cause. They are just matter-of-fact statements of &quot;We`re out.&quot;  I can`t find any information on North Carolina one way or the other. If you can find some prominent leader from North Carolina (Before the war) saying that secession was over something other than slaver, I would love to see it.\u003cbr\u003e\u003cbr\u003e\u003cbr\u003eVirginia is another matter entirely. The University of Richmond put Virginia`s secession convention into a fully searchable public database. I won`t claim to have read anywhere near the whole thingbut a few simple searches are telling; A search for &quot;States Rights&quot; turns up 51 results. &quot;Tariff/Tariffs&quot; turn up 93 results. &quot;Slavery/Slave&quot; turns up 1,154 results. If slavery wasn`t the major issue that compelled Virginia to secede, they sure spent a lot of time talking about it at that big meeting where they were deciding whether or not to secede....\u003cbr\u003e\u003cbr\u003e\u003cbr\u003eIf Abeville Institute would enable comments on their videos, I would be glad to explain why they are wrong...\u003cbr\u003e\u003cbr\u003e\u003cbr\u003eJefferson Davis spent 2 years in jail... after leading a rebellion that caused the deaths of 700,000 Americans. Truly, I think the Civil War was the high water mark for the competence, integrity, and all-around quality of our Federal Government. The fact that Confederate leaders were not put up against barn doors and shot shows how dedicated the government was to the rule of law and reconciliation. By the Constitutional definition of treason, every Confederate officer was unquestionably guilty. What happened when Lee surrendered his army? Everyone was allowed to go home, and the officers received immunity from prosecution. The officers and cavalry were even allowed to keep their horses. And not only were the rebel leaders not hanged, they were allowed to publish back-pedaling, white-washing, self-serving articles and books trying to make themselves look like the good guys in hindsight."",
+              ""textOriginal"": ""I like money Virginia and North Carolina never published Declarations of Causes. They did publish Ordinances of Secession, and no, they do not mention slavery...or any other cause. They are just matter-of-fact statements of \""We`re out.\""  I can`t find any information on North Carolina one way or the other. If you can find some prominent leader from North Carolina (Before the war) saying that secession was over something other than slaver, I would love to see it.\n\n\nVirginia is another matter entirely. The University of Richmond put Virginia`s secession convention into a fully searchable public database. I won`t claim to have read anywhere near the whole thingbut a few simple searches are telling; A search for \""States Rights\"" turns up 51 results. \""Tariff/Tariffs\"" turn up 93 results. \""Slavery/Slave\"" turns up 1,154 results. If slavery wasn`t the major issue that compelled Virginia to secede, they sure spent a lot of time talking about it at that big meeting where they were deciding whether or not to secede....\n\n\nIf Abeville Institute would enable comments on their videos, I would be glad to explain why they are wrong...\n\n\nJefferson Davis spent 2 years in jail... after leading a rebellion that caused the deaths of 700,000 Americans. Truly, I think the Civil War was the high water mark for the competence, integrity, and all-around quality of our Federal Government. The fact that Confederate leaders were not put up against barn doors and shot shows how dedicated the government was to the rule of law and reconciliation. By the Constitutional definition of treason, every Confederate officer was unquestionably guilty. What happened when Lee surrendered his army? Everyone was allowed to go home, and the officers received immunity from prosecution. The officers and cavalry were even allowed to keep their horses. And not only were the rebel leaders not hanged, they were allowed to publish back-pedaling, white-washing, self-serving articles and books trying to make themselves look like the good guys in hindsight."",
+              ""parentId"": ""UghnX5ybGpuIFXgCoAEC"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-13T01:01:51Z"",
+              ""updatedAt"": ""2019-11-13T01:01:51Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""-YcWoxSnZ07aFoh24g4DoSPQGTE"",
+            ""id"": ""UghnX5ybGpuIFXgCoAEC.81m0JvjlSHT91ColKUSAfA"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I like money It&#39;s bullshit because they spout &quot;Facts&quot; that simply aren&#39;t true, take other facts entirely out of context, and ignore still more massively important events. Their lectures are well constructed enough to sound legitimate to someone who doesn&#39;t have any prior knowledge of the Civil Warbut if you aren&#39;t learning about the Civil War for for the first time from these guys, you can easily go &quot;That&#39;s wrong. That&#39;s wrong. That&#39;s also wrong.&quot; \u003cbr\u003e\u003cbr\u003eAnd no, the victors do not always write the history. Remember, the Confederate leadership was never executed, exiled, or imprisoned, so people like Alexander Stephens, Jefferson Davis, and Jubal Early spent the rest of their lives backpedaling and trying to make themselves look like the good guys in hindsight. Also, public education is run by the states, and plenty of Southern States are still pretty &quot;Unreconstructed.&quot; Furthermore, Texas has a huge influence on schoolbook curriculum Nationwide. School history books are more likely to be sympathetic to the Lost Cause Narrative.\u003cbr\u003e\u003cbr\u003eBut if you want to cut any modern interpretational bias out of the equation, just read the primary sources written by the leaders of the Confederacy before and during the war. There is A LOT of it, and the subject matter breaks down to about 90% slavery, 10% tariffs. Read the Declarations of Causes published by South Carolina, Georgia, Mississippi and Texas. (Florida wrote one toobut it was never published.) Check out the speeches in the various secession conventions. None of these documents were &quot;Written by the victors.&quot;\u003cbr\u003eSouthern leadership was very talkative and articulate about what was bothering them about the status of the United States, and if you just READ WHAT THEY WROTE it is Crystal clear that fear of Lincoln and the Republicans freeing their slaves was the primary motivation for Southern Secession.\u003cbr\u003e\u003cbr\u003eIf you read wh"",
+              ""textOriginal"": ""I like money It's bullshit because they spout \""Facts\"" that simply aren't true, take other facts entirely out of context, and ignore still more massively important events. Their lectures are well constructed enough to sound legitimate to someone who doesn't have any prior knowledge of the Civil Warbut if you aren't learning about the Civil War for for the first time from these guys, you can easily go \""That's wrong. That's wrong. That's also wrong.\"" \n\nAnd no, the victors do not always write the history. Remember, the Confederate leadership was never executed, exiled, or imprisoned, so people like Alexander Stephens, Jefferson Davis, and Jubal Early spent the rest of their lives backpedaling and trying to make themselves look like the good guys in hindsight. Also, public education is run by the states, and plenty of Southern States are still pretty \""Unreconstructed.\"" Furthermore, Texas has a huge influence on schoolbook curriculum Nationwide. School history books are more likely to be sympathetic to the Lost Cause Narrative.\n\nBut if you want to cut any modern interpretational bias out of the equation, just read the primary sources written by the leaders of the Confederacy before and during the war. There is A LOT of it, and the subject matter breaks down to about 90% slavery, 10% tariffs. Read the Declarations of Causes published by South Carolina, Georgia, Mississippi and Texas. (Florida wrote one toobut it was never published.) Check out the speeches in the various secession conventions. None of these documents were \""Written by the victors.\""\nSouthern leadership was very talkative and articulate about what was bothering them about the status of the United States, and if you just READ WHAT THEY WROTE it is Crystal clear that fear of Lincoln and the Republicans freeing their slaves was the primary motivation for Southern Secession.\n\nIf you read wh"",
+              ""parentId"": ""UghnX5ybGpuIFXgCoAEC"",
+              ""authorDisplayName"": ""Occam Therazor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPUcdDHKEZUBS_M2RiketATKZ5Mt_SZ9D0LJA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyBUlLARK8EyopvhyIShuJg"",
+              ""authorChannelId"": {
+                ""value"": ""UCyBUlLARK8EyopvhyIShuJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-11T20:52:28Z"",
+              ""updatedAt"": ""2019-11-11T20:52:28Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""GmaOupAoCqEGzWPcRkofVe3hBIE"",
+      ""id"": ""Ugh5Qoets12hAngCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""hY6bFhpfqpUGdOnmqDdJJYCu78A"",
+            ""id"": ""Ugh5Qoets12hAngCoAEC.8-FMn9sx6i773am9x5Z7T1"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""+Rundstedt1 Mississippi&#39;s Declaration of Secession:  &#39;Our position is thoroughly identified with the institution of slavery, the greatest material interest of the world...&#39;  Georgia&#39;s Declaration:  The prohibition of slavery in the territories; hostility to it everywhere, and the equality of the black and white races disregard all constitutional guarantees in its favor&#39;.  South Carolina&#39;s Declaration: &#39;The rights if property in slaves was recognized by giving to free persons distinct political rights...We affirm that these ends for which the government was instituted have been defeated&#39;.  Texas&#39; Declaration:  &#39;Texas was founded as a commonwealth holding, maintaining, and protecting the institution known as negro slavery, which her people intended for all time.  (Northerners) proclaim the debasing doctrine of equality for all men - a doctrine at war with nature and in violation of Divine Law.  We hold as undeniable truths that the governments of the various States and of the confederacy itself, were established exclusively by the white race, for themselves; and that the inferior race has no agency; are rightfully held; and regarded as an inferior and dependent race; and in that condition only could their existence in this country be rendered beneficial or tolerable&#39;.  Alabama&#39;s Declaration: &#39;It is the desire and purpose of the people of Alabama to meet the slaveholding States of the south, who may approve such purpose, in order to frame a government&#39;.  THERE IS NO ARGUMENT AND NO OTHER REASON WHATSOEVER."",
+              ""textOriginal"": ""+Rundstedt1 Mississippi's Declaration of Secession:  'Our position is thoroughly identified with the institution of slavery, the greatest material interest of the world...'  Georgia's Declaration:  The prohibition of slavery in the territories; hostility to it everywhere, and the equality of the black and white races disregard all constitutional guarantees in its favor'.  South Carolina's Declaration: 'The rights if property in slaves was recognized by giving to free persons distinct political rights...We affirm that these ends for which the government was instituted have been defeated'.  Texas' Declaration:  'Texas was founded as a commonwealth holding, maintaining, and protecting the institution known as negro slavery, which her people intended for all time.  (Northerners) proclaim the debasing doctrine of equality for all men - a doctrine at war with nature and in violation of Divine Law.  We hold as undeniable truths that the governments of the various States and of the confederacy itself, were established exclusively by the white race, for themselves; and that the inferior race has no agency; are rightfully held; and regarded as an inferior and dependent race; and in that condition only could their existence in this country be rendered beneficial or tolerable'.  Alabama's Declaration: 'It is the desire and purpose of the people of Alabama to meet the slaveholding States of the south, who may approve such purpose, in order to frame a government'.  THERE IS NO ARGUMENT AND NO OTHER REASON WHATSOEVER."",
+              ""parentId"": ""Ugh5Qoets12hAngCoAEC"",
+              ""authorDisplayName"": ""Yoo Jastle"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOj9R-2HGMCwFb4KzUTVFF-sfMMgFHj-gEerSBk=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC8qc7B3-SyNMzWEaeNYWHVA"",
+              ""authorChannelId"": {
+                ""value"": ""UC8qc7B3-SyNMzWEaeNYWHVA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2015-09-01T21:40:09Z"",
+              ""updatedAt"": ""2015-09-01T21:40:09Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1Ln_ImRX9jgeg8kAD1-KJHwWQ84"",
+      ""id"": ""Ugge2U4Yp3bzs3gCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""ZT0VUv37tOuAETFGak1Bq8mxpus"",
+            ""id"": ""Ugge2U4Yp3bzs3gCoAEC.7z1VmwyoLuk8bhvNV_02y6"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""TheDaveMaybe all exceptional"",
+              ""textOriginal"": ""TheDaveMaybe all exceptional"",
+              ""parentId"": ""Ugge2U4Yp3bzs3gCoAEC"",
+              ""authorDisplayName"": ""lyman evolution"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOkAYNhaX0NBXZlM_0UYIl0oIkeyHSrjY5Qtw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCRPTzqHi_evnXd_nK-6S1DQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCRPTzqHi_evnXd_nK-6S1DQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2018-01-22T05:58:18Z"",
+              ""updatedAt"": ""2018-01-22T05:58:18Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""KeWnfNxaucTcCgvA9fvpngtVf2U"",
+            ""id"": ""Ugge2U4Yp3bzs3gCoAEC.7z1VmwyoLuk8arDJbCR_b3"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""JethLK  u mean the guy who bought half the country."",
+              ""textOriginal"": ""JethLK  u mean the guy who bought half the country."",
+              ""parentId"": ""Ugge2U4Yp3bzs3gCoAEC"",
+              ""authorDisplayName"": ""Donald_the_savage 12"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPn9YX8MP7Dwbwlqovf03fSW6FjTaKVv3CX9g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCUffEKws0j29mVkVOXwgB4A"",
+              ""authorChannelId"": {
+                ""value"": ""UCUffEKws0j29mVkVOXwgB4A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2018-01-01T00:05:34Z"",
+              ""updatedAt"": ""2018-01-01T00:05:34Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""1XefqnuJncLqlvNnEhMDQwcanYk"",
+            ""id"": ""Ugge2U4Yp3bzs3gCoAEC.7z1VmwyoLuk8arDGBG8KQ_"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""NeoTheOne  Lincoln did care about the slaves. He didn’t emancipate out of goodness but he was against slavery. Why do u think half the country seceded?"",
+              ""textOriginal"": ""NeoTheOne  Lincoln did care about the slaves. He didn’t emancipate out of goodness but he was against slavery. Why do u think half the country seceded?"",
+              ""parentId"": ""Ugge2U4Yp3bzs3gCoAEC"",
+              ""authorDisplayName"": ""Donald_the_savage 12"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPn9YX8MP7Dwbwlqovf03fSW6FjTaKVv3CX9g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCUffEKws0j29mVkVOXwgB4A"",
+              ""authorChannelId"": {
+                ""value"": ""UCUffEKws0j29mVkVOXwgB4A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2018-01-01T00:05:06Z"",
+              ""updatedAt"": ""2018-01-01T00:05:06Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""VSF2CG5I6b6kvqLHrzGaLLaxrao"",
+            ""id"": ""Ugge2U4Yp3bzs3gCoAEC.7z1VmwyoLuk8a3Lqyxfx5Z"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""Saltvadoor Truman only finished what FDR already outlined. FDR is the reason we have the United Nations. Guess what nations do now when they disagree? Diplomacy instead of world wars. Also, Japan was a side issue. It was Germany that was the main threat during World War II. FDR was the reason the USSR and Great Britain did not fall. FDR did not make the Depression worse. Get that straight. Hoover and Coolidge and their predecessors set in stone that economic downfall. FDR kept America hopeful during that crisis and implemented important federal programs. The reason why the Depression was so prominent was because of an unregulated stock market (republicans), and the timing since future innovations were too far away to boom the economy and established industries were too old to promote more opportunities.\u003cbr\u003e\u003cbr\u003eAs for the internment camps, that was a mistake yes. A huge blunder. But you have to realize that was the social climate of america at the time. That wasn&#39;t just his idea. All of america wanted that because they were blinded by outrage. Germans were also mistreated. Just like the red scare and islamaphobia today, the people dictate the social climate and policies. What the government does is try to appease the public&#39;s irrational fears. It&#39;s something that always repeats in history.\u003cbr\u003e\u003cbr\u003eAs for the kkk comment, citation needed.\u003cbr\u003e\u003cbr\u003eFDR deserves to be at the top. He worked himself to death during world war ii and with the great depression. He kept Stalin in check. Winston respected him. Truman did a lot after him, yes. But FDR laid the foundation for Truman. Without FDR, either Hitler would&#39;ve won, or USSR would have seized most of Europe after defeating him."",
+              ""textOriginal"": ""Saltvadoor Truman only finished what FDR already outlined. FDR is the reason we have the United Nations. Guess what nations do now when they disagree? Diplomacy instead of world wars. Also, Japan was a side issue. It was Germany that was the main threat during World War II. FDR was the reason the USSR and Great Britain did not fall. FDR did not make the Depression worse. Get that straight. Hoover and Coolidge and their predecessors set in stone that economic downfall. FDR kept America hopeful during that crisis and implemented important federal programs. The reason why the Depression was so prominent was because of an unregulated stock market (republicans), and the timing since future innovations were too far away to boom the economy and established industries were too old to promote more opportunities.\n\nAs for the internment camps, that was a mistake yes. A huge blunder. But you have to realize that was the social climate of america at the time. That wasn't just his idea. All of america wanted that because they were blinded by outrage. Germans were also mistreated. Just like the red scare and islamaphobia today, the people dictate the social climate and policies. What the government does is try to appease the public's irrational fears. It's something that always repeats in history.\n\nAs for the kkk comment, citation needed.\n\nFDR deserves to be at the top. He worked himself to death during world war ii and with the great depression. He kept Stalin in check. Winston respected him. Truman did a lot after him, yes. But FDR laid the foundation for Truman. Without FDR, either Hitler would've won, or USSR would have seized most of Europe after defeating him."",
+              ""parentId"": ""Ugge2U4Yp3bzs3gCoAEC"",
+              ""authorDisplayName"": ""Kodomo Rinku"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMkQSGiur0WbY2BMH3pc38Dnbws-DW4k8zzOnH3=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC3hGNpFWCS8WB0_320IJdNQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC3hGNpFWCS8WB0_320IJdNQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2017-12-12T05:58:54Z"",
+              ""updatedAt"": ""2017-12-12T05:58:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""7r0fkAAJa8fRkIG_bqcgVb4bIS8"",
+            ""id"": ""Ugge2U4Yp3bzs3gCoAEC.7z1VmwyoLuk8ZEiHKpcEIR"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""PEC1C4p0k3E"",
+              ""textDisplay"": ""TheDaveMaybe 55"",
+              ""textOriginal"": ""TheDaveMaybe 55"",
+              ""parentId"": ""Ugge2U4Yp3bzs3gCoAEC"",
+              ""authorDisplayName"": ""Dario Alvarado"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNi71M7tRBafeMUc9-zo07JtcOCakAj9kSMCQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbrikMgU31ac93ZHt-h6AoA"",
+              ""authorChannelId"": {
+                ""value"": ""UCbrikMgU31ac93ZHt-h6AoA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2017-10-27T22:52:28Z"",
+              ""updatedAt"": ""2017-10-27T22:52:28Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""kZsYhQkWPD5JwWkJMeziEEyP77M"",
+      ""id"": ""Uggi00InYa8j93gCoAEC"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""zSaW2cgY6Q1aogUZxQ2BdniVdw0"",
+            ""id"": ""Uggi00InYa8j93gCoAEC.7-H0Z7-8nse91LHouGdj_Q"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""I like money If you actually believe that Robert E. Lee did NOT own slaves, then you have cognition problems far beyond just being wrong about an historical question. A question that is easily proved, by the way. Lee was born into the wealthiest, SLAVE-OWNING family in Virginia. His wife&#39;s family was probably the second wealthiest family in VA, and owned hundreds of slaves as well. Not only was Lee a cruel slave-master himself, during the Army of Northern Virginia&#39;s Pennsylvania campaign (Gettysburg), he actually captured many FREE black men who were living in PA, and brought them back to Virginia in chains. Look it up."",
+              ""textOriginal"": ""I like money If you actually believe that Robert E. Lee did NOT own slaves, then you have cognition problems far beyond just being wrong about an historical question. A question that is easily proved, by the way. Lee was born into the wealthiest, SLAVE-OWNING family in Virginia. His wife's family was probably the second wealthiest family in VA, and owned hundreds of slaves as well. Not only was Lee a cruel slave-master himself, during the Army of Northern Virginia's Pennsylvania campaign (Gettysburg), he actually captured many FREE black men who were living in PA, and brought them back to Virginia in chains. Look it up."",
+              ""parentId"": ""Uggi00InYa8j93gCoAEC"",
+              ""authorDisplayName"": ""James Gowin"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNE-cJpgb7dlhIs225RfqPAgGTTytSnTpAhwA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJSN2cr_ypTZYdh5cvydZEA"",
+              ""authorChannelId"": {
+                ""value"": ""UCJSN2cr_ypTZYdh5cvydZEA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-11-15T03:49:02Z"",
+              ""updatedAt"": ""2019-11-15T03:49:02Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""T3s0_hLlm7MGJMBa-Z6eU1ewzVY"",
+            ""id"": ""Uggi00InYa8j93gCoAEC.7-H0Z7-8nse8tKurnpAq8T"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""@Drew I can&#39;t imagine where you learned your version of American history since every thing you stated is false. I&#39;m trying to decide which of your statements is the most preposterous: &quot;Slavery continued in the north&quot;...or &quot;Lee was a life long union man, who owned no slaves.&quot; ??? Quick question, did you get this from &quot;Stormfront&quot;?"",
+              ""textOriginal"": ""@Drew I can't imagine where you learned your version of American history since every thing you stated is false. I'm trying to decide which of your statements is the most preposterous: \""Slavery continued in the north\""...or \""Lee was a life long union man, who owned no slaves.\"" ??? Quick question, did you get this from \""Stormfront\""?"",
+              ""parentId"": ""Uggi00InYa8j93gCoAEC"",
+              ""authorDisplayName"": ""James Gowin"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNE-cJpgb7dlhIs225RfqPAgGTTytSnTpAhwA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJSN2cr_ypTZYdh5cvydZEA"",
+              ""authorChannelId"": {
+                ""value"": ""UCJSN2cr_ypTZYdh5cvydZEA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-04-05T07:37:10Z"",
+              ""updatedAt"": ""2019-04-05T07:37:10Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""3YGZxdG91fDHUq9Rw7pJ_QJHhdQ"",
+            ""id"": ""Uggi00InYa8j93gCoAEC.7-H0Z7-8nse8mgOh2yu3Z1"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""If the civil war was about slavery, why didn&#39;t slavery end with the civil war? Slavery continued in the north. As slavery was a cause of the civil war, it was not the main cause. Lincoln did not care about the black slaves. He cared about power. Lee was a life long union man, who owned no slaves. Yet when offered command of the union army, he turned it down. He know what Lincoln was doing was wrong. It was mass genocide by Lincoln"",
+              ""textOriginal"": ""If the civil war was about slavery, why didn't slavery end with the civil war? Slavery continued in the north. As slavery was a cause of the civil war, it was not the main cause. Lincoln did not care about the black slaves. He cared about power. Lee was a life long union man, who owned no slaves. Yet when offered command of the union army, he turned it down. He know what Lincoln was doing was wrong. It was mass genocide by Lincoln"",
+              ""parentId"": ""Uggi00InYa8j93gCoAEC"",
+              ""authorDisplayName"": ""Drew"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPLWl9TDu_--MtfGgO0nXqTGOW8tgET8T7M9vwKEA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCxrDAV1K8W0aAkW3WHUPqFA"",
+              ""authorChannelId"": {
+                ""value"": ""UCxrDAV1K8W0aAkW3WHUPqFA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2018-10-22T01:30:07Z"",
+              ""updatedAt"": ""2018-10-22T01:30:07Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""UR_8sxQMp2bQhQwRNP-lxij9T8Q"",
+            ""id"": ""Uggi00InYa8j93gCoAEC.7-H0Z7-8nse8XXO1Nnjlui"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""Mark Hauser I agree with you about what you&#39;re saying it was about slavery. Slavery however wasn&#39;t the only thing the South fought for they were fighting for their independence. This meant not only to preserve slavery but also because they didn&#39;t want to be under industry they didn&#39;t want to be under Northern politics they didn&#39;t want to be under Northern Society they didn&#39;t want anything to do with the north because they were under the perceived threat that the north was going to push all that they could on the south not just abolish the evil institution of slavery. The only good thing about secession I say is that slavery was abolished, other than that  secession was horrible secession was terrible it meant that America would not be seen  as a Beacon of Hope to those trying to find a new life a new opportunities  plus it hurt their Industries as well. The South trying to fight for their independence  so they didn&#39;t want to be under industry  was not mentioned in the  Declarations of secession only slavery was  because  of white supremacy and because it conomic Lee they primarily used slave labor to run their agricultural economy. Many Southerners who fought for the Confederacy agreed with the preservation of Union while many others did not. Again they were not only trying to fight to protect slavery but also because they didn&#39;t want to be under industry or under any thing the north was supposedly imposing against them. I believe most Southerners were ignorant because they were ignorant and the sense of politics and a lot of Southerners who were poured did not know how to read. It&#39;s not that they were stupid but they did follow their leaders in the leaders there for imposed upon them that the north was going to take over the whole South and change as much about the softest they could. I&#39;m talking about the leaders of the South they would say and do anything so they can have an army so that Army could fight for them just so they could have slaves they didn&#39;t care if everyone else had slaves or not just so long as they could have slaves that&#39;s why most of them did not put their necks out to fight for it although there were slave owners that owned 19 or less slaves that put their neck out most litters in anyone owning 20 or more slaves including doctors lawyers teachers and such were Exempted from fighting: I do have a question for you however  Did they pass the Morrill tariff any way to punish the South so the South would come back to the union or were they going to pass the Morrill tariff anyway? I&#39;d like you or someone else to answer this please. Yet before you answer please correct anything you think is wrong of all what I&#39;m saying thank you and have a good day."",
+              ""textOriginal"": ""Mark Hauser I agree with you about what you're saying it was about slavery. Slavery however wasn't the only thing the South fought for they were fighting for their independence. This meant not only to preserve slavery but also because they didn't want to be under industry they didn't want to be under Northern politics they didn't want to be under Northern Society they didn't want anything to do with the north because they were under the perceived threat that the north was going to push all that they could on the south not just abolish the evil institution of slavery. The only good thing about secession I say is that slavery was abolished, other than that  secession was horrible secession was terrible it meant that America would not be seen  as a Beacon of Hope to those trying to find a new life a new opportunities  plus it hurt their Industries as well. The South trying to fight for their independence  so they didn't want to be under industry  was not mentioned in the  Declarations of secession only slavery was  because  of white supremacy and because it conomic Lee they primarily used slave labor to run their agricultural economy. Many Southerners who fought for the Confederacy agreed with the preservation of Union while many others did not. Again they were not only trying to fight to protect slavery but also because they didn't want to be under industry or under any thing the north was supposedly imposing against them. I believe most Southerners were ignorant because they were ignorant and the sense of politics and a lot of Southerners who were poured did not know how to read. It's not that they were stupid but they did follow their leaders in the leaders there for imposed upon them that the north was going to take over the whole South and change as much about the softest they could. I'm talking about the leaders of the South they would say and do anything so they can have an army so that Army could fight for them just so they could have slaves they didn't care if everyone else had slaves or not just so long as they could have slaves that's why most of them did not put their necks out to fight for it although there were slave owners that owned 19 or less slaves that put their neck out most litters in anyone owning 20 or more slaves including doctors lawyers teachers and such were Exempted from fighting: I do have a question for you however  Did they pass the Morrill tariff any way to punish the South so the South would come back to the union or were they going to pass the Morrill tariff anyway? I'd like you or someone else to answer this please. Yet before you answer please correct anything you think is wrong of all what I'm saying thank you and have a good day."",
+              ""parentId"": ""Uggi00InYa8j93gCoAEC"",
+              ""authorDisplayName"": ""Tony Wright"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOoGWZC6Ijn2I52sulegIxK6sv-zy8g7RJgd63Y_Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCl0tRpb8qa3ZWw8cj_JXIMQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCl0tRpb8qa3ZWw8cj_JXIMQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2017-09-15T11:49:34Z"",
+              ""updatedAt"": ""2017-09-15T11:49:34Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""RyQV7ukhM4pdEPqdpF2XRlelkzU"",
+            ""id"": ""Uggi00InYa8j93gCoAEC.7-H0Z7-8nse763fAhq5x1o"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""And slavery was much more prevalent than is commonly claimed by some on the internet, and as actual historians point out was protected just as much by the non-slave holding class in the South.\u003cbr\u003e\u003cbr\u003e&quot;Many neo-Confederates argue that there was a rather small percentage of Southern whites who actually owned slaves. The problem is the misuse of statistics. The real question is how many white Southern families owned slaves.&quot; Professor Simpson\u003cbr\u003e\u003cbr\u003eAnd looking at it like that, we see form the 1860 Census that on avg. about 1/3 of families in the CSA owned slaves and this rose to about 1/2 in the deep south.\u003cbr\u003e\u003cbr\u003eFor instance: Georgia had as reported in the 1860 Census; 109,919 family households among its free population, and an avg. family household size of 5.41 free persons. And there were 41,084 slave holders meaning that about 37% of the households were slave owners. And like those who don&#39;t own a home, still support the idea of home ownership and aspire to own a home in the future, so did the avg. southerner aspire to own a slave, not allbut certainly a majority.\u003cbr\u003e\u003cbr\u003e&quot;Although only one third of white families owned slaves, this was a remarkably widespread distribution of ownership. By contrast only 2 percent of American families in 1950 owned corporate stocks comparable in value to one slave a century earlier.&quot; James McPherson. &quot;Ordeal by Fire&quot; p36\u003cbr\u003e\u003cbr\u003eAnd most slave owners were not the large planters who were classified as those with 20 or more slavesbut were the small farmer with a few. \u003cbr\u003e&quot;While slaves were concentrated in the areas where staple crops were produced on a large scale, the bulk of the slave owners were small farmers&quot; &quot;It is not generally known that 200,000 owners in 1860 had five slaves of less. Fully 338,000 owners, or 88% of all owners of slaves held less than twenty slaves.&quot; John Hope Franklin, &quot;From Slavery to Freedom&quot; p113 \u003cbr\u003e\u003cbr\u003eAnd slavery was entwined in the life of the non slave holder was well who also benefited. Slaves were rented, for either domestic help or for temporary agricultural labor. So even the non slave owning framer benefited from the cheaper labor. The free white also benefited from his position as member of the preferred racial caste.\u003cbr\u003e\u003cbr\u003e &quot;With us the two great divisions of society are not rich and poorbut white and black; and all the former, the poor as well as the rich, belong to the upper class, and we are respected as equals... and hence have a position and pride of character of which neither poverty nor misfortune can deprive them.&quot; John C. Calhoun  - It&#39;s called a &#39;Herrenvolk&#39; democracy\u003cbr\u003e\u003cbr\u003e&quot;The non-slaveholders of the South may be classed as either such as desire and are incapable of purchasing slaves, or such as have the means to purchase and do not because of the absence of the motive, preferring to hire or employ cheaper white labor. A class conscientiously objecting to the ownership of slave property, does not exist at the South, for all such scruples have long since been silenced by the profound and unanswerable arguments to which Yankee controversy has driven our statesmen, popular orators and clergy. Upon the sure testimony of God’s Holy Book, and upon the principles of universal polity, they have defended and justified the institution.&quot; J.D.B. DeBow, December 1860\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e&quot;[So] there was the hope on the part of most of the nonslaveholders that they would some day become owners of slaves. Consequently, they took on the habits and patterns of thought of the slaveholders before they actually joined the select class.&quot; Franklin, Ibid, p113\u003cbr\u003eAnd Mark Twain wrote: &quot;In those old slave-holding days the whole community was agreed as to one thing—the awful sacredness of slave property.&quot;\u003cbr\u003e\u003cbr\u003eSo the more direct influence of slavery upon the Confederate ranks is sorely misrepresented by Neo-Confederates and their defenders. Since on average about 1/3 of the families in the states that seceded were slave owners, so proportionally at least 1/3 of CSA soldiers came from slave owning families. And in the very beginning at least, the proportion was even higher as the planting class and slave holders mustered to protect their interests.\u003cbr\u003e\u003cbr\u003eWhen we look at the Southern soldiers who owned slaves, the soldiers who lived with a family member who owned slaves, lived in households headed by non-family members who did; we see that nearly half of all Confederate soldiers in the early part of the war either lived with slaveholders or were slave owners themselves. The author of the particular research concludes his point: &quot;Nor did the direct exposure stop there. Untold numbers of enlistees rented land from, sold crops to, or worked for slaveholders. In the final tabulation, the vast majority of the volunteers of 1861 had a direct connection to slavery. For slaveholder and nonslaveholder alike, slavery lay at the heart of the Confederate nation. \u003cbr\u003eThe fact that their paper notes frequently depicted scenes of slaves demonstrated the institution&#39;s central role and symbolic value to the Confederacy.&quot; J. T. Glatthaar, &quot;General Lee&#39;s Army&quot; p.20\u003cbr\u003e\u003cbr\u003eAdditionally the two most comprehensive landmark studies of soldiers letters and papers confirmed the influence of slavery as the main motivator for Southern soldiers. In his book &quot;For Cause and Comrades&quot; James McPherson stresses the importance of slavery as one of the principal ideological considerations as to why men fought both North and South. \u003cbr\u003e\u003cbr\u003eFor the South, McPherson has made the point that slavery was intrinsic to the concept of patriotism there.  And he makes the point that when considering the reasons the soldiers fought, the entire concept of patriotism itself in the South was tied to the idea of slavery. The notion was clearly that if slavery was destroyed, the South would lose its liberty and their families their safety by that one act alone. The two were inseparable, it was slavery that defined the South, so if slavery were destroyed, so would be southern liberty and the whites cast down to equality with the black slaves. McPherson found that slavery was such an accepted part of Southern life that the Southern soldiers references to it were often muted in terms like &#39;the southern way of life&#39; and &#39;Honor&#39; of the Southbut that the idea behind that &#39;way of life&#39; and &#39;honor&#39; was clearly the struggle to maintain slavery.\u003cbr\u003e\u003cbr\u003eYou seem to fail to understand that slavery was more than an economic system, it was a system of labor, a social system, and a means of racial control. The Southern men went off to war to fight for the society they knew, the society that was defined by racial slavery and its attendant social system. \u003cbr\u003e\u003cbr\u003eWhen southern soldiers say they are &quot;fighting for their way of life&quot;, it is the slavery that makes their way of life possible and without it there would be chaos and racial war in the South as they saw it. \u003cbr\u003e\u003cbr\u003eAs just part of the examples he quoted this southern soldier:\u003cbr\u003e&quot;The vandals of the North... are determined to destroy slavery...we must all fight and I must fight and I choose to fight for Southern rights and Southern liberty&quot;\u003cbr\u003eAnd then he states:\u003cbr\u003e&quot;This paring of slavery and liberty as the twin goals for which the Confederates fought appeared in many volunteers letters.&quot; McPherson &quot;For Cause and Comrades&quot; P20\u003cbr\u003e\u003cbr\u003eOr another glaring example can be made by looking at Sam Watkins whose memoirs were so prominent in Ken Burns series. The memoir and the series almost give the impression that Watkins is some plebeian with no direct connection to slavery.  However, census and tax records of antebellum Maury County show that Sam&#39;s father, Frederick, owned more than 100 slaves on two plantations in the county. The Watkins family was the third wealthiest in one of the most prosperous counties in the state. And Watkins was not unique for his unit. Nearly half of the company with which he left Maury County in 1861 came from slaveowning households. \u003cbr\u003e\u003cbr\u003eThey knew well that their &#39;way of life&#39; and &#39;honor&#39; were tied to slavery, it was just that, as typical Southerners, they usually referred to it with those previous sort of euphemisms. And even the non-slave holders were fighting to preserve that same racial order imposed by slavery that, as they understood it, they also benefited from. \u003cbr\u003e\u003cbr\u003eAnd you can also see it clearly in other pieces:\u003cbr\u003e&quot;If the policy of the Republicans is carried out, according to the programme indicated by the leaders of the party, and the South submits, degradation and ruin must overwhelm alike all classes of citizens in the Southern States. The slave-holder and non-¬slave-holder must ultimately share the same fate—all be degraded to a position of equality with free negroes, stand side by side with them at the polls, and fraternize in all the social relations of life; or else there will be an eternal war of races, desolating the land with blood, and utterly wasting and destroying all the resources of the country\u003cbr\u003e\u003cbr\u003eWho can look upon such a picture without a shudder? What Southern man, be he slave-holder or non-slave-holder, can without indignation and horror contemplate the triumph of negro equality, and see his own sons and daughters, in the not distant future, associating with free negroes upon terms of political and social equality, and the white man stripped, by the Heaven-daring hand of fanaticism of that title to superiority over the black race which God himself has bestowed?&quot; \u003cbr\u003eS. F. Hale, Commissioner from the State of Alabama to Kentucky governor B. McGoffin . Frankfort, December 27, 1860. \u003cbr\u003e\u003cbr\u003eAnd, Chandra Manning&#39;s study was even more comprehensive and in it she looked at the letters of the enlisted men. She also found that the preservation of slavery and white supremacy was the most important motivator for southern troops as they expressed in their personal letter at the time.\u003cbr\u003e\u003cbr\u003e&quot;Most of all losing to the Union was unthinkable, according to Confederate soldiers, because it would mean abolition, and abolition would destroy the southern social order...&quot; Chandra Manning &quot;What this Cruel War Was Over p64 "",
+              ""textOriginal"": ""And slavery was much more prevalent than is commonly claimed by some on the internet, and as actual historians point out was protected just as much by the non-slave holding class in the South.\n\n\""Many neo-Confederates argue that there was a rather small percentage of Southern whites who actually owned slaves. The problem is the misuse of statistics. The real question is how many white Southern families owned slaves.\"" Professor Simpson\n\nAnd looking at it like that, we see form the 1860 Census that on avg. about 1/3 of families in the CSA owned slaves and this rose to about 1/2 in the deep south.\n\nFor instance: Georgia had as reported in the 1860 Census; 109,919 family households among its free population, and an avg. family household size of 5.41 free persons. And there were 41,084 slave holders meaning that about 37% of the households were slave owners. And like those who don't own a home, still support the idea of home ownership and aspire to own a home in the future, so did the avg. southerner aspire to own a slave, not allbut certainly a majority.\n\n\""Although only one third of white families owned slaves, this was a remarkably widespread distribution of ownership. By contrast only 2 percent of American families in 1950 owned corporate stocks comparable in value to one slave a century earlier.\"" James McPherson. \""Ordeal by Fire\"" p36\n\nAnd most slave owners were not the large planters who were classified as those with 20 or more slavesbut were the small farmer with a few. \n\""While slaves were concentrated in the areas where staple crops were produced on a large scale, the bulk of the slave owners were small farmers\"" \""It is not generally known that 200,000 owners in 1860 had five slaves of less. Fully 338,000 owners, or 88% of all owners of slaves held less than twenty slaves.\"" John Hope Franklin, \""From Slavery to Freedom\"" p113 \n\nAnd slavery was entwined in the life of the non slave holder was well who also benefited. Slaves were rented, for either domestic help or for temporary agricultural labor. So even the non slave owning framer benefited from the cheaper labor. The free white also benefited from his position as member of the preferred racial caste.\n\n \""With us the two great divisions of society are not rich and poorbut white and black; and all the former, the poor as well as the rich, belong to the upper class, and we are respected as equals... and hence have a position and pride of character of which neither poverty nor misfortune can deprive them.\"" John C. Calhoun  - It's called a 'Herrenvolk' democracy\n\n\""The non-slaveholders of the South may be classed as either such as desire and are incapable of purchasing slaves, or such as have the means to purchase and do not because of the absence of the motive, preferring to hire or employ cheaper white labor. A class conscientiously objecting to the ownership of slave property, does not exist at the South, for all such scruples have long since been silenced by the profound and unanswerable arguments to which Yankee controversy has driven our statesmen, popular orators and clergy. Upon the sure testimony of God’s Holy Book, and upon the principles of universal polity, they have defended and justified the institution.\"" J.D.B. DeBow, December 1860\n\n\n\""[So] there was the hope on the part of most of the nonslaveholders that they would some day become owners of slaves. Consequently, they took on the habits and patterns of thought of the slaveholders before they actually joined the select class.\"" Franklin, Ibid, p113\nAnd Mark Twain wrote: \""In those old slave-holding days the whole community was agreed as to one thing—the awful sacredness of slave property.\""\n\nSo the more direct influence of slavery upon the Confederate ranks is sorely misrepresented by Neo-Confederates and their defenders. Since on average about 1/3 of the families in the states that seceded were slave owners, so proportionally at least 1/3 of CSA soldiers came from slave owning families. And in the very beginning at least, the proportion was even higher as the planting class and slave holders mustered to protect their interests.\n\nWhen we look at the Southern soldiers who owned slaves, the soldiers who lived with a family member who owned slaves, lived in households headed by non-family members who did; we see that nearly half of all Confederate soldiers in the early part of the war either lived with slaveholders or were slave owners themselves. The author of the particular research concludes his point: \""Nor did the direct exposure stop there. Untold numbers of enlistees rented land from, sold crops to, or worked for slaveholders. In the final tabulation, the vast majority of the volunteers of 1861 had a direct connection to slavery. For slaveholder and nonslaveholder alike, slavery lay at the heart of the Confederate nation. \nThe fact that their paper notes frequently depicted scenes of slaves demonstrated the institution's central role and symbolic value to the Confederacy.\"" J. T. Glatthaar, \""General Lee's Army\"" p.20\n\nAdditionally the two most comprehensive landmark studies of soldiers letters and papers confirmed the influence of slavery as the main motivator for Southern soldiers. In his book \""For Cause and Comrades\"" James McPherson stresses the importance of slavery as one of the principal ideological considerations as to why men fought both North and South. \n\nFor the South, McPherson has made the point that slavery was intrinsic to the concept of patriotism there.  And he makes the point that when considering the reasons the soldiers fought, the entire concept of patriotism itself in the South was tied to the idea of slavery. The notion was clearly that if slavery was destroyed, the South would lose its liberty and their families their safety by that one act alone. The two were inseparable, it was slavery that defined the South, so if slavery were destroyed, so would be southern liberty and the whites cast down to equality with the black slaves. McPherson found that slavery was such an accepted part of Southern life that the Southern soldiers references to it were often muted in terms like 'the southern way of life' and 'Honor' of the Southbut that the idea behind that 'way of life' and 'honor' was clearly the struggle to maintain slavery.\n\nYou seem to fail to understand that slavery was more than an economic system, it was a system of labor, a social system, and a means of racial control. The Southern men went off to war to fight for the society they knew, the society that was defined by racial slavery and its attendant social system. \n\nWhen southern soldiers say they are \""fighting for their way of life\"", it is the slavery that makes their way of life possible and without it there would be chaos and racial war in the South as they saw it. \n\nAs just part of the examples he quoted this southern soldier:\n\""The vandals of the North... are determined to destroy slavery...we must all fight and I must fight and I choose to fight for Southern rights and Southern liberty\""\nAnd then he states:\n\""This paring of slavery and liberty as the twin goals for which the Confederates fought appeared in many volunteers letters.\"" McPherson \""For Cause and Comrades\"" P20\n\nOr another glaring example can be made by looking at Sam Watkins whose memoirs were so prominent in Ken Burns series. The memoir and the series almost give the impression that Watkins is some plebeian with no direct connection to slavery.  However, census and tax records of antebellum Maury County show that Sam's father, Frederick, owned more than 100 slaves on two plantations in the county. The Watkins family was the third wealthiest in one of the most prosperous counties in the state. And Watkins was not unique for his unit. Nearly half of the company with which he left Maury County in 1861 came from slaveowning households. \n\nThey knew well that their 'way of life' and 'honor' were tied to slavery, it was just that, as typical Southerners, they usually referred to it with those previous sort of euphemisms. And even the non-slave holders were fighting to preserve that same racial order imposed by slavery that, as they understood it, they also benefited from. \n\nAnd you can also see it clearly in other pieces:\n\""If the policy of the Republicans is carried out, according to the programme indicated by the leaders of the party, and the South submits, degradation and ruin must overwhelm alike all classes of citizens in the Southern States. The slave-holder and non-¬slave-holder must ultimately share the same fate—all be degraded to a position of equality with free negroes, stand side by side with them at the polls, and fraternize in all the social relations of life; or else there will be an eternal war of races, desolating the land with blood, and utterly wasting and destroying all the resources of the country\n\nWho can look upon such a picture without a shudder? What Southern man, be he slave-holder or non-slave-holder, can without indignation and horror contemplate the triumph of negro equality, and see his own sons and daughters, in the not distant future, associating with free negroes upon terms of political and social equality, and the white man stripped, by the Heaven-daring hand of fanaticism of that title to superiority over the black race which God himself has bestowed?\"" \nS. F. Hale, Commissioner from the State of Alabama to Kentucky governor B. McGoffin . Frankfort, December 27, 1860. \n\nAnd, Chandra Manning's study was even more comprehensive and in it she looked at the letters of the enlisted men. She also found that the preservation of slavery and white supremacy was the most important motivator for southern troops as they expressed in their personal letter at the time.\n\n\""Most of all losing to the Union was unthinkable, according to Confederate soldiers, because it would mean abolition, and abolition would destroy the southern social order...\"" Chandra Manning \""What this Cruel War Was Over p64 "",
+              ""parentId"": ""Uggi00InYa8j93gCoAEC"",
+              ""authorDisplayName"": ""Rundstedt1"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP52gIt5jQH8bDNzsklM2hVE1F_HxNRCDb2RF0h=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC65-c0ashcdfe8uI-dNSxwA"",
+              ""authorChannelId"": {
+                ""value"": ""UC65-c0ashcdfe8uI-dNSxwA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2015-07-23T15:07:53Z"",
+              ""updatedAt"": ""2015-07-23T15:07:53Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""kISPYunCVdVYQLTeI3jQKQ-V0Ks"",
+      ""id"": ""UgxxFItm1AXHv3HLC2t4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""6KWHuGfUGC168XIamwSpsXOA-P0"",
+      ""id"": ""UgxLbm103SJOD18qFQF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KnyjyBZ0WxNJ1yKcb2HSC25E8Q8"",
+      ""id"": ""UgxhR3CB-WUG1abQ9fJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MinsnVj_dSIpL5-fd6Ofz71mO-8"",
+      ""id"": ""Ugx2kN_AvnyW6A13JEp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3uKQka-KoMTCILR6_YScgGym0PI"",
+      ""id"": ""UgzhWkoo_KVyKT1iRuF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3YDqmMX8EHD0PuxmJg8pAfC9PA0"",
+      ""id"": ""UgxJcBSfBKESwg_eKY94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""pVl63O8ojGvSVpl7q1knzsy1wdg"",
+      ""id"": ""UgyvItxs2Z4BVWJjFRp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""FyELlsdqji9WS38CYZK-qeh0HmY"",
+      ""id"": ""Ugx9maqAIMzhjdIJt2l4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""x8_L5tcBITfm3uWKPrw2Hhr9XUk"",
+      ""id"": ""UgxtIJ6bfqwWgZ9eylt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""bM4FNPRYfaE0cytMonZIcoCmVDE"",
+      ""id"": ""UgyGDUiDGGYaGbjWWC54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gri4J1XWAuV3R2H8kxQCc5E9XS4"",
+      ""id"": ""UgxpNrcAqjHwvVkeEk14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""GlFRZlq1bX-nQM8QdXVgXOEp2gk"",
+      ""id"": ""UgwV3JljE1azKiro7wt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""dsuckDiLrpdRg8rE56uJzpcxV3A"",
+      ""id"": ""Ugwq3AcYlqx3Bfr65K94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""XOaWS1yjXnEyQpoCzR3OvBUv9Bs"",
+      ""id"": ""UgxJyDSBOexudVtBIOZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""OH668jp6lDyiI0ogO1iTiGY_6tE"",
+      ""id"": ""UgyleeAesh92wyI1d_Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TP4uiyFRwRsnliZV7dWtiGZNGms"",
+      ""id"": ""Ugwi_PcbdDTaixxg63J4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8FFRG-8A_5kKS7goElQimp7r-CY"",
+      ""id"": ""UgwgXpwoRDTyUwtyZbN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3koIEepwBPH6ZzbFLQ9B1in3KeI"",
+      ""id"": ""UgxmXZfVAmBlFneNNYh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""O4dmEU80hTcS98yRs_6YMZA3tiM"",
+      ""id"": ""Ugw6EoEmQtLSF6VF-At4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Pohm7DHgBPupZxfBBYfAtxLPhqw"",
+      ""id"": ""UgwKgTRHLgwgH4naN-B4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fG2CQe2Domhh9Y4dc1wfO0pbFLA"",
+      ""id"": ""UgzFTwkuEdC1JFsOBH94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KuVeAJcYZzlYpyELXx9Y2aPJMdo"",
+      ""id"": ""UgzxWuI3Bks-WlrG9sN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vvJDHwuqqeLvlJBSO44BJWVxIas"",
+      ""id"": ""UgygAE5abcwf_1hPNUx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""UqKlJ7rVnv1Y8F-xrfVigbeQIqs"",
+      ""id"": ""UgzCWzBV1Qn8nYO7LbZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xRDrn-YgxGMprjpVZ6xJtuTbwu0"",
+      ""id"": ""UgyHaTgQ9qdVWBryyEt4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""BEhNAbjGiTJE06Wue1mV3ydTJ3c"",
+            ""id"": ""UgyHaTgQ9qdVWBryyEt4AaABAg.8GcOUaAoJQD93LKXHitUky"",
+            ""snippet"": {
+              ""channelId"": ""UClzCn8DxRSCuMFv_WfzkcrQ"",
+              ""videoId"": ""UqeDYW_K9nA"",
+              ""textDisplay"": ""For Lincoln it wasn&#39;t about slavery, until he made it about slavery with the emancipation proclamation.  However, for the south it was always about slavery.  They literally wrote that down in their own words.  With more and more free states joining the union, they knew the writing was on the wall for slavery.  Eventually the free states would have the political numbers to outlaw slavery across the land even if every southern state voted against it.  That is why they seceded."",
+              ""textOriginal"": ""For Lincoln it wasn't about slavery, until he made it about slavery with the emancipation proclamation.  However, for the south it was always about slavery.  They literally wrote that down in their own words.  With more and more free states joining the union, they knew the writing was on the wall for slavery.  Eventually the free states would have the political numbers to outlaw slavery across the land even if every southern state voted against it.  That is why they seceded."",
+              ""parentId"": ""UgyHaTgQ9qdVWBryyEt4AaABAg"",
+              ""authorDisplayName"": ""Tim"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPjgJP4agsKyKE8AeAWpc2RE5BDMyY5mwopbaWb=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYfmpdMHkDg-JQScQO2Ba9w"",
+              ""authorChannelId"": {
+                ""value"": ""UCYfmpdMHkDg-JQScQO2Ba9w""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2020-01-03T21:15:29Z"",
+              ""updatedAt"": ""2020-01-03T21:15:29Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-hHS94mVzHBrPwA0rQ_vIMAKKfc"",
+      ""id"": ""Ugyry5--iNyQMxg2kiV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""93MDAvdssPPLp8r4AtlZ_y77Ths"",
+      ""id"": ""UgxTm4c_7KCO32ns15N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""FKXsBWoK3TXAl1LJNpruoIElcsA"",
+      ""id"": ""Ugyy_47CHDVtkBAiwSN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HWsR9TLEWWyq86nX4733DkcRG7o"",
+      ""id"": ""Ugx1WmRoUjN3B-E9oK14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""6u1Ci_kvkxaOcToqB_5ixgvYAas"",
+      ""id"": ""UgzBA-Ry7CnLWd2UHMt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_7Qtdm-kxEnFbYovGbqcJzJir6w"",
+      ""id"": ""UgxCpXezTtY-VWRWPTh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""DNu_VuJkPhQeaml50vCci7xNT3Q"",
+      ""id"": ""UgxNYE1XQ6GwNNWxs3V4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tTwKGO2c1ZILEJ6TZCeCY1DNe50"",
+      ""id"": ""Ugwon2e19YOumfUuVRV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""XCqr9TnJm_kPXznJtKlPBgZ0eIw"",
+      ""id"": ""UgyvdGFvByaGBIO-d6t4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""rRIxRcE6J0EYq1pE2NHXOgPQoM0"",
+      ""id"": ""Ugz2MYG4zlygse5ckO94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zJy6ssZDgnptKvnZOc-1J7F-k6Q"",
+      ""id"": ""UgyNxuOR7nsnS1AYN7N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PIse5TAzoLOX0V7106kt1neQcqo"",
+      ""id"": ""UgySV8Re4Z7aAPORpwZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TCtYmeJS_YdooyU7FUpKZQX4wrs"",
+      ""id"": ""UgwVhUj1gQT1VqMtzSx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Cq5AKvF1uKeb1NOmWWT-3DN4xaE"",
+      ""id"": ""Ugyvyez83Q3IJ8IH6VB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""pLfG59wyilw8UicsMelL-TCGRHI"",
+      ""id"": ""Ugyzuomf7QylbkPnfRB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""l-kP-DcKNyiHZaWnx7IlHS_f13s"",
+      ""id"": ""UgzyiI8FMIqJorpPRPR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fDrk5fJyUobRCtfqXKMqMMO2DbE"",
+      ""id"": ""UgwuGl85psQpaPybZpF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""awJFPqpGd5slqr95b3LN02p6BtI"",
+      ""id"": ""Ugyjy2Ozpjk_yLz5Lu54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""9I91ZBYBPxKGNRT6FSN0LSf7zy8"",
+      ""id"": ""UgzJ1ahpSCKn5kv4Q-N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TcslTgn4cEJ3xlTuByHrtMdg-3g"",
+      ""id"": ""Ugy_5NllqCnoGl7QCE54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Mypnu0BKjVDuhVTtZvmwM1as6-k"",
+      ""id"": ""UgzJn8LY1Ex4Wl32Zb54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ei2SLfeYu9FSZC6t9R-wyCOSDFc"",
+      ""id"": ""UgyHbTiX25qSpRrboXV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""iCrXNNYLzSxiJJ_nYz7cNPSOyQE"",
+      ""id"": ""Ugy2erBUk61lCZAIgCt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""udkvM72zO7Do5-eieMORs1QHoF4"",
+      ""id"": ""UgzEaFftJB9_OIOpbLd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yjmbhuVDPPcBCyOx10_q6uRTlO4"",
+      ""id"": ""UgzE9wSA62LF2rvbyuh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zfeuPLVAPbLdvhgNMzg4ZGKiFTY"",
+      ""id"": ""UgzMbB2xml9St160rJx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RzTbDRqzq5y_5AuKHw0kL9HV3lE"",
+      ""id"": ""UgzVGfpMhkRtMjgT-rR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Pu4TirdZ18SuUi-SgTVBp7oKfMg"",
+      ""id"": ""UgykXUFLtUP0WIBcXh94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gVlBTc3I34NLuvUUECOga9MGY7s"",
+      ""id"": ""Ugyhc2ZYur4On3dE3Bx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Zi8PkITdUgS5vaMRCBSGHS8MMiA"",
+      ""id"": ""UgzIfmkKK2P9ii7huyV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2t98A1Tf7ahMvdzqltGtojrE2nA"",
+      ""id"": ""Ugz9wjNHsU439rJYd4B4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ReHWrqx6kKjKW3IT113DaD76N7E"",
+      ""id"": ""Ugz30OEvJImBy8Tw-HF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""473zdvIp59EKOS0XCnoM8cZP9OQ"",
+      ""id"": ""Ugyxz4ItOxp_sSaTm7N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Cr3VXe57lJZizunStAfGKiWVkak"",
+      ""id"": ""UgzNG8WSvopfeOMAzaB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yU5HZ7GNy2Z1oC4QjeWo8zdTKck"",
+      ""id"": ""Ugw1FJfqQ-TwSAF01mp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RPYOLxhrCVHFknp3i154iI_I2kU"",
+      ""id"": ""Ugxyk5PK7raf-szg5UZ4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_qhswfrwmncqf_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_skjysmz7s3fp_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""ha1t7RSMdtWUAS_aQiwJbVZJB5w"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 15
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

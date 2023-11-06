@@ -1,0 +1,77 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbay8t1adbg3_PostCoupons,200,"{
+  ""id"": ""ElNgndnD844aMYqvu"",
+  ""object"": ""coupon"",
+  ""amount_off"": 55,
+  ""created"": 1685107449,
+  ""currency"": ""yer"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1850609092,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1hv38p1lg50kz_PostCoupons,200,"{
+  ""id"": ""bsU11DR7tVk"",
+  ""object"": ""coupon"",
+  ""amount_off"": 9,
+  ""created"": 1685107455,
+  ""currency"": ""azn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 18,
+  ""metadata"": {},
+  ""name"": ""forgettable"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ji1ow7de535d_PostCoupons,200,"{
+  ""id"": ""cvdYRsxVuRBpwZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107461,
+  ""currency"": ""bmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""elderly"",
+  ""percent_off"": 6.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s18uy8e4i4ac_PostCoupons,200,"{
+  ""id"": ""IaaLzKcdAyxQtQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 96,
+  ""created"": 1685107467,
+  ""currency"": ""ars"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 78,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s1b56oc9l54i_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZP7bTcJ3xjD46b?t=1685107472"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

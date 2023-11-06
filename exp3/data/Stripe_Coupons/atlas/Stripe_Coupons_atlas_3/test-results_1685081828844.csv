@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7lwcqbllsmw_PostCoupons,200,"{
+  ""id"": ""Mw00OfvN"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081847,
+  ""currency"": ""vnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 57,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 5.0,
+  ""redeem_by"": 1748509082,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1hb86xl0mw181_PostCoupons,200,"{
+  ""id"": ""vgLQotYd"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081853,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 19.0,
+  ""redeem_by"": 1806572196,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxiro4u52hit_PostCoupons,200,"{
+  ""id"": ""QE1yhuMBhWgaS8Edltk"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081861,
+  ""currency"": ""kzt"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""restlessly"",
+  ""percent_off"": 100.0,
+  ""redeem_by"": 1790890313,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_to536r87vuwg_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_SlsfqDRusTnrkE?t=1685081866"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_tog6czjqixir_PostCoupons,200,"{
+  ""id"": ""qx2zckd1YWK5U"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081872,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 28,
+  ""metadata"": {},
+  ""name"": ""damned"",
+  ""percent_off"": 45.0,
+  ""redeem_by"": 1815879254,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

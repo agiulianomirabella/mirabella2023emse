@@ -1,0 +1,57 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib8p5krllc8l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QmWbi8zP3CJxcF?t=1685107500"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iepgkj2f6b01_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_fpa7fGVvjCEZk9?t=1685107506"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhw652q0xysl_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_x8Bk6CjXDeERNH?t=1685107511"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t49h5j1k26gm_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_UwyE1LJ87y9dXt?t=1685107517"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbhdy7jaf77b_PostCoupons,200,"{
+  ""id"": ""OUFSCL8U"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107524,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 12,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 85.0,
+  ""redeem_by"": 1858722425,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

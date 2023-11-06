@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibh3wpl7hxrt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tIenTqIVRMg6yX?t=1685111463"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iykiecutkmr6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tJQAof0SIfIhZD?t=1685111468"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s1jhlwd3tdup_PostCoupons,200,"{
+  ""id"": ""6tNLA9k9"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685111474,
+  ""currency"": ""qar"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4nc10hyqhr7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9YJsSokv9qQvrP?t=1685111480"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7wvpgvgzf51_PostCoupons,200,"{
+  ""id"": ""Ezvi9g66"",
+  ""object"": ""coupon"",
+  ""amount_off"": 2,
+  ""created"": 1685111485,
+  ""currency"": ""afn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 14,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1742604675,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibjs6p9b3pdj_PostCoupons,200,"{
+  ""id"": ""zXDJFzYQJTO"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685086200,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""basically"",
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1bm985m0uw4_PostCoupons,200,"{
+  ""id"": ""W1NpUDpACt1"",
+  ""object"": ""coupon"",
+  ""amount_off"": 100,
+  ""created"": 1685086205,
+  ""currency"": ""jmd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""viciously"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_somv8khhsmcx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_mU3lxBv8lVP04c?t=1685086211"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4qnoei0ffp1_PostCoupons,200,"{
+  ""id"": ""1Uxm14ngvsMKN28Knq"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685086216,
+  ""currency"": ""uah"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 93.0,
+  ""redeem_by"": 1818527296,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vb6bmq4408xd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rrs6gkru47VZQB?t=1685086222"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

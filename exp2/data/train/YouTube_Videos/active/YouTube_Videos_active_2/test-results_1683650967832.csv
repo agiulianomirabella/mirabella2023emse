@@ -1,0 +1,109 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iuvfl6ep4301_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""dX1csz6uKVopseW9AdJSoSS6BjE"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""izRjWe18aNljvfE8rWwdUOgXNDI"",
+      ""id"": ""yDgLFOxnQ8Y"",
+      ""contentDetails"": {
+        ""duration"": ""PT6M3S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      },
+      ""statistics"": {
+        ""viewCount"": ""8500245"",
+        ""likeCount"": ""78005"",
+        ""favoriteCount"": ""0"",
+        ""commentCount"": ""1244""
+      },
+      ""player"": {
+        ""embedHtml"": ""\u003ciframe width=\""6716\"" height=\""3778\"" src=\""https://www.youtube.com/embed/yDgLFOxnQ8Y\"" frameborder=\""0\"" allow=\""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"" allowfullscreen\u003e\u003c/iframe\u003e"",
+        ""embedHeight"": ""3778"",
+        ""embedWidth"": ""6716""
+      },
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Entertainment"",
+          ""https://en.wikipedia.org/wiki/Television_program""
+        ]
+      },
+      ""recordingDetails"": {}
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1ji1panv2k50i_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""y9zrrmo0EU5x3I2kkZemICGv07U"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""RBaKTC0ZquHvHQj_ofHoHr_C9cs"",
+      ""id"": ""TUJWx7vo44c"",
+      ""recordingDetails"": {}
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s4p3nh77ss4j_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4w75z8b8awk_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_uvgw28lvrbcj_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""fMYHeRHdxkajuNQUJzMPmbNAo9s"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""tt2fotYakyv1yzzP0NfrFk2B-W8"",
+      ""id"": ""yDgLFOxnQ8Y""
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv4aef9angab_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_lDqJDJLMCf6g3Q?t=1686932318"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jei9afi21nau_PostCoupons,200,"{
+  ""id"": ""FwosEO4MQLkaH"",
+  ""object"": ""coupon"",
+  ""amount_off"": 29,
+  ""created"": 1686932323,
+  ""currency"": ""chf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 80,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1727546538,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jent5tgnd9ph_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_NCdBebDeMRZKai?t=1686932329"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4yzbs5zufxs_PostCoupons,200,"{
+  ""id"": ""LI5BpUCU"",
+  ""object"": ""coupon"",
+  ""amount_off"": 91,
+  ""created"": 1686932335,
+  ""currency"": ""xpf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urgt9xzjzv3o_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_WE0PFWc8oYgF1m?t=1686932341"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

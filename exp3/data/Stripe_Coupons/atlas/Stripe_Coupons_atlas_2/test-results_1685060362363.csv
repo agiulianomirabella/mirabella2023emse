@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib0f02my2ipi_PostCoupons,200,"{
+  ""id"": ""C8f9qqhd"",
+  ""object"": ""coupon"",
+  ""amount_off"": 46,
+  ""created"": 1685060379,
+  ""currency"": ""bwp"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 4,
+  ""metadata"": {},
+  ""name"": ""polyprion"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iv73ewt4j59h_PostCoupons,200,"{
+  ""id"": ""w974wOW9vmFeA"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060384,
+  ""currency"": ""bzd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 64.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxiauebohu91_PostCoupons,200,"{
+  ""id"": ""xZetyIAJO2"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060390,
+  ""currency"": ""lrd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 90.0,
+  ""redeem_by"": 1832510372,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rl2u838w9iyh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_GlQ1Jt6CbKbtVQ?t=1685060396"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubgck6c84md5_PostCoupons,200,"{
+  ""id"": ""ZtA9gRByeDfUpQu"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060401,
+  ""currency"": ""aed"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 73.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

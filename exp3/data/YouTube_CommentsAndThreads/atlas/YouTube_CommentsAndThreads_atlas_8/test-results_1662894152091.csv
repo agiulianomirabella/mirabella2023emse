@@ -1,0 +1,108 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyahc2nhyw54_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_trrcntu8riat_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u7znvjqgxcfm_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u805exnmgyt2_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vb94iee1fs4z_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""CgJ2tztTLtPyE1qXYJeNNVP60s8"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 27
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uQISH_ET6GmQvXMM6Sr2V-a4FsQ"",
+      ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""NWrcP0QyXJs"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""TkwYPNrKG44MQ50unWUVOeMgT50"",
+          ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""NWrcP0QyXJs"",
+            ""textDisplay"": ""Arkano es la unica persona que le quedaba mejor estar gordo que flaco"",
+            ""textOriginal"": ""Arkano es la unica persona que le quedaba mejor estar gordo que flaco"",
+            ""authorDisplayName"": ""luis 1312000"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9f3-cHL-w0xElzEXC_1SS8AMNSQ9eCxG9HWi9w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjWRZMFpoavpyfkMUiZfnKA"",
+            ""authorChannelId"": {
+              ""value"": ""UCjWRZMFpoavpyfkMUiZfnKA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 8782,
+            ""publishedAt"": ""2017-09-21T18:40:17Z"",
+            ""updatedAt"": ""2017-09-21T18:40:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 71,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none

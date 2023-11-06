@@ -1,0 +1,55 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7j6j0002b7c_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LNttAVhDcAHYhG?t=1685109981"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iuspfzf3feif_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_IxBQuvDi1qR2GB?t=1685109986"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skkia637wb3m_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_qIyInD5fRGS8Wk?t=1685109992"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl6o3nalel9w_PostCoupons,200,"{
+  ""id"": ""dA18yvFA"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685109998,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""ascetically"",
+  ""percent_off"": 77.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u7zlx8adf9yx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZbRAXO1XCxn7l4?t=1685110004"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

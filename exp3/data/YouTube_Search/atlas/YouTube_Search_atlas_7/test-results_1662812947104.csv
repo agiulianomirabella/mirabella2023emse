@@ -1,0 +1,97 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hvb2384tjvi1_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iv1jen9c8mlf_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""GC_OOWQD3u37Rq9-Z-xsQ2PIgPw"",
+  ""nextPageToken"": ""CAAQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 159,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1jezd355a3z39_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""ucc3Zm3r-mTh5r72nbHnA5orDdU"",
+  ""nextPageToken"": ""CAEQAA"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 5,
+    ""resultsPerPage"": 1
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""uK2i7DWigs4G4gRMEEhxaVXpzgA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""cFaw-tfZMOw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-11-12T10:50:18Z"",
+        ""channelId"": ""UCxJQeTC6eaUrqQD8REkee3w"",
+        ""title"": ""LEGO Marvel Superheroes 2 Gameplay"",
+        ""description"": ""A Channel I made to make people happy!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/cFaw-tfZMOw/default_live.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/cFaw-tfZMOw/mqdefault_live.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/cFaw-tfZMOw/hqdefault_live.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""The Shady Shard"",
+        ""liveBroadcastContent"": ""live"",
+        ""publishTime"": ""2019-11-12T10:50:18Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1k25kdc8xyfl1_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_u803xbym6ss8_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

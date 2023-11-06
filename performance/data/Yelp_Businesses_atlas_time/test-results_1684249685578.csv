@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rh7s0x5qki1x_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_rhjcnqg86muu_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_sl66jzx1ls9w_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -107.30155, ""latitude"": 35.171173}}}",application/json,true,none
+test_t4ncqhlopf74_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_to1t5w256mw1_getBusinesses,400,"{""error"": {""code"": ""LOCATION_NOT_FOUND"", ""description"": ""Could not execute search, try specifying a more exact location.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."

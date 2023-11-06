@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrgy4gschve8_PostCoupons,200,"{
+  ""id"": ""qnKqJnUpiHyM4t"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082939,
+  ""currency"": ""vuv"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""tardily"",
+  ""percent_off"": 100.0,
+  ""redeem_by"": 1773350131,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1hv0gzklvg20k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6Njs54KIf8EY53?t=1685082945"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ibeancdhdv03_PostCoupons,200,"{
+  ""id"": ""WevoWj1uQXaNnH9pT6"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082950,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 70,
+  ""metadata"": {},
+  ""name"": ""lopsidedly"",
+  ""percent_off"": 19.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rh7qrzavzmg4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LXxqiCM22aPkkp?t=1685082957"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t86wb788w3eh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_C7rwieMZdaAiSJ?t=1685082962"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

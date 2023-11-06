@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qxi7pnbibp7o_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -5.985832214355469, ""latitude"": 37.38897024983557}}}",application/json,false,"This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one."
+test_skxvmb8yvm8x_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_uve4zsn80679_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,true,none
+test_vbmx1cxzczeb_getBusinesses,400,"{""error"": {""code"": ""OPEN_AT_AND_NOW_PROVIDED"", ""description"": ""You must specify either open_at or open_now, not both.""}}",application/json,true,none
+test_vbprjej9vy9c_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,true,none

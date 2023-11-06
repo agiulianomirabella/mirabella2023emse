@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qhw5tmnxxtut_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hpjxxuoV29dV2a?t=1685108265"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhdu7btlbh2w_PostCoupons,200,"{
+  ""id"": ""RJrrZmAk"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108270,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""uneventfully"",
+  ""percent_off"": 66.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_skv3ggajjpkn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rwXu4FPgAHyWO5?t=1685108276"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbhy56h8c6k3_PostCoupons,200,"{
+  ""id"": ""KlAuAAZ3YK"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108281,
+  ""currency"": ""fkp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 10.0,
+  ""redeem_by"": 1820669124,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbnfr227lyy9_PostCoupons,200,"{
+  ""id"": ""Dc6x1j1gdnZtS4WYp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108287,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""elementarily"",
+  ""percent_off"": 91.0,
+  ""redeem_by"": 1847531809,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

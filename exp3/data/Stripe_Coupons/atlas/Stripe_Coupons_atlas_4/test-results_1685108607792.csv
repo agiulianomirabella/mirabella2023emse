@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h85b3jcl0in8_PostCoupons,200,"{
+  ""id"": ""2ctn845M"",
+  ""object"": ""coupon"",
+  ""amount_off"": 39,
+  ""created"": 1685108624,
+  ""currency"": ""vnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""simperingly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iauwjpmd0uw2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DsLLzG7i6SUwTC?t=1685108630"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k251nv1zz6n5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_oX53gERJej4YmH?t=1685108635"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rhdt1q82p7hy_PostCoupons,200,"{
+  ""id"": ""gqJd4Vd7riVKOYU07"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108641,
+  ""currency"": ""lsl"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""trippingly"",
+  ""percent_off"": 16.0,
+  ""redeem_by"": 1791728734,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trrdd3gbj4h2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6Mn8kuz5QkH8sA?t=1685108647"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

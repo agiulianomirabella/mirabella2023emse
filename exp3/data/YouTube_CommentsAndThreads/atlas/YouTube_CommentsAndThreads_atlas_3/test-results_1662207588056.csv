@@ -1,0 +1,564 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibkcgb8w20ys_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""44PSAi8kJfrynohBPvncRvs_3OU"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 30
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""7xvSqkxW6nZnrGWGJY7P2jDD4Ao"",
+      ""id"": ""Ugw7orsAQ51p8dJD5Bx4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""vKFiCVn0bxI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""3fm5mvudNsmOinlJ67Orahhme0c"",
+          ""id"": ""Ugw7orsAQ51p8dJD5Bx4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""vKFiCVn0bxI"",
+            ""textDisplay"": ""El índice de letalidad de la influenza es mayor al 10%"",
+            ""textOriginal"": ""El índice de letalidad de la influenza es mayor al 10%"",
+            ""authorDisplayName"": ""Juan Pablo Guerrero Sanabria"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9tF0yumpv-ZSG9f9NTLY60hkZr4oRpHLKZZPG6tUQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCE4mdGn2gAnz3N4ZY6UiPmg"",
+            ""authorChannelId"": {
+              ""value"": ""UCE4mdGn2gAnz3N4ZY6UiPmg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2020-03-03T05:14:03Z"",
+            ""updatedAt"": ""2020-03-03T05:14:03Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1jer0j1x6936p_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: channelId, videoId, allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: channelId, videoId, allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s15k2kda6sds_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""uUPj2svC9_Frh1jUWantE_7jSIM"",
+  ""nextPageToken"": ""QURTSl9pMFRmelJIdUZqWmsyNXVGcWFObjNJYlJESTV5bmJmTWZ1S1JQVm9jb3lEaEtZN0NlQTJvaXRTckdvQ2pkNlhfeFVMVXduZG9BQQ=="",
+  ""pageInfo"": {
+    ""totalResults"": 92,
+    ""resultsPerPage"": 100
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ty-ybU6VDbQFGCdP5jaH2SXGZZ8"",
+      ""id"": ""Ugx8J8Wb_xXlgUyc6H94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""A59ivbJ-p0kmE028xHSmO631zZY"",
+      ""id"": ""UgxkrxLALEwn5rB2R9N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YXShyl1EjqFQeyzjjhr8kF2Y0UQ"",
+      ""id"": ""Ugxe_EZ5LNVey1QHS2J4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""H5OyMj3eRiJo5E-lLY094D54N9U"",
+      ""id"": ""UgzLSUhBzaVL9emzr6p4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""UPo8gzdIdaW855fwd4Mqcl2b9Rc"",
+      ""id"": ""Ugzz69OYJjl2ptpUcXt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_fVwjFVxPzyQfAFBr7qkZ2KHmUo"",
+      ""id"": ""UgwjcYfhJ0wAT4W7XJJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""pUX0Gw24qpSRsRmcGvjNLkiYjyY"",
+      ""id"": ""Ugzd09jtHkdZqcjvQMN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8X5ZOq-UFDHtrWwvVh64ILeezMI"",
+      ""id"": ""UgyILpZ9nofHAHzlQjp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3VVaYwH2GoE7caIIq3ZB9WoeQzI"",
+      ""id"": ""UgwRW-uJLsnqK_LMtnJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MGt3E4IM7rW8F68RGm8kIz0CkE0"",
+      ""id"": ""UgzOS9qZw_Dp27gF5NB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""53MZC2pHjpRaiW7b9NWtgNAmAFg"",
+      ""id"": ""UgzJBFWTcR10hFLNE1Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PpSFes9Ct789Lnis--wABPafjsY"",
+      ""id"": ""UgwwJv7NWn8tHhv1ti54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fVJGDvqNsC8rnFkAQ9CYiG84ZoI"",
+      ""id"": ""UgxWgcH-badO2ZqdUdB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_MSFutwTA8V2Qqa57xYc3ZD_Lmc"",
+      ""id"": ""UgwwKZV1fyvbI5b_z-R4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""b_YiCPHn6_pLMRHIU8VAFgylPZE"",
+      ""id"": ""UgyruqdrE7KTwQ1EgAB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0Ik4YBwkfQLjyYHhvnwMECjuaOM"",
+      ""id"": ""UgwUQhOjCnQpJx2jDJR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""eoB-3SqgJxPF_Y9rA7ZdlRhzSzs"",
+      ""id"": ""UgxplS3aT1FByN0XQvh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yoQyEsJh5gTu6s_gu2SM27Izb28"",
+      ""id"": ""Ugxaalt6vL1Ixt91XYB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RwHAwBa1J4ju8TGvlp96zro5rFc"",
+      ""id"": ""Ugxoi-mQ6-j4G7ZuxQJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""92l3SJ3XaXTSlta7sPEeUiThC5Y"",
+      ""id"": ""UgzcCUquMw7qQU3RTXp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uhtlF7-mB-EbZ-k3QA94tANk5ks"",
+      ""id"": ""Ugx7U0DPke0gncUyleV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Iu7SYXyz5Ou0FQ8TmgxcaCUf9t0"",
+      ""id"": ""UgzMeq6bsALiUMElfgh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5Go5bgqx1ZNYc7_BIPNDf6KK7IE"",
+      ""id"": ""Ugz8jyJcfxNI0i_1h6Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""x1kue4NMigEPj927jwDrze4X088"",
+      ""id"": ""UgyHDR3Kf_hZ4s1SJMB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1QeIZfD8Bk9_BtDHjBQhIu9iJ4o"",
+      ""id"": ""Ugz_Bcj9MuHvvrtDtOd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""sbDIgyuoZJZ5m8rqObeffrhKuW0"",
+      ""id"": ""UgyGOTTCIbPV0qwHROF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cWCY-zf_j5m8V7_iYvQ4n5LkkNw"",
+      ""id"": ""Ugz-DLsRk5-5woxYsoN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PoABl0UN6hSdaeCJ_5E_MZLTkiQ"",
+      ""id"": ""Ugz0Kk9cz2sznH7qrAh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""I9Y8nTEE2xiUILBtwEJK3xnRUdc"",
+      ""id"": ""UgzgPvQubc8gcWCb_CZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""o41DM_qZ9wOEdYvqjcXwh1_3XOA"",
+      ""id"": ""UgxYSKJ-IpDAePl5GQ14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""dOBztIpo-SLVJQpMEfrWYhzGw7I"",
+      ""id"": ""UgyeJQQPrgvgOSltwWZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zGTPVMyVT0tXNo-eihxIu9TGmDA"",
+      ""id"": ""UgxfMGwVzSRwIqubyil4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JV-txvKaD_ZV_u1CQ7MRD1rAZs8"",
+      ""id"": ""Ugw20uGFQ3SGRkZwte94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3JU2W8JGoiOdvwD5SRIh2Tq7B-Q"",
+      ""id"": ""UgwfvCa_LfBy8q08bEZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JvrOz1g6aozQANPMdYs8OCrIDpI"",
+      ""id"": ""UgxMdbzu4oNedzBrVEt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2aykBEjAbDGcqxzGYPVA7omgyTg"",
+      ""id"": ""UgzftzVXwe2x0ELO0Bd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""XJvPMZes5XJQLt-9DvTMQQ4w700"",
+      ""id"": ""Ugz_WPB639MkAYGk4C14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8sxJjhYZSYCcZjum2eU6vyVA45Q"",
+      ""id"": ""UgzCb3xQyVgCVg_HQOJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""aSp5ZQi3Jf0XSsa5hGAPkD-6cMI"",
+      ""id"": ""Ugz1y89zQA-QkrRECMd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""atgfSEsAX679zIDJ2kfBO3EoL_0"",
+      ""id"": ""UgwcmFm1sH3AjT2D7BN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YmQJjjcm2rFuEOTSog7d4S3-qFA"",
+      ""id"": ""UgykO_2J5qfYHPOHucV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""R6R_7qzNg2uXlImLEBoXg9c4UEw"",
+      ""id"": ""UgwRYPQqZ32ty0aPdmh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nN89x7TVYv9ROvrMEOefLU4jZ8U"",
+      ""id"": ""UgwTw3IBeLjoqvMD3EJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_3QT45PnykcMqsVu1FF4f-IGTAE"",
+      ""id"": ""UgyEI4kK3dOFqxfG8b94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0mqTRScepHJjKt4ka8MTPzWZcy8"",
+      ""id"": ""UgxI3aZpwc390rbvR654AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""u76CL4xiC8m1jdnv1LYrFzHqIz8"",
+      ""id"": ""UgyNv0wx-UBkNqDBiT54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""M9e5cPBeJZcRN9e8oFa8S6UaTyM"",
+      ""id"": ""UgyGQs28hHrlbtxFnQR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""t-fiXJrKd7tKM2QbN4UkMtuBWy8"",
+      ""id"": ""Ugz5VsTbVLVwZGTErMF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""l2k0o5RaW9io1aECkVDVtlaO6Jo"",
+      ""id"": ""Ugym43xg-8029rG2EY14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2zBfaSPooG73KStKK1EuD6p_yXs"",
+      ""id"": ""UgzwlJTsbY2W6LbZdCN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""DpzI2UBksuBC4xxO8MyW98x_POU"",
+      ""id"": ""UgxEgeFmBkB0j3KCXCl4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""g9Mh2FlR3_RZF03AKXzFfDltyYU"",
+      ""id"": ""Ugwv-RySSKGDt_pmJpB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vvkCqbA6odZeCr2B6txtBkiej3o"",
+      ""id"": ""UgxPHNoyyXSh_U4tp8Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""W3qpCj8SncYJERmf_05gExn5Jg4"",
+      ""id"": ""UgyUVKcR2Q7l7h6WRll4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""VCg26yENDNb5t8ZVQ_6fJmC0RPI"",
+      ""id"": ""UgwAwRguu_pH7InqpVN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uElTLkvo-_DzcNlDXzF1POzm2no"",
+      ""id"": ""Ugw6b2KIpwEk7Pax8ap4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tdwijGshZFFrAeaherCBsGqJRpc"",
+      ""id"": ""Ugx7gxQ0emb0qLW7Rol4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""UzP235FR3GGjQKn-AWMIhZKQCkc"",
+      ""id"": ""UgxWWsq-uiKnRfmae-54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""D3oUVzyRDAhsC9ctPPombZBt2JY"",
+      ""id"": ""UgzOueam38ijh9kbDr54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yKb1fE1Sre3V0nwEmH5eUpwBAwo"",
+      ""id"": ""UgxPZWDsRvcQFC5U9gp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""BndHiVvu0ZN_fVpTwjPufWrw5vY"",
+      ""id"": ""UgwDTRgQPpBq68_b-d54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RgoFnLG04eJMrwe5nhlTCprV0lI"",
+      ""id"": ""UgwC02hkuPXpNggA_WF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""k396OoR9ufBfIqBJJexkxFhx3EQ"",
+      ""id"": ""UgztbvivVpAmkR3soOp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-6rr6tr2I_GNw3gv9TwgPDLoLWA"",
+      ""id"": ""UgxwGAKGYvAyq75bbZN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yDh8ptkK3hgndWs_rTrUOUtWuSc"",
+      ""id"": ""Ugwq13bYc5gSuILXfRl4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""wqBhyEVZEcpwJIz1jInQZYuPRCw"",
+      ""id"": ""UgyrWy_Po3W_h1QShq94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fYOS9LmyaZSGtVg2sl0GDxqbRRI"",
+      ""id"": ""UgwBisYxjyGs-KdKubZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""XYR4hX4shWjgW25_bLoslzUTOVc"",
+      ""id"": ""Ugy-masxddgL2zGGVHh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uPx8Z0MgoCFRW56YgeXzgZuUOxA"",
+      ""id"": ""UgxQIZtmhtG3xUcp_-J4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""AgVzTtZxz6XjxlS6MN9-EYgWcUc"",
+      ""id"": ""Ugwk4uF7cjimbtjonlN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""flyOTlOxvcbng5WlqxEs7dWzpjs"",
+      ""id"": ""Ugxc3t_PrGCoLWdoh4N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gpg3Xe22DWzufY-zji1fwwAb5gQ"",
+      ""id"": ""UgwcDb-jOvCl3sBfYGx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""lbbl0r77m9cpOq840ORISp9N3SA"",
+      ""id"": ""Ugwap8LbpcDdAwMtzot4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""qbc2zZxleSr99cnPOsQ4w2pJf7Q"",
+      ""id"": ""UgxAXiZhEGzx-NOttLV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tJ3InJMbGvJL6CtPZj3o2lrdhzg"",
+      ""id"": ""UgyFt0AjdnLcweEa4MN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PG1zUa7fD1CzUiK0XOfVC1nWh8Y"",
+      ""id"": ""UgzbuTaHneMtd7zegKh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YinMDCK0KQo6pj1cQiiJkN5Qx2o"",
+      ""id"": ""Ugwbut2tGOlMfIRWqPV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""FWWp893rRKHxCiLNp3s39wJiQ0U"",
+      ""id"": ""UgymHrm1CZzCdg8cQC94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""T6GvKVaccKRBvoDNLQwIv_xfsmY"",
+      ""id"": ""UgwrBa6ZU4PN2yc8NW94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""wdklam6rWY1akpQqgj71Y7TcIm0"",
+      ""id"": ""UgxOzEt2NdNerVOYnp14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""QZcBkEY9wowDsbkGTU4x625bXSE"",
+      ""id"": ""UgxreZ9b427lMCOPuJ94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HTtTg6Z2Tv11sP4Hb-kw5pJt_aQ"",
+      ""id"": ""UgyFQFtu_91mGXTXUjx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fdMf0CfODFRDhc0LTF_4xrG9pQs"",
+      ""id"": ""UgwKHEwDJoO_6hlg02Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""54C7rs3IIwRpqrAAYlbn5sTvi6Y"",
+      ""id"": ""UgwmKLfwKIhW3Kdljxx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MmPGNO_Zl4IYPfZK7O2y2OtIPUk"",
+      ""id"": ""UgwNZFv0BZF9cU3mJUR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""98WGKnxQXvT9MzENEW8ssjTidqs"",
+      ""id"": ""Ugym8hL08gvLG2fUjWN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KL6fbjhZ_DGyyLH09fTlyRrCnVU"",
+      ""id"": ""UgwlfxkYem7e8Vn7iEB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""azqsvaonaMVEU3gj8DgCIpuCU7s"",
+      ""id"": ""UgzNGhx1caIyl1IKyyR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""w4_bl0mkEiQ-5V-HKucWfaTGiWk"",
+      ""id"": ""UgzvxrGnbXvzAfI8jvF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""OjR3c_OveDX4G7px67I4I2TRxXU"",
+      ""id"": ""UgwKW60mdeAz4aKY3p94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""BcOUvMbhoDWa7p2p9IQnD6SqzpI"",
+      ""id"": ""UgzYT3aZG_C15Rbumyp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""g3f0pHSqdm3ZbIQK9rhoull2VgE"",
+      ""id"": ""Ugw3pBmVTpQW5VJ-9bJ4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_s50oago6x3z5_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_sohuh4nkr97q_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, id, videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, id, videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hruaoi3yckzd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_O6YVO2mzxXUcMB?t=1685112700"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iephqidvgilu_PostCoupons,200,"{
+  ""id"": ""Qk4GvwXWQwL8zLYipd"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685112705,
+  ""currency"": ""fjd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1793225305,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s4ul97kyn6lv_PostCoupons,200,"{
+  ""id"": ""grnVe8W4"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685112711,
+  ""currency"": ""rub"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 3,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trtlnvlmh6wg_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The currency hrk is no longer supported. Use eur instead. See https://support.stripe.com/questions/croatian-kuna-(hrk)-currency-transition-to-euro-(eur) for more details."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8I9OJPvM7EMuVw?t=1685112717"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbpqrapqahya_PostCoupons,200,"{
+  ""id"": ""WXrzEJPH"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112723,
+  ""currency"": ""pgk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 22,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 12.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jel100fovmeu_PostCoupons,200,"{
+  ""id"": ""0ODMDGRNQ0K8pgr"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1686932217,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 73,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 70.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jenr7nwjan1y_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wsPFXwMAQrG1Vt?t=1686932222"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdvkbiayg7s2_PostCoupons,200,"{
+  ""id"": ""J4WqT3TT"",
+  ""object"": ""coupon"",
+  ""amount_off"": 92,
+  ""created"": 1686932228,
+  ""currency"": ""myr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 22,
+  ""metadata"": {},
+  ""name"": ""righteously"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhocnhudth0m_PostCoupons,200,"{
+  ""id"": ""obTCic0sCjBA40ravDqC"",
+  ""object"": ""coupon"",
+  ""amount_off"": 5,
+  ""created"": 1686932234,
+  ""currency"": ""thb"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u8diqx7xubfn_PostCoupons,200,"{
+  ""id"": ""1SYlclcwlvN"",
+  ""object"": ""coupon"",
+  ""amount_off"": 76,
+  ""created"": 1686932239,
+  ""currency"": ""nzd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

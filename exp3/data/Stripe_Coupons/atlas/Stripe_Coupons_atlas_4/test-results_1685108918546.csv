@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7x0mf7nl35j_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_z3QinNoWKzJkyE?t=1685108935"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hbirmvkpikvo_PostCoupons,200,"{
+  ""id"": ""G0jaO5o6h2m6tHIBDhw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108940,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 4.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iuvj3pw0ev6p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7YVjnqwAhWIJV1?t=1685108946"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s12v11vseo1g_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_VpjZfN2EPXl63Y?t=1685108952"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbkofkk8hmpk_PostCoupons,200,"{
+  ""id"": ""qtOL5s2IklsjIGiKO5r"",
+  ""object"": ""coupon"",
+  ""amount_off"": 73,
+  ""created"": 1685108957,
+  ""currency"": ""zar"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 100,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1744540589,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

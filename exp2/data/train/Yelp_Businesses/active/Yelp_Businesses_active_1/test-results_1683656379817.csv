@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1k201zzg6o7qq_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_qdw1xr5d4b3l_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_qxw4m0n17hv5_getBusinesses,400,"{""error"": {""code"": ""LOCATION_NOT_FOUND"", ""description"": ""Could not execute search, try specifying a more exact location.""}}",application/json,true,none
+test_t86tzc1cvw4j_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,true,none
+test_u855xjsoryw4_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -109.53057, ""latitude"": 38.37776}}}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

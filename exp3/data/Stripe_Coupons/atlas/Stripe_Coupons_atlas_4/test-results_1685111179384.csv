@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib5xdoxrzlmd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_MTrLI8nxEiTtpY?t=1685111196"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iynrpm7x8wv7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_AbYQNhH3Soe4pp?t=1685111201"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jeaffv204j01_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Hq3iS38gUcCqpZ?t=1685111207"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k1tz1b14shte_PostCoupons,200,"{
+  ""id"": ""Plrr41G9TDfHR0e1YFY"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111212,
+  ""currency"": ""bam"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 100,
+  ""livemode"": false,
+  ""max_redemptions"": 6,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 27.0,
+  ""redeem_by"": 1748991978,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ure0c6q6ao1f_PostCoupons,200,"{
+  ""id"": ""5DIkSkeKqM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685111218,
+  ""currency"": ""mxn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 60,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

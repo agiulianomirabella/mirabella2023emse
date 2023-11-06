@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_sof4knddu4px_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_t4f1t36cyi45_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_t84m2swnbgx0_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_ubony6l18rqd_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""WVLPLBRI"",""chainCode"":""WV"",""name"":""THE ADELPHI HOTEL"",""cityCode"":""LPL"",""latitude"":53.40551,""longitude"":-2.97698},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=WVLPLBRI&adults=3&roomQuantity=8""}]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ubrxz7nxhlra_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none

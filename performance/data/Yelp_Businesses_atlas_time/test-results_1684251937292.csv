@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbahhfpotdf4_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -106.44927978515625, ""latitude"": 31.653215982221013}}}",application/json,true,none
+test_rh8a9ozshg0x_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -104.12375, ""latitude"": 46.541367}}}",application/json,true,none
+test_rhdspvpgxw0z_getBusinesses,400,"{""error"": {""code"": ""OPEN_AT_AND_NOW_PROVIDED"", ""description"": ""You must specify either open_at or open_now, not both.""}}",application/json,true,none
+test_s4mcz3z0cf37_getBusinesses,400,"{""error"": {""code"": ""LOCATION_NOT_FOUND"", ""description"": ""Could not execute search, try specifying a more exact location.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_urjjkbq4633k_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,true,none

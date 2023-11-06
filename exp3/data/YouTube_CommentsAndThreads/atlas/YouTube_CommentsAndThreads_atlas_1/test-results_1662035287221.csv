@@ -1,0 +1,751 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib98n09ywpww_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jefhfyz6786t_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_rhllnedibepe_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: channelId, videoId, allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: channelId, videoId, allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rl2vdt32e0jc_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""qPj17CAqAvlnTW6s6HGr20WhIhA"",
+  ""nextPageToken"": ""QURTSl9pM21LeTlNTjBTZEJqRzV3T1VnU051M1ZPVWlIRnhaamgzQTM5b0p1SG1EQVhiVTRWdF8zbTY4MWJoQm9NS0J0WDB0T0E3TnY4TGxrTG1adXJkZHYwRzJZVnhiNFBvQW83bThhRE9rVW1PUlQ1QmVtTWd3dnM1bktXTElMR0pOWWZlWTN2aWxSbC1iclB6U2ZRV2VENjZ1TWdsS2lZcTVna1RtZlN2d0t1RjgxRTIzc3hnX2NlblhlTWFUbE9YTU94aHRkWU5WU0tj"",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HqCzFm9kc8OVeSDd2CxqMwE7mIE"",
+      ""id"": ""UgxiQjM5_iX7jhk8e7F4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""0YBxPmC7H5s"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""mMmOrQWzibiKiK7p_fyGj7048xU"",
+          ""id"": ""UgxiQjM5_iX7jhk8e7F4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""0YBxPmC7H5s"",
+            ""textDisplay"": ""I read a lot of jokes about fake scenes from the series and I really am too old for this shit"",
+            ""textOriginal"": ""I read a lot of jokes about fake scenes from the series and I really am too old for this shit"",
+            ""authorDisplayName"": ""Luca Esposito"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_w0xYyNENYI504JGsLothqyxygOqFYapTkshUk-w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCk2qJITN7WL2Yhw60rjz98A"",
+            ""authorChannelId"": {
+              ""value"": ""UCk2qJITN7WL2Yhw60rjz98A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:25:10Z"",
+            ""updatedAt"": ""2022-09-01T12:25:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HcIrUYlWzcdHb1zb7Zm56Zipfz0"",
+      ""id"": ""UgwgKv9afUvoqrUugoF4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""f7KL4uPEbC0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ByyibcCJg0kp1rCDny-8VQwqK7A"",
+          ""id"": ""UgwgKv9afUvoqrUugoF4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""f7KL4uPEbC0"",
+            ""textDisplay"": ""GUTFELD NOW #1 IN RATINGS!"",
+            ""textOriginal"": ""GUTFELD NOW #1 IN RATINGS!"",
+            ""authorDisplayName"": ""M G"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8DSyeGGSxKwDyKVtseq0pkigK08_6PG9sPWQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC2SAb7LQFX8mJfboeteWK-Q"",
+            ""authorChannelId"": {
+              ""value"": ""UC2SAb7LQFX8mJfboeteWK-Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:21:29Z"",
+            ""updatedAt"": ""2022-09-01T12:21:29Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""dbw8ngoZqem3r1ui9z4qrV6lGN4"",
+      ""id"": ""UgzcdOsewnj7eAv_fWd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""f-vSpvt2dD8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""GTGA5PIfxjNo1dqQzhp3ng5QDWE"",
+          ""id"": ""UgzcdOsewnj7eAv_fWd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""f-vSpvt2dD8"",
+            ""textDisplay"": ""You guys don&#39;t know how ruthles the civil war is..."",
+            ""textOriginal"": ""You guys don't know how ruthles the civil war is..."",
+            ""authorDisplayName"": ""Jose Jesus"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9Cts8vRjfCLPx0bFCLJHfVtskA5_4FsAT8EQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-UW6qwImKSltPaJKnX8p0w"",
+            ""authorChannelId"": {
+              ""value"": ""UC-UW6qwImKSltPaJKnX8p0w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:19:47Z"",
+            ""updatedAt"": ""2022-09-01T12:19:47Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""eFUpQfjsxREPyyHnaxPDtHd5AC0"",
+      ""id"": ""UgzMg4l6cizuiKjy4J14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""0jjFjC30-4A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""DXlqhdRLi2Wix9FNqdTUrCEzqCs"",
+          ""id"": ""UgzMg4l6cizuiKjy4J14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""0jjFjC30-4A"",
+            ""textDisplay"": ""More Brian Greene.\u003cbr\u003e\u003cbr\u003eLess John Edwards.\u003cbr\u003e\u003cbr\u003eSociety wins."",
+            ""textOriginal"": ""More Brian Greene.\n\nLess John Edwards.\n\nSociety wins."",
+            ""authorDisplayName"": ""ighfee"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9KHMGJtwD0S11k_QEu_yG8LEYN_Yy8MvmK6w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0Q1wllPt7wGqGcypxrtItw"",
+            ""authorChannelId"": {
+              ""value"": ""UC0Q1wllPt7wGqGcypxrtItw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:18:51Z"",
+            ""updatedAt"": ""2022-09-01T12:18:51Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tPxhkmPmfoJetG02gr2Cu_ETfQ4"",
+      ""id"": ""Ugx8XqPwenljuQBEqpt4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""kRfeJVO_UIE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qouoSm6DIdslJK24-_T6wRqYpsw"",
+          ""id"": ""Ugx8XqPwenljuQBEqpt4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""kRfeJVO_UIE"",
+            ""textDisplay"": ""Fucking masterpiece."",
+            ""textOriginal"": ""Fucking masterpiece."",
+            ""authorDisplayName"": ""Jan Pronk"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_557fKCzAdd2PSU_E_J-7W5pD-PFh2uBipRg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCRU8nelb-cKvW4GGFCl11Fw"",
+            ""authorChannelId"": {
+              ""value"": ""UCRU8nelb-cKvW4GGFCl11Fw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:18:40Z"",
+            ""updatedAt"": ""2022-09-01T12:18:40Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""s12mwNwHJgcbdXo4cLVI-4X-3zo"",
+      ""id"": ""UgzH9A5PdOykG__3_at4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""8OtMq2s0TyM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ixIPbyjGeKU9qcZfsOKVpiTb0w8"",
+          ""id"": ""UgzH9A5PdOykG__3_at4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""8OtMq2s0TyM"",
+            ""textDisplay"": ""should be working for Trump"",
+            ""textOriginal"": ""should be working for Trump"",
+            ""authorDisplayName"": ""Luke Luquer"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8MkoQ48fUQgoxUxZ5XsCnJcq1-KA24LOMjxA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyeh4BqUE94tVNT21ZGRehA"",
+            ""authorChannelId"": {
+              ""value"": ""UCyeh4BqUE94tVNT21ZGRehA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:16:55Z"",
+            ""updatedAt"": ""2022-09-01T12:16:55Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RVfWJq-hbMwVCAkrEfhqmSUYB7A"",
+      ""id"": ""UgxuNmybw3D3nH61tZF4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""1jhOBMRxmCQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""zdYeIlisB2fvq0ME79cMjyi0CRw"",
+          ""id"": ""UgxuNmybw3D3nH61tZF4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""1jhOBMRxmCQ"",
+            ""textDisplay"": ""I laughed so hard at this...so totally random and unexpected that I laughed uncontrollably for the entire song and missed most of the &quot;lyrics&quot; the first time"",
+            ""textOriginal"": ""I laughed so hard at this...so totally random and unexpected that I laughed uncontrollably for the entire song and missed most of the \""lyrics\"" the first time"",
+            ""authorDisplayName"": ""AmmaLeslie"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8ySdL_vi_0pM7MJjEdJMGMkWfXOd_RpNzucQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCv_w_b053JzBBQ_btQp0png"",
+            ""authorChannelId"": {
+              ""value"": ""UCv_w_b053JzBBQ_btQp0png""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:15:17Z"",
+            ""updatedAt"": ""2022-09-01T12:15:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""NDjX7PiG2ygBsUl7byldUkRdBKo"",
+      ""id"": ""UgyHBF6zDGw-sYJYdMN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""8OtMq2s0TyM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PbjITFwUBiQ8SP7Ug8ypmx-HWaM"",
+          ""id"": ""UgyHBF6zDGw-sYJYdMN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""8OtMq2s0TyM"",
+            ""textDisplay"": ""worst so called comedian ever"",
+            ""textOriginal"": ""worst so called comedian ever"",
+            ""authorDisplayName"": ""Luke Luquer"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8MkoQ48fUQgoxUxZ5XsCnJcq1-KA24LOMjxA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyeh4BqUE94tVNT21ZGRehA"",
+            ""authorChannelId"": {
+              ""value"": ""UCyeh4BqUE94tVNT21ZGRehA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:14:08Z"",
+            ""updatedAt"": ""2022-09-01T12:14:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""lkqwsn_Jq0v2uhBtZUgu8_gquZc"",
+      ""id"": ""UgwzPWXFO18IxfZDbj14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""ssJ44cfBvrQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""-54u7XdHkRXuZoraBVXuvLoS1IA"",
+          ""id"": ""UgwzPWXFO18IxfZDbj14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""ssJ44cfBvrQ"",
+            ""textDisplay"": ""Buttt butt “there are no powerful women in Hollywood movies! “Proceeds to call a flood that instantly pommel and defeats  most of Sauron’s wraiths in one fell swoop.   Don’t exactly remember Gandalf doing that."",
+            ""textOriginal"": ""Buttt butt “there are no powerful women in Hollywood movies! “Proceeds to call a flood that instantly pommel and defeats  most of Sauron’s wraiths in one fell swoop.   Don’t exactly remember Gandalf doing that."",
+            ""authorDisplayName"": ""Gefilta Fish"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9SSGSH-ljG_N5Zy6ap8qVOa5GVBezNXgxX7A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7rfCecvNtVTt_lSqgQIuMw"",
+            ""authorChannelId"": {
+              ""value"": ""UC7rfCecvNtVTt_lSqgQIuMw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:09:34Z"",
+            ""updatedAt"": ""2022-09-01T12:09:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""rkVCRpHfRhmkaRo_nl0aEHXQmhY"",
+      ""id"": ""UgwPTz17u7KcsQn4BMh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""d853h-8rsPQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""OotFU7y5ZBfKzBcBSQjreehlBvs"",
+          ""id"": ""UgwPTz17u7KcsQn4BMh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""d853h-8rsPQ"",
+            ""textDisplay"": ""He had to draw chest hair 😭🤣🤣"",
+            ""textOriginal"": ""He had to draw chest hair 😭🤣🤣"",
+            ""authorDisplayName"": ""Doshanko"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/j9l_fTmjjQOh55Tom43rM6cNT7VHZ80pCNAUZ6g7_WkH0V5V4HnRahQAAs7giKyiHJPQme5YJw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGjJ2dFwINmnoDOH821znIw"",
+            ""authorChannelId"": {
+              ""value"": ""UCGjJ2dFwINmnoDOH821znIw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:07:55Z"",
+            ""updatedAt"": ""2022-09-01T12:07:55Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LWOTZVGU7-mT17NvP9zZK2EJ-gs"",
+      ""id"": ""UgyVIbWyO-D3G7B6qkt4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""CMtfm1xaubQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""jnkHcx__wi0u6JJUqpeEDSfj7Ec"",
+          ""id"": ""UgyVIbWyO-D3G7B6qkt4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""CMtfm1xaubQ"",
+            ""textDisplay"": ""&quot;Deep dive but I like it&quot; Okay Baptiste 😅😅🤦🏾\u200d♀️"",
+            ""textOriginal"": ""\""Deep dive but I like it\"" Okay Baptiste 😅😅🤦🏾\u200d♀️"",
+            ""authorDisplayName"": ""Vee Edge"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-aF5CBEClQr3Aw-I_EDW8yQAq2I8hvNyUhB-5C4w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCCKfYqsNU5IqE3eMmWV_IFA"",
+            ""authorChannelId"": {
+              ""value"": ""UCCKfYqsNU5IqE3eMmWV_IFA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:04:11Z"",
+            ""updatedAt"": ""2022-09-01T12:04:11Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""x5dnm00i9NyTfowBSRCYHTuuaWM"",
+      ""id"": ""Ugyqtpz5Qf1Fiwfim3N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""q_aqaxtAMbs"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KGA70tG24KMU0t1yu87gSbXCddk"",
+          ""id"": ""Ugyqtpz5Qf1Fiwfim3N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""q_aqaxtAMbs"",
+            ""textDisplay"": ""What.a.great.mum\u003cbr\u003eWanting.to.spend.everyday.with her\u003cbr\u003eBaby.girl.and.not.wanting.all.the.\u003cbr\u003eLime.light.like.lot,s.of.celeb,\u003ca href=\""http://s.do/\""\u003es.do\u003c/a\u003e."",
+            ""textOriginal"": ""What.a.great.mum\nWanting.to.spend.everyday.with her\nBaby.girl.and.not.wanting.all.the.\nLime.light.like.lot,s.of.celeb,s.do."",
+            ""authorDisplayName"": ""Pam Mckay"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8cN9ceJ8J3aqFmuQb3ATfZqitvX4S-lKq-x8zGFLYT-4ScKvvJmxMi2SJpLlzU=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCAKyrm8iqLRMcKz9E-1Fi1w"",
+            ""authorChannelId"": {
+              ""value"": ""UCAKyrm8iqLRMcKz9E-1Fi1w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T12:02:36Z"",
+            ""updatedAt"": ""2022-09-01T12:02:36Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5hqObb9GTUA9G770X4xW1m3rOpo"",
+      ""id"": ""UgzG6HYm6OtU6eznh3l4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""qUjLinr7E50"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""VJ1mKN4W9FHH1EdToflGR7fBpDQ"",
+          ""id"": ""UgzG6HYm6OtU6eznh3l4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""qUjLinr7E50"",
+            ""textDisplay"": ""I watch Fox never have liked Steve he does not fit in talks to much"",
+            ""textOriginal"": ""I watch Fox never have liked Steve he does not fit in talks to much"",
+            ""authorDisplayName"": ""Sherry Johnson"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8W35lNs-uS2pRBkD9xumS82VHww9aO4Nd_=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnxdfETdqQBPcE0aG1C5HJg"",
+            ""authorChannelId"": {
+              ""value"": ""UCnxdfETdqQBPcE0aG1C5HJg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T11:49:26Z"",
+            ""updatedAt"": ""2022-09-01T11:49:26Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ObbadWcG1ydXpyhDW-3rNAknnVc"",
+      ""id"": ""Ugwz4ICPgNAs8Qkw18R4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""L1dU1HZ_73M"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""4nPCoxh-jY5smB5oRUoRmzImcGo"",
+          ""id"": ""Ugwz4ICPgNAs8Qkw18R4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""L1dU1HZ_73M"",
+            ""textDisplay"": ""Anna Kendrick damn 🥵"",
+            ""textOriginal"": ""Anna Kendrick damn 🥵"",
+            ""authorDisplayName"": ""The Impossible Something"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_iJe8MMYY0eXwDhYOSHtCAro4R-n60ACpH44G_=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKbBLsiedVK7weaF7YQ3iQA"",
+            ""authorChannelId"": {
+              ""value"": ""UCKbBLsiedVK7weaF7YQ3iQA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T11:46:49Z"",
+            ""updatedAt"": ""2022-09-01T11:46:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YHirCM3rf_ybwWJxfErI62H7iEg"",
+      ""id"": ""UgwvfEYmK5tuPpCprMp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""qai8LdcY9LQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""3l1OXpzXiPpBkzYIDqb6kqMvtC8"",
+          ""id"": ""UgwvfEYmK5tuPpCprMp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""qai8LdcY9LQ"",
+            ""textDisplay"": ""Two women having a chat."",
+            ""textOriginal"": ""Two women having a chat."",
+            ""authorDisplayName"": ""Butzi Porsche"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_IS8VXi7PnVu1hofTe0xTTJJgViFEUXtjAOVCE=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCraFlx5A4ky8DUe6SUkR8Wg"",
+            ""authorChannelId"": {
+              ""value"": ""UCraFlx5A4ky8DUe6SUkR8Wg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T11:44:25Z"",
+            ""updatedAt"": ""2022-09-01T11:44:25Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1IAfVqyyMJAjaTTFgpL2q4hNgi4"",
+      ""id"": ""Ugxno08Ytw_Ur8MdsPN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""f-vSpvt2dD8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""YB_vqr9tq_p-ZObxjCz4YlsjvyY"",
+          ""id"": ""Ugxno08Ytw_Ur8MdsPN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""f-vSpvt2dD8"",
+            ""textDisplay"": ""Maga.    Most asernine grifters around"",
+            ""textOriginal"": ""Maga.    Most asernine grifters around"",
+            ""authorDisplayName"": ""jenny owen"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9-gkW9Lgwh856J2U4IbhcneJ1ysfmoc8P--g=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7IvyUnrcYDUA8UFN7IiezA"",
+            ""authorChannelId"": {
+              ""value"": ""UC7IvyUnrcYDUA8UFN7IiezA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T11:39:51Z"",
+            ""updatedAt"": ""2022-09-01T11:39:51Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Pjt5bNhqLdaXY5dAIqHgXDwhA88"",
+      ""id"": ""UgyLe_tNthuoU42LYeZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LvZm8q1pkB4"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ncvQx2Ibk7u5Q4B3AlqoVTLggik"",
+          ""id"": ""UgyLe_tNthuoU42LYeZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LvZm8q1pkB4"",
+            ""textDisplay"": ""Twice"",
+            ""textOriginal"": ""Twice"",
+            ""authorDisplayName"": ""sᴀɴᴀ"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/iZQlmvXNiRt2YZzLHTLZ_dw8id87RCvGgmqTz8e12r2vzT5vDisqflJqaync-jP0iUMegoeqd3c=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCW79xvjXM-5jERVb64Sw_uA"",
+            ""authorChannelId"": {
+              ""value"": ""UCW79xvjXM-5jERVb64Sw_uA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T11:05:36Z"",
+            ""updatedAt"": ""2022-09-01T11:05:36Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cT_5t6-RhPBkCe4DZfDlJiLdpoM"",
+      ""id"": ""Ugyobi2LKLFaGSQ9eGh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""DXBSlUvCzPk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""4k326gaJ15RwjnveVmikZu81ZYc"",
+          ""id"": ""Ugyobi2LKLFaGSQ9eGh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""DXBSlUvCzPk"",
+            ""textDisplay"": ""Great fun."",
+            ""textOriginal"": ""Great fun."",
+            ""authorDisplayName"": ""𝕜𝕦𝕣𝕚𝕜𝕠𝕜𝕒𝕝𝕖𝕚𝕕𝕠𝕤𝕔𝕠𝕡𝕖"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/vyMkbGclPLJeEDTlv18ommZG0-FZt74mfP-wggTJpw0Hsog0a7P39v9_tM6Bij8AFx1w_Kvzhw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCAmZfc5lmgqdnR1BbbriQ8w"",
+            ""authorChannelId"": {
+              ""value"": ""UCAmZfc5lmgqdnR1BbbriQ8w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T10:56:46Z"",
+            ""updatedAt"": ""2022-09-01T10:56:46Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nQY5T31dnWS2m2Hq2yFTmpuLETE"",
+      ""id"": ""UgxskRuODYJfi1TDD-F4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""0YBxPmC7H5s"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KXrDYc580bw1xy6cMqlmmwAktL8"",
+          ""id"": ""UgxskRuODYJfi1TDD-F4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""0YBxPmC7H5s"",
+            ""textDisplay"": ""I loved how the armed escort of Eldar warriors deserted an ancient Noldor of the House of Finarfin, who was born in Valinor in the Years of the Trees. This was quite accurate, as Tolkien consistently emphasized the base cowardice, disloyalty, and unwarlike character of the Noldor in the face of the slightest inkling of peril. Indeed, Feanor was actually a sardonic nickname given him by the Vanyar and Teleri as even by the standards of the Elves of the Light, the Noldor seemed meek, spineless, devoid of curiosity, anemic to adventure, and above all, utterly devoid of passion."",
+            ""textOriginal"": ""I loved how the armed escort of Eldar warriors deserted an ancient Noldor of the House of Finarfin, who was born in Valinor in the Years of the Trees. This was quite accurate, as Tolkien consistently emphasized the base cowardice, disloyalty, and unwarlike character of the Noldor in the face of the slightest inkling of peril. Indeed, Feanor was actually a sardonic nickname given him by the Vanyar and Teleri as even by the standards of the Elves of the Light, the Noldor seemed meek, spineless, devoid of curiosity, anemic to adventure, and above all, utterly devoid of passion."",
+            ""authorDisplayName"": ""Casper Salisbury"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/P4faU679QkcQ3E73yXgKd6g197RR4zY1jbxEKIurMdmdY8qZiB2Iw6e-km5YxkpYZHeayrWD=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCfPX8gLTOzHaZlIMXMz6NLQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCfPX8gLTOzHaZlIMXMz6NLQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T10:53:22Z"",
+            ""updatedAt"": ""2022-09-01T10:53:22Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""7wCuY859T4-j49TCSO8RnPtYfjo"",
+      ""id"": ""Ugw2_13VBGOwICv7U_J4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""f-vSpvt2dD8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ou5wZlbB19grGC-KedWqXWsrpx4"",
+          ""id"": ""Ugw2_13VBGOwICv7U_J4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""f-vSpvt2dD8"",
+            ""textDisplay"": ""Msg for Trump supporters, Judge Gin Pirro, Fox News Hosts:- Would you keep \u003cb\u003estolen goods\u003c/b\u003e or secret government documents in your home?\u003cbr\u003e\u003cbr\u003eWould you expect the police, FBI, or the government, \u003cb\u003eto haggle with you for months,\u003c/b\u003e begging you to return \u003cb\u003estolen goods?\u003c/b\u003e \u003cbr\u003e\u003cbr\u003e&quot;NOBODY is above the law!&quot; ...  \u003cbr\u003e\u003cbr\u003eNB: NOBODY is &quot;coming to get you&quot;, unless less you&#39;re a criminal, (like Trump) with \u003cb\u003estolen goods\u003c/b\u003e in your desk &amp; home!!\u003cbr\u003e\u003cbr\u003e\u003cb\u003eSo please ignore it,\u003c/b\u003e  when Trump, Reich-wing media &amp; liars in Congress or on TV, start trying to incite FEAR  &amp; VIOLENCE by telling Trump supporters  - &quot;They&#39;re coming for you next!&quot; etc .  \u003cbr\u003e\u003cbr\u003eONLY criminals need to worry  ; )"",
+            ""textOriginal"": ""Msg for Trump supporters, Judge Gin Pirro, Fox News Hosts:- Would you keep *stolen goods* or secret government documents in your home?\n\nWould you expect the police, FBI, or the government, *to haggle with you for months,* begging you to return *stolen goods?* \n\n\""NOBODY is above the law!\"" ...  \n\nNB: NOBODY is \""coming to get you\"", unless less you're a criminal, (like Trump) with *stolen goods* in your desk & home!!\n\n*So please ignore it,*  when Trump, Reich-wing media & liars in Congress or on TV, start trying to incite FEAR  & VIOLENCE by telling Trump supporters  - \""They're coming for you next!\"" etc .  \n\nONLY criminals need to worry  ; )"",
+            ""authorDisplayName"": ""Dee Valerie"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_Znch3p6pm4_Ca5z0FmitlVTExBVykDrxZYA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCP6W5dnasuSu-bP2O9vLtqA"",
+            ""authorChannelId"": {
+              ""value"": ""UCP6W5dnasuSu-bP2O9vLtqA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T10:39:37Z"",
+            ""updatedAt"": ""2022-09-01T10:39:57Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_vbsg71ui72at_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

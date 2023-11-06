@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jewm0v4thi75_PostCoupons,200,"{
+  ""id"": ""MzN3hrlwuVHYJEYlq9nK"",
+  ""object"": ""coupon"",
+  ""amount_off"": 94,
+  ""created"": 1685060168,
+  ""currency"": ""php"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1747127147,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_skk2dr83pn3o_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_c6sZZ3pK5VfDjG?t=1685060174"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u85nscfxbdk6_PostCoupons,200,"{
+  ""id"": ""zlw1rPmtqcPZRkI2V"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060180,
+  ""currency"": ""xaf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 18,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 31.0,
+  ""redeem_by"": 1810651605,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vb41pkxxs2sy_PostCoupons,200,"{
+  ""id"": ""lWgiTIF9NmTAew"",
+  ""object"": ""coupon"",
+  ""amount_off"": 78,
+  ""created"": 1685060185,
+  ""currency"": ""yer"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 47,
+  ""metadata"": {},
+  ""name"": ""tobagonian"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbhwnsousq5h_PostCoupons,200,"{
+  ""id"": ""3pdQMyp4a5Mik4cd0GPr"",
+  ""object"": ""coupon"",
+  ""amount_off"": 23,
+  ""created"": 1685060191,
+  ""currency"": ""kyd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

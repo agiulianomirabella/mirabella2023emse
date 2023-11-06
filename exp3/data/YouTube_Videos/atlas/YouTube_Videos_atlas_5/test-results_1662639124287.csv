@@ -1,0 +1,140 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iaxpk3kpu5h3_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""3tEQEuQMPqI0ibg3hGyYfMCwyoM"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""dL4SzbQrr8fHC8XC9K7G-02u9bM"",
+      ""id"": ""lvO7xs2hF5I"",
+      ""contentDetails"": {
+        ""duration"": ""PT30S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""Q5cx3iB2dKyYzGZPExZUww1e-u4"",
+      ""id"": ""Nw5tSiVpyAc"",
+      ""contentDetails"": {
+        ""duration"": ""PT22S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""BtPX-jYGfRSjYyXSm1QrD-1pEj4"",
+      ""id"": ""BI5yvZ7NK00"",
+      ""contentDetails"": {
+        ""duration"": ""PT10M23S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""mbPq0op5QKTrfiUQ0KLw_I2czso"",
+      ""id"": ""fgJ1gA9-Xaw"",
+      ""contentDetails"": {
+        ""duration"": ""PT9M46S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""5-sCQjtb2Qh5wYsWjWtlLlgfJJQ"",
+      ""id"": ""ZZMzgKjdEbc"",
+      ""contentDetails"": {
+        ""duration"": ""PT41S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      }
+    }
+  ],
+  ""nextPageToken"": ""CAUQAA"",
+  ""pageInfo"": {
+    ""totalResults"": 200,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qdvh7bs03yw6_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""OerOyGtLovqSIncCZJXlVDoON3o"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 21
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qhia3mmml99z_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_tooie6hg7syq_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uv5u2hqey7u8_youtubevideoslist,404,"{
+  ""error"": {
+    ""code"": 404,
+    ""message"": ""Requested entity was not found."",
+    ""errors"": [
+      {
+        ""message"": ""Requested entity was not found."",
+        ""domain"": ""global"",
+        ""reason"": ""notFound""
+      }
+    ],
+    ""status"": ""NOT_FOUND""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 404 not defined for path '/youtube/v3/videos'.

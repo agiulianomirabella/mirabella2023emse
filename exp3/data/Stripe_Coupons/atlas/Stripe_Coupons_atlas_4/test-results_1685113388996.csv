@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyow349828ft_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wUZ0GaDm9fR4Jd?t=1685113407"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qe1lt6qk3k1c_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_eLN30IgQ60yxzg?t=1685113412"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skk17ib75fsn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5JmcBZ2ijm3szB?t=1685113419"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skms7jh2e795_PostCoupons,200,"{
+  ""id"": ""VuSfRvES"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685113424,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 13,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 4.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_to4kjr5daeed_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7dHuTzie5LyeZY?t=1685113430"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

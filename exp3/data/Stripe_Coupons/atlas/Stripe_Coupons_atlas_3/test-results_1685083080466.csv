@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyoe5frph46c_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_U3fg03FUytoACP?t=1685083097"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qdq0dpj84hma_PostCoupons,200,"{
+  ""id"": ""vN7stymqtmjo"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083102,
+  ""currency"": ""gel"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 78,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 76.0,
+  ""redeem_by"": 1837362768,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skv32f5kjwhg_PostCoupons,200,"{
+  ""id"": ""NuZIaiAMiTq"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083108,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 87,
+  ""metadata"": {},
+  ""name"": ""two-toe"",
+  ""percent_off"": 22.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uvhfh3cdcrxh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_zCK7X6WN7ohUue?t=1685083114"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbcdt6oga0ja_PostCoupons,200,"{
+  ""id"": ""HQjr1cI5"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083120,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 98,
+  ""metadata"": {},
+  ""name"": ""smoggy"",
+  ""percent_off"": 19.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

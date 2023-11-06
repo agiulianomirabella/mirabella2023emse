@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qeeycnxr87dv_getBusinesses,400,"{""error"": {""code"": ""OPEN_AT_AND_NOW_PROVIDED"", ""description"": ""You must specify either open_at or open_now, not both.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_rhb19e8yyhr7_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": 144.96734619140625, ""latitude"": -37.81787593178502}}}",application/json,true,none
+test_rl2b4b0nuybc_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_s18dcdazjwaa_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -106.44927978515625, ""latitude"": 31.653215982221013}}}",application/json,true,none
+test_sl6q423ikvae_getBusinesses,200,"{""businesses"": [], ""total"": 16, ""region"": {""center"": {""longitude"": -87.48525, ""latitude"": 36.285152}}}",application/json,false,"This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one."

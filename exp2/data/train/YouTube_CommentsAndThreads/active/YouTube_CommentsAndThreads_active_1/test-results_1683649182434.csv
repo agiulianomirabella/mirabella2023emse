@@ -1,0 +1,108 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrj94l47jkgz_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""FngxSyDPW11d7faWwqjyYcyWtIo"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""qITR70A6Vp3Ki77QG7b-6KGPCIk"",
+      ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""Nck6BZga7TQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PUSEHd6Tk1RSIC1j2ZcJ3fteBaM"",
+          ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""Nck6BZga7TQ"",
+            ""textDisplay"": ""The moment when Adele sounds better than Adele"",
+            ""textOriginal"": ""The moment when Adele sounds better than Adele"",
+            ""authorDisplayName"": ""alexnfp"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/A9RDbRGYvJK53Es_9FImDH1bP1aZpMwqsca7rhDayQ6ZddsWDaiGqlMckYjtXdNmh_zrkA-w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKv1Uwl15OFYioeJVVK4ltg"",
+            ""authorChannelId"": {
+              ""value"": ""UCKv1Uwl15OFYioeJVVK4ltg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 36059,
+            ""publishedAt"": ""2019-12-05T01:25:54Z"",
+            ""updatedAt"": ""2019-12-05T01:25:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 36,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iaxn5ckmamaq_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, channelId, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, channelId, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rlao2nnsfl9d_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_u82g3zs25q2h_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_vbbtmd9q5jqs_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.

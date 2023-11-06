@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv2pz8ldip2e_PostCoupons,200,"{
+  ""id"": ""0113sSrn"",
+  ""object"": ""coupon"",
+  ""amount_off"": 60,
+  ""created"": 1686930156,
+  ""currency"": ""ils"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rl8dddy20e2c_PostCoupons,200,"{
+  ""id"": ""84kGl0O7"",
+  ""object"": ""coupon"",
+  ""amount_off"": 93,
+  ""created"": 1686930162,
+  ""currency"": ""dop"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 14,
+  ""livemode"": false,
+  ""max_redemptions"": 79,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s4umclub9h0k_PostCoupons,200,"{
+  ""id"": ""fpsxWCSoDZzUfE"",
+  ""object"": ""coupon"",
+  ""amount_off"": 45,
+  ""created"": 1686930168,
+  ""currency"": ""mvr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 2,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4nwouqo3w4j_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dc4sv4h8QPuti9?t=1686930173"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urrx7zvuvnef_PostCoupons,200,"{
+  ""id"": ""WiOJk3P5"",
+  ""object"": ""coupon"",
+  ""amount_off"": 94,
+  ""created"": 1686930179,
+  ""currency"": ""ang"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 28,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1827579899,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

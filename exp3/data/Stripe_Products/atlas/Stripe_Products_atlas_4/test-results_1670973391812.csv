@@ -1,0 +1,35 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iusoles1x16h_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1k1rpyqw7h3qp_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1k251qlp9mbtx_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urumzbqb1y03_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_vb6a08tt4183_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

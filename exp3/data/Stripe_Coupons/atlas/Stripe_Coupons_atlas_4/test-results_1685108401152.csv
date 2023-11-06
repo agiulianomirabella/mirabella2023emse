@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrrk29fkphde_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZJgLy5HK1dMu0b?t=1685108417"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hv5hrkjbd1rs_PostCoupons,200,"{
+  ""id"": ""03RAA0i1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108424,
+  ""currency"": ""rwf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 3,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 7.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1k22948idpaar_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jfgR039MMq2sTw?t=1685108429"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhsvqaqv2z52_PostCoupons,200,"{
+  ""id"": ""oRF0zunp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108435,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""mineralize"",
+  ""percent_off"": 54.0,
+  ""redeem_by"": 1846333489,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s0v15zpc33ok_PostCoupons,200,"{
+  ""id"": ""X6Ivl97IHBe65wh6dI"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108441,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 5,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""behead"",
+  ""percent_off"": 23.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

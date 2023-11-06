@@ -1,0 +1,71 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qxqmjoqyp6ig_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_GhSbYqRb9U1OKe?t=1685085325"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhg2i5mjsm01_PostCoupons,200,"{
+  ""id"": ""BdOyfwuOvru"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085331,
+  ""currency"": ""mdl"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 95,
+  ""metadata"": {},
+  ""name"": ""right-down"",
+  ""percent_off"": 28.0,
+  ""redeem_by"": 1857482280,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhow7m0ft99y_PostCoupons,200,"{
+  ""id"": ""cegVtyIw"",
+  ""object"": ""coupon"",
+  ""amount_off"": 60,
+  ""created"": 1685085338,
+  ""currency"": ""gbp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 95,
+  ""metadata"": {},
+  ""name"": ""unseasonably"",
+  ""percent_off"": null,
+  ""redeem_by"": 1701536496,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s4v5wm2t3i2e_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4QSmGd6G0lXVwH?t=1685085344"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_tru4qxsuxgl4_PostCoupons,200,"{
+  ""id"": ""4rURCesS"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085350,
+  ""currency"": ""top"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""slow"",
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

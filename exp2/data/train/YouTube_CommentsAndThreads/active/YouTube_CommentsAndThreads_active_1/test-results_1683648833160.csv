@@ -1,0 +1,222 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hb7ntsuy6hr8_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jy89ftplnbs2_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1k1u076hl5ut0_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_s0x9x1vvlt13_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""TwLP-EOpMdUJZaMKKj8qfKUVKpo"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0In5bzHZrJYleizR8mIhnhLEDVk"",
+      ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""Nck6BZga7TQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PUSEHd6Tk1RSIC1j2ZcJ3fteBaM"",
+          ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""Nck6BZga7TQ"",
+            ""textDisplay"": ""The moment when Adele sounds better than Adele"",
+            ""textOriginal"": ""The moment when Adele sounds better than Adele"",
+            ""authorDisplayName"": ""alexnfp"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/A9RDbRGYvJK53Es_9FImDH1bP1aZpMwqsca7rhDayQ6ZddsWDaiGqlMckYjtXdNmh_zrkA-w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKv1Uwl15OFYioeJVVK4ltg"",
+            ""authorChannelId"": {
+              ""value"": ""UCKv1Uwl15OFYioeJVVK4ltg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 36059,
+            ""publishedAt"": ""2019-12-05T01:25:54Z"",
+            ""updatedAt"": ""2019-12-05T01:25:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 36,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""_LpCe3r_ZcdjswSkcDMKKAJdK5E"",
+            ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg.928XL26vtLO92Po5nUcV3w"",
+            ""snippet"": {
+              ""videoId"": ""Nck6BZga7TQ"",
+              ""textDisplay"": ""Can't beat totally natural and the acoustics of a very plush car. Lol."",
+              ""textOriginal"": ""Can't beat totally natural and the acoustics of a very plush car. Lol."",
+              ""parentId"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+              ""authorDisplayName"": ""Fast Pony"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNU_MXCrz9d_tOo9GrpR8G90neTyCqUAlsYrw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMXYsCTOKTgYaMBKXrbAwNQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCMXYsCTOKTgYaMBKXrbAwNQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 392,
+              ""publishedAt"": ""2019-12-11T18:28:11Z"",
+              ""updatedAt"": ""2019-12-11T18:28:11Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""t6nrm1rFsihfxN2yVH0-_EVEs4I"",
+            ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg.928XL26vtLO93z0nQNVPPW"",
+            ""snippet"": {
+              ""videoId"": ""Nck6BZga7TQ"",
+              ""textDisplay"": ""H0udst3r H0udwt3r ? You dont have to like it dude you realise that right?"",
+              ""textOriginal"": ""H0udst3r H0udwt3r ? You dont have to like it dude you realise that right?"",
+              ""parentId"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+              ""authorDisplayName"": ""theupmost random"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMsvOSeeMokYapn81djQ2YIAjG864CLhcItssFAkA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCxj0dTA-DEl1sw7Bq2-00xQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCxj0dTA-DEl1sw7Bq2-00xQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 75,
+              ""publishedAt"": ""2020-01-19T16:31:56Z"",
+              ""updatedAt"": ""2020-01-19T16:31:56Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""2Xk-Z2a65xOmUrggEv3SrlnHyWM"",
+            ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg.928XL26vtLO94-RqdqhrXi"",
+            ""snippet"": {
+              ""videoId"": ""Nck6BZga7TQ"",
+              ""textDisplay"": ""jusjasjus"",
+              ""textOriginal"": ""jusjasjus"",
+              ""parentId"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+              ""authorDisplayName"": ""Una persona más"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMZiqaXpTqBmmIbJdabXfkxNKSKGZae25xOvA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbsn_T2D91nbbABLgrT2m9g"",
+              ""authorChannelId"": {
+                ""value"": ""UCbsn_T2D91nbbABLgrT2m9g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 4,
+              ""publishedAt"": ""2020-01-20T05:47:32Z"",
+              ""updatedAt"": ""2020-01-20T05:47:32Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""BKC4j8nSqdiejs3WnbvTCwOz56A"",
+            ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg.928XL26vtLO94RYJ46W0cV"",
+            ""snippet"": {
+              ""videoId"": ""Nck6BZga7TQ"",
+              ""textDisplay"": ""H0udst3r H0udwt3r you must be fun at parties"",
+              ""textOriginal"": ""H0udst3r H0udwt3r you must be fun at parties"",
+              ""parentId"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+              ""authorDisplayName"": ""JessRabbit"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/6DNjcYSuC6uWXIy_oMjqY_rlfrNM0QvAW5hXCknW79k4vKJBkhnRU79HsdCDUH_sTrvCOOkx6pA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0vPeOKl6-R6N-K0RGjIhuA"",
+              ""authorChannelId"": {
+                ""value"": ""UC0vPeOKl6-R6N-K0RGjIhuA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 43,
+              ""publishedAt"": ""2020-01-31T03:42:43Z"",
+              ""updatedAt"": ""2020-01-31T03:42:43Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""-wNWTK8rYhjRPMGfY6Thn6osryk"",
+            ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg.928XL26vtLO94TTOU--Q2V"",
+            ""snippet"": {
+              ""videoId"": ""Nck6BZga7TQ"",
+              ""textDisplay"": ""H0udst3r H0udwt3r really...that's all you come back with lol....are you from some 3rd world country lol?"",
+              ""textOriginal"": ""H0udst3r H0udwt3r really...that's all you come back with lol....are you from some 3rd world country lol?"",
+              ""parentId"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+              ""authorDisplayName"": ""JessRabbit"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/6DNjcYSuC6uWXIy_oMjqY_rlfrNM0QvAW5hXCknW79k4vKJBkhnRU79HsdCDUH_sTrvCOOkx6pA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0vPeOKl6-R6N-K0RGjIhuA"",
+              ""authorChannelId"": {
+                ""value"": ""UC0vPeOKl6-R6N-K0RGjIhuA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 17,
+              ""publishedAt"": ""2020-01-31T21:38:15Z"",
+              ""updatedAt"": ""2020-01-31T21:38:15Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_socbmw5220qf_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.

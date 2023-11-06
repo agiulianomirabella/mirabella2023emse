@@ -1,0 +1,135 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rhitkc0dk2et_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s50ntojyyzp1_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""h3wmnbFA8Dy5RcmYIbPRiJJ1nRk"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 24
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yxuCsMJ1SX6YJwbNXjHEP4O5Wrw"",
+      ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""DPIv7awI-1A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""MbOmRE8o3-RzsJIr1EK270xT8ho"",
+          ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""DPIv7awI-1A"",
+            ""textDisplay"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""textOriginal"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""authorDisplayName"": ""Jhayco"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1Mf03RcTTM1qlBr9JJhJJH2FkzMDwE4f_zGd9zx0CgCn7GaVOaGfEKkgkfVL3d-XCpGGME8b7A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvpEyEBML6z-PJJ9XrqgpKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCvpEyEBML6z-PJJ9XrqgpKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 68214,
+            ""publishedAt"": ""2020-02-05T18:45:17Z"",
+            ""updatedAt"": ""2020-02-05T18:45:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 471,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_t841tfio1zcn_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: channelId, videoId, id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: channelId, videoId, id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_toie6jskjn8l_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""kASoKXT8mxaRxe7Fmca9U2zMwiI"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LgQi2UF-jwad7XMhtyGv4Iz3lzE"",
+      ""id"": ""UgzhMIgtuhjemzfoObp4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""GjJSuHmeeyA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""fBwW2VU-Q_V0h6z8f6LBtsR5_tQ"",
+          ""id"": ""UgzhMIgtuhjemzfoObp4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""GjJSuHmeeyA"",
+            ""textDisplay"": ""Once I seen him on FBI I knew this was gone happen it just felt right"",
+            ""textOriginal"": ""Once I seen him on FBI I knew this was gone happen it just felt right"",
+            ""authorDisplayName"": ""kofing123"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNjD0Z7B38tpEmKZMuvYDmps_mOWedpyt79FHFp=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCK3kcZH8XaoognrY65KNlJw"",
+            ""authorChannelId"": {
+              ""value"": ""UCK3kcZH8XaoognrY65KNlJw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 61,
+            ""publishedAt"": ""2019-05-15T23:56:47Z"",
+            ""updatedAt"": ""2019-05-15T23:56:47Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 1,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_us0q0os726up_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

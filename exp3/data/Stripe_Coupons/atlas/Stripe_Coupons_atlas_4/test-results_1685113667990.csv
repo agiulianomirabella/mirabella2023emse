@@ -1,0 +1,46 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibjtqfvf0oxi_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_NfxlTWSMHWv6U4?t=1685113684"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jyjc7mesdcfp_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZgxuBExdWf0j18?t=1685113690"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxl0o0njm2pj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_1WsigezCvjN5cp?t=1685113696"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxtub67gq1r6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_WncYFslgnJUAdj?t=1685113701"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rhivwn0a94c5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HVG0rSk5Ox48RW?t=1685113707"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

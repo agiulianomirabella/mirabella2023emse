@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbgin7mvgaxw_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_72f6wLPDwqQAXK?t=1685080488"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrawncgdeov7_PostCoupons,200,"{
+  ""id"": ""Le1lb5sq6eV060tIy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080495,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 85,
+  ""metadata"": {},
+  ""name"": ""unbraid"",
+  ""percent_off"": 92.0,
+  ""redeem_by"": 1825771254,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s18dc7gg0ny0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tYCf8BqGxcwycu?t=1685080503"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4ndz9l3x2r5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dglw2RNbzIoXBI?t=1685080508"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbeoie1a6vxw_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DedH5ceqUK4asK?t=1685080515"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

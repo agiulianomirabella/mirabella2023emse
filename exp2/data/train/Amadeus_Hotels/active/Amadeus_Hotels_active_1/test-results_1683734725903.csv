@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qe1202y1p2zl_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_rhalctvkl0s6_getMultiHotelOffers,500,"
+            {
+                ""errors"": [
+                        {
+                            ""code"": 38189,
+                            ""title"": ""Internal error"",
+                            ""detail"": ""An internal error occurred, please contact your administrator"",
+                            ""status"": 500
+                        }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,Status code 5XX with invalid request: inter_parameter_dependency
+test_soem93awcz03_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,true,none
+test_t4ico3u95sfn_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""WVROM181"",""chainCode"":""WV"",""name"":""BABUINO 181"",""cityCode"":""ROM"",""latitude"":41.90932,""longitude"":12.47795},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=WVROM181&adults=9&checkInDate=2023-06-05""}]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_toanip0t5qw4_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""CPMCOD08"",""chainCode"":""CP"",""dupeId"":""700042430"",""name"":""CROWNE PLAZA DOWNTOWN"",""cityCode"":""MCO"",""latitude"":28.55209,""longitude"":-81.38363},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=CPMCOD08&adults=5""}]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

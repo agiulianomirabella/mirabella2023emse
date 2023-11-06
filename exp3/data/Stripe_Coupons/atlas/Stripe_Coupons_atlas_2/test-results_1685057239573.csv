@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jel0lrt92usm_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_uesFkr0ODAGb3W?t=1685057256"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jy7ryy7nlycz_PostCoupons,200,"{
+  ""id"": ""bbblu6bl"",
+  ""object"": ""coupon"",
+  ""amount_off"": 3,
+  ""created"": 1685057261,
+  ""currency"": ""zar"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 89,
+  ""metadata"": {},
+  ""name"": ""repelling"",
+  ""percent_off"": null,
+  ""redeem_by"": 1842855865,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s18ew3xz5owy_PostCoupons,200,"{
+  ""id"": ""JpInQhfx"",
+  ""object"": ""coupon"",
+  ""amount_off"": 26,
+  ""created"": 1685057267,
+  ""currency"": ""mnt"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 25,
+  ""metadata"": {},
+  ""name"": ""domesticated"",
+  ""percent_off"": null,
+  ""redeem_by"": 1697026985,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4voufiv821t_PostCoupons,200,"{
+  ""id"": ""sdssOlDy"",
+  ""object"": ""coupon"",
+  ""amount_off"": 89,
+  ""created"": 1685057273,
+  ""currency"": ""gmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""flattering"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_tog726u2s5rk_PostCoupons,200,"{
+  ""id"": ""8rW3eb6I"",
+  ""object"": ""coupon"",
+  ""amount_off"": 24,
+  ""created"": 1685057279,
+  ""currency"": ""bsd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

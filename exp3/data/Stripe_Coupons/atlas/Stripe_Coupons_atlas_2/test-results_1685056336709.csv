@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1if135k5fmlgy_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_g7z4B7nLVuptzZ?t=1685056353"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iv9av0169ws6_PostCoupons,200,"{
+  ""id"": ""qcaF5PmA"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685056359,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 36,
+  ""metadata"": {},
+  ""name"": ""pit"",
+  ""percent_off"": 48.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qdq163zzmued_PostCoupons,200,"{
+  ""id"": ""ejYfQdpa"",
+  ""object"": ""coupon"",
+  ""amount_off"": 63,
+  ""created"": 1685056365,
+  ""currency"": ""pkr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1850655512,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qe4dksodw76u_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Q5IhXTK0bUwJep?t=1685056370"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skv1z2tjdr8z_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YbviHTxs8a4noc?t=1685056376"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

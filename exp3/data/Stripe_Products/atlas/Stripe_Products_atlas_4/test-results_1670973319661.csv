@@ -1,0 +1,59 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1k1x926kb29fd_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_KYymYks36PslPL"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636450821,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""emotionally"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636450821,
+      ""url"": ""transversally""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2"
+test_qhhs8qe3gqpi_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rl2uach3h451_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4mtccj891rn_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8cxv854sep1_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none

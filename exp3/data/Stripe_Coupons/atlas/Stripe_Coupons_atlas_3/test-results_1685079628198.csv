@@ -1,0 +1,45 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib986esnd8hk_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_63wWswZNY8U8kR?t=1685079644"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jyahpqaonnle_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rDbt3XI7rxXLA9?t=1685079650"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sksv61xmkmd3_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_lhMx7nYbOjetub?t=1685079656"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubgb07tw4bi0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Wg5LrTx0ysFmBB?t=1685079661"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf1eztk91wdt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wZrxZQik3pbcUx?t=1685079667"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

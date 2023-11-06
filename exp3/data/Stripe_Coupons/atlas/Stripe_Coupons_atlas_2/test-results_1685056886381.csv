@@ -1,0 +1,43 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iauulsbqgm02_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ATYahDHUTghv9g?t=1685056903"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qy1ov9r5wyev_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_oUbZMMDY6wyKfp?t=1685056909"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_somwssie7goo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_UarIhzsojbkPtH?t=1685056914"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_trqssf8ngodh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yJ1SstesVyPvkA?t=1685056920"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbbtxo3p008o_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_nAjvmLTYTONjU9?t=1685056926"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

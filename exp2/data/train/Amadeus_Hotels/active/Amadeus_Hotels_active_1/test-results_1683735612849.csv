@@ -1,0 +1,28 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv0gwublbl85_getMultiHotelOffers,500,"
+            {
+                ""errors"": [
+                        {
+                            ""code"": 38189,
+                            ""title"": ""Internal error"",
+                            ""detail"": ""An internal error occurred, please contact your administrator"",
+                            ""status"": 500
+                        }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,Status code 5XX with invalid request: inter_parameter_dependency
+test_1hv5g71wkzk9t_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":5489,""title"":""NOTHING FOUND FOR REQUESTED CRITERIA""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qy1ojpqywchc_getMultiHotelOffers,429,"
+            {
+                ""errors"": [
+                    {
+                        ""code"": 38194,
+                        ""title"": ""Too many requests"",
+                        ""detail"": ""The network rate limit is exceeded, please try again later"",
+                        ""status"": 429
+                    }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,OAS disconformity: Response status 429 not defined for path '/shopping/hotel-offers'.
+test_skyebybkgpbm_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""BLPAR123"",""chainCode"":""BL"",""name"":""BLPARP07"",""cityCode"":""PAR"",""latitude"":48.8569,""longitude"":2.35085},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=BLPAR123&adults=3&paymentPolicy=NONE""},{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""RTMADPUL"",""chainCode"":""RT"",""name"":""Mercure Madrid Plaza de Espana"",""cityCode"":""MAD"",""latitude"":40.42566,""longitude"":-3.7138},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=RTMADPUL&adults=3&paymentPolicy=NONE""}]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t4q4ilc6qlgx_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":5489,""title"":""NOTHING FOUND FOR REQUESTED CRITERIA""}]}",application/vnd.amadeus+json,true,none

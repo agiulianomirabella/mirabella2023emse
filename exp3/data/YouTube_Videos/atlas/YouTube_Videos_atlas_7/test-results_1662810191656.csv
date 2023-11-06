@@ -1,0 +1,83 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv8ab2g89x7m_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""RuuXzTIr0OoDqI4S0RU6n4FqKEM"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1iv0zzmy578f8_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhtdl0ozf38w_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t8fo0iooyu5v_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: chart, id, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u7ulv0fhjvhs_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""WIOt_uwcVCDBnrrpm6qk5W07egw"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""hKzyaNE-GdByS9woHao8w_Kts5Y"",
+      ""id"": ""n8I-YVuaSR0"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none

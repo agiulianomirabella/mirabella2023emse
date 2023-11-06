@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7qzgskv7hv8_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_qxr2wxcgpttl_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -114.82226, ""latitude"": 44.265568}}}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t4c9pjfhycs8_getBusinesses,400,"{""error"": {""code"": ""OPEN_AT_AND_NOW_PROVIDED"", ""description"": ""You must specify either open_at or open_now, not both.""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_trquchbe8tvc_getBusinesses,400,"{""error"": {""code"": ""LOCATION_NOT_FOUND"", ""description"": ""Could not execute search, try specifying a more exact location.""}}",application/json,true,none
+test_urpo5n9qevs6_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -81.423256, ""latitude"": 36.13506}}}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

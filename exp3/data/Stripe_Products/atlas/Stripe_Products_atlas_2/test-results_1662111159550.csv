@@ -1,0 +1,308 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv5hfpyrwilu_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_1jy5h9stuqlph_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqlEEiYohkggIq"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583353262,
+      ""default_price"": null,
+      ""description"": ""labial"",
+      ""images"": [
+        ""smite""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dasymeter"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 27.0,
+        ""weight"": 47.0,
+        ""width"": 80.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31040002"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635477746,
+      ""url"": ""technically""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]"
+test_s0uhosfaonqu_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7r9fbksrfw4_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""lZil4v70m5GEFEyFoNp"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001854,
+      ""default_price"": null,
+      ""description"": ""ready"",
+      ""images"": [
+        ""good""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""ceterach"",
+      ""package_dimensions"": {
+        ""height"": 1.0,
+        ""length"": 14.0,
+        ""weight"": 74.0,
+        ""width"": 69.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31030001"",
+      ""type"": ""service"",
+      ""unit_label"": ""z"",
+      ""updated"": 1637001854,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMtUXu4Cejdu2"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001848,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""squib"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": ""melancholia"",
+      ""tax_code"": ""txcd_31031202"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001848,
+      ""url"": null
+    },
+    {
+      ""id"": ""6HHR9fPDuz5LmjkMojoJ"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636998160,
+      ""default_price"": null,
+      ""description"": ""lure"",
+      ""images"": [
+        ""nontoxic""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""knee-high"",
+      ""package_dimensions"": {
+        ""height"": 19.0,
+        ""length"": 43.0,
+        ""weight"": 56.0,
+        ""width"": 54.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""bloodily"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636998160,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbLkdqfiWeHns7"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636997558,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""classified""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""bullace"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636997559,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbKu7TC0Ghibl6"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636994467,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""jingle-jangle""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""conically"",
+      ""package_dimensions"": {
+        ""height"": 80.0,
+        ""length"": 31.0,
+        ""weight"": 42.0,
+        ""width"": 44.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""EGyBozCM0"",
+      ""updated"": 1636994467,
+      ""url"": ""semidiameter""
+    },
+    {
+      ""id"": ""JOhPOgxsIbOOj8tX"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636989544,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""inapplicable"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636989544,
+      ""url"": null
+    },
+    {
+      ""id"": ""0Wv3S31rBnfgmM"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636989498,
+      ""default_price"": null,
+      ""description"": ""genital"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""arhat"",
+      ""package_dimensions"": {
+        ""height"": 76.0,
+        ""length"": 49.0,
+        ""weight"": 55.0,
+        ""width"": 26.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""cdcWGDT"",
+      ""updated"": 1636989498,
+      ""url"": ""olive-coloured""
+    },
+    {
+      ""id"": ""ToLUoRrUYVXdc"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636987053,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""suggestively"",
+      ""package_dimensions"": {
+        ""height"": 13.0,
+        ""length"": 58.0,
+        ""weight"": 37.0,
+        ""width"": 42.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636987053,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbIWdWIdxsbyzI"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636985563,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""re-afforest"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636985563,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbIWJMWzLAtIkS"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636985547,
+      ""default_price"": null,
+      ""description"": ""illegally"",
+      ""images"": [
+        ""uninterestingly""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dawn"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636985547,
+      ""url"": ""second-class""
+    }
+  ],
+  ""has_more"": true,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2"
+test_ubrds0v8x0kx_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none

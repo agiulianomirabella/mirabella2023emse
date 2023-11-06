@@ -1,0 +1,86 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibbjkw3rppph_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""RuuXzTIr0OoDqI4S0RU6n4FqKEM"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1ji1nq9lxkysz_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""rYsM5JtPoo_r2ueVLyOZvLno7nU"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""wKjzagEtZprbRk5QifOkJkpU5kU"",
+      ""id"": ""TUJWx7vo44c"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qdvj8bkyn6et_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""qHI_x0ARrCc8xagzIYnsW7lmjPg"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_rhr6dp512g52_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, chart, myRating"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skpjz7dbp7ja_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""hdgz1F71ju2IhAqYA0P5496-m0M"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""hVrlDHTyb0SeHGrtsbgHtxijge4"",
+      ""id"": ""5kUu97Vkwj4"",
+      ""statistics"": {
+        ""viewCount"": ""3339056"",
+        ""likeCount"": ""64519"",
+        ""favoriteCount"": ""0"",
+        ""commentCount"": ""977""
+      },
+      ""player"": {
+        ""embedHtml"": ""\u003ciframe width=\""480\"" height=\""270\"" src=\""//www.youtube.com/embed/5kUu97Vkwj4\"" frameborder=\""0\"" allow=\""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"" allowfullscreen\u003e\u003c/iframe\u003e""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none

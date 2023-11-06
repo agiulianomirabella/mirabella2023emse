@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr86t7zkke9c_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9CqsyV2BlUmUAU?t=1685112215"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iupydmzk51dl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_PJ9XlC8zQCONUs?t=1685112220"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k251qtm813du_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_KkQ3USPDM4Wphe?t=1685112226"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_tog724u5o9wy_PostCoupons,200,"{
+  ""id"": ""fj0Jicmy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112231,
+  ""currency"": ""hkd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 90,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 10.0,
+  ""redeem_by"": 1809840599,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u7rcm9i78zef_PostCoupons,200,"{
+  ""id"": ""YwnKKyXVMiUdNhdEw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112237,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 96,
+  ""livemode"": false,
+  ""max_redemptions"": 94,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 53.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

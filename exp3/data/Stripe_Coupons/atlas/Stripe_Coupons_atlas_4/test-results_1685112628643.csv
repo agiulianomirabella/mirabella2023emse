@@ -1,0 +1,63 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv9ajc4kvpyo_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3v2ZaqiFEeouZ4?t=1685112645"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdyam4c295x1_PostCoupons,200,"{
+  ""id"": ""XnGmuAZc"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112652,
+  ""currency"": ""pln"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""conjugally"",
+  ""percent_off"": 29.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qy1m4uftc660_PostCoupons,200,"{
+  ""id"": ""sI71YuXv"",
+  ""object"": ""coupon"",
+  ""amount_off"": 8,
+  ""created"": 1685112658,
+  ""currency"": ""pen"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1753266065,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rh4zv28h24oo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_w3xHq7z5BuTPRs?t=1685112663"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvep99yxtaw4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_lDcJflsDdGEsCc?t=1685112669"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

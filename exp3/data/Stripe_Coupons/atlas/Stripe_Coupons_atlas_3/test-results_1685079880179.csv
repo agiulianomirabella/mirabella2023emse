@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrjqqxk73nlj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_bqEoday1ubWsR1?t=1685079896"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k2022m4txanm_PostCoupons,200,"{
+  ""id"": ""BBRsrVd9"",
+  ""object"": ""coupon"",
+  ""amount_off"": 93,
+  ""created"": 1685079902,
+  ""currency"": ""ang"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1727779520,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qec4pf8psbw5_PostCoupons,200,"{
+  ""id"": ""9T3Td7Azzkn4sMlUzs"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685079908,
+  ""currency"": ""kyd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 43,
+  ""metadata"": {},
+  ""name"": ""diplodocus"",
+  ""percent_off"": 48.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_r1a1g2n4mhk4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_RdO5y9m072NVwN?t=1685079914"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbn05hu5m2qt_PostCoupons,200,"{
+  ""id"": ""VybG153M90"",
+  ""object"": ""coupon"",
+  ""amount_off"": 12,
+  ""created"": 1685079919,
+  ""currency"": ""mro"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 89,
+  ""metadata"": {},
+  ""name"": ""acariosis"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7lefh8yiczc_PostCoupons,200,"{
+  ""id"": ""NTecRJGA83tFAPobLEW"",
+  ""object"": ""coupon"",
+  ""amount_off"": 98,
+  ""created"": 1685059799,
+  ""currency"": ""tjs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 11,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1709487147,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iupz88dsf4tx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hsgoE6JH0mPJuR?t=1685059805"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iut8jo033690_PostCoupons,200,"{
+  ""id"": ""FKYxj7Oc"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059810,
+  ""currency"": ""try"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 1,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 71.0,
+  ""redeem_by"": 1732610710,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qy1pn9yklug4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JPTkvVYMlKwnBT?t=1685059816"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4yfiivn4ldf_PostCoupons,200,"{
+  ""id"": ""g4BQBda94alvv6P"",
+  ""object"": ""coupon"",
+  ""amount_off"": 63,
+  ""created"": 1685059822,
+  ""currency"": ""clp"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

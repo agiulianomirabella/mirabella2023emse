@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibh0serpppwm_PostCoupons,200,"{
+  ""id"": ""aCDS3hcW"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108778,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 10.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iyc7sgdaanae_PostCoupons,200,"{
+  ""id"": ""p01nK2gK2QUIbI5uFy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108784,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 11.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe9wcq065d2a_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_snznsVqoQH12tJ?t=1685108790"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhtzbatiyzw2_PostCoupons,500,"{
+  ""error"": {
+    ""message"": ""An unknown error occurred"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_brYLVYfaSimXPz?t=1685108795"",
+    ""type"": ""api_error""
+  }
+}
+",application/json,false,Status code 5XX with invalid request: inter_parameter_dependency
+test_rlaoe601yyi8_PostCoupons,200,"{
+  ""id"": ""2nfehQsQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108801,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""recruit"",
+  ""percent_off"": 7.0,
+  ""redeem_by"": 1724702489,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,63 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv60un3de9tk_PostCoupons,200,"{
+  ""id"": ""5XBe0Lng"",
+  ""object"": ""coupon"",
+  ""amount_off"": 85,
+  ""created"": 1685107297,
+  ""currency"": ""thb"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iusqmakidzco_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LBTqedNC9KyOys?t=1685107303"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qec66szzkf95_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4VOpdSXO0co0Kt?t=1685107309"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_r1l66f36v9ki_PostCoupons,200,"{
+  ""id"": ""pxRnb0TjgJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107315,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""inequitably"",
+  ""percent_off"": 63.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skk01kx44awo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_obZsYrs10cUpBb?t=1685107321"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

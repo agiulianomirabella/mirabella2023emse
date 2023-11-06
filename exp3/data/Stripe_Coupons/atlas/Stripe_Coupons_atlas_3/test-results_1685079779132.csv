@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbd85wkkvomd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YIe8t9usdlnseK?t=1685079795"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iv4ah1yq9hrm_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jmne7o2t1kCjhF?t=1685079801"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jeco3urp3v4z_PostCoupons,200,"{
+  ""id"": ""t55nMBNpZzni"",
+  ""object"": ""coupon"",
+  ""amount_off"": 19,
+  ""created"": 1685079806,
+  ""currency"": ""ttd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 16,
+  ""metadata"": {},
+  ""name"": ""dangla"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k1zhqk225qux_PostCoupons,200,"{
+  ""id"": ""UR1Pp2tQrDZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685079812,
+  ""currency"": ""gbp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 49.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbt0uw4xllbq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4OSy5cMrsQ0Pjt?t=1685079818"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

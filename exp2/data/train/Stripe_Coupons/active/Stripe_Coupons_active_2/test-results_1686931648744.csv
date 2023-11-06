@@ -1,0 +1,52 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7fw1nd3txro_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3LnGfw0igGVjtU?t=1686931665"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1h7wimozeqomt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_IBNzkIDXQOyNrH?t=1686931671"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k201zvuvwa43_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hRs3MDMmFoAfA3?t=1686931677"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhlodm567uwp_PostCoupons,200,"{
+  ""id"": ""vgLObxcf"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1686931682,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""i.e."",
+  ""percent_off"": 6.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s4msy9g0fjok_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_UJ00xI63o2Cnyb?t=1686931688"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

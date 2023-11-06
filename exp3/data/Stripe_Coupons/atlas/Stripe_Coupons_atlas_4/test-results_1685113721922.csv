@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7ftpoknfoz4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JzHyLQvYkiRWCW?t=1685113739"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl3ee8jx92r9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DhPmseN5X4J3xy?t=1685113745"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_trtnlr9z6k38_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LAlfZofSkEOQxo?t=1685113751"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubu71mn8ffp0_PostCoupons,200,"{
+  ""id"": ""Q25wuGC2yZKKBW"",
+  ""object"": ""coupon"",
+  ""amount_off"": 15,
+  ""created"": 1685113757,
+  ""currency"": ""chf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1691384843,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uv8n0fa5uiba_PostCoupons,200,"{
+  ""id"": ""UnJnKNxf"",
+  ""object"": ""coupon"",
+  ""amount_off"": 62,
+  ""created"": 1685113763,
+  ""currency"": ""huf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 64,
+  ""metadata"": {},
+  ""name"": ""physically"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

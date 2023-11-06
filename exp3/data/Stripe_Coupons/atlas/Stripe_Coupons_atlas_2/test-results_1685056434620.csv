@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv3rdp6v021w_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dwnwBI9Yspexq7?t=1685056451"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jylj9mk2dcmv_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_AiNVlhCpZH38nJ?t=1685056456"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhugxkw3vd4o_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_TWhfAHfNiiVrJv?t=1685056462"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_trtky5v33qr7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ha2RAvZ41XJtFy?t=1685056467"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uve70qenbpdg_PostCoupons,200,"{
+  ""id"": ""WKtGf2Yd"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685056473,
+  ""currency"": ""lsl"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 87,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 59.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qec5spxttulv_PostCoupons,200,"{
+  ""id"": ""nUjuhwmh"",
+  ""object"": ""coupon"",
+  ""amount_off"": 18,
+  ""created"": 1685060116,
+  ""currency"": ""cve"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 24,
+  ""metadata"": {},
+  ""name"": ""enlarged"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rh7rk1hbx0zd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_MekLKJl0w0dzMC?t=1685060121"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7wu5etkcj06_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid currency: sll. Stripe accounts in ES do not support sll. Your account currently supports these currencies: usd, aed, afn, all, amd, ang, aoa, ars, aud, awg, azn, bam, bbd, bdt, bgn, bif, bmd, bnd, bob, brl, bsd, bwp, byn, bzd, cad, cdf, chf, clp, cny, cop, crc, cve, czk, djf, dkk, dop, dzd, egp, etb, eur, fjd, fkp, gbp, gel, gip, gmd, gnf, gtq, gyd, hkd, hnl, hrk, htg, huf, idr, ils, inr, isk, jmd, jpy, kes, kgs, khr, kmf, krw, kyd, kzt, lak, lbp, lkr, lrd, lsl, mad, mdl, mga, mkd, mmk, mnt, mop, mro, mur, mvr, mwk, mxn, myr, mzn, nad, ngn, nio, nok, npr, nzd, pab, pen, pgk, php, pkr, pln, pyg, qar, ron, rsd, rub, rwf, sar, sbd, scr, sek, sgd, shp, sle, sos, srd, std, szl, thb, tjs, top, try, ttd, twd, tzs, uah, ugx, uyu, uzs, vnd, vuv, wst, xaf, xcd, xof, xpf, yer, zar, zmw."",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_fhO4DHcS0LtKuk?t=1685060127"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urrv9yb5c4s8_PostCoupons,200,"{
+  ""id"": ""8jsw33T3QqtBd"",
+  ""object"": ""coupon"",
+  ""amount_off"": 14,
+  ""created"": 1685060133,
+  ""currency"": ""chf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""ablutionary"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urxzhf1j4u2g_PostCoupons,200,"{
+  ""id"": ""tubRjiMsuF7L3DAcP92x"",
+  ""object"": ""coupon"",
+  ""amount_off"": 34,
+  ""created"": 1685060138,
+  ""currency"": ""afn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""weak-stemmed"",
+  ""percent_off"": null,
+  ""redeem_by"": 1852824583,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

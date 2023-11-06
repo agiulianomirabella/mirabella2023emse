@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ieyazkw0fa5x_PostCoupons,200,"{
+  ""id"": ""sFZjSbnF"",
+  ""object"": ""coupon"",
+  ""amount_off"": 3,
+  ""created"": 1685107399,
+  ""currency"": ""hkd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jew11o1qaqg3_PostCoupons,200,"{
+  ""id"": ""gfdebCDXaeIn6NaZj"",
+  ""object"": ""coupon"",
+  ""amount_off"": 62,
+  ""created"": 1685107405,
+  ""currency"": ""rub"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""freshly"",
+  ""percent_off"": null,
+  ""redeem_by"": 1724757479,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k1x9frvn690x_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_sXr7xU2tdI6Wvt?t=1685107410"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhakwbz7kw2t_PostCoupons,200,"{
+  ""id"": ""k7xjhNOT"",
+  ""object"": ""coupon"",
+  ""amount_off"": 87,
+  ""created"": 1685107416,
+  ""currency"": ""mad"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 73,
+  ""metadata"": {},
+  ""name"": ""nominally"",
+  ""percent_off"": null,
+  ""redeem_by"": 1743893240,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_toigwjnk812a_PostCoupons,200,"{
+  ""id"": ""8uAXFQJX6jQu"",
+  ""object"": ""coupon"",
+  ""amount_off"": 51,
+  ""created"": 1685107422,
+  ""currency"": ""sek"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1776243298,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,63 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrotuy7al1sz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6Oz6RNh5A06GEI?t=1685079997"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k253850l6lo7_PostCoupons,200,"{
+  ""id"": ""cAM7q3ML"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080003,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 37.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rhtze3ftnepl_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_EjflEZg7ITYWfP?t=1685080008"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4hv57ozl9h2_PostCoupons,200,"{
+  ""id"": ""O2ZIW9Yt"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080014,
+  ""currency"": ""mkd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 44,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 97.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_urejw2ztspbn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_GF18NjOwUEsdn2?t=1685080021"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

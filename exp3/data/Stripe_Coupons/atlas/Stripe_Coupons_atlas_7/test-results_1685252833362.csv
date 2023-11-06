@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iey9r0so299h_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tfhXBxH8elVTf6?t=1685252849"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iun6agqhlkxj_PostCoupons,200,"{
+  ""id"": ""bIRNuARr"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685252855,
+  ""currency"": ""bob"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 64,
+  ""metadata"": {},
+  ""name"": ""shamed"",
+  ""percent_off"": 95.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_tol74hcd69md_PostCoupons,200,"{
+  ""id"": ""62YxyEb7SZLwh4e3"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685252861,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 85,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 69.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u82x6nkasb3l_PostCoupons,200,"{
+  ""id"": ""vhKeaJ7xEgAi0gC1pWe"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685252866,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 87,
+  ""metadata"": {},
+  ""name"": ""levantine"",
+  ""percent_off"": 20.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vey4wbpgvsj7_PostCoupons,200,"{
+  ""id"": ""8zoLJ56RFH9PTlZs4C"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685252872,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 96,
+  ""livemode"": false,
+  ""max_redemptions"": 94,
+  ""metadata"": {},
+  ""name"": ""totemic"",
+  ""percent_off"": 84.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,125 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iaxopov1uvkx_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""p8gPLa101xstTBF--w9s5hORSKs"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""Gb7zpCAxqcs8XvDrT1rCJ9GIOgw"",
+      ""id"": ""M4iwH-17Ix0"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Video_game_culture""
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""jrFgxqOOgmkRKd-9emv_Bid6Axc"",
+      ""id"": ""KUhpj5dQack"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Video_game_culture""
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""L-KDkvPTcwzgxXVbFMBSps8XTxk"",
+      ""id"": ""fMPTSiOuNpA"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Action-adventure_game"",
+          ""https://en.wikipedia.org/wiki/Action_game"",
+          ""https://en.wikipedia.org/wiki/Role-playing_video_game"",
+          ""https://en.wikipedia.org/wiki/Video_game_culture""
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""BwdK8iaqIL7gUIGlA6SVg71pXug"",
+      ""id"": ""cetAhtIrGH8"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Action-adventure_game"",
+          ""https://en.wikipedia.org/wiki/Action_game"",
+          ""https://en.wikipedia.org/wiki/Video_game_culture""
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""3AGr4M4vwGspJLiCeoulN19xEUQ"",
+      ""id"": ""r8BiamdRszs"",
+      ""liveStreamingDetails"": {
+        ""actualStartTime"": ""2023-05-09T09:19:16Z"",
+        ""actualEndTime"": ""2023-05-09T12:58:28Z""
+      }
+    }
+  ],
+  ""nextPageToken"": ""CAUQAA"",
+  ""pageInfo"": {
+    ""totalResults"": 98,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1ib8rte2m5jxs_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_t4nv4gfv8k85_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""OerOyGtLovqSIncCZJXlVDoON3o"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 21
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t8a4gpgs12r7_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_urrxm4x87oe0_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: chart, myRating, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: chart, myRating, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.

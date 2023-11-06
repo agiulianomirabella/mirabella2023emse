@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7tq5468yvdw_PostCoupons,200,"{
+  ""id"": ""bgRdFfWY1mwNam6"",
+  ""object"": ""coupon"",
+  ""amount_off"": 34,
+  ""created"": 1686932065,
+  ""currency"": ""uah"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 96,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iauvrpqdqs84_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_IfNxVrCCxrbzhD?t=1686932071"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iuvj690r8oc3_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ibTHJ5PuYCzEQx?t=1686932077"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jetag14j5dgi_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_s63eLqBVvtAI8e?t=1686932082"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_r1iv5v9un0ir_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_CG76m9KWbOm0Y6?t=1686932088"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

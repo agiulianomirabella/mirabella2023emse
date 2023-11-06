@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7j4w9854qid_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_J19Zt7GT01d868?t=1685081589"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sok3xc375p2s_PostCoupons,200,"{
+  ""id"": ""UQu9oTgN"",
+  ""object"": ""coupon"",
+  ""amount_off"": 64,
+  ""created"": 1685081595,
+  ""currency"": ""vuv"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 45,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_tru3z5fv1qas_PostCoupons,200,"{
+  ""id"": ""6ssATrBD"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081603,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 25,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 53.0,
+  ""redeem_by"": 1756062197,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ubrg1wmczku0_PostCoupons,200,"{
+  ""id"": ""MqmhgnRP"",
+  ""object"": ""coupon"",
+  ""amount_off"": 4,
+  ""created"": 1685081609,
+  ""currency"": ""dzd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbmy9xf7bbxu_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_xYDIlie6jV4zmR?t=1685081615"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

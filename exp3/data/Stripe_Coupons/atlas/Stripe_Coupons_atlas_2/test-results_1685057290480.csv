@@ -1,0 +1,44 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrdnn5p9t0te_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_VFRi8FRH5UI7jd?t=1685057307"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jefxw0iyhahu_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FNe1Ozv5K6qieu?t=1685057313"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jig3q551vp7o_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_vqyFcrU6dWKrb4?t=1685057319"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qe6mbsv26fs4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HFHucHeXUz7bOh?t=1685057325"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s1h7rf6r9e7l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_f2E1LZ1XxF7257?t=1685057331"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

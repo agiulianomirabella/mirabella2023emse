@@ -1,0 +1,603 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ies7y5vlfxo4_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""-Z_7QCV1al4Lzub89iY-WS2ioKk"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gHdRMqOQiz0CKjxNrCkEnQdClDk"",
+      ""id"": ""UgwsbWlIV6iRXRHgpqt4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1ievhyt4rirsl_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urumzddcmeya_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""zk0HTzZjxY3zihQHyIa1BbNhHLA"",
+  ""nextPageToken"": ""QURTSl9pM0tCVzRWckpPZ2JmdVNrU1hVREx6TE90WVVqUF9ZdlJWZmsxRTZWbUpQRlpid1BVWVl2UlJCYWU4cUkyZzJXUmV0Y0lDdkpXekl0eUE5SlIydnFsRFBIYjl3cWlIeXV1cFRUZEJQWG9jRmhTNkdESm1NZW5NR1hXcjFjcFo5NWc5ZlZBb1pZNWVjZERaYm1tOUF6SjB1UkxVRHBJeEk5VktfSFdCMFFuYXp0WXB2LUt3NUk3bHFJd2p0aXRHc3NRc3BTcThGOG13"",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0Sf63jSPoainj1Kn8VjRxFOFGL8"",
+      ""id"": ""Ugz5ZsoHsrdebKbGJW14AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""dAGjpHy-mRvrBLtrQwzqc7CCqMc"",
+            ""id"": ""Ugz5ZsoHsrdebKbGJW14AaABAg.9fjoIFHoqIQ9flTcCAvxH0"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Bit heavy for gangnam style innit"",
+              ""textOriginal"": ""Bit heavy for gangnam style innit"",
+              ""parentId"": ""Ugz5ZsoHsrdebKbGJW14AaABAg"",
+              ""authorDisplayName"": ""Andrea Entwistle"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9fojILh_1WUYC05TpEyEbsjB4ixtlAyD-RjQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCLbMEYb74EDjuJCr0WaaJ4A"",
+              ""authorChannelId"": {
+                ""value"": ""UCLbMEYb74EDjuJCr0WaaJ4A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-09-09T18:38:48Z"",
+              ""updatedAt"": ""2022-09-09T18:38:48Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fFn4XKB3AtYRtHUHbi-Ui0rl__o"",
+      ""id"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""RTLQRppPhCxnG2qQMfnXumWciqk"",
+            ""id"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg.9dV7vC84ULB9gDqzhRaa2V"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Kqjqko8*"",
+              ""textOriginal"": ""Kqjqko8*"",
+              ""parentId"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg"",
+              ""authorDisplayName"": ""susan yasir"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8c90iH3AKDdRRVWKSu2UEK_bUNFmYTU2wEAw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYnQpDU397PN-yjncnjdCsw"",
+              ""authorChannelId"": {
+                ""value"": ""UCYnQpDU397PN-yjncnjdCsw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-09-21T04:29:42Z"",
+              ""updatedAt"": ""2022-09-21T04:29:42Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""lAIGyAVGKOlsBt0R29N0N8lnw9k"",
+            ""id"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg.9dV7vC84ULB9gDnnzPCEHm"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""[[tt"",
+              ""textOriginal"": ""[[tt"",
+              ""parentId"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg"",
+              ""authorDisplayName"": ""fadz lah"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-fLZV_e5_Zv04cG_pKlu6Jj6d_CiANLfDoBU72=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCeyuwwrLsE86aIq9W8smMeg"",
+              ""authorChannelId"": {
+                ""value"": ""UCeyuwwrLsE86aIq9W8smMeg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-09-21T04:01:54Z"",
+              ""updatedAt"": ""2022-09-21T04:01:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""o074zHQCB4Ba6qnpzEvFv5muzZ4"",
+            ""id"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg.9dV7vC84ULB9gDeeanHJEe"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""@YD Editz как ее ппер"",
+              ""textOriginal"": ""@YD Editz как ее ппер"",
+              ""parentId"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg"",
+              ""authorDisplayName"": ""Наталья Ященко"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu99oGlgRkYGAmBKmvmFwAJDGS3JozJ8t5z4nxad=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJDOHOA0T5FqngDym8-sgjA"",
+              ""authorChannelId"": {
+                ""value"": ""UCJDOHOA0T5FqngDym8-sgjA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-09-21T02:41:58Z"",
+              ""updatedAt"": ""2022-09-21T02:41:58Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""f_x7sYnxUQq-HnVYuHvEYsdTSak"",
+            ""id"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg.9dV7vC84ULB9gDeQ7M06Oz"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""@YD Editz бы ььоррррпррон"",
+              ""textOriginal"": ""@YD Editz бы ььоррррпррон"",
+              ""parentId"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg"",
+              ""authorDisplayName"": ""Наталья Ященко"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu99oGlgRkYGAmBKmvmFwAJDGS3JozJ8t5z4nxad=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJDOHOA0T5FqngDym8-sgjA"",
+              ""authorChannelId"": {
+                ""value"": ""UCJDOHOA0T5FqngDym8-sgjA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-09-21T02:39:51Z"",
+              ""updatedAt"": ""2022-09-21T02:39:51Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""dmASMLEqElprqcppYaHIPrf_Y2o"",
+            ""id"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg.9dV7vC84ULB9g3i9LHSWzd"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""The good old days"",
+              ""textOriginal"": ""The good old days"",
+              ""parentId"": ""Ugzg3rFuHEVMk4Ez7jN4AaABAg"",
+              ""authorDisplayName"": ""brian gomez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/yqgo9ADqZa9aJ5Rf2dz9F_Usom_ngkdkiGi8holQYUuJzLnPRfC8ObYAAxfOQ3l_W3Kveuaaog=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNvIKM3H6USzshdD0mb-HUA"",
+              ""authorChannelId"": {
+                ""value"": ""UCNvIKM3H6USzshdD0mb-HUA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-09-17T06:00:07Z"",
+              ""updatedAt"": ""2022-09-17T06:00:07Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MIarJ7V-Rc83oQ2IsXXs2jOOtfI"",
+      ""id"": ""UgxBWBbw3EbAqxGImiB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""wpST1-Gk3-PDMrXiPk3QhZu6ewE"",
+      ""id"": ""UgyIKl-pGY7n3YaI7ZN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ZBc6Y9RVaBsj6G__0xqU_dlMrmk"",
+      ""id"": ""Ugyt4DJ0P3dC37jDDIF4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""dcT2JF-JOK-TEM2AxyAyq-Z8mmY"",
+            ""id"": ""Ugyt4DJ0P3dC37jDDIF4AaABAg.9_CJyy7nhDK9_CLynFwK7L"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Mucho texto"",
+              ""textOriginal"": ""Mucho texto"",
+              ""parentId"": ""Ugyt4DJ0P3dC37jDDIF4AaABAg"",
+              ""authorDisplayName"": ""Sebas Santi"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-fZx4OTxloBE1UV9FWjUoK49CB9jDe_61x5RHnRQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCd6kAqNPh9KsABn1brusj8A"",
+              ""authorChannelId"": {
+                ""value"": ""UCd6kAqNPh9KsABn1brusj8A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-03-30T14:50:58Z"",
+              ""updatedAt"": ""2022-03-30T14:50:58Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""sZmom3dEKzQCWmWc7IG2W6Z8_FE"",
+            ""id"": ""Ugyt4DJ0P3dC37jDDIF4AaABAg.9_CJyy7nhDK9_CKKVjokAk"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""cringe"",
+              ""textOriginal"": ""cringe"",
+              ""parentId"": ""Ugyt4DJ0P3dC37jDDIF4AaABAg"",
+              ""authorDisplayName"": ""Mingi Hwang"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8SyUFM8rJTebl_Ol5Fjx8WdvhCYNKFuSvQDyKYgA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTeGIuS-lTPAFwg924TopQg"",
+              ""authorChannelId"": {
+                ""value"": ""UCTeGIuS-lTPAFwg924TopQg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-03-30T14:36:35Z"",
+              ""updatedAt"": ""2022-03-30T14:36:35Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zf4SERtO13DDKZYi73YmE9oYLRg"",
+      ""id"": ""UgyA1bEl8NCISbMEv7V4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""lU--JRmQjJCwhuAINZembnl6DIw"",
+      ""id"": ""Ugx0pc_leOzH5odC2wd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xSLpags_aAsVpVXgR4KEBdVILFM"",
+      ""id"": ""UgyooC9zsFsg6ytc1Eh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""6J2qPoQGZhkVKAJO7l-oxyZ1eEs"",
+      ""id"": ""Ugzoem-AyyYRxrUlY0R4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""DJAt1vmbR2ZEZUq_vRD8Hs_rv6Y"",
+      ""id"": ""UgyBhRh_gxpMel3bcnB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nNYi-7mJjItVa97qXFPhFt6Aik8"",
+      ""id"": ""UgyUGE7poQ_MKe_98nN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zUAuUodf3KbA9mXdAvXCKHM-RdI"",
+      ""id"": ""Ugw7UtiFxncUubnH4nZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""iWca1vu6u37M4l_v_5uRwWEQ8io"",
+      ""id"": ""UgxQiHrwFrNKJBEapDt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""NZM4U-vvSqVWHPJRUXajSdH5Aho"",
+      ""id"": ""UgyDTo-arH20csXWeiF4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""SJ01-WQYw9no6Ww2hE3mr611Xoc"",
+            ""id"": ""UgyDTo-arH20csXWeiF4AaABAg.9AHGNMFbhHc9QtGbiBaamU"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""LIke I could&#39;ve been kpop fan since 2012 like brooo give my life back I want to turn back in time."",
+              ""textOriginal"": ""LIke I could've been kpop fan since 2012 like brooo give my life back I want to turn back in time."",
+              ""parentId"": ""UgyDTo-arH20csXWeiF4AaABAg"",
+              ""authorDisplayName"": ""Amira"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/U66ig8HrleLaHIQBKr4CkuyM1LzbFIUnyIN_jv0eu_fR9FxIv5wHgMNTobTh46RhYfewKULo_Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCHjM5eifAIx_JlSshSn3C3A"",
+              ""authorChannelId"": {
+                ""value"": ""UCHjM5eifAIx_JlSshSn3C3A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-11T02:56:46Z"",
+              ""updatedAt"": ""2021-08-11T02:56:46Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""_IN0ikoP0cZtlD9RXxMAHxfuV1U"",
+            ""id"": ""UgyDTo-arH20csXWeiF4AaABAg.9AHGNMFbhHc9QsytwZwQnI"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Fushimi 차관 hes not even hating on kpop he  said this song is good chill out"",
+              ""textOriginal"": ""Fushimi 차관 hes not even hating on kpop he  said this song is good chill out"",
+              ""parentId"": ""UgyDTo-arH20csXWeiF4AaABAg"",
+              ""authorDisplayName"": ""The Limon"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8n9RXEp8WlM7vj3IWAxUyOTGuwf0Y8qRyME8W4QQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyerBi7iI_F2REImAVikB7Q"",
+              ""authorChannelId"": {
+                ""value"": ""UCyerBi7iI_F2REImAVikB7Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-11T00:13:14Z"",
+              ""updatedAt"": ""2021-08-11T00:13:14Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""WKf3su5O1eKtFwlEu2kSwQUDREg"",
+            ""id"": ""UgyDTo-arH20csXWeiF4AaABAg.9AHGNMFbhHc9QsdAHKzjU3"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""@JD true\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003ealso jeba* disa"",
+              ""textOriginal"": ""@JD true\n\n\n\n\nalso jeba* disa"",
+              ""parentId"": ""UgyDTo-arH20csXWeiF4AaABAg"",
+              ""authorDisplayName"": ""regav"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/RX3YPXAcxF1LBzp63DHa1CnWkfGBJhHqPjTI9nOQtjfRFHO6JS-hJckG_Mv5_b3PSCXOMwK_=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC61_0H1Adfqk5Phsm0n6qZw"",
+              ""authorChannelId"": {
+                ""value"": ""UC61_0H1Adfqk5Phsm0n6qZw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-10T21:03:21Z"",
+              ""updatedAt"": ""2021-08-10T21:03:21Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""0vWujQxcvgse2P3J_9g3ih_2atM"",
+            ""id"": ""UgyDTo-arH20csXWeiF4AaABAg.9AHGNMFbhHc9QsZhKv4xB6"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""No one cares if u like it or not"",
+              ""textOriginal"": ""No one cares if u like it or not"",
+              ""parentId"": ""UgyDTo-arH20csXWeiF4AaABAg"",
+              ""authorDisplayName"": ""Kashni Sharma"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9bNC6yOa0wUvfesMEh5mVZF1ltYIt97Pqiwg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC8M_HHTvTa7w0ueE8EYs_Gw"",
+              ""authorChannelId"": {
+                ""value"": ""UC8M_HHTvTa7w0ueE8EYs_Gw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-10T20:24:19Z"",
+              ""updatedAt"": ""2021-08-10T20:24:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""T9TpmpiAwe9lgopIsXbT8J_Sq5s"",
+            ""id"": ""UgyDTo-arH20csXWeiF4AaABAg.9AHGNMFbhHc9QsGOU4MDWC"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Ye lol"",
+              ""textOriginal"": ""Ye lol"",
+              ""parentId"": ""UgyDTo-arH20csXWeiF4AaABAg"",
+              ""authorDisplayName"": ""B Demp"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9BMxVq4ngh9C_2-_Qbji2vu_pT0Bo_Jz8iTQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_YUdOv7RD9SHHRfoMpTH2g"",
+              ""authorChannelId"": {
+                ""value"": ""UC_YUdOv7RD9SHHRfoMpTH2g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-10T17:35:35Z"",
+              ""updatedAt"": ""2021-08-10T17:35:35Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""AQLklud4rUmxCbdnwU-9z_vd94E"",
+      ""id"": ""UgweHbTxI1RUkGzNI694AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""RISOsWiOUCf3osOZYNJYv9Rmlro"",
+            ""id"": ""UgweHbTxI1RUkGzNI694AaABAg.97Y87cpJUUv9SnSwY4eC82"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""👎👎👎"",
+              ""textOriginal"": ""👎👎👎"",
+              ""parentId"": ""UgweHbTxI1RUkGzNI694AaABAg"",
+              ""authorDisplayName"": ""bao anh Doan"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9IgtSL6V9XNN5teXj1xy6aP7qFlKgg7_4OEQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCV6yl1tXsR42IudXFTQpklQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCV6yl1tXsR42IudXFTQpklQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-09-27T13:51:48Z"",
+              ""updatedAt"": ""2021-09-27T13:51:48Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""2LOcIWTTdOTZI0zyaG5gWM9lzuQ"",
+            ""id"": ""UgweHbTxI1RUkGzNI694AaABAg.97Y87cpJUUv9SnSu2ALL3M"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Kopp"",
+              ""textOriginal"": ""Kopp"",
+              ""parentId"": ""UgweHbTxI1RUkGzNI694AaABAg"",
+              ""authorDisplayName"": ""fatos214"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8aiWLvgBaqpJgLgDCLuBZTstsKZDthhg9-3g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCVo6XWbVoeeAZopykYngb4A"",
+              ""authorChannelId"": {
+                ""value"": ""UCVo6XWbVoeeAZopykYngb4A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-09-27T13:51:28Z"",
+              ""updatedAt"": ""2021-09-27T13:51:28Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""91W5mF7UBH00ZdBXHcNLt5QbYO8"",
+            ""id"": ""UgweHbTxI1RUkGzNI694AaABAg.97Y87cpJUUv9SmpJoigYA1"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Věry good"",
+              ""textOriginal"": ""Věry good"",
+              ""parentId"": ""UgweHbTxI1RUkGzNI694AaABAg"",
+              ""authorDisplayName"": ""Renata Nečasová"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9zxjizxQ-db_PDrrpvM49rrLD6fpWLCUO0OA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCksnKT4ET-n4mAtrcd7L5iQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCksnKT4ET-n4mAtrcd7L5iQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-09-27T07:56:52Z"",
+              ""updatedAt"": ""2021-09-27T07:56:52Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""S5tlTyK07G5zDyrTkjDl8nPaaCA"",
+            ""id"": ""UgweHbTxI1RUkGzNI694AaABAg.97Y87cpJUUv9SmANt2Vfcq"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""ยข"",
+              ""textOriginal"": ""ยข"",
+              ""parentId"": ""UgweHbTxI1RUkGzNI694AaABAg"",
+              ""authorDisplayName"": ""พนิตตา พัตตาหอม"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu96se9JtDlaK8AZSABvOuuNvmUhvlj-nlQHLYs4Xdq_0A=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC2KfoFfCxjQ9jPHvZhcwDLg"",
+              ""authorChannelId"": {
+                ""value"": ""UC2KfoFfCxjQ9jPHvZhcwDLg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-09-27T01:50:25Z"",
+              ""updatedAt"": ""2021-09-27T01:50:25Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""PB2WAGok2tU63YP_gdN-05ukK4k"",
+            ""id"": ""UgweHbTxI1RUkGzNI694AaABAg.97Y87cpJUUv9SltSfJKi4P"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""IKR"",
+              ""textOriginal"": ""IKR"",
+              ""parentId"": ""UgweHbTxI1RUkGzNI694AaABAg"",
+              ""authorDisplayName"": ""DismalPants4958"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/0PnwaIJoo--lxA3lfU0j_9budSPqoZ8fXgw98p5ls4xpP8eAEXTWHB7360ym2l7WqTKzd-8eI9A=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnzD6RNqFiOz2jTZ0_8XTuw"",
+              ""authorChannelId"": {
+                ""value"": ""UCnzD6RNqFiOz2jTZ0_8XTuw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-09-26T23:13:47Z"",
+              ""updatedAt"": ""2021-09-26T23:13:47Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fjB5op65-8NDL3m1Tmo6_n1PfAA"",
+      ""id"": ""UgxXEFGGoADmkVgOt_l4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PnC9NvaMISZB_GlbNtuBN2lG7jE"",
+      ""id"": ""Ugy9WUtbnODOGk3mcAB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Wpc39r-SMDrDBOjnuttpxqxrcxk"",
+      ""id"": ""UgyazUs4b16YqulFrW14AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""nrgq59d03UgORMz66NKq8lxq2HQ"",
+            ""id"": ""UgyazUs4b16YqulFrW14AaABAg.8vExJpdNA528vF_hv6spNc"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Did you not even see it coming from a mile away?\u003cbr\u003eAt least 80% of YouTube are children.\u003cbr\u003eThey&#39;re all bound to make a stupid comment."",
+              ""textOriginal"": ""Did you not even see it coming from a mile away?\nAt least 80% of YouTube are children.\nThey're all bound to make a stupid comment."",
+              ""parentId"": ""UgyazUs4b16YqulFrW14AaABAg"",
+              ""authorDisplayName"": ""Dizzota"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8y13XjzjIwfLpTZkMV9E6WEK3FEnUkDD5Hcb4s0Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCQkfDV1jrilEVVhIZxXYy0A"",
+              ""authorChannelId"": {
+                ""value"": ""UCQkfDV1jrilEVVhIZxXYy0A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-05-22T22:58:54Z"",
+              ""updatedAt"": ""2019-05-22T22:58:54Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ywAWkmLNm2uhl-Kxds3mYUQGPNI"",
+      ""id"": ""UgyNz4b1ItY2BCfc0sx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WLSrvTH8wGMcltbDJ19nfnV5qw8"",
+      ""id"": ""UgyfpLnoa-iLTADkwu94AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_vb3lcnu4wdo7_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

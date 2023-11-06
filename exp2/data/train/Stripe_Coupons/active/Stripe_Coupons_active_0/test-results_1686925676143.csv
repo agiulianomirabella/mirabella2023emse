@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iusr0c2anpkk_PostCoupons,200,"{
+  ""id"": ""zDpMcekk"",
+  ""object"": ""coupon"",
+  ""amount_off"": 84,
+  ""created"": 1686925693,
+  ""currency"": ""htg"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""defeat"",
+  ""percent_off"": null,
+  ""redeem_by"": 1702914462,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jiflej41iq0o_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_nrABn7rS0GoXqY?t=1686925698"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t841t59esfug_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_96IB9g91nRX4sV?t=1686925704"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_toddq8iayhye_PostCoupons,200,"{
+  ""id"": ""fxUClxx8"",
+  ""object"": ""coupon"",
+  ""amount_off"": 73,
+  ""created"": 1686925710,
+  ""currency"": ""cny"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""self-importance"",
+  ""percent_off"": null,
+  ""redeem_by"": 1813768948,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vbhd66x6d8vo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_r0sGRBszwUnMnw?t=1686925716"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

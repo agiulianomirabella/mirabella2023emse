@@ -1,0 +1,52 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv4bylavsrxi_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5XJLIvPBnJsemJ?t=1685107603"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jicqtmz4szsh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hIpcIoEFHFUFq7?t=1685107608"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4p4fhemho37_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_KWYTjQRcV7B269?t=1685107614"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_to1r7ytoufl2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_td0XbsYnC80NSt?t=1685107620"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uvjo5wmp0gmq_PostCoupons,200,"{
+  ""id"": ""nownO1vX"",
+  ""object"": ""coupon"",
+  ""amount_off"": 3,
+  ""created"": 1685107625,
+  ""currency"": ""lbp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 64,
+  ""metadata"": {},
+  ""name"": ""allele"",
+  ""percent_off"": null,
+  ""redeem_by"": 1808543099,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

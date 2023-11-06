@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hror71cbgt46_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_PB0XCWnWDqHQt5?t=1685059694"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ibes4d3jddmg_PostCoupons,200,"{
+  ""id"": ""2wLn6rMP"",
+  ""object"": ""coupon"",
+  ""amount_off"": 77,
+  ""created"": 1685059700,
+  ""currency"": ""xof"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1764341219,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jeqkjqgmz0iq_PostCoupons,200,"{
+  ""id"": ""6QIN13bz1Xco8s"",
+  ""object"": ""coupon"",
+  ""amount_off"": 65,
+  ""created"": 1685059706,
+  ""currency"": ""sek"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 52,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1860677740,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jew1cwjufnso_PostCoupons,200,"{
+  ""id"": ""7RrfEmT6"",
+  ""object"": ""coupon"",
+  ""amount_off"": 10,
+  ""created"": 1685059711,
+  ""currency"": ""jmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""crick"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jifilywrakit_PostCoupons,200,"{
+  ""id"": ""ZseHCz02"",
+  ""object"": ""coupon"",
+  ""amount_off"": 22,
+  ""created"": 1685059717,
+  ""currency"": ""xaf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 24,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1843605325,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

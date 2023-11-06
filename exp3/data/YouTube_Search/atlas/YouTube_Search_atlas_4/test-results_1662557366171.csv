@@ -1,0 +1,2032 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h821ecexhg10_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""wheiR-aIcGzazUTxxC2VTmQSso4"",
+  ""regionCode"": ""JP"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1hr5dhhm73m7k_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrbeyq8xy0qa_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""TUyn-4tO5zyHi0f5jpXPSV--WGs"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1hrdplb9c06yb_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1hrghd33nsmk4_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1ib98kdj1lx0m_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1ibju4mwf2xis_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""I63Cn75QXzdroiT4-NKzvdQJeRU"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""PT"",
+  ""pageInfo"": {
+    ""totalResults"": 1000000,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""8s2V8FbH7nxExF7lZHH8a5cZ5WU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""-YM-DTiJvc0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2012-02-27T15:51:39Z"",
+        ""channelId"": ""UCjpTiQhG3KXO8lJxy8uR8cg"",
+        ""title"": ""Toca Do Vale DVD Araripina - Loco Loco Loco"",
+        ""description"": ""Toca do Vale DVD Araripina-Loco loco loco."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/-YM-DTiJvc0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/-YM-DTiJvc0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/-YM-DTiJvc0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Toca do Vale"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2012-02-27T15:51:39Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""DlZ7UgdcUMeSaI1bRBh8f167Y1Q"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""w4QRcpNg57s""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-03-30T18:39:37Z"",
+        ""channelId"": ""UCRI7hheejBbWS6etTNwMT0g"",
+        ""title"": ""Anuel AA - Street Poem [Official Audio]"",
+        ""description"": ""Anuel AA - Street Poem [Official Audio] #RealHastaLaMuerte Subscribanse:http://bit.ly/AnuelAAyoutube Listen on Spotify ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/w4QRcpNg57s/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/w4QRcpNg57s/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/w4QRcpNg57s/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Anuel AA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-03-30T18:39:37Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""vDNWCTWgaw7jFdGxsQ9UqF1qw6c"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""GP3Exc5tCtc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2009-10-27T02:55:05Z"",
+        ""channelId"": ""UCe4LM_eKc9ywRmVuBm5pjQg"",
+        ""title"": ""Kevin Lyttle - Turn Me On (Official Video)"",
+        ""description"": ""The official video of \""Turn Me On\"" by Kevin Lyttle off the self-titled album 'Kevin Lyttle' - available now! Subscribe for more official ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/GP3Exc5tCtc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/GP3Exc5tCtc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/GP3Exc5tCtc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Atlantic Records"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2009-10-27T02:55:05Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""TDhTcbDAfm7M4DQXyBW9qQ5VhVI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""W9w1A_1zn7w""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-10-03T13:28:22Z"",
+        ""channelId"": ""UCMAj_mAXxf3a2Dw8qeCHA5w"",
+        ""title"": ""Voz da Verdade - &quot;A Ilha&quot;"",
+        ""description"": ""Voz da Verdade - 30 anos Agradecemos o carinho e por nos assistir. Deixe o seu comentário e o joinha, pois eles são muito ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/W9w1A_1zn7w/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/W9w1A_1zn7w/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/W9w1A_1zn7w/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Voz da Verdade Music - Canal Oficial"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-10-03T13:28:22Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""8AW87eChDOoIfCSzGesojUsNCqk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""bt9GRGcLmSQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2009-11-26T04:17:59Z"",
+        ""channelId"": ""UCVttQE6tS_agDSAU61Q65aA"",
+        ""title"": ""Enrique Iglesias - Quizás"",
+        ""description"": ""Watch Enrique's new music video ME PASE: https://www.youtube.com/watch?v=JE9urbO7bNU On Tour with Ricky Martin and ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/bt9GRGcLmSQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/bt9GRGcLmSQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/bt9GRGcLmSQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""EnriqueIglesiasVEVO"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2009-11-26T04:17:59Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1iexq9hcsc20n_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iun67o3omd7m_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1iut6zjkhnsxj_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""zLuEwZ-E1U0eKAgUcg7nmU3eyd0"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 1000000,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""6wEng4rnmwqJ1Jhx8aWiwQeabM0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""naF1Ok9gaKs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-03T19:36:09Z"",
+        ""channelId"": ""UCAMKTtcWpjjeKJnmWytLfZQ"",
+        ""title"": ""Todos los coches nuevos que llegarán en otoño de 2022 | Review en español | coches.net"",
+        ""description"": ""Prueba escrita con galería de fotos: ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/naF1Ok9gaKs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/naF1Ok9gaKs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/naF1Ok9gaKs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""coches.net"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-03T19:36:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""UPC0bgDzAuEy7-C8eqTU9Bl3yaU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""66wwjG26vtA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-06-01T18:03:09Z"",
+        ""channelId"": ""UCAMKTtcWpjjeKJnmWytLfZQ"",
+        ""title"": ""Hyundai Staria 2022 | Prueba / Test / Review en español | coches.net"",
+        ""description"": ""Probamos el nuevo Hyundai Staria, un monovolumen grande, de 5,25 metros, disponible en versiones de 7 y 9 plazas y llamado ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/66wwjG26vtA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/66wwjG26vtA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/66wwjG26vtA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""coches.net"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-06-01T18:03:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""SHMWQiSysCXRHC-n1M3ES0rifqE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""81lsLd6JxwI""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-04-10T15:00:45Z"",
+        ""channelId"": ""UCAMKTtcWpjjeKJnmWytLfZQ"",
+        ""title"": ""Mercedes GLA 250e y EQA 250 2022 | Comparativa / Test / Review en español | coches.net"",
+        ""description"": ""Comparamos los Mercedes GLA 250 e híbrido enchufable y EQA 250 100% eléctrico, dos coches casi idénticos (comparten la ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/81lsLd6JxwI/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/81lsLd6JxwI/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/81lsLd6JxwI/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""coches.net"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-04-10T15:00:45Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""fKIOeK9ygvqqy27uU1dTEu97bZk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""25IlfsFlMtU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-02-11T23:24:32Z"",
+        ""channelId"": ""UCT4Jg8h03dD0iN3Pb5L0PMA"",
+        ""title"": ""Documentales: El falsificador español | Documentales"",
+        ""description"": ""El falsificador español - Y el negocio de antigüedades Desde hace años, un hábil falsificador introduce en el mercado del arte ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/25IlfsFlMtU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/25IlfsFlMtU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/25IlfsFlMtU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""DW Español"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-02-11T23:24:32Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ZWCe9uq8XZvK7FwymNtAdmHKQg8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""NngqVNnbxVc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-12T17:01:12Z"",
+        ""channelId"": ""UCAMKTtcWpjjeKJnmWytLfZQ"",
+        ""title"": ""Polestar 2 Long Range 2022 | Prueba / Test / Review en español | coches.net"",
+        ""description"": ""Probamos la versión con batería grande (78 Kwh) y un único motor eléctrico de 231 CV del Polestar 2, el primer modelo de la ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/NngqVNnbxVc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/NngqVNnbxVc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/NngqVNnbxVc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""coches.net"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-12T17:01:12Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1jelizocqz0ag_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1ji4fkwewinuh_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1ji9ztz80jfc4_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1jyg1nom8i1k3_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""0dFD-ZGX_StZx4-CEenNQSKHQ6g"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 1000000,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""_XEr1BIfiCz4pJS6omSJl7-BG_8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""7NEHy1ARrgg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2015-01-10T22:12:25Z"",
+        ""channelId"": ""UCovLyuOCfHLOPP8Jwc3aZoA"",
+        ""title"": ""КОРОЧЕ ГОВОРЯ, Я РЕШИЛ СХОДИТЬ НА ПАРЫ"",
+        ""description"": ""Сотрудничество ▻ roomfactory.pr@gmail.com За кадром ▻ https://instagram.com/room.factory\u200b Эксклюзив ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/7NEHy1ARrgg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/7NEHy1ARrgg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/7NEHy1ARrgg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Room Factory"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2015-01-10T22:12:25Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""8I9vTbbYlD2JdHpurEEKoxY6aaM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""dXUaSLQN9F8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-03-19T22:42:00Z"",
+        ""channelId"": ""UCSfMEzJX9i4-3Xl6KFv3DAA"",
+        ""title"": ""Massa globalitzats?"",
+        ""description"": ""Els moviments de mercaderies, persones i capitals no han parat d'expandir-se. La globalització ha vingut per quedar-se i, en ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/dXUaSLQN9F8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/dXUaSLQN9F8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/dXUaSLQN9F8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""TV3"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-03-19T22:42:00Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""0nOHt66Zdoe5mePldoGmbu-wPz4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ssJZ-0tY7Y8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2015-01-19T21:22:09Z"",
+        ""channelId"": ""UCovLyuOCfHLOPP8Jwc3aZoA"",
+        ""title"": ""КОРОЧЕ ГОВОРЯ, 100 ДНЕЙ НА СПОРТЕ"",
+        ""description"": ""Сотрудничество ▻ roomfactory.pr@gmail.com За кадром ▻ https://instagram.com/room.factory\u200b Эксклюзив ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ssJZ-0tY7Y8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ssJZ-0tY7Y8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ssJZ-0tY7Y8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Room Factory"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2015-01-19T21:22:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""kox41bIcZNZLQdBe2_CojhF8GPA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""S0tr3UYPGbU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-01-24T17:58:31Z"",
+        ""channelId"": ""UCmtQGojT9O2LVzVIVKDGEjw"",
+        ""title"": ""♥ Sp4zie Vlogs: Personal NEWS 2"",
+        ""description"": ""Ask your question for the Q&A: http://on.fb.me/1hs0PsW --------------------------------------------- ▽ Send stuff to my Post Box ▽ Sp4zie ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/S0tr3UYPGbU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/S0tr3UYPGbU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/S0tr3UYPGbU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Sp4zie"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-01-24T17:58:31Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""WK2T-ZHdLH9Y6NtYW1ZUShpgp64"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""XmfQTC9VY9s""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-08-30T18:30:00Z"",
+        ""channelId"": ""UC4Llz_FxdMEU0iWO4aG_Xjg"",
+        ""title"": ""On Cars - Car Tech 101: The new tech to prevent puking in self-driving cars."",
+        ""description"": ""If you get a little queasy riding in a car, the autonomous future promises more illness. Research is proceeding on several fronts to ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/XmfQTC9VY9s/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/XmfQTC9VY9s/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/XmfQTC9VY9s/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""CNET Cars"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-08-30T18:30:00Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_1jyll9zcslzz6_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1jylmrqmgnom9_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_1jym2r6bnkgv6_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1k1wrkzm22c12_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1k229ynwyu1x5_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""vwH5HmYLoPvRjJS8MFRTMVQmnDg"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""IT"",
+  ""pageInfo"": {
+    ""totalResults"": 84,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""UxFTO4nkwjzIj14X61Hr3pOC9SU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""SpSCVYLDaY8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-11-02T03:39:56Z"",
+        ""channelId"": ""UCIPCAt_Qd_vprARrnfloZeA"",
+        ""title"": ""adscripted PRONUNCIATION"",
+        ""description"": """",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/SpSCVYLDaY8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/SpSCVYLDaY8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/SpSCVYLDaY8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Pronunciation Gaia"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-11-02T03:39:56Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""xZwdSitZ2sjOTo2JE6wW9oVzZn0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""N6O9S4phiAo""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-06-08T17:05:25Z"",
+        ""channelId"": ""UCASvsDeDbHNAwXtHGyEoI6A"",
+        ""title"": ""Adscripted"",
+        ""description"": ""Provided to YouTube by MGM Adscripted · Subtle South Grandmother Heavy ℗ 2022 Subtle South Released on: 2022-05-20 ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/N6O9S4phiAo/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/N6O9S4phiAo/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/N6O9S4phiAo/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Various Artists - Topic"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-06-08T17:05:25Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""FJYTq5pZBu5dID9ikrgWobJ_lEU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""lngKNJTVzaA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-04-21T04:15:40Z"",
+        ""channelId"": ""UCaunzAulfM30Nkg8xCAqT0A"",
+        ""title"": ""adscripted Multilingual Translation"",
+        ""description"": """",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/lngKNJTVzaA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/lngKNJTVzaA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/lngKNJTVzaA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Multilingual Translation Translate from English to"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-04-21T04:15:40Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""uEQ-1NcgCUqT5QhdIm-w6a2ahwM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""pQQoS1w5Mw0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-02-16T23:26:12Z"",
+        ""channelId"": ""UCeElmCkT1hfDJ7YhLCwxG_g"",
+        ""title"": ""adscripted (Every English Word Pronounced) 📕🔊🗣️😎✅"",
+        ""description"": ""Help us educate with a LIKE, SUBSCRIBE,and DONATION. Thank you! https://www.patreon.com/SeeHearSayLearn ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/pQQoS1w5Mw0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/pQQoS1w5Mw0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/pQQoS1w5Mw0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""See Hear Say Learn"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-02-16T23:26:12Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""LUzy9Mjjs-pNfbu8tz9kEPcq8zw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""bw21ffeYmOc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-09-10T06:42:52Z"",
+        ""channelId"": ""UC2c2t7pbWFZN3a0XxjYHgHQ"",
+        ""title"": ""Adscripted: How to pronounce Adscripted in english (correct!).Start with A. Learn from me."",
+        ""description"": ""Follow me!Learn from me how to pronounce the word Adscripted in english.This video shows you how to pronounce the word ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/bw21ffeYmOc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/bw21ffeYmOc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/bw21ffeYmOc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Pronounce Word"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-09-10T06:42:52Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_qe3vn648otv9_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qe9ete2bpd0z_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qeewemq6cig6_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qeff4hquaq91_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qhnv7o7owtv8_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""bY3m7F2M71dkVeQDfZKvCl4dr5Y"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""IT"",
+  ""pageInfo"": {
+    ""totalResults"": 155,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""8WWGWCrECugv50jJIhwOHcNQ_0A"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""oo4IaK3gjKA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-01-15T09:47:16Z"",
+        ""channelId"": ""UC78229TdoxsYDvTSRAe9RFQ"",
+        ""title"": ""Psy - gangnam style . remix 2013 ( Laurent.H remix &  Let's GoMusic )"",
+        ""description"": ""Let's GoMusic http://www.facebook.com/lets.gomusic.7"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/oo4IaK3gjKA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/oo4IaK3gjKA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/oo4IaK3gjKA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/oo4IaK3gjKA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/oo4IaK3gjKA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Let's GoMusic"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-01-15T09:47:16Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""t3N5_ZFYiKbW2eAEcBEHbmoMjoc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""NO7_zYtFn9M""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-03-08T06:29:02Z"",
+        ""channelId"": ""UCVv-CbJVf9lrN6AFBRaEN5w"",
+        ""title"": ""カンナムスタイル MVコピー 2019"",
+        ""description"": ""わずか1週間の間で撮影と編集をするという過密スケジュールの中、協力してくれた3-1の皆んなに感謝です。\n\n撮影にはiPhoneをはじめ一眼レフやGoPro、360度撮影可能な全天球カメラを駆使し場面に応じて使い分け、編集はFinal Cut Proで行いました。\n\n映像初心者ではございますが色味を合わせたりマスキングエフェクトなど細かな演出まで再現出来ていると思います、他のコピー動画に劣らない作品を作り上げようと尽力した結果、文化祭の審査で最優秀賞を獲得することができました。"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/NO7_zYtFn9M/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/NO7_zYtFn9M/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/NO7_zYtFn9M/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/NO7_zYtFn9M/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/NO7_zYtFn9M/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""ひろっきぃ"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-03-08T06:29:02Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""krRjuxUOzNVxImwyaCu8Ny8_7c0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Ts_FB4_S818""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""0mXnjdEg6xiIy4GObhiFEuphGGQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ASO_zypdnsQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-04-13T10:58:21Z"",
+        ""channelId"": ""UCrDkAvwZum-UTjHmzDI2iIw"",
+        ""title"": ""PSY - GENTLEMAN M/V"",
+        ""description"": ""PSY - ‘I LUV IT’ M/V @ https://youtu.be/Xvjnoagk6GU\nPSY - ‘New Face’ M/V @https://youtu.be/OwJPPaEyqhI\n\nPSY - 8TH ALBUM '4X2=8' on iTunes @\nhttps://smarturl.it/PSY_8thAlbum\n\nPSY - GENTLEMAN on iTunes @ http://smarturl.it/PsyGentlemaniT\n \n#PSY #싸이 #GENTLEMAN #젠틀맨\n\nMore about PSY@\nhttp://www.youtube.com/officialpsy\nhttp://www.facebook.com/officialpsy\nhttp://twitter.com/psy_oppa\nhttps://www.instagram.com/42psy42\nhttp://iTunes.com/PSY\nhttp://sptfy.com/PSY\nhttp://weibo.com/psyoppa"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ASO_zypdnsQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""officialpsy"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-04-13T10:58:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""CRDgGfBxM8cHfnJd_LSVAUPUajQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""msSc7Mv0QHY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-11-06T11:45:09Z"",
+        ""channelId"": ""UCpIMOJmLiDq8ikUzrjezMIA"",
+        ""title"": ""J.Geco - Chicken Song"",
+        ""description"": ""OUTNOW! Chicken Dance 2022!!!!!!!\nhttps://youtu.be/Tc2F7yhP_wQ\n\n📷 Instagram https://www.instagram.com/jgeco_official/\n\n🎥 Chicken Song Miniseries https://www.youtube.com/playlist?list=PLoO8l0BJX3hG3NkdJJOZvT5tg8RmFLesh\n\n💿 Music\n1) On Spotify https://goo.gl/dNKAeK\n2) On iTunes https://goo.gl/fKvRUJ \n3) On Google Music https://goo.gl/z8cNwt\n\n🐔🐔🐔🐔 Stay Tuned for new content in 2021 o.o 🐔🐔🐔🐔"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/msSc7Mv0QHY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""J. Geco"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-11-06T11:45:09Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_qxzen21kvbjs_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_r1cv65ztcaih_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""tpFBSQj3LRjsrhTVRRD-3OJ_EY4"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 261049,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""KoY0_ZNtMs7PV42-bSr8oQFaCAg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""w1ABOYXXGzY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-31T21:30:00Z"",
+        ""channelId"": ""UC4YaOt1yT-ZeyB0OmxHgolA"",
+        ""title"": ""【VR 8K 360°】Kizuna AI - Hello, Morning ~Happy New Year Edition~【Special Music Video】"",
+        ""description"": ""2020年の幕開けを、一緒に、この歌で！ 360°のバーチャルワールドで、あけましておめでとうございます！ 今年も、どうぞ ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/w1ABOYXXGzY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/w1ABOYXXGzY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/w1ABOYXXGzY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""A.I.Channel"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-31T21:30:00Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""kBI0kB6zyZwXl9wrxEXwpgEjKLk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""5SW_6FQJuF0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-01-18T11:06:27Z"",
+        ""channelId"": ""UCjqJPRnXuq3m4BoITvqKu_g"",
+        ""title"": ""Super Mario Bros 3D 360 VR - Merry Christmas and Happy New Year"",
+        ""description"": ""Help us on Patreon : https://www.patreon.com/frenchtouchfactory Help VR creation on our Tipee page ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/5SW_6FQJuF0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/5SW_6FQJuF0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/5SW_6FQJuF0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""French Touch Records"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-01-18T11:06:27Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""M4i9TYXshpEuoev9RSXixI0TFLg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""a1hpAg6EfhA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-12-30T02:41:04Z"",
+        ""channelId"": ""UC6NkTCJimTbM1KKCHkpL4uw"",
+        ""title"": ""[180 3D VR] Her B series! See you next year!"",
+        ""description"": ""[180 3D VR] Her B series! See you next year!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/a1hpAg6EfhA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/a1hpAg6EfhA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/a1hpAg6EfhA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""VATCS"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-12-30T02:41:04Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""DkUNZQZvFqWVPKikucjBgY6jR_c"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""swEPiBIOAhM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-03-15T16:40:50Z"",
+        ""channelId"": ""UC-K0ZhI8BeC7xaik3c0L4uQ"",
+        ""title"": ""ПЕСНЯ ГОДА  ВИДЕО 360"",
+        ""description"": ""Рекомендовано к просмотру в шлеме VR BOX\""ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ\"" Вы можете увидеть лучшие моменты ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/swEPiBIOAhM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/swEPiBIOAhM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/swEPiBIOAhM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""360 VR RUSSIA"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-03-15T16:40:50Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""KWzVoAAeRXDedSRus1dF4P5mP1s"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""OLnMA_CJCHQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-08-04T02:58:47Z"",
+        ""channelId"": ""UC0rrqro52O-Qos9SxqfKo-g"",
+        ""title"": ""[IA]~Six Trillion Years § Overnight&#39;s Story 1 hour"",
+        ""description"": ""I created this video with the YouTube Video Editor (http://www.youtube.com/editor) I don't claim nor own this video there on this is ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/OLnMA_CJCHQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/OLnMA_CJCHQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/OLnMA_CJCHQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Heaven Muse"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-08-04T02:58:47Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_rhje5ef51usx_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rkzk4hs33iap_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_rl2dj8c8hfli_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_rlan80qw91t0_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s12vez258svq_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s18c5u8y6f6r_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_t4w6dwzno84z_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_t81bzdebkpio_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""U8jC52huy83eMbW8zUGNg3CqBPU"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 128,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""HmikFs29WWiRTREf4G4UYBKqBTQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""D8p-DaQBeTg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-11-18T09:42:56Z"",
+        ""channelId"": ""UC84t25xqhPEPpGY7NBZJ_eA"",
+        ""title"": ""Joaquín Sánchez al conocer a su suegra: \""Empezó a hablar y no paraba\"" - El Hormiguero"",
+        ""description"": ""Todos los programas de 'El Hormiguero' en ATRESplayer: https://www.atresplayer.com/antena3/programas/el-hormiguero/?so=so:sour-youtube:cn-antena3\n\nSi te ha gustado el vídeo, suscríbete a nuestro canal: http://www.youtube.com/user/antena3?sub_confirmation=1 \n\nJoaquín ha hablado de su matrimonio con Susana Saborido y ha asegurado que ella \""al principio no se fiaba\"" de él. \n\n#Joaquin\n#ElHormiguero\n#Antena3"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/D8p-DaQBeTg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/D8p-DaQBeTg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/D8p-DaQBeTg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/D8p-DaQBeTg/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/D8p-DaQBeTg/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Antena 3"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-11-18T09:42:56Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""IsL05MAHx7e6AuR5zNvmxYwd-v4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""pG8YDQ_LTnk""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-06-07T07:29:47Z"",
+        ""channelId"": ""UC84t25xqhPEPpGY7NBZJ_eA"",
+        ""title"": ""El ataque de risa de Roberto Carlos y Júlio Baptista - El Hormiguero 3.0"",
+        ""description"": ""Todos los capítulos de 'El Hormiguero 3.0' en Atresplayer:\nhttps://www.atresplayer.com/antena3/programas/el-hormiguero/\n\nSi te ha gustado el vídeo, suscríbete a nuestro canal: http://www.youtube.com/user/antena3?sub_confirmation=1\n\nCarlos Latre ha venido con su teléfono escacharrado de imitaciones del mundo del fútbol y ha desatado las risas entre los invitados. Roberto Carlos ha sufrido un ataque de risa al escuchar a Julio Baptista imitando a Florentino Pérez. Además, también se ha imitado a sí mismo sin darse cuenta. ¡Qué momentazo! \n\n#RobertoCarlos\n#JulioBaptista\n#PabloMotos\n#ElHormiguero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/pG8YDQ_LTnk/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/pG8YDQ_LTnk/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/pG8YDQ_LTnk/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/pG8YDQ_LTnk/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/pG8YDQ_LTnk/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Antena 3"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-06-07T07:29:47Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""SfB2ZsZE9zrc7mNOq5iT2dyL1YU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ZdeuiXI9D3s""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-08-09T20:58:04Z"",
+        ""channelId"": ""UCeB7JZwcar2fVoK2w2f9OwA"",
+        ""title"": ""La convivencia de JOAQUÍN y CEJUDO durante una concentración | TEST"",
+        ""description"": ""Joaquín Sánchez y Álvaro Cejudo comparten habitación durante las concentraciones y han contestado a las preguntas de este divertido test. ¿Coincidirán en sus respuestas los jugadores del Real Betis Balompié?\n\nSUSCRÍBETE a nuestro canal https://www.youtube.com/user/realbeti...\nSÍGUENOS en: \nTwitter https://twitter.com/RealBetis\nFacebook https://www.facebook.com/realbetisbal...\nInstagram https://www.instagram.com/realbetisba..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ZdeuiXI9D3s/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ZdeuiXI9D3s/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ZdeuiXI9D3s/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ZdeuiXI9D3s/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ZdeuiXI9D3s/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Real Betis Balompié"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-08-09T20:58:04Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""NrOtEWJSxGCq035pDWqCWeqXhWE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""5FljGhgEED0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-21T11:15:19Z"",
+        ""channelId"": ""UCTv-XvfzLX3i4IGWAm4sbmA"",
+        ""title"": ""TOP 20 GOALS Joaquín en LaLiga Santander"",
+        ""description"": ""¡Disfruta de los mejores 20 goles de Joaquín en LaLiga desde 2006! LaLiga Santander 2019/2020\n\nTOP 20 GOALS Joaquín en LaLiga Santander:\n\n00:00 20.- Valencia CF vs Real Madrid J14 2009/2010\n00:32 19.- Málaga CF vs Real Valladolid J08 2012/2013\n01:02 18.- Málaga CF vs Granada CF J15 2012/2013\n01:31 17.- Valencia CF vs RC Recreativo de Huelva J32 2006/2007\n02:02 16.- Real Betis vs Málaga CF J06 2016/2017\n02:30 15.- Málaga CF vs Granada CF J03 2011/2012\n02:59 14.- Valencia CF vs UD Almería J21 2008/2009\n03:41 13.- Valencia CF vs Real Betis J03 2016/2017\n04:06 12.- Málaga CF vs Levante UD J04 2012/2013\n04:30 11.- Real Betis vs RC Deportivo J04 2017/2018\n05:00 10.- Real Sociedad vs Real Betis J07 2017/2018\n05:35 9.- Real Betis vs CD Leganés J19 2017/2018\n05:59 8.- Real Betis vs Getafe CF J26 2018/2019\n06:25 7.- Málaga CF vs Valencia CF J01 2010/2011\n06:54 6.- Real Betis vs Sevilla FC J03 2018/2019\n07:20 5.- Atlético de Madrid vs Valencia CF J23 2010/2011\n07:58 4.- Málaga CF vs Granada CF J03 2011/2012\n08:29 3.- Valencia CF vs CA Osasuna J30 2009/2010\n09:04 2.- CA Osasuna vs Real Betis J09 2016/2017\n09:41 1.- Real Betis vs SD Huesca J37 2018/2019\n\nSuscríbete al canal oficial de LaLiga Santander en HD http://goo.gl/Cp0tC\r\nSubscribe to the Official Channel of LaLiga in High Definition http://goo.gl/Cp0tC\r\n\r\nLaLiga Santander on YouTube: http://goo.gl/Cp0tC\r\nLaCopa on YouTube: http://bit.ly/1P4ZriP\r\nLaLiga SmartBank on YouTube: http://bit.ly/1OvSXbi\r\nFacebook: https://www.facebook.com/laliga\r\nTwitter: https://twitter.com/LaLiga\r\nInstagram: https://instagram.com/laliga\r\nGoogle+: http://goo.gl/46Py9"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/5FljGhgEED0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/5FljGhgEED0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/5FljGhgEED0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/5FljGhgEED0/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/5FljGhgEED0/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LaLiga Santander"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-21T11:15:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""KEMwJiJ2P93vsE_6khL5gH06VkU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""eu7KTPFqqJ4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-02T22:12:15Z"",
+        ""channelId"": ""UC0tf11evBM28FBz9dbG4naw"",
+        ""title"": ""LOS MOTOBETIS 🤣💚#alioga #realbetis #Rosaliamotomami #motomamitour #rosaliachallenge"",
+        ""description"": ""@Real Betis Balompié @Joaquín Sánchez @ROSALÍA @MOTOMAMI"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/eu7KTPFqqJ4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/eu7KTPFqqJ4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/eu7KTPFqqJ4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/eu7KTPFqqJ4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""Alioga"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-02T22:12:15Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_t84ldded1f79_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""DCv8u79rz_Z5yPVlSxf2awnPWTQ"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_t89mzq268cx1_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_t8a4x8yik5kj_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_t8cwb3njjbxs_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_to7ap9bug4dv_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_toamq90xg08k_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""PPwo1uuvENwtvvdCcJPKUx4braA"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 164,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""e-Sb4r06LOjegbjizBis9LiEocY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""L-oGivB6g1I""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ix14fXNjNw1ee4x14OTEMUj18RQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""M7F73sQoBf8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-15T04:15:16Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #19"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #19\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Ru Deep Radio @Deep Mood. @Wonder Deep \n\n🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/deephouse  \n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic \n➤ Soundcloud → https://soundcloud.com/deepdiscorecords  \n➤ Website → https://www.deepdiscomusic.com/\n\n🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\n\n0. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n1. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n2. GeoM - Back To You (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n3. Marc Philippe - Is Someone Waiting For Me (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n4. Pete Bellis & Tommy - You Should Know (Costa Mee Remix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n5. Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix)\nhttps://vibe.deepdiscomusic.com/ddm\n6. Pete Bellis & Tommy - Missing The Way (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic.\n7. Pete Bellis & Tommy - Looking For A New Home (Nikko Culture Remix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n8. Marc Philippe - Summer Of Love (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n9. Marc Philippe - September Rain (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n10. Marc Philippe - I Wanna Be Somebody (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n11. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n12. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n13. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n14. Pascal Junior - Feelings\nhttps://EpicTonesRecords.lnk.to/l8zxF\n15. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n16. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n17. Stay With Me - LeXxìv & Victor Perry\nhttps://spoti.fi/3kGUsZf\n18. Stoto - My Love\nhttps://spoti.fi/2EJyplh\n19. Ela Van Wolf - Way We Feel\nhttps://open.spotify.com/album/5IBX0U5Ryc9y0ZjBuiMZ0v\n20. Horbatso - Never Again\nhttps://spoti.fi/38Nh8nx\n21. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n22. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\n\nCredit for the Photo: https://www.shutterstock.com/vi/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/M7F73sQoBf8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/M7F73sQoBf8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/M7F73sQoBf8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-15T04:15:16Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""_QyRWRQDS_h3ScIbhROcpVBIWGE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""XSFtQ8JsaDs""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""l8RivSkhxXrK3O1OBbuUA5Kp-Gs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""WNeLUngb-Xg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-10-09T15:20:18Z"",
+        ""channelId"": ""UCaB_KyYOjfNHBm0f-TvBmiw"",
+        ""title"": ""Linkin Park - In The End (Mellen Gi & Tommee Profitt Remix)"",
+        ""description"": ""Tommee Profitt - In The End (Mellen Gi Remix) [Fleurie Cover]\n\n🎧 Follow TrapMusicHD 🎧\nFacebook: https://www.facebook.com/TrapMusicHD\nTwitter: https://twitter.com/TrapMusicHD\nSoundcloud: https://soundcloud.com/trapmusichd\nInstagram: http://instagram.com/trapmusichdtv\nVK: http://vk.com/trapmusichdtv\nSnapchat: TrapMusicHD\nMusical.ly: TrapMusicHD\n\n💎 Follow Mellen Gi 💎\nInstagram: instagram.com/mellen_gi\nSoundcloud: https://soundcloud.com/mellen_gi\nVK: https://vk.com/mellen_gi\n\n💎 Follow Tommee Profitt 💎\nYoutube: https://www.youtube.com/tommeeprofitt\nFacebook: https://www.facebook.com/tommeeprofitt\nTwitter: https://twitter.com/tommeeprofitt\nInstagram: http://www.instagram.com/tommeeprofitt\n\n💎 Follow Fleurie 💎\nYoutube: https://goo.gl/wnW1hX\nFacebook: https://www.facebook.com/fleuriemusic\nTwitter: https://twitter.com/fleuriemusic\nInstagram: https://www.instagram.com/fleuriemusic\n\nM6 Video by Pennzoil:\nFacebook: http://www.facebook.com/pennzoil \nTwitter: http://www.twitter.com/pennzoil \nInstagram: http://instagram.com/pennzoil \n\nLamborghini Video By Hyrax Media Group:\nYoutube: https://www.youtube.com/channel/UCU8m0CoZ4Ptoc_9oGwUXKdA\nInstagram: http://instagram.com/HyraxMediaGroup\n\nTimelapse shots by Niko Juntunen\nYoutube: https://www.youtube.com/channel/UCDZ02U4sUn2wvc9t8YmRF1Q\nInsatgram: http://instagram.com/nikojuntunen\n\n🎶 HD Family 🎶\nRapMusicHD: https://goo.gl/J1Noub\nBassMusicHD: https://goo.gl/0RN70B\nChillMusicHD: https://goo.gl/EXAoAh\nHouseMusicHD: https://goo.gl/l51Abz\nEDMMusicHD: https://goo.gl/iGNNwY\nGanjaMusicHD: https://goo.gl/fXdWrL\n\nAll 'Sunday - Funday' uploads: https://goo.gl/G4KK1d\n\n✅ All Copyright free music playlist: http://goo.gl/lo248y 🔥\n\n#LinkinPark #InTheEnd #MellenGi"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/WNeLUngb-Xg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/WNeLUngb-Xg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/WNeLUngb-Xg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/WNeLUngb-Xg/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/WNeLUngb-Xg/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""TrapMusicHDTV"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-10-09T15:20:18Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""6SlW6EsZnlxFdFYBuqvcDjyWMwI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""lJv2N4iexm8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-09-07T07:46:17Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #47"",
+        ""description"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #47\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nTag: #SummerMusicMix #HotSummer #DeepHouse\n\nYoutube: @Ru Deep Radio @Deep Mood. @Wonder Deep \n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n1. Around This World - Costa Mee (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n2. Costa Mee - Love In Undercover (Original Mix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n3. Costa Mee, Pete Bellis _ Tommy - Unlock Your Love (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/ddr208\n4. Pete Bellis _ Tommy - Lesson (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddm\n5. Nando Fortunato - New Love Life\nhttps://vibe.deepdiscomusic.com/ddr319\n6. Costa Mee, Pete Bellis _ Tommy - Unspoken War\nhttps://vibe.deepdiscomusic.com/ddr327\n7. Marc Philippe, Pete Bellis _ Tommy - Dance In The Rain\nhttps://vibe.deepdiscomusic.com/ddr323\n8. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n9. Paul Lock, Pete Bellis _ Tommy - Falling\nhttps://vibe.deepdiscomusic.com/ddr267\n10. GeoM - With You (Original Mix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n11. Nando Fortunato - I Wanna change (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n12. GeoM - Bleeding In Love (Nando Fortunato Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n13. Costa Mee - Rising In (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n14. Marc Philippe - September Rain (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n15. GeoM - Back To You (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n16. Pete Bellis _ Tommy - Missing The Way (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n17. Housenick - I Am Ok (Pete Bellis & Tommy Remix) #DeepDiscoRecords\nhttps://vibe.deepdiscomusic.com/bestofdd\n18. Housenick - Without You (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr296\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately.\n\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/lJv2N4iexm8/default_live.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/lJv2N4iexm8/mqdefault_live.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/lJv2N4iexm8/hqdefault_live.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/lJv2N4iexm8/sddefault_live.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/lJv2N4iexm8/maxresdefault_live.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""live"",
+        ""publishTime"": ""2022-09-07T07:46:17Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]"
+test_trqvwhsdo6d3_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_u8e0a19dvvj9_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_ubrwt2d5r68z_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_ubryr3ydlrnd_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_urdzxtf9mble_youtubesearchlist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+    ""errors"": [
+      {
+        ""message"": ""The request cannot be completed because you have exceeded your \u003ca href=\""/youtube/v3/getting-started#quota\""\u003equota\u003c/a\u003e."",
+        ""domain"": ""youtube.quota"",
+        ""reason"": ""quotaExceeded""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/search'.
+test_urpndh3kj2nr_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_urrxxnajv59d_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""dBK7D3Pb8k0-U7utu2t81EbZtY4"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vbt0uw57k2ue_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""TUyn-4tO5zyHi0f5jpXPSV--WGs"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vf0xumn7zne8_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf0xx1gcpoip_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""DCv8u79rz_Z5yPVlSxf2awnPWTQ"",
+  ""regionCode"": ""DE"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

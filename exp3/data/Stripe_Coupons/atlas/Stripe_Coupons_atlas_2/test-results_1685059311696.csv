@@ -1,0 +1,79 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib37vlb7m1pt_PostCoupons,200,"{
+  ""id"": ""TopjYgiX"",
+  ""object"": ""coupon"",
+  ""amount_off"": 75,
+  ""created"": 1685059328,
+  ""currency"": ""bam"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 98,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_sof3h6roptf9_PostCoupons,200,"{
+  ""id"": ""cWR4hEkS"",
+  ""object"": ""coupon"",
+  ""amount_off"": 8,
+  ""created"": 1685059334,
+  ""currency"": ""bdt"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""impishly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_to7e7ho6ka40_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hPNBELxTOsFmba?t=1685059339"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uv5w32504eoz_PostCoupons,200,"{
+  ""id"": ""SuYRlrh9"",
+  ""object"": ""coupon"",
+  ""amount_off"": 89,
+  ""created"": 1685059345,
+  ""currency"": ""pkr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 60,
+  ""metadata"": {},
+  ""name"": ""scarily"",
+  ""percent_off"": null,
+  ""redeem_by"": 1845188258,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uvgypxl8opio_PostCoupons,200,"{
+  ""id"": ""pOiz8SkIz4k"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059351,
+  ""currency"": ""pen"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 84,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 98.0,
+  ""redeem_by"": 1715830475,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

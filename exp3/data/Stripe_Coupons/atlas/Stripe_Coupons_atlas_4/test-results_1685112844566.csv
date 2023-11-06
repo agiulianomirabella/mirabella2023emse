@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hvb3by4nok81_PostCoupons,200,"{
+  ""id"": ""MgwRxtgXsFMff1q"",
+  ""object"": ""coupon"",
+  ""amount_off"": 40,
+  ""created"": 1685112861,
+  ""currency"": ""gip"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 85,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ibh0ejx5cze8_PostCoupons,200,"{
+  ""id"": ""8SuUSCYn"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112867,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""smock"",
+  ""percent_off"": 93.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iev17t9kfupe_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Ac6la5RMv1u5tt?t=1685112873"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jiajebbcn1o4_PostCoupons,200,"{
+  ""id"": ""8cuGkgPeeLb5xxxzx"",
+  ""object"": ""coupon"",
+  ""amount_off"": 14,
+  ""created"": 1685112879,
+  ""currency"": ""czk"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""disgust"",
+  ""percent_off"": null,
+  ""redeem_by"": 1857868143,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qdysuw3cpv1e_PostCoupons,200,"{
+  ""id"": ""pflmkfxLaO"",
+  ""object"": ""coupon"",
+  ""amount_off"": 60,
+  ""created"": 1685112885,
+  ""currency"": ""mzn"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 67,
+  ""metadata"": {},
+  ""name"": ""totalise"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

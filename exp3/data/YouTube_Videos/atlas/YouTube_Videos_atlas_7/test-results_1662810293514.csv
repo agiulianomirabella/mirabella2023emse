@@ -1,0 +1,88 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jekzw8ciounr_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""ue6L8DZHImGo3-qYFiRdampNYEs"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""-YHJfAyZTJAwbrXAU3F3VZSrpzQ"",
+      ""id"": ""n8I-YVuaSR0"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Entertainment"",
+          ""https://en.wikipedia.org/wiki/Television_program""
+        ]
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1jig23icorqd5_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skmslem9pr20_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""-Pf2pKo2F4RTzIaH8jFITmGN_rA"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""iKAaQ-6AOSn7awnrHnRe5uRGhK8"",
+      ""id"": ""yDgLFOxnQ8Y"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Entertainment"",
+          ""https://en.wikipedia.org/wiki/Television_program""
+        ]
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_vbk5ne9ic6li_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""y9zrrmo0EU5x3I2kkZemICGv07U"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""RBaKTC0ZquHvHQj_ofHoHr_C9cs"",
+      ""id"": ""TUJWx7vo44c"",
+      ""recordingDetails"": {}
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_vbq7wzcvrvw6_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""RuuXzTIr0OoDqI4S0RU6n4FqKEM"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,true,none

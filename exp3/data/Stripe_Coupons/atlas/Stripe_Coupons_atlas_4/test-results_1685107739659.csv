@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7gerch0jfaq_PostCoupons,200,"{
+  ""id"": ""aqNBvFrYr4sln0ALFGK"",
+  ""object"": ""coupon"",
+  ""amount_off"": 21,
+  ""created"": 1685107756,
+  ""currency"": ""bbd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 96,
+  ""metadata"": {},
+  ""name"": ""affected"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iauvdedfvlmf_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_gxll5dNNOW8wYu?t=1685107762"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jetsrbcgpb1z_PostCoupons,200,"{
+  ""id"": ""8VeU2pEV"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107768,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 48,
+  ""metadata"": {},
+  ""name"": ""distensible"",
+  ""percent_off"": 53.0,
+  ""redeem_by"": 1857245726,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k1wsaukfnazn_PostCoupons,200,"{
+  ""id"": ""aet6ztIG"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685107773,
+  ""currency"": ""lbp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1790614122,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r17c0pcqaomp_PostCoupons,200,"{
+  ""id"": ""G6zqHDMz"",
+  ""object"": ""coupon"",
+  ""amount_off"": 27,
+  ""created"": 1685107779,
+  ""currency"": ""szl"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 45,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

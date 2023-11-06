@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iext23vv5ttk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_R2sErs09eKj8x5?t=1685083888"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jxzwxwnuwt2x_PostCoupons,200,"{
+  ""id"": ""lDUQ63Vy"",
+  ""object"": ""coupon"",
+  ""amount_off"": 98,
+  ""created"": 1685083894,
+  ""currency"": ""twd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 56,
+  ""metadata"": {},
+  ""name"": ""posted"",
+  ""percent_off"": null,
+  ""redeem_by"": 1853304754,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s102v6wayddh_PostCoupons,200,"{
+  ""id"": ""UKeeeEso"",
+  ""object"": ""coupon"",
+  ""amount_off"": 3,
+  ""created"": 1685083899,
+  ""currency"": ""khr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1jhzv5q8ncj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_KKrv5YQPRzb1Di?t=1685083905"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_sksv6drt7s4x_PostCoupons,200,"{
+  ""id"": ""TpJe5kbf"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083911,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 99,
+  ""metadata"": {},
+  ""name"": ""sixty-five"",
+  ""percent_off"": 93.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

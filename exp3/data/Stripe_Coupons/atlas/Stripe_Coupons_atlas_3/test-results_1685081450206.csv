@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrs22le1f52d_PostCoupons,200,"{
+  ""id"": ""KgQyvDeiOIGqGYZ8pehZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081468,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""scorching"",
+  ""percent_off"": 58.0,
+  ""redeem_by"": 1738395065,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iykj3qeev90m_PostCoupons,200,"{
+  ""id"": ""Syz1r9GJSO3PytEV5"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081474,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 34,
+  ""metadata"": {},
+  ""name"": ""rapaciously"",
+  ""percent_off"": 27.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rhty7xrsg4z9_PostCoupons,200,"{
+  ""id"": ""H2odgw2Go97M3849uPS6"",
+  ""object"": ""coupon"",
+  ""amount_off"": 85,
+  ""created"": 1685081482,
+  ""currency"": ""ron"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 69,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sohc31gyavjt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8PuVbblkcQZ45i?t=1685081489"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbq95lf9d6pi_PostCoupons,200,"{
+  ""id"": ""CV7rAsCNn4CYuEGvDnl"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685081494,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""conically"",
+  ""percent_off"": 93.0,
+  ""redeem_by"": 1710742675,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

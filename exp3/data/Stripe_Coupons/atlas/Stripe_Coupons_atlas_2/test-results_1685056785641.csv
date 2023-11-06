@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7wh2apzs57m_PostCoupons,200,"{
+  ""id"": ""9J55cRYFtx5cA"",
+  ""object"": ""coupon"",
+  ""amount_off"": 46,
+  ""created"": 1685056802,
+  ""currency"": ""rub"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1848511063,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s50nu2d6t0kx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_p0EvotAoG5DNOs?t=1685056808"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_somuxa1ml451_PostCoupons,200,"{
+  ""id"": ""ANZrtSYSZgmgVL1F2e79"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685056813,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 7,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 14.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u8ar1o51gbar_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HMd4b1Vud87uvs?t=1685056819"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vf6fipk4w189_PostCoupons,200,"{
+  ""id"": ""B9kucqZQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 51,
+  ""created"": 1685056825,
+  ""currency"": ""jpy"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1729896470,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

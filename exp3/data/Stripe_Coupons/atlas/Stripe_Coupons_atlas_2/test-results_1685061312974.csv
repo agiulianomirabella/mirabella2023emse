@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iycoxdq7lg6t_PostCoupons,200,"{
+  ""id"": ""sYKowBXg"",
+  ""object"": ""coupon"",
+  ""amount_off"": 38,
+  ""created"": 1685061329,
+  ""currency"": ""scr"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 37,
+  ""metadata"": {},
+  ""name"": ""forte"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rkwtj0s9ibsn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_CY2xqQUavxPE3D?t=1685061335"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7xdpd2h1mb9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ngairtiNSH6rCS?t=1685061341"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urp4lhi8r5ut_PostCoupons,200,"{
+  ""id"": ""CynJ7YLR"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685061346,
+  ""currency"": ""eur"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 48,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 85.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urxf5c98ao8l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_N3a7oRfR8LfRYc?t=1685061352"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

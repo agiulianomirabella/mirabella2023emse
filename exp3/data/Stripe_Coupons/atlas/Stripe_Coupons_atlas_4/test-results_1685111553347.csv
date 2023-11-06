@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrbftb7n0oyu_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Iy7e6cwCFtN5pp?t=1685111570"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hrdqrel2ibzo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_AY0hbq3g01VS0R?t=1685111575"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ien89x5wvyhw_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3zgdUoIBhqFcT7?t=1685111581"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhog5xp8ta3p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dIW0EFN7qGrhyI?t=1685111587"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t49imyu4l3jr_PostCoupons,200,"{
+  ""id"": ""PkRrTjZX"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111593,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""porta"",
+  ""percent_off"": 6.0,
+  ""redeem_by"": 1806155088,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

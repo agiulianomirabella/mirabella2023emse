@@ -1,0 +1,89 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbjat6w0jsrl_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""dlMCcyMH4w4Y4as4-LMgfvsxeC0"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""Rte9VpZIEafXgHZzCxILCHeL2x0"",
+      ""id"": ""eVIozKR9p50"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1ibc00tcegysw_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""ijCngq-l7eW2WnI88nm1YroLQME"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""LPofQD1IErGzrX1teLs9siF_b2o"",
+      ""id"": ""yuD34tEpRFw"",
+      ""statistics"": {
+        ""viewCount"": ""7116038"",
+        ""likeCount"": ""106190"",
+        ""favoriteCount"": ""0"",
+        ""commentCount"": ""8680""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qhw6ivwzeo2q_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""6MYG-qeAwftbIy-gbfCtmXU4mjY"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 45
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qy26epksqa0h_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s1h69llkgkf9_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iev0tgpceuyg_PostCoupons,200,"{
+  ""id"": ""ORdi80mO6qixe03C"",
+  ""object"": ""coupon"",
+  ""amount_off"": 14,
+  ""created"": 1685058497,
+  ""currency"": ""pgk"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1716998418,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxl14e8gtpo1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ddOzQhtA9rJDyj?t=1685058503"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhocq6j49l4h_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hs8qE8wRPjc17M?t=1685058508"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4a24yduz779_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_vOKyBs920h9xBP?t=1685058514"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_trwvr94d4g9t_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_1beMd7tcoQQpwJ?t=1685058520"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

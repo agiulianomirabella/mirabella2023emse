@@ -1,0 +1,517 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbm24701liyf_PostCoupons,200,"{
+  ""id"": ""ObyKz7PXOl4x"",
+  ""object"": ""coupon"",
+  ""amount_off"": 81,
+  ""created"": 1685479296,
+  ""currency"": ""yer"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 19,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1hrgfevmq94xl_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_xfFcuY1eVR6154?t=1685479303"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hrj6seu217p3_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_T7sua6voxDNBnn?t=1685479308"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ibhjhy9wb6g2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wMfCQ5f6u1gDwt?t=1685479314"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iexrtc99krp5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Q0MgDc0CZnmkrF?t=1685479320"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iv6k91zncoc1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8qLPlelBMblVnr?t=1685479325"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iv6lt4h3fbz9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ctkCd2PCHNxPAA?t=1685479331"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iv9ajc4mty04_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_05Hv6w6Fl9bXt7?t=1685479338"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iynahuz6xjdu_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_joXi5vksLWHv2P?t=1685479344"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jenrln1p1lyd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6RZxK9WvKyPRzN?t=1685479349"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jezd0uc74svk_PostCoupons,200,"{
+  ""id"": ""nDRHsBScnOAnX"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685479355,
+  ""currency"": ""zar"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 12,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 29.0,
+  ""redeem_by"": 1716579195,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ji4iaxwpkig6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rwFi5tHaJjXrIl?t=1685479361"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ji7rm7lepjqt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wAdHcH6nMM964b?t=1685479366"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jxzg99m5y69d_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_KKPsF5fO2pVbTh?t=1685479372"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy276ki2hs8n_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JzquE9W6gvrAxq?t=1685479377"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy4wm1reua8z_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_sTv05kKbuyj4LV?t=1685479383"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jyovrfyt4x0z_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_p5K2Gb3MZRvDwG?t=1685479389"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1k1wq132971v4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_elyPzhdDdHcP2K?t=1685479394"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdvha8c35d0z_PostCoupons,200,"{
+  ""id"": ""okq8Jj0Gnxn"",
+  ""object"": ""coupon"",
+  ""amount_off"": 30,
+  ""created"": 1685479400,
+  ""currency"": ""xof"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 31,
+  ""metadata"": {},
+  ""name"": ""disbelievingly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe4ch836xn4y_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_gF3dRC3CDyCT3e?t=1685479406"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qe9wcgha0b50_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yqJa9pGfIAKyl3?t=1685479412"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhhu478cshfa_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_A3rnpZFNqfuaHV?t=1685479418"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhkigfsednj8_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_OXOyej05QJhIQX?t=1685479423"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhqlfa2bc5eq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Zssdm9nfQq8Aqs?t=1685479429"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhsuhqmi6xbs_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_oxmE2mBy1pR4oe?t=1685479435"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qy4fha3xkl6b_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_sIo4dAJ8HCmUkA?t=1685479440"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rh4zshvc6x5y_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_W1FpM6vqiAEwYr?t=1685479446"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhrornydk08l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_VMR0rEm5v3uUDF?t=1685479452"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhtwzjyl0nza_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wRVRB4ci5d902J?t=1685479457"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhtxre97u2b6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HJUCti3p5AnSFD?t=1685479463"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rl7v1xw6je5d_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_MCjjD79GmrsDyK?t=1685479469"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s0ujpeerehx5_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_X3sopDRS6iIiLT?t=1685479475"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s18ck3l8olrt_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_xQzNtRmC4jisbA?t=1685479480"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s1jgfoppityo_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_htrZ7as8GSsGkI?t=1685479486"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skv1z2gs0wu1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4W2j685fbd4AjB?t=1685479491"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl9h43kf45es_PostCoupons,200,"{
+  ""id"": ""6iFMUzSTXcLH1KRQvoWL"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685479498,
+  ""currency"": ""aed"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 11,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""vanishingly"",
+  ""percent_off"": 42.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_socb8jjhzbjl_PostCoupons,200,"{
+  ""id"": ""hYOmDvLd41cK"",
+  ""object"": ""coupon"",
+  ""amount_off"": 94,
+  ""created"": 1685479503,
+  ""currency"": ""vuv"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""obsequiously"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t86urccdib1h_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3iLbzCBwrHYByn?t=1685479509"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8cd4wp1vos0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_w8GmUuQl47duWb?t=1685479515"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to7ari5ua7n8_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QIsgk9TcJCE71D?t=1685479521"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_tol5yph9t6b5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_lFROG9N4WlECH0?t=1685479526"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_trwezg2shnp1_PostCoupons,200,"{
+  ""id"": ""SZ6QGVaQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685479532,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 9.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ts4p7qib50s9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Bm6qDvtfOCV2ny?t=1685479537"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7wvblonn61t_PostCoupons,200,"{
+  ""id"": ""jTXBs8Sf8z"",
+  ""object"": ""coupon"",
+  ""amount_off"": 57,
+  ""created"": 1685479543,
+  ""currency"": ""inr"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""practicably"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u7xcgp0266nq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8ckz7FCBTPPwFn?t=1685479549"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u8aq74qy31v6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QoR5A9MBSPyPZB?t=1685479554"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubu8o3l07ub9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YiToAGrhRlEGuH?t=1685479560"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_urgshrf6uqt0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_qHBSkJ8AyF5Ipu?t=1685479566"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvjoxl1mihr8_PostCoupons,200,"{
+  ""id"": ""jidw1Sd0"",
+  ""object"": ""coupon"",
+  ""amount_off"": 40,
+  ""created"": 1685479571,
+  ""currency"": ""twd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 88,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vf3pmgw3mwc2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_KLJkeeeY6OqVo6?t=1685479577"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

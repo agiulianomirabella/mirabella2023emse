@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrj9wv85p9pe_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LNPnR5GQ2E3F8n?t=1685111784"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jyd8eb154j1g_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The currency hrk is no longer supported. Use eur instead. See https://support.stripe.com/questions/croatian-kuna-(hrk)-currency-transition-to-euro-(eur) for more details."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_AVwqRrq8Qj79S2?t=1685111790"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxw45gr5hlpz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_r2fFbb5GgFkT4c?t=1685111796"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_tocv3fzl9np2_PostCoupons,200,"{
+  ""id"": ""tKGThs1Upi"",
+  ""object"": ""coupon"",
+  ""amount_off"": 82,
+  ""created"": 1685111801,
+  ""currency"": ""bob"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 67,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1795599499,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ubryfrwuvq5u_PostCoupons,200,"{
+  ""id"": ""XWOzyEn4VIp6WP0WB4e9"",
+  ""object"": ""coupon"",
+  ""amount_off"": 17,
+  ""created"": 1685111808,
+  ""currency"": ""pkr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 71,
+  ""metadata"": {},
+  ""name"": ""waning"",
+  ""percent_off"": null,
+  ""redeem_by"": 1850323225,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

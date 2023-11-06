@@ -1,0 +1,44 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7ileve0um2g_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5u3uU512XPxQqY?t=1685111516"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdw1v258zi2a_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_UdExITpVEh6huE?t=1685111521"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rl54x3257iuq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_M8jUuTaccfuAAx?t=1685111527"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uv93rl1kdyk2_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8Ng1JLklmvV9dH?t=1685111533"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_veym1mvc3aya_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_B8wxmv8XXaOr3m?t=1685111539"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

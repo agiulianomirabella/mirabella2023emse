@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrmiijweqzoy_PostCoupons,200,"{
+  ""id"": ""5EhZXmnC"",
+  ""object"": ""coupon"",
+  ""amount_off"": 92,
+  ""created"": 1686925893,
+  ""currency"": ""pln"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 97,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1797766021,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qecncdp2mvxt_PostCoupons,200,"{
+  ""id"": ""WIfz1vQ7zmf"",
+  ""object"": ""coupon"",
+  ""amount_off"": 54,
+  ""created"": 1686925899,
+  ""currency"": ""gnf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""profound"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhowj4b7qcs0_PostCoupons,200,"{
+  ""id"": ""TsLbDEoz"",
+  ""object"": ""coupon"",
+  ""amount_off"": 36,
+  ""created"": 1686925905,
+  ""currency"": ""all"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 80,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_urhblll49co1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_klyw936gASBQLx?t=1686925911"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ursf302yqn1w_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JIthu2vuWxSHYh?t=1686925916"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1k1zil0rn0a5f_PostCoupons,200,"{
+  ""id"": ""TCN009mT"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685057717,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 8.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skpkor71c2ua_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_MqH4nYbWgGcN6i?t=1685057722"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sohugyqh8bc4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_cCDa9CYEQwlAZe?t=1685057728"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to2c6rq2e6w3_PostCoupons,200,"{
+  ""id"": ""RbgAgUPa"",
+  ""object"": ""coupon"",
+  ""amount_off"": 17,
+  ""created"": 1685057733,
+  ""currency"": ""gel"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 67,
+  ""metadata"": {},
+  ""name"": ""usufructuary"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trtk61p0ncc0_PostCoupons,200,"{
+  ""id"": ""f5MtwO2UM6bg2S"",
+  ""object"": ""coupon"",
+  ""amount_off"": 72,
+  ""created"": 1685057740,
+  ""currency"": ""std"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 17,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

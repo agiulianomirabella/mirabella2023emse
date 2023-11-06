@@ -1,0 +1,77 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7o5cohmjmlu_PostCoupons,200,"{
+  ""id"": ""Axmuj0RUtH1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059276,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 52,
+  ""metadata"": {},
+  ""name"": ""ostracize"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": 1826165143,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skkiomzdog9y_PostCoupons,200,"{
+  ""id"": ""btAHXEv6UWMiEC"",
+  ""object"": ""coupon"",
+  ""amount_off"": 29,
+  ""created"": 1685059282,
+  ""currency"": ""eur"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t4cbkyb09v1d_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_U5BSpCWD6BuFG1?t=1685059287"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4nx075smnvl_PostCoupons,200,"{
+  ""id"": ""kIEgj7aCxeBqhoEgZ0e3"",
+  ""object"": ""coupon"",
+  ""amount_off"": 31,
+  ""created"": 1685059293,
+  ""currency"": ""all"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""splosh"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vf3oiqe4zyp0_PostCoupons,200,"{
+  ""id"": ""AFPZ39Bx"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059299,
+  ""currency"": ""vnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 9,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 45.0,
+  ""redeem_by"": 1740508935,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

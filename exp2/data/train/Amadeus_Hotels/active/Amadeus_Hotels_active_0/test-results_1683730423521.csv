@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7qyd9zkvgvt_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""HLLON300"",""chainCode"":""HL"",""dupeId"":""700043184"",""name"":""HILTON LONDON CANARY WHARF"",""cityCode"":""LON"",""latitude"":51.50054,""longitude"":-0.01726},""available"":true,""offers"":[{""id"":""4YD5OKOGN8"",""checkInDate"":""2023-05-10"",""checkOutDate"":""2023-05-11"",""rateCode"":""RAC"",""rateFamilyEstimated"":{""code"":""BAR"",""type"":""P""},""commission"":{""percentage"":""8""},""room"":{""type"":""A03"",""typeEstimated"":{""category"":""STANDARD_ROOM"",""beds"":1,""bedType"":""DOUBLE""},""description"":{""text"":""FLEXIBLE RATE\nDOUBLE GUEST ROOM\nDOUBLE BED/BRIGHT SPACIOUS ROOM/WIFI/AIRCON\nTEA AND COFFEE/FRIDGE/HAIRDRYER/LCD TV"",""lang"":""EN""}},""guests"":{""adults"":2},""price"":{""currency"":""GBP"",""base"":""299.00"",""total"":""299.00"",""variations"":{""average"":{""base"":""299.00""},""changes"":[{""startDate"":""2023-05-10"",""endDate"":""2023-05-11"",""total"":""299.00""}]}},""policies"":{""cancellations"":[{""description"":{""text"":""Plus Taxes and fees where appropriate.""},""amount"":""299.00"",""deadline"":""2023-05-09T23:59:00+01:00""}],""guarantee"":{""acceptedPayments"":{""creditCards"":[""VI"",""CA"",""AX"",""DC"",""DS"",""JC"",""CU""],""methods"":[""CREDIT_CARD""]}},""paymentType"":""guarantee""},""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers/4YD5OKOGN8""}],""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HLLON300&adults=2&boardType=ROOM_ONLY&countryOfResidence=AE""}]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_1iv9uewai1e1v_getMultiHotelOffers,429,"
+            {
+                ""errors"": [
+                    {
+                        ""code"": 38194,
+                        ""title"": ""Too many requests"",
+                        ""detail"": ""The network rate limit is exceeded, please try again later"",
+                        ""status"": 429
+                    }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,OAS disconformity: Response status 429 not defined for path '/shopping/hotel-offers'.
+test_1jei6vq3pr776_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qecncbnjpb21_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_ublujtiyfc54_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,true,none

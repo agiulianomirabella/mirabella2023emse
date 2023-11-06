@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iuvipos3ncjb_PostCoupons,200,"{
+  ""id"": ""7KNiH4Y0"",
+  ""object"": ""coupon"",
+  ""amount_off"": 93,
+  ""created"": 1685060852,
+  ""currency"": ""jmd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1736260402,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxwm2y1siq7k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_cpqPrAAsatevYa?t=1685060858"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rl558ndnsbj8_PostCoupons,200,"{
+  ""id"": ""bwP8IHbDcytfRlU"",
+  ""object"": ""coupon"",
+  ""amount_off"": 31,
+  ""created"": 1685060864,
+  ""currency"": ""cny"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""grayish-green"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_tnz07zandge1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Wep729r1qvXkOD?t=1685060869"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u8ao8ncz8shk_PostCoupons,200,"{
+  ""id"": ""8RpNUAZO"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060875,
+  ""currency"": ""aed"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 30,
+  ""metadata"": {},
+  ""name"": ""recent"",
+  ""percent_off"": 83.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

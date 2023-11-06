@@ -1,0 +1,102 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrdnn24j1eg1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrmi4ifq77fm_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_1jecmjsb2vghe_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""iXpjFaYAHfXbWPkKXXtmiXBV6WA"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""12JnqMG-ynedKz2n_hnvKV6mAB4"",
+      ""id"": ""UgyyScM63hUgS_x7IXp4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""125mtcOb2Xc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""-KTHo5m9TwX72m4bspeCIKT0l4M"",
+          ""id"": ""UgyyScM63hUgS_x7IXp4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""125mtcOb2Xc"",
+            ""textDisplay"": ""Pobre hombre no se siente cómodo cuando anda con ropa"",
+            ""textOriginal"": ""Pobre hombre no se siente cómodo cuando anda con ropa"",
+            ""authorDisplayName"": ""Nara "",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/zAuYQkd4TbN761ulz4Y_BIjKqra7jcRdMi1cwkswpjEezoeaL32odBmlPksz62tt567UPQWOHA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_UZOD3cXx-5S4nNUq6Z2gg"",
+            ""authorChannelId"": {
+              ""value"": ""UC_UZOD3cXx-5S4nNUq6Z2gg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 10906,
+            ""publishedAt"": ""2019-10-15T04:56:24Z"",
+            ""updatedAt"": ""2019-10-15T04:56:24Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 30,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_r17cekjs408k_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_r1ic2kioi15u_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

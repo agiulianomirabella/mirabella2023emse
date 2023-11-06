@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7wh2gyyvxo8_PostCoupons,200,"{
+  ""id"": ""dtSrF1mH"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108986,
+  ""currency"": ""kzt"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 26.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1hb85on30i2ih_PostCoupons,200,"{
+  ""id"": ""GyM6YUEJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108992,
+  ""currency"": ""try"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 4.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1hror4micm4hi_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3MlYCNzdrrBkUc?t=1685108998"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sof46ia93jg3_PostCoupons,200,"{
+  ""id"": ""JmsEyEtS"",
+  ""object"": ""coupon"",
+  ""amount_off"": 43,
+  ""created"": 1685109003,
+  ""currency"": ""egp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""racketeer"",
+  ""percent_off"": null,
+  ""redeem_by"": 1801808047,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_soko73pdz77b_PostCoupons,200,"{
+  ""id"": ""OnoZrSkp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685109009,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""rubber"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": 1782872661,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iupxlgu6l1dj_PostCoupons,200,"{
+  ""id"": ""yBukB5cq"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059747,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 86,
+  ""metadata"": {},
+  ""name"": ""thorough"",
+  ""percent_off"": 42.0,
+  ""redeem_by"": 1843267772,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qhntnlrcpyle_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_2pkekx5Nyi6jFT?t=1685059753"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4nwmecfknz6_PostCoupons,200,"{
+  ""id"": ""rC6OxsJ0"",
+  ""object"": ""coupon"",
+  ""amount_off"": 22,
+  ""created"": 1685059758,
+  ""currency"": ""dop"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vb6t3pjsd276_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ohzkJIHkAKj0A1?t=1685059764"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbhdk6ehy7vn_PostCoupons,200,"{
+  ""id"": ""U8sfDepB"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059770,
+  ""currency"": ""tjs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 62,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 50.0,
+  ""redeem_by"": 1719400219,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

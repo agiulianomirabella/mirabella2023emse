@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr5end198wty_PostCoupons,200,"{
+  ""id"": ""FhNYbpGj"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058549,
+  ""currency"": ""xof"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 31,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 4.0,
+  ""redeem_by"": 1711783888,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1if0itfc5wldk_PostCoupons,200,"{
+  ""id"": ""09JGRhq6Zu"",
+  ""object"": ""coupon"",
+  ""amount_off"": 26,
+  ""created"": 1685058554,
+  ""currency"": ""afn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 54,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jeysthl1cear_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wSJuN7rDG6SpBV?t=1685058560"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r17ceiit3y9g_PostCoupons,200,"{
+  ""id"": ""isAQDmBAkPh"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058566,
+  ""currency"": ""etb"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 41,
+  ""metadata"": {},
+  ""name"": ""mavik"",
+  ""percent_off"": 29.0,
+  ""redeem_by"": 1722552450,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vb93bz6em7g5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_SYS2nqx47CA7Oi?t=1685058571"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

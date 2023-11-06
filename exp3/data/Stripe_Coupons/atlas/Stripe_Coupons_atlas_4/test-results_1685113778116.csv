@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrgiiyk3mb74_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_sB4hfpuWuAK23d?t=1685113795"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrgyl0n2o374_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_C7MT5m4hpG5KFq?t=1685113800"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hv8b3evx2r75_PostCoupons,200,"{
+  ""id"": ""GfgoMeRJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 39,
+  ""created"": 1685113806,
+  ""currency"": ""mnt"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 42,
+  ""metadata"": {},
+  ""name"": ""soapstone"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s1eet6j4xtmf_PostCoupons,200,"{
+  ""id"": ""sPS6FQQG"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685113812,
+  ""currency"": ""mvr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""mishpocha"",
+  ""percent_off"": 29.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_u88fkdsypnas_PostCoupons,200,"{
+  ""id"": ""QBkwMITd"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685113817,
+  ""currency"": ""huf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 21,
+  ""metadata"": {},
+  ""name"": ""balaeniceps"",
+  ""percent_off"": 15.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

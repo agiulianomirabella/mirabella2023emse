@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyez6d1vvznd_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -122.43644714355469, ""latitude"": 37.76089938976322}}}",application/json,true,none
+test_1iyl0nhrqgh9e_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -116.07978, ""latitude"": 37.31694}}}",application/json,true,none
+test_1jyb1a205d9h2_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,true,none
+test_qe12s3jlkjtu_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,true,none
+test_ubp71ytlicf9_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."

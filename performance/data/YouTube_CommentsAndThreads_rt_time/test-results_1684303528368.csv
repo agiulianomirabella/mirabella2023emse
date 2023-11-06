@@ -1,0 +1,1811 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7gdio0y3z91_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""pULpCYHIGUqQRwNdG6dXbCSXwwg"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 19
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1h7tqgi86mpte_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1h82jbrhdqjj5_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_1hbay8h5zusma_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1hrpaanlgtf79_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""tgelsek-ZNxpB24Ogq67w-Dh96Q"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 39
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""U9Lo9SRQCcJ0b24agDwCQA0rJNk"",
+      ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""DPIv7awI-1A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""GVe78eX7tmhNC1ZH1hhbJ0cPO4E"",
+          ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""DPIv7awI-1A"",
+            ""textDisplay"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""textOriginal"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""authorDisplayName"": ""Jhayco"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1Mf03RcTTM1qlBr9JJhJJH2FkzMDwE4f_zGd9zx0CgCn7GaVOaGfEKkgkfVL3d-XCpGGME8b7A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvpEyEBML6z-PJJ9XrqgpKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCvpEyEBML6z-PJJ9XrqgpKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 68337,
+            ""publishedAt"": ""2020-02-05T18:45:17Z"",
+            ""updatedAt"": ""2020-02-05T18:45:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 470,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""L1uR-lz5tMkfX3tz12Iz_Q5uqgo"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f6m--qxPB"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""Potito"",
+              ""textOriginal"": ""Potito"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""bathesgal"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/0PCEX4jV5UPFoIOG57eryutcEajWqO6ScukUK0b4oLqRBa6VoaIIC0mDHyW0Hw8jKBJUCFBLmw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCX7Z31jwiqtq4FblSdlfRCw"",
+              ""authorChannelId"": {
+                ""value"": ""UCX7Z31jwiqtq4FblSdlfRCw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1367,
+              ""publishedAt"": ""2020-02-05T19:30:45Z"",
+              ""updatedAt"": ""2021-04-06T12:25:10Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""66UXg_c1TC6wwF83pUBXPAmUNDE"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f6tdS9uW8"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""🔥🔥🔥🔥🔥"",
+              ""textOriginal"": ""🔥🔥🔥🔥🔥"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""Mafeyyr Rodriguez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOeL01boBu1ep4A07m6kbOEgfi76byr2oN5hw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCj_ckq_su2FQY853p9fqjSg"",
+              ""authorChannelId"": {
+                ""value"": ""UCj_ckq_su2FQY853p9fqjSg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 483,
+              ""publishedAt"": ""2020-02-05T19:31:47Z"",
+              ""updatedAt"": ""2020-02-05T19:31:47Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Lj3qWe29MHjkoKAHPd_2aC9jW8c"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f79NQ7vv4"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""Siempre andamos con los palos x si me bajo y los jalo brrrrr Eh tu nuevo tema (como se siente) esta flamaaa la va romper siempre activo desde argentina un saludo jhay"",
+              ""textOriginal"": ""Siempre andamos con los palos x si me bajo y los jalo brrrrr Eh tu nuevo tema (como se siente) esta flamaaa la va romper siempre activo desde argentina un saludo jhay"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""Gonzaa pegno"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM9MH3VwwEuYQ1cQUWQPirRSmqflOC7EfG9kZ58=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYaTuVp85KNkYinRJugNaMw"",
+              ""authorChannelId"": {
+                ""value"": ""UCYaTuVp85KNkYinRJugNaMw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 341,
+              ""publishedAt"": ""2020-02-05T19:34:04Z"",
+              ""updatedAt"": ""2020-02-05T19:34:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""8rBwNTcvLj639TsDxds_uFXfglw"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f7Dbm2eWU"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""el crack"",
+              ""textOriginal"": ""el crack"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""Daniel jesus pinzon diaz"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP7CPLMYL-sfc-7eScR1E4YrqMz_6ziPzQ0DT8uGw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCv26ZbBNpgmChod_FbNxXwg"",
+              ""authorChannelId"": {
+                ""value"": ""UCv26ZbBNpgmChod_FbNxXwg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 210,
+              ""publishedAt"": ""2020-02-05T19:34:39Z"",
+              ""updatedAt"": ""2020-02-05T19:34:39Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""AjA8KnaRIHWaVsnchtMeCz5T-Lo"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f88sYzIl3"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""Dame cora Jhay 👍"",
+              ""textOriginal"": ""Dame cora Jhay 👍"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""LL4MA G"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPxXGe4WiEqwQbeECJB6cYl9gtD9UPW3yny0rsR-g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC8EwB3_2c_EsnwKRD4SgiJg"",
+              ""authorChannelId"": {
+                ""value"": ""UC8EwB3_2c_EsnwKRD4SgiJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 156,
+              ""publishedAt"": ""2020-02-05T19:42:45Z"",
+              ""updatedAt"": ""2020-02-05T19:42:45Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1hrpazwu04sx1_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_1hv38awy4lwdv_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1iavf8wyr7whg_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""0pgVLLJX2RNL5wGFKByaCcJ878k"",
+  ""nextPageToken"": ""QURTSl9pMDQ3UVV6QXhJdlhBUkRCNTVPZXNPZHdEemFQT05iUGVoSk1saUJVTnYtTl9jX3pmbXBkczRrNUhEbGFKZmpod1o4VGVnMnpxZmExeXNNSVd6NzAxek5VcEFsTTFIb3ZCY3B3aFFuWXM0OEZBeGRPdzVjMElKYlVmQXdGSGV5Q3lVZmhzM3RnVkhTM2pQSEthNlhnQW5UYXp3SVN6VUlqTlZPUDNXcjB1NzQ0UmJBT3RYUWVlVjIzeDhDcmxFWUNHcmpKaGpvcnpabEhLbDFBRVdrZ3FRV3BZdjh4cUVfWUVzN2VDbGNjakd2"",
+  ""pageInfo"": {
+    ""totalResults"": 32,
+    ""resultsPerPage"": 32
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Msclfm1tZaqDJ1T0VPkJw8m58f8"",
+      ""id"": ""UgxI70xtxwTwYEaWgOF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""jX3nkwlws1pimG9ErCJsnTKF6o0"",
+      ""id"": ""UgxAieHnhCB5desXSLt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""p_nWzwg53gCymmRpqg_lN8fbGFQ"",
+      ""id"": ""Ugw6k4SoK2OJ8FdqtxB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""eJACD9R-6EQZ43ja9nh0xAd5jSs"",
+      ""id"": ""UgxObyLCfGQ_5eAAfgx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2JfwOs-LDoB3Z7lLV0CZAWlW9Zw"",
+      ""id"": ""Ugx6sPFZotuYt2kGysV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yPffUs4SEn9cR40Ovfwen0Vj0yI"",
+      ""id"": ""UgyN3Q2SA8eEWd1ECpx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2PMAWMgRhWw4mh1Ar0RtQYk5DEg"",
+      ""id"": ""UgyXnkVYESMCAEUzprh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""hJfV8HwQI0-8V5-4E0hPP5ORAFo"",
+      ""id"": ""UgxO7rt6KocTiuueOwZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Q_x0_FpiS7t913WgYt4hnuIpMEQ"",
+      ""id"": ""Ugy-wQJw4QtWuA7jRhh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""viZppl-vuq0yPsi_jSBIlSnZ2LQ"",
+      ""id"": ""Ugwrd_VJOH68dSEmjcB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-88xbwpuS_QOn2rCrWAS5GJcUJU"",
+      ""id"": ""UgzWrcB4UykJUqgNqHR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5SO_AhwwKH_X_1B3Pd1gBzaURNc"",
+      ""id"": ""Ugwai_ZtSf9ixoY1YkZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Q4ZiKoGW2Q8iGkvR1a8iLpT4c1g"",
+      ""id"": ""UgwNqIOmbfaQ_8L44_V4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""c4v1RpjqHlXBFXuUyB6hN9TzTS4"",
+      ""id"": ""UgxS7Y9NOGVOtlGeVr54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Mkxkc2qddNHfP1069wAhy4lG4Rc"",
+      ""id"": ""UgymufR9aDU0ze4PpvN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""sfkXB5IVsJs8din-XoVYB-Ablb0"",
+      ""id"": ""Ugxl3HUdQ13F2z0IMIl4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""24F7cV47sTnNW1nTYvpukCq3-Aw"",
+      ""id"": ""UgwxYwKp_moIhE7k50J4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""VWe1TQjGSGZBzIXEK6vVmJfxBRo"",
+      ""id"": ""UgzG8cY5D5d9KStH1qR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cF7mm3TioFIyMpIsn5a2nMyQCoo"",
+      ""id"": ""Ugwi_YhtvNxai_Rifht4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""EaFnKqAeXaghSrfPNB1RAASnQbM"",
+      ""id"": ""Ugyd9SKMQYyGlmlPvKx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5eu-lmyjlmD4qxvKD6OOvyN5Q_E"",
+      ""id"": ""UgyKsfx4sOs3UTgJh1N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""DB7JxZocnW0GHDIVvf55XexwnV0"",
+      ""id"": ""Ugx84hygfpgJl-_XgS14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""UsFMDy1T5plU4EDE2W1xxj8nsGI"",
+      ""id"": ""Ugypy8YT84x5SENbkFN4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2qxyVFAfP8uFjP7tfGm0KM36Aw8"",
+      ""id"": ""UgzDbSH_aExQsZ4d9mZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uF-9FLakxdl8jrK-1BmBAHAcWcE"",
+      ""id"": ""Ugxpr2huFjo04mJ195x4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3T24noutD7H0po_LjUGPsnAiZlk"",
+      ""id"": ""Ugx8gbH-_K_-Ymggp7Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""mO8wBNLwmaqzS-8zrXM_2JF4Lt8"",
+      ""id"": ""UgxyCGU9kBpjAulvWHV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xl8glk13EsqKPm5vO7p1hhZzTB8"",
+      ""id"": ""Ugzph11w7EQ67vA8EGV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vApiHYmKRiSMykh65ZLnP79mFZg"",
+      ""id"": ""Ugy-pE6XsetnranTRd54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""i6fZ8Xv58L3XQRwgbntExRsmJ7E"",
+      ""id"": ""UgxqQB0kO9A0DpawjfJ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KQnoAJRDXQ7nZrm7gbsjspFrGX8"",
+      ""id"": ""Ugyjr8dgKGFRsyRJNc14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RHmVUjcD6B2SjJR8CCieDOGqq2o"",
+      ""id"": ""UgwMabSjtrlsZWE4xIh4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1ibh1yy7wo3tt_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1ibkcu24w5g6o_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1iev01ny8xbg4_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1iukfoo9adkxf_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1iuysezyvemnr_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jer2jgbvxun8_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jeta1w2lx7i0_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1ji78gagovho0_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jidb3ajlhraa_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jifiznujxilf_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""4Vqx5qvvcFomR5_IgRjBxl14s7o"",
+  ""nextPageToken"": ""QURTSl9pMEhNZlRPZUltOS1pU2tVX3htZ0VxdDhMMnFKNnNSblh5b2t0QXJnUzRMMG5Xb1RNXy1ZSmU2d0E5UFZPaVF2Tm9VVVBPTkJOQ29MTVRpZmJxdDgzWGNTazlLSldiT0FSV3FPbzdlbjgyenFaamJHZkJjdzdqZFhLS0NjbjNQUzg2ODVmZWV3QnRKVHRvM1E2bkNJb2lUM3NGNkI1NmNqcjFYMUpSOG9TVHN5bExuOVZCWEhiMmJ4aVdncllJNlhMOEh2TVpkYmJJ"",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HWZCSV0AgTGzeF9KCbDEQ3PSV8g"",
+      ""id"": ""Ugz0ZhETtXKrWbPYjAd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""0dM3QDSASAhbBjM6mTF56Uu2PJU"",
+          ""id"": ""Ugz0ZhETtXKrWbPYjAd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""Viva Venezuela en esa vaina caballero 🎉🇻🇪🇻🇪🇻🇪🇻🇪"",
+            ""textOriginal"": ""Viva Venezuela en esa vaina caballero 🎉🇻🇪🇻🇪🇻🇪🇻🇪"",
+            ""authorDisplayName"": ""Alexander Peña"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNCNNtT3MeJQR3u1_TDGImpD_gN7KGHBm-beo8-J1jVngFpWB3i74v7jn__uQ38=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZCmoBBS-8dJgfU4k_fW0dw"",
+            ""authorChannelId"": {
+              ""value"": ""UCZCmoBBS-8dJgfU4k_fW0dw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T06:02:52Z"",
+            ""updatedAt"": ""2023-05-17T06:02:52Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""B6AHxiVgSeoXGOJ9_pgd8x7OTtw"",
+      ""id"": ""Ugw1iHM-C7vzzLL7yLx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KfYT9VpTDSMkmvvlYG8Gol6TO8M"",
+          ""id"": ""Ugw1iHM-C7vzzLL7yLx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""Increíble, esos dos son el rap de verdad."",
+            ""textOriginal"": ""Increíble, esos dos son el rap de verdad."",
+            ""authorDisplayName"": ""Adriel Salazar"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMrkb-W-QR17IDD-OgPgvukvir3RnVuFFdi8DN70Sw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJNbYFE5VtHnF_dXy7YHgZg"",
+            ""authorChannelId"": {
+              ""value"": ""UCJNbYFE5VtHnF_dXy7YHgZg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:58:05Z"",
+            ""updatedAt"": ""2023-05-17T05:58:05Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fYlNgdo3fFAeFgMasp0bILC0KGU"",
+      ""id"": ""UgxyziqOiMH5Qb_4B-54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""iD01FCDiqYhTEuhR87DPUdk7FZE"",
+          ""id"": ""UgxyziqOiMH5Qb_4B-54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""El goldo funky 🇻🇪🧨❤️"",
+            ""textOriginal"": ""El goldo funky 🇻🇪🧨❤️"",
+            ""authorDisplayName"": ""Juanmi Scarface Marquez hernandez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPE6StkJwp7Ts4vgADYGoWgW55Gesjd-soV2AZQXg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCeht-Ma-k_tntTCM7BY668A"",
+            ""authorChannelId"": {
+              ""value"": ""UCeht-Ma-k_tntTCM7BY668A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:53:09Z"",
+            ""updatedAt"": ""2023-05-17T05:53:09Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""p8kQUTr4xsO7TNNdo5CjPAQSZdk"",
+      ""id"": ""UgxR3a7Sy_VeFiiJf2p4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""ljLr1XArHuU"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KWMW0W7VC7jMed03Xk3LMaAFeN4"",
+          ""id"": ""UgxR3a7Sy_VeFiiJf2p4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""ljLr1XArHuU"",
+            ""textDisplay"": ""Quelindaáaa😂😂😂❤❤❤❤"",
+            ""textOriginal"": ""Quelindaáaa😂😂😂❤❤❤❤"",
+            ""authorDisplayName"": ""Patricia Gomez Ruano"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMz0jsUNecK2IjJNF7b5vjOO8t-NsNt4do5DQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCaShteK7-N0xQ3HazXxDeYg"",
+            ""authorChannelId"": {
+              ""value"": ""UCaShteK7-N0xQ3HazXxDeYg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:50:06Z"",
+            ""updatedAt"": ""2023-05-17T05:50:06Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uQ1idKXSb0lOYknwrlBrZJzOp0Y"",
+      ""id"": ""Ugyva2jkDdJuJ4_Xh8p4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""xReBzUTl6oTUgwPtC9g5-SByl7Y"",
+          ""id"": ""Ugyva2jkDdJuJ4_Xh8p4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""Grande Akapellah 🔥🔥🔥🔥"",
+            ""textOriginal"": ""Grande Akapellah 🔥🔥🔥🔥"",
+            ""authorDisplayName"": ""Eduard Ramirez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP3tu45P9gLPmEZvLtrNr8JNtTYbwLQssKUuOUoOQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCF6T5GuJno8JhKPbO7gUHBA"",
+            ""authorChannelId"": {
+              ""value"": ""UCF6T5GuJno8JhKPbO7gUHBA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:49:41Z"",
+            ""updatedAt"": ""2023-05-17T05:49:41Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""T9TG9MBRjvgZjPZULVTGN9TmjeY"",
+      ""id"": ""UgyD7hhQduVIDGniqCl4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""jfBgr82Lb50"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""lTEfazMtvBLBK1Bs0zT9hAUFB9k"",
+          ""id"": ""UgyD7hhQduVIDGniqCl4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""jfBgr82Lb50"",
+            ""textDisplay"": ""Dedicaros a escribiir 😂"",
+            ""textOriginal"": ""Dedicaros a escribiir 😂"",
+            ""authorDisplayName"": ""Laiaia Killer"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNM94rojaQM11X6dtVtr-1Ks2PXBqrgUpwxbw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC67NAvfLzdW0QnpKBRRsstA"",
+            ""authorChannelId"": {
+              ""value"": ""UC67NAvfLzdW0QnpKBRRsstA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:47:53Z"",
+            ""updatedAt"": ""2023-05-17T05:47:53Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""02pyHLnAiO8qIA7xzlvcU7C9C-o"",
+      ""id"": ""UgxuRS7TkN44wM2buNx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""ljXq_A5H2vo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""z91If7KKiXwxJcnImMtol-CEJJ8"",
+          ""id"": ""UgxuRS7TkN44wM2buNx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""ljXq_A5H2vo"",
+            ""textDisplay"": ""La amo. 😂"",
+            ""textOriginal"": ""La amo. 😂"",
+            ""authorDisplayName"": ""Andres Felipe Alarcon Muñoz"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/XUVEph_EBZlv_2VbenJF2nnCh2rPov8EDGp6YJ2m-ibxnff8Vq4S_AstMaLaBHJ4CxoP7MjEvQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCwZBvoPRQOr3-s8aaQLIV-w"",
+            ""authorChannelId"": {
+              ""value"": ""UCwZBvoPRQOr3-s8aaQLIV-w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:46:15Z"",
+            ""updatedAt"": ""2023-05-17T05:46:15Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""S8MeOlxuo7HbeCNOiZW17vC4y8k"",
+      ""id"": ""Ugx8qcyY-V4RzQLXK_N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""1yY7tYlfnHe6YcJ_eOuTBLOiisM"",
+          ""id"": ""Ugx8qcyY-V4RzQLXK_N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""2 TOP❤"",
+            ""textOriginal"": ""2 TOP❤"",
+            ""authorDisplayName"": ""Ferortiz01"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOjsTARpdXarGbCVzHbWUfHU3RBmbttePRhVfM5Nw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-LlNkwF1o3AVNoON4ZyyGQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC-LlNkwF1o3AVNoON4ZyyGQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:35:05Z"",
+            ""updatedAt"": ""2023-05-17T05:35:05Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""duCVlxIRBaKbbAL3_pxAcPh1S1M"",
+      ""id"": ""Ugx8G2vzHQPZ2OaztnR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""J41GsIrwWJA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8PJ8fFPG-LFd0IeCSTac1mdYm-8"",
+          ""id"": ""Ugx8G2vzHQPZ2OaztnR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""J41GsIrwWJA"",
+            ""textDisplay"": ""Barbilla carmesí"",
+            ""textOriginal"": ""Barbilla carmesí"",
+            ""authorDisplayName"": ""sergi gomez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMYl3VdmOig7BX5p_4lg_dVuSJvUaGcjEJDtA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKT6izHJrTaXcxmFi34PDCQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCKT6izHJrTaXcxmFi34PDCQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:33:43Z"",
+            ""updatedAt"": ""2023-05-17T05:33:43Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""BVt_RBgBAjy6Lm49VveGT7OINFA"",
+      ""id"": ""UgxWyd9aemJOvzBkH8Z4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""MyqJTso112-xK3FIzGFSshYOtUA"",
+          ""id"": ""UgxWyd9aemJOvzBkH8Z4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""🇻🇪😎"",
+            ""textOriginal"": ""🇻🇪😎"",
+            ""authorDisplayName"": ""Djdrake ve"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPmdAngcq8m_dwjtGYCvkpAXimUPYlIx_Q-TXwRCw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCrQHXNsVllkg8ovr0oy6yxQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCrQHXNsVllkg8ovr0oy6yxQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:29:27Z"",
+            ""updatedAt"": ""2023-05-17T05:29:27Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""EnhQMQfyfxUf8_jLOedkY5nQuZ8"",
+      ""id"": ""UgzEQFDTstGgwzoJgfp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""Uo3zJYV0KHE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""I4nYIVUOkww4sh2HSYYd6v-fz5A"",
+          ""id"": ""UgzEQFDTstGgwzoJgfp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""Uo3zJYV0KHE"",
+            ""textDisplay"": ""De música no sé...yo creo que ganarian más de humoristas.."",
+            ""textOriginal"": ""De música no sé...yo creo que ganarian más de humoristas.."",
+            ""authorDisplayName"": ""blackwrite NEX "",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPqZrHd9vCFgTH21827PDYVvfSl6OPWTrUJvArAHhUE90nGMHmQiP1IwdRACayH=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UChQqXGR2kXDfuJO59hQVSQA"",
+            ""authorChannelId"": {
+              ""value"": ""UChQqXGR2kXDfuJO59hQVSQA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:24:29Z"",
+            ""updatedAt"": ""2023-05-17T05:24:29Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""y3JZ8drLqoBZtIr6EUjxUjBJN4g"",
+      ""id"": ""UgylLed3xGTgviK14nN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""vF5_0CGlMS7eRTdo0zXpaOc98Lw"",
+          ""id"": ""UgylLed3xGTgviK14nN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""No está completa la entrevista??"",
+            ""textOriginal"": ""No está completa la entrevista??"",
+            ""authorDisplayName"": ""Juan Daniel Bojorquez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMW2lL1AhxceiqaQSpfuagvpj9sNRhr4_Kqsw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjunwJFsCDPvJ92fGEt3_Fw"",
+            ""authorChannelId"": {
+              ""value"": ""UCjunwJFsCDPvJ92fGEt3_Fw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:23:03Z"",
+            ""updatedAt"": ""2023-05-17T05:23:03Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0f7JUXjue73BfJ1keBLzBo5tix4"",
+      ""id"": ""UgzOqQclre42cKzF5LR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""NP1SjEX0-xY"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""LXfRsC2vEiKYgr7lDIbkK8j7O6U"",
+          ""id"": ""UgzOqQclre42cKzF5LR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""NP1SjEX0-xY"",
+            ""textDisplay"": ""Llamarse Nicki Nicole es como llamarse Nikola Tesla"",
+            ""textOriginal"": ""Llamarse Nicki Nicole es como llamarse Nikola Tesla"",
+            ""authorDisplayName"": ""Games y mas"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPkn2fyYyzmcUXyY85YU2K6p_-_x6ObJAXP1xYP=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCSj9w5vLoW1x0z3KNoYSspw"",
+            ""authorChannelId"": {
+              ""value"": ""UCSj9w5vLoW1x0z3KNoYSspw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2023-05-17T05:19:12Z"",
+            ""updatedAt"": ""2023-05-17T05:19:12Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yKhcyTtywaspCsjSmdAR7xE72sA"",
+      ""id"": ""Ugz3akjCoWes2Wxt42R4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""FisIdAhbVgvXQ5rkCjE21FXUWe8"",
+          ""id"": ""Ugz3akjCoWes2Wxt42R4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""❤❤🎉"",
+            ""textOriginal"": ""❤❤🎉"",
+            ""authorDisplayName"": ""MIGUEL PADRÓN COLMENARES"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP0I1DAYNYct1Knxp7x3-KnbaD3AI2h339Vzg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCp4g-vSo9f4bFLecqARniRA"",
+            ""authorChannelId"": {
+              ""value"": ""UCp4g-vSo9f4bFLecqARniRA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:16:05Z"",
+            ""updatedAt"": ""2023-05-17T05:16:05Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""w314bSgi4_pSrHgjRR6W1_adNaY"",
+      ""id"": ""UgzooIYcbakMeNZTYCd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""oC5MTJrA9bU"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""fEqFDIJzjXfCFEdhxsk77w1ZYms"",
+          ""id"": ""UgzooIYcbakMeNZTYCd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""oC5MTJrA9bU"",
+            ""textDisplay"": ""Guapisimaaa"",
+            ""textOriginal"": ""Guapisimaaa"",
+            ""authorDisplayName"": ""Jaime Fabian Espinosa Espinosa"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNMPtHRnFWCwJm3X0bSAD6aLR5qWFbGLkjwljhDafM=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZobxCYTOY3n9rcuGys-wWw"",
+            ""authorChannelId"": {
+              ""value"": ""UCZobxCYTOY3n9rcuGys-wWw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:13:08Z"",
+            ""updatedAt"": ""2023-05-17T05:13:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""32U_m1u_qtGyACL0pWU-eGtm37w"",
+      ""id"": ""UgwKG1K2clAwZRH8dc54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""jfBgr82Lb50"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Tv1bB-lbt8hZDd3QNHGH5OgQ5zA"",
+          ""id"": ""UgwKG1K2clAwZRH8dc54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""jfBgr82Lb50"",
+            ""textDisplay"": ""😮 el año que viene a Eurovisión , malisimos"",
+            ""textOriginal"": ""😮 el año que viene a Eurovisión , malisimos"",
+            ""authorDisplayName"": ""Gabi Sanchez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNshLth_UU40MIHACcaYmxwTIAopSdRnXrmEoo7Hw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCmel3KAT3Q54nToB-eCUwfA"",
+            ""authorChannelId"": {
+              ""value"": ""UCmel3KAT3Q54nToB-eCUwfA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2023-05-17T05:11:53Z"",
+            ""updatedAt"": ""2023-05-17T05:11:53Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""52N3wy-UJJQhgXnlGoOE9q0WtLI"",
+      ""id"": ""UgxmIp1cfjxNw-qdieF4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PawChr-whqmFoohn4hwxcJYXfEA"",
+          ""id"": ""UgxmIp1cfjxNw-qdieF4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""es como que es Quevedo en negro no?"",
+            ""textOriginal"": ""es como que es Quevedo en negro no?"",
+            ""authorDisplayName"": ""aaronnn"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOex9KcCKmiCFKXkjhgtLmgy0uFcLb8bh9lGb_zqw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCBQ5RxlWgQIxI10RuNq3kAQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCBQ5RxlWgQIxI10RuNq3kAQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:10:00Z"",
+            ""updatedAt"": ""2023-05-17T05:10:00Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""io7-3N_izU4-EgwFwM3ipnp5SuA"",
+      ""id"": ""Ugxh_YvKXzdy3dIRI7F4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""IdUIdvfy5Us"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""nwPhp_Y0PCnGhOfisUs4ldmZlqY"",
+          ""id"": ""Ugxh_YvKXzdy3dIRI7F4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""IdUIdvfy5Us"",
+            ""textDisplay"": ""Este es la decadencia argentina"",
+            ""textOriginal"": ""Este es la decadencia argentina"",
+            ""authorDisplayName"": ""gustavo caro"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPG5H85FFaTXEUsYkcvj7QjnEzekr8dwf79SSf05n0=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCgKIdBkKjnRzTKdWtUHnJOA"",
+            ""authorChannelId"": {
+              ""value"": ""UCgKIdBkKjnRzTKdWtUHnJOA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:07:51Z"",
+            ""updatedAt"": ""2023-05-17T05:07:51Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tYArLnXjYRSCxrkIOCQxGX8GtF4"",
+      ""id"": ""UgyGunmbCnJgrHhyZmR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""Gn2STufVgfk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ViZIDlMsFhYjOIpmdbQZ2PJxwH0"",
+          ""id"": ""UgyGunmbCnJgrHhyZmR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""Gn2STufVgfk"",
+            ""textDisplay"": ""Pero quién es este? Se parece al niño repelente de mi generación"",
+            ""textOriginal"": ""Pero quién es este? Se parece al niño repelente de mi generación"",
+            ""authorDisplayName"": ""Maykel P"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMqk0mzCdMo8usLuI3wjcLAUhFiBMrFxQskZeqVPw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7i60T679-wOgGtVG6l98Ug"",
+            ""authorChannelId"": {
+              ""value"": ""UC7i60T679-wOgGtVG6l98Ug""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:06:21Z"",
+            ""updatedAt"": ""2023-05-17T05:06:21Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""p8Dzb4ZeCQJpnAhRS39InO2gAUA"",
+      ""id"": ""Ugy4xCZ5HacH_FMYJ4R4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""CJQbwT9IcSc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""X9EuMzlvPVotkXi9RAlL81qYJGc"",
+          ""id"": ""Ugy4xCZ5HacH_FMYJ4R4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""CJQbwT9IcSc"",
+            ""textDisplay"": ""Cracks"",
+            ""textOriginal"": ""Cracks"",
+            ""authorDisplayName"": ""Shinshan Noara"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNYYf3wYLXdLxe2TqmzQSytmRc3D4IuScRTW_pFkvWuioHnIT7WmtZz6kiihB6B=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-hNQ3TdHyEF-l4ndTmmFog"",
+            ""authorChannelId"": {
+              ""value"": ""UC-hNQ3TdHyEF-l4ndTmmFog""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-17T05:04:36Z"",
+            ""updatedAt"": ""2023-05-17T05:04:36Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1jyd7xplt57w7_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_qe1kmvhwyr7a_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_qy1m5budp4ro_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rh7q2rzror3n_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rhovtmu48gtw_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rhr5nvraxm43_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rhroopg5bkts_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rkzlakqi7xva_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_rkzmgybhy7oj_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_s18vnruszacw_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_s1bnhy73zsdd_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""qUIvqM7o82GSkuVWtZ48ePmyHBQ"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 71
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_s1jhocr2ci7t_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_skstzszy6vxt_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_sl0omz2did7m_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""-PV2qp2qudixjLQhpAZgl8Moxxk"",
+  ""nextPageToken"": ""QURTSl9pMExRYTZOTTF6TF9KcVNrV1FXX2hpaVJpUWhSYmVNb2hNVXhNbC1lX0xhTU9uMUxEZk90SGlicmlfMkR0UXBWMm9CQ2FDRzItdGxBX2hPS1pNYnBDOW9SOFBuYV9MZFBDWDVsQmo2bzVVa3VTSWxWRDFHNUxXbzg1b1dWZWFXNU44dFc3d1Y5UVk3SkhRX1F3NHlHRWxYa2p5TU54TWt2TjZDV0pGZnR3eWsxdnEwTVhwWGYxa3d6NnZMbl9jNzhPbnpOVFJ6eHFn"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_sl67q0vjnzg0_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_sopo6lml4bqb_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_t4cbnskonm7r_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_t4yh0e35bv4x_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_t8cxv83qt1t1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_to1thgsn7td2_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_to52sk77sgfm_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_u82x9aa44rqa_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""7_5oyPyATiI8ox9AbNjmU4qQBu0"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 21
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_u87xpjlcqmp2_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_ubj4q37eo6lf_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""V4D0yVBWJbBnYmZeDZrce0eKA48"",
+  ""nextPageToken"": ""QURTSl9pMW94LWJscU5tOWNRUVJTelNWdmJlem51ME11T3hzWlJmUGxXRlAtcXQtc2dWNnF4cDBjNlR5bDVnR2h0aU5SVVlFNWJjVjNYUQ=="",
+  ""pageInfo"": {
+    ""totalResults"": 15,
+    ""resultsPerPage"": 15
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RlYuATYN5MeZCULwr1Mi5mHcDi4"",
+      ""id"": ""UgzodyQTLf5bcE7xwNZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cACUprvVFWMnzRcWYeFdCcpOWMU"",
+      ""id"": ""UgxqZC2nvxEOi3f_97Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""N6fWIUZnudNvqhMK2F49f5Rn510"",
+      ""id"": ""UgyXZFfhfBeib1QHcCB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""V9K0bvP_7foft2LpZr9Jx-rGc_o"",
+      ""id"": ""UgxxAp1e5-BL57UozfV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""9lRsHO20Bg11h2Zp12FHogwhe5w"",
+      ""id"": ""UgwVGma0q4Zylz8LCHd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""7T76ONqgx4KnpdiyGw5eiKyuw6o"",
+      ""id"": ""UgxcAS5XUsFoM4Zx6Ul4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8CwRiRcR8keh67Y5S_g7aUPisFw"",
+      ""id"": ""UgzXSi3wVtM9l_VmdxZ4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zvuPYwakEnmoiCUW2mZOaE4UYHM"",
+      ""id"": ""Ugwm_t2xwAC8aUTxj4h4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nL6ybLTgbUbk6VdWUhNyxXgCO-A"",
+      ""id"": ""UgzHmuANjqrRm83QPBl4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""pOUlOrAsuFpiT_9YcYwhUjWvWJg"",
+      ""id"": ""Ugy2VPt_3Jzu0I8l-u54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PdJIC6TG9VyLYEO6hvhrUm3o_yI"",
+      ""id"": ""Ugz_l7DMw5IzGN84xUR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""njrmY8qnQGLkIBZZyjrGr86sf8M"",
+      ""id"": ""UgyTtq_yOsuFaS4p3LB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""iQgeKIVynqRIHFuYeMdtaBskEB8"",
+      ""id"": ""Ugz2tdedmyqzPThEGyB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""qoktWqmoSkwr1c3Xx7cQD-11MpA"",
+      ""id"": ""UgwoIPhENHde761stfR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Xwrva21W6p7MbkQmfIiwx6IbljE"",
+      ""id"": ""UgzgtnLlOi8gVxHGDfd4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_ubre5y0jb3g5_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_urv7mom5phro_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_uve52l8ykw8p_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""pa1FsOTaNms1m6QIoDhoNa_ncpE"",
+  ""nextPageToken"": ""QURTSl9pMk9yTmxMMW5vaTFmU0V2ZmtjY2JpRDN3NVZISTBnbVl3YUJrcTRjcFlKcVJPWTdsU0NIQ25nNzd6Q2xzM2k3UGJJM3JoLTBSR1FTR21UcmtZVlpYdTR4ejlzUzZwR2lCbHRYbnktZHhHOU9PVE4xaEVKNHk2ekNTXzR2dTBUdTRITHBzVGZNa0tWak9zOWxCYk9HM0JyQjQyYjBfXy1TTlB0QnJlS295cm1PclA2MERyUHRGdVo0NGxwaXdQU0hObEFOLTJCY1M5czZ5MA=="",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 15
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_uvenbga67o82_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_uvgx8ca1vi3q_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_veynaoqqpttd_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_vf3mkqg0u7nc_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""Ld17tzpzZ42qEHJMMS5z6CWfD1g"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 47
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vf6e9vlysllu_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.

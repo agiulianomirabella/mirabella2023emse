@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h84sgp5xyoo1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DapF3oV6Y3Zio5?t=1685113957"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1h85by6m6rcc5_PostCoupons,200,"{
+  ""id"": ""DoUZZr6m"",
+  ""object"": ""coupon"",
+  ""amount_off"": 32,
+  ""created"": 1685113963,
+  ""currency"": ""vuv"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 41,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1855049533,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4l4g9jia246_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8fDM1uvCPi8soF?t=1685113969"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t86vx9qsk46w_PostCoupons,200,"{
+  ""id"": ""hotaHjJj"",
+  ""object"": ""coupon"",
+  ""amount_off"": 1,
+  ""created"": 1685113974,
+  ""currency"": ""nad"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 5,
+  ""metadata"": {},
+  ""name"": ""reunify"",
+  ""percent_off"": null,
+  ""redeem_by"": 1810731706,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbhgae6fj0vq_PostCoupons,200,"{
+  ""id"": ""M5rhJF4n"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685113980,
+  ""currency"": ""djf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 76,
+  ""metadata"": {},
+  ""name"": ""anoint"",
+  ""percent_off"": 25.0,
+  ""redeem_by"": 1854391130,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

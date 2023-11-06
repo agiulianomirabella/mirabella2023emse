@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyc5wpn2t0mb_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_uSdUpzvARANvVj?t=1685082731"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhr4tmnksqb5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_oy7UhG2GlkXiB2?t=1685082736"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rl7uabgtxbg8_PostCoupons,200,"{
+  ""id"": ""jpJoUhUBM0p7P"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082742,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 96,
+  ""metadata"": {},
+  ""name"": ""isochronal"",
+  ""percent_off"": 38.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1gpifuhqrfn_PostCoupons,200,"{
+  ""id"": ""G12k4kDG"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082747,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 99.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vbq8rg1v1tte_PostCoupons,200,"{
+  ""id"": ""mL73K35j"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082753,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 90.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

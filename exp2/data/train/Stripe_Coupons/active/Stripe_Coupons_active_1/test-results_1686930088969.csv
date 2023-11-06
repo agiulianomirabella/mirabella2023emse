@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyf0ccfk925v_PostCoupons,200,"{
+  ""id"": ""MHMRynEK154I"",
+  ""object"": ""coupon"",
+  ""amount_off"": 10,
+  ""created"": 1686930105,
+  ""currency"": ""djf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 49,
+  ""metadata"": {},
+  ""name"": ""chela"",
+  ""percent_off"": null,
+  ""redeem_by"": 1757809165,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jyb17j8obbcm_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Cm7FhdxFdrEEV4?t=1686930111"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k1tzf86zmvjt_PostCoupons,200,"{
+  ""id"": ""UiOCZRTuN1"",
+  ""object"": ""coupon"",
+  ""amount_off"": 23,
+  ""created"": 1686930116,
+  ""currency"": ""jmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 77,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1804637211,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trrc73o5yrlj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_vDgKU22sSMa4ki?t=1686930122"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvjoxh1uptgk_PostCoupons,200,"{
+  ""id"": ""gSFXvh6LE3cr9FEh4NQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 84,
+  ""created"": 1686930128,
+  ""currency"": ""mdl"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 77,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1826950622,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7rfu357uss9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_OdOT7wup2DGIDW?t=1686929954"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iaxobne1lnaq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tnnEpKoNgWWQyF?t=1686929960"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jicu0qedewqd_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9f26NcGxGOpBYf?t=1686929965"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to1r5hol7ga9_PostCoupons,200,"{
+  ""id"": ""1Cyojk246xz"",
+  ""object"": ""coupon"",
+  ""amount_off"": 52,
+  ""created"": 1686929971,
+  ""currency"": ""afn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 49,
+  ""metadata"": {},
+  ""name"": ""reprocess"",
+  ""percent_off"": null,
+  ""redeem_by"": 1702345506,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ubuol4gk03ms_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_e16eAzgJFLUS9O?t=1686929977"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

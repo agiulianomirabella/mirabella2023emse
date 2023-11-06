@@ -1,0 +1,234 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib9a733koz1i_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_1iesqzfniaqub_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""RkcadFRP4hEmIHQZdJYGWcYmpUY"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""3pRvJ00ZIxrs23osxKZFYY5zBfg"",
+      ""id"": ""t22flliJLTQ"",
+      ""snippet"": {
+        ""publishedAt"": ""2020-01-01T17:00:12Z"",
+        ""channelId"": ""UCWJ2lWNubArHWmf3FIHbfcQ"",
+        ""title"": ""NBA's Top 100 Plays Of The Decade"",
+        ""description"": ""Check out the top 100 NBA Plays of the decade!!\n\nSubscribe to the NBA: https://on.nba.com/2JX5gSN\n\nFull Game Highlights Playlist: https://on.nba.com/2rjGMge\n\nFor news, stories, highlights and more, go to our official website at https://nba_webonly.app.link/nbasite\n\nGet NBA LEAGUE PASS: https://nba.app.link/nbaleaguepass5"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/t22flliJLTQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/t22flliJLTQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/t22flliJLTQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/t22flliJLTQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/t22flliJLTQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""NBA"",
+        ""tags"": [
+          ""nba"",
+          ""highlights"",
+          ""basketball"",
+          ""plays"",
+          ""amazing"",
+          ""sports"",
+          ""hoops"",
+          ""games"",
+          ""game"",
+          ""top 100"",
+          ""2010-2019"",
+          ""decade"",
+          ""game winner"",
+          ""clutch"",
+          ""buzzer beater"",
+          ""dunk"",
+          ""poster"",
+          ""posterize"",
+          ""dunks on"",
+          ""crossover"",
+          ""ankle breaker"",
+          ""breaks ankles"",
+          ""assist"",
+          ""block"",
+          ""chasedown"",
+          ""ray allen"",
+          ""lebron james"",
+          ""kawhi leonard"",
+          ""jumps over"",
+          ""deandre jordan"",
+          ""blake griffin"",
+          ""giannis antetokounmpo"",
+          ""stephen curry"",
+          ""russell westbrook"",
+          ""james harden"",
+          ""dwyane wade"",
+          ""damian lillard"",
+          ""windmill"",
+          ""kyrie irving"",
+          ""kobe bryant"",
+          ""derrick rose"",
+          ""playoffs"",
+          ""kevin durant""
+        ],
+        ""categoryId"": ""17"",
+        ""liveBroadcastContent"": ""none"",
+        ""defaultLanguage"": ""en"",
+        ""localized"": {
+          ""title"": ""NBA's Top 100 Plays Of The Decade"",
+          ""description"": ""Check out the top 100 NBA Plays of the decade!!\n\nSubscribe to the NBA: https://on.nba.com/2JX5gSN\n\nFull Game Highlights Playlist: https://on.nba.com/2rjGMge\n\nFor news, stories, highlights and more, go to our official website at https://nba_webonly.app.link/nbasite\n\nGet NBA LEAGUE PASS: https://nba.app.link/nbaleaguepass5""
+        },
+        ""defaultAudioLanguage"": ""en""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jygit7bqjuia_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""ma7X12QUfd6yy_z5krmWEjkGkJU"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""B6_1hsnzIrUGPZHbwCMV5MCczjA"",
+      ""id"": ""Fer1zEiOgCc"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      },
+      ""recordingDetails"": {}
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""PsNzZSTRXKmrCXCvMSB6QVlTkhQ"",
+      ""id"": ""biCJwmhKYG8"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      },
+      ""recordingDetails"": {}
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""oL9R0Z6VSjqD6VP_pxbmw6fc4r8"",
+      ""id"": ""HzFcoNjT9MI"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      },
+      ""recordingDetails"": {}
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""MCaO9q7cq-3uhEALUnUiMrE30eY"",
+      ""id"": ""X_QJl7Lmzhw"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      },
+      ""recordingDetails"": {}
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""GizxUomgfkRXpu50onGL5XsDGO4"",
+      ""id"": ""Z_Oy5WSQnyE"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      },
+      ""recordingDetails"": {}
+    }
+  ],
+  ""nextPageToken"": ""CAUQAA"",
+  ""pageInfo"": {
+    ""totalResults"": 198,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t81crh7utkxf_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_urxxgekhl2k0_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.

@@ -1,0 +1,72 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iuqf4ssuq6ht_PostCoupons,200,"{
+  ""id"": ""DkL2XwiQbtR9tp1tev"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685057562,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 95,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 6.0,
+  ""redeem_by"": 1713180469,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iyqkz5n86ek2_PostCoupons,200,"{
+  ""id"": ""R1tocc3G"",
+  ""object"": ""coupon"",
+  ""amount_off"": 8,
+  ""created"": 1685057568,
+  ""currency"": ""kgs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""propionaldehyde"",
+  ""percent_off"": null,
+  ""redeem_by"": 1735202577,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jyirhkrv8b3k_PostCoupons,200,"{
+  ""id"": ""2cp4mAoqgRV"",
+  ""object"": ""coupon"",
+  ""amount_off"": 83,
+  ""created"": 1685057574,
+  ""currency"": ""xcd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 1,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_uv8nsbkw51sx_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5bFuLlBR0fw6K0?t=1685057580"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvbes76gxilg_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rhXOfoVamy8nDk?t=1685057586"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7zs09x87ntt_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ibjvdex7x2sh_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": 2.3421478271484375, ""latitude"": 48.86195860677958}}}",application/json,true,none
+test_sl3xy2svtpo3_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Too many results requested, limit+offset must be <= 1000.""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u87wuv092y47_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urxfzpaoubef_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": 144.96734619140625, ""latitude"": -37.81787593178502}}}",application/json,true,none

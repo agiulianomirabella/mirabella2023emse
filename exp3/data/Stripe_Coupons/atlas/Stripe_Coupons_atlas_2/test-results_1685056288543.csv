@@ -1,0 +1,63 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jiaixjko88qd_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_xuGowA0Q1ubOdv?t=1685056305"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jyocz85f8uuv_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3gxunGRWnmKRKR?t=1685056311"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k2521w50xd82_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_GO1yJBEP67gcgY?t=1685056316"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_trtnlwvp0i1y_PostCoupons,200,"{
+  ""id"": ""YtpROvR0L7Jl6O"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685056322,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""aft"",
+  ""percent_off"": 58.0,
+  ""redeem_by"": 1832753789,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbkoqwlr3goi_PostCoupons,200,"{
+  ""id"": ""swt3s4xlIusSXTTTU"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685056328,
+  ""currency"": ""xpf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""fortuitously"",
+  ""percent_off"": 46.0,
+  ""redeem_by"": 1804278196,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

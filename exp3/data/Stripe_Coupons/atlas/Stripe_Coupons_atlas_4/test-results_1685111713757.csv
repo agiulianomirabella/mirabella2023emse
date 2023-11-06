@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyn90avso0ts_PostCoupons,200,"{
+  ""id"": ""Lim2ZT4h"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111730,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 34,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 5.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jyovoz6qthys_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DiO5wAnlWuYACP?t=1685111736"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdvkpld2e4oo_PostCoupons,200,"{
+  ""id"": ""tHNsGmaF"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111742,
+  ""currency"": ""mmk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 80,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 43.0,
+  ""redeem_by"": 1766779930,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1csu98jtkjb_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_efY0Ro2ugKVJQI?t=1685111748"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7okdvel5n52_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Uz97QV6ieK9BhK?t=1685111753"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

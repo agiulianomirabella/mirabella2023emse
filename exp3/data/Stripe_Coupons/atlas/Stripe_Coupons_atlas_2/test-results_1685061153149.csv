@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv5ixfmhy1yb_PostCoupons,200,"{
+  ""id"": ""y106tzDp"",
+  ""object"": ""coupon"",
+  ""amount_off"": 73,
+  ""created"": 1685061170,
+  ""currency"": ""hnl"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 65,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1851889462,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iauua42nj9kn_PostCoupons,200,"{
+  ""id"": ""DZScxzWtdP"",
+  ""object"": ""coupon"",
+  ""amount_off"": 10,
+  ""created"": 1685061175,
+  ""currency"": ""std"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sl1509kh0gms_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_k9d8pA36PB0Wxz?t=1685061181"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_to7c9brl1c9y_PostCoupons,200,"{
+  ""id"": ""H8sgIEuA5SLsJcrzy"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685061187,
+  ""currency"": ""bmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 5,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 80.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uv8nv1ukao1j_PostCoupons,200,"{
+  ""id"": ""201jG5xglelHwlcnq9OI"",
+  ""object"": ""coupon"",
+  ""amount_off"": 27,
+  ""created"": 1685061192,
+  ""currency"": ""mro"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,45 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iavevdn6l9o4_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dcCNT72u9rfnhj?t=1686932521"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qe9eswn95lx3_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3AIaMcebg6t9Sx?t=1686932527"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qxtbzca3sp4k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Xne0lmFy4yfIEI?t=1686932532"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to7ukmbg6vl1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_caeO1BpGrvbEjB?t=1686932538"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbszokwsgmsj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_WGJv4iOt34bxs4?t=1686932544"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

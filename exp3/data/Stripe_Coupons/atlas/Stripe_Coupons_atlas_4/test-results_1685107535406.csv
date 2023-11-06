@@ -1,0 +1,55 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib98yap84j79_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LTYR7i2Txpf8aM?t=1685107552"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iuvibrzkjcc4_PostCoupons,200,"{
+  ""id"": ""iunr1mOl"",
+  ""object"": ""coupon"",
+  ""amount_off"": 25,
+  ""created"": 1685107558,
+  ""currency"": ""aed"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 62,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1701814559,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qhl1vo0i0wmw_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wuazHwaRUdbMtA?t=1685107564"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxr2iy7kvwis_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_kRtRdbdgDwUje9?t=1685107569"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_somxyvtkj4h0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Y1JlQ7wHQlsOvK?t=1685107575"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iut8hb632f5k_PostCoupons,200,"{
+  ""id"": ""yngLE3teaXM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 34,
+  ""created"": 1685111037,
+  ""currency"": ""pln"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1839520147,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxfh6jj5brl0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wd4RddqhDk4DsX?t=1685111043"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4l44qtnc9bp_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QUSw36TMm7OPes?t=1685111049"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t843dlkmtqp2_PostCoupons,200,"{
+  ""id"": ""P8BZ95sC"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111054,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 100,
+  ""livemode"": false,
+  ""max_redemptions"": 62,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 59.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_urjknqdkkylv_PostCoupons,200,"{
+  ""id"": ""cVGEzXEGERXev9Enwv"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111060,
+  ""currency"": ""mop"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 94,
+  ""metadata"": {},
+  ""name"": ""firm"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": 1738891314,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

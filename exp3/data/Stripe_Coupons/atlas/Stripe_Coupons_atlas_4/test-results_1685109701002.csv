@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyc6lxmw0y7k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tKYcjEA6uhKHoq?t=1685109717"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jei8wion1zxt_PostCoupons,200,"{
+  ""id"": ""iPp9kstOt55elQk"",
+  ""object"": ""coupon"",
+  ""amount_off"": 24,
+  ""created"": 1685109723,
+  ""currency"": ""xof"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jy7orqtkrmg5_PostCoupons,200,"{
+  ""id"": ""AswMv1wDWc0gGi"",
+  ""object"": ""coupon"",
+  ""amount_off"": 47,
+  ""created"": 1685109729,
+  ""currency"": ""fjd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 38,
+  ""metadata"": {},
+  ""name"": ""crush"",
+  ""percent_off"": null,
+  ""redeem_by"": 1844216182,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxyud2kzmgrq_PostCoupons,200,"{
+  ""id"": ""ODbr6AXP"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685109736,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""unicycle"",
+  ""percent_off"": 11.0,
+  ""redeem_by"": 1751975208,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rh7tiazi7r5k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_1QDZS8Wb0B3dU5?t=1685109741"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

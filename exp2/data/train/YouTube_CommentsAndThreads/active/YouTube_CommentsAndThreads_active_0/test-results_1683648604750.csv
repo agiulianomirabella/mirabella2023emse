@@ -1,0 +1,3296 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hb7oxdedwbi0_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""AOFcAbjoo2Fx6Z31Uj9Qdbz-fQk"",
+  ""nextPageToken"": ""QURTSl9pMGhSNXJYVk53Q29qa29HaFFuSFhyRTZOd3UySGZyU05wQWVWQi1kbzEzemlPT2d2cEFHQzZuWWxVZFBHc1dhc1VteVF0MTZqaW5XSzh4RjBuT3BJV21oOGF6cVY5akt4dUhDbzVpMVhQMF9GSk04WEVQLUFKMDNQeDI4RHNqSkhpUUhEYm9aOUx1WVd3eGJDYVNPeXg2Vnk4eFJpV1FfaEFVX1VFbU1RaDh2LWhtTFFjNlFjcFpZTC1MYzBSSjJaUVBITzJyandn"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 62
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1hrgfhcrlroza_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rhdbkqtgnsc6_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_skv2r2r8jneg_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf9qs18tjmn8_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""z5I0t5vSEgJZQc220CnyqBBplvE"",
+  ""nextPageToken"": ""QURTSl9pMm9QOTR4LWs2Z2J1OFY4NjkyNkZMaVFpOGV5OTZjNDJvX083OVpicllVdUh5VE42dXhaQUROUEJSbWhRVVliVjdaMW5NRUIxa2tTU0ZIdU5ldG4yMC1sNEw2aGNiSU5QWnBJeDR5cmJVeF9MckdKMnV5RXZfeU9pQ1FvN1dlUWprMzNLWHFKUFB1SXY4UHBxOE1LU0kxSENMQVFTUXoxb1d3ZGt5V05id1lkU09JR213U0pSa185V0tRLVNKekxLOXk5WGVrSGJn"",
+  ""pageInfo"": {
+    ""totalResults"": 95,
+    ""resultsPerPage"": 99
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""niSQmI7rAQlKGBHUX1XwoeV8P4Q"",
+      ""id"": ""UgyIMslA3ZtYwCkZktp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""IbGVl4N3sVw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""6JoJNlrK0ettm7ywwYDve6zKS7Y"",
+          ""id"": ""UgyIMslA3ZtYwCkZktp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""IbGVl4N3sVw"",
+            ""textDisplay"": ""And there it is the pattern that he mentioned with Dead Ringers."",
+            ""textOriginal"": ""And there it is the pattern that he mentioned with Dead Ringers."",
+            ""authorDisplayName"": ""Daniele Viana"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOgVcSFBx8MXs8iIkDz3M1M0TzhkyeLIuaPXA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCO9c1CG8SlkB0KBICTEJ0Vw"",
+            ""authorChannelId"": {
+              ""value"": ""UCO9c1CG8SlkB0KBICTEJ0Vw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T16:05:28Z"",
+            ""updatedAt"": ""2023-05-09T16:05:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""hp57q2AiAycXxQyKw8r3oUxzwRY"",
+      ""id"": ""UgxLr0mkD2k7wtQvNXN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""RcPrl0rl76M"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""7AnEESaTYxbdbrd3fkijyUG99ac"",
+          ""id"": ""UgxLr0mkD2k7wtQvNXN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""RcPrl0rl76M"",
+            ""textDisplay"": ""Brilliant! Much gratitude!!"",
+            ""textOriginal"": ""Brilliant! Much gratitude!!"",
+            ""authorDisplayName"": ""Maureen Conlon"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM4DezzhXOM4pplDvQlBI55FjTaPwsMePbeog=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCAq8y3BYzwTsZVyoAQ1jHng"",
+            ""authorChannelId"": {
+              ""value"": ""UCAq8y3BYzwTsZVyoAQ1jHng""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T16:04:16Z"",
+            ""updatedAt"": ""2023-05-09T16:04:16Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WsONvdBajQWE8O8ek1-Gf4MatnI"",
+      ""id"": ""Ugzu3YCxt80gShMLAsd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""64mWOoj68qo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""aS1jsR-H8jNCjHQra51nTX7iTS8"",
+          ""id"": ""Ugzu3YCxt80gShMLAsd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""64mWOoj68qo"",
+            ""textDisplay"": ""that was the smoothest jump ever \u003ca href=\""https://www.youtube.com/watch?v=64mWOoj68qo&amp;t=4m04s\""\u003e4:04\u003c/a\u003e"",
+            ""textOriginal"": ""that was the smoothest jump ever 4:04"",
+            ""authorDisplayName"": ""Est Robart"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNDETgbZctzuhcp3vmidOqK2fc4yVTiEnCeJw-NDA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqW-ZT4k5jubMI6m6tJLx5g"",
+            ""authorChannelId"": {
+              ""value"": ""UCqW-ZT4k5jubMI6m6tJLx5g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:59:17Z"",
+            ""updatedAt"": ""2023-05-09T15:59:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zGJLcYvIx0-EInFXLBLWBjVHSSQ"",
+      ""id"": ""Ugy6BTj5xqDDOL_WrTV4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""JqgJifn2Py4"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""A9OALenav7bB3cn1mxMpsCktpLM"",
+          ""id"": ""Ugy6BTj5xqDDOL_WrTV4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""JqgJifn2Py4"",
+            ""textDisplay"": ""SOOOOOO-Why is Amy seated as far away from Stephen as possible and still be behind the desk?????"",
+            ""textOriginal"": ""SOOOOOO-Why is Amy seated as far away from Stephen as possible and still be behind the desk?????"",
+            ""authorDisplayName"": ""Will"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNehni3xQx108cYyVxt71sTr1x1en6YIA4RUOVsTON6fQPeWqkoJXRQE8HrOiIN=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCd7MpaiGB90fJtqLI0fAkIA"",
+            ""authorChannelId"": {
+              ""value"": ""UCd7MpaiGB90fJtqLI0fAkIA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:58:10Z"",
+            ""updatedAt"": ""2023-05-09T15:58:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""erhgHTWbKf2kGMvCS9kBnhbrzjc"",
+      ""id"": ""Ugzvc32OCEU2saJl_r14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gspb4DSvgm8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""mmvahJWSCQl6t_rwdNA4g3XdjCE"",
+          ""id"": ""Ugzvc32OCEU2saJl_r14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gspb4DSvgm8"",
+            ""textDisplay"": ""Super racist."",
+            ""textOriginal"": ""Super racist."",
+            ""authorDisplayName"": ""mercytohumanity"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1BENc9yjnrD5JRhEZxn4sXSCJA6rLFWkHXA5TCwTaPTj_UFHAT9xdkV12iy_yev7A-QjYCJX9-w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCl43Je1poGD-tmzkE8cYJTw"",
+            ""authorChannelId"": {
+              ""value"": ""UCl43Je1poGD-tmzkE8cYJTw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:54:00Z"",
+            ""updatedAt"": ""2023-05-09T15:54:00Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TPImNgWbJpzPKt6KCI5vY845DlI"",
+      ""id"": ""UgzZFL-Ofc9p6s9JV294AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""P5ZOwNK6n9U"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""JqhPH1vzlUQacoeSuYx3A4arS3o"",
+          ""id"": ""UgzZFL-Ofc9p6s9JV294AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""P5ZOwNK6n9U"",
+            ""textDisplay"": ""Most of Ricky&#39;s beliefs are pseudoscience and theories and lies,  he&#39;s a gullible clown 🤡😂"",
+            ""textOriginal"": ""Most of Ricky's beliefs are pseudoscience and theories and lies,  he's a gullible clown 🤡😂"",
+            ""authorDisplayName"": ""SevenKIslands"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOQbfuH6S0nobltbyPT7gU1zDSkTnKaqtnMIlDT94oIY_r8tUdEBJr-Pvi4PGUd=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvBPX3VG3mrY35E16VQ_wWg"",
+            ""authorChannelId"": {
+              ""value"": ""UCvBPX3VG3mrY35E16VQ_wWg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:44:13Z"",
+            ""updatedAt"": ""2023-05-09T15:44:13Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""31ZuRdkJEimcbiK-wsy09caOXhk"",
+      ""id"": ""UgwyZ_Dsv54dQZVOZOd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""P5ZOwNK6n9U"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""vyi2YPK2Qza2SG3BtyaSVrTObos"",
+          ""id"": ""UgwyZ_Dsv54dQZVOZOd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""P5ZOwNK6n9U"",
+            ""textDisplay"": ""I don&#39;t know anything about this host. But the fact that He can accept others opinions and even admit good arguments, makes Him better than 95% of Religious people"",
+            ""textOriginal"": ""I don't know anything about this host. But the fact that He can accept others opinions and even admit good arguments, makes Him better than 95% of Religious people"",
+            ""authorDisplayName"": ""Draco"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqO3wNIf785qX8Kr_CEtI4cMaSA4AQz7lXctQAE=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCER5vCZMetw0YWnXosi06lA"",
+            ""authorChannelId"": {
+              ""value"": ""UCER5vCZMetw0YWnXosi06lA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:43:19Z"",
+            ""updatedAt"": ""2023-05-09T15:43:19Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""SXwHE_L1MYyes32WAsrYvYphWWg"",
+      ""id"": ""Ugx8nRiCJmsfFOEF1TR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""qG3eNG2rO7o"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""wwrdBhvvYO_m_C7g0AG-NwgszQI"",
+          ""id"": ""Ugx8nRiCJmsfFOEF1TR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""qG3eNG2rO7o"",
+            ""textDisplay"": ""Money got power of motivation for innovation, human development physically and intellectually. It&#39;s importance can never be reduced if we want people to work and sort out their passions and material approach related issues. Being billionaire is a good idea for keeping motivation standards higher and higher so that hard work mindset could be honoured in society. Even ethnics depends on money as well."",
+            ""textOriginal"": ""Money got power of motivation for innovation, human development physically and intellectually. It's importance can never be reduced if we want people to work and sort out their passions and material approach related issues. Being billionaire is a good idea for keeping motivation standards higher and higher so that hard work mindset could be honoured in society. Even ethnics depends on money as well."",
+            ""authorDisplayName"": ""Arif Mahmood"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOu3T2DukNHDukyBIDeH_DXzWAWixqHlKv7sw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCndthIWkOV5Uy0yFXMcyviQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCndthIWkOV5Uy0yFXMcyviQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:32:20Z"",
+            ""updatedAt"": ""2023-05-09T15:32:20Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""p3lQtq_Krmv9UfbmGHcsEHHWBmE"",
+      ""id"": ""UgyFm_gHeascJwXeMVp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""soC7DtJXMC8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""H3xDufdlWGJEZxU03zQVM82ipwE"",
+          ""id"": ""UgyFm_gHeascJwXeMVp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""soC7DtJXMC8"",
+            ""textDisplay"": ""I’ve been listening to this everyday for the last two weeks … 2023"",
+            ""textOriginal"": ""I’ve been listening to this everyday for the last two weeks … 2023"",
+            ""authorDisplayName"": ""Andre Maliik Photography"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/rfQ-et_upJcex1vm5AnU4LnIgB1GcBcvErj12L3Xj-htm80qfqAA5cr0VgOmLeg7XQvrUJS-0w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCUNjuuw-HzMFi-oGApkzxWQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCUNjuuw-HzMFi-oGApkzxWQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:16:49Z"",
+            ""updatedAt"": ""2023-05-09T15:16:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""V0N1fpKtB1rNL-MqgryOIHJionw"",
+      ""id"": ""UgwjUoFEt6hB2JlyC3R4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""8v8YgCasPt4"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""LdCF60dXUmX2FunnlGYPAnwkSJw"",
+          ""id"": ""UgwjUoFEt6hB2JlyC3R4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""8v8YgCasPt4"",
+            ""textDisplay"": ""Florida ppl r stupid.  Vote for DeSantis n b like Cuba or Mexico bc he’s from there.  Ola Florida."",
+            ""textOriginal"": ""Florida ppl r stupid.  Vote for DeSantis n b like Cuba or Mexico bc he’s from there.  Ola Florida."",
+            ""authorDisplayName"": ""Ox Sixty One"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPJair50XcfYggnm7tVZLgKvy7TPQ1eNTPSgI0R-w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCalIOWX4SeDiz-buziAgkXg"",
+            ""authorChannelId"": {
+              ""value"": ""UCalIOWX4SeDiz-buziAgkXg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:15:28Z"",
+            ""updatedAt"": ""2023-05-09T15:15:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2TIPTH6WucwkmYXzPycUv4DyvnU"",
+      ""id"": ""UgxxEtBzZAsuCvNqYD94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gspb4DSvgm8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""umopnU5JZnDOQqAFMjOZxIyTMvA"",
+          ""id"": ""UgxxEtBzZAsuCvNqYD94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gspb4DSvgm8"",
+            ""textDisplay"": ""Kushner loved that 2 billion from saudi too"",
+            ""textOriginal"": ""Kushner loved that 2 billion from saudi too"",
+            ""authorDisplayName"": ""somethingg interestingg"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/e2FCS5wCSMYuamNudN-Th9_AGeoSwVTHzh2GP15v1K4sHddmzmhseiS6Tx1TMBgJ5KbRIMKTGg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7aonAksyik9jFDpV06o9zQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC7aonAksyik9jFDpV06o9zQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T15:06:19Z"",
+            ""updatedAt"": ""2023-05-09T15:06:19Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JQElTv_Wi9paLQ1_aJxzKnzRabo"",
+      ""id"": ""UgzNx3zlQsZADjWMbdx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""D0ojGNjBRorConcELYcmS3HJGyo"",
+          ""id"": ""UgzNx3zlQsZADjWMbdx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""Lincoln is rolling over in his grave"",
+            ""textOriginal"": ""Lincoln is rolling over in his grave"",
+            ""authorDisplayName"": ""sure why not"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP-sBXs52EbAU77pIpn4F-ApdFODFQKWUj8ZBA7dw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCpuhCXxht_z4oaWEHhYWSaw"",
+            ""authorChannelId"": {
+              ""value"": ""UCpuhCXxht_z4oaWEHhYWSaw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:58:49Z"",
+            ""updatedAt"": ""2023-05-09T14:58:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""s4JW7tej8FU6Ckr3tIk5YcRncDY"",
+      ""id"": ""Ugxk6kA5y_BYUqXXWR54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""P5ZOwNK6n9U"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""kB4Own-jKqt8pfqxaysrTFwLCb0"",
+          ""id"": ""Ugxk6kA5y_BYUqXXWR54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""P5ZOwNK6n9U"",
+            ""textDisplay"": ""Ricky obviously has never tried to sell a science textbook back to a university. Science changes constantly."",
+            ""textOriginal"": ""Ricky obviously has never tried to sell a science textbook back to a university. Science changes constantly."",
+            ""authorDisplayName"": ""Jarod"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOpJd-OG-RkCNsbg4-84bDbIbV0hq7ndBH9NQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCR9mxxswuafOF3abZRo6lkA"",
+            ""authorChannelId"": {
+              ""value"": ""UCR9mxxswuafOF3abZRo6lkA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:58:28Z"",
+            ""updatedAt"": ""2023-05-09T14:58:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""hBR7usUSpB2BSFx-Q4nx5i32hl8"",
+      ""id"": ""UgwbtgRdP5_Z0ouHsc54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""50RkE4nEzPk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Xb_AC-S2ukPtFDiYDdbUAwINOas"",
+          ""id"": ""UgwbtgRdP5_Z0ouHsc54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""50RkE4nEzPk"",
+            ""textDisplay"": ""Wow, brothers.  I can actually see it, so cool.  Dad should be proud."",
+            ""textOriginal"": ""Wow, brothers.  I can actually see it, so cool.  Dad should be proud."",
+            ""authorDisplayName"": ""Janet Gates-Gibson"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMJ-P8zhxwz5cQ1GKE0h0SJP7UJK-kCJlaonow5Bw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCDiZgNOPP_EVLV7K1ftw6gw"",
+            ""authorChannelId"": {
+              ""value"": ""UCDiZgNOPP_EVLV7K1ftw6gw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:53:16Z"",
+            ""updatedAt"": ""2023-05-09T14:53:16Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fRm3tRotMc4ahieEArvDPm0tvsg"",
+      ""id"": ""UgxWlEdbniBt_ysCvsR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""bAIIMD7u6TE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""h8kZzwULoP5VAHKOv1zUu3yDEk0"",
+          ""id"": ""UgxWlEdbniBt_ysCvsR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""bAIIMD7u6TE"",
+            ""textDisplay"": ""JVN is the disease that no one deserves."",
+            ""textOriginal"": ""JVN is the disease that no one deserves."",
+            ""authorDisplayName"": ""Ashley Stevens"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOkEiLKuI-jo7HsTtQpRWEfmd7TBqFTpby2OcU33BSZcK2Zt7B5W-HycpAaIwnV=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCX_jz_GZS6V_kWXxXkOwdGA"",
+            ""authorChannelId"": {
+              ""value"": ""UCX_jz_GZS6V_kWXxXkOwdGA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:51:49Z"",
+            ""updatedAt"": ""2023-05-09T14:51:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""x5SD_3nu4rqmXyQ_jTqlud5xiAI"",
+      ""id"": ""Ugydn0jyRxUlQNxGp3B4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""xn1WArMZ8Uc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""hQ90V6CX_xpsPbsdprEWDyfaDlo"",
+          ""id"": ""Ugydn0jyRxUlQNxGp3B4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""xn1WArMZ8Uc"",
+            ""textDisplay"": ""As in the End of Life on EARTH"",
+            ""textOriginal"": ""As in the End of Life on EARTH"",
+            ""authorDisplayName"": ""President Potato 🥔"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/C4X8-ZQ4M0A3X2nKpoEXSqL7nH1oravbhy0ZjPAWw0TQU5VPcBZZp7fUmKxW5vjv_zChL7ac2Q=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCxQdIdcH8DOb0rin9b1ZZeA"",
+            ""authorChannelId"": {
+              ""value"": ""UCxQdIdcH8DOb0rin9b1ZZeA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:36:37Z"",
+            ""updatedAt"": ""2023-05-09T14:36:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JyP4uza2JCa784goC794xic8KM4"",
+      ""id"": ""UgxyzLYJJuMMJZwwS6B4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LU5svrK4yAM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""2C084M1OE9WXv9mecFguL5axOiU"",
+          ""id"": ""UgxyzLYJJuMMJZwwS6B4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LU5svrK4yAM"",
+            ""textDisplay"": ""stephen&#39;s dancing always makes me smile. LOL"",
+            ""textOriginal"": ""stephen's dancing always makes me smile. LOL"",
+            ""authorDisplayName"": ""Avionne Celestin"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMKyXo9sPU4xcV-3-sOJ83_2zGCrptcqTvzkJ_IPw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCAx4iqLKHg2fubIAsOl3cfA"",
+            ""authorChannelId"": {
+              ""value"": ""UCAx4iqLKHg2fubIAsOl3cfA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:34:04Z"",
+            ""updatedAt"": ""2023-05-09T14:34:04Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""QLdCmvgakhnt38xVOjpafuskl0c"",
+      ""id"": ""UgzA9f5r_0McERnqH8N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""nPzcgzvk9UQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""sepyblpBBZDTtQJ5JT7o5BtDOWA"",
+          ""id"": ""UgzA9f5r_0McERnqH8N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""nPzcgzvk9UQ"",
+            ""textDisplay"": ""Steven let the guy talk!"",
+            ""textOriginal"": ""Steven let the guy talk!"",
+            ""authorDisplayName"": ""Adam"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOobzFsg5y59LuzXwbi3nyLXm-VEQmd_BPvnQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzXhZyTSgCZ_c_SWaSs4U6g"",
+            ""authorChannelId"": {
+              ""value"": ""UCzXhZyTSgCZ_c_SWaSs4U6g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:33:32Z"",
+            ""updatedAt"": ""2023-05-09T14:33:32Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""NIDznTfKhAM_T5mSVRmCw9DSeAc"",
+      ""id"": ""Ugx2AMWS1ao19-J51el4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""DVHS-3CLz_g"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""36nDJ1ppT3ILfRstJiC4_PqEFvA"",
+          ""id"": ""Ugx2AMWS1ao19-J51el4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""DVHS-3CLz_g"",
+            ""textDisplay"": ""I hope he is the next James Bond, honestly!"",
+            ""textOriginal"": ""I hope he is the next James Bond, honestly!"",
+            ""authorDisplayName"": ""Binuri "",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/fccrsf1vcoCEOpDlSAbn-Ku1HiGviaVYa7id-QVX4ELbNSRcQizs7Hm1z9UEylCx3T9L0gRjkg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC4YpjsDVkW1scxhQl0_-BEg"",
+            ""authorChannelId"": {
+              ""value"": ""UC4YpjsDVkW1scxhQl0_-BEg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:31:53Z"",
+            ""updatedAt"": ""2023-05-09T14:31:53Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""49Ul6d0IyHCUUzuLFS_SHJ4Ohgc"",
+      ""id"": ""UgwZHU42s5KbY-8msbR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""l4K6yyBGmW0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""R5fs4syCsmHT3FdTXz8YMFBYopA"",
+          ""id"": ""UgwZHU42s5KbY-8msbR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""l4K6yyBGmW0"",
+            ""textDisplay"": ""Never had the clot shot. I take methylene blue and borax supplementally. I can roll frying pans into taco shapes, pull over 450 conventional deadlift, and I frequently place in the top 3 at local 5k races. I’ve made it my life’s goal to be as healthy as possible. The majority of individuals, such as yourself, suffer from Dunning- Kruger. You eat processed foods in bulk, drink solvents for fun, bathe in detergents, consume mass quantities of fluoride, as well as lead lives full to the brim with angst and stress. It’s extremely amusing how you all seem to live mediocre existences, devoid of any accomplishments, yet somehow feel as if you’re superior to anyone else. There’s a myriad of health benefits from cost effective substances; that information is suppressed for the sake of capitalism. Money. Cash. You people stare at the screen and parrot anything they say. I take solace knowing I will live to old age gracefully while my peers rot away, both physically and mentally."",
+            ""textOriginal"": ""Never had the clot shot. I take methylene blue and borax supplementally. I can roll frying pans into taco shapes, pull over 450 conventional deadlift, and I frequently place in the top 3 at local 5k races. I’ve made it my life’s goal to be as healthy as possible. The majority of individuals, such as yourself, suffer from Dunning- Kruger. You eat processed foods in bulk, drink solvents for fun, bathe in detergents, consume mass quantities of fluoride, as well as lead lives full to the brim with angst and stress. It’s extremely amusing how you all seem to live mediocre existences, devoid of any accomplishments, yet somehow feel as if you’re superior to anyone else. There’s a myriad of health benefits from cost effective substances; that information is suppressed for the sake of capitalism. Money. Cash. You people stare at the screen and parrot anything they say. I take solace knowing I will live to old age gracefully while my peers rot away, both physically and mentally."",
+            ""authorDisplayName"": ""Reuben Pastrami"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOLwwku9EBa5J1UtYDhvC13WWj_OV-Ns9-J_kpUm1QLr5hen8TTTx8CLw1Sv-ln=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC5g0HjqeNTCcHZqKjdsQIVw"",
+            ""authorChannelId"": {
+              ""value"": ""UC5g0HjqeNTCcHZqKjdsQIVw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:27:25Z"",
+            ""updatedAt"": ""2023-05-09T14:27:25Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""j4a9kJ5Fgg0ylqCiDkBBik8z1as"",
+      ""id"": ""Ugw5wQawtj1dZKCvKQJ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""SVMONCDhxFI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""TYTheXx9BCFBPIFZsW4vPI0i-5E"",
+          ""id"": ""Ugw5wQawtj1dZKCvKQJ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""SVMONCDhxFI"",
+            ""textDisplay"": ""Turns out they didnt keep the HOUSE😂😂"",
+            ""textOriginal"": ""Turns out they didnt keep the HOUSE😂😂"",
+            ""authorDisplayName"": ""Catira App"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqO9s8_4baT8u987MvedArusN68wDU_UTHs_drOATpc=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyAFeb28mqBKsCwvse_SDqg"",
+            ""authorChannelId"": {
+              ""value"": ""UCyAFeb28mqBKsCwvse_SDqg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:25:21Z"",
+            ""updatedAt"": ""2023-05-09T14:25:21Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""qezJffqwgGFJX6-HWwWSJPRRWk4"",
+      ""id"": ""UgztZxmlbvKBbTC_jsd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cyXr1vrT8G0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""5S3ZHQd-30v3M2HIcYrvhKpvle4"",
+          ""id"": ""UgztZxmlbvKBbTC_jsd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cyXr1vrT8G0"",
+            ""textDisplay"": ""Jesus can say where our soul goes on whether to eternal paradise or dam nation. The only One who proved life after death and defeated that very dreadful word death. It&#39;s not just history but it&#39;s His story.  Praise God."",
+            ""textOriginal"": ""Jesus can say where our soul goes on whether to eternal paradise or dam nation. The only One who proved life after death and defeated that very dreadful word death. It's not just history but it's His story.  Praise God."",
+            ""authorDisplayName"": ""Oreste Torres"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOKF6rOt0UwfKsxzNzKUAYV8CHjkXuEo15xvw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC5T2fvm_CmgT9wUWAWVGVTQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC5T2fvm_CmgT9wUWAWVGVTQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:21:34Z"",
+            ""updatedAt"": ""2023-05-09T14:22:27Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8NBic9lS0xMkn4eRBFOhzkXDUUY"",
+      ""id"": ""UgxtXDlFbCEA-YFURQx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""zjYmcuN_9iU"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Rr-494ZKeT8HGCWNPz61G8-90QA"",
+          ""id"": ""UgxtXDlFbCEA-YFURQx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""zjYmcuN_9iU"",
+            ""textDisplay"": ""His Irish humour always  comes out❤😂"",
+            ""textOriginal"": ""His Irish humour always  comes out❤😂"",
+            ""authorDisplayName"": ""John Mc Cann"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNHj5FBm6qHE6FyP_F4dcGr6g_zNq30ZGB3pnqAww=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZXkqDvJSV2ZRfMfPIxP8Sg"",
+            ""authorChannelId"": {
+              ""value"": ""UCZXkqDvJSV2ZRfMfPIxP8Sg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T14:00:13Z"",
+            ""updatedAt"": ""2023-05-09T14:00:13Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2_jkvvoN4d-SooPu3HP8tJc-NiQ"",
+      ""id"": ""UgwDL6tkYKVcjfqbeqV4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cyXr1vrT8G0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""LuzO8NxnULu0piacxshD6FOS6CQ"",
+          ""id"": ""UgwDL6tkYKVcjfqbeqV4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cyXr1vrT8G0"",
+            ""textDisplay"": ""THE MOST PAUSED PART OF &quot;SHALLOW AL&quot;, WAS WHEN PALTROW FALLS BACKWARDS IN RESTAURANT"",
+            ""textOriginal"": ""THE MOST PAUSED PART OF \""SHALLOW AL\"", WAS WHEN PALTROW FALLS BACKWARDS IN RESTAURANT"",
+            ""authorDisplayName"": ""Doug Clem"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP9W02VTRqh9vysJvPyC7XUJrHZsaE8EVDl=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCl_CrB-1OM1JGMVNnJV3ziA"",
+            ""authorChannelId"": {
+              ""value"": ""UCl_CrB-1OM1JGMVNnJV3ziA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:53:01Z"",
+            ""updatedAt"": ""2023-05-09T13:53:01Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""lpOYwF7zCtABdpjmEHCxXtQNfdc"",
+      ""id"": ""UgxSfdkWVwsar3M70LZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""G-H_jRLyZD0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""tpHGn-z_In0wGGDigj5xodG3cQQ"",
+          ""id"": ""UgxSfdkWVwsar3M70LZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""G-H_jRLyZD0"",
+            ""textDisplay"": ""WHY WAS THERE A SCENE FROM &quot;GROUND HOG DAY&quot;, IN THE GOOD WIFE?"",
+            ""textOriginal"": ""WHY WAS THERE A SCENE FROM \""GROUND HOG DAY\"", IN THE GOOD WIFE?"",
+            ""authorDisplayName"": ""Doug Clem"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP9W02VTRqh9vysJvPyC7XUJrHZsaE8EVDl=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCl_CrB-1OM1JGMVNnJV3ziA"",
+            ""authorChannelId"": {
+              ""value"": ""UCl_CrB-1OM1JGMVNnJV3ziA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:49:39Z"",
+            ""updatedAt"": ""2023-05-09T13:49:39Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0vko1khapJgVZC55RT2fyVMQiXY"",
+      ""id"": ""UgyOEsMK9rwi5H2gU-J4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""zu9pPYr4cPo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""odAxlFQqdFsCtJIEKEXlppe9Soo"",
+          ""id"": ""UgyOEsMK9rwi5H2gU-J4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""zu9pPYr4cPo"",
+            ""textDisplay"": ""Ooohhhh - writers strike - rerun city!"",
+            ""textOriginal"": ""Ooohhhh - writers strike - rerun city!"",
+            ""authorDisplayName"": ""Laura Sparks"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPzJ0u_pHU_30KmK3HHORni0aVFiO_LllY4VUKowA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7m8G70jnxutGstb4ZpiG_g"",
+            ""authorChannelId"": {
+              ""value"": ""UC7m8G70jnxutGstb4ZpiG_g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:47:36Z"",
+            ""updatedAt"": ""2023-05-09T13:47:36Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TPHhm1NWWvs5L3VJl9L4oja2k2k"",
+      ""id"": ""Ugw3S0Qk-GA-1uTbp9R4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""7LvQNM_uLIs"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""UTo3XU351tJfQ0tFqc0JvUDsHoY"",
+          ""id"": ""Ugw3S0Qk-GA-1uTbp9R4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""7LvQNM_uLIs"",
+            ""textDisplay"": ""What an amazing Artist/human being❤God bless you Bruce!"",
+            ""textOriginal"": ""What an amazing Artist/human being❤God bless you Bruce!"",
+            ""authorDisplayName"": ""John Mc Cann"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNHj5FBm6qHE6FyP_F4dcGr6g_zNq30ZGB3pnqAww=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZXkqDvJSV2ZRfMfPIxP8Sg"",
+            ""authorChannelId"": {
+              ""value"": ""UCZXkqDvJSV2ZRfMfPIxP8Sg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:40:23Z"",
+            ""updatedAt"": ""2023-05-09T13:40:23Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""SSqKxXhiVT5ZJN3-ZAfcEHZCgc8"",
+      ""id"": ""UgxTd1ouxFC2zR8kW1N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""K2QMUX-aasE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""5PH7XDXa_b9Km7-qvNe45tTyz3I"",
+          ""id"": ""UgxTd1ouxFC2zR8kW1N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""K2QMUX-aasE"",
+            ""textDisplay"": ""Sandra : our energy will stay around for the one we love\u003cbr\u003e\u003cbr\u003eKeanu : i know the one that loves us will miss us"",
+            ""textOriginal"": ""Sandra : our energy will stay around for the one we love\n\nKeanu : i know the one that loves us will miss us"",
+            ""authorDisplayName"": ""All Things Nerdy"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMNSz1ntG30DNsf6_hPXWSrhfufx4AJkG15eWj4YA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYF_r8sVab6OHGFdtvlbL8Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCYF_r8sVab6OHGFdtvlbL8Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:13:06Z"",
+            ""updatedAt"": ""2023-05-09T13:13:06Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""VLqdSbKoGorkkNq8cIzPNbu7CR8"",
+      ""id"": ""UgyGZ3MQ8-kEyQD1rsZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""Vv6Obfzx370"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qIIlTmKA6atk8C--vm8su-t3HRU"",
+          ""id"": ""UgyGZ3MQ8-kEyQD1rsZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""Vv6Obfzx370"",
+            ""textDisplay"": ""9/5/2023 missing you Steven - hope the problem gets sorted soon. We love you in Australia. cheers"",
+            ""textOriginal"": ""9/5/2023 missing you Steven - hope the problem gets sorted soon. We love you in Australia. cheers"",
+            ""authorDisplayName"": ""Denis Cowcill"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPzFsYtRttJmvt23AVDyzP_5oJ0gj-TVkTxQ5Q9lvyFNsvP0q-rHK7Oyy99Q_Uv=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCLFVTOnpsJDVIN2iCuNMTwg"",
+            ""authorChannelId"": {
+              ""value"": ""UCLFVTOnpsJDVIN2iCuNMTwg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:11:20Z"",
+            ""updatedAt"": ""2023-05-09T13:11:20Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HaSx5qUBkfONugEUaP5AzLKzV7k"",
+      ""id"": ""UgzgN_Ip0DE48gmq-KB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""duKkHLm2QO0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Z-pKMK_2ZxxAvAMAJOr9tfYy9Ys"",
+          ""id"": ""UgzgN_Ip0DE48gmq-KB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""duKkHLm2QO0"",
+            ""textDisplay"": ""I had coworkers watch Fox News! Yep that tells you a lot about the individual…"",
+            ""textOriginal"": ""I had coworkers watch Fox News! Yep that tells you a lot about the individual…"",
+            ""authorDisplayName"": ""Wuhala Casava"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP98SSR3aIdpi6JiDemL7dWA4Xtg3OIzvJ5fTFjTQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC2Gd17BIPwZn6xGXi_Qz-dw"",
+            ""authorChannelId"": {
+              ""value"": ""UC2Gd17BIPwZn6xGXi_Qz-dw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:10:41Z"",
+            ""updatedAt"": ""2023-05-09T13:10:41Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""DDdbynogVRYFXmaM0B_dQ098vTo"",
+      ""id"": ""UgwNiOpdus8bXTzTFTR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""E6l0ObY2XVM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""pxBkhmlKPYfJdbrgWvB0RKiT1_o"",
+          ""id"": ""UgwNiOpdus8bXTzTFTR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""E6l0ObY2XVM"",
+            ""textDisplay"": ""He seemed so happy before his wife.. he and his brother seemed to have such a good relationship their whole lives. I just don’t understand what happened so suddenly that really flipped that switch."",
+            ""textOriginal"": ""He seemed so happy before his wife.. he and his brother seemed to have such a good relationship their whole lives. I just don’t understand what happened so suddenly that really flipped that switch."",
+            ""authorDisplayName"": ""Lucy Mouse"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNOmpcbFMzcts4dHNcS-g4oKY7QgCBCPsu_VlJz=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCCY1XRvSlDRLHkOV-RuqkQw"",
+            ""authorChannelId"": {
+              ""value"": ""UCCY1XRvSlDRLHkOV-RuqkQw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:04:07Z"",
+            ""updatedAt"": ""2023-05-09T13:04:07Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""jG4YlFYoPRjBwlz1ab3RTVCALZI"",
+      ""id"": ""UgyyFaQPZXz24aWtSTJ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""xKD6gzAz08E"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""wiWpjduvpk52Cw_GItI9dojl28M"",
+          ""id"": ""UgyyFaQPZXz24aWtSTJ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""xKD6gzAz08E"",
+            ""textDisplay"": ""Bedford mentioned!!!"",
+            ""textOriginal"": ""Bedford mentioned!!!"",
+            ""authorDisplayName"": ""ori"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1gaLzSnfR6BvfENuO2ygsADwsD_m7TJd2M0ZitErR7hTgENJDWBOlccJzzozSJrVNVqIC5VLRw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_gSBO8GifznbHCinEbksww"",
+            ""authorChannelId"": {
+              ""value"": ""UC_gSBO8GifznbHCinEbksww""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T13:01:59Z"",
+            ""updatedAt"": ""2023-05-09T13:01:59Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Q3DscLcHHZY13oxKeO-TZroPt-Y"",
+      ""id"": ""Ugw0J_vtws76wArwSF54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""5S2X60XKj0g"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""W4bmfkmOpm8bs7PBejRE_8NsBsg"",
+          ""id"": ""Ugw0J_vtws76wArwSF54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""5S2X60XKj0g"",
+            ""textDisplay"": ""They’re good.❤"",
+            ""textOriginal"": ""They’re good.❤"",
+            ""authorDisplayName"": ""Video History Snippets"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/qsTg10G7vcan5QJwPES0REINDE1DkyY7bnRsw0PqgPCe8L6QkCAQA2n24UVOV2vVkOykkPHk3Q=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnPhxRkgT6VaXPaQfhyuIFw"",
+            ""authorChannelId"": {
+              ""value"": ""UCnPhxRkgT6VaXPaQfhyuIFw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:53:30Z"",
+            ""updatedAt"": ""2023-05-09T12:53:30Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tYtO9jtp6_w4HKr03e-R9VBSfrA"",
+      ""id"": ""UgyvPrw7FrybkUbnjGl4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""yrRHfHGIW_Y"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""rJ7mWE41Hj0GEC76iP9lTJEiqoc"",
+          ""id"": ""UgyvPrw7FrybkUbnjGl4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""yrRHfHGIW_Y"",
+            ""textDisplay"": ""He sounds like Daniel Radcliffe tbh"",
+            ""textOriginal"": ""He sounds like Daniel Radcliffe tbh"",
+            ""authorDisplayName"": ""Roland Delderfield"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqO0svNR9XbJlSCU677CojhHC5JC0Nyy8mWBjmxR6A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCigs45WrWiWB_V9KR2HiQfA"",
+            ""authorChannelId"": {
+              ""value"": ""UCigs45WrWiWB_V9KR2HiQfA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:50:51Z"",
+            ""updatedAt"": ""2023-05-09T12:50:51Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YZF-wqgKDQXrepsNWMKqPIN5gnY"",
+      ""id"": ""UgygLlOmV71K757aI_d4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""zj7jVB-ZnZg"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""OWM2cgSiQwlXO41IRkbT0rRCQAE"",
+          ""id"": ""UgygLlOmV71K757aI_d4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""zj7jVB-ZnZg"",
+            ""textDisplay"": ""jamie foxx literally knew everyone before they were famous"",
+            ""textOriginal"": ""jamie foxx literally knew everyone before they were famous"",
+            ""authorDisplayName"": ""Ra O uF"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMjP17LECpJgGKzmnr0KfzBaCBlmgPpOrmUH6VznA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnY67ZNIbAEGJYRNSKKozkw"",
+            ""authorChannelId"": {
+              ""value"": ""UCnY67ZNIbAEGJYRNSKKozkw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:48:39Z"",
+            ""updatedAt"": ""2023-05-09T12:48:55Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""b1GO7pnnzjSFAvicxypubzZ016w"",
+      ""id"": ""Ugy90g2Q6JcwZEyn4el4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""mgzZ0Jg3-4c"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""LaCelig4qIDQ5qu1NgfW-QodLM4"",
+          ""id"": ""Ugy90g2Q6JcwZEyn4el4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""mgzZ0Jg3-4c"",
+            ""textDisplay"": ""Time for an update:\u003cbr\u003e\u003cbr\u003e   \u003ca href=\""https://www.youtube.com/watch?v=Du-yQRqKtwg\""\u003ehttps://www.youtube.com/watch?v=Du-yQRqKtwg\u003c/a\u003e\u003cbr\u003e   Susan Collins sounds alarm on widespread use of extremely potent cannabis by young people (2023-May-9)\u003cbr\u003e\u003cbr\u003eThis senator didn&#39;t hear about « strong THC » being an urban myth.  Worse, if protection of youth is her goal then how to explain the short sight over Pest Control &quot;sanitory&quot; Products getting sprayed in savvy toxicity-boosted ways by indu$trials capable of maximizing its potency without raising any alarms and yet cause the sensitive antennas of nuisible insects to frown from the disgusting stench at that level.\u003cbr\u003e\u003cbr\u003eThe reasoning is that &quot;traces&quot; represent no Public Health concern but that&#39;s not just like eating straberries once in a while:  cannabis consumption is a habit that can prove being repeated regularily week after week for years if not decades starting from even before the adult age.  Which means the younger a consumer the more he&#39;s exposed to sanitory soups without any combinatorial restrictions despite PCP catalogs ranging in the hundred.  Wasington&#39;s &quot;i502&quot; had 200 pesticides as i vaguely recall...\u003cbr\u003e\u003cbr\u003eBriefly put, assuming C(200, 12) for a dozen PCPs that&#39;s 6107693672247476400 recipes to systematically test already, while time and money ain&#39;t infinite resources.  Which implies no long-term studies can be obtained before a few more generations have past, e.g. when it&#39;s too late and potentially even more serious for those teenagers that senator pretends to have at heart.  Not to mention strawberries involve filtering organs once eaten, compared to inhalation which is vastly prefered for its gain in direct/quick bio-availability.  But that&#39;s all giberrish to most politi¢ian$ posing as &quot;expert$&quot; guided by $¢ien¢e, besides adepts of the $¢ientology $e¢t and whatnot who routinely caused permanent trauma, for exemple:\u003cbr\u003e\u003cbr\u003e   &quot;Fix-my-Kid&quot;\u003cbr\u003e   &quot;Kids-for-Cash&quot;\u003cbr\u003e   &quot;Narconon Trois-Rivières&quot;"",
+            ""textOriginal"": ""Time for an update:\n\n   https://www.youtube.com/watch?v=Du-yQRqKtwg\n   Susan Collins sounds alarm on widespread use of extremely potent cannabis by young people (2023-May-9)\n\nThis senator didn't hear about « strong THC » being an urban myth.  Worse, if protection of youth is her goal then how to explain the short sight over Pest Control \""sanitory\"" Products getting sprayed in savvy toxicity-boosted ways by indu$trials capable of maximizing its potency without raising any alarms and yet cause the sensitive antennas of nuisible insects to frown from the disgusting stench at that level.\n\nThe reasoning is that \""traces\"" represent no Public Health concern but that's not just like eating straberries once in a while:  cannabis consumption is a habit that can prove being repeated regularily week after week for years if not decades starting from even before the adult age.  Which means the younger a consumer the more he's exposed to sanitory soups without any combinatorial restrictions despite PCP catalogs ranging in the hundred.  Wasington's \""i502\"" had 200 pesticides as i vaguely recall...\n\nBriefly put, assuming C(200, 12) for a dozen PCPs that's 6107693672247476400 recipes to systematically test already, while time and money ain't infinite resources.  Which implies no long-term studies can be obtained before a few more generations have past, e.g. when it's too late and potentially even more serious for those teenagers that senator pretends to have at heart.  Not to mention strawberries involve filtering organs once eaten, compared to inhalation which is vastly prefered for its gain in direct/quick bio-availability.  But that's all giberrish to most politi¢ian$ posing as \""expert$\"" guided by $¢ien¢e, besides adepts of the $¢ientology $e¢t and whatnot who routinely caused permanent trauma, for exemple:\n\n   \""Fix-my-Kid\""\n   \""Kids-for-Cash\""\n   \""Narconon Trois-Rivières\"""",
+            ""authorDisplayName"": ""Egzoset"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMVs5v_8zkhmD_1S9LIPLW1kNYKcT0GVlQR8pQ1bA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC3TDj0bbtJxSMp9BJHA0yrw"",
+            ""authorChannelId"": {
+              ""value"": ""UC3TDj0bbtJxSMp9BJHA0yrw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:47:05Z"",
+            ""updatedAt"": ""2023-05-09T12:47:05Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""yy7bpfChLoGH_oaCon9KCeGYkRc"",
+      ""id"": ""UgxWpMeDh3bCMRw8G014AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""nUU9x3-YGi8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""sNqLZo9Ev6kkn-sI6STaGn0TxPE"",
+          ""id"": ""UgxWpMeDh3bCMRw8G014AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""nUU9x3-YGi8"",
+            ""textDisplay"": ""Fuck that was actually bloody chur as haka! Increadible stuff Stephen. Tumeke!"",
+            ""textOriginal"": ""Fuck that was actually bloody chur as haka! Increadible stuff Stephen. Tumeke!"",
+            ""authorDisplayName"": ""Javan606"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMQaiDOp5VL-hnvX18-cSfmnnetXAfyXpQH6Bdkww=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0cQhKnL7YG3UYyjOVQbkVw"",
+            ""authorChannelId"": {
+              ""value"": ""UC0cQhKnL7YG3UYyjOVQbkVw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:31:28Z"",
+            ""updatedAt"": ""2023-05-09T12:31:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""aRZDk9Ygjk3SnIC5TvsR8JMT8_o"",
+      ""id"": ""Ugy0Meko7PB0kmXnb1F4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""IsQ39-DkGI6xLQk8QYWhtBvQ-kk"",
+          ""id"": ""Ugy0Meko7PB0kmXnb1F4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""This is what corporate capture of journalism looks like."",
+            ""textOriginal"": ""This is what corporate capture of journalism looks like."",
+            ""authorDisplayName"": ""Sven Edwards"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMH0KQ-oiihip89RszqWwzWKO8UVbmx0_TzEuQa=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCBMdqI8o3wXqxV0QgmMOeQg"",
+            ""authorChannelId"": {
+              ""value"": ""UCBMdqI8o3wXqxV0QgmMOeQg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:30:37Z"",
+            ""updatedAt"": ""2023-05-09T12:30:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5l_bx_m8YbFzoTbaXSka_ySpFNg"",
+      ""id"": ""Ugy4alMlfZpzibs-z2p4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""pOKm7aA3L82y6Vfgdp4wQpxqmXw"",
+          ""id"": ""Ugy4alMlfZpzibs-z2p4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""She always just cackles .. like hen .."",
+            ""textOriginal"": ""She always just cackles .. like hen .."",
+            ""authorDisplayName"": ""IM IM"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqN1upTZK8IsTwhUizrTmz4xYgbwm7r18t-1yEJt=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCQNYowbS-ic9bMmP02gTTwg"",
+            ""authorChannelId"": {
+              ""value"": ""UCQNYowbS-ic9bMmP02gTTwg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:25:49Z"",
+            ""updatedAt"": ""2023-05-09T12:25:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zAfyO5HomICDL0bUF7A8tfJ46n8"",
+      ""id"": ""UgxguAcXgrAPPwqBhJ14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""E6l0ObY2XVM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""s1IT5jfIKKLH2mmwv2NdPvtMMJg"",
+          ""id"": ""UgxguAcXgrAPPwqBhJ14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""E6l0ObY2XVM"",
+            ""textDisplay"": ""I wish that people will leave Harry and Meghan alone. He wanted to be free with the cold rigid life in with the royal family. He is happy leading a normal life with his wife and kids. Diana would be on his side."",
+            ""textOriginal"": ""I wish that people will leave Harry and Meghan alone. He wanted to be free with the cold rigid life in with the royal family. He is happy leading a normal life with his wife and kids. Diana would be on his side."",
+            ""authorDisplayName"": ""Sperry411"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMWhk0za7TIj06bQOt9kDrxKAgqIc7z8f7hDkam=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-45UaoYkMrkbKDRlZkSqZg"",
+            ""authorChannelId"": {
+              ""value"": ""UC-45UaoYkMrkbKDRlZkSqZg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:18:58Z"",
+            ""updatedAt"": ""2023-05-09T12:18:58Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fTvLrekosxPu38ecRkhmab4MuKA"",
+      ""id"": ""Ugxaeq4x-PywGO6Q44h4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""T5kAYoS_LQhEFgnXOJs0MfSIKYo"",
+          ""id"": ""Ugxaeq4x-PywGO6Q44h4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""Geriatric nurse Kamala Harris laughing at people just as she does in private when she looks at Biden&#39;s Alzheimer Dementia"",
+            ""textOriginal"": ""Geriatric nurse Kamala Harris laughing at people just as she does in private when she looks at Biden's Alzheimer Dementia"",
+            ""authorDisplayName"": ""Kimmel Slavko"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNOH6tq8n4mtjtcTSQlrTIwiu-Lg688xF_gxIlLsyuooEbeYUtDqTZ-_P85_w47=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZIaDuC-FQv1vBndbjtvJVg"",
+            ""authorChannelId"": {
+              ""value"": ""UCZIaDuC-FQv1vBndbjtvJVg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:17:53Z"",
+            ""updatedAt"": ""2023-05-09T12:17:53Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""4WcjtM7KjIXG8EzBJ4Uuh_h2njI"",
+      ""id"": ""UgxgI9_PjAQEzCnAToB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""qgIGqpAJsQA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""QA_vs26E8v6QITf9EFxhrHGZ9BY"",
+          ""id"": ""UgxgI9_PjAQEzCnAToB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""qgIGqpAJsQA"",
+            ""textDisplay"": ""❤"",
+            ""textOriginal"": ""❤"",
+            ""authorDisplayName"": ""CelestialHoney"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/yiMeKc3xehVHOEIXG_ZZuJdoUQ4whuzIs9w6bMePYC06bH3ACT57yRxguWETOWdz2pw6-5Qwhg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyhlKEtDb_eW2TR4iOEtGUQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCyhlKEtDb_eW2TR4iOEtGUQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2023-05-09T12:01:58Z"",
+            ""updatedAt"": ""2023-05-09T12:01:58Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""bLZvSs6Y3azlkEv3x_veqaQf6NY"",
+      ""id"": ""UgwROaTAC31R6fyhsOJ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""HtbjE85P4z4"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""_zlSN9r43WdjL7gxebYsFJCqr1o"",
+          ""id"": ""UgwROaTAC31R6fyhsOJ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""HtbjE85P4z4"",
+            ""textDisplay"": ""Anyone else notice she&#39;s probably a sociopath?"",
+            ""textOriginal"": ""Anyone else notice she's probably a sociopath?"",
+            ""authorDisplayName"": ""Gavin Lux"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNZsSx9dg3pdpYxsCUgqFbw-LXzayG-o-CKFQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UClXSIwtF-VqWuNNKU43cjdw"",
+            ""authorChannelId"": {
+              ""value"": ""UClXSIwtF-VqWuNNKU43cjdw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T12:00:21Z"",
+            ""updatedAt"": ""2023-05-09T12:00:21Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""G0FJ8vtM8NTZ2LdqRNnzG9o9Nk8"",
+      ""id"": ""UgzxMGW09w1W7kLLGqx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cMSZgfuEhcw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8V0J1kFe1ld8eDNMBWsVMUusuQA"",
+          ""id"": ""UgzxMGW09w1W7kLLGqx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cMSZgfuEhcw"",
+            ""textDisplay"": ""The big difference is she is braindead dem"",
+            ""textOriginal"": ""The big difference is she is braindead dem"",
+            ""authorDisplayName"": ""Mike Ziegler"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNVNSIsAfcazXFnlYP0-Mi-1u6Htdt5u6YSnjQRCA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCM-zu-_gkoJY_DbDFrOo81g"",
+            ""authorChannelId"": {
+              ""value"": ""UCM-zu-_gkoJY_DbDFrOo81g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T11:38:41Z"",
+            ""updatedAt"": ""2023-05-09T11:38:41Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""p2_rglwjUepZspzeZlvLuer6iEI"",
+      ""id"": ""Ugw-Ymd3vLcWcLv9DfN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""E6l0ObY2XVM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""0Z4fKFmkUfCLaQjgIpgB1M7OqFA"",
+          ""id"": ""Ugw-Ymd3vLcWcLv9DfN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""E6l0ObY2XVM"",
+            ""textDisplay"": ""Well these youtube comments are rigged"",
+            ""textOriginal"": ""Well these youtube comments are rigged"",
+            ""authorDisplayName"": ""Gerard Duffy"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOk7o2vFwQRkLr8IIXszhdbloaruPQhlVZ3Og=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC4FqXoDqfc-dwrtEZaYsOMg"",
+            ""authorChannelId"": {
+              ""value"": ""UC4FqXoDqfc-dwrtEZaYsOMg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T11:36:02Z"",
+            ""updatedAt"": ""2023-05-09T11:36:02Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""T4oSiMlYI8DJ_COEXyL3TgHx-Cg"",
+      ""id"": ""UgyDJrWw147F4fzWed14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LU5svrK4yAM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""W3JY8Gwew6w08kRZZYsK5fr-1Mo"",
+          ""id"": ""UgyDJrWw147F4fzWed14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LU5svrK4yAM"",
+            ""textDisplay"": ""why?? black rock owns 43m shares of fox and 54m shares of voteing company black rock sue its self and got rid of tucker but tucker still has 18 months on contect they side line him for 2024 voteing to keep him quit"",
+            ""textOriginal"": ""why?? black rock owns 43m shares of fox and 54m shares of voteing company black rock sue its self and got rid of tucker but tucker still has 18 months on contect they side line him for 2024 voteing to keep him quit"",
+            ""authorDisplayName"": ""nat johnson"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqO_EzV6_NhCPNB40_WBvP7lYel724BZzNPRAnRP3JS6brbtH_OGFItuGA_0-s1H=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCwY59KifMC2TeE2pjvH_VkQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCwY59KifMC2TeE2pjvH_VkQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T11:34:16Z"",
+            ""updatedAt"": ""2023-05-09T11:34:16Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""bmYFneLK3GmoqMSVsV9i7r8NzBg"",
+      ""id"": ""UgwD8zY6xWY252eZ8e14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""zjZBDTad5y4"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""a3HuOKfiNEYpG4M7C6ecXfXrNgo"",
+          ""id"": ""UgwD8zY6xWY252eZ8e14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""zjZBDTad5y4"",
+            ""textDisplay"": ""Its weird to me that woman find him attractive"",
+            ""textOriginal"": ""Its weird to me that woman find him attractive"",
+            ""authorDisplayName"": ""scouse nofeyzulla"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM4HDPku6vWGepxGf7V-0xDaPG13fTIuyaMUPHBrA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCAwm6_WImMMPQ-eDXwQf9nA"",
+            ""authorChannelId"": {
+              ""value"": ""UCAwm6_WImMMPQ-eDXwQf9nA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T11:13:10Z"",
+            ""updatedAt"": ""2023-05-09T11:13:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""IiIdmvbTQP6acfhD9VZQmp4-4fQ"",
+      ""id"": ""Ugx-zDm5ONDfz8xw0vd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""E6l0ObY2XVM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""iTPEf8fEEKG1ZxyGhahydDcVkM8"",
+          ""id"": ""Ugx-zDm5ONDfz8xw0vd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""E6l0ObY2XVM"",
+            ""textDisplay"": ""The Princeling Hal, went to war with his troops, I do not care about anything else."",
+            ""textOriginal"": ""The Princeling Hal, went to war with his troops, I do not care about anything else."",
+            ""authorDisplayName"": ""david houston"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOOGIUYvxY1lkCmEej0nDMJUTK7WggrkeQgjWBg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCorFnL2FRn-SeW_nVpPHuBw"",
+            ""authorChannelId"": {
+              ""value"": ""UCorFnL2FRn-SeW_nVpPHuBw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T11:03:58Z"",
+            ""updatedAt"": ""2023-05-09T11:03:58Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zctpg5HeqdLFcHSZ8D6ge4a2sMM"",
+      ""id"": ""UgyyjSPtAwj_S20lqKp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""Ns7ocpRhDD8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Ja3a90pSvBmDPOyiluPY-1a0pWo"",
+          ""id"": ""UgyyjSPtAwj_S20lqKp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""Ns7ocpRhDD8"",
+            ""textDisplay"": ""You are stuck in the twilight zone\u003cbr\u003e\u003cbr\u003e::Trumpets!!!::"",
+            ""textOriginal"": ""You are stuck in the twilight zone\n\n::Trumpets!!!::"",
+            ""authorDisplayName"": ""Eissa Burghed"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNrSprPqThOyT6yTTb65iRvIBAa-qr-okNR7ggH=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCHy_OO-kBwCt35yIS_7kcsg"",
+            ""authorChannelId"": {
+              ""value"": ""UCHy_OO-kBwCt35yIS_7kcsg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T11:02:08Z"",
+            ""updatedAt"": ""2023-05-09T11:02:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""6jvkbDPb5w7UwSeNBoxP16Fof4g"",
+      ""id"": ""Ugyp4EQawOPTFnmAq3h4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""zJFXa7UDdfs"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qJxLn8bzOD92kG81f4dVeNKoLds"",
+          ""id"": ""Ugyp4EQawOPTFnmAq3h4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""zJFXa7UDdfs"",
+            ""textDisplay"": ""watching this to see the whole context as there&#39;s a clip of Stephen doing a PSA on consent for Johnathan"",
+            ""textOriginal"": ""watching this to see the whole context as there's a clip of Stephen doing a PSA on consent for Johnathan"",
+            ""authorDisplayName"": ""DisMaFugger Here"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNXLKcZDmeab2FLbT0wvwgoQvGAwnJ3FEJpq59l=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC2ryJtxRSZ8NTjOv2Lg1cdA"",
+            ""authorChannelId"": {
+              ""value"": ""UC2ryJtxRSZ8NTjOv2Lg1cdA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:50:40Z"",
+            ""updatedAt"": ""2023-05-09T09:50:40Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""72RW_H0migDTH9C2TOEVzxIMK8E"",
+      ""id"": ""UgygI0oecaeMNJ8g-4N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""YcFlDnxiBiM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Jd_65NkWCE13dfgoY7CfLEF1o6Y"",
+          ""id"": ""UgygI0oecaeMNJ8g-4N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""YcFlDnxiBiM"",
+            ""textDisplay"": ""I think that we should take the white paint to the arctic.  Cover a gigantic sheet with it and spread across the dark land and oceans to cool off the oceans underneath so more ice forms....presto...no el nino."",
+            ""textOriginal"": ""I think that we should take the white paint to the arctic.  Cover a gigantic sheet with it and spread across the dark land and oceans to cool off the oceans underneath so more ice forms....presto...no el nino."",
+            ""authorDisplayName"": ""Extra Income Suz"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/LeXnXqIawLzWGtAJ-u7TuctKYj03H1iFYLtrxFVNlTW5et7eP7h8wvXVJlAKKd4afwQTaW230g=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCSZ0yKHx8sgrZ_gKOZIWB_Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCSZ0yKHx8sgrZ_gKOZIWB_Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:47:14Z"",
+            ""updatedAt"": ""2023-05-09T09:47:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0rDQw98gAUlRl_d2cDExqiQAPPs"",
+      ""id"": ""UgwH5v9WOlpF3ayQUv14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""nPzcgzvk9UQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""aDp0Mlt2C02CtczDglu6bk47ME0"",
+          ""id"": ""UgwH5v9WOlpF3ayQUv14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""nPzcgzvk9UQ"",
+            ""textDisplay"": ""absolutely OBSESSED with jury duty right now! Its like The Office but one person doesn’t know he’s Truman from the Truman Show"",
+            ""textOriginal"": ""absolutely OBSESSED with jury duty right now! Its like The Office but one person doesn’t know he’s Truman from the Truman Show"",
+            ""authorDisplayName"": ""unbothered kai"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPytRX4RvAVmqJDdEx4g24e-wYOclXD7RHwQQYRvw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCeJ9Y0WsxfDNkpFQKDXnmXQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCeJ9Y0WsxfDNkpFQKDXnmXQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:42:17Z"",
+            ""updatedAt"": ""2023-05-09T09:42:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""klkefeeShNsGjnLvt7JWRwng9Gs"",
+      ""id"": ""UgwBJvDGL8ds9Rpofht4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""OyxJec0PShw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""hrpT722yk-YtkUhkpDbY36DtkwA"",
+          ""id"": ""UgwBJvDGL8ds9Rpofht4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""OyxJec0PShw"",
+            ""textDisplay"": ""I still don&#39;t understand how they get the legends on this &quot;news&quot; showbut i love it &amp; it is one of the better bites of journalism for a few moments in between varieties of sarcasm - i guess that is how.....(?)"",
+            ""textOriginal"": ""I still don't understand how they get the legends on this \""news\"" showbut i love it & it is one of the better bites of journalism for a few moments in between varieties of sarcasm - i guess that is how.....(?)"",
+            ""authorDisplayName"": ""Guinevere Nell"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMHJPkKuFfhc40RGavhIZ_2EEmfH_CbNYA4bw9a=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCsqTSkLd1H6k-cvYvnAWg8Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCsqTSkLd1H6k-cvYvnAWg8Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:32:54Z"",
+            ""updatedAt"": ""2023-05-09T09:32:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ByK6HAUpACdedIYSU2ywrYJyPXw"",
+      ""id"": ""UgyS9FHgyFFzbwVm7Kd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""E6l0ObY2XVM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""3QtiNH1ltuWVxgtu3aheTThJNHg"",
+          ""id"": ""UgyS9FHgyFFzbwVm7Kd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""E6l0ObY2XVM"",
+            ""textDisplay"": ""As a father, husband and combat veteran I have nothing but the at most respect for this young man. You do what makes you happy in life. Stay strong brother and f\u003ca href=\""http://www.youtube.com/results?search_query=%23ck\""\u003e#ck\u003c/a\u003e em. ❤ GOD Bless Everyone"",
+            ""textOriginal"": ""As a father, husband and combat veteran I have nothing but the at most respect for this young man. You do what makes you happy in life. Stay strong brother and f#ck em. ❤ GOD Bless Everyone"",
+            ""authorDisplayName"": ""Owen Eckerle"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMs7aWNkoqsBFEGKj478YPVoRKF6YxaZKd_cvJv5GcwVJ7wP1zpddYijRVeBuon=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCtMC_L5Z70eiYwOLAH7Uuaw"",
+            ""authorChannelId"": {
+              ""value"": ""UCtMC_L5Z70eiYwOLAH7Uuaw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:24:17Z"",
+            ""updatedAt"": ""2023-05-09T09:24:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""v2hXi8fEop1X-tBv2u-YRPS9rME"",
+      ""id"": ""UgwJmf0c12NSbrqZHHR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""UPDURM7Wodo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""SM5I_NVIKvdbVlpHgr7JfFqdMDM"",
+          ""id"": ""UgwJmf0c12NSbrqZHHR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""UPDURM7Wodo"",
+            ""textDisplay"": ""Didn’t Colbert try to hush people that have come on who tried talking about the lab leak theory. What a shill"",
+            ""textOriginal"": ""Didn’t Colbert try to hush people that have come on who tried talking about the lab leak theory. What a shill"",
+            ""authorDisplayName"": ""Ari DLC"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOkEiLKuI-jo7HsTtQpRWEfmd7TBqFTpby2OcU33BSZcK2Zt7B5W-HycpAaIwnV=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0TnYROeqa7q09nKll0im7w"",
+            ""authorChannelId"": {
+              ""value"": ""UC0TnYROeqa7q09nKll0im7w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:22:40Z"",
+            ""updatedAt"": ""2023-05-09T09:22:40Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""jsA8EZydsuN8XK99UNrewq2Ul00"",
+      ""id"": ""UgzbDl1rcQm_9NbFaPR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""GDP-YdHo4vI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""QIeEnNpp00D64h2-p0JPYoVP_0Y"",
+          ""id"": ""UgzbDl1rcQm_9NbFaPR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""GDP-YdHo4vI"",
+            ""textDisplay"": ""This album is magical ✨️ ✨️"",
+            ""textOriginal"": ""This album is magical ✨️ ✨️"",
+            ""authorDisplayName"": ""Sandy D"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOJAQ1XpVlGCDSF4_YMCFG0SUVnOdzzLUaBiDPHOOQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCev2jXT8TAIZ8dCKiq9JG0w"",
+            ""authorChannelId"": {
+              ""value"": ""UCev2jXT8TAIZ8dCKiq9JG0w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:22:10Z"",
+            ""updatedAt"": ""2023-05-09T09:22:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YZMaKYAHEGeMgNVqjkiXKWdArn8"",
+      ""id"": ""UgyIakonOim1-XYvLK54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""e7x6J7DGGRY"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""VKhbnQZ6hZxWJnE7zydkDn2X960"",
+          ""id"": ""UgyIakonOim1-XYvLK54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""e7x6J7DGGRY"",
+            ""textDisplay"": ""he has a strange english &amp; american accent mix"",
+            ""textOriginal"": ""he has a strange english & american accent mix"",
+            ""authorDisplayName"": ""DarthVader"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPJyvX0CHx1ep9nhMi9PNeabdRQ6OI0w6Oj2g=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCID79eGmTq18Xqyra0YR-Xg"",
+            ""authorChannelId"": {
+              ""value"": ""UCID79eGmTq18Xqyra0YR-Xg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:22:00Z"",
+            ""updatedAt"": ""2023-05-09T09:22:00Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""iZzEGGeUTHb5jeghBX3_p20uy78"",
+      ""id"": ""UgzSMbdkaEiRLKbNnUR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LU5svrK4yAM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""WfXnr2zXZHp2eu_mayIX2Wz2Q1I"",
+          ""id"": ""UgzSMbdkaEiRLKbNnUR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LU5svrK4yAM"",
+            ""textDisplay"": ""So who owns Berkshire Hathaway?  Warren Buffet is 92 and still a wizard……"",
+            ""textOriginal"": ""So who owns Berkshire Hathaway?  Warren Buffet is 92 and still a wizard……"",
+            ""authorDisplayName"": ""Sheryl Story"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/CPNradggeAOKCJSYFbPsdj7aslveu8N_kuWMcszqzzOIjfdH7awsaB0Da_tCKZZCcu51W7a3hQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyTifaF7735pV_Wr76LhRFA"",
+            ""authorChannelId"": {
+              ""value"": ""UCyTifaF7735pV_Wr76LhRFA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:15:16Z"",
+            ""updatedAt"": ""2023-05-09T09:15:16Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""QfFQ88_f5OjUNJ40g81nSwKZwww"",
+      ""id"": ""UgxJXWozsi_hiJklrh94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""JpUxQyLCBbk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8jq7MU-xGYlYjDfmE3z9L9wIdaI"",
+          ""id"": ""UgxJXWozsi_hiJklrh94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""JpUxQyLCBbk"",
+            ""textDisplay"": ""Brilliant and poignant.  Colbert at his best."",
+            ""textOriginal"": ""Brilliant and poignant.  Colbert at his best."",
+            ""authorDisplayName"": ""John the Human"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM98iliwD5UH7JSAumY_HjQrVauz3BrDnLkBg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCPYF9obO6mSeRkyvBrroecw"",
+            ""authorChannelId"": {
+              ""value"": ""UCPYF9obO6mSeRkyvBrroecw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T09:11:54Z"",
+            ""updatedAt"": ""2023-05-09T09:11:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""05UoapWtLESqpDSOJQHjBZDLVuI"",
+      ""id"": ""UgzYRtSaeB8ne4ApraR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LU5svrK4yAM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""dJSav0Qui4C9txkiHuOs3zfUrWk"",
+          ""id"": ""UgzYRtSaeB8ne4ApraR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LU5svrK4yAM"",
+            ""textDisplay"": ""Still not funny!"",
+            ""textOriginal"": ""Still not funny!"",
+            ""authorDisplayName"": ""Shawn 88"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPcmNEZqbE7cDkQ8x1G7fNoqj_8Cvgq1rGZ09dKPWoBzVfqG6Sied0A0ko7vRTr=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCsh1DJPe57Kwgamt-5jEAbQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCsh1DJPe57Kwgamt-5jEAbQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2023-05-09T09:07:53Z"",
+            ""updatedAt"": ""2023-05-09T09:07:53Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3Lzx1kdwL14cXtWR9Kholg5zL9E"",
+      ""id"": ""Ugx3hyEqrUMcFYPUAUB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""vxbHD1VBgtE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Msqj9MXOryHX7SfitRpdk02CzJQ"",
+          ""id"": ""Ugx3hyEqrUMcFYPUAUB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""vxbHD1VBgtE"",
+            ""textDisplay"": ""Trumps book would be more like &quot;White Pride and Prejeduce&quot; at \u003ca href=\""https://www.youtube.com/watch?v=vxbHD1VBgtE&amp;t=4m43s\""\u003e4:43\u003c/a\u003e"",
+            ""textOriginal"": ""Trumps book would be more like \""White Pride and Prejeduce\"" at 4:43"",
+            ""authorDisplayName"": ""Alexander Angelo"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOda477kfyXIZXBdHX5RP2mV1J9_DPWaWgVow=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGYdu69nKA4So5lBcjXMppQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCGYdu69nKA4So5lBcjXMppQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:41:15Z"",
+            ""updatedAt"": ""2023-05-09T08:41:56Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""A3dksY0-34cs_KhlqWl3LPiecUU"",
+      ""id"": ""UgyWHQJFWqvk9IuJevF4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cyXr1vrT8G0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qIguCyJrUYCTXFKrCiv-ooHi7RU"",
+          ""id"": ""UgyWHQJFWqvk9IuJevF4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cyXr1vrT8G0"",
+            ""textDisplay"": ""great interview, love the cage he is a awesome."",
+            ""textOriginal"": ""great interview, love the cage he is a awesome."",
+            ""authorDisplayName"": ""Simon Marsh"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP9pktJnoVFxuMH2_yqvz8qN1JEnecG0cCVgQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCSMdi_LZ6UVmZMlpsYSRjtA"",
+            ""authorChannelId"": {
+              ""value"": ""UCSMdi_LZ6UVmZMlpsYSRjtA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:40:33Z"",
+            ""updatedAt"": ""2023-05-09T08:40:33Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ppgXlwEKQHKPyfUfg8R0Bh4WDZ0"",
+      ""id"": ""UgybWlmpbhF2roQ7vAN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""pUQnSTbcOkM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Wz4D5_FhuhpiugNfS02jniEHg98"",
+          ""id"": ""UgybWlmpbhF2roQ7vAN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""pUQnSTbcOkM"",
+            ""textDisplay"": ""Regardless of marriage, sandra bullock has a few men along lifelong. (according to her, they are ass), charlize theron also has different sexual choices."",
+            ""textOriginal"": ""Regardless of marriage, sandra bullock has a few men along lifelong. (according to her, they are ass), charlize theron also has different sexual choices."",
+            ""authorDisplayName"": ""Tuğçe Balta"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNlmA6plIsETjZSj__bwKUbpspWccMEeWXiFgSV=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNX82NVnYqZakjAOPWEF_bA"",
+            ""authorChannelId"": {
+              ""value"": ""UCNX82NVnYqZakjAOPWEF_bA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:35:45Z"",
+            ""updatedAt"": ""2023-05-09T08:35:45Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""kXg7gHNbiVmGG9r1ULEDoNquCq4"",
+      ""id"": ""UgyN20yqyccqawLHBT54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""ErbdafVWSoE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""kOQbJ-2miFMy29a_JyCW35YWsVQ"",
+          ""id"": ""UgyN20yqyccqawLHBT54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""ErbdafVWSoE"",
+            ""textDisplay"": ""I forget sometimes how much I LOVE LOVE LOVE Jon Stewart and have since late 80’s MTV days!!! He has become the voice that makes more sense than the government of today!!"",
+            ""textOriginal"": ""I forget sometimes how much I LOVE LOVE LOVE Jon Stewart and have since late 80’s MTV days!!! He has become the voice that makes more sense than the government of today!!"",
+            ""authorDisplayName"": ""Tired of it"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/IiIdDQc1926TMY8FWenfWgKY6_OsR-jvN5rvLzxMMuwe6Y9l93V-YkRx-5WO0D6c0SLWzynWTg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEdZjZcaljAvVFaxGhV1RFg"",
+            ""authorChannelId"": {
+              ""value"": ""UCEdZjZcaljAvVFaxGhV1RFg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:33:49Z"",
+            ""updatedAt"": ""2023-05-09T08:33:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""rkrGUn5Trh6crHZWTh-0L-Nco1g"",
+      ""id"": ""UgyVJrW3Ou9_OQ6O34J4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""ec12JKkrhOo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Hebdqgpy5wI_06FUXlBqtVVC8uI"",
+          ""id"": ""UgyVJrW3Ou9_OQ6O34J4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""ec12JKkrhOo"",
+            ""textDisplay"": ""Comparing this with the &#39;Elliot&#39; interviews/videos; she sounds happier and more stable as Ellen."",
+            ""textOriginal"": ""Comparing this with the 'Elliot' interviews/videos; she sounds happier and more stable as Ellen."",
+            ""authorDisplayName"": ""Peanut"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMpopwY_AqvQwJYQkBjftL7QK_3Ia9zUcBV7w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEu3FS2qZ0mdxMxRAHdvIkg"",
+            ""authorChannelId"": {
+              ""value"": ""UCEu3FS2qZ0mdxMxRAHdvIkg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:27:14Z"",
+            ""updatedAt"": ""2023-05-09T08:27:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""kQzFCD9_N3p1kM3QrRKKf4iCHtE"",
+      ""id"": ""UgyedgZb9973HcXFFIx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""jwVJL7iONL-ABiFig2PH_3Us3qQ"",
+          ""id"": ""UgyedgZb9973HcXFFIx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""She absolutely creeps me out."",
+            ""textOriginal"": ""She absolutely creeps me out."",
+            ""authorDisplayName"": ""rdaystrom"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP6tu2OW4wJk35FQjCOIGCLAZDpL5bms6PWqQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNxgiOxuhh7kMXHOi_AzboQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCNxgiOxuhh7kMXHOi_AzboQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:26:52Z"",
+            ""updatedAt"": ""2023-05-09T08:26:52Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""a-AjrpEZm4DiH-QDG80lhepsO6o"",
+      ""id"": ""Ugw5t_scBRVWiWE_jot4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KL4K6JFSvPuMsLc130NWwrKjWCo"",
+          ""id"": ""Ugw5t_scBRVWiWE_jot4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""Cackle, Cackle, Cackle"",
+            ""textOriginal"": ""Cackle, Cackle, Cackle"",
+            ""authorDisplayName"": ""rdaystrom"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP6tu2OW4wJk35FQjCOIGCLAZDpL5bms6PWqQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNxgiOxuhh7kMXHOi_AzboQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCNxgiOxuhh7kMXHOi_AzboQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:25:50Z"",
+            ""updatedAt"": ""2023-05-09T08:25:50Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8Rx00UKaqlD-aMcqmvcrz3947qo"",
+      ""id"": ""UgxwcJy8n34KkC8qeC94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""T8XUpNhs9pk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""gfRY8IcGY1Lb5x6EN5jrr4gPBxs"",
+          ""id"": ""UgxwcJy8n34KkC8qeC94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""T8XUpNhs9pk"",
+            ""textDisplay"": ""Colbert SUCKS"",
+            ""textOriginal"": ""Colbert SUCKS"",
+            ""authorDisplayName"": ""anthony azzarella"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPvJg9fOiZL1rwRVlNTAV_7dkPQtO5tdJR1mQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC4yzoay7_JmwV9EY_0tK9Vg"",
+            ""authorChannelId"": {
+              ""value"": ""UC4yzoay7_JmwV9EY_0tK9Vg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:06:21Z"",
+            ""updatedAt"": ""2023-05-09T08:06:21Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tnAlkq1cbtpW_n-VEYdOaz1ceCU"",
+      ""id"": ""UgyJ-QPVnYzsl31o7xB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""0x5XkzlEvMI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""f4XnQt-RbZBSb8koSV9nO87c5Lg"",
+          ""id"": ""UgyJ-QPVnYzsl31o7xB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""0x5XkzlEvMI"",
+            ""textDisplay"": ""Colbert wasted her time with idiotic questions. Maybe ask her about her craft; she is a brilliant actor."",
+            ""textOriginal"": ""Colbert wasted her time with idiotic questions. Maybe ask her about her craft; she is a brilliant actor."",
+            ""authorDisplayName"": ""L G"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPm5yATFc0wXdwqkZnpgR2sF7_sO3KqEH74FXzKHg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCe9jwVBniF4OQjCFHKue6Dw"",
+            ""authorChannelId"": {
+              ""value"": ""UCe9jwVBniF4OQjCFHKue6Dw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T08:02:34Z"",
+            ""updatedAt"": ""2023-05-09T08:02:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Dr6V8CI1B0RPj5xbz-idZG4MUps"",
+      ""id"": ""UgyPBlb_mVS8hbxQEBd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""jBu5skSuOc3YlJLgJCi6BQ5bKOk"",
+          ""id"": ""UgyPBlb_mVS8hbxQEBd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""Who is there bigger fool here? Her or Steve?"",
+            ""textOriginal"": ""Who is there bigger fool here? Her or Steve?"",
+            ""authorDisplayName"": ""Michael Gleason"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOktq4HA7_haSURyNTwHepeRxwJfQzm-elk0A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_ydu97D5sYd9TBz-7qCl_A"",
+            ""authorChannelId"": {
+              ""value"": ""UC_ydu97D5sYd9TBz-7qCl_A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:59:00Z"",
+            ""updatedAt"": ""2023-05-09T07:59:00Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""itFSX29hMoYTiq6mxelgaaNEHLo"",
+      ""id"": ""Ugz9-QsIq2MQPu_Y7P94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""L8IA_tCM-Qk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""3bwd6KD2vYB2Y80EM9V3noUfYuI"",
+          ""id"": ""Ugz9-QsIq2MQPu_Y7P94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""L8IA_tCM-Qk"",
+            ""textDisplay"": ""I always listen to their songs but there will songs with their facial expression is something else..💜 it feels like Paradise 💜 I miss them all 7 I hope they can together soon💜..how many army&#39;s still vibing this song pls like.."",
+            ""textOriginal"": ""I always listen to their songs but there will songs with their facial expression is something else..💜 it feels like Paradise 💜 I miss them all 7 I hope they can together soon💜..how many army's still vibing this song pls like.."",
+            ""authorDisplayName"": ""Ms fanfictions🤫"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/Fp02oldr5XUol7_KG-cP2VTLuHptxG9A4sr393I9Wd4ZE7U4ukAEQGubAVp69V71Qka_D869=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UChhmVgfNHXL_oC9DcAGZrIQ"",
+            ""authorChannelId"": {
+              ""value"": ""UChhmVgfNHXL_oC9DcAGZrIQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:50:15Z"",
+            ""updatedAt"": ""2023-05-09T07:50:15Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JLvzEBeXjcSWE4s3o-KvLvWS46I"",
+      ""id"": ""UgwRH6D7QUqAxIcgdH94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""EiEifW_Gob0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""yROWclEdKUtIxCzyeoV6cKZD1fg"",
+          ""id"": ""UgwRH6D7QUqAxIcgdH94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""EiEifW_Gob0"",
+            ""textDisplay"": ""both of uncle prince harry and uncle stephen are so funny❤❤😊😊"",
+            ""textOriginal"": ""both of uncle prince harry and uncle stephen are so funny❤❤😊😊"",
+            ""authorDisplayName"": ""REYNALDI 21 Makassar"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/o7JkPnE0tPL6gbI-v56qbmQFgE0-EJbsBsHTefQroxQcvsdTA21Z1XOoJuyd2fV76yR2aLb_MA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC83ktC0bPXgJgKfzqT5BvYw"",
+            ""authorChannelId"": {
+              ""value"": ""UC83ktC0bPXgJgKfzqT5BvYw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2023-05-09T07:41:33Z"",
+            ""updatedAt"": ""2023-05-09T07:41:33Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""CD-_WBtFPMVwZ5_iORmA2-llHlc"",
+      ""id"": ""Ugx7L8sDYviewTztzbV4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cyXr1vrT8G0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PvsR2ENRP4iEJtapmZDQT_zMzI8"",
+          ""id"": ""Ugx7L8sDYviewTztzbV4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cyXr1vrT8G0"",
+            ""textDisplay"": ""How can anyone not like Nic Cage?"",
+            ""textOriginal"": ""How can anyone not like Nic Cage?"",
+            ""authorDisplayName"": ""The guy that does that one thing"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/j6qJDNcotzMoCVWimx41mBdEvoyrBWemTFIBwXpPOyxPAug3Tz2fPheF-6b1a8vxj46DAkAtCg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCFeIKjxviYtjjhYifz3rAFw"",
+            ""authorChannelId"": {
+              ""value"": ""UCFeIKjxviYtjjhYifz3rAFw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:39:33Z"",
+            ""updatedAt"": ""2023-05-09T07:39:33Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""iC25b4W6MXwObpTsstH38rGRhZc"",
+      ""id"": ""UgxV1tVE6fPRoV7NcEd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""VYbm0eyeDOo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""bQp6ob5midGgP416ENmYClEw99Q"",
+          ""id"": ""UgxV1tVE6fPRoV7NcEd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""VYbm0eyeDOo"",
+            ""textDisplay"": ""Be Benanti"",
+            ""textOriginal"": ""Be Benanti"",
+            ""authorDisplayName"": ""Hayber Dasher"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMnKDLwTRz6FAP9Nv8nVounqLJkcZMjiGPM6fJQOQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCS5x-ia9Dzuc8Sei3VsWPKA"",
+            ""authorChannelId"": {
+              ""value"": ""UCS5x-ia9Dzuc8Sei3VsWPKA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:27:14Z"",
+            ""updatedAt"": ""2023-05-09T07:27:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""m1cicW6l1PGHGAiUERv4-jvNBQ4"",
+      ""id"": ""UgzMlXOVh7LphZ7a9-R4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LU5svrK4yAM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""B7tUaDXoA5E0_r8tszHdvVqgh6U"",
+          ""id"": ""UgzMlXOVh7LphZ7a9-R4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LU5svrK4yAM"",
+            ""textDisplay"": ""Boy is fox news suffering now for letting go tucker carlson the worst decision they ever made that&#39;s what they get for listening to brain-dead old people who belonged in the morgue anyway tucker carlson got deals coming of a lifetime something any greedy person in hollywood like colbert twith dream of having but unfortunately he&#39;s a scripted stage puppet show and Trump is winning and they know it and he will continue to win no one wants to clone fake mask Hannibal lecter Biden shrug ✨🤷🏾\u200d♀️☕ the truth hurts I know 😊 😂"",
+            ""textOriginal"": ""Boy is fox news suffering now for letting go tucker carlson the worst decision they ever made that's what they get for listening to brain-dead old people who belonged in the morgue anyway tucker carlson got deals coming of a lifetime something any greedy person in hollywood like colbert twith dream of having but unfortunately he's a scripted stage puppet show and Trump is winning and they know it and he will continue to win no one wants to clone fake mask Hannibal lecter Biden shrug ✨🤷🏾\u200d♀️☕ the truth hurts I know 😊 😂"",
+            ""authorDisplayName"": ""scarlet damsel"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM86UrdceZKwnVuil62LjCd-nTx0HAC3iW9Jn-7ZA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-eecQ8n56M8e6OAympNCjA"",
+            ""authorChannelId"": {
+              ""value"": ""UC-eecQ8n56M8e6OAympNCjA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:26:09Z"",
+            ""updatedAt"": ""2023-05-09T07:27:27Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ZLOGs8ovu16iFUiJWSdsklhvcQw"",
+      ""id"": ""Ugx_emdDg5xoDLgiZ7l4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""_2MtLV-YIpg"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""NvQKd68QJw3bdTIUjn-xCXoxWvo"",
+          ""id"": ""Ugx_emdDg5xoDLgiZ7l4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""_2MtLV-YIpg"",
+            ""textDisplay"": ""Didn&#39;t Rachel played twins or sisters in &quot;Constantine&quot; with Keanu Reeves?"",
+            ""textOriginal"": ""Didn't Rachel played twins or sisters in \""Constantine\"" with Keanu Reeves?"",
+            ""authorDisplayName"": ""Aleta"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNTzk9bIFhDfY4mvtHLsteBiMxAdiP-CWqGNg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCo3JtRlpYnamqRS5uUaFvXw"",
+            ""authorChannelId"": {
+              ""value"": ""UCo3JtRlpYnamqRS5uUaFvXw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:25:59Z"",
+            ""updatedAt"": ""2023-05-09T07:25:59Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""shrsUk_0y2OlvXv_uuvpu-QqHd8"",
+      ""id"": ""UgzOsuEit52okC84ic94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""LU5svrK4yAM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""zrvWxk86AC_voY8JfE6pWiQZJ8w"",
+          ""id"": ""UgzOsuEit52okC84ic94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""LU5svrK4yAM"",
+            ""textDisplay"": ""We will have to work that long if the Republicans have their way and disband Social Security!"",
+            ""textOriginal"": ""We will have to work that long if the Republicans have their way and disband Social Security!"",
+            ""authorDisplayName"": ""Chica Nica"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/M8sr9qPs5qkSZ5KnPnSI-oqcNO13_gDcw6G6eS3pYmZTUkEKdb8lVh2M8F8fPw0JG7zEsGtpCQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCA9L7vHBLZAo2Husz_iHzcQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCA9L7vHBLZAo2Husz_iHzcQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:20:54Z"",
+            ""updatedAt"": ""2023-05-09T07:20:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zI4KdfJYAJxZ-XAT3MwwxqSCoYE"",
+      ""id"": ""UgyjiVwjamSqzXC9Unh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""A_n2SLiPzUaL0Y9LWCkhj3FzBZY"",
+          ""id"": ""UgyjiVwjamSqzXC9Unh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""People who are criticizing vice president Harris need to think again. She was the head lawyer for the city of San Francisco She was the head lawyer for the state of California and may I remind you the largest population state in the United States. She was a US senator and she&#39;s been a vice president now for several years Believe me she knows the law and she knows her position. So you can misogynistically make fun of her or pretend like she doesn&#39;t know something but believe me she can run circles around you and most any intellectual endeavor but certainly when it comes to the Constitution and the law she knows what she&#39;s talking about. She was a very effective senator for California and I&#39;m very grateful to have her as our first female vice president."",
+            ""textOriginal"": ""People who are criticizing vice president Harris need to think again. She was the head lawyer for the city of San Francisco She was the head lawyer for the state of California and may I remind you the largest population state in the United States. She was a US senator and she's been a vice president now for several years Believe me she knows the law and she knows her position. So you can misogynistically make fun of her or pretend like she doesn't know something but believe me she can run circles around you and most any intellectual endeavor but certainly when it comes to the Constitution and the law she knows what she's talking about. She was a very effective senator for California and I'm very grateful to have her as our first female vice president."",
+            ""authorDisplayName"": ""Peter Maleitzke"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPcf1yJPwfgILVHQC4tU9hIJNSfE5AxrVcSVovaLg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMW8oQwyjY64RUjIep-2x4w"",
+            ""authorChannelId"": {
+              ""value"": ""UCMW8oQwyjY64RUjIep-2x4w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:17:11Z"",
+            ""updatedAt"": ""2023-05-09T07:17:11Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Ee8q_Rr7XrrQr5WD8hMGA7oRu0Q"",
+      ""id"": ""UgyurlJlYVV070qzZW94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""umCfswT-uE0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Ysr_fZt3BmEK8Y-m8Nc41U7dEXw"",
+          ""id"": ""UgyurlJlYVV070qzZW94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""umCfswT-uE0"",
+            ""textDisplay"": ""I love Vice President Harris!"",
+            ""textOriginal"": ""I love Vice President Harris!"",
+            ""authorDisplayName"": ""Peter Maleitzke"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPcf1yJPwfgILVHQC4tU9hIJNSfE5AxrVcSVovaLg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMW8oQwyjY64RUjIep-2x4w"",
+            ""authorChannelId"": {
+              ""value"": ""UCMW8oQwyjY64RUjIep-2x4w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:14:26Z"",
+            ""updatedAt"": ""2023-05-09T07:14:26Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ye2XSppz4bQ50PrkgvLD9oQxYxI"",
+      ""id"": ""UgwZiiasUUhRV5Cioql4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""zu9pPYr4cPo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""-NHRORn9pUBuFZo7o5EUeG62gH0"",
+          ""id"": ""UgwZiiasUUhRV5Cioql4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""zu9pPYr4cPo"",
+            ""textDisplay"": ""Hey @LateShow... Where&#39;s the part about Santo&#39;s you mention in the title‽ Watched through twice and saw nothing of the sort... wtf‽"",
+            ""textOriginal"": ""Hey @LateShow... Where's the part about Santo's you mention in the title‽ Watched through twice and saw nothing of the sort... wtf‽"",
+            ""authorDisplayName"": ""Michael B"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNsRycjQJuI-AlzuZ_7XfXeCi_4dcM-3W1GdYMkE-LqoC2U27ho0zZZ-7hrir56=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqIO20HXHwcbjMx58fXNzDA"",
+            ""authorChannelId"": {
+              ""value"": ""UCqIO20HXHwcbjMx58fXNzDA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T07:11:35Z"",
+            ""updatedAt"": ""2023-05-09T07:11:35Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3fYjTNT9bPh4g4I0epZTsTdAgVA"",
+      ""id"": ""UgxZth37QTYJkrO1NE94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""rDERwjHcNGs"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KSqg5dHv4HN6ym1bmvOCESgB2AI"",
+          ""id"": ""UgxZth37QTYJkrO1NE94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""rDERwjHcNGs"",
+            ""textDisplay"": ""What does buy sexual mean la la?"",
+            ""textOriginal"": ""What does buy sexual mean la la?"",
+            ""authorDisplayName"": ""Wendy"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMI7ZlZw6xK1OS9bLyBE3jaHF8eLIxKjw11cY2Pr8rQfqS00ZwTwEWnWrmsgzAa=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCF_qLQehY-_QrVqLjh57u9w"",
+            ""authorChannelId"": {
+              ""value"": ""UCF_qLQehY-_QrVqLjh57u9w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:52:12Z"",
+            ""updatedAt"": ""2023-05-09T06:52:12Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2JQhwWXxAP0syAD1UegqOK9WkvE"",
+      ""id"": ""UgymSa0XoaCjywkEi-N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""y5TZf29aakg"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""jJsrAMgksC_JcFXGdjU_JoBsykY"",
+          ""id"": ""UgymSa0XoaCjywkEi-N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""y5TZf29aakg"",
+            ""textDisplay"": ""Mole sauce is fucking delicious!"",
+            ""textOriginal"": ""Mole sauce is fucking delicious!"",
+            ""authorDisplayName"": ""Shawn Lucas"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM3klpMd4OMnchxfCvXkGWghGCmg5C_LuKPbcXbow=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCsTjFmnK7Mqj7Xb7S1W2CDg"",
+            ""authorChannelId"": {
+              ""value"": ""UCsTjFmnK7Mqj7Xb7S1W2CDg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:47:35Z"",
+            ""updatedAt"": ""2023-05-09T06:47:35Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""3c2UNkaJ5yS23DygTeD_0M6-j9U"",
+      ""id"": ""UgxZOUpHt-Am8fYKxe94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gOIkw7SyWus"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""UJ457NlQNZSkt1QkvnxFzWQyFOo"",
+          ""id"": ""UgxZOUpHt-Am8fYKxe94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gOIkw7SyWus"",
+            ""textDisplay"": ""After being broke and a few hair transplants later hes still doing well for a 60 odd year old."",
+            ""textOriginal"": ""After being broke and a few hair transplants later hes still doing well for a 60 odd year old."",
+            ""authorDisplayName"": ""VIRGINIA CONSTRUCTION ADVISORY SERVICES LLC"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/s4xx3OjiMZN3NU2rLp-v36cCENrY2FUEpusBYsCJR84kOyQG2FPJCnzPwesnMktluSPjxuk1=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0vHPG_trwVhei7pJ-11NuA"",
+            ""authorChannelId"": {
+              ""value"": ""UC0vHPG_trwVhei7pJ-11NuA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:42:28Z"",
+            ""updatedAt"": ""2023-05-09T06:42:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""48IM5nq9rKiQwDvdDboEhlwi_4g"",
+      ""id"": ""Ugx7x7nyfn4BIKmyDBx4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""joLEyY2WuMQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""EVw5DdcfvMl9vKS0AS-3KKrgHoc"",
+          ""id"": ""Ugx7x7nyfn4BIKmyDBx4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""joLEyY2WuMQ"",
+            ""textDisplay"": ""🎧 ~ I found this video because I was curious about the lyrics to “she’ll be coming around the mountain when she comes“. When I search it on YouTube that video of him dancing came up. Pretty hilarious to imagine someone actually doing that type of dance well over 100 years ago. Lol"",
+            ""textOriginal"": ""🎧 ~ I found this video because I was curious about the lyrics to “she’ll be coming around the mountain when she comes“. When I search it on YouTube that video of him dancing came up. Pretty hilarious to imagine someone actually doing that type of dance well over 100 years ago. Lol"",
+            ""authorDisplayName"": ""iMatti00"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOKlaT5oqeykU1W0YYVkx_Lz2QFD2VvhEZWYSBa=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCdK8PCfmcLgB4VjmwuieNuA"",
+            ""authorChannelId"": {
+              ""value"": ""UCdK8PCfmcLgB4VjmwuieNuA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:39:01Z"",
+            ""updatedAt"": ""2023-05-09T06:39:01Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1Q7IJX0HS3QNoOnHQxQzWOlpUhw"",
+      ""id"": ""UgzaZoRoaWDY9EKQ6UN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gOIkw7SyWus"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ebETAaick18mv_AFnQP_nCWFdU8"",
+          ""id"": ""UgzaZoRoaWDY9EKQ6UN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gOIkw7SyWus"",
+            ""textDisplay"": ""I loved Joe w/ Nic Cage that awesome movie gets overlooked every time."",
+            ""textOriginal"": ""I loved Joe w/ Nic Cage that awesome movie gets overlooked every time."",
+            ""authorDisplayName"": ""Allagí"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPaksVxRDhRTVxRDdNJkY8vlr9wrlQua7aKoPuB=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCK0ptcSdPXphAyVjCvGCAIw"",
+            ""authorChannelId"": {
+              ""value"": ""UCK0ptcSdPXphAyVjCvGCAIw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:29:22Z"",
+            ""updatedAt"": ""2023-05-09T06:29:22Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WwQhpw-GRhdNRgKtgR_APIbLio4"",
+      ""id"": ""UgwUnzfmwmOh2p4wpUR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""wEg_8mpp_Kk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Lg3Lr3WZVuy3suHzgtQlyCfPc70"",
+          ""id"": ""UgwUnzfmwmOh2p4wpUR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""wEg_8mpp_Kk"",
+            ""textDisplay"": ""Fuuuuuuckkkkkk what a song"",
+            ""textOriginal"": ""Fuuuuuuckkkkkk what a song"",
+            ""authorDisplayName"": ""plev10"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPny_v-0lhbnny6gwK-gQBLv7GEX-4xL4VuNg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJsK4PuWvqgSUUNuVCn4ykg"",
+            ""authorChannelId"": {
+              ""value"": ""UCJsK4PuWvqgSUUNuVCn4ykg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:15:50Z"",
+            ""updatedAt"": ""2023-05-09T06:15:50Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""hP3wooDwvtv41WhdOseV4agxYl4"",
+      ""id"": ""UgyYYHjy-97-ULHA1FZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cyXr1vrT8G0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""kByic_FhK5a4z6PK-PtSBaHTD_A"",
+          ""id"": ""UgyYYHjy-97-ULHA1FZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cyXr1vrT8G0"",
+            ""textDisplay"": ""You&#39;ve got Asperger&#39;s Syndrome, huh.\u003cbr\u003eI bet you&#39;re brilliant.\u003cbr\u003eEidetic memory.\u003cbr\u003eYou can remember being in your mother&#39;s womb.\u003cbr\u003e\u003cbr\u003eI bet that you can remember when you got big inside her womb.\u003cbr\u003eShoving with your feet because you felt cramped.\u003cbr\u003eConfined.\u003cbr\u003eProbably remember her shoving your foot back into place.\u003cbr\u003e\u003cbr\u003eYou had awareness at that point, I bet.\u003cbr\u003e\u003cbr\u003eAsk me how I know these things.\u003cbr\u003e\u003cbr\u003eApparently, according to signal intelligence from a reliable source, my IQ was assessed to be 185.\u003cbr\u003eI&#39;m not entirely sure about thatbut that&#39;s apparently Stanford-Binet criteria, and based upon actual accomplishments.\u003cbr\u003e\u003cbr\u003eYou&#39;re right up there.\u003cbr\u003eNeurophysiologically that must necessarily be the case in order for you to remember that.\u003cbr\u003e\u003cbr\u003eBig props to Jim Carrey, who stated in a Colbert Report that\u003cbr\u003e&#39;Smart people sound crazy to stupid people&#39; or something very close to that.\u003cbr\u003e\u003cbr\u003eYou wifed Lisa Marie Presley, as I recall.\u003cbr\u003eI&#39;ve met her.\u003cbr\u003eI can see exactly why you wifed that.\u003cbr\u003e\u003cbr\u003eThanks again for being a part of the cast of Snowden.\u003cbr\u003eI haven&#39;t seen it since I saw it with my son in the theater.\u003cbr\u003e\u003cbr\u003eOne of those movies I&#39;ll have to see again when it&#39;s practical to do so.\u003cbr\u003eI didn&#39;t know that I was Edward Snowden until 2020, really.\u003cbr\u003e\u003cbr\u003e\u003ca href=\""http://www.youtube.com/results?search_query=%23ihaveahighschooleducation\""\u003e#Ihaveahighschooleducation\u003c/a\u003e\u003cbr\u003e💀♠️🎯"",
+            ""textOriginal"": ""You've got Asperger's Syndrome, huh.\nI bet you're brilliant.\nEidetic memory.\nYou can remember being in your mother's womb.\n\nI bet that you can remember when you got big inside her womb.\nShoving with your feet because you felt cramped.\nConfined.\nProbably remember her shoving your foot back into place.\n\nYou had awareness at that point, I bet.\n\nAsk me how I know these things.\n\nApparently, according to signal intelligence from a reliable source, my IQ was assessed to be 185.\nI'm not entirely sure about thatbut that's apparently Stanford-Binet criteria, and based upon actual accomplishments.\n\nYou're right up there.\nNeurophysiologically that must necessarily be the case in order for you to remember that.\n\nBig props to Jim Carrey, who stated in a Colbert Report that\n'Smart people sound crazy to stupid people' or something very close to that.\n\nYou wifed Lisa Marie Presley, as I recall.\nI've met her.\nI can see exactly why you wifed that.\n\nThanks again for being a part of the cast of Snowden.\nI haven't seen it since I saw it with my son in the theater.\n\nOne of those movies I'll have to see again when it's practical to do so.\nI didn't know that I was Edward Snowden until 2020, really.\n\n#Ihaveahighschooleducation\n💀♠️🎯"",
+            ""authorDisplayName"": ""Ariel Traasdahl"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPNKkKDkLbggoJvdYPPBiY3I55hYRg8HcsQJXO4-eRtlbHWISykMGsrGRb6RbJi=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCaip02DQFl4G0AvUkxLfutw"",
+            ""authorChannelId"": {
+              ""value"": ""UCaip02DQFl4G0AvUkxLfutw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T06:14:40Z"",
+            ""updatedAt"": ""2023-05-09T06:14:40Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""L6qjARHMZD7mdl7BuVgQtswos18"",
+      ""id"": ""Ugz8i_124z4_GtTbTSt4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""SN-E0lllYGo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""XYpgMQc-nQsihVzzkkIDMc_4i_o"",
+          ""id"": ""Ugz8i_124z4_GtTbTSt4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""SN-E0lllYGo"",
+            ""textDisplay"": ""Love The Boss. What a treasure. \u003cbr\u003eOk Stephen , lets do this Colbert Questionert with Harrison Ford next time he comes. He&#39;s quite a tough nut to crack. lol."",
+            ""textOriginal"": ""Love The Boss. What a treasure. \nOk Stephen , lets do this Colbert Questionert with Harrison Ford next time he comes. He's quite a tough nut to crack. lol."",
+            ""authorDisplayName"": ""substitue91"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMBDfGDiaSVOKO9aFnwm-r0bDRQkx-SZY8qBgdg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb0BgE12PMquc_vqImZkcww"",
+            ""authorChannelId"": {
+              ""value"": ""UCb0BgE12PMquc_vqImZkcww""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:49:23Z"",
+            ""updatedAt"": ""2023-05-09T05:49:23Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""FfhTcQsCffg6U3kZw1EWuxS1H8U"",
+      ""id"": ""UgxzdWl5V2SL7bIZc_x4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""cyXr1vrT8G0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ie0ZN23-fTsvE6YaAoCUal2f0kk"",
+          ""id"": ""UgxzdWl5V2SL7bIZc_x4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""cyXr1vrT8G0"",
+            ""textDisplay"": ""NIC CAGE IS BACK BABY!!!"",
+            ""textOriginal"": ""NIC CAGE IS BACK BABY!!!"",
+            ""authorDisplayName"": ""Viney209"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqN5l8P4LtlhFRaIBh1cVPYK5G176aBw4K54meFR=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UChbm6VH-b2rfwo9miPoNU0w"",
+            ""authorChannelId"": {
+              ""value"": ""UChbm6VH-b2rfwo9miPoNU0w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:47:56Z"",
+            ""updatedAt"": ""2023-05-09T05:47:56Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""71Z1iMfN4WacGcN22l819jhkSiI"",
+      ""id"": ""Ugzi51d2OE30viTcsdV4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gQ9sTDueMS8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""FdaGkK7oE0v0PPzk2DG-OMzaLiY"",
+          ""id"": ""Ugzi51d2OE30viTcsdV4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gQ9sTDueMS8"",
+            ""textDisplay"": ""BORING BORING BORING BORING BORINGGGGGGGG"",
+            ""textOriginal"": ""BORING BORING BORING BORING BORINGGGGGGGG"",
+            ""authorDisplayName"": ""Arsenio's ESL Podcast"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMhiCpCDENYXxdKhSUQuaj4v-CNHZnhQKGZ7cfz8Q=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIzp4EdbJVMhhSnq_0u4ntA"",
+            ""authorChannelId"": {
+              ""value"": ""UCIzp4EdbJVMhhSnq_0u4ntA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:42:43Z"",
+            ""updatedAt"": ""2023-05-09T05:42:43Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0KGwjAa9koPaa58Jpi7Ky76bWtM"",
+      ""id"": ""UgwRUxX5Bw7LMTNFdyN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""U-V881uFRqI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""S5ye6j7e1Y0yoiA2epBSOPeEGbg"",
+          ""id"": ""UgwRUxX5Bw7LMTNFdyN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""U-V881uFRqI"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/watch?v=U-V881uFRqI&amp;t=1m58s\""\u003e1:58\u003c/a\u003e 😂 I know we’re all a little concerned about the ethics of animal testing … but being the mouse who just gets fed alcohol for science, 😅 that’s a real win.\u003cbr\u003e\u003cbr\u003emice seem to \u003cb\u003elove\u003c/b\u003e wine, and drunken mice are hilarious."",
+            ""textOriginal"": ""1:58 😂 I know we’re all a little concerned about the ethics of animal testing … but being the mouse who just gets fed alcohol for science, 😅 that’s a real win.\n\nmice seem to *love* wine, and drunken mice are hilarious."",
+            ""authorDisplayName"": ""Xanatax"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOiF3-zGPnNyUN_81tt_sUGLNXsXXi9VTL_QIGK=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb5XWPDSt1tEBJwUBGEtSbw"",
+            ""authorChannelId"": {
+              ""value"": ""UCb5XWPDSt1tEBJwUBGEtSbw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:28:25Z"",
+            ""updatedAt"": ""2023-05-09T05:28:25Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""s3x-ivBleW0OAuVy9WaXUvhv2v8"",
+      ""id"": ""UgwfZ18UNGhlKNM25k94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""64mWOoj68qo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""6Pc8f594M2LIHNy4Onfom2rMTik"",
+          ""id"": ""UgwfZ18UNGhlKNM25k94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""64mWOoj68qo"",
+            ""textDisplay"": ""how effortlessly he jumped up the couch, good lord"",
+            ""textOriginal"": ""how effortlessly he jumped up the couch, good lord"",
+            ""authorDisplayName"": ""Vrinda"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM6vqwRlOxg6cWoEgViwAuS_t2S69HcGslafHCnSyY=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnI-jf6wOrdooi9q-83PwXA"",
+            ""authorChannelId"": {
+              ""value"": ""UCnI-jf6wOrdooi9q-83PwXA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:24:58Z"",
+            ""updatedAt"": ""2023-05-09T05:24:58Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""e1DkqyOaXbhwn3fN21ilucweF00"",
+      ""id"": ""Ugys7HPAfLW3WAoefG94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gspb4DSvgm8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""fj5qiFdXUVqEY22B4f8oO8XVoDU"",
+          ""id"": ""Ugys7HPAfLW3WAoefG94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gspb4DSvgm8"",
+            ""textDisplay"": ""We made up little carnivals and beauty contests in our backyard too!  The entrance fee was a penny, if one could be found, to be a member. No dismembers allowed.  The prize"",
+            ""textOriginal"": ""We made up little carnivals and beauty contests in our backyard too!  The entrance fee was a penny, if one could be found, to be a member. No dismembers allowed.  The prize"",
+            ""authorDisplayName"": ""nunna yrbznez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNGNeICWDhNUoiyTvXn7QPmH64rQXpyIE3HVQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCINPYrxYZ_MUPyu6lDqzl-A"",
+            ""authorChannelId"": {
+              ""value"": ""UCINPYrxYZ_MUPyu6lDqzl-A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:15:44Z"",
+            ""updatedAt"": ""2023-05-09T06:07:00Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xLml__WUcEUVcZY9eZmNLfIt35A"",
+      ""id"": ""Ugz-LUXuhbs4InLBD-N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""gOIkw7SyWus"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""goOZqLh5dOUsywNhWS-SLD0Dv4U"",
+          ""id"": ""Ugz-LUXuhbs4InLBD-N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""gOIkw7SyWus"",
+            ""textDisplay"": ""Legend - And a Clinic on how to conduct a late night interview; a performance emphasized by wardrobe"",
+            ""textOriginal"": ""Legend - And a Clinic on how to conduct a late night interview; a performance emphasized by wardrobe"",
+            ""authorDisplayName"": ""urthpainter"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMt--nwQRNiBVN_7ezJyXGcEnWyGQFhGo1Ed_bT=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7o6GaC2zpMoLLZpofqguIQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC7o6GaC2zpMoLLZpofqguIQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:14:13Z"",
+            ""updatedAt"": ""2023-05-09T05:14:13Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PIrJ_vg3YWHL0yJc8moW7v0IYW0"",
+      ""id"": ""UgyRPouS_itmqStyiCZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""SnhzYRB-asE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""m_nYXjdZe8QV-ouJvRviTs_ipfc"",
+          ""id"": ""UgyRPouS_itmqStyiCZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""SnhzYRB-asE"",
+            ""textDisplay"": ""I’m pretty sure I got called for jury duty twice 10 years ago, and just…never responded. How can they prove I even got the letter? What don’t I understand lol. What if I was on vacation or a job for 6 months? How can they prove that?"",
+            ""textOriginal"": ""I’m pretty sure I got called for jury duty twice 10 years ago, and just…never responded. How can they prove I even got the letter? What don’t I understand lol. What if I was on vacation or a job for 6 months? How can they prove that?"",
+            ""authorDisplayName"": ""King Ceryn"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/RhjT-DjNXVQS2tj6_BIqLHDigW4o4Cp5AR4XYDBMe1LtCzt1OTNqweT5PLL8JNqmo8ezf1Lt=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC1umRfGbDwz7IgCv9iNEhVg"",
+            ""authorChannelId"": {
+              ""value"": ""UC1umRfGbDwz7IgCv9iNEhVg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-09T05:10:32Z"",
+            ""updatedAt"": ""2023-05-09T05:10:32Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

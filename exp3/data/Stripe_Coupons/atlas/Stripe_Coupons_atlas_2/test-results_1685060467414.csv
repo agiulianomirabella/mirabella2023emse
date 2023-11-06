@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jei84e4smq1t_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_uv2xBxiqRQe3E2?t=1685060484"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k1zht0hygnqs_PostCoupons,200,"{
+  ""id"": ""31QfBRFvNKtTRjKhqmm"",
+  ""object"": ""coupon"",
+  ""amount_off"": 61,
+  ""created"": 1685060489,
+  ""currency"": ""gnf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""simpleton"",
+  ""percent_off"": null,
+  ""redeem_by"": 1825279945,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_sknaudz2r8dz_PostCoupons,200,"{
+  ""id"": ""ajyypYHY"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060495,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 91.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4yzbwi7gfvm_PostCoupons,200,"{
+  ""id"": ""bVlZmnqs"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060501,
+  ""currency"": ""pab"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 5,
+  ""metadata"": {},
+  ""name"": ""ingrate"",
+  ""percent_off"": 97.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vf6xrgydu6nn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_vAMtx7t4O6tArH?t=1685060506"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

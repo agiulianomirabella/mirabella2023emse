@@ -1,0 +1,376 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyis9f60odb9_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r179r1gwmrsk_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""kS7QazXdCzDlS5hakWA_MoW6YQc"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Jt-ArKiOU2bYD9BH0tgyLgi5WiA"",
+      ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""zhTu4mlXL3IiC1qCnYVDsaWLkjg"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XoAED2j3LQ"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""No, no es el único. Es el Síndrome &#39;Jonah Hill&#39;."",
+              ""textOriginal"": ""No, no es el único. Es el Síndrome 'Jonah Hill'."",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Catedrástico Gómez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNiLJ-kT7Zg-pld3t0_5PSq-gIJxagvuHbtSg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqwcy_NmGR_O-VUd_gJT35g"",
+              ""authorChannelId"": {
+                ""value"": ""UCqwcy_NmGR_O-VUd_gJT35g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 192,
+              ""publishedAt"": ""2017-09-22T09:35:19Z"",
+              ""updatedAt"": ""2017-09-22T09:35:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""rkYS5_IgHl3-zHVJBxBJf0nXsr0"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8Xu9uEaGrW6"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""Rt infinito!!"",
+              ""textOriginal"": ""Rt infinito!!"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Miguel Rodríguez Estévez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPO2p2xdOG8eL7DdahGleySxNE-f7Djd9dIlO-jhw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKC6XZe1ylZprtJpZQdYKhQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCKC6XZe1ylZprtJpZQdYKhQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 22,
+              ""publishedAt"": ""2017-09-24T17:27:54Z"",
+              ""updatedAt"": ""2017-09-24T17:27:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Ymb7n1mNRTxb4RFU9EtExlEgtiA"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XwRwnf_FGl"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""Que va"",
+              ""textOriginal"": ""Que va"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""VariaToby"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqN5mPmp90Zl_7PCKRfjwIdjf0v8KjQR-sll-FxK=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGvgHf_m3ppKsCiAkt6zanw"",
+              ""authorChannelId"": {
+                ""value"": ""UCGvgHf_m3ppKsCiAkt6zanw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 16,
+              ""publishedAt"": ""2017-09-25T14:44:01Z"",
+              ""updatedAt"": ""2017-09-25T14:44:01Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""uZ1RxQqlWgaK7E24aKmzYIO8uEA"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8Xxm5P4dB1z"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""se ve bien, y esta bien, esta joven como para ser gordo."",
+              ""textOriginal"": ""se ve bien, y esta bien, esta joven como para ser gordo."",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Real Soria"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNqo4whaJQYvRhuMSQs8VYBMVz0BKrxwUVCX87m2w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGv5e0JEPSeDBftQUR3ACOQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCGv5e0JEPSeDBftQUR3ACOQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 76,
+              ""publishedAt"": ""2017-09-26T03:08:04Z"",
+              ""updatedAt"": ""2017-09-26T03:08:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""zWQHYbR-aCaYaRIeQBfMeez5aFw"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XyEEKsffs8"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""foco a foco broda, foco a foco 💡"",
+              ""textOriginal"": ""foco a foco broda, foco a foco 💡"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""MYM JONA"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOV0-wYjDiJTuvdsGSQ5roLftvrK9o_UKHROIQn=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCv4i1IrujJvMYoSDPrDmOuQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCv4i1IrujJvMYoSDPrDmOuQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 11,
+              ""publishedAt"": ""2017-09-26T07:22:42Z"",
+              ""updatedAt"": ""2017-09-26T07:22:42Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sl16k8hhzak2_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""YoQsrhodVZvdZ5iOvpHBoCNgpWs"",
+  ""nextPageToken"": ""QURTSl9pMDlJWE44aGJXSXFnOFNHOUl4TkJXOEZsd0IxSEJFcVdnTHNoNURYelI2dlYyUF80THdIUXNYNE5qRXUtNDluQTBXVF9kbW54OA=="",
+  ""pageInfo"": {
+    ""totalResults"": 19,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RwA_H8eBAKN0Y2SD2udkccZc7lo"",
+      ""id"": ""UgxIdYEEE4kR2hsAViF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""k5mp6pzgU_eTCjPulxVbfwGkNRc"",
+      ""id"": ""Ugy8QzYEOsOXzSPNt6V4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""UXeJGi_AdRqecBKC4CEWiZvRQls"",
+      ""id"": ""UgyEP26WtBwtZiey2rt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2dgEddGDTAWLffnJJS-OR-Czoy0"",
+      ""id"": ""UgyN19rAPtueWiE0q5p4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WdAOVK3fMR04iqOyOxqLULBRiGU"",
+      ""id"": ""Ugz5mwjr5YtIEB-T6b94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1nDJmjOeyrifiE7MqpkP5UxslU8"",
+      ""id"": ""Ugx5yegwCf4tnyN8Cmd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1G5ZKB8Om_p8HCwEVpkermcoOa0"",
+      ""id"": ""UgzuIeY5ezitBA1BOWh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TZZkV3Hq6G9TyRx-_GuyVkWd1NQ"",
+      ""id"": ""Ugw_WvyeVPfQI9W6R5l4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""zvu1wWW-hl0mUw-5Oe73a3F1Bkg"",
+      ""id"": ""UgyQwFj0Xcf4LrjnjO54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""TP1Y7bS9QMv1IuIz9LH7Y6vd9Mg"",
+      ""id"": ""UgxOsMvZmZBx3Dz3BNx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""miSIHrDamj7P43ZbjXKBJfYw3Vo"",
+      ""id"": ""Ugz5J7XEA_jSSWPiSkB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""S1lE5uuvI4ABAWwTdjy77ERTrlg"",
+      ""id"": ""UgzOUGFaAO1M2V9Dk-p4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vwt5Dn30GcVq_nmclOmDSIheFHY"",
+      ""id"": ""UgwHqQTAdJgIulWHZ9Z4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""eh1OI5GGkh3rA4f6OWdyL7aUhWI"",
+      ""id"": ""UgwMX5tV6x0PEq8y-294AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Goa3hLVxcDO-7n-LW1mkavw4e8E"",
+      ""id"": ""Ugxu4cc6TO93JN2ns514AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""VVZHnIyiVCsm1eznyehR2C4IJSs"",
+      ""id"": ""UgxJi1fu62PJ0VHGjVd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HtUuN_uqxgT788slf6dfyIOIv0s"",
+      ""id"": ""Ugwv1DXijvXfe0lCgxt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KRMjHXZDAg7MRQ77K-3ZQOUo4es"",
+      ""id"": ""UgzAgovr2OLDYgMY_wl4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1GAN-Z6tZ3EKhMJoT-GqkgvbMIk"",
+      ""id"": ""Ugx0AVvVlGC8MrTihLd4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_t4catbinwpr5_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""N_bznVSMhl2tkAHw8PF2g5euLOw"",
+  ""nextPageToken"": ""QURTSl9pM1Q1cUkwbXBzSnVZSlh5VmhERnhFYnlWOFBSNWRVeC1GbzRPaTBJNTVVcW9NR3RENmZaUTc4WGk1b1BLN2dFUXl1c21aZ1NWNA=="",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5a9S_G0k-pHrtpcGRtxk9muUXtY"",
+      ""id"": ""UgyYuvokG2AqpTBwTv94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""D23AG_7GgsuWLLWqQHb10CX2e3M"",
+      ""id"": ""Ugzzx4CjDL0RhP9nCzV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""teqbjQZPejg_peVTxdQ_hh5cJp0"",
+      ""id"": ""Ugxl9jcUzvHjK35oyuB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""GQtnFPMNoyv2bJxFXrTNxKRc2j0"",
+      ""id"": ""UgxkKY58T3nV8LckhxB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""c7RYWmAuJkQVbJJNU0uEUpTCF3I"",
+      ""id"": ""UgyvlKU4nztArHBKeNh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""SvlBz6NhDplhVQrWAEK2-RTU70Y"",
+      ""id"": ""UgzEm2D5ERIsN4nl5Rt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KlfgnJqLE8lZ4iVC_snyI509mJc"",
+      ""id"": ""UgyoIvi72q10DMVjq2d4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""6WZZbsLAKyh3GO-mA2xS3lsdvLQ"",
+      ""id"": ""UgxNfy7Wyxd5XrPp6X14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Voq_Gzs78L93jxkWEwo1PsAAg2o"",
+      ""id"": ""UgzLGbOS1VJJyli7Bz54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""VLqcCGGql4PuOm59G2Vx58NHdZE"",
+      ""id"": ""UgxwtCm81SdHHyBxtot4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fIr4ZmfzBCzF2eC38hzRw1EueLA"",
+      ""id"": ""UgxZkAGl0F5R7-xPE7V4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""iO5aPTh1tN6UZ0YpOSM0XelY-6c"",
+      ""id"": ""UgwGrDF7f5-PionH6u94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WI50AhI7NdGP0WF4drFydwK824k"",
+      ""id"": ""UgyYzh7RBpd9xLylrWp4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""wU12oqd_EguXNwAz4-Wz98i5URQ"",
+      ""id"": ""UgwvHdTck1c8s6eie7F4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LmkWRuF77fgT_Rw5VGyjkv-ETdU"",
+      ""id"": ""UgxQQHEAxnc15s7BVI54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Gl7w5-XzHz1W0FRlGUjosCAZdMQ"",
+      ""id"": ""UgwzL4e4j2l5LMsZ7Tl4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tU5g4Pb0knv5QRC7eDwkU27Oc5I"",
+      ""id"": ""UgxcPj92c028lu02npF4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RajOvqMsoLjHETc98N3-yX-XgOM"",
+      ""id"": ""Ugy9iex2voI-dC3UQQx4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nZ6LPVQ73cxy1IHZI0NLooQtzaA"",
+      ""id"": ""UgylIa6aVcTjtytMTUt4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""FhYpkbzq3EacaaBajZWpFcdeYnE"",
+      ""id"": ""UgybPMTxSMLZUQSc73J4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ublveig19ftt_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none

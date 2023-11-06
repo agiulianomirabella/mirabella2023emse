@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib0xn12r8vom_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QypyrpzYXM1PNT?t=1686925842"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ies9iij2iptj_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_j4b3W43kNTe5m7?t=1686925848"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jiflq3tzky0k_PostCoupons,200,"{
+  ""id"": ""PuZTsy5R"",
+  ""object"": ""coupon"",
+  ""amount_off"": 89,
+  ""created"": 1686925854,
+  ""currency"": ""tjs"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 22,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxqko9umdg6u_PostCoupons,200,"{
+  ""id"": ""WXrwvYbY"",
+  ""object"": ""coupon"",
+  ""amount_off"": 88,
+  ""created"": 1686925860,
+  ""currency"": ""czk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 24,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_to4ix3yit204_PostCoupons,200,"{
+  ""id"": ""N3GHcQPrfQxvPT"",
+  ""object"": ""coupon"",
+  ""amount_off"": 32,
+  ""created"": 1686925865,
+  ""currency"": ""mvr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""kuri-chiku"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

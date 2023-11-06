@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iuvj68mvq5v7_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1302,""title"":""NUMBER OF ROOMS GIVEN EXCEEDS LIMIT""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rl03aqfo8xur_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_skkj538avdr9_getMultiHotelOffers,429,"
+            {
+                ""errors"": [
+                    {
+                        ""code"": 38194,
+                        ""title"": ""Too many requests"",
+                        ""detail"": ""The network rate limit is exceeded, please try again later"",
+                        ""status"": 429
+                    }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,OAS disconformity: Response status 429 not defined for path '/shopping/hotel-offers'.
+test_t8cdzg2125gy_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1302,""title"":""NUMBER OF ROOMS GIVEN EXCEEDS LIMIT""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ts57upc7tu8y_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

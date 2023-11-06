@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr5w99qm1ir7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_06Wu1Eqq15a3fi?t=1685058129"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ibbj9ho8bwoi_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rZSiauXUvZsbxL?t=1685058135"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qdpyiikg58ah_PostCoupons,200,"{
+  ""id"": ""14a8Ugcj"",
+  ""object"": ""coupon"",
+  ""amount_off"": 9,
+  ""created"": 1685058141,
+  ""currency"": ""scr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 18,
+  ""metadata"": {},
+  ""name"": ""salmonellosis"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qdw2994b6wde_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_XQ1RkGLEUuztOe?t=1685058153"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhql3rq24a5f_PostCoupons,200,"{
+  ""id"": ""LkLSUYM4"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058159,
+  ""currency"": ""try"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 4,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""dentine"",
+  ""percent_off"": 49.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,108 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv0hbb8azlth_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skv1wa7amg4w_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_toohlq34w5yt_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""n6JUL4EIvGtJXpWLlPlAvL8xtW0"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 53
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PyNri20mOqVsS54NjCsPUHvphUU"",
+      ""id"": ""UgyYYGDYZhxKuiCkSSx4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""pPsgfMuOFeM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""HXgKafPBQwNb_jv1oVloaGMoccE"",
+          ""id"": ""UgyYYGDYZhxKuiCkSSx4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""pPsgfMuOFeM"",
+            ""textDisplay"": ""Why am i so uncomfortable watching her in that dress??"",
+            ""textOriginal"": ""Why am i so uncomfortable watching her in that dress??"",
+            ""authorDisplayName"": ""Cassette Cessette"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9rTj92ejh9Ekx9kij-6NOW7pIc5QVLbP-6YzX0xAE=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCDXyLnS5ldCJ_Y5EISpwDZw"",
+            ""authorChannelId"": {
+              ""value"": ""UCDXyLnS5ldCJ_Y5EISpwDZw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 7591,
+            ""publishedAt"": ""2019-04-16T05:32:48Z"",
+            ""updatedAt"": ""2019-04-16T05:32:48Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 70,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_ubguvqdjsvg8_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubj35t91nsqf_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId, allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

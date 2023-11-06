@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7zr8bc3ifqx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_T28RTF681BLnSz?t=1685107196"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hrlz18d78aib_PostCoupons,200,"{
+  ""id"": ""DMcvFUQW"",
+  ""object"": ""coupon"",
+  ""amount_off"": 99,
+  ""created"": 1685107201,
+  ""currency"": ""dkk"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 27,
+  ""metadata"": {},
+  ""name"": ""lesser"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rl2um0e6v3g7_PostCoupons,200,"{
+  ""id"": ""Wy7tkzRu0jjQw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107207,
+  ""currency"": ""inr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 42.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u7rszi2x7pes_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_cmVdIhP91gLe1x?t=1685107213"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vf1eztjnb9es_PostCoupons,200,"{
+  ""id"": ""5Llx1EP1qACJ00IOBD"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107219,
+  ""currency"": ""kzt"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 35,
+  ""metadata"": {},
+  ""name"": ""unarmed"",
+  ""percent_off"": 32.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrosogqd3lgi_PostCoupons,200,"{
+  ""id"": ""6DPNJU1I"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082166,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 21,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 94.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1ib8qppjyf8zb_PostCoupons,200,"{
+  ""id"": ""VCFpg8KpxJGRv"",
+  ""object"": ""coupon"",
+  ""amount_off"": 44,
+  ""created"": 1685082174,
+  ""currency"": ""bnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 66,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1799433264,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ieuz9dvqo1f5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_c7kPcMLRC4vmM3?t=1685082180"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_urmdzkq7sa47_PostCoupons,200,"{
+  ""id"": ""PH0UiPsZTK4"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082187,
+  ""currency"": ""sar"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""musingly"",
+  ""percent_off"": 78.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vb6v1r3y4enm_PostCoupons,200,"{
+  ""id"": ""Hs2S9gy7PH"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082194,
+  ""currency"": ""ang"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 30,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 46.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

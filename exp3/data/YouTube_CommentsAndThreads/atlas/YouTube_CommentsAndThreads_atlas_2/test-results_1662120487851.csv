@@ -1,0 +1,581 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv2qg68jhws3_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_r1iv5tajqmup_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s4se4s7sfxwj_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""k7XaXVoiQqqnPmDkWjukfR9sfbo"",
+  ""nextPageToken"": ""QURTSl9pMFJWMmlYdy1WZlluaF95NXR5SWxaVzdnLUtxWmJqR3hSM0lTOW1rdXNmaHpVOWxwWndTM3BCLWRzWDJqMVBWaVpoRkZBSXdUVW02MDA5SjRmSURRdW8ycHN4NlJFQVhabkNiMGx4aUQ0TWlhY1ItZXVBaTRndXNPYVFhVFVHME5xNzhFUzhxRjk3cmg2aEVsX2xWdEw4djJuQ0prelpsMTM2TW92RXZ5M1lESHBuMDluUVBYaXF2N1ZkU2p3dzdERWVSWklrNDJ3"",
+  ""pageInfo"": {
+    ""totalResults"": 15,
+    ""resultsPerPage"": 16
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HU5zAzmR4Zfbgzv7oreUTrF0fK8"",
+      ""id"": ""UgwTZf-7d8t41VYj46N4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""pCch9emSXqA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""fDZwI4l-49SYcEDWAoAXj1ZMSpo"",
+          ""id"": ""UgwTZf-7d8t41VYj46N4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""pCch9emSXqA"",
+            ""textDisplay"": ""Está mujer es inigualable, me enamora solo su forma de ser. Mi sueño es estar un día entero con ella."",
+            ""textOriginal"": ""Está mujer es inigualable, me enamora solo su forma de ser. Mi sueño es estar un día entero con ella."",
+            ""authorDisplayName"": ""alberto daniel rodriguez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_jEy6nzxLRojT-jkD4_5uvbKj9kHjLPnkz0V2Bmw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCR3poy0_G27UE73731NNJCQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCR3poy0_G27UE73731NNJCQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T11:57:43Z"",
+            ""updatedAt"": ""2022-09-02T11:57:43Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""7buUYUGB8g0osJm_KGCIYFPVwrw"",
+      ""id"": ""UgyK1krcBxtoY6qxzj14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""T-4u07xz7LI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Q-AkQO2BFbhX4icQMOlF9uYbIsM"",
+          ""id"": ""UgyK1krcBxtoY6qxzj14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""T-4u07xz7LI"",
+            ""textDisplay"": ""Vengo del futuro y el policía ahora es compañero de curro del revisor"",
+            ""textOriginal"": ""Vengo del futuro y el policía ahora es compañero de curro del revisor"",
+            ""authorDisplayName"": ""A A"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-FDJpilXfz-wPda3tQBnmb0lLWr3Mv3vGEYw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTgQg8It2kCn02FGWCgYPwA"",
+            ""authorChannelId"": {
+              ""value"": ""UCTgQg8It2kCn02FGWCgYPwA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T09:54:40Z"",
+            ""updatedAt"": ""2022-09-02T09:54:40Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""G8HqZe6B7eRU9ApTzjhVccJa8ZA"",
+      ""id"": ""UgwrhNBJqkoZoUnrkSd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""yfj7O81c2dE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""9mUs6oywlooBMonknDEXeFIG1Rs"",
+          ""id"": ""UgwrhNBJqkoZoUnrkSd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""yfj7O81c2dE"",
+            ""textDisplay"": ""Me parece que Samantha es muy inteligente y deja en evidencia al presentador."",
+            ""textOriginal"": ""Me parece que Samantha es muy inteligente y deja en evidencia al presentador."",
+            ""authorDisplayName"": ""cristina medel"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu80oCzYVXjYxIzy9TPv64qWeY6wubxp33sTfg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCSbdSmJ9iZOXiiva5zcizGA"",
+            ""authorChannelId"": {
+              ""value"": ""UCSbdSmJ9iZOXiiva5zcizGA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T09:10:42Z"",
+            ""updatedAt"": ""2022-09-02T09:10:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""IVlw-fNcg2sedSnubQMizWTOleA"",
+      ""id"": ""UgwUI4DzhqFltMEf4KB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""LSh9uwOxeU8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""vmmYpECPAqKd42Kjz2WQOLNdstA"",
+          ""id"": ""UgwUI4DzhqFltMEf4KB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""LSh9uwOxeU8"",
+            ""textDisplay"": ""LI SAUMET ENCANTADORAMENTE SENCILLA.............EXELENTE MUJER HERMOSA."",
+            ""textOriginal"": ""LI SAUMET ENCANTADORAMENTE SENCILLA.............EXELENTE MUJER HERMOSA."",
+            ""authorDisplayName"": ""Roberto Antu Aregullin"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu89JhWDAdzkJEGqlbF1786KIhh_fzyIPeUmrQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCegqKxrE0aBzeDym9IO-jig"",
+            ""authorChannelId"": {
+              ""value"": ""UCegqKxrE0aBzeDym9IO-jig""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T06:36:13Z"",
+            ""updatedAt"": ""2022-09-02T06:36:13Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""aiusFJnJpykTuPnrcsz-r0t4uHo"",
+      ""id"": ""UgwLw0rA-F-G2E08Hot4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""tAi4hQmyTNo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8lRCckyJCaafgYUViSAZpgRLiNo"",
+          ""id"": ""UgwLw0rA-F-G2E08Hot4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""tAi4hQmyTNo"",
+            ""textDisplay"": ""Quién mas vio el reel de  la nueva season con Quevedo y se la creyó jasdaksjd"",
+            ""textOriginal"": ""Quién mas vio el reel de  la nueva season con Quevedo y se la creyó jasdaksjd"",
+            ""authorDisplayName"": ""Frodo Obi-Wan Prime"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8tNza8iVplYEUMo1SVS5dd5zDu_li5x_GyAe_e=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCir3nPt13qBQ9ohD0BrD98g"",
+            ""authorChannelId"": {
+              ""value"": ""UCir3nPt13qBQ9ohD0BrD98g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T05:17:07Z"",
+            ""updatedAt"": ""2022-09-02T05:17:07Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""9ICLlTQSiLI2phBPRVb9qqvqcWk"",
+      ""id"": ""UgyBKcTK8U1at5kkKXF4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""LjfYDKAf72Y"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""sXJG3EfX5SAYpLyFuSzeDVYOJZc"",
+          ""id"": ""UgyBKcTK8U1at5kkKXF4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""LjfYDKAf72Y"",
+            ""textDisplay"": ""El michelin en la nuca es porque piensa mucho?"",
+            ""textOriginal"": ""El michelin en la nuca es porque piensa mucho?"",
+            ""authorDisplayName"": ""Imule"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9fjv-XbbS0I8zshSD19YEiu6cQmgdamuX1dOsWbQ4y6PaJKum2zEPjRz9mQGIr=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCuy7vG5tUYXgHLPuhREub3g"",
+            ""authorChannelId"": {
+              ""value"": ""UCuy7vG5tUYXgHLPuhREub3g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T05:01:14Z"",
+            ""updatedAt"": ""2022-09-02T05:01:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""SgRCpknlUxWBx9IMsIqaKDsfqKs"",
+      ""id"": ""UgwrutodQTVy812x-Vp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""IDaL32eUNfQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""-_a40k2wu9Pcoij-P2cl4qHtimI"",
+          ""id"": ""UgwrutodQTVy812x-Vp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""IDaL32eUNfQ"",
+            ""textDisplay"": ""V"",
+            ""textOriginal"": ""V"",
+            ""authorDisplayName"": ""Amilen Amilen"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_HDU6kwF_z0uevl6WKR-kXaRr9POtiUFlseuyE7WZQlLW3nSpqh3rtS2wvmQP0=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCM6c50JYvifjP1HBHN3owIA"",
+            ""authorChannelId"": {
+              ""value"": ""UCM6c50JYvifjP1HBHN3owIA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T02:46:10Z"",
+            ""updatedAt"": ""2022-09-02T02:46:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""BoQFzmhU72TcEnSPARLbtHwziwQ"",
+      ""id"": ""UgxNkUVebDwq-HGGdpt4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""IDaL32eUNfQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qY7zkBxBZ6PXtFrLTfjap-bkHYU"",
+          ""id"": ""UgxNkUVebDwq-HGGdpt4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""IDaL32eUNfQ"",
+            ""textDisplay"": ""B"",
+            ""textOriginal"": ""B"",
+            ""authorDisplayName"": ""Amilen Amilen"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_HDU6kwF_z0uevl6WKR-kXaRr9POtiUFlseuyE7WZQlLW3nSpqh3rtS2wvmQP0=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCM6c50JYvifjP1HBHN3owIA"",
+            ""authorChannelId"": {
+              ""value"": ""UCM6c50JYvifjP1HBHN3owIA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T02:46:07Z"",
+            ""updatedAt"": ""2022-09-02T02:46:07Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ptMbmACVSX9cVJXxIDFh40fmDFg"",
+      ""id"": ""UgxvvN6tfkWkUUidwn54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""IDaL32eUNfQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""7ZpzeHOsZQP_bFXNrALUHdB_zZI"",
+          ""id"": ""UgxvvN6tfkWkUUidwn54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""IDaL32eUNfQ"",
+            ""textDisplay"": ""💕"",
+            ""textOriginal"": ""💕"",
+            ""authorDisplayName"": ""fans David Bustamante"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_HfyCjkM0hdAvbPiC1CFaOPK3wQIm281k74bnM_Q=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvUERClSI4NBZL6sEOuX68g"",
+            ""authorChannelId"": {
+              ""value"": ""UCvUERClSI4NBZL6sEOuX68g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T01:37:29Z"",
+            ""updatedAt"": ""2022-09-02T01:37:29Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2yNJKHkehTq4_9N4OzEvtQrXSx4"",
+      ""id"": ""UgxvF7sPMQA9mknmO_V4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""6Rx5BEm7gyM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""JTv71yw7OdVyBE3oIuRUadBf68k"",
+          ""id"": ""UgxvF7sPMQA9mknmO_V4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""6Rx5BEm7gyM"",
+            ""textDisplay"": ""Me enamore de Emilia, me encanta su sonrisa y su acento 😍"",
+            ""textOriginal"": ""Me enamore de Emilia, me encanta su sonrisa y su acento 😍"",
+            ""authorDisplayName"": ""Edgar Paspuel Cadena"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu94sDj1XaPMVu_QedyP4Nzy6taTH0cFTdboHDrE21VLGFcA7GkY7RjdxSjPI3PI=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC9TDvKzVwll9nnqe-HW30Ag"",
+            ""authorChannelId"": {
+              ""value"": ""UC9TDvKzVwll9nnqe-HW30Ag""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T01:29:00Z"",
+            ""updatedAt"": ""2022-09-02T01:29:00Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""sK8eAdEn5fiFofzzreiIxo-jM0c"",
+      ""id"": ""Ugz0yNRT_2oUwk9Wdxp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""TZD521hESAc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""cTLLRbviqT0cWapcis_xKO5XjQc"",
+          ""id"": ""Ugz0yNRT_2oUwk9Wdxp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""TZD521hESAc"",
+            ""textDisplay"": ""Dios mío q mrd d programa y entrevista, hablando d kk la ptmr.\u003cbr\u003eY x esto dejaron de subir videos de Pablo y sus hormiguitas?"",
+            ""textOriginal"": ""Dios mío q mrd d programa y entrevista, hablando d kk la ptmr.\nY x esto dejaron de subir videos de Pablo y sus hormiguitas?"",
+            ""authorDisplayName"": ""Michael Alemán"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_ncbiLi4sq03gWjFXkuVGS9siENy7sA87w3MiK=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCLZgfUXyJPfpm--RrJMmXvQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCLZgfUXyJPfpm--RrJMmXvQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T00:55:42Z"",
+            ""updatedAt"": ""2022-09-02T00:55:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""E7HzBQ3zKqZn03RjaADAsSEBrvg"",
+      ""id"": ""Ugw9Tctf0MpFCjmfNWZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""mwRSI1kS6So"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""At3tm0Ua1eH1IzRz6FBov4bBef8"",
+          ""id"": ""Ugw9Tctf0MpFCjmfNWZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""mwRSI1kS6So"",
+            ""textDisplay"": ""top 10 mejores entrevistas de la resis"",
+            ""textOriginal"": ""top 10 mejores entrevistas de la resis"",
+            ""authorDisplayName"": ""Olaya Romano"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_kZNWWolK8MUUjA5FkRPaYyxLg9G-YPLY6Iqf0aA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCo4Qg4nspINWKAbqEFrMl6w"",
+            ""authorChannelId"": {
+              ""value"": ""UCo4Qg4nspINWKAbqEFrMl6w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T00:16:33Z"",
+            ""updatedAt"": ""2022-09-02T00:16:33Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""i9OB2ZtwosH34zrh9xpZbMdPuII"",
+      ""id"": ""UgzwTH5977epUfCPtJl4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""LM3TyVffcR0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""XOr2s9QudPbngx0cYztuS0LCv38"",
+          ""id"": ""UgzwTH5977epUfCPtJl4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""LM3TyVffcR0"",
+            ""textDisplay"": ""joder me flipan los argentinos y trueno es genial, saludos desde argentina"",
+            ""textOriginal"": ""joder me flipan los argentinos y trueno es genial, saludos desde argentina"",
+            ""authorDisplayName"": ""Lucas Cruz"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ypbcfslFYWhUzoPrspSAtYORWdGLmnB90csi_6X-Lwvx8hTUwARlcfTW8U5cCUmQ5sqX9_VUOA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC5-XzmTNqrohhG6RwQgwP7g"",
+            ""authorChannelId"": {
+              ""value"": ""UC5-XzmTNqrohhG6RwQgwP7g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-02T00:08:53Z"",
+            ""updatedAt"": ""2022-09-02T00:08:53Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nPZpkrEpjipHjf8_R99XwNNBkKk"",
+      ""id"": ""Ugy_NmDZ26Y-U12FfjN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""7bgyhpsUQys"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""guSO04vgrIRFBIyBlEuSUlJ3CHU"",
+          ""id"": ""Ugy_NmDZ26Y-U12FfjN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""7bgyhpsUQys"",
+            ""textDisplay"": ""Se leva el wi-fi a la dama 🤣🤣🤣"",
+            ""textOriginal"": ""Se leva el wi-fi a la dama 🤣🤣🤣"",
+            ""authorDisplayName"": ""Luis Guerrero"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-16pbvFhlzEHL-fJelbhveF9u0jkv8lpvQ2g=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCUmWIHL8TZHdx5LpXc83Gxg"",
+            ""authorChannelId"": {
+              ""value"": ""UCUmWIHL8TZHdx5LpXc83Gxg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T23:03:08Z"",
+            ""updatedAt"": ""2022-09-01T23:03:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gstDk5d-7x3JrSAelBoy-bSuY-E"",
+      ""id"": ""UgxpLpq98rRAtUmSIMN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""w2lIBQXU7do"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""xTrQb_eFKUNvYTWLumQfZujq0xM"",
+          ""id"": ""UgxpLpq98rRAtUmSIMN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""w2lIBQXU7do"",
+            ""textDisplay"": ""Estoy igual a René. Uds hablan tan rápido que no se les entiende en momentos"",
+            ""textOriginal"": ""Estoy igual a René. Uds hablan tan rápido que no se les entiende en momentos"",
+            ""authorDisplayName"": ""Ever Chinchilla"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_WwXQHdPkA37V70IjJbQucz37Yg3eaea8MDl0nNd8=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCc1b6JwezrovZzJaV9s1s-w"",
+            ""authorChannelId"": {
+              ""value"": ""UCc1b6JwezrovZzJaV9s1s-w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-01T22:56:47Z"",
+            ""updatedAt"": ""2022-09-01T22:56:47Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_sksaif4y9lyc_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, channelId, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, channelId, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4a1qr034f1z_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

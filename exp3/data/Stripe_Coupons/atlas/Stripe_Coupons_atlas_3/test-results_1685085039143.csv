@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h82je0dn8kkz_PostCoupons,200,"{
+  ""id"": ""DhAemniubhVaULmF"",
+  ""object"": ""coupon"",
+  ""amount_off"": 87,
+  ""created"": 1685085056,
+  ""currency"": ""nzd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 28,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1731784449,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jifjdoyig7za_PostCoupons,200,"{
+  ""id"": ""TmseIV4BpiBgq5z"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085061,
+  ""currency"": ""pen"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 14.0,
+  ""redeem_by"": 1853047131,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe3tdpqxqwqf_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_L7dGgZXmfIdrtL?t=1685085067"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skxug3wwhe8z_PostCoupons,200,"{
+  ""id"": ""RDGukSEZNo6cx7T0t"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085073,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""frontispiece"",
+  ""percent_off"": 80.0,
+  ""redeem_by"": 1783190685,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uvjqw2e7gggz_PostCoupons,200,"{
+  ""id"": ""rpQlfGzZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085078,
+  ""currency"": ""shp"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""walk-up"",
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

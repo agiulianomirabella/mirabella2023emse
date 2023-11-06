@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7wje9t7zm7r_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The currency hrk is no longer supported. Use eur instead. See https://support.stripe.com/questions/croatian-kuna-(hrk)-currency-transition-to-euro-(eur) for more details."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DyFQ4TWJDh1mUw?t=1685112591"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iay6bjjpondx_PostCoupons,200,"{
+  ""id"": ""goAViMOU"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112597,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 95,
+  ""livemode"": false,
+  ""max_redemptions"": 55,
+  ""metadata"": {},
+  ""name"": ""sidle"",
+  ""percent_off"": 27.0,
+  ""redeem_by"": 1694801716,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iukcvpucy5wh_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_hbbwGoK2gBOxhK?t=1685112602"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qhvlvnb46iig_PostCoupons,200,"{
+  ""id"": ""VFEr4xAt"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112608,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 84.0,
+  ""redeem_by"": 1806943760,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1g4y1kjqrlc_PostCoupons,200,"{
+  ""id"": ""ubxmdgfJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112614,
+  ""currency"": ""gmd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 50,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 86.0,
+  ""redeem_by"": 1776094600,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

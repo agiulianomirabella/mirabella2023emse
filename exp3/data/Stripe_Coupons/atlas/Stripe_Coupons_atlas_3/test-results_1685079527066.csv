@@ -1,0 +1,71 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_sl6q1b3zfx46_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7R7x4wZbNQV7BV?t=1685079543"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl8zw7ofi6w6_PostCoupons,200,"{
+  ""id"": ""bRSb2M4Zz9vdnWN"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685079549,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""vie"",
+  ""percent_off"": 47.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sobv97r9am29_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_1Y998jhOkGxof9?t=1685079555"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to7vco6qdc9u_PostCoupons,200,"{
+  ""id"": ""84fphoym"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685079561,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""derestrict"",
+  ""percent_off"": 60.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_toig7ee8lvty_PostCoupons,200,"{
+  ""id"": ""iD4X7WSF"",
+  ""object"": ""coupon"",
+  ""amount_off"": 5,
+  ""created"": 1685079567,
+  ""currency"": ""etb"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 8,
+  ""metadata"": {},
+  ""name"": ""eroticize"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

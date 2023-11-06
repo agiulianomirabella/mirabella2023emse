@@ -1,0 +1,59 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibjtt4werhv4_PostCoupons,200,"{
+  ""id"": ""y0G8YILvV65z"",
+  ""object"": ""coupon"",
+  ""amount_off"": 52,
+  ""created"": 1685059016,
+  ""currency"": ""srd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qdvhlitkht15_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_fUKhqVKAVuGEix?t=1685059022"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl0ngxo06otx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_urI5zXqMDL9UFP?t=1685059027"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_urhatht6zvq9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Pik6ZuF2RNWGhL?t=1685059033"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vf6eoah5deg4_PostCoupons,200,"{
+  ""id"": ""rBSDj0HCgmGl8iY5Ls"",
+  ""object"": ""coupon"",
+  ""amount_off"": 78,
+  ""created"": 1685059039,
+  ""currency"": ""bob"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 76,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

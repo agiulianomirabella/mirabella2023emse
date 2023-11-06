@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jed6vyoyc21u_PostCoupons,200,"{
+  ""id"": ""Pkbe5SC0gXEpu5f"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082097,
+  ""currency"": ""fkp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 96.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k25kg8i7dz6q_PostCoupons,200,"{
+  ""id"": ""TGfqk9du"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082103,
+  ""currency"": ""zar"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""culminate"",
+  ""percent_off"": 89.0,
+  ""redeem_by"": 1746170891,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s4mczbuv4baq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_SLqCIbHUV3YqRH?t=1685082109"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8f815aqpdf7_PostCoupons,200,"{
+  ""id"": ""7yjTgvM3SzfYFoyXWcb"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082116,
+  ""currency"": ""wst"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 92.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u8apt1o0hkyu_PostCoupons,200,"{
+  ""id"": ""MATaH0m1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685082135,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 3,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 16.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

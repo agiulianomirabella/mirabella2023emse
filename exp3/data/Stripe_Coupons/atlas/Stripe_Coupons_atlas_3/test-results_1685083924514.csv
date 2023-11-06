@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hroqf2nsmhbn_PostCoupons,200,"{
+  ""id"": ""T5zs6KJHzaCz5r"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083941,
+  ""currency"": ""tzs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 95.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1jfniknicte_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_mwq6Y7SUy7nyDo?t=1685083946"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s505whtqbsxh_PostCoupons,200,"{
+  ""id"": ""iZfA5mIJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 2,
+  ""created"": 1685083952,
+  ""currency"": ""ang"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s50pe3836cl3_PostCoupons,200,"{
+  ""id"": ""3a2z2n59"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083958,
+  ""currency"": ""sek"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 12,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 96.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vbpplcxjoai8_PostCoupons,200,"{
+  ""id"": ""GCIhxOoxKs8i"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083964,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""lipstick"",
+  ""percent_off"": 75.0,
+  ""redeem_by"": 1789266165,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iay6n1kjqfz9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_OKmjIhkkfnF1B1?t=1685058239"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iev01kemcqwn_PostCoupons,200,"{
+  ""id"": ""BA6TpZ0R"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058244,
+  ""currency"": ""eur"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 2,
+  ""livemode"": false,
+  ""max_redemptions"": 50,
+  ""metadata"": {},
+  ""name"": ""emplace"",
+  ""percent_off"": 67.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qy1o5w5v4tie_PostCoupons,200,"{
+  ""id"": ""3c93Ddb4"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058250,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 28.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qy4fha4znioz_PostCoupons,200,"{
+  ""id"": ""Ger10odQYqNyziM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 25,
+  ""created"": 1685058256,
+  ""currency"": ""sek"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 45,
+  ""metadata"": {},
+  ""name"": ""quirk"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_us3in5kxoy1t_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6YLv4AZ3udjc6z?t=1685058262"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

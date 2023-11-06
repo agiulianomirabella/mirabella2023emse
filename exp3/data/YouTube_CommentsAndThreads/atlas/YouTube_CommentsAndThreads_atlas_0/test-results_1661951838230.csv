@@ -1,0 +1,281 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyi8hh8t6dt1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, allThreadsRelatedToChannelId, channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, allThreadsRelatedToChannelId, channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhnv7qjzx84h_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r1dbxdqhaxya_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: channelId, id, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: channelId, id, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_us099cps5ahw_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""-bc4uvvpr24FNSvCub5FMVmMc48"",
+  ""nextPageToken"": ""QURTSl9pM01ad2tKSDU2dC00b2gwSUJFTWNsT0J4OXpVZHR5TjIzM3hUblEtMm9sNU9xTFBhYzFTMTdkSThtUFhhaWV3d0R4RTZjelhab3BjRUJrbU4yNnlfcElvRUk="",
+  ""pageInfo"": {
+    ""totalResults"": 2,
+    ""resultsPerPage"": 2
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""sgPiw6vImFY-88vodqnPT2DKpEg"",
+      ""id"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""7m-NPuXPBqM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""fpqJe3Ct-NBLfg13QiEx0TRIaDs"",
+          ""id"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""7m-NPuXPBqM"",
+            ""textDisplay"": ""Jimmy: \""You will be singing Bad Guy by Billie Eilish'\nCamilla: *laughs in Spanish*"",
+            ""textOriginal"": ""Jimmy: \""You will be singing Bad Guy by Billie Eilish'\nCamilla: *laughs in Spanish*"",
+            ""authorDisplayName"": ""Alex Brasovan"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8RygIFqtctWHKQ2g3MYlq4UOl7QThgXgip3w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnV1yKJObE8jMS7GrBO97Gw"",
+            ""authorChannelId"": {
+              ""value"": ""UCnV1yKJObE8jMS7GrBO97Gw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 13386,
+            ""publishedAt"": ""2019-12-30T21:26:56Z"",
+            ""updatedAt"": ""2019-12-30T21:26:56Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 60,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Ll_BZDPSLjV3HvVkaKpvU-fO5ho"",
+            ""id"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg.93B2eX71wew9cB4EMBj71U"",
+            ""snippet"": {
+              ""videoId"": ""7m-NPuXPBqM"",
+              ""textDisplay"": ""It reminded me of Nicki"",
+              ""textOriginal"": ""It reminded me of Nicki"",
+              ""parentId"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg"",
+              ""authorDisplayName"": ""E T"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_l1yNxCWdb9Pi9TjzL0QymFWYXFjyyVE9__vsy=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYZ52hdYtPF2d105IOgLO2Q"",
+              ""authorChannelId"": {
+                ""value"": ""UCYZ52hdYtPF2d105IOgLO2Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-12T16:30:53Z"",
+              ""updatedAt"": ""2022-06-12T16:30:53Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aeEnSLzSgrARIfZF8PKtBZLRyro"",
+            ""id"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg.93B2eX71wew9Z2NOMl50C4"",
+            ""snippet"": {
+              ""videoId"": ""7m-NPuXPBqM"",
+              ""textDisplay"": ""jajaja"",
+              ""textOriginal"": ""jajaja"",
+              ""parentId"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg"",
+              ""authorDisplayName"": ""grace-does-stuff"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/BYdbRcLF_IwT_QV9yewR10V9HFr_Q4E-NwwUaSURZ88O4zj1OdhYLgS2-WSPS_Hz6sin0Byh=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UChGwepJKi1YISG_njFY9Lvg"",
+              ""authorChannelId"": {
+                ""value"": ""UChGwepJKi1YISG_njFY9Lvg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-03-01T21:19:32Z"",
+              ""updatedAt"": ""2022-03-01T21:19:32Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""9YL_2FRIUmSL22xvAwX-JBG5yP0"",
+            ""id"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg.93B2eX71wew9XxIVal5lzp"",
+            ""snippet"": {
+              ""videoId"": ""7m-NPuXPBqM"",
+              ""textDisplay"": ""0:58"",
+              ""textOriginal"": ""0:58"",
+              ""parentId"": ""UgyTCP5Bzm8Dg7q_5H54AaABAg"",
+              ""authorDisplayName"": ""Kayla Meredith"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-SgmRWBYZkvaVDF0iuLo_QvEcLvLB4VtP-78paWw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZoXbuYtqiiIlqjDoum6OLg"",
+              ""authorChannelId"": {
+                ""value"": ""UCZoXbuYtqiiIlqjDoum6OLg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-02-02T16:09:59Z"",
+              ""updatedAt"": ""2022-02-02T16:09:59Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""R4bgS48AwriMCB8Lznr1tNJDH7k"",
+      ""id"": ""UgwtlPbOZszDKUIK6at4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""7m-NPuXPBqM"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""4Drvvk_G454gTzsAgpzxMt7mB1w"",
+          ""id"": ""UgwtlPbOZszDKUIK6at4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""7m-NPuXPBqM"",
+            ""textDisplay"": ""This is literally \""insulting google translator for 4 minutes straight\"" 😂😂"",
+            ""textOriginal"": ""This is literally \""insulting google translator for 4 minutes straight\"" 😂😂"",
+            ""authorDisplayName"": ""be yourself"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9Dbw6ePnVLNz9yJmTzcGSXtbxx21m7R4mmqrQrWpY=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCpKVNWoTEnPrRhGTp1Wg2Dg"",
+            ""authorChannelId"": {
+              ""value"": ""UCpKVNWoTEnPrRhGTp1Wg2Dg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 5330,
+            ""publishedAt"": ""2021-02-28T14:47:54Z"",
+            ""updatedAt"": ""2021-02-28T14:47:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 16,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""SzMA8cYt5kN-GTh_nZMl2nIp9KI"",
+            ""id"": ""UgwtlPbOZszDKUIK6at4AaABAg.9KJFcgrf2XM9UjwXk6B9DU"",
+            ""snippet"": {
+              ""videoId"": ""7m-NPuXPBqM"",
+              ""textDisplay"": ""Google works better than that, obviously they fake the \""wrong\"" traslation in order to sing something funnier"",
+              ""textOriginal"": ""Google works better than that, obviously they fake the \""wrong\"" traslation in order to sing something funnier"",
+              ""parentId"": ""UgwtlPbOZszDKUIK6at4AaABAg"",
+              ""authorDisplayName"": ""Cristooobal"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8Gk6zOA5VlQi5mipMRnvz3UKK_Wytx5E77iA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqU1FXVBsZqXbgFUJXRW_Bw"",
+              ""authorChannelId"": {
+                ""value"": ""UCqU1FXVBsZqXbgFUJXRW_Bw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-11-14T22:05:00Z"",
+              ""updatedAt"": ""2021-11-14T22:05:00Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""X_AZD6frj6zXE19Zz8gK296xWFE"",
+            ""id"": ""UgwtlPbOZszDKUIK6at4AaABAg.9KJFcgrf2XM9TzZ5pYPz-v"",
+            ""snippet"": {
+              ""videoId"": ""7m-NPuXPBqM"",
+              ""textDisplay"": ""Agreed"",
+              ""textOriginal"": ""Agreed"",
+              ""parentId"": ""UgwtlPbOZszDKUIK6at4AaABAg"",
+              ""authorDisplayName"": ""Chloe Carr"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/PkkMJnYuKkgo3xvJzHZZPtlTVYx8Vd3kbbTxpDD4leMTPCO-3Umi3XL_vc2YH9VEpq3mvUrM=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCxMHYDUHr72XwQmzR7_kW1g"",
+              ""authorChannelId"": {
+                ""value"": ""UCxMHYDUHr72XwQmzR7_kW1g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-10-27T03:07:55Z"",
+              ""updatedAt"": ""2021-10-27T03:07:55Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""noqvxMppUGfUim96Jj7XnaxvMSY"",
+            ""id"": ""UgwtlPbOZszDKUIK6at4AaABAg.9KJFcgrf2XM9TrdeUu5lHt"",
+            ""snippet"": {
+              ""videoId"": ""7m-NPuXPBqM"",
+              ""textDisplay"": ""but wait how did they translate an english song to english?😂"",
+              ""textOriginal"": ""but wait how did they translate an english song to english?😂"",
+              ""parentId"": ""UgwtlPbOZszDKUIK6at4AaABAg"",
+              ""authorDisplayName"": ""Miriam"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-q4MTafRHwxupgqXURNsz01eg3j30XhzP_pNvFXg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC918mzN8TJU3nhdeDFnqVUA"",
+              ""authorChannelId"": {
+                ""value"": ""UC918mzN8TJU3nhdeDFnqVUA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-10-24T01:22:33Z"",
+              ""updatedAt"": ""2021-10-24T01:22:33Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_vf1f01gdhusx_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

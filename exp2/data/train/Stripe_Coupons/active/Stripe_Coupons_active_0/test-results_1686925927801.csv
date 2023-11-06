@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ibjsya2mbfhv_PostCoupons,200,"{
+  ""id"": ""BAk93kdVRsSYY5Fx"",
+  ""object"": ""coupon"",
+  ""amount_off"": 8,
+  ""created"": 1686925944,
+  ""currency"": ""sos"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 69,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jeoaayapsqwn_PostCoupons,200,"{
+  ""id"": ""C4aRWDHZGvQtHsTdSPX"",
+  ""object"": ""coupon"",
+  ""amount_off"": 53,
+  ""created"": 1686925950,
+  ""currency"": ""xcd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""larrea"",
+  ""percent_off"": null,
+  ""redeem_by"": 1843479658,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trz4f4x3scbn_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DP0MeTweS3Die9?t=1686925956"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uv8m8cp2fos6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_CMJ2VZJSQLtKn6?t=1686925961"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vb6tvvcmfos1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5mo7Y7rK23PngF?t=1686925967"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

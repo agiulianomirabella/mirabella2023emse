@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7o7alscwfg5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3nRhkZfoqP8mwK?t=1686930410"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1hbaxj9xdc0v6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_0lUwAtM4H5KLCS?t=1686930416"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iev17taymipd_PostCoupons,200,"{
+  ""id"": ""DlYCvS8dYIFPJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 42,
+  ""created"": 1686930421,
+  ""currency"": ""std"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 3,
+  ""livemode"": false,
+  ""max_redemptions"": 62,
+  ""metadata"": {},
+  ""name"": ""reuptake"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxqklt1g4twk_PostCoupons,200,"{
+  ""id"": ""LX0SbrHh"",
+  ""object"": ""coupon"",
+  ""amount_off"": 21,
+  ""created"": 1686930427,
+  ""currency"": ""lbp"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 35,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_uv8ludk4na76_PostCoupons,200,"{
+  ""id"": ""wxCScG4YMEn4EgAWSmVM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 46,
+  ""created"": 1686930433,
+  ""currency"": ""xaf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1859336162,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

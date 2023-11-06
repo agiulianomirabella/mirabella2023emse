@@ -1,0 +1,52 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rhroddcmgkte_PostCoupons,200,"{
+  ""id"": ""omuOo0gn"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107043,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 93,
+  ""metadata"": {},
+  ""name"": ""dark-blue"",
+  ""percent_off"": 31.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_skmu368db6n6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4awx4yuxYE4lXR?t=1685107049"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_tog6aah2kzle_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ufWUMQ5k5EIq2c?t=1685107055"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvk6v3xngent_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rG929GcjwUjjt1?t=1685107060"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbk5ncnsirzk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wlGeoclzVcudSV?t=1685107066"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

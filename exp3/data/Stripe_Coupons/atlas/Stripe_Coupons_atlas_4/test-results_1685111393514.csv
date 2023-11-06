@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyhpdmoi88qa_PostCoupons,200,"{
+  ""id"": ""kNI1wbFx"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111410,
+  ""currency"": ""gbp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 86,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 50.0,
+  ""redeem_by"": 1691298049,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jyg0vksn5lye_PostCoupons,200,"{
+  ""id"": ""78KvhdhUnhKjH7"",
+  ""object"": ""coupon"",
+  ""amount_off"": 13,
+  ""created"": 1685111416,
+  ""currency"": ""fkp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""uninterruptedly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k1zk574xcy0j_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ya8IRUNbNanRzO?t=1685111421"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t49k739610kz_PostCoupons,200,"{
+  ""id"": ""LaweZTD6"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111427,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""curvaceously"",
+  ""percent_off"": 96.0,
+  ""redeem_by"": 1831510824,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urp31ky3zewj_PostCoupons,200,"{
+  ""id"": ""LjAbj5Ur"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111433,
+  ""currency"": ""pyg"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 49,
+  ""metadata"": {},
+  ""name"": ""shallowly"",
+  ""percent_off"": 44.0,
+  ""redeem_by"": 1717502509,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

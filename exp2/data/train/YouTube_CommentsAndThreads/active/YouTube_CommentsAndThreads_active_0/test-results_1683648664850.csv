@@ -1,0 +1,673 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib8pgt8xm2bd_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iyl1fg0zykvr_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_to4l9g5hy244_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""Pqv16W1yLBW2KQbuE41fhtk58WQ"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 40
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vbf57h73v6lu_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""ScdMAUuQns-IKI6mvuBgDRkrDWs"",
+  ""nextPageToken"": ""QURTSl9pMjJReVFoeThjUERSblFYNUxPUzlURTFzdlZGSktJa0VSSTUzVnVJNjJNVnVFVmNsZFR6eEc1RlM0VkZXaURLSm8xM0w5YTlfNA=="",
+  ""pageInfo"": {
+    ""totalResults"": 19,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MFUR9LtKO9npW8hdfvVC_q3WDTw"",
+      ""id"": ""UgxIdYEEE4kR2hsAViF4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""gBgJ7mLiUc7uoirOuPt9okwT1CM"",
+          ""id"": ""UgxIdYEEE4kR2hsAViF4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/watch?v=t22flliJLTQ&amp;t=28m08s\""\u003e28:08\u003c/a\u003e: Look back when he doesn&#39;t know how to flop every shot like that, now he always flops"",
+            ""textOriginal"": ""28:08: Look back when he doesn't know how to flop every shot like that, now he always flops"",
+            ""authorDisplayName"": ""kobe86"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOBwTplo-LgkmKY9aKbUXxjEwGTKMMayXa-VQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCsEC8Zo_okYzZ6TSmoGChSg"",
+            ""authorChannelId"": {
+              ""value"": ""UCsEC8Zo_okYzZ6TSmoGChSg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-08T15:51:09Z"",
+            ""updatedAt"": ""2023-05-08T15:51:09Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""CNFbavJ00e6q2MpW7_4xcFgZtCw"",
+      ""id"": ""Ugy8QzYEOsOXzSPNt6V4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""lhFFvygBCBxQcEkGPdRaOglSEXg"",
+          ""id"": ""Ugy8QzYEOsOXzSPNt6V4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/watch?v=t22flliJLTQ&amp;t=5m41s\""\u003e5:41\u003c/a\u003e ric flair"",
+            ""textOriginal"": ""5:41 ric flair"",
+            ""authorDisplayName"": ""Michael Bexter"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPozANtkqSaed3YWfM0CF6AQXJq-ohG0ElD-A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCf1EjSqf74A1O5EgS6geBTw"",
+            ""authorChannelId"": {
+              ""value"": ""UCf1EjSqf74A1O5EgS6geBTw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-08T06:35:03Z"",
+            ""updatedAt"": ""2023-05-08T06:35:03Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""tMbiZwPdbIbfgSbvAhXih4TpXoQ"",
+      ""id"": ""UgyEP26WtBwtZiey2rt4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""bDhpunw1Oo8s-lPrDvnFtbA0DWA"",
+          ""id"": ""UgyEP26WtBwtZiey2rt4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Blake is overrated..."",
+            ""textOriginal"": ""Blake is overrated..."",
+            ""authorDisplayName"": ""Pereangel"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/PUV8T9E84bnucgzAEj-SfOHVL3LvismV6RJ08I0Lt4WOCx3aYrWp22K8OFuJfPyEvbPfSEHX=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEVXHpu-WBcMC_Jwbd12Npg"",
+            ""authorChannelId"": {
+              ""value"": ""UCEVXHpu-WBcMC_Jwbd12Npg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-06T18:06:14Z"",
+            ""updatedAt"": ""2023-05-06T18:06:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""mUshVmeFgwnNIN7yctPoF5qe1nI"",
+      ""id"": ""UgyN19rAPtueWiE0q5p4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""oDj_JCH2l_cXtJJjLeQ6u4cA1tE"",
+          ""id"": ""UgyN19rAPtueWiE0q5p4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Man, if only Rose could’ve stayed healthy. That guy is a monster."",
+            ""textOriginal"": ""Man, if only Rose could’ve stayed healthy. That guy is a monster."",
+            ""authorDisplayName"": ""Colin Woods"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPXIxOFBsY3gCujMkrJ4YoywvA-1vwVXzH5Yw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCl1Sx7mXxTyx73rvNcK5EBQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCl1Sx7mXxTyx73rvNcK5EBQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-04T23:13:22Z"",
+            ""updatedAt"": ""2023-05-04T23:13:22Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""gOulHQlFdqb2kmZMzBYUoG1zdnU"",
+      ""id"": ""Ugz5mwjr5YtIEB-T6b94AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Ll-ZnqlsqkT07yGJzhJJ8qaHd1I"",
+          ""id"": ""Ugz5mwjr5YtIEB-T6b94AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Kenneth Faried got to enjoy this top 100 for exactly one play before getting posterized"",
+            ""textOriginal"": ""Kenneth Faried got to enjoy this top 100 for exactly one play before getting posterized"",
+            ""authorDisplayName"": ""Jim Gray"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMHFP0M7KzbD-KfPeFZJzeQJIDoD-DCbnwmlQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC1x3p4LzhH1YsanLWEZLw-A"",
+            ""authorChannelId"": {
+              ""value"": ""UC1x3p4LzhH1YsanLWEZLw-A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-03T21:03:40Z"",
+            ""updatedAt"": ""2023-05-03T21:03:40Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_gysrV462lUf-TdZnBFzuJ5o9fs"",
+      ""id"": ""Ugx5yegwCf4tnyN8Cmd4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Wo0FVNGwTktLOTZSZ8HGRgKsRd8"",
+          ""id"": ""Ugx5yegwCf4tnyN8Cmd4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""the one thing i knew that had to be on here was the jeremy lamb shot 🐐"",
+            ""textOriginal"": ""the one thing i knew that had to be on here was the jeremy lamb shot 🐐"",
+            ""authorDisplayName"": ""R7 banana"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/XMU_v9AduRawmtqHSr9yx0FYqaR8gizhbE1HqYczcuWhDKCdkL1bMJ_4Atp2EOz3kqODIhcerw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0pqLGXoIeZLu3t9WbX0t5A"",
+            ""authorChannelId"": {
+              ""value"": ""UC0pqLGXoIeZLu3t9WbX0t5A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-05-01T00:32:34Z"",
+            ""updatedAt"": ""2023-05-01T00:32:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WpAGqmM5K0yPimOfsK7zmHE1qxU"",
+      ""id"": ""UgzuIeY5ezitBA1BOWh4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""KRlUfBdYzxU_zM5qvj9VXTXPcwI"",
+          ""id"": ""UgzuIeY5ezitBA1BOWh4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Lebron and Blake stealing the show \u003ca href=\""about:invalid#zCSafez\""\u003e\u003c/a\u003e"",
+            ""textOriginal"": ""Lebron and Blake stealing the show "",
+            ""authorDisplayName"": ""Dhruv Shah"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ATnpDXzIepJaGBxmZRUUTB5ZO73L-kL0444RY8wmbwrNmXUadrDEZrLRcx0rYwzCPfGKQ1cLbXA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_u9NZmPl4g2eUVmkctDWVQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC_u9NZmPl4g2eUVmkctDWVQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2023-04-28T20:32:49Z"",
+            ""updatedAt"": ""2023-04-28T20:32:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Sg7JW211lvLN7bd2dQy_cOyDBDM"",
+      ""id"": ""Ugw_WvyeVPfQI9W6R5l4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PSwPlKGP4VpaPZYr_6QjYgwGwKQ"",
+          ""id"": ""Ugw_WvyeVPfQI9W6R5l4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/watch?v=t22flliJLTQ&amp;t=19m58s\""\u003e19:58\u003c/a\u003e straight ahh face LOL"",
+            ""textOriginal"": ""19:58 straight ahh face LOL"",
+            ""authorDisplayName"": ""Luki"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/gLZXZntQisKDFfoXBlXRG8JDCLde1kjN4qaSELrxxDbzATzLp4DW7GKneVr6DTzEiCbnJpQxWg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-FEXv4vBcDXXGxamBoYCjQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC-FEXv4vBcDXXGxamBoYCjQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-28T07:10:08Z"",
+            ""updatedAt"": ""2023-04-28T07:10:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-zmh6HWiXUmc4temdYcfmV6UZNw"",
+      ""id"": ""UgyQwFj0Xcf4LrjnjO54AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""mMTC6nDltAZ2wHSu4jc2KXqTX80"",
+          ""id"": ""UgyQwFj0Xcf4LrjnjO54AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""一直想着雷阿伦那个三分怎么还不出现，发现he is no.1"",
+            ""textOriginal"": ""一直想着雷阿伦那个三分怎么还不出现，发现he is no.1"",
+            ""authorDisplayName"": ""lilili Amy"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPtTTOc0zylVJB_8XT5aXvegtHvkV2R-oHvS8XzwXj_PHhStrU8BhlFAtjE35ug=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnqV4Gk9WY_wFpKeimoBHiQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCnqV4Gk9WY_wFpKeimoBHiQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-24T12:58:35Z"",
+            ""updatedAt"": ""2023-04-24T12:58:35Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1oPzQ_6ea5fXxRiYAc7Akso8SG0"",
+      ""id"": ""UgxOsMvZmZBx3Dz3BNx4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ZVCnFS2cdPyZ5UZN7cQnFrv8Vrg"",
+          ""id"": ""UgxOsMvZmZBx3Dz3BNx4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""69 should’ve been a game between Cleveland and okc"",
+            ""textOriginal"": ""69 should’ve been a game between Cleveland and okc"",
+            ""authorDisplayName"": ""Cupcake Zoey"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/D6h_PU5A-KQ4YLIALKNgJVeNL54475MfBo-cr0D3oYYAuM7QlDcoBCAbmOA4air7Ktj-H84W=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNtWRH8_L1vH9KkUGD-6JQQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCNtWRH8_L1vH9KkUGD-6JQQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-21T04:03:12Z"",
+            ""updatedAt"": ""2023-04-21T04:03:12Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""hojiALgkLmzFceJheJCX29ZRMlI"",
+      ""id"": ""Ugz5J7XEA_jSSWPiSkB4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""W9bYm086J1XwfKyP40cnVEv0hoY"",
+          ""id"": ""Ugz5J7XEA_jSSWPiSkB4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/channel/UCjB4B356rdXjGzM7ZSmRBQg/community?lb=UgkxGe_aEj4SgFDFYsJgeiQnxQjtcCMu5rJn\""\u003ehttps://www.youtube.com/channel/UCjB4B356rdXjGzM7ZSmRBQg/community?lb=UgkxGe_aEj4SgFDFYsJgeiQnxQjtcCMu5rJn\u003c/a\u003e"",
+            ""textOriginal"": ""https://www.youtube.com/channel/UCjB4B356rdXjGzM7ZSmRBQg/community?lb=UgkxGe_aEj4SgFDFYsJgeiQnxQjtcCMu5rJn"",
+            ""authorDisplayName"": ""Gaming and Adventure with Rishi"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/i3fH17IXXW0QU8yHdS4WmfrhkKN19wHBb4SiZHAlfuL_2x-UheNyuaqzRrm_AVO3CAJ6-ytZ7g=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjB4B356rdXjGzM7ZSmRBQg"",
+            ""authorChannelId"": {
+              ""value"": ""UCjB4B356rdXjGzM7ZSmRBQg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-20T07:30:47Z"",
+            ""updatedAt"": ""2023-04-20T07:30:47Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""4Vlc4GN3-HacqHWPnh8OUAET_aE"",
+      ""id"": ""UgzOUGFaAO1M2V9Dk-p4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""jkq1_oR285KXa2lFkcOUEoyuU1I"",
+          ""id"": ""UgzOUGFaAO1M2V9Dk-p4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/watch?v=t22flliJLTQ&amp;t=2m17s\""\u003e2:17\u003c/a\u003e Anything related to Kobe immediately gives goosebumps."",
+            ""textOriginal"": ""2:17 Anything related to Kobe immediately gives goosebumps."",
+            ""authorDisplayName"": ""Serhafiye"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/j6KGqWWvH7SVThjdwQo9hHg7vwtutN2GxfIkGnZH2S1YfcTpeqyZvpG2FqVSj7_3u-70xJzsfw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCOwM_QNEGDwjW6MFKzFb_Tw"",
+            ""authorChannelId"": {
+              ""value"": ""UCOwM_QNEGDwjW6MFKzFb_Tw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 2,
+            ""publishedAt"": ""2023-04-17T18:50:36Z"",
+            ""updatedAt"": ""2023-04-17T18:50:44Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""lbiyJ52dybUiZht4B-NOLJkieZQ"",
+      ""id"": ""UgwHqQTAdJgIulWHZ9Z4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""JqtJcPDtqcu0lu99oViZMzJDoYc"",
+          ""id"": ""UgwHqQTAdJgIulWHZ9Z4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Imagine trading away Butler and giving Harris a max."",
+            ""textOriginal"": ""Imagine trading away Butler and giving Harris a max."",
+            ""authorDisplayName"": ""Chris Sennfelder"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPNnUIFKI2D3PhiAvPmV2d7CV4P3po2E4xIbssb=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCkLPnA7fAI7whfVvch2tTfg"",
+            ""authorChannelId"": {
+              ""value"": ""UCkLPnA7fAI7whfVvch2tTfg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-10T19:54:21Z"",
+            ""updatedAt"": ""2023-04-10T19:54:21Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""QRn8xQYCrK81O-bLSIS63O63uvk"",
+      ""id"": ""UgwMX5tV6x0PEq8y-294AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""y_JHdbHiwANy_Kgdm8-UFbn5PZ8"",
+          ""id"": ""UgwMX5tV6x0PEq8y-294AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""👏👏👏👏"",
+            ""textOriginal"": ""👏👏👏👏"",
+            ""authorDisplayName"": ""Raynard Jumao-as"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPJdpoF9JMTd34uUQDenI9ie0FHzFUWEY4_1r_-AzN_e6WMglEZ2n-nGeJF92Yf=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCS8fCyID2i0FOVzkYKexP0g"",
+            ""authorChannelId"": {
+              ""value"": ""UCS8fCyID2i0FOVzkYKexP0g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-10T19:34:44Z"",
+            ""updatedAt"": ""2023-04-10T19:34:44Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Ndwff7dMeTP-7yGEVmSOahzxiKI"",
+      ""id"": ""Ugxu4cc6TO93JN2ns514AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""r9ACR3Ae3ZdEDYwwMsGSj5OtWkM"",
+          ""id"": ""Ugxu4cc6TO93JN2ns514AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Nah bro no.78 deserve top 30"",
+            ""textOriginal"": ""Nah bro no.78 deserve top 30"",
+            ""authorDisplayName"": ""미국사는진이"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/BcXsVeFkVk8fNXYiND80XJk7nzwe0I5awFBp0iomsTAbIsZd40rJsCAtmyub6ZX8nNuonBEtcw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqG-FC7QvN8RCdp7dCU1-bg"",
+            ""authorChannelId"": {
+              ""value"": ""UCqG-FC7QvN8RCdp7dCU1-bg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-08T04:20:10Z"",
+            ""updatedAt"": ""2023-04-08T04:20:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xqjksI8mhIvsr3L-TPnVkLWpSFA"",
+      ""id"": ""UgxJi1fu62PJ0VHGjVd4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""dzekrK1-Mp6c56rsUpeyFU10iiY"",
+          ""id"": ""UgxJi1fu62PJ0VHGjVd4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""not gonna lie, you REALLY had to reach to find 100 plays based on some of these."",
+            ""textOriginal"": ""not gonna lie, you REALLY had to reach to find 100 plays based on some of these."",
+            ""authorDisplayName"": ""nfvgravity"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPfuMCkmMMuJpR3riisdIMH2WDeSXbquXbglRDCzQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCsViYEig6YR9HZsZEts9yRA"",
+            ""authorChannelId"": {
+              ""value"": ""UCsViYEig6YR9HZsZEts9yRA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-03T16:44:31Z"",
+            ""updatedAt"": ""2023-04-03T16:44:31Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RbSbiaiju-rRnw9IGR7q-C_bxPo"",
+      ""id"": ""Ugwv1DXijvXfe0lCgxt4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""UPMrt8OJhleMO1RtwoC0xNAvJak"",
+          ""id"": ""Ugwv1DXijvXfe0lCgxt4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""A FACIAL 😮"",
+            ""textOriginal"": ""A FACIAL 😮"",
+            ""authorDisplayName"": ""Chase Edwards"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMl8hU8B4rqt-EKqiS3DPXN_ibQL5hSQvDCNIGt=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzxpRpEKw8APCzI5GTM8mhw"",
+            ""authorChannelId"": {
+              ""value"": ""UCzxpRpEKw8APCzI5GTM8mhw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-04-01T16:44:08Z"",
+            ""updatedAt"": ""2023-04-01T16:44:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""2D59X3_LR2yEWk8NAFKUQRej-Es"",
+      ""id"": ""UgzAgovr2OLDYgMY_wl4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""6TboB5Of_dPhg1helqSBwJQvyiE"",
+          ""id"": ""UgzAgovr2OLDYgMY_wl4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Great video. I would now add the Valley Oop and Jrue’s lob to Giannis in the Finals to it."",
+            ""textOriginal"": ""Great video. I would now add the Valley Oop and Jrue’s lob to Giannis in the Finals to it."",
+            ""authorDisplayName"": ""Mindful Test Taking"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOyTHfKF-KzaqBGE5uw0wbxPMheBxshSX1EgcTU=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCcjNQWXctnmqnO7G3xcdZpg"",
+            ""authorChannelId"": {
+              ""value"": ""UCcjNQWXctnmqnO7G3xcdZpg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-03-29T13:17:29Z"",
+            ""updatedAt"": ""2023-03-29T13:17:29Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MRLokECGCtjS3r4JOcaGnQGqoKg"",
+      ""id"": ""Ugx0AVvVlGC8MrTihLd4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""t22flliJLTQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Q6PxeqPu9TrdDFIAxzMBVx0h5vI"",
+          ""id"": ""Ugx0AVvVlGC8MrTihLd4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""t22flliJLTQ"",
+            ""textDisplay"": ""Dam Lillard is the most underrated player our the 2000&#39;s"",
+            ""textOriginal"": ""Dam Lillard is the most underrated player our the 2000's"",
+            ""authorDisplayName"": ""Royal Panda"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNzLgsqpZ6yaQtvYVYagVz13eKv9a--AvPjag=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UClo4zjPKds3LRTzrWJZbWjg"",
+            ""authorChannelId"": {
+              ""value"": ""UClo4zjPKds3LRTzrWJZbWjg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2023-03-23T05:30:55Z"",
+            ""updatedAt"": ""2023-03-23T05:30:55Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vbt0xeyap9wi_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.

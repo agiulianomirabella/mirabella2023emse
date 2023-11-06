@@ -1,0 +1,52 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jy88c56duqlz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Xds61fCc4UYFME?t=1686925995"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qy1mzqvdhy5u_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_XmdfRuG3YCaQ6S?t=1686926001"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s18uhaoqq4ae_PostCoupons,200,"{
+  ""id"": ""sPDU6Xjs"",
+  ""object"": ""coupon"",
+  ""amount_off"": 71,
+  ""created"": 1686926007,
+  ""currency"": ""cny"",
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 22,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""crownless"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ublvbvpxukiu_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_XleBVkLr9uZ62s?t=1686926012"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbpplf9uae05_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7zzXtSrxp4iOGn?t=1686926018"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,343 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7wimnerd3ch_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_1iyfgpj1t18bn_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jicsrwehksab_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""NYw7KRc3bLvLVYJECcrP0VuUT8w"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 41
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_s163yatm7z92_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""GkK2AetB1baK0mLF22cNmjVQh3g"",
+  ""nextPageToken"": ""QURTSl9pMWlnX0ctb2pOSnJmdm1pTUlld2ZvRW83LXFGeENsbzZ6b0NiOXhRNnlaOUZOd3FQUERYWE40YU9EdWhNTjdjd0hPdWtpV0dBSHlULVVsVzJVVEhpUXVKMVBmN2x3QzBvX1pjWjlnWjdzSVhZN1M2Q2NOVGFEUktiajN5cU1DOERWMmE5cnAtSDdHZk1aQU1JZFdOcUljeDBqSGxSeTJjMlpRYkZkNTNwejV0X01NaHFRNVpIZE13MEF0dW56cHZVRDdOUll2UlNr"",
+  ""pageInfo"": {
+    ""totalResults"": 8,
+    ""resultsPerPage"": 8
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""GFffl6IQsypF-P7gluog8TBV3PY"",
+      ""id"": ""UgyGBeVkBERCG0pvvfd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""6lfcn03JxgI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""J7Br9XN-mKgygAlbiwwWapRF7xQ"",
+          ""id"": ""UgyGBeVkBERCG0pvvfd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""6lfcn03JxgI"",
+            ""textDisplay"": ""Shes cute, I gave her a hard time, bc I miss Rachel..hands down Ms. Maddow one of the best, they're hard shoes to fill. I'm going to give Alex a chance."",
+            ""textOriginal"": ""Shes cute, I gave her a hard time, bc I miss Rachel..hands down Ms. Maddow one of the best, they're hard shoes to fill. I'm going to give Alex a chance."",
+            ""authorDisplayName"": ""moonchildspirit"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/3bLWBtd6ojC9tXjRxqIYJVju-wX6nQXw8rXOcl6OboV27tO8OyhGRe_oqFYQIRTicO9Kn0bo=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCmCrTY6HHRxGxifWx-wZomw"",
+            ""authorChannelId"": {
+              ""value"": ""UCmCrTY6HHRxGxifWx-wZomw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T11:03:06Z"",
+            ""updatedAt"": ""2022-09-11T11:03:06Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""T41qMPRG7kQjztQeg2igUokXIk0"",
+      ""id"": ""UgzQXAHmKLreKs9B4A14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""M36Uobh5Dk0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""6ZyoGEKz_xl66_u54I3HIe7K2hg"",
+          ""id"": ""UgzQXAHmKLreKs9B4A14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""M36Uobh5Dk0"",
+            ""textDisplay"": ""This reminded me quite a bit of the cover Jimmy Buffett a few years back. I truly love this song, and I’m in awe of this performance. Well done!!!"",
+            ""textOriginal"": ""This reminded me quite a bit of the cover Jimmy Buffett a few years back. I truly love this song, and I’m in awe of this performance. Well done!!!"",
+            ""authorDisplayName"": ""Mathew Dillon II"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9nvFSzBCLS1O7yMVNbSMdsQVL3rzRLt7S9qghR23o=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCFQfMP6snEo-GXi7jB7II-Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCFQfMP6snEo-GXi7jB7II-Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T11:01:57Z"",
+            ""updatedAt"": ""2022-09-11T11:01:57Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""rdnIUsxFkkysSSMcqIC60Ly-fUo"",
+      ""id"": ""UgzIfm2WeLNMs8i9tt54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""tQR5G3kvfNQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8I9zIc9hQLfNewSjeOLMBdhyMqQ"",
+          ""id"": ""UgzIfm2WeLNMs8i9tt54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""tQR5G3kvfNQ"",
+            ""textDisplay"": ""I can't believe this religious zealot was ever allowed to hold office. Further proof people are not capable of governing themselves."",
+            ""textOriginal"": ""I can't believe this religious zealot was ever allowed to hold office. Further proof people are not capable of governing themselves."",
+            ""authorDisplayName"": ""Aaron Miller"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_oIJvKWYVhWCzp2EzhtQsdXP_IyPnOnCgzzFaJz70095vM_lil9aXxNrstKRix=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCoMPH8mGomFox2UFDjxZeeg"",
+            ""authorChannelId"": {
+              ""value"": ""UCoMPH8mGomFox2UFDjxZeeg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T11:01:56Z"",
+            ""updatedAt"": ""2022-09-11T11:01:56Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nQjSpq0HyeXO_P0SIClBGexN4bk"",
+      ""id"": ""UgzcNA9KQc41x-7CpQN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""6lfcn03JxgI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""nwfPf-WZFh8mneGcB_wYd6A-rck"",
+          ""id"": ""UgzcNA9KQc41x-7CpQN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""6lfcn03JxgI"",
+            ""textDisplay"": ""Donald Trumps mind chamber...lol ..hel never answer why, except that we don't need to know bc of \""Executive privilege\"""",
+            ""textOriginal"": ""Donald Trumps mind chamber...lol ..hel never answer why, except that we don't need to know bc of \""Executive privilege\"""",
+            ""authorDisplayName"": ""moonchildspirit"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/3bLWBtd6ojC9tXjRxqIYJVju-wX6nQXw8rXOcl6OboV27tO8OyhGRe_oqFYQIRTicO9Kn0bo=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCmCrTY6HHRxGxifWx-wZomw"",
+            ""authorChannelId"": {
+              ""value"": ""UCmCrTY6HHRxGxifWx-wZomw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T10:59:54Z"",
+            ""updatedAt"": ""2022-09-11T10:59:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""clwWA7gQLqS2c8ggl7hLiPb3tHQ"",
+      ""id"": ""Ugx-MEmM0g0YZBg9-XN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""0YBxPmC7H5s"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qHmQXccSl59HXcFrh4S-sE6JSKE"",
+          ""id"": ""Ugx-MEmM0g0YZBg9-XN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""0YBxPmC7H5s"",
+            ""textDisplay"": ""Wow, she can smile. Who would have thought that? You should try that in the show. Maybe people would even start liking that terrible, arrogant, spoiled little brat character just a little bit."",
+            ""textOriginal"": ""Wow, she can smile. Who would have thought that? You should try that in the show. Maybe people would even start liking that terrible, arrogant, spoiled little brat character just a little bit."",
+            ""authorDisplayName"": ""Petrus I."",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu__OeIv11CTDoTNo2CvQS9xfjl-LkUZRWxos2RZcYwaajOh1E0Hep6i-zqUWCxi=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC80hqbEAGIo1kW_Pnh6TEHw"",
+            ""authorChannelId"": {
+              ""value"": ""UC80hqbEAGIo1kW_Pnh6TEHw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T10:59:42Z"",
+            ""updatedAt"": ""2022-09-11T11:00:45Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""J2Ha0eWC4nOwSa4aWmRVQgQ0lz0"",
+      ""id"": ""Ugy3dcMj8MZuTB2XHtV4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""AuuEuylPCiE"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""hPhT_iRWlfUayLnQfzDwGKlaEto"",
+          ""id"": ""Ugy3dcMj8MZuTB2XHtV4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""AuuEuylPCiE"",
+            ""textDisplay"": ""Dogs over gods!!! 🥰"",
+            ""textOriginal"": ""Dogs over gods!!! 🥰"",
+            ""authorDisplayName"": ""That Afro Latina Mom"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/QdQaXPXC3yG2hHr9KTt4t17ZIlpa-wBhIbhzZgq5F-eE8l0vTrc25k_4lb-5aA3MxSpwbC2e=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIcTF2IeUsQ2Sy08nTD31xA"",
+            ""authorChannelId"": {
+              ""value"": ""UCIcTF2IeUsQ2Sy08nTD31xA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T10:57:12Z"",
+            ""updatedAt"": ""2022-09-11T10:57:12Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""kDf041jIR5NMu-V2pIgCCV7E4cw"",
+      ""id"": ""UgxJHcFQ3kjk4-OtCAN4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""Hwstj9FJHGg"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ZxRqaiQDaNjRdVYGCOUliQC-EUA"",
+          ""id"": ""UgxJHcFQ3kjk4-OtCAN4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""Hwstj9FJHGg"",
+            ""textDisplay"": ""Why he is interrupting?"",
+            ""textOriginal"": ""Why he is interrupting?"",
+            ""authorDisplayName"": ""Asna Malik"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/Tl_4xPbwR9TBdeeBHd2fwO5Du8kR7m8sjiklGzT89w_aU75EGDJJ4q9-jDKkYunwZ_cwiwTT=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCufwO16dzmVgWvcowc1NNrw"",
+            ""authorChannelId"": {
+              ""value"": ""UCufwO16dzmVgWvcowc1NNrw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T10:56:19Z"",
+            ""updatedAt"": ""2022-09-11T10:56:19Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""lsRFTyQhbHLFre3_Z_lJjvKLbQs"",
+      ""id"": ""Ugz_qwIdjI5ZaJnHrjp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+        ""videoId"": ""F5mQplLjO0A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""bx2sG6hlX66q1jfakWD92PzFWVg"",
+          ""id"": ""Ugz_qwIdjI5ZaJnHrjp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCMtFAi84ehTSYSE9XoHefig"",
+            ""videoId"": ""F5mQplLjO0A"",
+            ""textDisplay"": ""Priceless!"",
+            ""textOriginal"": ""Priceless!"",
+            ""authorDisplayName"": ""Brenda Shelonko"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8R4MQ1vw9lAG6oDRniJ0dX1XBlDyTXm76gknjnnA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCkKaWPiLfBFNCe0Fqs1YPaQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCkKaWPiLfBFNCe0Fqs1YPaQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-09-11T10:51:01Z"",
+            ""updatedAt"": ""2022-09-11T10:51:01Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_tog74xt83k1l_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iv6lhm3pw7kz_PostCoupons,200,"{
+  ""id"": ""ENsOeEYdxMuwvHJI"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685061648,
+  ""currency"": ""mga"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 39,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 33.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jxzf32que1cy_PostCoupons,200,"{
+  ""id"": ""uGxaAXkf"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685061653,
+  ""currency"": ""kgs"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 15,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 54.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jy260f66vsyu_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ugzGK6zbexF8r9?t=1685061659"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rl542m1qlj5g_PostCoupons,200,"{
+  ""id"": ""VhRMl7ic"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685061665,
+  ""currency"": ""sgd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 38,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 59.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_trww58bsp9h2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tWbU4DWOURFqRV?t=1685061670"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

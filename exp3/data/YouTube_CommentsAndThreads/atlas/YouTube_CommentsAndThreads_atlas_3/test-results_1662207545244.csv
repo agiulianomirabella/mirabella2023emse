@@ -1,0 +1,136 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ji4z2fi0msf5_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jxze8fex8186_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""ZtGMLY7H78HYeeSHK1gJzLKq-fk"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 86
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Es7vHPS0a0ZPYt7uab23gsVNxJc"",
+      ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""DPIv7awI-1A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""K-KoaTtlB8KcWt5QNOOIFnyV868"",
+          ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""DPIv7awI-1A"",
+            ""textDisplay"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""textOriginal"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""authorDisplayName"": ""JhayCortez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/zJTjsH6ODD4dfO8Gpjy2m7XD34ulHTLmbIHn4SIIk9UlctevUHOJmxp0vR6tfIqhpaE4cpQYzw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvpEyEBML6z-PJJ9XrqgpKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCvpEyEBML6z-PJJ9XrqgpKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 65337,
+            ""moderationStatus"": ""likelySpam"",
+            ""publishedAt"": ""2020-02-05T18:45:17Z"",
+            ""updatedAt"": ""2020-02-05T18:45:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 471,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1k22bglfnm82p_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4yi8smmakbn_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""abp-OXAdTHmBhpsl7ZR2gRWBGNk"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ykyo9Wiy4cXqVSFJ2bKuCzHB3tM"",
+      ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""Nck6BZga7TQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""NKbR32FSKxb6qhRtZL-QfSatDZ0"",
+          ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""Nck6BZga7TQ"",
+            ""textDisplay"": ""The moment when Adele sounds better than Adele"",
+            ""textOriginal"": ""The moment when Adele sounds better than Adele"",
+            ""authorDisplayName"": ""Idk .___."",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9ol4LzUpapqkRCmgCozrdUw_lp5wzuEdpxHEDPuw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKv1Uwl15OFYioeJVVK4ltg"",
+            ""authorChannelId"": {
+              ""value"": ""UCKv1Uwl15OFYioeJVVK4ltg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 36190,
+            ""publishedAt"": ""2019-12-05T01:25:54Z"",
+            ""updatedAt"": ""2019-12-05T01:25:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 35,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_vf3pmkg2dzl0_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""gTO2mpD5zm51wJ-sbjvRESVTJEg"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 36
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""c5yCqvwd0W7ru0teX4gD0K9XfaU"",
+      ""id"": ""Ugw7orsAQ51p8dJD5Bx4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none

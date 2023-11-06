@@ -1,0 +1,51 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbm10xvpri3p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_mfEQuUT4N0d6pP?t=1685113188"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrrii7dbxzz7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The currency hrk is no longer supported. Use eur instead. See https://support.stripe.com/questions/croatian-kuna-(hrk)-currency-transition-to-euro-(eur) for more details."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Je8GjtzMkk6T8P?t=1685113194"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iephntrmiyph_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dl49qYXXmVWASu?t=1685113199"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxqjfduwydrs_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_B5ldGUGl40BMmf?t=1685113206"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skyd5p4yj5mg_PostCoupons,200,"{
+  ""id"": ""ORj54bfvba"",
+  ""object"": ""coupon"",
+  ""amount_off"": 100,
+  ""created"": 1685113212,
+  ""currency"": ""mur"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 49,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

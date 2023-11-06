@@ -1,0 +1,1647 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7opm9rqrnmq_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1h7tpa7bzd6jl_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hb862qirukaf_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""_kenBGUjVmftvQDu4MrG2d7vZmg"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 13
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1hrjqqtz6gode_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrosr5ele0xi_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_1hruumb6p4tv7_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hux7aa5grtyb_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""PJYKZFLQXJ28teZWAZ8JPVRWxf0"",
+  ""nextPageToken"": ""QURTSl9pMEY1dHM4MWRsNGZiRmd0ZEQ2cy14R3Z5Q3g4dWx0amJOUnl6bXRBcjVKV3VTR1k5bmlNX21JV1pkWDNPZlFYOE5DYUFkX3ZQOWZBOTNLVktoSlZCZkF1TUx4MThRM0RDbjQzSk5fRGYzUHVUV2hiaU5OSW1OTHZHYVdwRURIUW1rVmprY3FSbVRyQUw1VlhEU0NGNkFUejhEZGhEcTZ4NVhkWXdodGVjUm5XTnJUY1JkVXR5dTgtVmNkR2poME1xUzFJQ2JEYUpaNEhMZE9yeThqZ3RiMm9oYVNYYU4wTVdWMEJab2hVTk1J"",
+  ""pageInfo"": {
+    ""totalResults"": 19,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""HQPZEhnazSvkmukJIn59kt2z9VE"",
+      ""id"": ""UgyywUwh6O0OGym2W4B4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""xqb-tykk2s8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""sXBBKO-ykmQ3Z6UIffTQ5t6AhTk"",
+          ""id"": ""UgyywUwh6O0OGym2W4B4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""xqb-tykk2s8"",
+            ""textDisplay"": ""Imposter"",
+            ""textOriginal"": ""Imposter"",
+            ""authorDisplayName"": ""Jason LeNoue"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8PP05DkcH_oZFTCCvKL6jUhTQqWUYqLJ4x1Q=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCE718Xmj20N6J4oRvjHicLA"",
+            ""authorChannelId"": {
+              ""value"": ""UCE718Xmj20N6J4oRvjHicLA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-23T03:24:14Z"",
+            ""updatedAt"": ""2022-12-23T03:24:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 4,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""oq2d_QgkynyLzwG2J_WzEy4OxBE"",
+      ""id"": ""Ugxp35Oz801fex-dk1J4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""QCh-RaxlaZQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""wF2URgvqnejejgKmDOZS2H4awmA"",
+          ""id"": ""Ugxp35Oz801fex-dk1J4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""QCh-RaxlaZQ"",
+            ""textDisplay"": ""BS"",
+            ""textOriginal"": ""BS"",
+            ""authorDisplayName"": ""YHWH's Property"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8yFnTc42SHEbO_8_xXRCrlVZm1iHqXWQKAQg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCkDFfoeWI_aAhgqJUuq7GIQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCkDFfoeWI_aAhgqJUuq7GIQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-22T07:09:28Z"",
+            ""updatedAt"": ""2022-12-22T07:09:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""GQjcHvFGPDdVWVRszPRKAYcUkAY"",
+      ""id"": ""Ugx4kH_v2-kMaV_Ib1d4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""wU9wTduybek"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""BL69rkUfRaVjw_J9OtyJuhNZzTw"",
+          ""id"": ""Ugx4kH_v2-kMaV_Ib1d4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""wU9wTduybek"",
+            ""textDisplay"": ""Because of the economic crisis that always comes up the best thing to be on every wise individual’s mind or list is to invest in different streams of income that’s not depending on the government to generate funds."",
+            ""textOriginal"": ""Because of the economic crisis that always comes up the best thing to be on every wise individual’s mind or list is to invest in different streams of income that’s not depending on the government to generate funds."",
+            ""authorDisplayName"": ""Esther Romeo"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu82G10uulbklLBJtHU0SORZVQZa_BL72Unu4JGZRiMVlI2wsEzn_CZIfbhXfjOt=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCM2UNB_VwiQJVoIDCbZUEkw"",
+            ""authorChannelId"": {
+              ""value"": ""UCM2UNB_VwiQJVoIDCbZUEkw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 9,
+            ""publishedAt"": ""2022-12-21T23:35:55Z"",
+            ""updatedAt"": ""2022-12-21T23:35:55Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 32,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LBGjRyin7oRuTp_1I4WBP_vx4vs"",
+      ""id"": ""Ugxa5MLbodbnAnnDNoh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""SByG7JlEOpA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""eTkqWsGnaSNZvWCSrYmUXoU1_a4"",
+          ""id"": ""Ugxa5MLbodbnAnnDNoh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""SByG7JlEOpA"",
+            ""textDisplay"": ""Personally i think of someone is breaking into your house or property you should be able to shoot. Sad that in most states you can’t shoot someone unless they pull out a weapon first…like yeah i wanna wait till they have a knife or gun to my head…"",
+            ""textOriginal"": ""Personally i think of someone is breaking into your house or property you should be able to shoot. Sad that in most states you can’t shoot someone unless they pull out a weapon first…like yeah i wanna wait till they have a knife or gun to my head…"",
+            ""authorDisplayName"": ""Grizzly1s1k Gaming"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/Xqk94AW6Yy8WG8Zc-fgnHQJa0OcZzKP9QT5KYbHgec6WymOuHGG6s2jB5_xpeOuveP_FNsmrYQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCcEm--llbDBtRNx0A8y0cTA"",
+            ""authorChannelId"": {
+              ""value"": ""UCcEm--llbDBtRNx0A8y0cTA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-21T18:01:54Z"",
+            ""updatedAt"": ""2022-12-21T18:01:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-xMqw5Rx3V8R_-fSaHUCRcMGEPI"",
+      ""id"": ""Ugy4L438YKm4rherNrd4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""bK4D5qC_EW8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""iOV9v8Jj-N1zNg4HlQCssVf-zb0"",
+          ""id"": ""Ugy4L438YKm4rherNrd4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""bK4D5qC_EW8"",
+            ""textDisplay"": ""User ilaria Ciccarelli 87 75 : i HAD a right to have those elementery things the moment i had wished to have them ( a source of income , a friend ) but i was PREVENTED from having that , because of my Link to Slobodan Milosevic , it is a PREMEDITEITED crime , PLUS the thiefts of my money , property , pluss !!! it is a murder systematic !!!!!"",
+            ""textOriginal"": ""User ilaria Ciccarelli 87 75 : i HAD a right to have those elementery things the moment i had wished to have them ( a source of income , a friend ) but i was PREVENTED from having that , because of my Link to Slobodan Milosevic , it is a PREMEDITEITED crime , PLUS the thiefts of my money , property , pluss !!! it is a murder systematic !!!!!"",
+            ""authorDisplayName"": ""svetozar milosevic"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu862lNTEpVQFirkUkizsND0XcAUPbqnt2mIorxRTA8=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCdeArbhlIKlCcvOUy3OeFPA"",
+            ""authorChannelId"": {
+              ""value"": ""UCdeArbhlIKlCcvOUy3OeFPA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-20T14:57:43Z"",
+            ""updatedAt"": ""2022-12-20T14:57:43Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""sTU-LdyowLVCjGaUFL_VH8bQdZI"",
+      ""id"": ""UgyiNT9niPTpAwOhYpt4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""bK4D5qC_EW8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""jrZ7ZNdsQdACW40QmYrmTpA84wc"",
+          ""id"": ""UgyiNT9niPTpAwOhYpt4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""bK4D5qC_EW8"",
+            ""textDisplay"": ""User ilaria Ciccarelli 87 75 : i ( Svetozar Milosevic ) i strongully billiv i had a RIGHT to have a Friend , NOT now , or in 2020 or in 2015 or in 2017 , no , no , no , the moment i WISHED it ( 1990 ) or ( 1994 ) the moment i wished i HAD that right , BUT i was prevented from having that !!!!!! And after 40 years robbes , thiefted all the more , not onlly my time , my energy was taken from me but my money , property !!!! it is a premediteited crime !!!!!"",
+            ""textOriginal"": ""User ilaria Ciccarelli 87 75 : i ( Svetozar Milosevic ) i strongully billiv i had a RIGHT to have a Friend , NOT now , or in 2020 or in 2015 or in 2017 , no , no , no , the moment i WISHED it ( 1990 ) or ( 1994 ) the moment i wished i HAD that right , BUT i was prevented from having that !!!!!! And after 40 years robbes , thiefted all the more , not onlly my time , my energy was taken from me but my money , property !!!! it is a premediteited crime !!!!!"",
+            ""authorDisplayName"": ""svetozar milosevic"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu862lNTEpVQFirkUkizsND0XcAUPbqnt2mIorxRTA8=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCdeArbhlIKlCcvOUy3OeFPA"",
+            ""authorChannelId"": {
+              ""value"": ""UCdeArbhlIKlCcvOUy3OeFPA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-20T14:55:30Z"",
+            ""updatedAt"": ""2022-12-20T14:55:30Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""EsGsAWx16n_vYc7v487O2Eindb0"",
+      ""id"": ""Ugydy2A0bRLj0dCCjnJ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""vhAxTA1EEaw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""i6oTtdhGaqnKSZegPFseAynp8z4"",
+          ""id"": ""Ugydy2A0bRLj0dCCjnJ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""vhAxTA1EEaw"",
+            ""textDisplay"": ""&quot;The reason was that in the past Britain had been involved in many wars like the Boer war in South Africa.&quot; Yeah...about that...do tell us more about the Boer war and the mistakes you made. Tell us more about how the British government let 20 000 women and children die in British concentration camps of cold hunger and disease. Tell us about how they looted burnt and destroyed 30 000 Boer homesteads during Kitchener&#39;s scorched earth policy. Tell us about how they looted and destroyed private property. Tell us how they stripped the farms of livestock and crops that did not belong to them. Britain has never accounted for its &quot;mistakes&quot;, nor apologized or made adequate reparations for its war crimes. Sorry for rant. The Boer war is still a much debated topic here."",
+            ""textOriginal"": ""\""The reason was that in the past Britain had been involved in many wars like the Boer war in South Africa.\"" Yeah...about that...do tell us more about the Boer war and the mistakes you made. Tell us more about how the British government let 20 000 women and children die in British concentration camps of cold hunger and disease. Tell us about how they looted burnt and destroyed 30 000 Boer homesteads during Kitchener's scorched earth policy. Tell us about how they looted and destroyed private property. Tell us how they stripped the farms of livestock and crops that did not belong to them. Britain has never accounted for its \""mistakes\"", nor apologized or made adequate reparations for its war crimes. Sorry for rant. The Boer war is still a much debated topic here."",
+            ""authorDisplayName"": ""brandon leroux"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu83vo9fSWXsDLhWIjHKvv8KTUtvrV10-1XW9EZ70w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC9Hp5mnZbreqzJueTwOrZlg"",
+            ""authorChannelId"": {
+              ""value"": ""UC9Hp5mnZbreqzJueTwOrZlg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-20T12:23:51Z"",
+            ""updatedAt"": ""2022-12-20T12:23:51Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xRZn3xdFxE62vsku8TyHg_0ntY0"",
+      ""id"": ""Ugyd14ZT_Qy3wtWyYox4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""_cZeSQLUMZ8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""HKv3V5SLEPll8tA2i092L-tp4M4"",
+          ""id"": ""Ugyd14ZT_Qy3wtWyYox4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""_cZeSQLUMZ8"",
+            ""textDisplay"": ""You learn that &quot;it&#39;s colourless&quot; is an answer to &quot;what colour has it?&quot; when you have chemistry in school. Over here for me that was in 7th grade."",
+            ""textOriginal"": ""You learn that \""it's colourless\"" is an answer to \""what colour has it?\"" when you have chemistry in school. Over here for me that was in 7th grade."",
+            ""authorDisplayName"": ""Ninja Keks"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9s2sUP4zWrf1bVKtkMVDOBbdYU6ajV_EobV5zebg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCeLEiwfSyiOXPrFZ7Chrpng"",
+            ""authorChannelId"": {
+              ""value"": ""UCeLEiwfSyiOXPrFZ7Chrpng""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 13,
+            ""publishedAt"": ""2022-12-20T00:34:08Z"",
+            ""updatedAt"": ""2022-12-20T00:34:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 6,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vSG7j42_ftr3sE0v04q0H-DdMn0"",
+      ""id"": ""Ugxg8UeknTB9KPkODuJ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""QCh-RaxlaZQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""V05GZjp6oVhEXuwanJbFSIJRKdI"",
+          ""id"": ""Ugxg8UeknTB9KPkODuJ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""QCh-RaxlaZQ"",
+            ""textDisplay"": ""This takes &quot;is water wet?&quot; to a whole nother level"",
+            ""textOriginal"": ""This takes \""is water wet?\"" to a whole nother level"",
+            ""authorDisplayName"": ""Black"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/bjs0csNZLr-2SBOraXINXTS6l9P36NeDnTqjzTyNcHiaDt-kDqx6UEMKVWWjyV3lN8eV5l4v=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCztJzOuA0kgCsFPIrdI0D-g"",
+            ""authorChannelId"": {
+              ""value"": ""UCztJzOuA0kgCsFPIrdI0D-g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1371,
+            ""publishedAt"": ""2022-12-19T17:07:21Z"",
+            ""updatedAt"": ""2022-12-19T17:07:21Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 20,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""JHRcNXOQZwrHPYOxdvefzBCGDzI"",
+      ""id"": ""Ugw_6ILcgcLG5LXKuZ94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""SByG7JlEOpA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""AwOutSDpCvj-1LV_qJ_Xy0qchI8"",
+          ""id"": ""Ugw_6ILcgcLG5LXKuZ94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""SByG7JlEOpA"",
+            ""textDisplay"": ""An interesting fact that in the Old Testament which is European and American law is based  on, there is a difference in the 10 commandments between the word kill and murder.  The Hebrew word for murder is râtsach - meaning ) to murder, slay, kill\u003cbr\u003e1a) (Qal) to murder, slay\u003cbr\u003e1a1) premeditated\u003cbr\u003e1a2) accidental\u003cbr\u003e1a3) as avenger\u003cbr\u003e1a4) slayer (intentional) (participle)\u003cbr\u003e\u003cbr\u003eYHWH gives the right to the government to slay the wickedbut also gives the right of protection of  one&#39;s property and family, to legally take the life of one who would take yours.  All through Leviticus He gives us the commandment to be at peace with one anotherbut yet there are those that won&#39;t.  \u003cbr\u003e\u003cbr\u003eI know this short is supposed to be funnybut it&#39;s stupid and nonsense and politically correct garbage."",
+            ""textOriginal"": ""An interesting fact that in the Old Testament which is European and American law is based  on, there is a difference in the 10 commandments between the word kill and murder.  The Hebrew word for murder is râtsach - meaning ) to murder, slay, kill\n1a) (Qal) to murder, slay\n1a1) premeditated\n1a2) accidental\n1a3) as avenger\n1a4) slayer (intentional) (participle)\n\nYHWH gives the right to the government to slay the wickedbut also gives the right of protection of  one's property and family, to legally take the life of one who would take yours.  All through Leviticus He gives us the commandment to be at peace with one anotherbut yet there are those that won't.  \n\nI know this short is supposed to be funnybut it's stupid and nonsense and politically correct garbage."",
+            ""authorDisplayName"": ""St. Clair Dancing"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/wgRHsj16JOG4Rrqzb_9dqTrs2fmW1kUB059vA7lf4Tb69lBa4tv3hrDgqgOi_W2ULO1UIy9Z=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCnr0JqZswnY53wIJFa8-jgA"",
+            ""authorChannelId"": {
+              ""value"": ""UCnr0JqZswnY53wIJFa8-jgA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-19T13:43:08Z"",
+            ""updatedAt"": ""2022-12-19T13:43:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ND_QFBtEUqbxFnG1GKsNZfFWN0o"",
+      ""id"": ""UgyZKHwT-cAKl0k0W8h4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""sA-nmPB0z18"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""L992KxzoOCg3VxSc6sn_ZbmPgE8"",
+          ""id"": ""UgyZKHwT-cAKl0k0W8h4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""sA-nmPB0z18"",
+            ""textDisplay"": ""I think this settle feud btwn Ronaldo n messi question? Who&#39;s the best ?"",
+            ""textOriginal"": ""I think this settle feud btwn Ronaldo n messi question? Who's the best ?"",
+            ""authorDisplayName"": ""7th Estate"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8Lz5WsH0KpL9ujDdDZqK4_J0jQ7yI6yV-NzVHoXg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCLPQPMVbMaKmvHdu3fcj_nQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCLPQPMVbMaKmvHdu3fcj_nQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2022-12-18T22:28:22Z"",
+            ""updatedAt"": ""2022-12-18T22:28:22Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""cbjMhCKuh2pvmG2uj_bf5X5_aVk"",
+      ""id"": ""UgxNZj6f5VDY2r8yc3p4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""SByG7JlEOpA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""kLOjuKh7x7PdwY9gFqksOQfDcq0"",
+          ""id"": ""UgxNZj6f5VDY2r8yc3p4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""SByG7JlEOpA"",
+            ""textDisplay"": ""no Americans don&#39;t have the right to kill anyone with a gun we have the right to use it for game and for self-defense and for defense of our property"",
+            ""textOriginal"": ""no Americans don't have the right to kill anyone with a gun we have the right to use it for game and for self-defense and for defense of our property"",
+            ""authorDisplayName"": ""Mr. Nigel Thornberry"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/nC7TstkuSLj2m6vJwp45dey2X04K0cjW_FOiBMnFOi1lh8RE25Plx-tA43BIxY_z8EHWpVPrlw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvU56F-DCn4ni5paNQg1hiA"",
+            ""authorChannelId"": {
+              ""value"": ""UCvU56F-DCn4ni5paNQg1hiA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2022-12-18T01:27:57Z"",
+            ""updatedAt"": ""2022-12-18T01:27:57Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""o6YFiQi7TNedkKPkwfyl8YGMjxk"",
+      ""id"": ""UgwNenLXbbc2sODNlDh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""ZaNVCrBm6Oc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8nbn09-rH5vkMoXR_LYZUCEjVCE"",
+          ""id"": ""UgwNenLXbbc2sODNlDh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""ZaNVCrBm6Oc"",
+            ""textDisplay"": ""What real estate agents are really thinking after they&#39;ve shown you the 20+ homes in a row."",
+            ""textOriginal"": ""What real estate agents are really thinking after they've shown you the 20+ homes in a row."",
+            ""authorDisplayName"": ""blackfoot"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9aQwgF0dTbI7SYFg3vhMnzjmd6jLv9b0HJTJL1mQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbYq0RHVtDR8igc9eXUc4KA"",
+            ""authorChannelId"": {
+              ""value"": ""UCbYq0RHVtDR8igc9eXUc4KA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 5,
+            ""publishedAt"": ""2022-12-17T16:45:46Z"",
+            ""updatedAt"": ""2022-12-17T16:45:46Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""21AJJDFKDN72zvUUTfhtmkp9tZA"",
+      ""id"": ""UgzuEaKguekjJy9VReR4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""QCh-RaxlaZQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""2w6DDiVTg5xHvPRuG2O8UoznDh8"",
+          ""id"": ""UgzuEaKguekjJy9VReR4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""QCh-RaxlaZQ"",
+            ""textDisplay"": ""Well, if we want to really be tecnical about this subject, &quot;wetness&quot; doesn&#39;t existbut neither does &quot;warmness&quot;, &quot;coldness&quot;, &quot;color&quot; or any of the things we can percieve. It&#39;s our brain that elaborates percepiton based on our experience. So is water wet? Yesbut not because it has &quot;wetness&quot; as a property, because we feel it thay way."",
+            ""textOriginal"": ""Well, if we want to really be tecnical about this subject, \""wetness\"" doesn't existbut neither does \""warmness\"", \""coldness\"", \""color\"" or any of the things we can percieve. It's our brain that elaborates percepiton based on our experience. So is water wet? Yesbut not because it has \""wetness\"" as a property, because we feel it thay way."",
+            ""authorDisplayName"": ""Am0"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9W01zwmzmFHZQfcVlIJvb3nd64_6IqqQ8Gr_Ps=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCQ1_CJQ5Bh5uYqDyJhuL75Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCQ1_CJQ5Bh5uYqDyJhuL75Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-17T11:59:08Z"",
+            ""updatedAt"": ""2022-12-17T11:59:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""dJDACOycvl9o6L3OMJ9aowixDIc"",
+      ""id"": ""UgyY8VAYc4J75v4ArLV4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""QCh-RaxlaZQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""71nG0WVoWQn8UCG62cBi53T_PV8"",
+          ""id"": ""UgyY8VAYc4J75v4ArLV4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""QCh-RaxlaZQ"",
+            ""textDisplay"": ""Omg sooo true. I can never tell whether my clothes are still damp or just cold so I just pull it out of the dryer then realize it&#39;s damp lmfao"",
+            ""textOriginal"": ""Omg sooo true. I can never tell whether my clothes are still damp or just cold so I just pull it out of the dryer then realize it's damp lmfao"",
+            ""authorDisplayName"": ""Uyen Ngo"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu81IuR27AlvWAikulSmrR0fJvKNh1Qi1u4cIpKJj7E7LKhcMMbZL-RjzngEtqvM=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCSGP65Ui8YBu8VcSlh-6RJA"",
+            ""authorChannelId"": {
+              ""value"": ""UCSGP65Ui8YBu8VcSlh-6RJA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2022-12-17T09:30:29Z"",
+            ""updatedAt"": ""2022-12-17T09:30:29Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 9,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""KAsy191753Qgzpf-zP5YWilLa2M"",
+      ""id"": ""Ugw01WnQjiaNX0ICEet4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""QCh-RaxlaZQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ahwNx3qBqNdttjdzxTt8lvZCjdI"",
+          ""id"": ""Ugw01WnQjiaNX0ICEet4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""QCh-RaxlaZQ"",
+            ""textDisplay"": ""My only argument is when you think of molecularly. Water is wet in my mind because if you have to add water to something it makes it wet right? So what about water on top of water. When the molecules slide right off each other because they&#39;re both wet because they&#39;re water then that means water is wet. You could say fire isnt burning because it requires something for it to burn. You can&#39;t make a fire out of nothing and expect it to continue to burn if it&#39;s by itself in a vacuum. It would go out without things to burn. But the water is wet down to the molecule because that&#39;s the property it gives off without needing other things near it. Sorry so long."",
+            ""textOriginal"": ""My only argument is when you think of molecularly. Water is wet in my mind because if you have to add water to something it makes it wet right? So what about water on top of water. When the molecules slide right off each other because they're both wet because they're water then that means water is wet. You could say fire isnt burning because it requires something for it to burn. You can't make a fire out of nothing and expect it to continue to burn if it's by itself in a vacuum. It would go out without things to burn. But the water is wet down to the molecule because that's the property it gives off without needing other things near it. Sorry so long."",
+            ""authorDisplayName"": ""Caden Meyer"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-50DpjmIOYhQMDU3tO67Miy3hs1LpfrM-0CA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCFJjjK7VepggymgVvxKbiaw"",
+            ""authorChannelId"": {
+              ""value"": ""UCFJjjK7VepggymgVvxKbiaw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-17T01:59:08Z"",
+            ""updatedAt"": ""2022-12-17T01:59:08Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""k1uvgffe6Hx00Qy_jEwuPuItizU"",
+      ""id"": ""UgzjWPRYGIEfINvyoe54AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""uuHlBqwvRg0"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""S0EwtydQxLN47i50MDlIoWExF2g"",
+          ""id"": ""UgzjWPRYGIEfINvyoe54AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""uuHlBqwvRg0"",
+            ""textDisplay"": ""Sounds heavy for such a small thing"",
+            ""textOriginal"": ""Sounds heavy for such a small thing"",
+            ""authorDisplayName"": ""Alae Farm Estates LLC"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9k0Rj6XU4FQ4N1Y8FH13RRLQbkt7g5unGw8LIG=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCC6kJQ7ThYBBKbBEcPYeoMw"",
+            ""authorChannelId"": {
+              ""value"": ""UCC6kJQ7ThYBBKbBEcPYeoMw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-15T03:26:09Z"",
+            ""updatedAt"": ""2022-12-15T03:26:09Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1LSB6dKxUXkC4OANkaTCB4P9qCg"",
+      ""id"": ""UgwUeq0u_LwKOqgXzOl4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""SByG7JlEOpA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""HRncSV_kWqU3JDp5UvFKzGagUyw"",
+          ""id"": ""UgwUeq0u_LwKOqgXzOl4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""SByG7JlEOpA"",
+            ""textDisplay"": ""Everyone should have the right to defend there property and family"",
+            ""textOriginal"": ""Everyone should have the right to defend there property and family"",
+            ""authorDisplayName"": ""Jammie Dodger"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_MwVHEvvL24oeN-dQt0p2CS3WBpoJ1T_syjw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCXRm4IkoqMmTeodpqumWfUA"",
+            ""authorChannelId"": {
+              ""value"": ""UCXRm4IkoqMmTeodpqumWfUA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-13T00:55:56Z"",
+            ""updatedAt"": ""2022-12-13T00:55:56Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""axjqu2P2NSqBup_MtBKYxzR6XsI"",
+      ""id"": ""UgwQYI0fceU27ZuDQNB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""videoId"": ""QCh-RaxlaZQ"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""zIvaUc-RIvcNM1B7mZk_xorWfew"",
+          ""id"": ""UgwQYI0fceU27ZuDQNB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+            ""videoId"": ""QCh-RaxlaZQ"",
+            ""textDisplay"": ""i was sceptical until she brought up the &quot;is the shirt not dry yet or is it just cold&quot; part. too many times ive had to rub a damp/cold tshirt on my face to determine if i coukd bring it in or not"",
+            ""textOriginal"": ""i was sceptical until she brought up the \""is the shirt not dry yet or is it just cold\"" part. too many times ive had to rub a damp/cold tshirt on my face to determine if i coukd bring it in or not"",
+            ""authorDisplayName"": ""Methylphenidate"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_fxOHVB3o_587HvSq9p_4knOSD-VORpUKbzo9JHQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCa6jobZIdrIAA4qw4K1nbpA"",
+            ""authorChannelId"": {
+              ""value"": ""UCa6jobZIdrIAA4qw4K1nbpA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1923,
+            ""publishedAt"": ""2022-12-13T00:49:06Z"",
+            ""updatedAt"": ""2022-12-13T00:49:06Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 52,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1ib5xb27grsxg_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""2JogfXOE_mAWhCUtC4m96IOYSVI"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 88
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1iesqyzj1urzo_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iev0tk9b71o6_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iyfhy1ks7lfa_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""_E2lxUCbqcx2n8vbCkdXPzbIQB8"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LGOijMufAxPJ6hOWEO6B7hHNars"",
+      ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aL9_AwhfUYmPidPVCCt8thc1lVw"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XoAED2j3LQ"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""No, no es el único. Es el Síndrome &#39;Jonah Hill&#39;."",
+              ""textOriginal"": ""No, no es el único. Es el Síndrome 'Jonah Hill'."",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Catedrástico Gómez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-0mZxEMZWbm36Fv-t1heCsdy1pdHtIO2sL3w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqwcy_NmGR_O-VUd_gJT35g"",
+              ""authorChannelId"": {
+                ""value"": ""UCqwcy_NmGR_O-VUd_gJT35g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 193,
+              ""publishedAt"": ""2017-09-22T09:35:19Z"",
+              ""updatedAt"": ""2017-09-22T09:35:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""7pQS8Sude1yUp9vW-BcIR59HVOU"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8Xu9uEaGrW6"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""Rt infinito!!"",
+              ""textOriginal"": ""Rt infinito!!"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Miguel Rodríguez Estévez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-nToC-CyG5GuIEmiISZco0DIRh7YRJZht1iP2kUA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKC6XZe1ylZprtJpZQdYKhQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCKC6XZe1ylZprtJpZQdYKhQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 22,
+              ""publishedAt"": ""2017-09-24T17:27:54Z"",
+              ""updatedAt"": ""2017-09-24T17:27:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""hzeMQ2TZk65D4kRYYoCBIRF-fsw"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XwRwnf_FGl"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""Que va"",
+              ""textOriginal"": ""Que va"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""VariaToby"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9r9YD7L1IlphzZRFuI4sB9EYOGE_j-1JVjhQOl=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGvgHf_m3ppKsCiAkt6zanw"",
+              ""authorChannelId"": {
+                ""value"": ""UCGvgHf_m3ppKsCiAkt6zanw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 16,
+              ""publishedAt"": ""2017-09-25T14:44:01Z"",
+              ""updatedAt"": ""2017-09-25T14:44:01Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""f4JmY4tU0uV5afQVPW15IMxtbAc"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8Xxm5P4dB1z"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""se ve bien, y esta bien, esta joven como para ser gordo."",
+              ""textOriginal"": ""se ve bien, y esta bien, esta joven como para ser gordo."",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Real Soria"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9IZw1-1pWYmx_EU2pyOt0IKPmkJHE3Bs3vn2uq8g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGv5e0JEPSeDBftQUR3ACOQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCGv5e0JEPSeDBftQUR3ACOQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 76,
+              ""publishedAt"": ""2017-09-26T03:08:04Z"",
+              ""updatedAt"": ""2017-09-26T03:08:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Pj9l_JqAlgQrqEm5YlUW_8XXucU"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XyEEKsffs8"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""foco a foco broda, foco a foco 💡"",
+              ""textOriginal"": ""foco a foco broda, foco a foco 💡"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""MYM JONA"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-g9eMCYgqJ30wnLOCDUBXlOfP_FvSmWVML0HOY=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCv4i1IrujJvMYoSDPrDmOuQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCv4i1IrujJvMYoSDPrDmOuQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 11,
+              ""publishedAt"": ""2017-09-26T07:22:42Z"",
+              ""updatedAt"": ""2017-09-26T07:22:42Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1iynahywz7hb5_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jeaftie4rfw1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jeiqdhfo1o35_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, id, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, id, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ji79axgaqt7o_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jidaplbb5644_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jygkfqxqhco5_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jyovdku7h8is_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qdta5t1h1elu_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, channelId, allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, channelId, allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qe6n1co885sy_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qhvly05pukhc_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qxlk7wkzueli_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qy1nbd6h4mk2_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rh89ya8bms84_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_rhjc9v94qb79_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rl2b454q8dgz_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s13cvu53iypj_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s1b5477y4bxh_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s1efa1wq6zc3_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_sobtb83yj6eu_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_sobuxxnxhp2v_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4ca3s15l8ah_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4flok2x1k54_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4qoe7tchb1y_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4yf4nce7epk_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_tony4ehzsoj5_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_ts1y569lumgo_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: channelId, videoId, id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: channelId, videoId, id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ts4nnm1s7229_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u8aq9bogru46_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_ublv0hpfugc4_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubu6c35ptm5d_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""_E2lxUCbqcx2n8vbCkdXPzbIQB8"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""LGOijMufAxPJ6hOWEO6B7hHNars"",
+      ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aL9_AwhfUYmPidPVCCt8thc1lVw"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XoAED2j3LQ"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""No, no es el único. Es el Síndrome &#39;Jonah Hill&#39;."",
+              ""textOriginal"": ""No, no es el único. Es el Síndrome 'Jonah Hill'."",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Catedrástico Gómez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-0mZxEMZWbm36Fv-t1heCsdy1pdHtIO2sL3w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCqwcy_NmGR_O-VUd_gJT35g"",
+              ""authorChannelId"": {
+                ""value"": ""UCqwcy_NmGR_O-VUd_gJT35g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 193,
+              ""publishedAt"": ""2017-09-22T09:35:19Z"",
+              ""updatedAt"": ""2017-09-22T09:35:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""7pQS8Sude1yUp9vW-BcIR59HVOU"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8Xu9uEaGrW6"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""Rt infinito!!"",
+              ""textOriginal"": ""Rt infinito!!"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Miguel Rodríguez Estévez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-nToC-CyG5GuIEmiISZco0DIRh7YRJZht1iP2kUA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKC6XZe1ylZprtJpZQdYKhQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCKC6XZe1ylZprtJpZQdYKhQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 22,
+              ""publishedAt"": ""2017-09-24T17:27:54Z"",
+              ""updatedAt"": ""2017-09-24T17:27:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""hzeMQ2TZk65D4kRYYoCBIRF-fsw"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XwRwnf_FGl"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""Que va"",
+              ""textOriginal"": ""Que va"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""VariaToby"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9r9YD7L1IlphzZRFuI4sB9EYOGE_j-1JVjhQOl=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGvgHf_m3ppKsCiAkt6zanw"",
+              ""authorChannelId"": {
+                ""value"": ""UCGvgHf_m3ppKsCiAkt6zanw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 16,
+              ""publishedAt"": ""2017-09-25T14:44:01Z"",
+              ""updatedAt"": ""2017-09-25T14:44:01Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""f4JmY4tU0uV5afQVPW15IMxtbAc"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8Xxm5P4dB1z"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""se ve bien, y esta bien, esta joven como para ser gordo."",
+              ""textOriginal"": ""se ve bien, y esta bien, esta joven como para ser gordo."",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""Real Soria"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9IZw1-1pWYmx_EU2pyOt0IKPmkJHE3Bs3vn2uq8g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGv5e0JEPSeDBftQUR3ACOQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCGv5e0JEPSeDBftQUR3ACOQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 76,
+              ""publishedAt"": ""2017-09-26T03:08:04Z"",
+              ""updatedAt"": ""2017-09-26T03:08:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Pj9l_JqAlgQrqEm5YlUW_8XXucU"",
+            ""id"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg.8XmZnn9Bvvq8XyEEKsffs8"",
+            ""snippet"": {
+              ""videoId"": ""NWrcP0QyXJs"",
+              ""textDisplay"": ""foco a foco broda, foco a foco 💡"",
+              ""textOriginal"": ""foco a foco broda, foco a foco 💡"",
+              ""parentId"": ""Ugx0dK2I1wPHnQoLx6V4AaABAg"",
+              ""authorDisplayName"": ""MYM JONA"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-g9eMCYgqJ30wnLOCDUBXlOfP_FvSmWVML0HOY=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCv4i1IrujJvMYoSDPrDmOuQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCv4i1IrujJvMYoSDPrDmOuQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 11,
+              ""publishedAt"": ""2017-09-26T07:22:42Z"",
+              ""updatedAt"": ""2017-09-26T07:22:42Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_urk2zeqbnvc1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urp5g4415anq_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urpm4xdjfioz_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_urv78z0jz8dt_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urxhhb16rwaa_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_us31hoi7ak39_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uv5ug9djwu2a_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_uvjojvqsfsj4_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf0xun1x5g6t_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

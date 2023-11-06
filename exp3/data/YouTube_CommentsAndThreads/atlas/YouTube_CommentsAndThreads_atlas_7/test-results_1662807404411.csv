@@ -1,0 +1,337 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrbg4tx63qr7_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ibbgxco344f5_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_1jy4wm3pvtrg1_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""LXTjghs4HwLRSX7SU0YBoAz0tjk"",
+  ""nextPageToken"": ""QURTSl9pMS0xQk5nVF9HdnlBNEwzOFhvV29LRWx4WGdrS3V4SlUyd3ZrQzRldW5qSElhMXNYenhXMDNMTHpsZjdtZXpCZ0pZaDR4Njl3aUZJYTlpZC1WSFUzMWdVdWhWS0xoTlRqRTJUX3JhckdHaFkyajVjeFFjemtGblRqRjlON3pOUS1RVm1OQnQyVElKanRCaHVPTjB6Ui1GekJKb3hwLVJtZTlMdVl0R1JqSE5xVjVZV0wtRTM3UUtoVTZHN1owQ19wVHR3SU1NUXRz"",
+  ""pageInfo"": {
+    ""totalResults"": 8,
+    ""resultsPerPage"": 8
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""AHWm3NP-EifwCSnCc49FNs_RxNQ"",
+      ""id"": ""UgxiWGJnfIPiTaZUMm94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""PEpoMvy273o"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""qfX7wwrPRisxoRnzR0Bdg3LVoS4"",
+          ""id"": ""UgxiWGJnfIPiTaZUMm94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""PEpoMvy273o"",
+            ""textDisplay"": ""James has so much hedgehog vibes😃"",
+            ""textOriginal"": ""James has so much hedgehog vibes😃"",
+            ""authorDisplayName"": ""Soraya Forest"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_SChu_1QGw67k8BTOllMmQfIFeMH7PzfF06UOIxQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCtKmBidAlbzqhet2VwLDmaQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCtKmBidAlbzqhet2VwLDmaQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2021-11-24T12:33:22Z"",
+            ""updatedAt"": ""2021-11-24T12:33:22Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""wxjJyx6fMK25ZVi13ewnBLWadBM"",
+      ""id"": ""Ugy08s3eg_P5KrAkODh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""pN2iPKjh_es"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""m9utzGJEOmLDbJ4cXHoOsnMpoas"",
+          ""id"": ""Ugy08s3eg_P5KrAkODh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""pN2iPKjh_es"",
+            ""textDisplay"": ""Que le pasa a Broncano en el ojo? parece el hermano de Forest Whitaker."",
+            ""textOriginal"": ""Que le pasa a Broncano en el ojo? parece el hermano de Forest Whitaker."",
+            ""authorDisplayName"": ""Scouting y Análisis"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/jT6zPLuE8LKTcpCIBW6dJCS3ueh2VGaB-5qixN4ydgvz05pxisnTJ0cQSTR7HudjQOqhycRr8yA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC2p6xTVBRa_-RkgVFLZGJ4g"",
+            ""authorChannelId"": {
+              ""value"": ""UC2p6xTVBRa_-RkgVFLZGJ4g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2021-04-04T12:11:42Z"",
+            ""updatedAt"": ""2021-04-04T12:11:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fWFpstkyYj3KzapDAnQJo-gUNa0"",
+      ""id"": ""UgwqP1SFhDSTFccV7K94AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""khYjXjIPa-8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""DxPpYl8GZw30QLtJEZb8wmAby7E"",
+          ""id"": ""UgwqP1SFhDSTFccV7K94AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""khYjXjIPa-8"",
+            ""textDisplay"": ""El Forest Gump español"",
+            ""textOriginal"": ""El Forest Gump español"",
+            ""authorDisplayName"": ""Jordi Pla Rosello"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-yV5ZBwFKxBvqCkJfcTHa_uwRG2xxK5i0389hYyw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCBvPlkUlEXZvaSO7Yl4l3Gg"",
+            ""authorChannelId"": {
+              ""value"": ""UCBvPlkUlEXZvaSO7Yl4l3Gg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2021-02-05T11:30:44Z"",
+            ""updatedAt"": ""2021-02-05T11:30:44Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ip9-bppt_ubUZHUjB-t5uWRlNG8"",
+      ""id"": ""UgylM4oJusV7zTANq1h4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""khYjXjIPa-8"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""9tHw2zihLbWkpd4JEYWRB8ktap0"",
+          ""id"": ""UgylM4oJusV7zTANq1h4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""khYjXjIPa-8"",
+            ""textDisplay"": ""El Forest Gump del siglo XXI (21 para los de tiktok)"",
+            ""textOriginal"": ""El Forest Gump del siglo XXI (21 para los de tiktok)"",
+            ""authorDisplayName"": ""1607"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-5PIPGu7m4aJdrwg-DW8YxorFGsK_XHzgL6p74JQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCdqVu-gIO4GvWTZg1Tf0jxg"",
+            ""authorChannelId"": {
+              ""value"": ""UCdqVu-gIO4GvWTZg1Tf0jxg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2021-02-05T01:30:37Z"",
+            ""updatedAt"": ""2021-02-05T01:30:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""9zPa8KSTh0iwGGXJmNKAsY9sDMg"",
+      ""id"": ""UgyZavovIB1DY7dEhL14AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""pN2iPKjh_es"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""_z1xAchThjHCa1UHyYdy-N5nWEU"",
+          ""id"": ""UgyZavovIB1DY7dEhL14AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""pN2iPKjh_es"",
+            ""textDisplay"": ""Broncano tiene el ojo a lo Forest Whitaker, ¿no?"",
+            ""textOriginal"": ""Broncano tiene el ojo a lo Forest Whitaker, ¿no?"",
+            ""authorDisplayName"": ""DoctorQMenMakersaRT"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_mZOUv_0c-nyEXJnYSLH5EtmSYKiMowO1Ifw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTskXL0MrYApRN7LVJZpzUg"",
+            ""authorChannelId"": {
+              ""value"": ""UCTskXL0MrYApRN7LVJZpzUg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2021-01-23T12:12:16Z"",
+            ""updatedAt"": ""2021-01-23T12:12:16Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""B_O8M34hK8dfbBvOPhTAtudEbwA"",
+      ""id"": ""UgzCh8Ml42pUOZMnvFh4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""J1mpF7F9fkI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""f6smZtj9U0M0e7WViJxHiKNaYLI"",
+          ""id"": ""UgzCh8Ml42pUOZMnvFh4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""J1mpF7F9fkI"",
+            ""textDisplay"": ""Qué pálido que está Forest Whitaker..."",
+            ""textOriginal"": ""Qué pálido que está Forest Whitaker..."",
+            ""authorDisplayName"": ""Vicente Balaguer"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8DbnpKfoYzJpo52ptsrRJNSyiS9Tyd4lNKI2Ps3aY=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC3JDWjTGei1yRJ0aYEIFeoQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC3JDWjTGei1yRJ0aYEIFeoQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2021-01-22T21:39:12Z"",
+            ""updatedAt"": ""2021-01-22T21:39:12Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ElXjieeABzD9gf9JkLna5S39uCI"",
+      ""id"": ""Ugw2QQwvYLn6cbmzHsp4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""3WpsN69VCxo"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Rs_qrvIIcBqzc80Asa9_Dr0IDSs"",
+          ""id"": ""Ugw2QQwvYLn6cbmzHsp4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""3WpsN69VCxo"",
+            ""textDisplay"": ""No sabía que habían cambiado a Broncano por Forest Whitaker 😯"",
+            ""textOriginal"": ""No sabía que habían cambiado a Broncano por Forest Whitaker 😯"",
+            ""authorDisplayName"": ""HarryElSucio"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9Ne5h-zM2gsoURVL-0ba3fl6tJ2G14awvWa-O9eg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCbTV1sF4z6STyLMWN3tU9Vw"",
+            ""authorChannelId"": {
+              ""value"": ""UCbTV1sF4z6STyLMWN3tU9Vw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 7,
+            ""publishedAt"": ""2021-01-22T00:58:30Z"",
+            ""updatedAt"": ""2021-01-22T00:58:30Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""1yHSkGxPJDKvnKMWoGeiQFcvWiY"",
+      ""id"": ""Ugwk22C01ENfoq3G5eZ4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""videoId"": ""iwrylQ4h0dw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""nOiEaOel8z70xtP3jsm6X7PVnLk"",
+          ""id"": ""Ugwk22C01ENfoq3G5eZ4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+            ""videoId"": ""iwrylQ4h0dw"",
+            ""textDisplay"": ""Está un poco Forest Whitaker hoy Broncano."",
+            ""textOriginal"": ""Está un poco Forest Whitaker hoy Broncano."",
+            ""authorDisplayName"": ""Raven"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8Meiqtz1k3SYHh5bKXix48vIvuoueV40PQyNIw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCiy3IDun54pmSFxREmaJ4rQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCiy3IDun54pmSFxREmaJ4rQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2021-01-20T07:44:51Z"",
+            ""updatedAt"": ""2021-01-20T07:44:51Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_qhq2shja2drs_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qy4eozyto4s8_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

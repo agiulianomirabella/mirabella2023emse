@@ -1,0 +1,109 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jefy7mh0sdpe_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_1jyoczg07l4yt_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""0RnKxSIvVggvsVOZXbLvnbg9wV4"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""fM9nlJ5Ll2Ryiocsu6s54aFotxg"",
+      ""id"": ""7m-NPuXPBqM"",
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": false,
+        ""madeForKids"": false
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_t8cfhbln7iau_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t8fpmy05bu5e_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""pNKC_o7tCq1qOumhZTr3evyXB4M"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""0TcSWkF56GtYb0XCFgm7t86b-5Q"",
+      ""id"": ""yDgLFOxnQ8Y"",
+      ""contentDetails"": {
+        ""duration"": ""PT6M3S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": true,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      },
+      ""player"": {
+        ""embedHtml"": ""\u003ciframe width=\""1850\"" height=\""1041\"" src=\""https://www.youtube.com/embed/yDgLFOxnQ8Y\"" frameborder=\""0\"" allow=\""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"" allowfullscreen\u003e\u003c/iframe\u003e"",
+        ""embedHeight"": ""1041"",
+        ""embedWidth"": ""1850""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_uvbvjeip4o6a_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""TVsvFXmSJDBuyqsY3QkQ7o4nNhQ"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""FhQ0slmjpSPA4D31D40wfClnTxE"",
+      ""id"": ""n8I-YVuaSR0"",
+      ""localizations"": {
+        ""es"": {
+          ""title"": ""¿Cuál es el lugar más raro donde \""lo han hecho\"" nuestros artistas? by Anda Ya!"",
+          ""description"": ""Karin Herrero, uno de los integrantes del morning show más escuchado del país, Anda Ya, somete a los artistas invitados a la Cena de Nominados de LOS40 Music Awards a una serie de preguntas incómodas en cadena de la que no se libra nadie.\n\nAitana, Don Patricio, Leiva, Lola Índigo, Blas Cantó, Manuel Carrasco, Taburete, Ana Guerra, Dani Fernández, Estopa o Roberto Leal sufren las consecuencias de Anda Ya una vez más.\n\n¿Cuál es el lugar más prohibido donde lo has hecho? ¿A quién te gustaría pegar? ¿Te tatuarías el nombre de tu pareja? ¡Dale al play y flipa con sus respuestas!\n\nY ya sabes, si te gustan nuestros vídeos y las bromas de Anda Ya, no tienes más que escucharnos cada mañana de 06:00 a 11:00 en LOS40 o visitar su página web: http://andaya.es\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n#AndaYa #Roast""
+        }
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

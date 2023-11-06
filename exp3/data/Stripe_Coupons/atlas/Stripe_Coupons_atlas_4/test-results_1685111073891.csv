@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyb0tg6wb703_PostCoupons,200,"{
+  ""id"": ""rpruz0fm"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111090,
+  ""currency"": ""yer"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 46,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 14.0,
+  ""redeem_by"": 1735449655,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qdvj5v540fg7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_XRlbkHuvc0emo9?t=1685111096"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rh51qfjbrvw5_PostCoupons,200,"{
+  ""id"": ""4P5mhrwr"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111102,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 88,
+  ""livemode"": false,
+  ""max_redemptions"": 47,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 74.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_skycugnob1o2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6WcoJMyqtZvs6k?t=1685111107"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbk6w2csxfmp_PostCoupons,200,"{
+  ""id"": ""XGRCELpCuBaDF"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111113,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""antiblack"",
+  ""percent_off"": 88.0,
+  ""redeem_by"": 1809406584,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

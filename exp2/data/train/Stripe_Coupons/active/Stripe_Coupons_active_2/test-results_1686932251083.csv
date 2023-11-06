@@ -1,0 +1,63 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iave5q6tpvsk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_63lBNHkp8dmCJ0?t=1686932267"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iv9uesd9z2w3_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_76uUk5B1Jk5cfD?t=1686932273"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4swo8qb8ldg_PostCoupons,200,"{
+  ""id"": ""DUDOkomgTexpT"",
+  ""object"": ""coupon"",
+  ""amount_off"": 73,
+  ""created"": 1686932279,
+  ""currency"": ""ils"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 46,
+  ""metadata"": {},
+  ""name"": ""entranceway"",
+  ""percent_off"": null,
+  ""redeem_by"": 1697926585,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_to7cpq34yyif_PostCoupons,200,"{
+  ""id"": ""ZYkRjiQB"",
+  ""object"": ""coupon"",
+  ""amount_off"": 91,
+  ""created"": 1686932284,
+  ""currency"": ""eur"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""switcheroo"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urxhjs5ia3hy_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_00KijHy9Sf8daY?t=1686932290"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

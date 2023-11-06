@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyou4z319cfs_PostCoupons,200,"{
+  ""id"": ""W12Exx8tZzltyRLJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 56,
+  ""created"": 1685083566,
+  ""currency"": ""kmf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 76,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxywp6ue6dsx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3UO0QraDeEGANt?t=1685083572"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sl67eofna06e_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_OYZQa0O43XBvE1?t=1685083578"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_us06zmvkuey9_PostCoupons,200,"{
+  ""id"": ""ZIWjV7rIqcEUhGJkqU"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685083583,
+  ""currency"": ""clp"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 13.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uvenbm59le7n_PostCoupons,200,"{
+  ""id"": ""pwyW0Kg9"",
+  ""object"": ""coupon"",
+  ""amount_off"": 66,
+  ""created"": 1685083589,
+  ""currency"": ""etb"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 100,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

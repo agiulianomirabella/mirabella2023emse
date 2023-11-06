@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iay5xe3x0u9d_PostCoupons,200,"{
+  ""id"": ""eoJLbJTf"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060063,
+  ""currency"": ""kes"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 93,
+  ""metadata"": {},
+  ""name"": ""redly"",
+  ""percent_off"": 95.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jeqhf3ggs21y_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_tK8N4fvPpqnupH?t=1685060069"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s4unithnggfk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8ll1SfHt1VTg8M?t=1685060074"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_soel5qmdr0vq_PostCoupons,200,"{
+  ""id"": ""xHw5u39z"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060080,
+  ""currency"": ""tjs"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 35,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 98.0,
+  ""redeem_by"": 1694081556,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_uv8lty4xhkdh_PostCoupons,200,"{
+  ""id"": ""NvkWjY0AnhQAG6Sysc"",
+  ""object"": ""coupon"",
+  ""amount_off"": 25,
+  ""created"": 1685060086,
+  ""currency"": ""mga"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

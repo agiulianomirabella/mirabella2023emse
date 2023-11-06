@@ -1,0 +1,53 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hre8asgu5nhs_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FXN28A9y94BSLh?t=1685061595"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrrlms338wft_PostCoupons,200,"{
+  ""id"": ""maF8K8URiRn44K62Y"",
+  ""object"": ""coupon"",
+  ""amount_off"": 92,
+  ""created"": 1685061600,
+  ""currency"": ""rub"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 50,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iyq34bdi02ev_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_4Lbqx5HS4SDV7P?t=1685061606"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jecnsgox4baq_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7wCKSI4dtw9G7t?t=1685061612"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4pkesulu9f6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_j2CH34fVK3S78M?t=1685061617"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

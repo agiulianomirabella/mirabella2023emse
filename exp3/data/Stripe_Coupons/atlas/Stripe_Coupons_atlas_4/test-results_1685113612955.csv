@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rhg4wngp1d2e_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YyT0XdhCgO59CW?t=1685113630"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rlapmu2gyddc_PostCoupons,200,"{
+  ""id"": ""5aYwGJQAW79BlKl"",
+  ""object"": ""coupon"",
+  ""amount_off"": 18,
+  ""created"": 1685113635,
+  ""currency"": ""cop"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1704483927,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sl8y0hay3k8p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_RCMd2MvfR2OdAF?t=1685113642"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8f79719cxf9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_5rqfYEHs9PgqxI?t=1685113647"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7wvbhsjdcts_PostCoupons,200,"{
+  ""id"": ""FzMZH95Otj"",
+  ""object"": ""coupon"",
+  ""amount_off"": 93,
+  ""created"": 1685113653,
+  ""currency"": ""uyu"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 70,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1702515803,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,74 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbd6wv1pnqy9_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""RuuXzTIr0OoDqI4S0RU6n4FqKEM"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 5
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_1hrud2z8cgw1h_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iusonxj747dw_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jxze85xmusl1_youtubevideoslist,404,"{
+  ""error"": {
+    ""code"": 404,
+    ""message"": ""Requested entity was not found."",
+    ""errors"": [
+      {
+        ""message"": ""Requested entity was not found."",
+        ""domain"": ""global"",
+        ""reason"": ""notFound""
+      }
+    ],
+    ""status"": ""NOT_FOUND""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 404 not defined for path '/youtube/v3/videos'.
+test_urhc1xmjupm8_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: chart, myRating, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: chart, myRating, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

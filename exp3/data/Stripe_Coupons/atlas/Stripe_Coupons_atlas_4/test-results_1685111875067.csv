@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7whumsn5hrp_PostCoupons,200,"{
+  ""id"": ""FTJ7arpZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111893,
+  ""currency"": ""gyd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""pie-eyed"",
+  ""percent_off"": 21.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1ajubrhwbw1_PostCoupons,200,"{
+  ""id"": ""oZNEHXUsl0urQQa20sJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111899,
+  ""currency"": ""mro"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 58,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 87.0,
+  ""redeem_by"": 1824051820,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s15krzjx4yua_PostCoupons,200,"{
+  ""id"": ""djnvx7sJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111904,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""unspaced"",
+  ""percent_off"": 85.0,
+  ""redeem_by"": 1853427606,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s1jejyc9s2m1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_L9wwwxrXyNk2Go?t=1685111910"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sobtb47m1iee_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_OHj5ow5IETPofj?t=1685111916"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

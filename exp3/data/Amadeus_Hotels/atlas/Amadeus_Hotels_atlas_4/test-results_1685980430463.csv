@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrdq1ti4pfzs_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxw3d8lg6wxe_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,true,none
+test_s0uhr2y1wg1h_getMultiHotelOffers,200,"{""data"":[{""type"":""hotel-offers"",""hotel"":{""type"":""hotel"",""hotelId"":""HIMUC041"",""chainCode"":""HI"",""name"":"" MUNICH - CITY CENTRE"",""cityCode"":""MUC"",""latitude"":48.13111,""longitude"":11.58999},""available"":false,""self"":""https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=HIMUC041&adults=8&checkInDate=2023-08-05""}]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_to7cbqk5p455_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_toie6huxhs9y_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,true,none

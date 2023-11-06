@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h821ecgd7rjk_PostCoupons,200,"{
+  ""id"": ""dGnpJxey"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1686932116,
+  ""currency"": null,
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 14,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1k2017v8hmblc_PostCoupons,200,"{
+  ""id"": ""mtedikYcuiSvkF"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1686932121,
+  ""currency"": ""sgd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 12,
+  ""metadata"": {},
+  ""name"": ""competitively"",
+  ""percent_off"": 3.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxw5bigy2n1v_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_f6ABWJOXUU5cFB?t=1686932127"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qy1mx8ifg4s7_PostCoupons,200,"{
+  ""id"": ""X7BwPoqM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 56,
+  ""created"": 1686932133,
+  ""currency"": ""uah"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 47,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rl52yzig2ypl_PostCoupons,200,"{
+  ""id"": ""KT3jeIvP9U4GWdzY"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1686932138,
+  ""currency"": ""ang"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""richly"",
+  ""percent_off"": 87.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

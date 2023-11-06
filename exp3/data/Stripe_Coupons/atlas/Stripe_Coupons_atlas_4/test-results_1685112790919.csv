@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrpbec44ic6t_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_X33w1Ztcus77SD?t=1685112807"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1ies91iju6q92_PostCoupons,200,"{
+  ""id"": ""L8KnCts7"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112813,
+  ""currency"": ""fkp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 72,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 62.0,
+  ""redeem_by"": 1727428645,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jxzducpwgkkw_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_qBRNWBtRRgEZcE?t=1685112819"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4vqsb7js6yb_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZLE351pv0XTs9e?t=1685112824"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u8b7chjcyb1i_PostCoupons,200,"{
+  ""id"": ""UFsKuUqMprf"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112830,
+  ""currency"": ""htg"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

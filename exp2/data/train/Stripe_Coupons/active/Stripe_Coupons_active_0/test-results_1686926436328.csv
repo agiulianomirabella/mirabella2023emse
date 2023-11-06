@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hror4i6p56pi_PostCoupons,200,"{
+  ""id"": ""DQq7yxnC"",
+  ""object"": ""coupon"",
+  ""amount_off"": 46,
+  ""created"": 1686926453,
+  ""currency"": ""mxn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 88,
+  ""metadata"": {},
+  ""name"": ""hardly"",
+  ""percent_off"": null,
+  ""redeem_by"": 1723425037,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ibbjz91lbak1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_jVKsZVIRCJGt8F?t=1686926458"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rlb55jo2zkv6_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9mmzQ3wLK439Cy?t=1686926464"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s10k0jp7syn5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_G0AGs07I9VkmFU?t=1686926469"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4cs115mtant_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_goifTRVL6vaelR?t=1686926475"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

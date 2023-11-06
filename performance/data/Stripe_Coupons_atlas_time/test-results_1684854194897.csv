@@ -1,0 +1,71 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib60f18zlovs_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_dKowZIVLg3sgpn?t=1684854211"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_s103kmfr7m1v_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_VNhN43m53iwjsJ?t=1684854217"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,"This test case's input was (possibly) correctbut received a 400 (Bad Request) status code."
+test_t4teoibbh0l5_PostCoupons,200,"{
+  ""id"": ""sbxboE0E"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1684854223,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 81.0,
+  ""redeem_by"": 1806667189,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_to7vf4z4g3lc_PostCoupons,200,"{
+  ""id"": ""kzfovSfK"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1684854229,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 86.0,
+  ""redeem_by"": 1797003845,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_urv6j9yxvewn_PostCoupons,200,"{
+  ""id"": ""vAJCGZZVTztGXd2vn"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1684854234,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""indicate"",
+  ""percent_off"": 40.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

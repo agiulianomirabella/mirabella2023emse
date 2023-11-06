@@ -1,0 +1,101 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrdqfqbhtw6q_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""fxZGlI04RD4ATyQ-8AmA3OuFFDQ"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""4HqG6RpqUpeYuQQ3Y2d6YZvoyD8"",
+      ""id"": ""9bZkp7q19f0"",
+      ""statistics"": {
+        ""viewCount"": ""4782156692"",
+        ""likeCount"": ""26889157"",
+        ""favoriteCount"": ""0"",
+        ""commentCount"": ""5338189""
+      },
+      ""player"": {
+        ""embedHtml"": ""\u003ciframe width=\""6117\"" height=\""3441\"" src=\""https://www.youtube.com/embed/9bZkp7q19f0\"" frameborder=\""0\"" allow=\""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"" allowfullscreen\u003e\u003c/iframe\u003e"",
+        ""embedHeight"": ""3441"",
+        ""embedWidth"": ""6117""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qdpxqecr63aw_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_r17cegyt2cti_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.
+test_rhb2frggpy5s_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""3Ct25x_mhiHSItMMe9hfwUM-wCc"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""7x2X6TjFpAo3JKSu4eMxDHshkX0"",
+      ""id"": ""9bZkp7q19f0"",
+      ""contentDetails"": {
+        ""duration"": ""PT4M13S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": false,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_trtmtr1imwrm_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, myRating, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/videos'.

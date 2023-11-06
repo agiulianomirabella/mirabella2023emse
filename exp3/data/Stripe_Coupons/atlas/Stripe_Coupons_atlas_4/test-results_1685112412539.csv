@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv0hou86g1mh_PostCoupons,200,"{
+  ""id"": ""jF3bVO9m"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112429,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 14.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jy894160ppwk_PostCoupons,200,"{
+  ""id"": ""hIzTaabo"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112435,
+  ""currency"": ""mmk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 1.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhakiiqvgbc2_PostCoupons,200,"{
+  ""id"": ""xTpcjY4G7wLZaiybLCY"",
+  ""object"": ""coupon"",
+  ""amount_off"": 29,
+  ""created"": 1685112440,
+  ""currency"": ""fjd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 68,
+  ""metadata"": {},
+  ""name"": ""southward"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skmtb5yqmh4k_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_S2ckLRcdmroNOQ?t=1685112447"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vb9m1av0djxw_PostCoupons,200,"{
+  ""id"": ""rYy9bWGG"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112452,
+  ""currency"": ""bnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 90,
+  ""metadata"": {},
+  ""name"": ""lightsomely"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": 1835552140,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

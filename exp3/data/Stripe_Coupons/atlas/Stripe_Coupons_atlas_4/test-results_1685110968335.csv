@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ji4hwuszdfzm_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yyQmPEDci2e03m?t=1685110985"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qxfgpvox750y_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_BXn7SVnbGi2UdP?t=1685110990"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxtcu4s5vewm_PostCoupons,200,"{
+  ""id"": ""d00PlNgr"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110996,
+  ""currency"": ""jmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 48,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 67.0,
+  ""redeem_by"": 1838455999,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rl8exy5oausj_PostCoupons,200,"{
+  ""id"": ""9TBESwmtTJJg"",
+  ""object"": ""coupon"",
+  ""amount_off"": 20,
+  ""created"": 1685111002,
+  ""currency"": ""usd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 64,
+  ""metadata"": {},
+  ""name"": ""capitulate"",
+  ""percent_off"": null,
+  ""redeem_by"": 1827600826,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ubmf7mkp97ox_PostCoupons,200,"{
+  ""id"": ""Ft0lNfO2"",
+  ""object"": ""coupon"",
+  ""amount_off"": 7,
+  ""created"": 1685111007,
+  ""currency"": ""myr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""meliorate"",
+  ""percent_off"": null,
+  ""redeem_by"": 1859330973,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

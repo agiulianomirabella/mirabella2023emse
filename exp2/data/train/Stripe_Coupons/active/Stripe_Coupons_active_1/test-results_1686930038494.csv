@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7u8dpbsowfk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_BqTDXjjgy4tWeG?t=1686930055"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rkwrknpdzxpf_PostCoupons,200,"{
+  ""id"": ""xeavEhf6"",
+  ""object"": ""coupon"",
+  ""amount_off"": 97,
+  ""created"": 1686930060,
+  ""currency"": ""tzs"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""pennisetum"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_rkzldbf3z29l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_CvoRTs2RNT5wc1?t=1686930066"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4sc49tmr969_PostCoupons,200,"{
+  ""id"": ""71tnxcbkDvO"",
+  ""object"": ""coupon"",
+  ""amount_off"": 93,
+  ""created"": 1686930072,
+  ""currency"": ""ron"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""greediness"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_toixqlz1fy9i_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid amount. Currency ISK has become effectively zero-decimal and charged amounts must be evenly divisible by 100. See https://stripe.com/docs/currencies#zero-decimal for more information."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_U6GXfljyD7vknB?t=1686930077"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

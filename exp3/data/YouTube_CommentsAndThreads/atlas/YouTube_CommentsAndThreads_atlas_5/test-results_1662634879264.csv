@@ -1,0 +1,258 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrrkgmf1zxvc_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_qdta5uyk81mb_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skv3u9u9hhko_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""Q8enx4-tjHH5oWx6pZj_YfBE2I8"",
+  ""nextPageToken"": ""QURTSl9pMHJlTVp2RjU2aU43aktseXFtWENNdk1Xd19xM2JSSjRoZG9VbnliSzZqQWtKNlpESmhmemlYWFhZc2UtV3pZeUozMkxfbXNnTlhqcTNBUU9wLXhCNk5jTWZHQUlCMXBVcUliQ2hnMlpwMF9JT2Jic2NNZ1M1VGVXeEludkptUkFJbzY0WjlDU0hJLWhFa1dpZmpaUVMzS0RiSDlOZC1tUGtfc01ibzc0UDktVzZZVEhqR1JkY2dZVUxVcTVKeTlTZG5XSmF0d2VF"",
+  ""pageInfo"": {
+    ""totalResults"": 2,
+    ""resultsPerPage"": 2
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""-YJgtRSOgONQt1ybPqGVUwhz1eo"",
+      ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+        ""videoId"": ""3wqyvDJydKc"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""vYNajtUm3pWRu8nAcWWyqJbyU-I"",
+          ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+            ""videoId"": ""3wqyvDJydKc"",
+            ""textDisplay"": ""I feel like James likes the cows tongue kuz he always just EATS IT"",
+            ""textOriginal"": ""I feel like James likes the cows tongue kuz he always just EATS IT"",
+            ""authorDisplayName"": ""Katya Frel"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/eTaBMBkC7DNf05qFpqWGPaFlSv6UwjgATEX2QQrAuisNDIGitOd8mXIZQaPNrf6LI9891zefpw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNLJWVnT5kALaIyfMYIND5w"",
+            ""authorChannelId"": {
+              ""value"": ""UCNLJWVnT5kALaIyfMYIND5w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 24599,
+            ""publishedAt"": ""2019-10-07T19:41:49Z"",
+            ""updatedAt"": ""2019-10-07T19:41:49Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 115,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""TjiUCCfTq5oZo3Y6lUFFKVeerAg"",
+            ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg.9-nZr85r3XF9dLWG3oYZUw"",
+            ""snippet"": {
+              ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+              ""videoId"": ""3wqyvDJydKc"",
+              ""textDisplay"": ""4 sure"",
+              ""textOriginal"": ""4 sure"",
+              ""parentId"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+              ""authorDisplayName"": ""Esther Nazziwa"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8pUtyBtleBA0r-sbPfyYsvT0iFWC30JjL1R1z0=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYWmC4u82RtDwlhAMkp4ARg"",
+              ""authorChannelId"": {
+                ""value"": ""UCYWmC4u82RtDwlhAMkp4ARg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-11T14:19:35Z"",
+              ""updatedAt"": ""2022-07-11T14:19:35Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""g7NI0C1m259kL5e-Fzq0UvDOzf8"",
+            ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg.9-nZr85r3XF9c92tynyp-v"",
+            ""snippet"": {
+              ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+              ""videoId"": ""3wqyvDJydKc"",
+              ""textDisplay"": ""😹😹😂😂🤣"",
+              ""textOriginal"": ""😹😹😂😂🤣"",
+              ""parentId"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+              ""authorDisplayName"": ""zyutio"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1yT9ACmOkZelyPiDiDVARwqq2uFhyOsjGLRJFZvbW8-MAOGz6AKCpdklTJJqwf9P0qlLefTJV0A=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC18bcgcFJMrtGnyx-kl8a0Q"",
+              ""authorChannelId"": {
+                ""value"": ""UC18bcgcFJMrtGnyx-kl8a0Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-11T21:40:44Z"",
+              ""updatedAt"": ""2022-06-11T21:40:44Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""YrlCU9zRSlLX2HwqXCB2kq03b6g"",
+            ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg.9-nZr85r3XF9bcgnifrVhj"",
+            ""snippet"": {
+              ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+              ""videoId"": ""3wqyvDJydKc"",
+              ""textDisplay"": ""Yes I also feel like  James likes the cows tongue 😅"",
+              ""textOriginal"": ""Yes I also feel like  James likes the cows tongue 😅"",
+              ""parentId"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+              ""authorDisplayName"": ""Vani Ramgolam"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8Z6GbmYsSSsH4iWvWHbNX2mbaHP2MjrrF8vw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGDVhMWe8VusEcsoLyja6kg"",
+              ""authorChannelId"": {
+                ""value"": ""UCGDVhMWe8VusEcsoLyja6kg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-05-29T22:43:58Z"",
+              ""updatedAt"": ""2022-05-29T22:43:58Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""QQimVsP4OrZcBb3_E5Fu4BB4Pf4"",
+            ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg.9-nZr85r3XF9aIyNNjxTLz"",
+            ""snippet"": {
+              ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+              ""videoId"": ""3wqyvDJydKc"",
+              ""textDisplay"": ""🤷\u200d♀️"",
+              ""textOriginal"": ""🤷\u200d♀️"",
+              ""parentId"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+              ""authorDisplayName"": ""♡ketsueki♡"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/dQDR0HJb0k7WZwE8sOy55uuwEuA6HldzUy5N5UjMjfMLGTTqJS57Ro4WG-Xs9HaxuUnETNVm=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_9PPH9H5t5RKFlz3Lx9XVg"",
+              ""authorChannelId"": {
+                ""value"": ""UC_9PPH9H5t5RKFlz3Lx9XVg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-04-27T01:02:05Z"",
+              ""updatedAt"": ""2022-04-27T01:02:05Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Hv7lDO9vYM1gjT0E5oI12ATbWWQ"",
+            ""id"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg.9-nZr85r3XF9_qVVfUb3zb"",
+            ""snippet"": {
+              ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+              ""videoId"": ""3wqyvDJydKc"",
+              ""textDisplay"": ""He loves it"",
+              ""textOriginal"": ""He loves it"",
+              ""parentId"": ""UgzWLAPmi1lc8N4ZO8p4AaABAg"",
+              ""authorDisplayName"": ""Animate"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/n2nOclimWsKMQJ0X6DnoNnwC-XyWC9XPqkLykIfiC6A6KND8nCI7U9xCrix90xsDDPFVftZOSA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCCirJ-ad21X9N_FvcmEv2iQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCCirJ-ad21X9N_FvcmEv2iQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-04-15T14:23:05Z"",
+              ""updatedAt"": ""2022-04-15T14:23:05Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""8dOtdOj96VXXaV69nL_Iq-50zXI"",
+      ""id"": ""UgzFfYTGDC3SFZczmuB4AaABAg"",
+      ""snippet"": {
+        ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+        ""videoId"": ""cSG7Os-Uzlk"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""tk7n62t44o0prcYKgkGbA9B8NFY"",
+          ""id"": ""UgzFfYTGDC3SFZczmuB4AaABAg"",
+          ""snippet"": {
+            ""channelId"": ""UCJ0uqCI0Vqr2Rrt1HseGirg"",
+            ""videoId"": ""cSG7Os-Uzlk"",
+            ""textDisplay"": ""incredibly, improbably good.  Streisand off her boring pedestal and doing something clever and real and funny with the perfect foil/fan, whom she barely acknowledges.  that&#39;s Barbra.    maybe one last movie in the same vein?  no, probably won&#39;t happen. but those who used to be her fans have this, don&#39;t we, to watch occasionally.  funny how good Corden and Barbra work together.   who would have thought?"",
+            ""textOriginal"": ""incredibly, improbably good.  Streisand off her boring pedestal and doing something clever and real and funny with the perfect foil/fan, whom she barely acknowledges.  that's Barbra.    maybe one last movie in the same vein?  no, probably won't happen. but those who used to be her fans have this, don't we, to watch occasionally.  funny how good Corden and Barbra work together.   who would have thought?"",
+            ""authorDisplayName"": ""Richard Lee"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_7MZLn3XJfl-rEyl-A6-FdbeUO0wOEH7_0zA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCQS2iusbWi4We0rYpuHaMgg"",
+            ""authorChannelId"": {
+              ""value"": ""UCQS2iusbWi4We0rYpuHaMgg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2019-06-19T04:38:37Z"",
+            ""updatedAt"": ""2019-06-19T04:38:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_trzn4o3ysx13_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, channelId, id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, channelId, id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf6he2hodh6g_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, id, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, id, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

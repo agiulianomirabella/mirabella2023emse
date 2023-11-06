@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qdw15l031bud_PostCoupons,200,"{
+  ""id"": ""FPA6AERo7OGL0qmB"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085922,
+  ""currency"": ""bnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 56,
+  ""metadata"": {},
+  ""name"": ""ignorant"",
+  ""percent_off"": 90.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe13k5dtsto1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_9XWLqQkHTJ4YlJ?t=1685085928"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4q474yo6ckx_PostCoupons,200,"{
+  ""id"": ""T4Mv5d6oPSMRVklnXoWC"",
+  ""object"": ""coupon"",
+  ""amount_off"": 94,
+  ""created"": 1685085933,
+  ""currency"": ""mur"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 82,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_to7aovg2w8dg_PostCoupons,200,"{
+  ""id"": ""Iuu0TfB6"",
+  ""object"": ""coupon"",
+  ""amount_off"": 98,
+  ""created"": 1685085939,
+  ""currency"": ""mzn"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 22,
+  ""metadata"": {},
+  ""name"": ""diaphanous"",
+  ""percent_off"": null,
+  ""redeem_by"": 1782874135,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbknysgm40gy_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_T7ckuAaWLPvKf8?t=1685085946"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

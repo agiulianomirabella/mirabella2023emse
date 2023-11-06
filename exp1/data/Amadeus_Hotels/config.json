@@ -1,0 +1,39 @@
+{
+    "restest": {
+        "properties": "",
+        "results": ""
+    },
+    "types": {
+        "hotelIds": "text",
+        "adults": "number",
+        "checkInDate": "text",
+        "checkOutDate": "text",
+        "countryOfResidence": "text",
+        "roomQuantity": "number",
+        "priceRange": "text",
+        "currency": "text",
+        "paymentPolicy": "enum",
+        "boardType": "enum",
+        "includeClosed": "enum",
+        "bestRateOnly": "enum",
+        "lang": "text"
+    },
+    "descriptions": {
+        "hotelIds": "Amadeus property codes on 8 chars. Mandatory parameter for a search by predefined list of hotels.",
+        "adults": "Number of adult guests (1-9) per room.",
+        "checkInDate": "Check-in date of the stay (hotel local date). Format YYYY-MM-DD. The lowest accepted value is the present date (no dates in the past). If not present, the default value will be today's date in the GMT time zone.",
+        "checkOutDate": "Check-out date of the stay (hotel local date). Format YYYY-MM-DD. The lowest accepted value is checkInDate+1. If not present, it will default to checkInDate +1.",
+        "countryOfResidence": "Code of the country of residence of the traveler expressed using ISO 3166-1 format.",
+        "roomQuantity": "Number of rooms requested (1-9).",
+        "priceRange": "Filter hotel offers by price per night interval (ex: 200-300 or -300 or 100). It is mandatory to include a currency when this field is set.",
+        "currency": "Use this parameter to request a specific currency. ISO currency code (http://www.iso.org/iso/home/standards/currency_codes.htm). If a hotel does not support the requested currency, the prices for the hotel will be returned in the local currency of the hotel.",
+        "paymentPolicy": "Filter the response based on a specific payment type. NONE means all types (default).",
+        "boardType": "Filter response based on available meals:         * ROOM_ONLY = Room Only         * BREAKFAST = Breakfast         * HALF_BOARD = Diner & Breakfast (only for Aggregators)         * FULL_BOARD = Full Board (only for Aggregators)         * ALL_INCLUSIVE = All Inclusive (only for Aggregators)",
+        "includeClosed": "Show all properties (include sold out) or available only. For sold out properties, please check availability on other dates.",
+        "bestRateOnly": "Used to return only the cheapest offer per hotel or all available offers.",
+        "lang": "Requested language of descriptive texts.  Examples: FR , fr , fr-FR. If a language is not available the text will be returned in english. ISO language code (https://www.iso.org/iso-639-language-codes.html)."
+    },
+    "api_keys": [],
+    "class_weight": "balanced",
+    "sample_method": "smote"
+}

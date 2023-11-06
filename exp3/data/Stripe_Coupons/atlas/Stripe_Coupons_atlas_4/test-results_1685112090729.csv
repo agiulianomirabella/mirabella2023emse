@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qxtvh38sjzg9_PostCoupons,200,"{
+  ""id"": ""0a1fHOs6"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685112108,
+  ""currency"": ""fkp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 20,
+  ""metadata"": {},
+  ""name"": ""punctiliously"",
+  ""percent_off"": 26.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s1jyraps8zeg_PostCoupons,200,"{
+  ""id"": ""9ITC2DbkWFLYvoxo"",
+  ""object"": ""coupon"",
+  ""amount_off"": 99,
+  ""created"": 1685112114,
+  ""currency"": ""huf"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""unashamedly"",
+  ""percent_off"": null,
+  ""redeem_by"": 1754223152,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4l3qvyrcnjq_PostCoupons,200,"{
+  ""id"": ""E2cqXIFG"",
+  ""object"": ""coupon"",
+  ""amount_off"": 25,
+  ""created"": 1685112120,
+  ""currency"": ""lkr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""supremely"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_too0ja7syrfm_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_YMvfQkkamQfGON?t=1685112125"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vf6eo8iyjdy9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Mc5P2HF3GWcQhw?t=1685112131"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

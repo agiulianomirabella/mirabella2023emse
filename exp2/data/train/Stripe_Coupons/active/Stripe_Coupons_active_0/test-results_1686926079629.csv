@@ -1,0 +1,56 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbfzv1q0xbhf_PostCoupons,200,"{
+  ""id"": ""uAItdZ1C"",
+  ""object"": ""coupon"",
+  ""amount_off"": 35,
+  ""created"": 1686926096,
+  ""currency"": ""mkd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 77,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1718900922,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ibh1yxtqvx2p_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_60qe0d7cHeFeG5?t=1686926102"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rkwscxfozprm_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DbmsGFIxTwHK2I?t=1686926108"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_skq1ubjn9834_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_OhLwkKaW1ovBYK?t=1686926113"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4yy87ztmm9l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_fsW4d0Rx3NVsmq?t=1686926119"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

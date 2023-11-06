@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jefebzx508yt_PostCoupons,200,"{
+  ""id"": ""7WI2qOdL"",
+  ""object"": ""coupon"",
+  ""amount_off"": 99,
+  ""created"": 1686929904,
+  ""currency"": ""std"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 81,
+  ""metadata"": {},
+  ""name"": ""wide"",
+  ""percent_off"": null,
+  ""redeem_by"": 1720194435,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jetb83pq2bmr_PostCoupons,200,"{
+  ""id"": ""mQ0vE9Ks"",
+  ""object"": ""coupon"",
+  ""amount_off"": 50,
+  ""created"": 1686929909,
+  ""currency"": ""dzd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 97,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1783120569,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qy4yn994krp5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_K7FrSIfbZ5rDn9?t=1686929915"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t8cdj236qg53_PostCoupons,200,"{
+  ""id"": ""MjXr75mv"",
+  ""object"": ""coupon"",
+  ""amount_off"": 21,
+  ""created"": 1686929921,
+  ""currency"": ""bwp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 70,
+  ""metadata"": {},
+  ""name"": ""fundamentally"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u85o6higjqee_PostCoupons,200,"{
+  ""id"": ""8yetn2KnsIO1hejSND4"",
+  ""object"": ""coupon"",
+  ""amount_off"": 52,
+  ""created"": 1686929926,
+  ""currency"": ""bob"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 78,
+  ""metadata"": {},
+  ""name"": ""fifthly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbm0mquzcf1z_PostCoupons,200,"{
+  ""id"": ""xncoOw56"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058291,
+  ""currency"": ""all"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 52,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 76.0,
+  ""redeem_by"": 1778984187,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4nwmaexd54g_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_s1b0I1BkNoib92?t=1685058296"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_t4vpatho4410_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8TTQEit1polbfN?t=1685058302"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_urhcrnbd9sfn_PostCoupons,200,"{
+  ""id"": ""mtQg3jWV6LFCWGMh8DJB"",
+  ""object"": ""coupon"",
+  ""amount_off"": 7,
+  ""created"": 1685058308,
+  ""currency"": ""php"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""technophilic"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbbvhw4mxco2_PostCoupons,200,"{
+  ""id"": ""OLXWwPzF"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058313,
+  ""currency"": ""mxn"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 13,
+  ""metadata"": {},
+  ""name"": ""circular-knit"",
+  ""percent_off"": 87.0,
+  ""redeem_by"": 1830100642,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,255 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jeky9gu2q82s_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k1u1dhoxoxti_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_qeew0z1lwsop_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.
+test_t4qn7r1nkm04_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""qqMDAOCeR7Cq0_4DiC_OLB7eO4c"",
+  ""regionCode"": ""PT"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 0
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_ts4n74594orl_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""Snf77OHVEO22Di_lOXwH0d650EA"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 170,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""2iHX-nWheG-xjaiF84XUxQH9gPs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""AmR5LoyZ4jw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2015-12-02T07:55:28Z"",
+        ""channelId"": ""UCf63jfFN-KLVukMja7hv6CQ"",
+        ""title"": ""Star Wars duel on Fencing World Championships. BEST SOUND"",
+        ""description"": ""Watch our fastest lightsaber duel ever: https://youtu.be/w8ixfe5qXv4\n\nWanna handle a lightsaber like a true jedi (or sith)? Email us at school@saberfighter.com for the best online lightsaber training experience!\n\nVisit our TikTok channel for free tutorials: @School of Saberfighting \n\nJedi Knight fights with Sith Lord on \nFencing Senior World Championships Moscow 2015\n\nSchool of Saberfighting is one of the first teams in the world that specialises in public performance of duels inspired by Star Wars, and also provides training for those who wish to learn this form of stage fencing. \nMany of our trainees have won the highest stage fencing athletic titles in various Russian championships, and acted in fencing combat scenes in theatre and films. They also collaborated with a Combat Choreographer from Hollywood, and performed during the World Fencing Championship 2015.\n\nhttps://www.facebook.com/saberfighting\nsemenikhindv@mail.ru"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/AmR5LoyZ4jw/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""School of Saberfighting"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2015-12-02T07:55:28Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""MFb3WgbgsCAqWWtx1WoodAAHLQc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ubyo5eZz_Jc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-06-28T17:31:05Z"",
+        ""channelId"": ""UCCj956IF62FbT7Gouszaj9w"",
+        ""title"": ""Why Samuel L. Jackson has a purple light sabre | The Graham Norton Show - BBC"",
+        ""description"": ""Subscribe and 🔔 to the BBC 👉 https://bit.ly/BBCYouTubeSub\nWatch the BBC first on iPlayer 👉 https://bbc.in/iPlayer-Home Samuel L. Jackson chats about his purple light sabre and Graham gives him a toy one to play with.\n\nChat show. Graham is joined by Oscar-winning actress Sandra Bullock who talks about new comedy The Heat. Also on the sofa are actor Samuel L Jackson and comedian and writer Nick Frost who stars with Simon Pegg in The World's End. Music comes from Jake Bugg.\n\nThe Graham Norton Show | Series 13 Episode 13 | BBC One\n\n#bbc #BBCTheGrahamNortonShow #TheGrahamNortonShow\nAll our TV channels and S4C are available to watch live through BBC iPlayer, although some programmes may not be available to stream online due to rights. If you would like to read more on what types of programmes are available to watch live, check the 'Are all programmes that are broadcast available on BBC iPlayer?' FAQ 👉 https://bbc.in/2m8ks6v."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ubyo5eZz_Jc/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""BBC"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-06-28T17:31:05Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cA7kAXqIrRd4M-x4S1pLsp8Q94I"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""xC6J4T_hUKg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-10-07T22:45:51Z"",
+        ""channelId"": ""UCjgpFI5dU-D1-kh9H1muoxQ"",
+        ""title"": ""4000° PLASMA PROTO-LIGHTSABER BUILD (RETRACTABLE BLADE!)"",
+        ""description"": ""Download and play AFK Arena for free ► https://bit.ly/3cvZ7dB \nUse these bonus codes: BestRPG4BusyU and uf4shqjngq to get awesome rewards.\n\nBecome a Hacksmith member get exclusive perks, like watching our Lightsaber Test video right now! ►►► https://youtu.be/ey_EjSzKFWQ\nYou'll also get...\n►Project design files (CAD)!\n►Merch Discounts!\n►Collaborate with us on our videos!\n\nTry Altium Designer for Free and start designing your own PCBs ► https://www.altium.com/asp/hacksmith\nView & share electronic designs online ►https://www.altium.com/viewer/\n\nCheck out the circuit diagram at Maker.IO ► https://www.digikey.com/en/maker/projects/the-hacksmith-retractable-plasma-lightsaber/d14232ad19c4454ebdc1dd6bbaef5f78\n\nMake your own PCBs ► https://jlcpcb.com/  \n$2  2Layer 5PCBs!\n$5  4 Layer 5PCBs!\n\nEpic Starwars Music and more by Samuel Kim ► https://www.youtube.com/user/samuelkimmusic\n\nThe hilt design was inspired by multiple different renderings we found online, with some of the main inspiration from Adam Rzatkowski ► www.artstation.com/aionard\n\nSOCIAL\nWebsite ► http://www.hacksmith.tech\nFacebook ► http://www.facebook.com/thehacksmith\nInstagram ► http://www.instagram.com/thehacksmith\nTwitter ► http://twitter.com/thehacksmith\nPatreon ► http://www.patreon.com/thehacksmith\nDiscord ► https://discordapp.com/invite/thehacksmith \nMerch ► https://www.hacksmith.store\n\nCHAPTERS:\n0:00 Teaser\n0:33 A real retractable lightsaber\n3:28 New hilt design\n4:17 Support our channel!\n5:22 Building new hilt\n9:07 How does it work?\n12:00 Different blade colors?\n13:22 Electronics\n15:00 Powerpack\n16:27 World's First Retractable Lightsaber\n17:05 TEST!\n\nSOFTWARE:\nVideo Review / Collaboration ► http://r.frame.io/pZq3N\nVideo Editing ► Adobe Premiere \nVFX ► https://productioncrate.grsm.io/Hacksmith\nCAD ► Solidworks \nCAM ► Autodesk HSM http://bit.ly/HSMworks\n\nCAMERA GEAR:\nHighspeed Cam - Chronos 1.4 ► http://bit.ly/chronosCam\nMain shooter - Panasonic GH5s ► https://bhpho.to/2Fjd80N \nPhone - Samsung S10  ► https://bhpho.to/2N8FOh8\nCamcorder - Sony Handycam ► https://bhpho.to/2FDnq81 \nAction Cam - GoPro ► https://bhpho.to/2FxXDC4 \nSteadicam - Removu K1 ► https://bhpho.to/2N9lDQq \nMain mic - Sennheiser ► https://bhpho.to/2DsR8ec\nBendy Tripod ► https://bhpho.to/2FyLNb0 \nMain Tripods - old second hand Manfrotto tripods no longer sold. \nStudio Light - Luxli ► https://bhpho.to/2N9SPav\n\nTOOLS / MACHINES: \nCNC Waterjet Cutter ► http://bit.ly/wazerJet\nCNC Plasma Cutter ► http://bit.ly/EMTplasma\n3d Printers ► http://bit.ly/H1Printer\nCNC Mill ►  http://bit.ly/PCNC440\nCNC Lathe ► http://bit.ly/15LSlantPro\nLaser Cutter - Gweike LG900N 80W ► http://lmgtfy.com/?q=lg900n \n3d Scanner ► http://amzn.to/2pwbvTu\nDrills, drivers, grinders, saws, etc ► http://amzn.to/2p9SPJ3 \nMig Welder ► http://bit.ly/MP250iWelder\nTig Welder ► http://bit.ly/Tig200Welder\nQuiet Air Compressor ► http://bit.ly/38zVKzB\nDesktop PC ► https://youtu.be/gSbt3LK8hCs \n\nMUSIC IN ORDER OF APPEARANCE:\nBattle Of The Heroes X Duel Of Fates\nBy Samuel Kim\nhttps://www.youtube.com/c/samuelkimmusic \nhttps://twitter.com/samuelkimmusic \nhttps://www.instagram.com/samuelkimmusic \n\nWorlds Apart by G. Scott Russell\nLicensed from Triple Scoop Music ►\nhttps://triplescoopmusic.com/\n\nScorpion by Zac Nelson\nLicensed from Triple Scoop Music ►\nhttps://triplescoopmusic.com/\n\nKenobi Theme by Samuel Kim\n\nJungle by Pink Shark\nLicensed from Triple Scoop Music ►\nhttps://triplescoopmusic.com/\n\nPurchases made through some store links may provide some compensation to Hacksmith.\n\nWARNING: THESE VIDEOS ARE FOR ENTERTAINMENT PURPOSES ONLY. PERSONAL USE OF VIDEO CONTENT IS AT YOUR OWN RISK. THE HACKSMITH IS A TRAINED PROFESSIONAL WHO KNOWS EXACTLY WHAT HE'S DOING. EXCEPT WHEN HE DOESN'T. DO NOT ATTEMPT TO RECREATE OR RE-ENACT ANYTHING SHOWN IN THESE VIDEOS.\n\n#starwars #lightsaber #makeitreal"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/xC6J4T_hUKg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/xC6J4T_hUKg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/xC6J4T_hUKg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/xC6J4T_hUKg/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/xC6J4T_hUKg/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Hacksmith"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-10-07T22:45:51Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""NCDCyu--L73fpR0yGusGz1ktwqE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""b9abffnGlz0""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""FhnNtJ8yjw_hAVNlwceyoqRzzE0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""z14-l-Hgpq4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-25T14:47:27Z"",
+        ""channelId"": ""UC4PziMH5MvvsmqM0VCZTy-g"",
+        ""title"": ""The BEST Of The Game of Thrones Cast | LIVESTREAM | The Graham Norton Show"",
+        ""description"": ""#GrahamNortonShow #GrahamNorton #TheGNShow\n\nFollow us here:\nFacebook: https://www.facebook.com/thegrahamnor...\nInstagram: https://www.instagram.com/thegrahamno...\nTwitter: https://twitter.com/TheGNShow\nTikTok: https://www.tiktok.com/@thegnshow\nSnapchat: https://www.snapchat.com/discover/The..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/z14-l-Hgpq4/default_live.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/z14-l-Hgpq4/mqdefault_live.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/z14-l-Hgpq4/hqdefault_live.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/z14-l-Hgpq4/sddefault_live.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/z14-l-Hgpq4/maxresdefault_live.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""The Graham Norton Show"",
+        ""liveBroadcastContent"": ""live"",
+        ""publishTime"": ""2022-08-25T14:47:27Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7gdz89bmucz_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1h7whwzn0zj1w_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_1jy4zt1n2e62e_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_u85oybgw15ip_getMultiHotelOffers,500,"
+            {
+                ""errors"": [
+                        {
+                            ""code"": 38189,
+                            ""title"": ""Internal error"",
+                            ""detail"": ""An internal error occurred, please contact your administrator"",
+                            ""status"": 500
+                        }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,Status code 5XX with invalid request: inter_parameter_dependency
+test_ubrf9clvenuh_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"

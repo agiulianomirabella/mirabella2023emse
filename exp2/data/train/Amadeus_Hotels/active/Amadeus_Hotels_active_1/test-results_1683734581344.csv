@@ -1,0 +1,17 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jyaja4mn8axt_getMultiHotelOffers,500,"
+            {
+                ""errors"": [
+                        {
+                            ""code"": 38189,
+                            ""title"": ""Internal error"",
+                            ""detail"": ""An internal error occurred, please contact your administrator"",
+                            ""status"": 500
+                        }
+                ]
+            }
+        ",application/vnd.amadeus+json,false,Status code 5XX.
+test_1k1u076iytzqw_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_rhduliifw3fm_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_s1jgfeuk2rmt_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_u85pcud52vjp_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"

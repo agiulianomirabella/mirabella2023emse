@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iukg00pinplw_PostCoupons,200,"{
+  ""id"": ""EmdCnTK4"",
+  ""object"": ""coupon"",
+  ""amount_off"": 14,
+  ""created"": 1685059120,
+  ""currency"": ""thb"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 39,
+  ""metadata"": {},
+  ""name"": ""leaf"",
+  ""percent_off"": null,
+  ""redeem_by"": 1845070509,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_r1g3pndif9dh_PostCoupons,200,"{
+  ""id"": ""lOKPpNwo"",
+  ""object"": ""coupon"",
+  ""amount_off"": 97,
+  ""created"": 1685059126,
+  ""currency"": ""etb"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 15,
+  ""metadata"": {},
+  ""name"": ""brew"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rh7ryicnc3so_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_NrIYw52ec0DGya?t=1685059132"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s12t09nix5iq_PostCoupons,200,"{
+  ""id"": ""gDObKcfXwlI"",
+  ""object"": ""coupon"",
+  ""amount_off"": 5,
+  ""created"": 1685059137,
+  ""currency"": ""zmw"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 27,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_sohc5m9alsty_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_z3XX0dQ0Z0v5kY?t=1685059143"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

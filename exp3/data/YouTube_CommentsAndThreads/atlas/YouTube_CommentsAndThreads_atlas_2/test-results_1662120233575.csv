@@ -1,0 +1,102 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iun5fm9ocyn7_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k1uig28bfr5l_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""X6ETX9Nb2_A63pm1eJlGFP9rpQ0"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 61
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""7xvSqkxW6nZnrGWGJY7P2jDD4Ao"",
+      ""id"": ""Ugw7orsAQ51p8dJD5Bx4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""vKFiCVn0bxI"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""3fm5mvudNsmOinlJ67Orahhme0c"",
+          ""id"": ""Ugw7orsAQ51p8dJD5Bx4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""vKFiCVn0bxI"",
+            ""textDisplay"": ""El índice de letalidad de la influenza es mayor al 10%"",
+            ""textOriginal"": ""El índice de letalidad de la influenza es mayor al 10%"",
+            ""authorDisplayName"": ""Juan Pablo Guerrero Sanabria"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9tF0yumpv-ZSG9f9NTLY60hkZr4oRpHLKZZPG6tUQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCE4mdGn2gAnz3N4ZY6UiPmg"",
+            ""authorChannelId"": {
+              ""value"": ""UCE4mdGn2gAnz3N4ZY6UiPmg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2020-03-03T05:14:03Z"",
+            ""updatedAt"": ""2020-03-03T05:14:03Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_qhvlhludwn6r_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""2L8M5W6LvzN0ghgsx9s5C17SXX4"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 77
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_ubjlh7d1q2wl_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urhcu44x5tmg_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbj992gf77sg_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_f68pWDuhYpL6Xe?t=1685085109"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iv9vih8yobj7_PostCoupons,200,"{
+  ""id"": ""TqSv7KPW3Bs015ta"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085115,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""concrete"",
+  ""percent_off"": 14.0,
+  ""redeem_by"": 1698011269,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4q4wgh274ms_PostCoupons,200,"{
+  ""id"": ""dwhSD7q6v6"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085120,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 99,
+  ""metadata"": {},
+  ""name"": ""tinkle"",
+  ""percent_off"": 30.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_to2bf1ob4m06_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_SamXJ91xuATLfx?t=1685085126"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u7zmrro8k65v_PostCoupons,200,"{
+  ""id"": ""y8ddinHo"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685085132,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 11,
+  ""metadata"": {},
+  ""name"": ""lode"",
+  ""percent_off"": 100.0,
+  ""redeem_by"": 1861850065,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hux64cfq55r7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_LcBpk4jSp1qUQQ?t=1685108469"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ibbhn4dddnap_PostCoupons,200,"{
+  ""id"": ""NydYGJGG"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108475,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 26.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jecnsmma7n1f_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_k6fjHRRE3BVuXk?t=1685108480"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubj56j74f1h3_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_T4UxnmePFH4rfa?t=1685108486"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvbcwi13j23n_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wNuSgJaNHko887?t=1685108492"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

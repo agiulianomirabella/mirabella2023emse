@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iay6mrnq5j5l_PostCoupons,200,"{
+  ""id"": ""CdekP5aGHmWjWzM"",
+  ""object"": ""coupon"",
+  ""amount_off"": 60,
+  ""created"": 1685057410,
+  ""currency"": ""zar"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""ambidextrous"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jeqilowkooj5_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_0wMmFGDdp5HIqB?t=1685057416"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy5hc5b6z71g_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_BHuSxxkSVsweYC?t=1685057421"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_sok4pm8t33u8_PostCoupons,200,"{
+  ""id"": ""VqY4sgEc"",
+  ""object"": ""coupon"",
+  ""amount_off"": 54,
+  ""created"": 1685057427,
+  ""currency"": ""twd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 23,
+  ""metadata"": {},
+  ""name"": ""ductless"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4f31l90fiur_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_feDAXQuElAJqi0?t=1685057433"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

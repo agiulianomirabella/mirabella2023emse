@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr5veunofgbn_PostCoupons,200,"{
+  ""id"": ""EzO3VpCn"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110033,
+  ""currency"": ""amd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 20.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1hruu8c115vtx_PostCoupons,200,"{
+  ""id"": ""QWquNtkz"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110039,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""resolutely"",
+  ""percent_off"": 90.0,
+  ""redeem_by"": 1827651016,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1iusqxl1nroz7_PostCoupons,200,"{
+  ""id"": ""H2Zo8p4a"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110045,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 95.0,
+  ""redeem_by"": 1783879885,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s1jziz5u21q1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wJu2TfTtAp9zO7?t=1685110051"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to1tvlh0sp4j_PostCoupons,200,"{
+  ""id"": ""jPFRK1ql"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110057,
+  ""currency"": ""bif"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 25,
+  ""metadata"": {},
+  ""name"": ""unforgettably"",
+  ""percent_off"": 74.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

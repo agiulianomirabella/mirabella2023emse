@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr5vskb89ooi_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JoDEr6Ay8aqwrr?t=1685058755"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qy4f2zi6mss2_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_DlK0lyJJ61Svt3?t=1685058760"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_rhdaq3ucowtx_PostCoupons,200,"{
+  ""id"": ""LzcACm8lVa1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058766,
+  ""currency"": ""aed"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""elinvar"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rhg2hvqkhxrn_PostCoupons,200,"{
+  ""id"": ""d6Z0hI75mQBTV1Fp"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058772,
+  ""currency"": ""rub"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 33,
+  ""metadata"": {},
+  ""name"": ""milvus"",
+  ""percent_off"": 78.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_skms52mq4qjp_PostCoupons,200,"{
+  ""id"": ""BnHSGgaGk9BtGh"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685058778,
+  ""currency"": ""sos"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 93,
+  ""metadata"": {},
+  ""name"": ""iguanid"",
+  ""percent_off"": 1.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

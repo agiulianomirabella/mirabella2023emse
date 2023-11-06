@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qxib838mwncm_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":477,""title"":""INVALID FORMAT""}]}",application/vnd.amadeus+json,true,none
+test_qxtdjgd1nf4x_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":1300,""title"":""LENGTH OF STAY EXCEEDS MAXIMUM""}]}",application/vnd.amadeus+json,true,none
+test_rlan88za5mwi_getMultiHotelOffers,400,"{""errors"":[{""status"":400,""code"":12247,""title"":""NO RATE FOR REQUESTED OCCUPANCY - RE-ENTER WITH LOWER OCCUPANCY""}]}",application/vnd.amadeus+json,true,none
+test_tooh82sztxko_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,"OAS disconformity: [Path '/data'] Instance type (array) does not match any allowed primitive type (allowed: [""object""])"
+test_urxz0r7cx06t_getMultiHotelOffers,200,"{""data"":[]}",application/vnd.amadeus+json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

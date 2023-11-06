@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrucaz17t0s9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ji624ovqpdQUit?t=1685111248"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1iaxnjl85yxx2_PostCoupons,200,"{
+  ""id"": ""IW6vIVvW"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111254,
+  ""currency"": ""pen"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 66,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 62.0,
+  ""redeem_by"": 1764468778,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qe3u33o4elh5_PostCoupons,200,"{
+  ""id"": ""lYWDdN1l"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111260,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""perseveringly"",
+  ""percent_off"": 96.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qhswiivhxr1y_PostCoupons,200,"{
+  ""id"": ""vPjCRjjW"",
+  ""object"": ""coupon"",
+  ""amount_off"": 41,
+  ""created"": 1685111266,
+  ""currency"": ""sbd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 100,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1836735902,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ts2ggmqa73u9_PostCoupons,200,"{
+  ""id"": ""H0lFV2Hg"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685111272,
+  ""currency"": ""usd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 24,
+  ""metadata"": {},
+  ""name"": ""turgidly"",
+  ""percent_off"": 10.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

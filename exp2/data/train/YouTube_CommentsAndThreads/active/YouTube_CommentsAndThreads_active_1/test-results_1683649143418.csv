@@ -1,0 +1,134 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qdvjxrg4asf9_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_qxl2anhukeat_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""8pcHxYfRZgsS8W2h3MDIcIMzx88"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 2
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""0UBpdgqg9v6jGnMe2pZ4dAhYsxU"",
+      ""id"": ""UgzhMIgtuhjemzfoObp4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""GjJSuHmeeyA"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""fBwW2VU-Q_V0h6z8f6LBtsR5_tQ"",
+          ""id"": ""UgzhMIgtuhjemzfoObp4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""GjJSuHmeeyA"",
+            ""textDisplay"": ""Once I seen him on FBI I knew this was gone happen it just felt right"",
+            ""textOriginal"": ""Once I seen him on FBI I knew this was gone happen it just felt right"",
+            ""authorDisplayName"": ""kofing123"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNjD0Z7B38tpEmKZMuvYDmps_mOWedpyt79FHFp=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCK3kcZH8XaoognrY65KNlJw"",
+            ""authorChannelId"": {
+              ""value"": ""UCK3kcZH8XaoognrY65KNlJw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 61,
+            ""publishedAt"": ""2019-05-15T23:56:47Z"",
+            ""updatedAt"": ""2019-05-15T23:56:47Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 1,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""30MmGr4dHTicxmSq1C72gxUK_wM"",
+            ""id"": ""UgzhMIgtuhjemzfoObp4AaABAg.8uyelntB2UP8vAxcELyzxQ"",
+            ""snippet"": {
+              ""videoId"": ""GjJSuHmeeyA"",
+              ""textDisplay"": ""Same here!! I could smell spin off right away.  Looks good 👍"",
+              ""textOriginal"": ""Same here!! I could smell spin off right away.  Looks good 👍"",
+              ""parentId"": ""UgzhMIgtuhjemzfoObp4AaABAg"",
+              ""authorDisplayName"": ""Steve Goldman"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqO2clFoo9T9s3MiXeFf4Wg4uhCa2JSG0r6JWKJK=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCCFVbv3DYJTt7EmES7sfWBA"",
+              ""authorChannelId"": {
+                ""value"": ""UCCFVbv3DYJTt7EmES7sfWBA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 10,
+              ""publishedAt"": ""2019-05-21T03:51:38Z"",
+              ""updatedAt"": ""2019-05-21T03:51:38Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_r1if3us39gtf_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_t4ygm5g5iipk_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_vb94wbi6bsc6_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.

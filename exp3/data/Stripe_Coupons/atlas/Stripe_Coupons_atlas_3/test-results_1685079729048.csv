@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1ib3pev9pd0zd_PostCoupons,200,"{
+  ""id"": ""QQz7JDreXcp"",
+  ""object"": ""coupon"",
+  ""amount_off"": 76,
+  ""created"": 1685079745,
+  ""currency"": ""uah"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""affright"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jifj2eub18vk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_JMh0ZARYAd9fkN?t=1685079751"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_qxkzvkndydep_PostCoupons,200,"{
+  ""id"": ""Gpe6jAeV"",
+  ""object"": ""coupon"",
+  ""amount_off"": 95,
+  ""created"": 1685079757,
+  ""currency"": ""kes"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s4pmajy4ogo1_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_RaEQaWwg0xPnla?t=1685079762"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uv6d8bbscoxk_PostCoupons,200,"{
+  ""id"": ""ARBcLzT7qz"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685079768,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""digitize"",
+  ""percent_off"": 87.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

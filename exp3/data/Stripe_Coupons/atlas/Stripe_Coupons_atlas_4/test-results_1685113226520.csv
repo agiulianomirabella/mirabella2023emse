@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hrdpyyxcjj1x_PostCoupons,200,"{
+  ""id"": ""QCWcKLHW"",
+  ""object"": ""coupon"",
+  ""amount_off"": 97,
+  ""created"": 1685113243,
+  ""currency"": ""mga"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 52,
+  ""metadata"": {},
+  ""name"": ""fice"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1iv9e1jslp00x_PostCoupons,200,"{
+  ""id"": ""uzJniaV5oXjCxzrz"",
+  ""object"": ""coupon"",
+  ""amount_off"": 55,
+  ""created"": 1685113249,
+  ""currency"": ""khr"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 28,
+  ""metadata"": {},
+  ""name"": ""sump"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_s1gocegwnsjb_PostCoupons,200,"{
+  ""id"": ""DT44ctnjuZuNsq"",
+  ""object"": ""coupon"",
+  ""amount_off"": 59,
+  ""created"": 1685113255,
+  ""currency"": ""mro"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 66,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sl65e25uyo9w_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_b41eGAYQzmsuTZ?t=1685113260"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vf1e7z6tu0c7_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_6t5ruxoxGtZGWA?t=1685113266"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,64 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jel1gicrx54o_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none
+test_sl0mmb3vq5b8_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqvuvLm6nYJTKo"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1583392992,
+      ""default_price"": ""plan_GqvvYiJm16Rqxp"",
+      ""description"": ""cleanly"",
+      ""images"": [
+        ""inconsistently""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""chitter"",
+      ""package_dimensions"": {
+        ""height"": 55.0,
+        ""length"": 42.0,
+        ""weight"": 95.0,
+        ""width"": 16.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32010001"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1652486602,
+      ""url"": ""effectually""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,false,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]"
+test_sl8z6ka6y3w9_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u7u2u8ekrm1u_GetProducts,400,"
+{
+  ""error"": {
+    ""message"": ""Invalid request (check your POST parameters): unable to determine value for parameter: created. For assistance, contact support at https://support.stripe.com/contact/."",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_veveoic1caqq_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,true,none

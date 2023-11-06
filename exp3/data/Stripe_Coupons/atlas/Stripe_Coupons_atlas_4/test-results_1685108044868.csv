@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hb86h15l0y7q_PostCoupons,200,"{
+  ""id"": ""7OEMiW7ETLT28xt"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108061,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 30,
+  ""metadata"": {},
+  ""name"": ""popularise"",
+  ""percent_off"": 18.0,
+  ""redeem_by"": 1834001578,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1ji27zta3r6ue_PostCoupons,200,"{
+  ""id"": ""5FsdIwyW"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108067,
+  ""currency"": ""egp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 63,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 15.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4f2yum8uhbk_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_WUQro4rH8xdTWC?t=1685108072"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_trquny2g5l4j_PostCoupons,200,"{
+  ""id"": ""JNFSHzRw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108078,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 96.0,
+  ""redeem_by"": 1840202504,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trtky2akopix_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_A11GShCEr4OK57?t=1685108084"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

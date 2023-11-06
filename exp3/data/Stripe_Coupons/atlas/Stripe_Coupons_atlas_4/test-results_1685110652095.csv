@@ -1,0 +1,61 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7o5qjawlb1w_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies forever"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_7vg24cHWXlAvhg?t=1685110668"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s1dwi0a6zuxw_PostCoupons,200,"{
+  ""id"": ""1qqnpt3PTP5H2iFZ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 34,
+  ""created"": 1685110674,
+  ""currency"": ""awg"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s4mt12338h86_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rgSxLWI973Lnky?t=1685110680"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u82fn5q8u4vp_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_qYxkURPpjkzsEc?t=1685110686"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbshcyxho8qh_PostCoupons,200,"{
+  ""id"": ""gX3WT1GB"",
+  ""object"": ""coupon"",
+  ""amount_off"": 44,
+  ""created"": 1685110691,
+  ""currency"": ""rub"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""uncomplete"",
+  ""percent_off"": null,
+  ""redeem_by"": 1859213248,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

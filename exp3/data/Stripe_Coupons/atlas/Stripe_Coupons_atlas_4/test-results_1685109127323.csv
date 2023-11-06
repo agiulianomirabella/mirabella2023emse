@@ -1,0 +1,62 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7rgm9nteaeo_PostCoupons,200,"{
+  ""id"": ""iUg4KtSqI2zsg9Y2"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685109144,
+  ""currency"": ""bwp"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 31,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 5.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_1jei6hrazs4tf_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ZOencmiKoGoXZ2?t=1685109149"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jer25h700leu_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_F2F81RjyvtArZ6?t=1685109155"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jer2jnugtdf7_PostCoupons,200,"{
+  ""id"": ""EbgmlUXg"",
+  ""object"": ""coupon"",
+  ""amount_off"": 58,
+  ""created"": 1685109160,
+  ""currency"": ""uyu"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 89,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1856122895,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rlb588cbpp2u_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_k3wwGTmuozDJ2T?t=1685109166"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

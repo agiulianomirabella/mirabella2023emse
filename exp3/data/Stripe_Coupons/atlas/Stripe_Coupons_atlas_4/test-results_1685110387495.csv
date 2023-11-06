@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7o517r6hhyq_PostCoupons,200,"{
+  ""id"": ""ugS9VMB1xFqjFsw"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685110404,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 16,
+  ""metadata"": {},
+  ""name"": ""bullshit"",
+  ""percent_off"": 88.0,
+  ""redeem_by"": 1860336546,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1jifkxtd1smcy_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_zVgIeuIPQvD6xC?t=1685110410"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_r1idy3o4ung7_PostCoupons,200,"{
+  ""id"": ""REjS6V5cK8MblxrjvEE"",
+  ""object"": ""coupon"",
+  ""amount_off"": 19,
+  ""created"": 1685110416,
+  ""currency"": ""ttd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""charcuterie"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_rl2caarfeiqp_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_PjVWAMQlUBSx9U?t=1685110421"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_to4jbcyacear_PostCoupons,200,"{
+  ""id"": ""qbddnilJ8YpH"",
+  ""object"": ""coupon"",
+  ""amount_off"": 32,
+  ""created"": 1685110427,
+  ""currency"": ""nad"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""argonne"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.

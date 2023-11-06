@@ -1,0 +1,109 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qhvozobmh7ao_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urxhhfbofjvn_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""oS38mkMQ59V4-1UYXV-hUjEmric"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 35
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""i15MqBpvwiEgl9WnfZcf9GRTFN0"",
+      ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""DPIv7awI-1A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""V29Q3LxIk-KnfLkDSHA2-k_o1O8"",
+          ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""DPIv7awI-1A"",
+            ""textDisplay"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""textOriginal"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""authorDisplayName"": ""JhayCortez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/zJTjsH6ODD4dfO8Gpjy2m7XD34ulHTLmbIHn4SIIk9UlctevUHOJmxp0vR6tfIqhpaE4cpQYzw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvpEyEBML6z-PJJ9XrqgpKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCvpEyEBML6z-PJJ9XrqgpKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 65418,
+            ""moderationStatus"": ""likelySpam"",
+            ""publishedAt"": ""2020-02-05T18:45:17Z"",
+            ""updatedAt"": ""2020-02-05T18:45:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 471,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_uvbcu3krypnp_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbk61bfyrbjq_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf475qtaylwl_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

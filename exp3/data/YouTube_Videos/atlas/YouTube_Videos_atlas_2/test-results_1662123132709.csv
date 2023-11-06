@@ -1,0 +1,85 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1if0j7ihbg6r7_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: myRating, chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: myRating, chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jei6kbpuexwz_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""zkD3rGp22M1CCYhIzS4qEXc1CKU"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""GqFttdbWrJsAjtDaOu4tXyhje6E"",
+      ""id"": ""yuD34tEpRFw"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Knowledge""
+        ]
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_s0xab98tdmxu_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""Nei1TU7QFVVHxw2M8XNGkEnFqn0"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 14
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_s1gq7rdvwhmg_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: chart, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: chart, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u8aql5u15cft_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""8vE3nWqDWP7q8iN4V-DTcIXA424"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""MptIE3Lokma9nxCWDcoxw8I8aNs"",
+      ""id"": ""eVIozKR9p50"",
+      ""player"": {
+        ""embedHtml"": ""\u003ciframe width=\""5502\"" height=\""3095\"" src=\""https://www.youtube.com/embed/eVIozKR9p50\"" frameborder=\""0\"" allow=\""accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"" allowfullscreen\u003e\u003c/iframe\u003e"",
+        ""embedHeight"": ""3095"",
+        ""embedWidth"": ""5502""
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none

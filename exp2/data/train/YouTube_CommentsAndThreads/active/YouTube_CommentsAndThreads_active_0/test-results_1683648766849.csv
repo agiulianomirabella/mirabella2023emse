@@ -1,0 +1,1705 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv618u4ln8s3_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iuy8x4bh9stu_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, channelId, videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, channelId, videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.
+test_1jet97h0ookdz_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""lW2PNSyPoWKXNf753gqNT7nzQ0c"",
+  ""nextPageToken"": ""Z2V0X3JhbmtlZF9zdHJlYW1zLS1DcWNCQ0lBRUZSZTMwVGdhbkFFS2x3RUkyRjhRZ0FRWUJ5S01BZHQ0Z0d5Vk5lY0wzbXA2bW5McEVyVWxXTE1uejhmekZZSXl0NGgxbnJEbXZKZ2x0d0t2aWRKaDJwTlpFM3dTa2ZVMm1CQ0cxd1Q2ZGdpTUt4YzJ2bkg1b09zYWw0SjB4bHRnRVI1V3N2ZTZGRVZZb3RBaDdKUDNiM1pnR0FncGpLSFF5UmdxRVBrWnItcjVNekFaUlR0bWtHYjZiSldFd2FEcUZKemVyTGlYZ0xnWFNCdXo5NFF0YzRxTUVCUVNCUWlJSUJnQUVnVUloaUFZQUJJSENKY2dFQkFZQVJJSENJVWdFQTBZQVJJRkNJY2dHQUFTQlFpSklCZ0FFZ2NJaENBUUZCZ0JHQUE="",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""DyvoxFSapYdK1f-C9kKkx4GoO8c"",
+      ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""--AzcYf3KSUMTjgh3hM9CkjfogA"",
+          ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Einstein discovered this theory in his mind without the internet. I have the internet at my hands, I&#39;ve watched this video twice and am still struggling."",
+            ""textOriginal"": ""Einstein discovered this theory in his mind without the internet. I have the internet at my hands, I've watched this video twice and am still struggling."",
+            ""authorDisplayName"": ""Rosa Lee"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/8wV_UX_Gp-l8uDnYgKjZCbjSblIXlabrIHDcmSDMHvRTRCfOR7gbg16tkhThoRjCdRkNKrRh=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCf4HqTV8OxrAtzHuD5gQcKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCf4HqTV8OxrAtzHuD5gQcKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 11069,
+            ""publishedAt"": ""2020-02-20T02:30:34Z"",
+            ""updatedAt"": ""2020-02-20T02:30:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 225,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""R2kU2WUsfwQvmOJ-QUJx2VDWyxs"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax9978HtRU4GFW"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""U must be religious"",
+              ""textOriginal"": ""U must be religious"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""Ikmal Axl"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM4R6JwEK4hwjYuB3VcAw2riZLyRyZUw4roWWWeyg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCF6kPaa8wff12hGwr1UmvpA"",
+              ""authorChannelId"": {
+                ""value"": ""UCF6kPaa8wff12hGwr1UmvpA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 127,
+              ""publishedAt"": ""2020-04-07T05:47:53Z"",
+              ""updatedAt"": ""2020-04-07T05:47:53Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""pTQcvhxGDLPByU1lt-ECnXQuebA"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax997Ul-RyasB0"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Captain Obvious. • 29 years ago You&#39;re"",
+              ""textOriginal"": ""@Captain Obvious. • 29 years ago You're"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""wair138"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM9KyuiaSDe3433IpoGo9nU1JtoVNA5afMOkcSl=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTUQeOAPuG2gkev_4NfBWvA"",
+              ""authorChannelId"": {
+                ""value"": ""UCTUQeOAPuG2gkev_4NfBWvA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 437,
+              ""publishedAt"": ""2020-04-15T23:14:17Z"",
+              ""updatedAt"": ""2020-04-15T23:14:17Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""oa9vp_sqTh-jfbT6bd5t0p7fVx4"",
+      ""id"": ""Ugyd66MxN7yESfV54BV4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""aqqnYQqiVg4FFz17SH4FZDZYv4A"",
+          ""id"": ""Ugyd66MxN7yESfV54BV4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""&quot; Teachers who make physics boring are not teachers , they are criminals &quot; - Sir Walter lewin"",
+            ""textOriginal"": ""\"" Teachers who make physics boring are not teachers , they are criminals \"" - Sir Walter lewin"",
+            ""authorDisplayName"": ""Atharva"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNwJ1jtnVR4jq6um3mYFloqQJAEu_xUor5oFAYTKA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC308JqJk69qzPU7U_6jq4zA"",
+            ""authorChannelId"": {
+              ""value"": ""UC308JqJk69qzPU7U_6jq4zA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 190,
+            ""publishedAt"": ""2021-06-27T17:16:43Z"",
+            ""updatedAt"": ""2021-06-27T17:16:43Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 2,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""UXdZfAuk31nVRdJsCOsY_Dls2nY"",
+            ""id"": ""Ugyd66MxN7yESfV54BV4AaABAg.9P5wFqYlzGC9n6VeTT2egt"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Wish my physics teacher knew this one.....I would never let anyone bail her"",
+              ""textOriginal"": ""Wish my physics teacher knew this one.....I would never let anyone bail her"",
+              ""parentId"": ""Ugyd66MxN7yESfV54BV4AaABAg"",
+              ""authorDisplayName"": ""Just Me !"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqM7VV8e1BCVR-V8LM5LGOxgHA0xybTZiU2gq8stnQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCXErzKt0yVEDuSNuW36Xfzg"",
+              ""authorChannelId"": {
+                ""value"": ""UCXErzKt0yVEDuSNuW36Xfzg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 4,
+              ""publishedAt"": ""2023-03-11T07:39:39Z"",
+              ""updatedAt"": ""2023-03-11T07:39:39Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""weUoFdakICO-ccSk97ms5WQg0Io"",
+            ""id"": ""Ugyd66MxN7yESfV54BV4AaABAg.9P5wFqYlzGC9pSgyu87yG_"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""I love him.. Sir Walter"",
+              ""textOriginal"": ""I love him.. Sir Walter"",
+              ""parentId"": ""Ugyd66MxN7yESfV54BV4AaABAg"",
+              ""authorDisplayName"": ""Mind Healer"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1Ps0jpsD17JXgnz2U-Qu4hoBZvgZqqgv1iWM7Rxymodk8Y1Hw2QJw6H-4ZiCUmhCr3Yh0BXQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCWPxFiC_QsUq34zv-K7YkGA"",
+              ""authorChannelId"": {
+                ""value"": ""UCWPxFiC_QsUq34zv-K7YkGA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2023-05-08T15:33:22Z"",
+              ""updatedAt"": ""2023-05-08T15:33:22Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""M56z1w3Yf06k009tEYLvRVZvpkY"",
+      ""id"": ""UgxXX1mFIvhc3GRxHK14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""SM9NZ711NSb58k5VPHhi4lzrC6U"",
+          ""id"": ""UgxXX1mFIvhc3GRxHK14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""This channel is perfect. No music in the background, so I can perfectly listen without distractions. In the description is all authoritative academic sources."",
+            ""textOriginal"": ""This channel is perfect. No music in the background, so I can perfectly listen without distractions. In the description is all authoritative academic sources."",
+            ""authorDisplayName"": ""n.1 c"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPO-oPjoNZDb4ywdcKAj3NdR5NtPRXO3_Lsf64S=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJFpY8OMEdd4YgZUApF90fw"",
+            ""authorChannelId"": {
+              ""value"": ""UCJFpY8OMEdd4YgZUApF90fw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 348,
+            ""publishedAt"": ""2021-09-25T03:07:20Z"",
+            ""updatedAt"": ""2021-09-25T03:07:20Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""bLbTdoWUmoKWhAeZivdaZs7W61Y"",
+      ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""dMDjdK_ngk66ugInYt2miZHR80M"",
+          ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""A long long time ago, I remember being told in the 5th grade of the 3 dimensions and then hearing my teacher say &quot;some people even say there is a 4th dimension&quot;. On the way home I told my dad, &quot;If the first dimension is height. Then length, then width....then the 4th dimension has to be when that object exsisted.&quot;. So I like to tell myself I theorized space-time as a child. (I mean, not really but close enough lol)"",
+            ""textOriginal"": ""A long long time ago, I remember being told in the 5th grade of the 3 dimensions and then hearing my teacher say \""some people even say there is a 4th dimension\"". On the way home I told my dad, \""If the first dimension is height. Then length, then width....then the 4th dimension has to be when that object exsisted.\"". So I like to tell myself I theorized space-time as a child. (I mean, not really but close enough lol)"",
+            ""authorDisplayName"": ""Brek Erickson"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNIngdz18Re5NrOhFMexaWLCLxfuqDzFEKiKw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7BVvZPuVfXq1T2xtZmW5fg"",
+            ""authorChannelId"": {
+              ""value"": ""UC7BVvZPuVfXq1T2xtZmW5fg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 107,
+            ""publishedAt"": ""2022-06-20T16:19:15Z"",
+            ""updatedAt"": ""2022-06-20T16:19:15Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 9,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""37Q_CC-Sn2M0bMbeOZemxuQKklE"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9dadVlY_XrJ"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""That is nice.  when he traveled away from the clock tower at the speed of light the clock stopped. Then you must realize that is cus of the light waves emitted from the clock would not reach him cus he is also traveling at the same speed. so he will only see a snapshot. then how he can tell that flow of his time slowed down by that experiment according to this video?"",
+              ""textOriginal"": ""That is nice.  when he traveled away from the clock tower at the speed of light the clock stopped. Then you must realize that is cus of the light waves emitted from the clock would not reach him cus he is also traveling at the same speed. so he will only see a snapshot. then how he can tell that flow of his time slowed down by that experiment according to this video?"",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""Ceylon Gamer's League"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPGuuWLkhi197-hn0RWwt_N__ciGV9J7_O9lyjI=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEpM1kQJf-Y2W6GHBurmTWQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCEpM1kQJf-Y2W6GHBurmTWQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 9,
+              ""publishedAt"": ""2022-07-17T20:39:29Z"",
+              ""updatedAt"": ""2022-07-17T20:39:29Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""PThBBZ-t67e04aEwoxzRps88sck"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9ev-dMW5pR9"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Ceylon Gamer&#39;s League Its all a matter of different frames (of reference), to someone inside a bus, he isn&#39;t moving so he he sees himself at x=0 (the orgin) always. So to him time is/appears slowed down but to the res of the world, time passes at its normal rate. Also he observes things outside of his stationary frame, ie not stationary wrt to him/his fram, to be of shorter lengths than the world around him, starionary to everyone else and where he seems to be moving at relativistic speeds x approaching c the  universal speed limit, 299 792 458m/s"",
+              ""textOriginal"": ""@Ceylon Gamer's League Its all a matter of different frames (of reference), to someone inside a bus, he isn't moving so he he sees himself at x=0 (the orgin) always. So to him time is/appears slowed down but to the res of the world, time passes at its normal rate. Also he observes things outside of his stationary frame, ie not stationary wrt to him/his fram, to be of shorter lengths than the world around him, starionary to everyone else and where he seems to be moving at relativistic speeds x approaching c the  universal speed limit, 299 792 458m/s"",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""Rony C B"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPrUl5xdqibhiBPSm4yr0gkpSUgnZTScfof-cwOdX8g9-OYvTqn5pIzBANvl3J6=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCR7Rel8bYAGwC5pRJ9Gq4TA"",
+              ""authorChannelId"": {
+                ""value"": ""UCR7Rel8bYAGwC5pRJ9Gq4TA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-08-19T14:57:50Z"",
+              ""updatedAt"": ""2022-08-19T14:57:50Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""SMnoYeAdzuktNiOsCDuHUutnSRM"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9kNrFmWfWDN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""I feel like giving you a hug. Not many children have this authentic zest for science. Children are so special they should be exposed to more science in their lives, they’re little geniuses and they don’t even know it."",
+              ""textOriginal"": ""I feel like giving you a hug. Not many children have this authentic zest for science. Children are so special they should be exposed to more science in their lives, they’re little geniuses and they don’t even know it."",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""Laurel J"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNMHVKKygLhUeN9LPsVeRoD3TSOKDlFBk_LpYmiwA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCz603MOR3fXTcJPS6B7yd2w"",
+              ""authorChannelId"": {
+                ""value"": ""UCz603MOR3fXTcJPS6B7yd2w""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2023-01-02T11:50:01Z"",
+              ""updatedAt"": ""2023-01-02T11:50:01Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""q-fVE2gfafWVtsgod4clQJxt0EA"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9kYUm8qwwdC"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Because it was theorized that speed of light always remains constant, even in a relative frame. If you travelled at say 50% the speed of light and cast a beam in front of you, light would still appear to go at 3×10⁸ ms in front of you. This is what was contradicting Newton&#39;s laws of motion."",
+              ""textOriginal"": ""Because it was theorized that speed of light always remains constant, even in a relative frame. If you travelled at say 50% the speed of light and cast a beam in front of you, light would still appear to go at 3×10⁸ ms in front of you. This is what was contradicting Newton's laws of motion."",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""Arishem The Judge"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/Rcs_eRTw_WXU1nX6L6uBQwfZBMKRbq_CykMqFLp2VNK9BcS5KTHT0Wv1Fy5hJUYUiTq9PTf9VA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCDCUbpj_zxjuJ3fn71LKibA"",
+              ""authorChannelId"": {
+                ""value"": ""UCDCUbpj_zxjuJ3fn71LKibA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2023-01-06T14:56:30Z"",
+              ""updatedAt"": ""2023-01-06T14:56:30Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""pKjQv40N3BQAZrZyMYi7y3G3OVI"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9kZOsYMIGDO"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""If you were to travel towards an observer/object, the time dilation effect would be the same as if you were moving away from the observer. In other words, the time dilation effect is symmetrical, and it does not matter whether you are moving towards or away from the observer. The only thing that matters is the relative velocity and gravitational potential between the two objects.\r\u003cbr\u003e\r\u003cbr\u003eFor example, if you were on a rocket ship traveling towards an observer at a high speed, the time dilation effect would be the same as if you were on a rocket ship moving away from the observer at the same speed. In both cases, time would appear to pass more slowly for you compared to the observer, due to the difference in relative velocity and gravitational potential."",
+              ""textOriginal"": ""If you were to travel towards an observer/object, the time dilation effect would be the same as if you were moving away from the observer. In other words, the time dilation effect is symmetrical, and it does not matter whether you are moving towards or away from the observer. The only thing that matters is the relative velocity and gravitational potential between the two objects.\r\n\r\nFor example, if you were on a rocket ship traveling towards an observer at a high speed, the time dilation effect would be the same as if you were on a rocket ship moving away from the observer at the same speed. In both cases, time would appear to pass more slowly for you compared to the observer, due to the difference in relative velocity and gravitational potential."",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""RAWR Coding"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPVAOkgNzrDWGnRjLEok2acN71vYFQHhnfy7_w6=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCQUe9xwBA_oZnfEN-w7hiAA"",
+              ""authorChannelId"": {
+                ""value"": ""UCQUe9xwBA_oZnfEN-w7hiAA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2023-01-06T23:24:11Z"",
+              ""updatedAt"": ""2023-01-06T23:24:11Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""c_3VwR-UY_a2e5GCCofJfK9eTmQ"",
+      ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""p9s_bgUyyw8heoTUCxqjxt4wA8k"",
+          ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Gotta love Physics. It’s fascinating once u understand it."",
+            ""textOriginal"": ""Gotta love Physics. It’s fascinating once u understand it."",
+            ""authorDisplayName"": ""Aserve Yout"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPoV-x2fxju-NA5If8v0WwQlNLqADJ8uRw7mg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCT83OHh7JXTazj8zSoNB9EQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCT83OHh7JXTazj8zSoNB9EQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 656,
+            ""publishedAt"": ""2020-11-25T00:26:28Z"",
+            ""updatedAt"": ""2020-11-25T00:26:28Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 6,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""1gmxQh_1giM-5FjxKuR26hfEMaU"",
+            ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg.9GT5XGnwY0h9QaCmPJhd_v"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""what makes physics even more fascinating is that we ourselves probably dont understand even the pinpoint of what it really is. it&#39;s caused me to think, what if aliens have much more advanced tech such as being able to move and stop at incredible speeds without inertia affecting them because they have a much better understanding of the laws of physics than we do? what if inertia is a law of physics we can somehow completely ignore?"",
+              ""textOriginal"": ""what makes physics even more fascinating is that we ourselves probably dont understand even the pinpoint of what it really is. it's caused me to think, what if aliens have much more advanced tech such as being able to move and stop at incredible speeds without inertia affecting them because they have a much better understanding of the laws of physics than we do? what if inertia is a law of physics we can somehow completely ignore?"",
+              ""parentId"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+              ""authorDisplayName"": ""Entity"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/azW8f5XjUIScB4tq8Ut6630Y4j7mvBH6hXN-xISZ4vN8fPDVaVdpE7vPeq9IPHOkCbg_O-JHQA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCz3exvmOgA44shQ3PqlvFXA"",
+              ""authorChannelId"": {
+                ""value"": ""UCz3exvmOgA44shQ3PqlvFXA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 37,
+              ""publishedAt"": ""2021-08-03T17:17:42Z"",
+              ""updatedAt"": ""2021-08-03T17:17:42Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""HEvn51HrBgQZqrnM-MtsxBN2DtE"",
+            ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg.9GT5XGnwY0h9R1LfD3T_g2"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Entity not a good idea to ignore some laws of physics. Watcha gonna do when the physics cops come for you?"",
+              ""textOriginal"": ""@Entity not a good idea to ignore some laws of physics. Watcha gonna do when the physics cops come for you?"",
+              ""parentId"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+              ""authorDisplayName"": ""zx3215"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPHSsgm6qCz5pM49YdcxkjZAbj9aWkJMdnb1w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC9_Jh3O-nWK1GSASmr9MZcA"",
+              ""authorChannelId"": {
+                ""value"": ""UC9_Jh3O-nWK1GSASmr9MZcA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 10,
+              ""publishedAt"": ""2021-08-14T15:34:06Z"",
+              ""updatedAt"": ""2021-08-14T15:34:06Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aDDJg3w60022gazkxpcA46C7yH8"",
+            ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg.9GT5XGnwY0h9RMCA-ZbbmC"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Entity my thought exactly, we really dont know everything. But i do believe humans will evolve and become those “aliens” someday"",
+              ""textOriginal"": ""@Entity my thought exactly, we really dont know everything. But i do believe humans will evolve and become those “aliens” someday"",
+              ""parentId"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+              ""authorDisplayName"": ""Misheo"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/QVFmJLJWEeXfnuucX7zNY9zLsB5ZSaImZVecSKupvrfy_isul_Y8srHLOi0j2rL0CaMB7h_xWQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCR-GyrEFYueJUoo-X_DdLkA"",
+              ""authorChannelId"": {
+                ""value"": ""UCR-GyrEFYueJUoo-X_DdLkA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 11,
+              ""publishedAt"": ""2021-08-22T17:55:06Z"",
+              ""updatedAt"": ""2021-08-22T17:55:06Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""dTl06kZwmkeCOlHAZ9wTxOyQKVw"",
+            ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg.9GT5XGnwY0h9diUnsT5fRN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""I don&#39;t get it 😭"",
+              ""textOriginal"": ""I don't get it 😭"",
+              ""parentId"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+              ""authorDisplayName"": ""Cicciobalthasar"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/x0-U_Tloebd7uSEm4PDaovNLWUcDAlBMQb38QPVMVUD-l3wsVEYF-SEeonMbQ_Vc6ELi9QpI=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCWUdf_PTttaDq9Ru1D5_vEg"",
+              ""authorChannelId"": {
+                ""value"": ""UCWUdf_PTttaDq9Ru1D5_vEg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-20T21:48:38Z"",
+              ""updatedAt"": ""2022-07-20T21:48:38Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""c_TjWwJg4Mbbic826dbG8oDwils"",
+            ""id"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg.9GT5XGnwY0h9igUtQSGx2T"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""That&#39;s a bold statement. I suggest God is the only one that fully understands physics 😁The more I understand, the more I started to see the infinite power of God. Strange how I found faith through science."",
+              ""textOriginal"": ""That's a bold statement. I suggest God is the only one that fully understands physics 😁The more I understand, the more I started to see the infinite power of God. Strange how I found faith through science."",
+              ""parentId"": ""Ugw3EHJzTfKGdgI2T7J4AaABAg"",
+              ""authorDisplayName"": ""Jo Soffat"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMApj1GsvxSLClY3Cy9c6DD8mVh6ae2F8p8OKMWBc6AKNy3Jqftki-MSRzhw1mn=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC25ORELOmme2nTAdOlY1mNQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC25ORELOmme2nTAdOlY1mNQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2022-11-21T09:47:53Z"",
+              ""updatedAt"": ""2022-11-21T09:47:53Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ee-9a6V0q63Mx_zDb2C7s7vrde0"",
+      ""id"": ""UgxPzBF0UXADS5VaMSF4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""TRgaOP9xAS6ew-0tBYyqmuYtCTY"",
+          ""id"": ""UgxPzBF0UXADS5VaMSF4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""The first equation for velocity in relative intertial frames were actually not discovered by Einstein but by Galileo. Loved the video very clear !"",
+            ""textOriginal"": ""The first equation for velocity in relative intertial frames were actually not discovered by Einstein but by Galileo. Loved the video very clear !"",
+            ""authorDisplayName"": ""Maxime Gr"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPSu-qkDuOeFdJW5MBC3WBc5SMZX030ZV7GWNnQIg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_tK8FxY9qKDe7ujK48U8kw"",
+            ""authorChannelId"": {
+              ""value"": ""UC_tK8FxY9qKDe7ujK48U8kw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 43,
+            ""publishedAt"": ""2021-12-24T15:53:54Z"",
+            ""updatedAt"": ""2021-12-24T15:53:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""BT6Zk9xXyorL4lusrvx8Q42i9DY"",
+      ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""rcXE6OMYRSptx4CH158Ms0NuKvs"",
+          ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Imagine the things Einstein would&#39;ve discovered if he was alive today"",
+            ""textOriginal"": ""Imagine the things Einstein would've discovered if he was alive today"",
+            ""authorDisplayName"": ""Lukhman Thufile"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP4AEGb-6U2gTczwFFQIo680fxuT8dQLdozz81MRQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCHGHDXj3CJ7rbQL2vFYy65Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCHGHDXj3CJ7rbQL2vFYy65Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 3944,
+            ""publishedAt"": ""2020-05-14T02:38:42Z"",
+            ""updatedAt"": ""2020-05-14T02:38:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 94,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""3AzLSehMfGV43Nq8U7Li-eTIoOM"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u990Vt9mM8DI"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""A mind like Einstein&#39;s or literally the over 141 years old Einstein?"",
+              ""textOriginal"": ""A mind like Einstein's or literally the over 141 years old Einstein?"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""Mr. Loowiz"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPvASgoUsI6MuGIBUU_KJmmfV2YrFQIha_FKLVU=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGG4glK6cxJtCvABRNe_0Hw"",
+              ""authorChannelId"": {
+                ""value"": ""UCGG4glK6cxJtCvABRNe_0Hw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 212,
+              ""publishedAt"": ""2020-05-23T22:19:03Z"",
+              ""updatedAt"": ""2020-05-23T22:19:15Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""NsZEZsM1W7djUlulsMO4jgPkvvg"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u99PXKOEF-F2"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""I think he did well even in his own time .. who knows what he would have done today"",
+              ""textOriginal"": ""I think he did well even in his own time .. who knows what he would have done today"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""juni741"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNzwc_5mzOstEsCs_3R3xNjhtFnH_FwHf6gBxN5=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCawrRWZnRXJPMW9LUYXV5lw"",
+              ""authorChannelId"": {
+                ""value"": ""UCawrRWZnRXJPMW9LUYXV5lw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 232,
+              ""publishedAt"": ""2020-06-02T15:32:39Z"",
+              ""updatedAt"": ""2020-06-02T15:32:39Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Cs4td9RNCIAy0oHzpcrJgzmkGSU"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u99SDfL3AxdG"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""he will still be experimenting in his thought"",
+              ""textOriginal"": ""he will still be experimenting in his thought"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""lutfi ramly"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOOoggv_cn0P01Ha6Kl8RaBn8g-NqXG8hWiTSTZww=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzy_NnHegw_1-w8GonvqWfA"",
+              ""authorChannelId"": {
+                ""value"": ""UCzy_NnHegw_1-w8GonvqWfA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 39,
+              ""publishedAt"": ""2020-06-03T16:38:36Z"",
+              ""updatedAt"": ""2020-06-03T16:38:36Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""vdVRgqWv9J2PMno2S4UQAt0yc-o"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u99UyFZI1pM6"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""hot tub time machine yeehaw"",
+              ""textOriginal"": ""hot tub time machine yeehaw"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""Paolo Apacible"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNyCGljoDyPiuDVd7G-JHSTcs68KuZuWT0vFg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCmDPb2P9F-t9nsKD6VunTcw"",
+              ""authorChannelId"": {
+                ""value"": ""UCmDPb2P9F-t9nsKD6VunTcw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 63,
+              ""publishedAt"": ""2020-06-04T18:12:52Z"",
+              ""updatedAt"": ""2020-06-04T18:12:52Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Vxn9COY_nKUtYaHiYFBKqBT3j3I"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u99xWCIZes5Q"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Lukhman Thufile he’d making tik tok"",
+              ""textOriginal"": ""Lukhman Thufile he’d making tik tok"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""rishabh sharma"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOzyVT2-w4FPomx_LBY1p-YGGqqKLAO0xIv4bra=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCVn03vDPR1biF8fW_qm5McQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCVn03vDPR1biF8fW_qm5McQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 140,
+              ""publishedAt"": ""2020-06-16T05:36:14Z"",
+              ""updatedAt"": ""2020-06-16T05:36:14Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vnEL273jvhMV_IPwboe6XeykVSY"",
+      ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""9NIAh_czFukGleIAsi9JnjPa6pE"",
+          ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""I’m 19 and was never really into science at school, I was a humanities guy, and there’s nothing I regret more than not learning more about it"",
+            ""textOriginal"": ""I’m 19 and was never really into science at school, I was a humanities guy, and there’s nothing I regret more than not learning more about it"",
+            ""authorDisplayName"": ""alex"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/mFnRYaDZ5TKsu1OfUirAONbdJzL5d6XKQXRwaLUcVctWNWwb7q1BZq6BCX6YY-z1ikfss12yQA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTAvExdApWfexwRpvf6ElsQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCTAvExdApWfexwRpvf6ElsQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 36,
+            ""publishedAt"": ""2021-09-23T22:25:30Z"",
+            ""updatedAt"": ""2021-09-23T22:25:30Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 4,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""LbfgXzmcToBtwulhV5Gyhi6zJ6o"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9cLrLGOhNOm"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""you don&#39;t need school to learn science 👍"",
+              ""textOriginal"": ""you don't need school to learn science 👍"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Ankit Paul"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqObYnWtO8H7xxAoQw-3Eyx5ahvgXq3O6aLeSuhxfg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCctn5SmW_izXf-4iDJWZp3Q"",
+              ""authorChannelId"": {
+                ""value"": ""UCctn5SmW_izXf-4iDJWZp3Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 3,
+              ""publishedAt"": ""2022-06-16T21:01:08Z"",
+              ""updatedAt"": ""2022-06-16T21:01:08Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""eVnG85WDpcr0nPHacKc3ZvONdbk"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9d3h9YSJsiN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""arts are cool but nothing compares to facts and logic aka science"",
+              ""textOriginal"": ""arts are cool but nothing compares to facts and logic aka science"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Erin Jäger"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/kFgdPTDKJVmyBQDnhFilPczkzdovVscBvR9QKCSv8krCsqaLDflWmEFpvaVqzC1JiMJ9nd5MPw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-mZ_CKQK1-Sc57G-OmHiSQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC-mZ_CKQK1-Sc57G-OmHiSQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-04T16:17:13Z"",
+              ""updatedAt"": ""2022-07-04T16:17:13Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""2lULFDLDy18VlGXy-GnVXCX7O98"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9dq7SQjc4He"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""me and you both. I&#39;m 19 too and hated maths and physics at school (and I still hate), what I like about physics is the theories and astronomy, I hate the calculations and formulas. I liked that part of physics while I was still at school but only now I started diving deeper into it"",
+              ""textOriginal"": ""me and you both. I'm 19 too and hated maths and physics at school (and I still hate), what I like about physics is the theories and astronomy, I hate the calculations and formulas. I liked that part of physics while I was still at school but only now I started diving deeper into it"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Rafael Muniz"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMQuA46QvDa5b-2qpZ2qjmVSkBMhHgQkR8YV6EUpw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNbawwJklXU-yDeLMZYhK_g"",
+              ""authorChannelId"": {
+                ""value"": ""UCNbawwJklXU-yDeLMZYhK_g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-23T20:58:31Z"",
+              ""updatedAt"": ""2022-07-23T20:58:31Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""qiwJsXe9pFCpzALnCe1y1O-Pni0"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9mrwT8Mt_TK"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Find the point where science and art are one. True art is said to stop the mind in it&#39;s tracks. The mind bows to that which is beyond it&#39;s capabilities. Einstein is said to have made his greatest discoveries when his mind was still. A state of no mind was his clearest. The ideas just came to him if I read correctly. \u003cbr\u003eThey can support each other. They don&#39;t have to compete (science and the humanities)"",
+              ""textOriginal"": ""Find the point where science and art are one. True art is said to stop the mind in it's tracks. The mind bows to that which is beyond it's capabilities. Einstein is said to have made his greatest discoveries when his mind was still. A state of no mind was his clearest. The ideas just came to him if I read correctly. \nThey can support each other. They don't have to compete (science and the humanities)"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Toxic Crusader"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqP7B_Vm09WBhIx0Kxww1uNIWZIvpt22HSupUQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCmSBOxii_2ElL5Gm4YLgwAw"",
+              ""authorChannelId"": {
+                ""value"": ""UCmSBOxii_2ElL5Gm4YLgwAw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2023-03-05T06:34:47Z"",
+              ""updatedAt"": ""2023-03-05T06:36:01Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vWAU4fGONTIUdIVebXEU8LnsW4I"",
+      ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""Ehyb8YKEJt780RlLdR2Mb6BeZFU"",
+          ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""The one part of this that will never click in my brain is the concept of aging differently based on what speed you are travelling, I&#39;ve never seen that part of the law explained in a way that makes any logical sense at all.. I understand relativity, I understand that the faster you travel away from something (say, Earth for example) then the slower in time it appears to move, up until you travel at light speed where everything you observe back on earth shall appear to stop in time - I get that no problem. What I don&#39;t understand is that surely the moment you travel back towards earth at the speed of light, then wouldn&#39;t you just observe everything on earth moving much faster now, therefore technically &quot;undoing&quot; the slowed/stopped time that you previously observed..? How is time dilation anything more than a mere observation, how can it possibly be an absolute change in time if you end up travelling back to where you began your journey? I want to make sense of this and have tried for years but I&#39;ve never seen or heard an explanation that does it justice."",
+            ""textOriginal"": ""The one part of this that will never click in my brain is the concept of aging differently based on what speed you are travelling, I've never seen that part of the law explained in a way that makes any logical sense at all.. I understand relativity, I understand that the faster you travel away from something (say, Earth for example) then the slower in time it appears to move, up until you travel at light speed where everything you observe back on earth shall appear to stop in time - I get that no problem. What I don't understand is that surely the moment you travel back towards earth at the speed of light, then wouldn't you just observe everything on earth moving much faster now, therefore technically \""undoing\"" the slowed/stopped time that you previously observed..? How is time dilation anything more than a mere observation, how can it possibly be an absolute change in time if you end up travelling back to where you began your journey? I want to make sense of this and have tried for years but I've never seen or heard an explanation that does it justice."",
+            ""authorDisplayName"": ""Grubbie"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/EAptuKayVhH719-bT4r5gpqYeN7JK-roN9KXCv89UvThZZHTG9rRKLHDOwQ49xNCm4T8jQVjLg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTCSe5wNUhmL9Mm1y6LES6Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCTCSe5wNUhmL9Mm1y6LES6Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 196,
+            ""publishedAt"": ""2021-01-10T21:47:02Z"",
+            ""updatedAt"": ""2021-01-10T21:47:02Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 58,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""XWC1cVr2Z-UNiZ5vpz6FXBNAvPo"",
+            ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg.9ILpdd94TdL9YN40fHWBGa"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""same"",
+              ""textOriginal"": ""same"",
+              ""parentId"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+              ""authorDisplayName"": ""Cucumber1234"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/F2xH7BWLA6eoBSR-mtH7OeTmDIIR-mJPF3qHC7R8zxOUCRt_dL1W9mewVV2Qk1K5QXNpM8Bx5fs=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjBRxqvR-QpgLcnlnRkkpig"",
+              ""authorChannelId"": {
+                ""value"": ""UCjBRxqvR-QpgLcnlnRkkpig""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 8,
+              ""publishedAt"": ""2022-02-13T01:42:56Z"",
+              ""updatedAt"": ""2022-02-13T01:42:56Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""JogiM-iFm86fELFvx98L6PmTGjc"",
+            ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg.9ILpdd94TdL9YcvhFa-e66"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""commenting here so I get a notification in case someone posts an answer"",
+              ""textOriginal"": ""commenting here so I get a notification in case someone posts an answer"",
+              ""parentId"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+              ""authorDisplayName"": ""lary o daily"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/YKNjRZT2vYidyyZZBlKkugAB3xZJwB3wpYxmUrMtus0BIc3StT7c7PT9IccpcsZReqZRtK1M5g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCPw4P830fSgwjg0o9UE3xRA"",
+              ""authorChannelId"": {
+                ""value"": ""UCPw4P830fSgwjg0o9UE3xRA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 11,
+              ""publishedAt"": ""2022-02-19T14:48:35Z"",
+              ""updatedAt"": ""2022-02-19T14:48:35Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""FB55o341JG-dPAO1qlVj53ZLK2I"",
+            ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg.9ILpdd94TdL9YtI5nEKeWv"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""I think it is because you somehow get closer  the speed of an unit of time thus,time goes by soo slowly , and space is  becoming meaningles compared to  people on earth,while everything about space is still same on earth  and going on its own pace .For the person on earth to perceive things about space ,there needs to pass more units of time.I hope i could explain what i understood.:)"",
+              ""textOriginal"": ""I think it is because you somehow get closer  the speed of an unit of time thus,time goes by soo slowly , and space is  becoming meaningles compared to  people on earth,while everything about space is still same on earth  and going on its own pace .For the person on earth to perceive things about space ,there needs to pass more units of time.I hope i could explain what i understood.:)"",
+              ""parentId"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+              ""authorDisplayName"": ""Serdar Eker"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMC3Odu8AvKiUHt-blOhLRTDPe8X_HEBD3agw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCimTC2civj9pGI_RWtvg_iw"",
+              ""authorChannelId"": {
+                ""value"": ""UCimTC2civj9pGI_RWtvg_iw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 3,
+              ""publishedAt"": ""2022-02-25T23:20:54Z"",
+              ""updatedAt"": ""2022-02-25T23:20:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""FY-AHtwiRCUO3Lt69Rj5Sh7YdeE"",
+            ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg.9ILpdd94TdL9ZARVTWggwU"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Maybe because light experiences no time, therefore if you are a massless particle going through the universe at the speed of light, you would have to be light. It’s un achievable to weigh and travel that fast otherwise light would be able to go faster then it already does if that makes sense. I’m no expert"",
+              ""textOriginal"": ""Maybe because light experiences no time, therefore if you are a massless particle going through the universe at the speed of light, you would have to be light. It’s un achievable to weigh and travel that fast otherwise light would be able to go faster then it already does if that makes sense. I’m no expert"",
+              ""parentId"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+              ""authorDisplayName"": ""RJ Oldon"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMb2OWp7vLFspHocV2q-ilYO4uiVI6eMcbc6w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCyyzn_j_I-NqDJbM4c8iAsA"",
+              ""authorChannelId"": {
+                ""value"": ""UCyyzn_j_I-NqDJbM4c8iAsA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 11,
+              ""publishedAt"": ""2022-03-05T00:29:23Z"",
+              ""updatedAt"": ""2022-03-05T00:29:23Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""mjnob5wcD8EVxFm8WrR6wv0l9X8"",
+            ""id"": ""UgxcnjBYPjALXU3Xv_t4AaABAg.9ILpdd94TdL9ZmpzRhfSGS"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Yes, that makes me frustrated also!"",
+              ""textOriginal"": ""Yes, that makes me frustrated also!"",
+              ""parentId"": ""UgxcnjBYPjALXU3Xv_t4AaABAg"",
+              ""authorDisplayName"": ""Mohd Waseem"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqN1ETiZb0xr7tTQokTLfNGfLMvwwJ2NYJAhHGVy6Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCcNqzcuV8PaQ6l73m9LCMvQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCcNqzcuV8PaQ6l73m9LCMvQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 4,
+              ""publishedAt"": ""2022-03-20T07:42:26Z"",
+              ""updatedAt"": ""2022-03-20T07:42:26Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""v0tyDtO-3DVogP7LL-yCdKMluYw"",
+      ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""3EF4veNAPcM7sEa9xM_gU7asRIA"",
+          ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Thanks, gradually after watching these extremely useful videos a few times, I am beginning to understand these concepts of time dilation and Einstein&#39;s theory of relativity."",
+            ""textOriginal"": ""Thanks, gradually after watching these extremely useful videos a few times, I am beginning to understand these concepts of time dilation and Einstein's theory of relativity."",
+            ""authorDisplayName"": ""Jabs05"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/vHY3YXEdOCQhVIE8Xzs5msUm0ev7GWC38OdnYRdtPxiMVzUtjgmKi-VRq25yo1yMX22QZhTd9A=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIF96YVwTaV4PiaM-PIwBDA"",
+            ""authorChannelId"": {
+              ""value"": ""UCIF96YVwTaV4PiaM-PIwBDA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 17,
+            ""publishedAt"": ""2022-07-12T19:11:44Z"",
+            ""updatedAt"": ""2022-07-12T19:11:44Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 3,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""9A9cWYiDmaddYEU_SUJxvv3mbrs"",
+            ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg.9dObUfhtwNi9jQ6F0-dupk"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Why I still don’t understand 😢"",
+              ""textOriginal"": ""Why I still don’t understand 😢"",
+              ""parentId"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+              ""authorDisplayName"": ""HappyKawin"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/6EaxZnXfjY26DkqvxPz3khrzCJwawiovY898xYVdnAFPw-y0ofIwQTAR7ErFy8YwWBHRqdRH=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCx6lyE-jh0334JI4JgYWzVA"",
+              ""authorChannelId"": {
+                ""value"": ""UCx6lyE-jh0334JI4JgYWzVA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-09T12:16:49Z"",
+              ""updatedAt"": ""2022-12-09T12:16:49Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""o60pGDqVXqBBh0lxUQzOp2LBEds"",
+            ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg.9dObUfhtwNi9jQ6oG8Ilku"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@HappyKawin I never said I understood completely, I only said I am beginning to understand. So we are in the same boat."",
+              ""textOriginal"": ""@HappyKawin I never said I understood completely, I only said I am beginning to understand. So we are in the same boat."",
+              ""parentId"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+              ""authorDisplayName"": ""Jabs05"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/vHY3YXEdOCQhVIE8Xzs5msUm0ev7GWC38OdnYRdtPxiMVzUtjgmKi-VRq25yo1yMX22QZhTd9A=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIF96YVwTaV4PiaM-PIwBDA"",
+              ""authorChannelId"": {
+                ""value"": ""UCIF96YVwTaV4PiaM-PIwBDA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-12-09T12:21:46Z"",
+              ""updatedAt"": ""2022-12-09T12:21:46Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""QGAcXA1GqFh5AH1KedWO4H4Bigo"",
+            ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg.9dObUfhtwNi9k9NYmTd2O2"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Jabs05 ahhh thanks bro. appreciated! 😂"",
+              ""textOriginal"": ""@Jabs05 ahhh thanks bro. appreciated! 😂"",
+              ""parentId"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+              ""authorDisplayName"": ""HappyKawin"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/6EaxZnXfjY26DkqvxPz3khrzCJwawiovY898xYVdnAFPw-y0ofIwQTAR7ErFy8YwWBHRqdRH=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCx6lyE-jh0334JI4JgYWzVA"",
+              ""authorChannelId"": {
+                ""value"": ""UCx6lyE-jh0334JI4JgYWzVA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-12-27T20:52:22Z"",
+              ""updatedAt"": ""2022-12-27T20:52:22Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""CzyJdlfsQTte4DfpDtG4mJEAR7Q"",
+      ""id"": ""UgxncX2ia9Y5bWr5AcV4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""hU58K-4PXJeFVIFvGbhlkZJE6b4"",
+          ""id"": ""UgxncX2ia9Y5bWr5AcV4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""The fact that Einstein thought about this experiment and could accurately predict it’s result without even knowing what would happen is astounding \u003cbr\u003eIf he was alive now,he could probably accurately predict what is inside a black hole and what would happen to human in it😢"",
+            ""textOriginal"": ""The fact that Einstein thought about this experiment and could accurately predict it’s result without even knowing what would happen is astounding \nIf he was alive now,he could probably accurately predict what is inside a black hole and what would happen to human in it😢"",
+            ""authorDisplayName"": ""The Integrated  Guy"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqPFyZHfaOU2ty1cO0IxfNjxQGtJ-HBpXeDfCZOD34elmocADV4G8X9bed3YqJOC=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC3pEZRqxjFQc18RAkiTmZSQ"",
+            ""authorChannelId"": {
+              ""value"": ""UC3pEZRqxjFQc18RAkiTmZSQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 4,
+            ""publishedAt"": ""2022-06-23T01:10:37Z"",
+            ""updatedAt"": ""2022-06-23T01:10:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RjBYzbqZ65tyZZkh07FMBp66vk0"",
+      ""id"": ""UgwNXP6awLg0XxXthfh4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""i_Pj4aM1N-bJGX6K82rjReM2qyU"",
+          ""id"": ""UgwNXP6awLg0XxXthfh4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Really interesting video, everything was explained very clearly. Thanks!"",
+            ""textOriginal"": ""Really interesting video, everything was explained very clearly. Thanks!"",
+            ""authorDisplayName"": ""MikeyM32_"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqO45Oc1SC4finBoksYZfKfwtoU3C7_Ts4F8jh6f=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCorMo0XVV0lBRApkK6uTu_w"",
+            ""authorChannelId"": {
+              ""value"": ""UCorMo0XVV0lBRApkK6uTu_w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 15,
+            ""publishedAt"": ""2021-05-23T05:29:34Z"",
+            ""updatedAt"": ""2021-05-23T05:29:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""XMfqGPJErcJbWiIlnFAGu-Yyvo0"",
+      ""id"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""BJxmT_NFz9yVAO76Vcdc3NH3m0s"",
+          ""id"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Let&#39;s just acknowledge how all of his theories were &quot;imagined&quot; before he proved them"",
+            ""textOriginal"": ""Let's just acknowledge how all of his theories were \""imagined\"" before he proved them"",
+            ""authorDisplayName"": ""Proud to be brown"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOc3IzwwTQd853vr59RNwriWYpdaEIViA3wQfdtmw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCia1ugz4gcEhP94imWF4Y4A"",
+            ""authorChannelId"": {
+              ""value"": ""UCia1ugz4gcEhP94imWF4Y4A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 2716,
+            ""publishedAt"": ""2020-07-05T12:32:42Z"",
+            ""updatedAt"": ""2020-07-05T12:32:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 60,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""KczUxusshbzi3bPsbFZSM78Nm2U"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9Bnx65tcfZA"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Really fascinating. One thing I personally find interesting is the discussion of time relativity in the Quran, which was revealed about 1400 years ago.  It discusses, for example, how time is experienced differently in the different ‘skies’ or ‘dimensions’ of the universe. It’s mentioned that there are 7 such ‘skies’ or ‘dimensions’ (in fact – we’re told the observable stars belong to only the first sky/dimension). For example, one verse translates roughly to: “He arranges [each] matter from the heaven to the earth; then it will ascend to Him in a Day, the extent of which is a thousand years of those which you count.” [32:5] I find it very interesting, especially given it was revealed about 1400 years ago :) If you’re interested in learning more don’t hesitate to ask."",
+              ""textOriginal"": ""Really fascinating. One thing I personally find interesting is the discussion of time relativity in the Quran, which was revealed about 1400 years ago.  It discusses, for example, how time is experienced differently in the different ‘skies’ or ‘dimensions’ of the universe. It’s mentioned that there are 7 such ‘skies’ or ‘dimensions’ (in fact – we’re told the observable stars belong to only the first sky/dimension). For example, one verse translates roughly to: “He arranges [each] matter from the heaven to the earth; then it will ascend to Him in a Day, the extent of which is a thousand years of those which you count.” [32:5] I find it very interesting, especially given it was revealed about 1400 years ago :) If you’re interested in learning more don’t hesitate to ask."",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""Sounds of Company"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOnEqt1ZzL63GGX_bpfMCjO6dFOjO3XLUBfRHQa6g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UClV2SuiFErgiXqAPXv9Nw8Q"",
+              ""authorChannelId"": {
+                ""value"": ""UClV2SuiFErgiXqAPXv9Nw8Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 139,
+              ""publishedAt"": ""2020-08-01T05:30:26Z"",
+              ""updatedAt"": ""2020-08-01T05:30:26Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""KH_2nwDKW5G7O6kjovr5Q3czHq4"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9C4mThxSgQP"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""he is the all time genius"",
+              ""textOriginal"": ""he is the all time genius"",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""Kashka"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqORpxlmtVpAdyFN1g2BZSoI-e4Q-MNTBtez64I7cw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCERm7AMrFDuo1VQb5e9BG7A"",
+              ""authorChannelId"": {
+                ""value"": ""UCERm7AMrFDuo1VQb5e9BG7A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 19,
+              ""publishedAt"": ""2020-08-08T03:43:52Z"",
+              ""updatedAt"": ""2020-08-08T03:43:52Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""t7xU9gZVEvS4UmNk-bZY1tlh-P8"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9CE4VbTkkkU"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Sounds of Company hey, may I know where are you from?"",
+              ""textOriginal"": ""@Sounds of Company hey, may I know where are you from?"",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""enjie"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/-MkWchnUnoGJaP8mX-t07VtHroOwBGb78WlJ8PsQFZearpadXylAoy-JPerKzzafipqXTJsE=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJFQOBFUESpV6wHN7UgGQDA"",
+              ""authorChannelId"": {
+                ""value"": ""UCJFQOBFUESpV6wHN7UgGQDA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 8,
+              ""publishedAt"": ""2020-08-11T18:23:19Z"",
+              ""updatedAt"": ""2020-08-11T18:23:19Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""IVCYLVSoKB4IwyKmq4WNu2nMWy8"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9CE6OTUgY4W"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@enjie Canada :)"",
+              ""textOriginal"": ""@enjie Canada :)"",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""Sounds of Company"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOnEqt1ZzL63GGX_bpfMCjO6dFOjO3XLUBfRHQa6g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UClV2SuiFErgiXqAPXv9Nw8Q"",
+              ""authorChannelId"": {
+                ""value"": ""UClV2SuiFErgiXqAPXv9Nw8Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 12,
+              ""publishedAt"": ""2020-08-11T18:39:49Z"",
+              ""updatedAt"": ""2020-08-11T18:39:49Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""eogqhHWhJGKCi4fUP7Wsl6mI0vY"",
+      ""id"": ""Ugwf0qNvPeqmmAPy0sZ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""iLWMEBqnXHP5prQWe40gwExAkew"",
+          ""id"": ""Ugwf0qNvPeqmmAPy0sZ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Who else finds this completely fascinating? I have never learned about time dilation in school. It makes it so interesting."",
+            ""textOriginal"": ""Who else finds this completely fascinating? I have never learned about time dilation in school. It makes it so interesting."",
+            ""authorDisplayName"": ""COD GOD"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/FLd7HVckgv4Hn6FjN6C33OUjUYPoLjOCEoJmWYGWGYbnbZ-womTldcMIxTCqx5Wr_2KQRGfU=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjhIcWnWwFt1L4kaoSxwtAQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCjhIcWnWwFt1L4kaoSxwtAQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 4,
+            ""publishedAt"": ""2023-03-23T07:19:54Z"",
+            ""updatedAt"": ""2023-03-23T07:19:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 1,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""nQvvDyyQTZGSa6JI0G74oFqD-FM"",
+      ""id"": ""UgxB9LSLUIUGcQc3bCB4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""dFy3UbQQf40RB1JCyx6gNnZQoZQ"",
+          ""id"": ""UgxB9LSLUIUGcQc3bCB4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""I really like the way you explained this video regarding the dilation of time. I don’t know, maybe it’s your calm demeanor that made it all the more interesting. Be that as it may, please don’t stop making these videos 👍🏼"",
+            ""textOriginal"": ""I really like the way you explained this video regarding the dilation of time. I don’t know, maybe it’s your calm demeanor that made it all the more interesting. Be that as it may, please don’t stop making these videos 👍🏼"",
+            ""authorDisplayName"": ""Robert Costello"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOsA5km5ZXyjaNdiXk1EGZMicW_Mv2wimeGuudW4g=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCKOj7LNBoFqTgMUqUn6xeag"",
+            ""authorChannelId"": {
+              ""value"": ""UCKOj7LNBoFqTgMUqUn6xeag""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 4,
+            ""publishedAt"": ""2021-07-29T19:46:57Z"",
+            ""updatedAt"": ""2021-07-29T19:46:57Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_Ot0wDj9y8WW8fIoVvM6riuC0DA"",
+      ""id"": ""UgzA6cm3lpG9bgwPpy14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""-WBY57WO0FootFD2-8mNuvllxsg"",
+          ""id"": ""UgzA6cm3lpG9bgwPpy14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""A mind-blowing concept !! 🤯\u003cbr\u003eGotta love physics once you understand it❤️"",
+            ""textOriginal"": ""A mind-blowing concept !! 🤯\nGotta love physics once you understand it❤️"",
+            ""authorDisplayName"": ""Scout ff"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/m62HkLEU5iyTMNUbRw8qMeCbpKWkodVHkq64EWGtDidhJfn3EFrFP7JCuIDMnJZbLctgAjL7=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCfpyZRgC-aTwcdcWOVuq6HA"",
+            ""authorChannelId"": {
+              ""value"": ""UCfpyZRgC-aTwcdcWOVuq6HA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 4,
+            ""publishedAt"": ""2023-02-02T02:04:23Z"",
+            ""updatedAt"": ""2023-02-02T02:04:23Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 1,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""VHCnz8DB2LET43W0mmY8gdt2eak"",
+            ""id"": ""UgzA6cm3lpG9bgwPpy14AaABAg.9lbcs_HN7AJ9lm6YHJNq2y"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""trust me, you still dont understand it."",
+              ""textOriginal"": ""trust me, you still dont understand it."",
+              ""parentId"": ""UgzA6cm3lpG9bgwPpy14AaABAg"",
+              ""authorDisplayName"": ""EnZo"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/XS5K6jjkOrTqbHmgoWk_WZF2uqzWXAlTpz_CWhXhphEFHGkBeiLu7c99ctpmuuWaZzJBCfXCOQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIHAcjKMRwSLFKbiQBo0CYQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCIHAcjKMRwSLFKbiQBo0CYQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2023-02-06T03:44:46Z"",
+              ""updatedAt"": ""2023-02-06T03:44:46Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""NDhMjLZrHscgyOyUx1c4tRYvbXU"",
+      ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""DJm9FiiRSmLl2FKlCB9FjSTyiJs"",
+          ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Thank you for this video, lots of video&#39;s do not give mention to the fact that Einstein&#39;s final theory does see: the speed of light as a constant.\u003cbr\u003eIt really is important to integrate that with the general theory of relativity, all things actually do have a speed with respect to light. thats how its possible to know your speed with a light clock, and not a mechanical one."",
+            ""textOriginal"": ""Thank you for this video, lots of video's do not give mention to the fact that Einstein's final theory does see: the speed of light as a constant.\nIt really is important to integrate that with the general theory of relativity, all things actually do have a speed with respect to light. thats how its possible to know your speed with a light clock, and not a mechanical one."",
+            ""authorDisplayName"": ""Adhi Palar"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOvjftMFlDccJLpPtzDOvSnOpTuK69RWk3Jbg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCz6bISG_jHXevJET71yc5UA"",
+            ""authorChannelId"": {
+              ""value"": ""UCz6bISG_jHXevJET71yc5UA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 15,
+            ""publishedAt"": ""2021-06-22T16:20:37Z"",
+            ""updatedAt"": ""2021-06-22T16:22:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 2,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""WyHpUYeZDf1r_sCK2PXMzT5z47U"",
+            ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg.9OtxrZAfRVn9RXrwS87kOB"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""How is each relative speed translated with respect to the light constant? Is there a different equation?"",
+              ""textOriginal"": ""How is each relative speed translated with respect to the light constant? Is there a different equation?"",
+              ""parentId"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+              ""authorDisplayName"": ""Elijah Gavin"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/gzJV9tjjSiy6i4PdOT-xCfHmK5pU3Is0RQLw5oczl2qUfkRimbr9_v4olyLKC9raAifpYBYhQ58=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvFOQLuqu4YuPdLIhGgoGsw"",
+              ""authorChannelId"": {
+                ""value"": ""UCvFOQLuqu4YuPdLIhGgoGsw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-27T06:40:30Z"",
+              ""updatedAt"": ""2021-08-27T06:40:30Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""3JUH4C_CgIRprkC4GcqXLHN0JpQ"",
+            ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg.9OtxrZAfRVn9SdYEgPqzND"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Elijah Gavin your speed can actually be measured as a fraction of the speed of light, and that is also going to control time dilation."",
+              ""textOriginal"": ""@Elijah Gavin your speed can actually be measured as a fraction of the speed of light, and that is also going to control time dilation."",
+              ""parentId"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+              ""authorDisplayName"": ""Adhi Palar"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOvjftMFlDccJLpPtzDOvSnOpTuK69RWk3Jbg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCz6bISG_jHXevJET71yc5UA"",
+              ""authorChannelId"": {
+                ""value"": ""UCz6bISG_jHXevJET71yc5UA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2021-09-23T17:25:42Z"",
+              ""updatedAt"": ""2021-09-23T17:25:42Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fGcx2xArse8U0u5IJ65GTvafuc8"",
+      ""id"": ""Ugzhdpq5iZjU1lUVJOF4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""t2YPq1JQcfpl2zbYF_FyAucqbrY"",
+          ""id"": ""Ugzhdpq5iZjU1lUVJOF4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Amazing stuff; the moment I learnt that the speed of light is not about lightbut about causality, I started to understand that causality probably dictates all the experience of space and time we have; and it makes sense (causality is so fundamental; like something needs to actually happen before you see it happens, there’s no way around it); I would even think the causality would REQUIRE the universe to exist and exist in the exact way it shows; hope some great minds can resolve this"",
+            ""textOriginal"": ""Amazing stuff; the moment I learnt that the speed of light is not about lightbut about causality, I started to understand that causality probably dictates all the experience of space and time we have; and it makes sense (causality is so fundamental; like something needs to actually happen before you see it happens, there’s no way around it); I would even think the causality would REQUIRE the universe to exist and exist in the exact way it shows; hope some great minds can resolve this"",
+            ""authorDisplayName"": ""Ammon Lu"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqOpUPbbK84sH68Qtf1wz-96do5tqKOpb34DBg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCWaovHNL22Wnu-5dwnT93xA"",
+            ""authorChannelId"": {
+              ""value"": ""UCWaovHNL22Wnu-5dwnT93xA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 4,
+            ""publishedAt"": ""2022-11-27T23:34:18Z"",
+            ""updatedAt"": ""2022-11-27T23:34:18Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""uNlDtB_X7Bb6Dx-J8hCi7imhhJs"",
+      ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""g3I8vuW2lUi_EfzqJtCdGw5Xu5w"",
+          ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""time dilatation can be observed when your wife says she needs 5 minutes to get dressed. On your watch it passed 45 minutesbut for her it&#39;s still 5 minutes."",
+            ""textOriginal"": ""time dilatation can be observed when your wife says she needs 5 minutes to get dressed. On your watch it passed 45 minutesbut for her it's still 5 minutes."",
+            ""authorDisplayName"": ""exakdev"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNx79an44RloziIsGIunXAyYPyzWwWQeASIBQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYNDRtwhofH8FXcdpT13A5Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCYNDRtwhofH8FXcdpT13A5Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 15066,
+            ""publishedAt"": ""2019-04-23T07:13:14Z"",
+            ""updatedAt"": ""2019-04-23T07:13:14Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 231,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""LBaJIyi61kmdFXRIiwczfVNHDBg"",
+            ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg.8u3DRDQK-Mr8u4XT7pH5HI"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Someone Give Nobel To This Man"",
+              ""textOriginal"": ""Someone Give Nobel To This Man"",
+              ""parentId"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+              ""authorDisplayName"": ""Sanchay Khatri"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/IvJyZBM7reMmXeK_ELO4v_MtL46iiokzIPlyfqCJycL5Exn61U8gT66l9ReUJ5_9TKG9B4Tl=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGifR8PONnQMBb7egrx_hvA"",
+              ""authorChannelId"": {
+                ""value"": ""UCGifR8PONnQMBb7egrx_hvA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1193,
+              ""publishedAt"": ""2019-04-23T19:27:29Z"",
+              ""updatedAt"": ""2019-04-23T19:27:29Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""30s8wPJBEL8zHSjMOlMbYS1O9zw"",
+            ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg.8u3DRDQK-Mr8u9dlvbJJVK"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Lmaooo nice"",
+              ""textOriginal"": ""Lmaooo nice"",
+              ""parentId"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+              ""authorDisplayName"": ""Bill Galarza"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqMOQWW02YUL_pM_b-6EEbQp0x4PwFsr2s0WgcCB=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC4ZaW-evyxxVr9YovbsVd4A"",
+              ""authorChannelId"": {
+                ""value"": ""UC4ZaW-evyxxVr9YovbsVd4A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 162,
+              ""publishedAt"": ""2019-04-25T19:07:34Z"",
+              ""updatedAt"": ""2019-04-25T19:07:34Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""-GfAOU7xK4lPpiJcKAF6Os8hoMs"",
+            ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg.8u3DRDQK-Mr8uJJM9oauTs"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Lol dude😂"",
+              ""textOriginal"": ""Lol dude😂"",
+              ""parentId"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+              ""authorDisplayName"": ""SAGAR PATIL"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNJgtnR1KVVh5f9-nhtqZMNwsZv1m2rXyVy6xKkEcs=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzKwwwAUlC4c4AfHaUnKEog"",
+              ""authorChannelId"": {
+                ""value"": ""UCzKwwwAUlC4c4AfHaUnKEog""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 114,
+              ""publishedAt"": ""2019-04-29T13:12:48Z"",
+              ""updatedAt"": ""2019-04-29T13:12:48Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""dJKlFbLKGocsaIZCL8Iac_7tiMQ"",
+            ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg.8u3DRDQK-Mr8uM6y79tKVv"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Time dilation in a nutshell"",
+              ""textOriginal"": ""Time dilation in a nutshell"",
+              ""parentId"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+              ""authorDisplayName"": ""Zeyy"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AGIKgqNLAxI-TwIYSFCdcSTecC_Vx4a5ewuxYU8c73cQDbmvd12MGOwyC-P_HvELxif6=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCptm_P5S7GeVXPZxYGOHBNQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCptm_P5S7GeVXPZxYGOHBNQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 250,
+              ""publishedAt"": ""2019-04-30T15:22:15Z"",
+              ""updatedAt"": ""2019-04-30T15:22:15Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""WjSFdum2pfI_ZGTLyfmHkB6LQTw"",
+            ""id"": ""UgyfKiG3LqW2BlbVuml4AaABAg.8u3DRDQK-Mr8uNjR0KBBVY"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Here is you prize 🥇..."",
+              ""textOriginal"": ""Here is you prize 🥇..."",
+              ""parentId"": ""UgyfKiG3LqW2BlbVuml4AaABAg"",
+              ""authorDisplayName"": ""James"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/CG90JBbfYEIWY1njGKFbQx4BRUmE8hy2zH5EVJuCnfnaBea5-tNP0CzeQrW1_YlKrvTwjmlLCg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMMgzO08K5uyhxXYhMvcTnQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCMMgzO08K5uyhxXYhMvcTnQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 165,
+              ""publishedAt"": ""2019-05-01T06:26:22Z"",
+              ""updatedAt"": ""2019-05-01T06:26:22Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""4myhu3dCxZcWI0GVHUsRSxTSC9E"",
+      ""id"": ""UgyJW3xThIMJi5hzhFl4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""1zDU5bjOm92pMbc7T_hpEnP7nfk"",
+          ""id"": ""UgyJW3xThIMJi5hzhFl4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""i love how we can find solutions to complex problems from simple situations."",
+            ""textOriginal"": ""i love how we can find solutions to complex problems from simple situations."",
+            ""authorDisplayName"": ""ŚAM "",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/864ehbInjlmRm6Fd0DvdLiUr1AXufnOKiEjvBdTT-DmW27phWm2kLSfLYoN66BLlt6iHTrl4BQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCjrE0Ggkg57WnKsjLYqS8dg"",
+            ""authorChannelId"": {
+              ""value"": ""UCjrE0Ggkg57WnKsjLYqS8dg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 6,
+            ""publishedAt"": ""2021-05-05T17:02:10Z"",
+            ""updatedAt"": ""2021-05-05T17:02:10Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxtdjol3m6w2_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""O8HlOt5HzK0GVoBjvsNjLW-EwoU"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 20
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_vf0wd3bc7ihw_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, allThreadsRelatedToChannelId, videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, allThreadsRelatedToChannelId, videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.

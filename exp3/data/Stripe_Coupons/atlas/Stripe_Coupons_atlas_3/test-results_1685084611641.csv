@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jxzwmklgi62h_PostCoupons,200,"{
+  ""id"": ""ykjbZDjsoADc15K"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084628,
+  ""currency"": ""htg"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""war-ridden"",
+  ""percent_off"": 94.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qdw15sik4cis_PostCoupons,200,"{
+  ""id"": ""g3a3II00nlnyQ"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084634,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 75.0,
+  ""redeem_by"": 1698082768,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qxljtze131gw_PostCoupons,200,"{
+  ""id"": ""9gPw2qE89EmB0"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084640,
+  ""currency"": ""tzs"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""quack"",
+  ""percent_off"": 78.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ubrg1mrzeo8j_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_QpDulUnuXndq4D?t=1685084646"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urp5dlacge9l_PostCoupons,200,"{
+  ""id"": ""bW32iGgqCmqrnK1"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685084651,
+  ""currency"": ""sgd"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""miniscule"",
+  ""percent_off"": 2.0,
+  ""redeem_by"": 1705398109,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

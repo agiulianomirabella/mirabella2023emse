@@ -1,0 +1,6 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iexrw2xldni0_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""The open_at provided is too long ago, the timestamp must be within the last two weeks.""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qe1kmrjana5w_getBusinesses,400,"{""error"": {""code"": ""VALIDATION_ERROR"", ""description"": ""Please specify a location or a latitude and longitude""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_skq282s6bqzm_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -104.79472, ""latitude"": 43.16898}}}",application/json,true,none
+test_t4f26wq30i0l_getBusinesses,200,"{""businesses"": [], ""total"": 0, ""region"": {""center"": {""longitude"": -104.94088, ""latitude"": 41.33146}}}",application/json,true,none
+test_t4q5r5fzgg9u_getBusinesses,400,"{""error"": {""code"": ""OPEN_AT_AND_NOW_PROVIDED"", ""description"": ""You must specify either open_at or open_now, not both.""}}",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

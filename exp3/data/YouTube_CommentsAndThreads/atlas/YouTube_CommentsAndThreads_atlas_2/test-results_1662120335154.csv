@@ -1,0 +1,457 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_rh4y8bg5pq2c_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_t86tz66hkoxi_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t8f5dib8w8c6_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""Qg3Ddbx7RcoiJHvR955m2Tfgqg8"",
+  ""nextPageToken"": ""QURTSl9pMzhNSExoeXlYVjNfTU8tN3lOYWt5SmlkUFlWRWhDbGwtLUJ5cmFROGxjVlEyLV8xTnB4WXU0ZGJuY3hUNXFGRHBCMFQxNHRwUmZ5bHNRa1F0OFp3RkdzOFF2U2NsM3VqN1ZELXNPVmRWVXUyX1haY2dlWUtLa1RhY3Y0LVlQaXVIcm91ZllwNFIydVVpRkRUdlBLb3BtclJwYmNDTnU5RkhwRFVGZkppZGsyRUwwMGQyUDFueS14b0p4RFdXRlNCMA=="",
+  ""pageInfo"": {
+    ""totalResults"": 20,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""q-aMncdKgxYL_dJPueuttwXE3h4"",
+      ""id"": ""UgwTtMbYNpe4lEwm5rV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""izU4H1ldaOXaFo2ArUNoru2-uEQ"",
+      ""id"": ""UgxpP7-PK20acmvazUV4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""4nPMg5azuspIWQ8zKo9g5is7FZs"",
+      ""id"": ""UgwjCw9bUQUzZ3Y4dV14AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Vbw-rNOi5xMd6p4mJKatZPH90Oc"",
+            ""id"": ""UgwjCw9bUQUzZ3Y4dV14AaABAg.9IENPkyjhkD9IETtpgPB9a"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""This isnt chinese, is korean."",
+              ""textOriginal"": ""This isnt chinese, is korean."",
+              ""parentId"": ""UgwjCw9bUQUzZ3Y4dV14AaABAg"",
+              ""authorDisplayName"": ""Hablemos de..."",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/-pJGlqP3QRN3YQJaCU6Di41v36q-6mtKzu5nM09uwdbCFwbvSstNhpPyBcHZwkhLLIECu8UEbg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCtO1LEKyJPf4LgIEGVc-2Zw"",
+              ""authorChannelId"": {
+                ""value"": ""UCtO1LEKyJPf4LgIEGVc-2Zw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2021-01-08T01:13:34Z"",
+              ""updatedAt"": ""2021-01-08T01:13:34Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""jAk1J7gGB_W1Zuqq8fJFgMMB8TA"",
+            ""id"": ""UgwjCw9bUQUzZ3Y4dV14AaABAg.9IENPkyjhkD9IERO1_KfIY"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""This is not chinese language"",
+              ""textOriginal"": ""This is not chinese language"",
+              ""parentId"": ""UgwjCw9bUQUzZ3Y4dV14AaABAg"",
+              ""authorDisplayName"": ""Razali Rejang & Rencong"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/j6QzEAEkBl0AZAj91sSbBDs2kgoU5Heh9tCvM8lce1LdSaxm16iUzLeRsFYm64YvzSj_4BFp=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCpv6JUAnv7Jyy3Ky9MBrHkw"",
+              ""authorChannelId"": {
+                ""value"": ""UCpv6JUAnv7Jyy3Ky9MBrHkw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2021-01-08T00:51:37Z"",
+              ""updatedAt"": ""2021-01-08T00:51:37Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""CkpYxNUnuOTABi9tYWoSzrb376c"",
+      ""id"": ""UgyiVyVCDo9aPJKT7Jd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ZXzKZEJ4fLNBFcWPi_9-6zS-9hw"",
+      ""id"": ""Ugwh94zW7_B06mcFGAp4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""v1iNNtNFBQy4OgiQQyiKPaqeL3o"",
+            ""id"": ""Ugwh94zW7_B06mcFGAp4AaABAg.9H3HBKEMf7b9HdhQz2ObUz"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Me"",
+              ""textOriginal"": ""Me"",
+              ""parentId"": ""Ugwh94zW7_B06mcFGAp4AaABAg"",
+              ""authorDisplayName"": ""LOLDOOPY"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/hoJb_3Nbh51PO3odr5njfYUDDNzRf8D-cZDOJGwKAYzVwdUe1E_jdyRFoUOYExl5zEjIizUeeSg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCrauUINHkPqbkr6Xic7MEMQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCrauUINHkPqbkr6Xic7MEMQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-12-24T09:09:26Z"",
+              ""updatedAt"": ""2020-12-24T09:09:26Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""w5HnMqWWxTX5E32o7GA2kGCVoto"",
+            ""id"": ""Ugwh94zW7_B06mcFGAp4AaABAg.9H3HBKEMf7b9Hdfs0GUSKj"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Me"",
+              ""textOriginal"": ""Me"",
+              ""parentId"": ""Ugwh94zW7_B06mcFGAp4AaABAg"",
+              ""authorDisplayName"": ""GDther3alstr33m"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/1uXQMrpJmJTJ7w5GAcSjuHmutNmwqwo9OoanJuoKaH1NO3ziH8PiHZ7bC7EmZyFVi20JdKZ9=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCD2fjqch3e_ifB-GGz2Y-ZQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCD2fjqch3e_ifB-GGz2Y-ZQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-12-24T08:55:47Z"",
+              ""updatedAt"": ""2020-12-24T08:55:47Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""4OvWkU7JTibeY9ETUA2cZM82Qn4"",
+            ""id"": ""Ugwh94zW7_B06mcFGAp4AaABAg.9H3HBKEMf7b9HTib6wW6DD"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Heck yea that’s me"",
+              ""textOriginal"": ""Heck yea that’s me"",
+              ""parentId"": ""Ugwh94zW7_B06mcFGAp4AaABAg"",
+              ""authorDisplayName"": ""karla aguilar"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8aW4beoxYYOQ8jP-Dl0E2buQY4OZktkf3KvpKA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCP3p5lu1PhDFQY5Wu56-asw"",
+              ""authorChannelId"": {
+                ""value"": ""UCP3p5lu1PhDFQY5Wu56-asw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-12-20T02:48:03Z"",
+              ""updatedAt"": ""2020-12-20T02:48:03Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""4C1FfCU2UN4ulfnVxZ8w9SJB7O8"",
+            ""id"": ""Ugwh94zW7_B06mcFGAp4AaABAg.9H3HBKEMf7b9HShDM3M_m9"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Me"",
+              ""textOriginal"": ""Me"",
+              ""parentId"": ""Ugwh94zW7_B06mcFGAp4AaABAg"",
+              ""authorDisplayName"": ""deen naveed"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/4JVj260KSjb1xOGes3sFoXxJ9i3w2hLXywcaraF69vC7skJJDl19NJ6yqH-aRarhimxINkGq2Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJU3fwticEFXi8SQFXgMWdw"",
+              ""authorChannelId"": {
+                ""value"": ""UCJU3fwticEFXi8SQFXgMWdw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-12-19T17:16:41Z"",
+              ""updatedAt"": ""2020-12-19T17:16:41Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""ysAnZj9BD8FEHsiqnHngVLlbCf0"",
+            ""id"": ""Ugwh94zW7_B06mcFGAp4AaABAg.9H3HBKEMf7b9HRbFC3rFh1"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Me"",
+              ""textOriginal"": ""Me"",
+              ""parentId"": ""Ugwh94zW7_B06mcFGAp4AaABAg"",
+              ""authorDisplayName"": ""Amaan Shaikh"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9QrD3i0mdW73oXqqiPiQnY9qj4qT0L7Yb-Xg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCVCfxHc-_8zRNvD3MqPqsbw"",
+              ""authorChannelId"": {
+                ""value"": ""UCVCfxHc-_8zRNvD3MqPqsbw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2020-12-19T07:05:16Z"",
+              ""updatedAt"": ""2020-12-19T07:05:16Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ujpYHMyT-jkgBinhkgyWd1FNEm8"",
+      ""id"": ""UgxEcokCMdDnCF7uduB4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""WuUfHjcXGs1gkaGGFnpLDNWkosM"",
+      ""id"": ""UgxN4BlRwZvApYqMIFR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""YPElkqbQYYGeHdUG_jVFJvgesF0"",
+      ""id"": ""UgzaxMtbwfJyTVy01n14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""xFYgGY2o74-XUvwMykqUSEE_f6I"",
+      ""id"": ""Ugwy8rxHuwnly1CuGd54AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ZlcMd-PJSQevNWcqOtcCgYfL92Q"",
+      ""id"": ""Ugw3XRTyvIK5CWD43C54AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""qII4pOiBhwZ2zekzsAa-96Dsdpg"",
+            ""id"": ""Ugw3XRTyvIK5CWD43C54AaABAg.91nEu8kVvMQ9dd5wXBrvMd"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Oppa Gangnam Style"",
+              ""textOriginal"": ""Oppa Gangnam Style"",
+              ""parentId"": ""Ugw3XRTyvIK5CWD43C54AaABAg"",
+              ""authorDisplayName"": ""Jacob Lewis"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/DkrRiqc9IOQm0AmHPt4dlQCkhcKX4Q4zPWh-mT-VUBu8yy1qVwieXHeAARbRBmHciDwwe0JA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCgzm4WnpfTwwWvoBoMOA16g"",
+              ""authorChannelId"": {
+                ""value"": ""UCgzm4WnpfTwwWvoBoMOA16g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-18T19:35:09Z"",
+              ""updatedAt"": ""2022-07-18T19:35:09Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""3YzVtclNewhe4IZbhQRaiFWjHr0"",
+            ""id"": ""Ugw3XRTyvIK5CWD43C54AaABAg.91nEu8kVvMQ9dVBjV-zmLY"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Hehehe"",
+              ""textOriginal"": ""Hehehe"",
+              ""parentId"": ""Ugw3XRTyvIK5CWD43C54AaABAg"",
+              ""authorDisplayName"": ""tecknovore 3.0"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/0E3lxFay5IJm8nzcSCOKtw3AMngKjupe7bOA6pHHIerl9tlJpo5T8FKM2HnszJZ_2IVdRTTZOw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJS3W8FYwbzc_f5m5FU3zUQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCJS3W8FYwbzc_f5m5FU3zUQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-15T08:32:38Z"",
+              ""updatedAt"": ""2022-07-15T08:32:38Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""mCfmYdujZcxv9zHv2Icc0-GRxyw"",
+            ""id"": ""Ugw3XRTyvIK5CWD43C54AaABAg.91nEu8kVvMQ9dUAB1Ad6vy"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Yuh"",
+              ""textOriginal"": ""Yuh"",
+              ""parentId"": ""Ugw3XRTyvIK5CWD43C54AaABAg"",
+              ""authorDisplayName"": ""Meilin Lee"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/Y9k6SNAKy2NHGg2KJ45nFbQsHWm2KoJ6DgDcmCc43dt_RSQIymNhlndlYskGzMxvlXmAzCPf=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCb_B5M9G--r1GHUfnRTbwGQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCb_B5M9G--r1GHUfnRTbwGQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-14T22:59:49Z"",
+              ""updatedAt"": ""2022-07-14T22:59:49Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Pr_vLZJEDEK7Uu01oHsZJPSEmYc"",
+            ""id"": ""Ugw3XRTyvIK5CWD43C54AaABAg.91nEu8kVvMQ9bwsZkDHHXl"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""Sansuloyo"",
+              ""textOriginal"": ""Sansuloyo"",
+              ""parentId"": ""Ugw3XRTyvIK5CWD43C54AaABAg"",
+              ""authorDisplayName"": ""tecknovore 3.0"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/0E3lxFay5IJm8nzcSCOKtw3AMngKjupe7bOA6pHHIerl9tlJpo5T8FKM2HnszJZ_2IVdRTTZOw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJS3W8FYwbzc_f5m5FU3zUQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCJS3W8FYwbzc_f5m5FU3zUQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-06T18:51:36Z"",
+              ""updatedAt"": ""2022-06-06T18:51:36Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""IaEBVjjxkMFSlsL3o1yI-0EcLUI"",
+      ""id"": ""Ugzz73JUlvonAU37p3N4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""FhaHOx76jVuECfUKJtkpGWXxSdA"",
+      ""id"": ""Ugxi_8h53ZbOrRhOlEF4AaABAg"",
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""1wOrPDJfpG5GkUlUVRxeRjBDya8"",
+            ""id"": ""Ugxi_8h53ZbOrRhOlEF4AaABAg.8v-SYu0WBBa8v-WcO3Gdna"",
+            ""snippet"": {
+              ""videoId"": ""9bZkp7q19f0"",
+              ""textDisplay"": ""No?"",
+              ""textOriginal"": ""No?"",
+              ""parentId"": ""Ugxi_8h53ZbOrRhOlEF4AaABAg"",
+              ""authorDisplayName"": ""Lelost"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_tzcRN7-riCOgxl7gyDRcR9E1vxcka6nMuJuwAng=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCZ8_TyJhqlaiwOTi6WP0oFQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCZ8_TyJhqlaiwOTi6WP0oFQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2019-05-16T17:15:20Z"",
+              ""updatedAt"": ""2019-05-16T17:15:20Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""UHovyOQibirmo5oY8Fch5TojQG0"",
+      ""id"": ""UgxzeQ4heEmnOI3tQ954AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""CgtElNdDHlbCVNWBd2z_whkA3tY"",
+      ""id"": ""UgzrN4--JPB3axFewqd4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""C5wBEC8JJtZGHuIjzqyBNuCoqp4"",
+      ""id"": ""Ugw5AQKxGMJF4zI4nY14AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Lj1DqXYxMhOCoc5suJs9CiHSGxo"",
+      ""id"": ""UgzIjYmXKRknAxEFoVR4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""9R25nBnrTb39Kx9oJUvEuG1PjLY"",
+      ""id"": ""UgykT81iNSULRDCUObh4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""hFCFftMqiPgcOfM6sMBtjip-Xd8"",
+      ""id"": ""UgzNToH9Q-EOcxwZoi94AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""d3XFLsHWsR4YmOX8ygjV1qMVCuM"",
+      ""id"": ""UgxZUcWlVzVuoMIKF4B4AaABAg""
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""fxmKEFIy0B9Q8KMUQk5156KnAJo"",
+      ""id"": ""UgjygXlzOyOdc3gCoAEC""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_ubgvc697ht82_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: channelId, videoId, id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: channelId, videoId, id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_veyn7tsf37ec_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

@@ -1,0 +1,87 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1if0if0tsblut_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""3O4Ucp1sdo2wEHIYV3gLz3f4HG4"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 40
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_qdqh53k2ougl_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""li-0Lu6nXqabpvQ-e9ZUN0BZnw4"",
+  ""items"": [],
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 23
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_to7dfffszjn9_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""7KUtTDzb49g8BZHvGaJD1JMvqIw"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""d6xjDJGj7pDfA0PjcE3J33r7GT8"",
+      ""id"": ""9bZkp7q19f0"",
+      ""topicDetails"": {
+        ""topicCategories"": [
+          ""https://en.wikipedia.org/wiki/Electronic_music"",
+          ""https://en.wikipedia.org/wiki/Music"",
+          ""https://en.wikipedia.org/wiki/Music_of_Asia"",
+          ""https://en.wikipedia.org/wiki/Pop_music""
+        ]
+      }
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none
+test_tolq7xpuq0c6_youtubevideoslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, chart"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, chart"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urxxx4nykrhw_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""baei44i1Tq15X4QGlIL9YYWhAQQ"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""wSIH8K05kbmHcJR-hC4UiuIGqn0"",
+      ""id"": ""9bZkp7q19f0"",
+      ""contentDetails"": {
+        ""duration"": ""PT4M13S"",
+        ""dimension"": ""2d"",
+        ""definition"": ""hd"",
+        ""caption"": ""false"",
+        ""licensedContent"": false,
+        ""contentRating"": {},
+        ""projection"": ""rectangular""
+      },
+      ""recordingDetails"": {}
+    }
+  ],
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 1
+  }
+}
+",application/json; charset=UTF-8,true,none

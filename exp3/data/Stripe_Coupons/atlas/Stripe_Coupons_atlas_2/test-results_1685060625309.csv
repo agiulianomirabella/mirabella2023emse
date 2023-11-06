@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hv2p7k5pimuq_PostCoupons,200,"{
+  ""id"": ""bRce0uwj"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060642,
+  ""currency"": null,
+  ""duration"": ""repeating"",
+  ""duration_in_months"": 11,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""three-party"",
+  ""percent_off"": 39.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sof30iwwkbhz_PostCoupons,200,"{
+  ""id"": ""6hOFwVcdOYo6Yr"",
+  ""object"": ""coupon"",
+  ""amount_off"": 11,
+  ""created"": 1685060647,
+  ""currency"": ""lrd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_sohdbllb2hpz_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_mnoQYRERPSW3wP?t=1685060653"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_u82e3d46g4m9_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_ztKmc0v10baqiG?t=1685060659"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_vbppnrrox3dy_PostCoupons,200,"{
+  ""id"": ""yieRPBhX"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685060664,
+  ""currency"": ""sar"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 99,
+  ""metadata"": {},
+  ""name"": ""encyclopedic"",
+  ""percent_off"": 5.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

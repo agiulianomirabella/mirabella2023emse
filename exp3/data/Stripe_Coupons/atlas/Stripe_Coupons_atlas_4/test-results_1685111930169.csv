@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1jer22u4hc2lz_PostCoupons,200,"{
+  ""id"": ""wz51tpd4eMyi7X"",
+  ""object"": ""coupon"",
+  ""amount_off"": 33,
+  ""created"": 1685111947,
+  ""currency"": ""mwk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxnr9qt7zltg_PostCoupons,200,"{
+  ""id"": ""01JzDx5H"",
+  ""object"": ""coupon"",
+  ""amount_off"": 59,
+  ""created"": 1685111952,
+  ""currency"": ""pyg"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 79,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t4kk6lvxxo39_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_O5jjgSSx9lQkwZ?t=1685111958"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4q5oqkyhf8k_PostCoupons,200,"{
+  ""id"": ""ZbjScF3l6uo"",
+  ""object"": ""coupon"",
+  ""amount_off"": 74,
+  ""created"": 1685111963,
+  ""currency"": ""sar"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 4,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1855241702,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vf98rzjdjjg0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_8InaPVOMEFeOCJ?t=1685111969"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

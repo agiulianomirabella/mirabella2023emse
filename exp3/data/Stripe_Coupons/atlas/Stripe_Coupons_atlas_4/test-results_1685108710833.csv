@@ -1,0 +1,79 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hr5dy1jf5o4h_PostCoupons,200,"{
+  ""id"": ""RyNtjoKL"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108727,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""okay"",
+  ""percent_off"": 73.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_1ji7qdpgvezat_PostCoupons,200,"{
+  ""id"": ""BqJwCMV6"",
+  ""object"": ""coupon"",
+  ""amount_off"": 7,
+  ""created"": 1685108732,
+  ""currency"": ""pkr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 66,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_qeevmu0ywyg1_PostCoupons,200,"{
+  ""id"": ""FuT9CD3XEeAR9GnZtAj"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685108738,
+  ""currency"": ""inr"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 69,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 2.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_t81cdryyr2uq_PostCoupons,200,"{
+  ""id"": ""ds8h0med"",
+  ""object"": ""coupon"",
+  ""amount_off"": 55,
+  ""created"": 1685108744,
+  ""currency"": ""idr"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 80,
+  ""metadata"": {},
+  ""name"": ""caracas"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_ts2ewu3zofua_PostCoupons,400,"{
+  ""error"": {
+    ""code"": ""parameter_missing"",
+    ""doc_url"": ""https://stripe.com/docs/error-codes/parameter-missing"",
+    ""message"": ""Must provide percent_off or amount_off."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_3A1REQ3g4hWHIk?t=1685108749"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,78 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hblibgohit0l_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_Y3kGsxE0vM2hRl?t=1685061382"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy5gvjudny28_PostCoupons,200,"{
+  ""id"": ""JK0MXqWU"",
+  ""object"": ""coupon"",
+  ""amount_off"": 19,
+  ""created"": 1685061388,
+  ""currency"": ""jmd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""pillaged"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_qxywdsh2pm49_PostCoupons,200,"{
+  ""id"": ""sqgjKsuc6g1dtJ"",
+  ""object"": ""coupon"",
+  ""amount_off"": 21,
+  ""created"": 1685061393,
+  ""currency"": ""ron"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""seriocomic"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_uvhgbukwvtbt_PostCoupons,200,"{
+  ""id"": ""PUmz4C67"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685061399,
+  ""currency"": ""mga"",
+  ""duration"": ""forever"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 16,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 91.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_vb946k7x0k0z_PostCoupons,200,"{
+  ""id"": ""AN2ggKNh"",
+  ""object"": ""coupon"",
+  ""amount_off"": 81,
+  ""created"": 1685061405,
+  ""currency"": ""usd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1708252361,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

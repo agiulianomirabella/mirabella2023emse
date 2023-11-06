@@ -1,0 +1,52 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1hbiqh4g8zz39_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yY8iqtAh5IF4Z6?t=1685107247"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_r1cus791br5l_PostCoupons,200,"{
+  ""id"": ""RQjWhZrCtxV"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685107253,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 39,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 100.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_s102sgadjdr8_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_HYrQIPHxc5RrcU?t=1685107258"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s4mtswfoaii8_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies once"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_FguUxotZFuNxWg?t=1685107264"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_ubj3ju0gyf5h_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_NMXHttwZB3ABxi?t=1685107270"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

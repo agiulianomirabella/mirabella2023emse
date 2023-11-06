@@ -1,0 +1,69 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iyexm6n7fq05_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param cannot be set when creating a coupon that applies "",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_0EkoR6ms8CC9AV?t=1685059068"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jei8g0far48l_PostCoupons,200,"{
+  ""id"": ""E41RyYbZkTZWfdeF"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059074,
+  ""currency"": ""uyu"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 29,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": 85.0,
+  ""redeem_by"": 1846315384,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_tocxfqxkd1t0_PostCoupons,200,"{
+  ""id"": ""EDQzyLqU"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059080,
+  ""currency"": ""cve"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 18,
+  ""metadata"": {},
+  ""name"": ""bacteroides"",
+  ""percent_off"": 99.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_u8b8yx7mehbq_PostCoupons,200,"{
+  ""id"": ""W2VmbHZV"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685059085,
+  ""currency"": ""huf"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""gueridon"",
+  ""percent_off"": 100.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_vbhy7qu1i910_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Received both percent_off and amount_off parameters. Please pass in only one."",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_A4Qo128CfRgXZc?t=1685059091"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none

@@ -1,0 +1,2422 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1h7ilepgxh2sl_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""gt9Jwz4pxd2Zz54KDWTZ5ftO5qA"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 98
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""5A4KuULuj2YYmV4Zr9-VJuQIkxk"",
+      ""id"": ""UgxTbR839IUuzmAe8XJ4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1h7ld9c9ar61y_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1h7wgquc96a7m_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrj94n42gspy_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrm0wiwqbjaa_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, videoId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1hrotjdwby04x_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iauxs7r69nhv_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ibh0ehlkx6jp_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iv6kmsw51tfd_youtubecommentThreadslist,403,"{
+  ""error"": {
+    ""code"": 403,
+    ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+    ""errors"": [
+      {
+        ""message"": ""The video identified by the \u003ccode\u003e\u003ca href=\""/youtube/v3/docs/commentThreads/list#videoId\""\u003evideoId\u003c/a\u003e\u003c/code\u003e parameter has disabled comments."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""commentsDisabled"",
+        ""location"": ""videoId"",
+        ""locationType"": ""parameter""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,OAS disconformity: Response status 403 not defined for path '/youtube/v3/commentThreads'.
+test_1iv9ucfk1unhi_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iyexm4pkfi2b_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""DofS_N73bPUN7lvJBH3njbU8ZQw"",
+  ""nextPageToken"": ""QURTSl9pMXRwU0ZQcnlJT1pELTd5Rzg5YmkyMlREWlVOQVo1d1Atc0xLUURtd1hqbnNDeFNFNS1VU0tTYVctanZWZUlZdnduTWl1d0o3bGVNdG1yNWo5cUFzX1VkX2lzRTJUYzl6bWN5anFPNHVLbkZ3VlNhUEJVVUh6MWFKUzFGSElxRXJpaWJqZHJfVWtmMnpIREhiQU1WVG1jOWY5SVl1MGRFemdya3NJMjNVMVZDNDlXRGpUY1RoOWs1QzRjaHZwUEt3cVBNODg2SUlmemRxN0FLU0w0YkJzQU9VZEFwdE9PcGhiRnNWZUZJbjh2YkVhZC1MNi1hUl9UekNwZjJaVFRvR0E2MWZrbUwyS0FiZkdqbkt4VHFvYUw3U2o5WEk0"",
+  ""pageInfo"": {
+    ""totalResults"": 17,
+    ""resultsPerPage"": 17
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""PkvE1ypZvtoz_e07zDNADnjkiuU"",
+      ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""RXcElTZbS8qpC7gqJdPxEiKjlx0"",
+          ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Einstein discovered this theory in his mind without the internet. I have the internet at my hands, I&#39;ve watched this video twice and am still struggling."",
+            ""textOriginal"": ""Einstein discovered this theory in his mind without the internet. I have the internet at my hands, I've watched this video twice and am still struggling."",
+            ""authorDisplayName"": ""Rosa Lee"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/8wV_UX_Gp-l8uDnYgKjZCbjSblIXlabrIHDcmSDMHvRTRCfOR7gbg16tkhThoRjCdRkNKrRh=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCf4HqTV8OxrAtzHuD5gQcKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCf4HqTV8OxrAtzHuD5gQcKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 10073,
+            ""publishedAt"": ""2020-02-20T02:30:34Z"",
+            ""updatedAt"": ""2020-02-20T02:30:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 205,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""PWn-34EBM3SOTNorxiFsyAB4wVI"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax99k35KFjK3FF"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""einstein also invested countless time in it"",
+              ""textOriginal"": ""einstein also invested countless time in it"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""tot"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8wt4Cp7mllSVHKOeJMGepjZ1EMAOLWr5-zzEt_e1nh4NvSL3aTCBUUKGfmsKLJ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UChicz0LsQuAGeXhXDgK15cQ"",
+              ""authorChannelId"": {
+                ""value"": ""UChicz0LsQuAGeXhXDgK15cQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-25T10:17:39Z"",
+              ""updatedAt"": ""2022-12-25T10:17:39Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""qy--mzGkvuWbKhhXqG0gxrEpnWk"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax99jzcFWp9FBd"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""same"",
+              ""textOriginal"": ""same"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""Bernardo Garcia Marques"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu87oH7Mdg_E387MM05EYuCOBKF8eo46LXVSnROpZw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCBOZMMEeNGH8s2EBEphqQXg"",
+              ""authorChannelId"": {
+                ""value"": ""UCBOZMMEeNGH8s2EBEphqQXg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-23T16:37:54Z"",
+              ""updatedAt"": ""2022-12-23T16:37:54Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""9GJ1LgBn-XzJRtKJNMVzFe6vToc"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax99jfNbgnOsPk"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Einstein didn&#39;t have a smart phone to take 50-90% of his time"",
+              ""textOriginal"": ""Einstein didn't have a smart phone to take 50-90% of his time"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""Elucid"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_4zJ8THZuj5kWsjfJK22rXKDLu1tIIumHWO5zBAw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC4Oel9pRSyLLPa7buIBkv_A"",
+              ""authorChannelId"": {
+                ""value"": ""UC4Oel9pRSyLLPa7buIBkv_A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-15T19:56:27Z"",
+              ""updatedAt"": ""2022-12-15T19:56:27Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""agqOb_w9SXS_s7I9BA3YTHXhLgQ"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax99jbiSJD-IBK"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""That&#39;s why he&#39;s genius"",
+              ""textOriginal"": ""That's why he's genius"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""Anshu"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ThGQE_2n49ul4h666Uy_VwAhH8IxkqGkwooxY-0VO8bpPAl0jJQI8OmUv9M-SAEQTPYol-IhpA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGN9zBLMp8G7q-8qMgYJHVg"",
+              ""authorChannelId"": {
+                ""value"": ""UCGN9zBLMp8G7q-8qMgYJHVg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-14T09:50:18Z"",
+              ""updatedAt"": ""2022-12-14T09:50:18Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""FBnOKgs-UlQ53rJp-DxpIVxeo2I"",
+            ""id"": ""UgzOczzNBUlviWuHrJJ4AaABAg.95Eux3cIax99j8WBl5wMGm"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Same hereee"",
+              ""textOriginal"": ""Same hereee"",
+              ""parentId"": ""UgzOczzNBUlviWuHrJJ4AaABAg"",
+              ""authorDisplayName"": ""Laiba Khan"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_rKVLOmhTRbb10693JYdDpPJYfvmYZX8pEhJWDIJ2iyDwMex3MUvJaehWVPgs1=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCGb0G44U-Xl1DIgGOtDP_iQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCGb0G44U-Xl1DIgGOtDP_iQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-02T16:17:14Z"",
+              ""updatedAt"": ""2022-12-02T16:17:14Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""mxkgBgw9crF2oIQLtL-MhKjgf9Q"",
+      ""id"": ""Ugw8lxBCJnz2AAdPc6t4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""PV6SHgX9W4TzcaeqxQLK-YIqEvc"",
+          ""id"": ""Ugw8lxBCJnz2AAdPc6t4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Time dilation is a relativity concept. And that’s it. It does not slow down. Even when you travel at the speed of a photon, you only observe the images created by the photons hitting an object. It only appears stationarybut it isn’t. Similarly time appears to slow downbut doesn’t."",
+            ""textOriginal"": ""Time dilation is a relativity concept. And that’s it. It does not slow down. Even when you travel at the speed of a photon, you only observe the images created by the photons hitting an object. It only appears stationarybut it isn’t. Similarly time appears to slow downbut doesn’t."",
+            ""authorDisplayName"": ""Anupam Pathak"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu96HdVpJG6EYF7x-cUDhk-dK-cNsEUqHsYsug=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC5JsFgsYcfNmqJ-eCT1YRUw"",
+            ""authorChannelId"": {
+              ""value"": ""UC5JsFgsYcfNmqJ-eCT1YRUw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2022-12-08T15:27:48Z"",
+            ""updatedAt"": ""2022-12-08T15:28:09Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""qSg6Mnxvaghk1RHNrtUSlT4HWgw"",
+      ""id"": ""UgxXX1mFIvhc3GRxHK14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""OGCDSwtg_VgFf72unEN9sBt_0wY"",
+          ""id"": ""UgxXX1mFIvhc3GRxHK14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""This channel is perfect. No music in the background, so I can perfectly listen without distractions. In the description is all authoritative academic sources."",
+            ""textOriginal"": ""This channel is perfect. No music in the background, so I can perfectly listen without distractions. In the description is all authoritative academic sources."",
+            ""authorDisplayName"": ""n.1 c"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-t-a3IMeaqFA7xuMfRjbiBdRSsvUQBhLYTn7MN=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCJFpY8OMEdd4YgZUApF90fw"",
+            ""authorChannelId"": {
+              ""value"": ""UCJFpY8OMEdd4YgZUApF90fw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 219,
+            ""publishedAt"": ""2021-09-25T03:07:20Z"",
+            ""updatedAt"": ""2021-09-25T03:07:20Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""55jwlIF2lCfXINJtEXCMxlniu0k"",
+      ""id"": ""UgwQrj4bWbUeSNRcprF4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""X8-QV-tFRkE1jxR0kPX5CbcgqPM"",
+          ""id"": ""UgwQrj4bWbUeSNRcprF4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""I wonder if astronauts who went to the moon would have a different time on their clocks then those on Earth at NASA? I wonder if the difference is measurable with a clock versus just through algebra."",
+            ""textOriginal"": ""I wonder if astronauts who went to the moon would have a different time on their clocks then those on Earth at NASA? I wonder if the difference is measurable with a clock versus just through algebra."",
+            ""authorDisplayName"": ""Liam Cage"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_lulxfWU4X1zTsyTijN_-jsE19oUyGuk--iA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7wM9pyBnzbfJpVQW5LTyKw"",
+            ""authorChannelId"": {
+              ""value"": ""UC7wM9pyBnzbfJpVQW5LTyKw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-11T22:11:16Z"",
+            ""updatedAt"": ""2022-12-11T22:11:16Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 1,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""xVOfQA97MQlqnVnAQRwMbZmnMI8"",
+            ""id"": ""UgwQrj4bWbUeSNRcprF4AaABAg.9jWJrepZaP-9jYvOc5gX17"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""At low speed you need an atomic clock to measure the difference"",
+              ""textOriginal"": ""At low speed you need an atomic clock to measure the difference"",
+              ""parentId"": ""UgwQrj4bWbUeSNRcprF4AaABAg"",
+              ""authorDisplayName"": ""AMC2283"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-Xtlp9oO6Noz8YS3mc0XhbtIA3zEpTxY0dbQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCn-sBwvnOOO4IJKz18Ft2sw"",
+              ""authorChannelId"": {
+                ""value"": ""UCn-sBwvnOOO4IJKz18Ft2sw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-12T22:26:26Z"",
+              ""updatedAt"": ""2022-12-12T22:26:26Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""BCgQnMYzKa0cVGyrdZT8000MZgU"",
+      ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""_OzsWx-j8kWLJBSpV_AjBqsCuHo"",
+          ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""A long long time ago, I remember being told in the 5th grade of the 3 dimensions and then hearing my teacher say &quot;some people even say there is a 4th dimension&quot;. On the way home I told my dad, &quot;If the first dimension is height. Then length, then width....then the 4th dimension has to be when that object exsisted.&quot;. So I like to tell myself I theorized space-time as a child. (I mean, not really but close enough lol)"",
+            ""textOriginal"": ""A long long time ago, I remember being told in the 5th grade of the 3 dimensions and then hearing my teacher say \""some people even say there is a 4th dimension\"". On the way home I told my dad, \""If the first dimension is height. Then length, then width....then the 4th dimension has to be when that object exsisted.\"". So I like to tell myself I theorized space-time as a child. (I mean, not really but close enough lol)"",
+            ""authorDisplayName"": ""Brek Erickson"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8VQjF_-6HwNVvaMOMygPDae1XsmDE4dYgb2Q=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7BVvZPuVfXq1T2xtZmW5fg"",
+            ""authorChannelId"": {
+              ""value"": ""UC7BVvZPuVfXq1T2xtZmW5fg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 61,
+            ""publishedAt"": ""2022-06-20T16:19:15Z"",
+            ""updatedAt"": ""2022-06-20T16:19:15Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 2,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""lbWKFnmiTaMLJZTs6p3S_WgOeTk"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9ev-dMW5pR9"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Ceylon Gamer&#39;s League Its all a matter of different frames (of reference), to someone inside a bus, he isn&#39;t moving so he he sees himself at x=0 (the orgin) always. So to him time is/appears slowed down but to the res of the world, time passes at its normal rate. Also he observes things outside of his stationary frame, ie not stationary wrt to him/his fram, to be of shorter lengths than the world around him, starionary to everyone else and where he seems to be moving at relativistic speeds x approaching c the  universal speed limit, 299 792 458m/s"",
+              ""textOriginal"": ""@Ceylon Gamer's League Its all a matter of different frames (of reference), to someone inside a bus, he isn't moving so he he sees himself at x=0 (the orgin) always. So to him time is/appears slowed down but to the res of the world, time passes at its normal rate. Also he observes things outside of his stationary frame, ie not stationary wrt to him/his fram, to be of shorter lengths than the world around him, starionary to everyone else and where he seems to be moving at relativistic speeds x approaching c the  universal speed limit, 299 792 458m/s"",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""Rony C B"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-KarahJQskURdsUFMZ_HUohULfbN_zfNHXJOGA9eN03FpKClvGwrYUVzewaaYC=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCR7Rel8bYAGwC5pRJ9Gq4TA"",
+              ""authorChannelId"": {
+                ""value"": ""UCR7Rel8bYAGwC5pRJ9Gq4TA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-08-19T14:57:50Z"",
+              ""updatedAt"": ""2022-08-19T14:57:50Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""yRswfPDEvzWdUfdgB1Gpbe2LVgw"",
+            ""id"": ""UgznJYL1CfIkseeZNqV4AaABAg.9cVeGEC3KLk9dadVlY_XrJ"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""That is nice.  when he traveled away from the clock tower at the speed of light the clock stopped. Then you must realize that is cus of the light waves emitted from the clock would not reach him cus he is also traveling at the same speed. so he will only see a snapshot. then how he can tell that flow of his time slowed down by that experiment according to this video?"",
+              ""textOriginal"": ""That is nice.  when he traveled away from the clock tower at the speed of light the clock stopped. Then you must realize that is cus of the light waves emitted from the clock would not reach him cus he is also traveling at the same speed. so he will only see a snapshot. then how he can tell that flow of his time slowed down by that experiment according to this video?"",
+              ""parentId"": ""UgznJYL1CfIkseeZNqV4AaABAg"",
+              ""authorDisplayName"": ""Ceylon Gamer's League"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-Lxnqf-_Er0it9nvO5AMJgyrXH5enKiS201mX4=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEpM1kQJf-Y2W6GHBurmTWQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCEpM1kQJf-Y2W6GHBurmTWQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 4,
+              ""publishedAt"": ""2022-07-17T20:39:29Z"",
+              ""updatedAt"": ""2022-07-17T20:39:29Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""RcomvnkWhS_TKdosC7SrMy6yNb0"",
+      ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""GX3SZ5L01rCxQh2ZEQ5dGPh05Tc"",
+          ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Imagine the things Einstein would&#39;ve discovered if he was alive today"",
+            ""textOriginal"": ""Imagine the things Einstein would've discovered if he was alive today"",
+            ""authorDisplayName"": ""Lukhman Thufile"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_-P-3py6HOgI_bnWCQU2al9MPej5bi3stmHXKSEA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCHGHDXj3CJ7rbQL2vFYy65Q"",
+            ""authorChannelId"": {
+              ""value"": ""UCHGHDXj3CJ7rbQL2vFYy65Q""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 3750,
+            ""publishedAt"": ""2020-05-14T02:38:42Z"",
+            ""updatedAt"": ""2020-05-14T02:38:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 86,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""mqTW852fbbqnNUDWXS6m_C-5rnI"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u9ioG0IxmqCN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""he&#39;d have discovered that music now is all shite..... for instance"",
+              ""textOriginal"": ""he'd have discovered that music now is all shite..... for instance"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""IR W"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu816pOPeqA6TcVMaMuT7T0w6zLvASbqEh7OcA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCCyWyyCWO8hop8Y-mZe5gYQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCCyWyyCWO8hop8Y-mZe5gYQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-11-24T10:11:48Z"",
+              ""updatedAt"": ""2022-11-24T10:11:48Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Kgcs6WA2dmuN32QvoM8xpsV7OcI"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u9iXK2SZelTN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""He would be doing tiktok."",
+              ""textOriginal"": ""He would be doing tiktok."",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""Sanjay.d"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_VXgNsMFfkrFPtE2VLARkXxpQXCcjTfImXsoW6lA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_oe2GNsoJgERFf1vBpx45A"",
+              ""authorChannelId"": {
+                ""value"": ""UC_oe2GNsoJgERFf1vBpx45A""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-11-17T11:00:43Z"",
+              ""updatedAt"": ""2022-11-17T11:00:43Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""AZ5A7MlmRtK5cmWTKALXGfL8Buk"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u9hYLmgCesET"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""He would have invented Time Machine by now."",
+              ""textOriginal"": ""He would have invented Time Machine by now."",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""man of culture"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/pBr4ViVZJiWxD781ZIFpSso3292HYrshMijfqp6eOdbG6efBa5uBy8hoUoQ_B1dU9XOc8bRJRQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzyLssrhHHhms3Wzf59QjUQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCzyLssrhHHhms3Wzf59QjUQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-24T00:03:45Z"",
+              ""updatedAt"": ""2022-10-24T00:03:45Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""HETWOpsOoiAp6ptcdBQGy586xyI"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u9h8Pu-2XISN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""He has already discovered A LOT."",
+              ""textOriginal"": ""He has already discovered A LOT."",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""Aage"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8B6kpmn1--hO--3c3Jzm2t1PvQbkDW1V1pb3j_4vjxurBukPgZYL_AtMGg0f3q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzve8rjFDVpyepnytAWNHzw"",
+              ""authorChannelId"": {
+                ""value"": ""UCzve8rjFDVpyepnytAWNHzw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-13T22:19:27Z"",
+              ""updatedAt"": ""2022-10-13T22:19:27Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""5SAS5RInoQ8ekOAbxBE5PfvTQ18"",
+            ""id"": ""Ugw1wQedh-UEt3GuoO94AaABAg.98cDeAr1A0u9gsSqb9_6aJ"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@balem karap Einstein groomed his cousins perv"",
+              ""textOriginal"": ""@balem karap Einstein groomed his cousins perv"",
+              ""parentId"": ""Ugw1wQedh-UEt3GuoO94AaABAg"",
+              ""authorDisplayName"": ""Jay H"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_JqvNOA4hn_ZIEf9Y-yPgiTzVA7FMQRZHemA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCA45p5nuCbISMZF49_ueuKA"",
+              ""authorChannelId"": {
+                ""value"": ""UCA45p5nuCbISMZF49_ueuKA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-07T08:18:07Z"",
+              ""updatedAt"": ""2022-10-07T08:18:07Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""vpuor6ZHkhI55lxcsVAICLCwZh0"",
+      ""id"": ""UgyGN7aWP0iYoZoO1TB4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""d1iGlmeG4fdQv_r9eN0JBl1Ly3Y"",
+          ""id"": ""UgyGN7aWP0iYoZoO1TB4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""the thing is he never concluded that time slows when you move! that is what akways bugged me as a pure imagination on his part... that was already postulated before him and &#39;explained&#39; so he only syntesized the theory from already known parts... even spacetime was not his invention, and it came later by another scientist"",
+            ""textOriginal"": ""the thing is he never concluded that time slows when you move! that is what akways bugged me as a pure imagination on his part... that was already postulated before him and 'explained' so he only syntesized the theory from already known parts... even spacetime was not his invention, and it came later by another scientist"",
+            ""authorDisplayName"": ""Doc Lex"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8dYlUGrI0b3iNcbIj1NP-YV2oMrWD3MkWa7Ra6Ig=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCUhXsode_hgYaEt_BnaAAFA"",
+            ""authorChannelId"": {
+              ""value"": ""UCUhXsode_hgYaEt_BnaAAFA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 0,
+            ""publishedAt"": ""2022-12-11T18:03:54Z"",
+            ""updatedAt"": ""2022-12-11T18:05:47Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""jOEnb0Ul0XNOpebz-JcCNITX9ek"",
+      ""id"": ""UgwoL0XAr02ycqzj1BZ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""QCs6mS0sT0QOXvC95O29hMONSCc"",
+          ""id"": ""UgwoL0XAr02ycqzj1BZ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""A husband waiting for his wife shopping feels a very long time, while she feel only few minutes. A real time dilation."",
+            ""textOriginal"": ""A husband waiting for his wife shopping feels a very long time, while she feel only few minutes. A real time dilation."",
+            ""authorDisplayName"": ""Adwaith"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_SyhhT3ge8B63MK59SUEFMbGv2N-LvKAMIKFhesuBYkUdj2geVvUs33V230haw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCauFc2mSKeUILyyq16t-c9g"",
+            ""authorChannelId"": {
+              ""value"": ""UCauFc2mSKeUILyyq16t-c9g""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 1,
+            ""publishedAt"": ""2022-12-20T22:35:20Z"",
+            ""updatedAt"": ""2022-12-20T22:35:20Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""QI4Bf4t-iVZX6ZjY05VxGg0r8tQ"",
+      ""id"": ""UgxPzBF0UXADS5VaMSF4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""aZsU8rm65OLa4GJ8reEmRkIBLdM"",
+          ""id"": ""UgxPzBF0UXADS5VaMSF4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""The first equation for velocity in relative intertial frames were actually not discovered by Einstein but by Galileo. Loved the video very clear !"",
+            ""textOriginal"": ""The first equation for velocity in relative intertial frames were actually not discovered by Einstein but by Galileo. Loved the video very clear !"",
+            ""authorDisplayName"": ""Maxime Gr"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-gmEnMf7lRxtgwpe29kQDnDQB8LB9Q_1rTbY3ZNA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UC_tK8FxY9qKDe7ujK48U8kw"",
+            ""authorChannelId"": {
+              ""value"": ""UC_tK8FxY9qKDe7ujK48U8kw""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 31,
+            ""publishedAt"": ""2021-12-24T15:53:54Z"",
+            ""updatedAt"": ""2021-12-24T15:53:54Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""X4PYSYstBOGplbK9TSWTZbm7qSQ"",
+      ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""YwLC06es2IL66Xn2KxFcBEpQk58"",
+          ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Thank you for this video, lots of video&#39;s do not give mention to the fact that Einstein&#39;s final theory does see: the speed of light as a constant.\u003cbr\u003eIt really is important to integrate that with the general theory of relativity, all things actually do have a speed with respect to light. thats how its possible to know your speed with a light clock, and not a mechanical one."",
+            ""textOriginal"": ""Thank you for this video, lots of video's do not give mention to the fact that Einstein's final theory does see: the speed of light as a constant.\nIt really is important to integrate that with the general theory of relativity, all things actually do have a speed with respect to light. thats how its possible to know your speed with a light clock, and not a mechanical one."",
+            ""authorDisplayName"": ""Adhi Palar"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9mzCcz8Q8dAmWj3UYT8BdfAAvrlOXeGfVtTw=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCz6bISG_jHXevJET71yc5UA"",
+            ""authorChannelId"": {
+              ""value"": ""UCz6bISG_jHXevJET71yc5UA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 14,
+            ""publishedAt"": ""2021-06-22T16:20:37Z"",
+            ""updatedAt"": ""2021-06-22T16:22:37Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 2,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""8vFOaC-yXmvm22lNOQDnkrN3cVw"",
+            ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg.9OtxrZAfRVn9SdYEgPqzND"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Elijah Gavin your speed can actually be measured as a fraction of the speed of light, and that is also going to control time dilation."",
+              ""textOriginal"": ""@Elijah Gavin your speed can actually be measured as a fraction of the speed of light, and that is also going to control time dilation."",
+              ""parentId"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+              ""authorDisplayName"": ""Adhi Palar"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9mzCcz8Q8dAmWj3UYT8BdfAAvrlOXeGfVtTw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCz6bISG_jHXevJET71yc5UA"",
+              ""authorChannelId"": {
+                ""value"": ""UCz6bISG_jHXevJET71yc5UA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2021-09-23T17:25:42Z"",
+              ""updatedAt"": ""2021-09-23T17:25:42Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""WyHpUYeZDf1r_sCK2PXMzT5z47U"",
+            ""id"": ""UgwunWqIbYjCZiO1S5N4AaABAg.9OtxrZAfRVn9RXrwS87kOB"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""How is each relative speed translated with respect to the light constant? Is there a different equation?"",
+              ""textOriginal"": ""How is each relative speed translated with respect to the light constant? Is there a different equation?"",
+              ""parentId"": ""UgwunWqIbYjCZiO1S5N4AaABAg"",
+              ""authorDisplayName"": ""Elijah Gavin"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/gzJV9tjjSiy6i4PdOT-xCfHmK5pU3Is0RQLw5oczl2qUfkRimbr9_v4olyLKC9raAifpYBYhQ58=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvFOQLuqu4YuPdLIhGgoGsw"",
+              ""authorChannelId"": {
+                ""value"": ""UCvFOQLuqu4YuPdLIhGgoGsw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-08-27T06:40:30Z"",
+              ""updatedAt"": ""2021-08-27T06:40:30Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""ASrO-X_lBeBXQgVQbGZ7IWVn_iA"",
+      ""id"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""mG-iOvGuZb0uTaL-X-2ZUWWOnxM"",
+          ""id"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Let&#39;s just acknowledge how all of his theories were &quot;imagined&quot; before he proved them"",
+            ""textOriginal"": ""Let's just acknowledge how all of his theories were \""imagined\"" before he proved them"",
+            ""authorDisplayName"": ""Proud to be brown"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8gxVE4lfw3AEYo7p-NpIn_KL1LzkwPSavDMLZnbg=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCia1ugz4gcEhP94imWF4Y4A"",
+            ""authorChannelId"": {
+              ""value"": ""UCia1ugz4gcEhP94imWF4Y4A""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 2687,
+            ""publishedAt"": ""2020-07-05T12:32:42Z"",
+            ""updatedAt"": ""2020-07-05T12:32:42Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 61,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""gCMUfFRTc7jP5iLRYmyCLCJ4bvo"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9gkx_S22KRa"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@The Voice Within Einstein the Elon of his time. Completely used and Completely useless. His theories are nonsense,  and equate closer to scifi than actual science."",
+              ""textOriginal"": ""@The Voice Within Einstein the Elon of his time. Completely used and Completely useless. His theories are nonsense,  and equate closer to scifi than actual science."",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""Joshua Allen"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8nJCgXVf031iSU7vyc9aDktTGPNkuRMv3lFQq7oH_ogK_7n6HZNNhnrrCaU9tq=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEsyJPck4jq01Sss4CleCXQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCEsyJPck4jq01Sss4CleCXQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-04T10:21:28Z"",
+              ""updatedAt"": ""2022-10-04T10:21:28Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""JEbYgmocpdOgBOKKr8aCRao9K24"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9gkxNhpJlqG"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@The Voice Within all of them. Atleast 70% bots and 25% trolls...leaves about 5% real thinkers like u and I."",
+              ""textOriginal"": ""@The Voice Within all of them. Atleast 70% bots and 25% trolls...leaves about 5% real thinkers like u and I."",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""Joshua Allen"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8nJCgXVf031iSU7vyc9aDktTGPNkuRMv3lFQq7oH_ogK_7n6HZNNhnrrCaU9tq=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEsyJPck4jq01Sss4CleCXQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCEsyJPck4jq01Sss4CleCXQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-04T10:19:44Z"",
+              ""updatedAt"": ""2022-10-04T10:19:44Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""jzX6PwA9jOBWi0XSMDKbk3ty-f0"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9gkbDDluyD0"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Joshua Allen who?"",
+              ""textOriginal"": ""@Joshua Allen who?"",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""The Voice Within"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9tK_auzED243CwAE8SeuhsupUVtth2Ok1wANZpZg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0SshSpw_YSTrZqS6y4aJpQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC0SshSpw_YSTrZqS6y4aJpQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-04T07:06:03Z"",
+              ""updatedAt"": ""2022-10-04T07:06:03Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""ftd2uB055LFPXu5un8Z11e00xQo"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9gkbA3dPk8l"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Guardiano A black hole also isn&#39;t a hole at all. It&#39;s a collapsed star and we have images of these. \u003cbr\u003e\u003cbr\u003eSchwarzchild and Einsteins theories were used to predict how a black hole would interact with objects, including light. And, from the recent images captured, we can yet again show that the equations and theories written up by both of these incredible people are in fact accurate! Also, these equations were able to predict wormholes and white holes too. They are also used to calculate how time would slow down, potentially stop and even reverse inside as you got closer and closer to the black hole&#39;s core (dependant on the mass of the black hole and original mass of the star before it collapsed). \u003cbr\u003e\u003cbr\u003e&quot;Just theory&quot; doesn&#39;t stand in science. It&#39;s a hypothesis until observably definitive through highly controlled experiments. Then, and only then, does something become scientific theory. There must be established fact. Then, from that fact, you can derive opinions and hypotheses which then lead you to more experiments, calculations and challenges to prove them right or wrong. \u003cbr\u003e\u003cbr\u003eGo read something other than Internet drivel."",
+              ""textOriginal"": ""@Guardiano A black hole also isn't a hole at all. It's a collapsed star and we have images of these. \n\nSchwarzchild and Einsteins theories were used to predict how a black hole would interact with objects, including light. And, from the recent images captured, we can yet again show that the equations and theories written up by both of these incredible people are in fact accurate! Also, these equations were able to predict wormholes and white holes too. They are also used to calculate how time would slow down, potentially stop and even reverse inside as you got closer and closer to the black hole's core (dependant on the mass of the black hole and original mass of the star before it collapsed). \n\n\""Just theory\"" doesn't stand in science. It's a hypothesis until observably definitive through highly controlled experiments. Then, and only then, does something become scientific theory. There must be established fact. Then, from that fact, you can derive opinions and hypotheses which then lead you to more experiments, calculations and challenges to prove them right or wrong. \n\nGo read something other than Internet drivel."",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""The Voice Within"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9tK_auzED243CwAE8SeuhsupUVtth2Ok1wANZpZg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC0SshSpw_YSTrZqS6y4aJpQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC0SshSpw_YSTrZqS6y4aJpQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-04T07:05:38Z"",
+              ""updatedAt"": ""2022-10-04T07:05:38Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""wrthxrFdh25mmu1lYy5J_rXKKkI"",
+            ""id"": ""UgwgS2nNa10tp66TPT14AaABAg.9AjAyHhEYhU9gk5oUjs4Hr"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""troll bot"",
+              ""textOriginal"": ""troll bot"",
+              ""parentId"": ""UgwgS2nNa10tp66TPT14AaABAg"",
+              ""authorDisplayName"": ""Joshua Allen"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8nJCgXVf031iSU7vyc9aDktTGPNkuRMv3lFQq7oH_ogK_7n6HZNNhnrrCaU9tq=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCEsyJPck4jq01Sss4CleCXQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCEsyJPck4jq01Sss4CleCXQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-10-04T02:22:55Z"",
+              ""updatedAt"": ""2022-10-04T02:22:55Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""MUvtN2jDoJpZlbtAM3XCM5oV140"",
+      ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""LuuZUI6P0ibiSfUe5e4F4QpCBlY"",
+          ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""I had struggled with this for years, despite being a physicist and engineer. \u003cbr\u003e\u003cbr\u003eThe problem is that the thought experiments on this topic are fallible in many ways, if taken too literally.\u003cbr\u003e[For example, what if the clock tower was on a train moving away at the speed of light from a stationary observer, or if the observer was on a train that started on an approach to the clock tower, then continued past at the speed of light?] \u003cbr\u003eFor me it took a completely different perspective to understand it, building it up in stages:\u003cbr\u003e\u003cbr\u003e1) If every particle in the universe was static with respect to each other, there would be no interactions, and it would seem time had stood still, because nothing is changing. For time to become apparent, particles need to move and interact with each other, energy has to flow.\u003cbr\u003e2) The speed of light is a universal constant. Do not consider light as an object, like a ball moving through space. It is a limit on how fast events in one region of space can cause events in other regions of space (&quot;causality&quot;).\u003cbr\u003e3) If you were travelling at the speed of light, the atoms and particles that make up your body would not be able to move in the direction of travel (relative to the centre of your body), since they would have to travel faster than the speed of light (violating causality...the outermost molecules of your body would arrive at your destination slightly before you should be able to arrive!). Hence all the particles in your body would actually be static relative to each other, and therefore you wouldn&#39;t be ageing. Furthermore, you wouldn&#39;t be able to have a conscious appreciation that your ageing had ceased, since even &quot;thinking&quot; would require movement and interaction between the particles in your brain.\u003cbr\u003e4) Since any object&#39;s perception of time is relative to the &quot;relative interactions&quot; of the matter it is made from, it cannot perceive the difference between a tick (at zero speed) or a tick (at near the speed of light....a &quot;tick&quot; is a &quot;tick&quot; according to the object observing or recording its own time. \u003cbr\u003e\u003cbr\u003eDue to the principles of a universal speed of light and causality, moving through space will necessarily slow the mechanism of the moving clock, and by an equal amount, the mechanism by which the moving observer is able to observe the clock. A clock moving through space actually does tick slower than a clock not moving through space.\u003cbr\u003e\u003cbr\u003e[A profound thought regarding point (2): If the speed of light is measured by causality, and causality infers change, and change infers the passing of time....if time didn&#39;t exist, would there be a speed of light? Would there be light?]\u003cbr\u003e\u003cbr\u003eIn the context of this perspective I can go back to the original thought experiments and understand which aspects of them are useful in deriving the maths.\u003cbr\u003e\u003cbr\u003eThese are all my own thoughts. I don&#39;t know if any professor of physics would validate them. But where the original thought experiments left me feeling dissatisfied, this new perspective helped me."",
+            ""textOriginal"": ""I had struggled with this for years, despite being a physicist and engineer. \n\nThe problem is that the thought experiments on this topic are fallible in many ways, if taken too literally.\n[For example, what if the clock tower was on a train moving away at the speed of light from a stationary observer, or if the observer was on a train that started on an approach to the clock tower, then continued past at the speed of light?] \nFor me it took a completely different perspective to understand it, building it up in stages:\n\n1) If every particle in the universe was static with respect to each other, there would be no interactions, and it would seem time had stood still, because nothing is changing. For time to become apparent, particles need to move and interact with each other, energy has to flow.\n2) The speed of light is a universal constant. Do not consider light as an object, like a ball moving through space. It is a limit on how fast events in one region of space can cause events in other regions of space (\""causality\"").\n3) If you were travelling at the speed of light, the atoms and particles that make up your body would not be able to move in the direction of travel (relative to the centre of your body), since they would have to travel faster than the speed of light (violating causality...the outermost molecules of your body would arrive at your destination slightly before you should be able to arrive!). Hence all the particles in your body would actually be static relative to each other, and therefore you wouldn't be ageing. Furthermore, you wouldn't be able to have a conscious appreciation that your ageing had ceased, since even \""thinking\"" would require movement and interaction between the particles in your brain.\n4) Since any object's perception of time is relative to the \""relative interactions\"" of the matter it is made from, it cannot perceive the difference between a tick (at zero speed) or a tick (at near the speed of light....a \""tick\"" is a \""tick\"" according to the object observing or recording its own time. \n\nDue to the principles of a universal speed of light and causality, moving through space will necessarily slow the mechanism of the moving clock, and by an equal amount, the mechanism by which the moving observer is able to observe the clock. A clock moving through space actually does tick slower than a clock not moving through space.\n\n[A profound thought regarding point (2): If the speed of light is measured by causality, and causality infers change, and change infers the passing of time....if time didn't exist, would there be a speed of light? Would there be light?]\n\nIn the context of this perspective I can go back to the original thought experiments and understand which aspects of them are useful in deriving the maths.\n\nThese are all my own thoughts. I don't know if any professor of physics would validate them. But where the original thought experiments left me feeling dissatisfied, this new perspective helped me."",
+            ""authorDisplayName"": ""debiddo"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8ja8826PrDlT_RHRkJcqeFkUK1z02K94mQxQ=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCOZQ7zY3MHLNb8mj4d6pkvQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCOZQ7zY3MHLNb8mj4d6pkvQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 15,
+            ""publishedAt"": ""2022-09-23T23:03:45Z"",
+            ""updatedAt"": ""2022-09-23T23:03:45Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 11,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""UllIMlrz6yHuW2x0zx9oDnijRK8"",
+            ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg.9gL-3xW2C3-9k-d9xRQ0JF"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@NachoDS the thing is, as far as I grasped, the speed of light is never relative. On the contrary it&#39;s an universal absolute. Light is not something that travels through space, it&#39;s the rate at which things can happen through space. So if you could in fact move at the speed of light everything would stop happening to you, because you would&#39;ve matched that maximum rate.\u003cbr\u003e\u003cbr\u003eI honestly can&#39;t believe that I said that and it made sense to me. I&#39;m so thankful right now. 🥲"",
+              ""textOriginal"": ""@NachoDS the thing is, as far as I grasped, the speed of light is never relative. On the contrary it's an universal absolute. Light is not something that travels through space, it's the rate at which things can happen through space. So if you could in fact move at the speed of light everything would stop happening to you, because you would've matched that maximum rate.\n\nI honestly can't believe that I said that and it made sense to me. I'm so thankful right now. 🥲"",
+              ""parentId"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+              ""authorDisplayName"": ""Guido"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_7QhYANtG97E9trnXxoloM-Us5q7w9F6A5yk_1ZsVI5542YdNm-EzI7a3Ah7O3=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCgA9kLDQKjCm9I-oL42rRBA"",
+              ""authorChannelId"": {
+                ""value"": ""UCgA9kLDQKjCm9I-oL42rRBA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-24T02:05:07Z"",
+              ""updatedAt"": ""2022-12-24T02:05:07Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""g_JXSg0TA-GypoOUNjX8_HIuI7Y"",
+            ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg.9gL-3xW2C3-9k-c3axcej5"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@debiddo I have no way of knowing if your explanation is &quot;right&quot;but it makes SO MUCH sense to me. I can&#39;t explain how much I love you right now."",
+              ""textOriginal"": ""@debiddo I have no way of knowing if your explanation is \""right\""but it makes SO MUCH sense to me. I can't explain how much I love you right now."",
+              ""parentId"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+              ""authorDisplayName"": ""Guido"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_7QhYANtG97E9trnXxoloM-Us5q7w9F6A5yk_1ZsVI5542YdNm-EzI7a3Ah7O3=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCgA9kLDQKjCm9I-oL42rRBA"",
+              ""authorChannelId"": {
+                ""value"": ""UCgA9kLDQKjCm9I-oL42rRBA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-24T01:55:31Z"",
+              ""updatedAt"": ""2022-12-24T02:05:44Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""qYPbqm_CDMjRYzwtuHCrzRtgub8"",
+            ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg.9gL-3xW2C3-9k-B7diLd-6"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""One thing I think people get wrong in these thought experiments is when you say &quot;if I&#39;m moving at the speed of light...&quot;. Movement is relative, so you have to measure your speed against something else. You may be moving at the speed of light compared to Earthbut you may be moving at a different speed compared to something else. You are always static compared to yourself. So if you are moving away from Earth at the speed of light and you turn a flashlight on pointing forward, you will just see the light move away from you at the speed of light, because the flashlight is static to you. People in Earth would see both you and the light moving away at the speed of light. I&#39;m no physicist though but this is what I understand from all this."",
+              ""textOriginal"": ""One thing I think people get wrong in these thought experiments is when you say \""if I'm moving at the speed of light...\"". Movement is relative, so you have to measure your speed against something else. You may be moving at the speed of light compared to Earthbut you may be moving at a different speed compared to something else. You are always static compared to yourself. So if you are moving away from Earth at the speed of light and you turn a flashlight on pointing forward, you will just see the light move away from you at the speed of light, because the flashlight is static to you. People in Earth would see both you and the light moving away at the speed of light. I'm no physicist though but this is what I understand from all this."",
+              ""parentId"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+              ""authorDisplayName"": ""NachoDS"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/-1Uv-ehyYut7wbeXZpnXF_feeQMkF1acIouapsAQtGtaqXRL4yUeAnGcwr6dNRf2iX4tRQCIlRA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCm-m4fx5KOjcIiMvB_RJQVA"",
+              ""authorChannelId"": {
+                ""value"": ""UCm-m4fx5KOjcIiMvB_RJQVA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-23T21:51:24Z"",
+              ""updatedAt"": ""2022-12-23T21:51:24Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""enexi3Q5yPqHzWq7Lig6ntx9wLs"",
+            ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg.9gL-3xW2C3-9jM6cWQhqjl"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@debiddo that makes a lot of sense. Thanks for answering that for me. I always think of light as traveling in one direction. I gotta check out some videos like you recommended. Thanks again!"",
+              ""textOriginal"": ""@debiddo that makes a lot of sense. Thanks for answering that for me. I always think of light as traveling in one direction. I gotta check out some videos like you recommended. Thanks again!"",
+              ""parentId"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+              ""authorDisplayName"": ""KT420ish"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_q97gaz2EvxXfBbMXy9Q3H4MR0DZ-AEadFvg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC8ihHpufB6rBu9Ez1e7KQsQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC8ihHpufB6rBu9Ez1e7KQsQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-12-07T23:03:12Z"",
+              ""updatedAt"": ""2022-12-07T23:03:12Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""PukHgZp3KFiEPFm5nOJpTM-2e3Q"",
+            ""id"": ""UgymZiI2icLZcfFutwZ4AaABAg.9gL-3xW2C3-9jM3gbd99FU"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@KT420ish If you are at or near the speed of light, holding a torch, to you the light from the torch would look normal since you, as the observer, are effected by your speed just as much as the light is. Your time would slow downbut you wouldn&#39;t notice. To everyone else who is not moving so fast, they would see the light as a different colour to you due to Doppler shift.\u003cbr\u003e\u003cbr\u003eAlso remember that when we talk about measuring the speed of light, it can&#39;t be measured in the same way that we measure other moving objects. We always need to make the light perform a round trip (away and return). The average speed of the round trip is the speed of light. No one has yet been able to measure the speed of light in a single direction (e.g. only moving away). There are some good videos on this. So it can&#39;t be proven whether light slows down when moving away from you (say, in your scenario), then returns at greater than the speed of light on the return. Whatever it does, the average round trip speed always comes out as the speed of light."",
+              ""textOriginal"": ""@KT420ish If you are at or near the speed of light, holding a torch, to you the light from the torch would look normal since you, as the observer, are effected by your speed just as much as the light is. Your time would slow downbut you wouldn't notice. To everyone else who is not moving so fast, they would see the light as a different colour to you due to Doppler shift.\n\nAlso remember that when we talk about measuring the speed of light, it can't be measured in the same way that we measure other moving objects. We always need to make the light perform a round trip (away and return). The average speed of the round trip is the speed of light. No one has yet been able to measure the speed of light in a single direction (e.g. only moving away). There are some good videos on this. So it can't be proven whether light slows down when moving away from you (say, in your scenario), then returns at greater than the speed of light on the return. Whatever it does, the average round trip speed always comes out as the speed of light."",
+              ""parentId"": ""UgymZiI2icLZcfFutwZ4AaABAg"",
+              ""authorDisplayName"": ""debiddo"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8ja8826PrDlT_RHRkJcqeFkUK1z02K94mQxQ=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCOZQ7zY3MHLNb8mj4d6pkvQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCOZQ7zY3MHLNb8mj4d6pkvQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2022-12-07T22:37:32Z"",
+              ""updatedAt"": ""2022-12-07T22:37:32Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""GThmb_yXPFxqet8wglgxDjhov0w"",
+      ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""ORyqal3WtsF4KSJh1xXhUcbLfvI"",
+          ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""\u003ca href=\""https://www.youtube.com/watch?v=yuD34tEpRFw&amp;t=1m08s\""\u003e1:08\u003c/a\u003e In my opinion, it&#39;s already obvious that moving in any speeds (even slow or faster than light) doesn&#39;t make the real time faster.\u003cbr\u003e\u003cbr\u003eIf the speed of light is infinite, time dilation would not exist, and I think that would be great. But the speed of light is not infinite, so there&#39;s a delay in how you would perceive light.\u003cbr\u003e\u003cbr\u003eWe humans use our eyes to look what time it is, and vision is about perceiving light, and light travels very fast but not infinitely fast.\u003cbr\u003e\u003cbr\u003eThere will always be a delay when light reaches you, so everything you see right now is delayed (even if it&#39;s very very slight). Like look at the Sun, that&#39;s the sun 8 minutes ago. Or look at your hand, that&#39;s what your hand looks like 0.00000...1 microseconds ago for example."",
+            ""textOriginal"": ""1:08 In my opinion, it's already obvious that moving in any speeds (even slow or faster than light) doesn't make the real time faster.\n\nIf the speed of light is infinite, time dilation would not exist, and I think that would be great. But the speed of light is not infinite, so there's a delay in how you would perceive light.\n\nWe humans use our eyes to look what time it is, and vision is about perceiving light, and light travels very fast but not infinitely fast.\n\nThere will always be a delay when light reaches you, so everything you see right now is delayed (even if it's very very slight). Like look at the Sun, that's the sun 8 minutes ago. Or look at your hand, that's what your hand looks like 0.00000...1 microseconds ago for example."",
+            ""authorDisplayName"": ""TheEarlyAstrotype"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/AQv1BMfichjVvVpGhFRWdY8wIATu_pfhcqxZfyyNmG-lqnMO5fRDapdYtkkakqkuIZrX-4Lr_18=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvEbNksnSwwEY-WmXShhVPQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCvEbNksnSwwEY-WmXShhVPQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 20,
+            ""publishedAt"": ""2021-02-24T02:23:10Z"",
+            ""updatedAt"": ""2021-02-24T02:42:30Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 6,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""B_mWNSVp29ITHTT47M-9wZy9tK8"",
+            ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg.9K7cDbtWs_A9WOw1lAj1Oa"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@TheDoor interestingly for the Hafele-keating experiment they used atomic clock which Google said &quot;Atomic-clock makers use the regularity of these vibrations to keep time with extreme accuracy. Toddlers can&#39;t mess up these clocksbut there&#39;s still a little instability. Atoms move around, and that makes their vibrations slightly harder to measure.&quot; So I am not really sure anymore . I guess we need a more accurate way to measure things"",
+              ""textOriginal"": ""@TheDoor interestingly for the Hafele-keating experiment they used atomic clock which Google said \""Atomic-clock makers use the regularity of these vibrations to keep time with extreme accuracy. Toddlers can't mess up these clocksbut there's still a little instability. Atoms move around, and that makes their vibrations slightly harder to measure.\"" So I am not really sure anymore . I guess we need a more accurate way to measure things"",
+              ""parentId"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+              ""authorDisplayName"": ""Sky_Y "",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/W8zY69wDQ0xo7XitO71v6N-DgN0kI6qJK07ff9dRUKfhXuwB1890jCMRQH1HtIISkSUYn7dYp14=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCuCunVXm4v4B1Sffd5wBTew"",
+              ""authorChannelId"": {
+                ""value"": ""UCuCunVXm4v4B1Sffd5wBTew""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2021-12-26T02:00:07Z"",
+              ""updatedAt"": ""2021-12-26T02:00:07Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""hGiQ0BexfWbyV5eDH6Hq6swR9Fw"",
+            ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg.9K7cDbtWs_A9WO4_kN93VE"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Sky_Y  they also were only able to test it with a couple minutes at most not enough to truly tell"",
+              ""textOriginal"": ""@Sky_Y  they also were only able to test it with a couple minutes at most not enough to truly tell"",
+              ""parentId"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+              ""authorDisplayName"": ""TheDoor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu90sgNlga0jJdYvS51IJOjIR_YW7qDzCm31ZsUA8w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7F50ZEA_fTVp0Y_d_2Chew"",
+              ""authorChannelId"": {
+                ""value"": ""UC7F50ZEA_fTVp0Y_d_2Chew""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2021-12-25T18:04:18Z"",
+              ""updatedAt"": ""2021-12-25T18:04:18Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Mf616u1o5vGBiM96d4xlKswVrXU"",
+            ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg.9K7cDbtWs_A9WO4WSP5Da7"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Sky_Y  also clocks are man made things that could have errors and all sorts of malfunctions or miss calculations"",
+              ""textOriginal"": ""@Sky_Y  also clocks are man made things that could have errors and all sorts of malfunctions or miss calculations"",
+              ""parentId"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+              ""authorDisplayName"": ""TheDoor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu90sgNlga0jJdYvS51IJOjIR_YW7qDzCm31ZsUA8w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7F50ZEA_fTVp0Y_d_2Chew"",
+              ""authorChannelId"": {
+                ""value"": ""UC7F50ZEA_fTVp0Y_d_2Chew""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 2,
+              ""publishedAt"": ""2021-12-25T18:03:43Z"",
+              ""updatedAt"": ""2021-12-25T18:03:43Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""aAmT0zEOShhsp8PfHuyZApdN2FQ"",
+            ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg.9K7cDbtWs_A9WO4LRQrvPc"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Sky_Y  basically what u said is u just gotta accept it bc ppl said so"",
+              ""textOriginal"": ""@Sky_Y  basically what u said is u just gotta accept it bc ppl said so"",
+              ""parentId"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+              ""authorDisplayName"": ""TheDoor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu90sgNlga0jJdYvS51IJOjIR_YW7qDzCm31ZsUA8w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7F50ZEA_fTVp0Y_d_2Chew"",
+              ""authorChannelId"": {
+                ""value"": ""UC7F50ZEA_fTVp0Y_d_2Chew""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-12-25T18:02:13Z"",
+              ""updatedAt"": ""2021-12-25T18:02:13Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""kryUKAv0ZGueMxkPn_NXrVs4w1U"",
+            ""id"": ""UgxXlS6pL6UgslG39yJ4AaABAg.9K7cDbtWs_A9WO4F7lc-YF"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Sky_Y  nah"",
+              ""textOriginal"": ""@Sky_Y  nah"",
+              ""parentId"": ""UgxXlS6pL6UgslG39yJ4AaABAg"",
+              ""authorDisplayName"": ""TheDoor"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu90sgNlga0jJdYvS51IJOjIR_YW7qDzCm31ZsUA8w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC7F50ZEA_fTVp0Y_d_2Chew"",
+              ""authorChannelId"": {
+                ""value"": ""UC7F50ZEA_fTVp0Y_d_2Chew""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2021-12-25T18:01:21Z"",
+              ""updatedAt"": ""2021-12-25T18:01:21Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""_flWwUspiFWRFnpjOrdqxCk8nAQ"",
+      ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""eLGsU68lCn_G_2lknSNGfhp-Hok"",
+          ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""I’m 19 and was never really into science at school, I was a humanities guy, and there’s nothing I regret more than not learning more about it"",
+            ""textOriginal"": ""I’m 19 and was never really into science at school, I was a humanities guy, and there’s nothing I regret more than not learning more about it"",
+            ""authorDisplayName"": ""alex"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/mFnRYaDZ5TKsu1OfUirAONbdJzL5d6XKQXRwaLUcVctWNWwb7q1BZq6BCX6YY-z1ikfss12yQA=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCTAvExdApWfexwRpvf6ElsQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCTAvExdApWfexwRpvf6ElsQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 24,
+            ""publishedAt"": ""2021-09-23T22:25:30Z"",
+            ""updatedAt"": ""2021-09-23T22:25:30Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 3,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""7xaZMkaBw_FriNxEZEGiH3M0Vjg"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9dq7SQjc4He"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""me and you both. I&#39;m 19 too and hated maths and physics at school (and I still hate), what I like about physics is the theories and astronomy, I hate the calculations and formulas. I liked that part of physics while I was still at school but only now I started diving deeper into it"",
+              ""textOriginal"": ""me and you both. I'm 19 too and hated maths and physics at school (and I still hate), what I like about physics is the theories and astronomy, I hate the calculations and formulas. I liked that part of physics while I was still at school but only now I started diving deeper into it"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Rafael Muniz"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-ddPmQea-etisoE9_ofuTMluEYMXSd4MwH9i_IKw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCNbawwJklXU-yDeLMZYhK_g"",
+              ""authorChannelId"": {
+                ""value"": ""UCNbawwJklXU-yDeLMZYhK_g""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-23T20:58:31Z"",
+              ""updatedAt"": ""2022-07-23T20:58:31Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""eVnG85WDpcr0nPHacKc3ZvONdbk"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9d3h9YSJsiN"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""arts are cool but nothing compares to facts and logic aka science"",
+              ""textOriginal"": ""arts are cool but nothing compares to facts and logic aka science"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Erin Jäger"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/kFgdPTDKJVmyBQDnhFilPczkzdovVscBvR9QKCSv8krCsqaLDflWmEFpvaVqzC1JiMJ9nd5MPw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC-mZ_CKQK1-Sc57G-OmHiSQ"",
+              ""authorChannelId"": {
+                ""value"": ""UC-mZ_CKQK1-Sc57G-OmHiSQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-07-04T16:17:13Z"",
+              ""updatedAt"": ""2022-07-04T16:17:13Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Zf1z_fX3cLbzygtC_rPudy6pSdA"",
+            ""id"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg.9Se4YNmWdCJ9cLrLGOhNOm"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""you don&#39;t need school to learn science 👍"",
+              ""textOriginal"": ""you don't need school to learn science 👍"",
+              ""parentId"": ""UgzWZ1Xz9iWAsuhLSYl4AaABAg"",
+              ""authorDisplayName"": ""Ankit Paul"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9YLH609aQ7s1kyThjaIUzoxnZXlTpjaR-ZvJsj7g=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCctn5SmW_izXf-4iDJWZp3Q"",
+              ""authorChannelId"": {
+                ""value"": ""UCctn5SmW_izXf-4iDJWZp3Q""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-06-16T21:01:08Z"",
+              ""updatedAt"": ""2022-06-16T21:01:08Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""7wl7A4Pzs1__nXwYWiC3akBfQnA"",
+      ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""8Hnx_15DsuI_QOwHElJZjsKOhsE"",
+          ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Thanks, gradually after watching these extremely useful videos a few times, I am beginning to understand these concepts of time dilation and Einstein&#39;s theory of relativity."",
+            ""textOriginal"": ""Thanks, gradually after watching these extremely useful videos a few times, I am beginning to understand these concepts of time dilation and Einstein's theory of relativity."",
+            ""authorDisplayName"": ""Jesus Bermudez"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8f2pTR-phAUkYrxkrCn9VabKi2ia_7S-i24k7H=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIF96YVwTaV4PiaM-PIwBDA"",
+            ""authorChannelId"": {
+              ""value"": ""UCIF96YVwTaV4PiaM-PIwBDA""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 17,
+            ""publishedAt"": ""2022-07-12T19:11:44Z"",
+            ""updatedAt"": ""2022-07-12T19:11:44Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 3,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""u1rdnh0xGliPI2Lx1G1OHRn3lQk"",
+            ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg.9dObUfhtwNi9k9NYmTd2O2"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Jesus Bermudez ahhh thanks bro. appreciated! 😂"",
+              ""textOriginal"": ""@Jesus Bermudez ahhh thanks bro. appreciated! 😂"",
+              ""parentId"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+              ""authorDisplayName"": ""Kawin Jungsakulrujirek"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_hKTSgtt_xugfv_TuYwYyRAsIqr5oDmZnfdR3L8Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCx6lyE-jh0334JI4JgYWzVA"",
+              ""authorChannelId"": {
+                ""value"": ""UCx6lyE-jh0334JI4JgYWzVA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-12-27T20:52:22Z"",
+              ""updatedAt"": ""2022-12-27T20:52:22Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""14zWQB0-EeeVhspDi7zsbUSHPzA"",
+            ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg.9dObUfhtwNi9jQ6oG8Ilku"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@Kawin Jungsakulrujirek I never said I understood completely, I only said I am beginning to understand. So we are in the same boat."",
+              ""textOriginal"": ""@Kawin Jungsakulrujirek I never said I understood completely, I only said I am beginning to understand. So we are in the same boat."",
+              ""parentId"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+              ""authorDisplayName"": ""Jesus Bermudez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8f2pTR-phAUkYrxkrCn9VabKi2ia_7S-i24k7H=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCIF96YVwTaV4PiaM-PIwBDA"",
+              ""authorChannelId"": {
+                ""value"": ""UCIF96YVwTaV4PiaM-PIwBDA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-12-09T12:21:46Z"",
+              ""updatedAt"": ""2022-12-09T12:21:46Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""1wk1GpsNDO6-96-aHPVimWiC58Y"",
+            ""id"": ""UgypVOQQNTerdO-TtYt4AaABAg.9dObUfhtwNi9jQ6F0-dupk"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Why I still don’t understand 😢"",
+              ""textOriginal"": ""Why I still don’t understand 😢"",
+              ""parentId"": ""UgypVOQQNTerdO-TtYt4AaABAg"",
+              ""authorDisplayName"": ""Kawin Jungsakulrujirek"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_hKTSgtt_xugfv_TuYwYyRAsIqr5oDmZnfdR3L8Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCx6lyE-jh0334JI4JgYWzVA"",
+              ""authorChannelId"": {
+                ""value"": ""UCx6lyE-jh0334JI4JgYWzVA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-12-09T12:16:49Z"",
+              ""updatedAt"": ""2022-12-09T12:16:49Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""Q318AdpheP3XjzUq7nf-BgRzLdE"",
+      ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""J3hgSV1mcoHDuzmX5mDa9GJN_j4"",
+          ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Cop: “Do you know how fast you’re going?”\u003cbr\u003e\u003cbr\u003eEinstein: “Speed is relative officer”"",
+            ""textOriginal"": ""Cop: “Do you know how fast you’re going?”\n\nEinstein: “Speed is relative officer”"",
+            ""authorDisplayName"": ""Swam Htet"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-39AD0HisylGAwJ_ia8PcALu1gXBXOEv8X7w=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCroBu6V87nMw_Gz8ApBB2Kg"",
+            ""authorChannelId"": {
+              ""value"": ""UCroBu6V87nMw_Gz8ApBB2Kg""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 3572,
+            ""publishedAt"": ""2020-08-23T07:40:09Z"",
+            ""updatedAt"": ""2020-08-23T07:40:09Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 34,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""Uvzk4qc25eDikyYF8ntyOLC_nUg"",
+            ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg.9CgpRN2Qogy9itxwsFBugg"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Ok then.. do you know how fast you&#39;re going relatively?"",
+              ""textOriginal"": ""Ok then.. do you know how fast you're going relatively?"",
+              ""parentId"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+              ""authorDisplayName"": ""job1search"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9PGgi4mDcNyW8U2Qd8TTO3m6KuYMgEvFiG1w=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCHvunZTqNurp91YgSCUoCkA"",
+              ""authorChannelId"": {
+                ""value"": ""UCHvunZTqNurp91YgSCUoCkA""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-11-26T15:20:37Z"",
+              ""updatedAt"": ""2022-11-26T15:20:37Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""9zcDsWe0Fv9Ayz8vMe1g8guqzPU"",
+            ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg.9CgpRN2Qogy9ijFRqBnDDn"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Sir, please blow your mouth at this hose"",
+              ""textOriginal"": ""Sir, please blow your mouth at this hose"",
+              ""parentId"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+              ""authorDisplayName"": ""Siraaj Karim"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-SbY1jtapYt_3Yx36uzxdu9C3ZLCbKcUJSFlQgFXY=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCAtJbk5-UdFcslA88DW-aog"",
+              ""authorChannelId"": {
+                ""value"": ""UCAtJbk5-UdFcslA88DW-aog""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-11-22T11:30:37Z"",
+              ""updatedAt"": ""2022-11-22T11:30:37Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""I5fM4rlD-0SAuVbEnA7xRtdjxXY"",
+            ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg.9CgpRN2Qogy9h8PnoDHIOw"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""The officer replied.  NO, it is NOT.  The speed of light is the same for all.  Why would the speed of your car be any different?  Your name is Einstein not Galileo or Newton."",
+              ""textOriginal"": ""The officer replied.  NO, it is NOT.  The speed of light is the same for all.  Why would the speed of your car be any different?  Your name is Einstein not Galileo or Newton."",
+              ""parentId"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+              ""authorDisplayName"": ""Aage"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu8B6kpmn1--hO--3c3Jzm2t1PvQbkDW1V1pb3j_4vjxurBukPgZYL_AtMGg0f3q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCzve8rjFDVpyepnytAWNHzw"",
+              ""authorChannelId"": {
+                ""value"": ""UCzve8rjFDVpyepnytAWNHzw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1,
+              ""publishedAt"": ""2022-10-13T22:18:36Z"",
+              ""updatedAt"": ""2022-10-13T22:18:36Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""xFg28ZKJrrKmr16jg4Uut_KUBM0"",
+            ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg.9CgpRN2Qogy9awfA5oGfsk"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""Cop sticks a blister on einsteins  horse $80 sir"",
+              ""textOriginal"": ""Cop sticks a blister on einsteins  horse $80 sir"",
+              ""parentId"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+              ""authorDisplayName"": ""Gary"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9gS10HdjU4LdLuZXle_emefeIokomAZsiV8A=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCt0c1aHiozfWrk8pw6cQrjw"",
+              ""authorChannelId"": {
+                ""value"": ""UCt0c1aHiozfWrk8pw6cQrjw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-05-12T20:23:06Z"",
+              ""updatedAt"": ""2022-05-12T20:23:06Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""oeLAlRt-riFPeevtkytfGhRW8-M"",
+            ""id"": ""UgyaC-bhtGFIbC7rcGN4AaABAg.9CgpRN2Qogy9a8LnPxHRVh"",
+            ""snippet"": {
+              ""videoId"": ""yuD34tEpRFw"",
+              ""textDisplay"": ""@HackerExecute Resting in my back seat?"",
+              ""textOriginal"": ""@HackerExecute Resting in my back seat?"",
+              ""parentId"": ""UgyaC-bhtGFIbC7rcGN4AaABAg"",
+              ""authorDisplayName"": ""Jennifer S"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_j3o7rDtlbyiM1qs5DhAaLAqYHo3qDyXXOg3stKA=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCMJHWVETK7BwV7D-4TJzICQ"",
+              ""authorChannelId"": {
+                ""value"": ""UCMJHWVETK7BwV7D-4TJzICQ""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 0,
+              ""publishedAt"": ""2022-04-22T22:03:50Z"",
+              ""updatedAt"": ""2022-04-22T22:03:50Z""
+            }
+          }
+        ]
+      }
+    },
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""W86PaJUvuvuCDwRMWC4xDy_b7s8"",
+      ""id"": ""UgwNXP6awLg0XxXthfh4AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""yuD34tEpRFw"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""d06AUGb7P9OAcIcrqH1osX8wJOA"",
+          ""id"": ""UgwNXP6awLg0XxXthfh4AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""yuD34tEpRFw"",
+            ""textDisplay"": ""Really interesting video, everything was explained very clearly. Thanks!"",
+            ""textOriginal"": ""Really interesting video, everything was explained very clearly. Thanks!"",
+            ""authorDisplayName"": ""MikeyM32_"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-8nrl6gsL6fq57pNbttQzykMm5sBRUMmB4tL92=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCorMo0XVV0lBRApkK6uTu_w"",
+            ""authorChannelId"": {
+              ""value"": ""UCorMo0XVV0lBRApkK6uTu_w""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 15,
+            ""publishedAt"": ""2021-05-23T05:29:34Z"",
+            ""updatedAt"": ""2021-05-23T05:29:34Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 0,
+        ""isPublic"": true
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_1iyezmr10hnas_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iykhy0hqlpid_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1je9wswmr06r8_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jeaeq61bi7ol_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ji1q58ungies_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ji27lshskmya_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1ji7rxua61j5l_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jylj9b232ywi_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1jyoc7e6hfip1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k1zkgg030oxf_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: videoId, allThreadsRelatedToChannelId, channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: videoId, allThreadsRelatedToChannelId, channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k202glmswto0_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1k22birzurz8x_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qdw131ugpppg_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qefgocbc9nhu_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qy276zogv9ko_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_qy4gpq9pywqb_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_rhjcnwonewdg_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s0x9urd26h4h_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s16366nbf0ae_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_s4xg5ca11mb5_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""IXbkVkPeEMK6ejih89DtYA2Pngo"",
+  ""pageInfo"": {
+    ""totalResults"": 0,
+    ""resultsPerPage"": 84
+  },
+  ""items"": []
+}
+",application/json; charset=UTF-8,true,none
+test_skycri2m7ckj_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_sl686mqsny2g_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_socb8pfrcoys_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, id, videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: allThreadsRelatedToChannelId, id, videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4flaepkd8on_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t4vowyawaur6_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_t84lrif64ego_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_trzodg3bxwe1_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_u8b6y10ukrw9_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, allThreadsRelatedToChannelId, channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubj2e0vjqss7_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""LmS-8J0D8S0ek21S_O88QFudphE"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 20
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""bMNbFyFpKt_3U18VOHBSeaa61Lg"",
+      ""id"": ""UgyyScM63hUgS_x7IXp4AaABAg""
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_uboo9qx3vl81_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, channelId, allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, channelId, allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_ubrek13hj0ab_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_urej3uw0qtro_youtubecommentThreadslist,200,"{
+  ""kind"": ""youtube#commentThreadListResponse"",
+  ""etag"": ""vljw_d_qjKWZ7BfFjrzizQK5YlY"",
+  ""pageInfo"": {
+    ""totalResults"": 1,
+    ""resultsPerPage"": 90
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#commentThread"",
+      ""etag"": ""38-I1o9cV7O79amWM2hsRiy1s1g"",
+      ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+      ""snippet"": {
+        ""videoId"": ""DPIv7awI-1A"",
+        ""topLevelComment"": {
+          ""kind"": ""youtube#comment"",
+          ""etag"": ""FG0ymApqLdyGes42RU28TMMhvjg"",
+          ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+          ""snippet"": {
+            ""videoId"": ""DPIv7awI-1A"",
+            ""textDisplay"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""textOriginal"": ""Con cojones aquí se gastan 💵 💵 💵 con cojones"",
+            ""authorDisplayName"": ""Jhayco"",
+            ""authorProfileImageUrl"": ""https://yt3.ggpht.com/CE0G60L6SOFlONCmxvc6pN7a3DaxQZfcdPNZihQA69kvmpiyTzdJD0N7tNa0a-3j9l3zGehG=s48-c-k-c0x00ffffff-no-rj"",
+            ""authorChannelUrl"": ""http://www.youtube.com/channel/UCvpEyEBML6z-PJJ9XrqgpKQ"",
+            ""authorChannelId"": {
+              ""value"": ""UCvpEyEBML6z-PJJ9XrqgpKQ""
+            },
+            ""canRate"": true,
+            ""viewerRating"": ""none"",
+            ""likeCount"": 66325,
+            ""publishedAt"": ""2020-02-05T18:45:17Z"",
+            ""updatedAt"": ""2020-02-05T18:45:17Z""
+          }
+        },
+        ""canReply"": true,
+        ""totalReplyCount"": 471,
+        ""isPublic"": true
+      },
+      ""replies"": {
+        ""comments"": [
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""TUawezDHhbO_AfRORVGEyKURDVM"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f6m--qxPB"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""Potito"",
+              ""textOriginal"": ""Potito"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""bathesgal"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/0PCEX4jV5UPFoIOG57eryutcEajWqO6ScukUK0b4oLqRBa6VoaIIC0mDHyW0Hw8jKBJUCFBLmw=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCX7Z31jwiqtq4FblSdlfRCw"",
+              ""authorChannelId"": {
+                ""value"": ""UCX7Z31jwiqtq4FblSdlfRCw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 1337,
+              ""publishedAt"": ""2020-02-05T19:30:45Z"",
+              ""updatedAt"": ""2021-04-06T12:25:10Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""yGjS47Vo8qrFw15moTG0nP1ez7U"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f6tdS9uW8"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""🔥🔥🔥🔥🔥"",
+              ""textOriginal"": ""🔥🔥🔥🔥🔥"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""Mafeyyr Rodriguez"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-i5D4Ff-VbQQ-axpGduCahOZVQXVnMFiZi9Q=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCj_ckq_su2FQY853p9fqjSg"",
+              ""authorChannelId"": {
+                ""value"": ""UCj_ckq_su2FQY853p9fqjSg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 465,
+              ""publishedAt"": ""2020-02-05T19:31:47Z"",
+              ""updatedAt"": ""2020-02-05T19:31:47Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""XI4n2H3w8wMAr2cVSRrsq9_BHvw"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f79NQ7vv4"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""Siempre andamos con los palos x si me bajo y los jalo brrrrr Eh tu nuevo tema (como se siente) esta flamaaa la va romper siempre activo desde argentina un saludo jhay"",
+              ""textOriginal"": ""Siempre andamos con los palos x si me bajo y los jalo brrrrr Eh tu nuevo tema (como se siente) esta flamaaa la va romper siempre activo desde argentina un saludo jhay"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""Gonzaa pegno"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu9KrfqELL546czJLBzyBpXBYNkrB66niqjGHN-d=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCYaTuVp85KNkYinRJugNaMw"",
+              ""authorChannelId"": {
+                ""value"": ""UCYaTuVp85KNkYinRJugNaMw""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 331,
+              ""publishedAt"": ""2020-02-05T19:34:04Z"",
+              ""updatedAt"": ""2020-02-05T19:34:04Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""T9ykGiXKvyLEjFN7BNiQvFa6qik"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f7Dbm2eWU"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""el crack"",
+              ""textOriginal"": ""el crack"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""Daniel jesus pinzon diaz"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu_Ex48L7l6m36c725F6i0t5cHNYVbWVoHOhXtMMog=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UCv26ZbBNpgmChod_FbNxXwg"",
+              ""authorChannelId"": {
+                ""value"": ""UCv26ZbBNpgmChod_FbNxXwg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 206,
+              ""publishedAt"": ""2020-02-05T19:34:39Z"",
+              ""updatedAt"": ""2020-02-05T19:34:39Z""
+            }
+          },
+          {
+            ""kind"": ""youtube#comment"",
+            ""etag"": ""88VuBRstW6BpV4rxbAFsDOXP2uo"",
+            ""id"": ""UgyR8TjvAmSACMJZyH14AaABAg.94f1ZyBbIXl94f88sYzIl3"",
+            ""snippet"": {
+              ""videoId"": ""DPIv7awI-1A"",
+              ""textDisplay"": ""Dame cora Jhay 👍"",
+              ""textOriginal"": ""Dame cora Jhay 👍"",
+              ""parentId"": ""UgyR8TjvAmSACMJZyH14AaABAg"",
+              ""authorDisplayName"": ""LL4MA G"",
+              ""authorProfileImageUrl"": ""https://yt3.ggpht.com/ytc/AMLnZu-Nzoqt5_NHW4KYdxGza2EM_8nUNLgJe-H240RvSg=s48-c-k-c0x00ffffff-no-rj"",
+              ""authorChannelUrl"": ""http://www.youtube.com/channel/UC8EwB3_2c_EsnwKRD4SgiJg"",
+              ""authorChannelId"": {
+                ""value"": ""UC8EwB3_2c_EsnwKRD4SgiJg""
+              },
+              ""canRate"": true,
+              ""viewerRating"": ""none"",
+              ""likeCount"": 153,
+              ""publishedAt"": ""2020-02-05T19:42:45Z"",
+              ""updatedAt"": ""2020-02-05T19:42:45Z""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,true,none
+test_urjkqf04zhb6_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uveovl1f037c_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: videoId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_uvjrccfhxyd4_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: allThreadsRelatedToChannelId, channelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vb3k6eyatf78_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vb3lc8elhlcx_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vbhdhr7jba06_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId, videoId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, allThreadsRelatedToChannelId, videoId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_vf0vw5bf0lrs_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: channelId, id"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.

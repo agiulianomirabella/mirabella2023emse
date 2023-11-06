@@ -1,0 +1,70 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_1iuyahikw5h6b_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_yXAzv6zqidWPxT?t=1685080774"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,false,This test case's input was (possibly) correctbut received a 400 (Bad Request) status code.
+test_1iyq1vv93npsx_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_wBswxxd80OwXK6?t=1685080782"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_1jy2pygjtkbp3_PostCoupons,200,"{
+  ""id"": ""VKadKMxL"",
+  ""object"": ""coupon"",
+  ""amount_off"": 59,
+  ""created"": 1685080790,
+  ""currency"": ""czk"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 24,
+  ""metadata"": {},
+  ""name"": null,
+  ""percent_off"": null,
+  ""redeem_by"": 1823882807,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_socbpcy0d8vp_PostCoupons,200,"{
+  ""id"": ""vSgxFygf"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080796,
+  ""currency"": ""ars"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": null,
+  ""metadata"": {},
+  ""name"": ""bawling"",
+  ""percent_off"": 84.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,false,This faulty test case was expecting a 4XX status code(inter_parameter_dependency)but received a 2XX one.
+test_tooidy6xzprk_PostCoupons,200,"{
+  ""id"": ""GJdjo2DUISPFk"",
+  ""object"": ""coupon"",
+  ""amount_off"": null,
+  ""created"": 1685080802,
+  ""currency"": null,
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 40,
+  ""metadata"": {},
+  ""name"": ""aquatint"",
+  ""percent_off"": 99.0,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none

@@ -1,0 +1,54 @@
+testResultId,statusCode,responseBody,outputContentType,passed,failReason
+test_qxl1fwyu2t0i_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""Invalid timestamp: can be no more than five years in the future"",
+    ""param"": ""redeem_by"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_0v6wZFMnuP0dnz?t=1685059172"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_s1dxcdd1gbat_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_SxC8LVAMxyALIo?t=1685059178"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_somv8rzgxr35_PostCoupons,200,"{
+  ""id"": ""aE97EX1E"",
+  ""object"": ""coupon"",
+  ""amount_off"": 43,
+  ""created"": 1685059184,
+  ""currency"": ""bnd"",
+  ""duration"": ""once"",
+  ""duration_in_months"": null,
+  ""livemode"": false,
+  ""max_redemptions"": 94,
+  ""metadata"": {},
+  ""name"": ""lopsidedly"",
+  ""percent_off"": null,
+  ""redeem_by"": null,
+  ""times_redeemed"": 0,
+  ""valid"": true
+}",application/json,true,none
+test_trtnoa1emo1d_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""The duration_in_months param must be set when creating a coupon with a repeating duration"",
+    ""param"": ""duration"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_rT8q65Jl7yd5qz?t=1685059189"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
+test_uvenbcaxxch0_PostCoupons,400,"{
+  ""error"": {
+    ""message"": ""You must pass currency when passing amount_off"",
+    ""param"": ""currency"",
+    ""request_log_url"": ""https://dashboard.stripe.com/test/logs/req_kJudy0htrpjnjh?t=1685059195"",
+    ""type"": ""invalid_request_error""
+  }
+}
+",application/json,true,none
