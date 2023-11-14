@@ -11,4 +11,4 @@ SCALER = MinMaxScaler()
 
 DEFAULT_RESAMPLING_RATIO = 1
 
-RESTEST_PATH = '/Users/giulianomirabella/Desktop/RESTest/'
+RESTEST_PATH = '../RESTest/'

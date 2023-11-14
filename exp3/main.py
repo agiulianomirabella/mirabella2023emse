@@ -3,7 +3,7 @@ import pandas as pd
 
 from root.data.dataset import read_dataset
 
-MODES = ['rt', 'atlas']
+MODES = ['rt', 'malta']
 SERVICES = [
     "GitHub",
     'Amadeus_Hotels', 
@@ -38,7 +38,7 @@ for service in SERVICES:
                 'n_valid': data.n_obt_valid,
                 'valid_ratio': data.obt_valid_ratio,
             }, ignore_index=True)
-            
+
 for service in out['service']:
     tmp = out[out['service']==service]
     tmp[['tech', 'valid_ratio', 'OAS']].set_index('tech').sort_index().to_csv(f'results/{service}.csv')
@@ -48,6 +48,10 @@ out = out[['service', 'tech', 'valid_ratio', 'OAS', '5XX']].groupby(['service', 
 out = pd.pivot_table(out, index='service', columns='tech', values=['valid_ratio', 'OAS', '5XX'])
 out.columns = [f'{col}_{tech}' for col, tech in out.columns]
 out = out[out.columns[::-1]]
+
+out['Failures_SOTA'] = out['OAS_rt'] + out['5XX_rt']
+out['Failures_MALTA'] = out['OAS_malta'] + out['5XX_malta']
+
 out.loc['Mean'] = out.mean()
 
 print(out)
