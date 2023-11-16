@@ -1,0 +1,17 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_qec4begoqzxe_youtubecommentThreadslist,True,inter_parameter_dependency,False,youtube.commentThreads.list,/youtube/v3/commentThreads,GET,application/json,application/json,,,maxResults=71;part=snippet%2Creplies;channelId=UClgRkhTL3_hImCAmdLfDE4g;order=relevance;textFormat=html;,,,test_qec4begoqzxe_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+    ""errors"": [
+      {
+        ""message"": ""The API server failed to successfully process the request. While this can be a transient error, it usually indicates that the request's input is invalid. Check the structure of the \u003ccode\u003ecommentThread\u003c/code\u003e resource in the request body to ensure that it is valid."",
+        ""domain"": ""youtube.commentThread"",
+        ""reason"": ""processingFailure"",
+        ""location"": ""body"",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.,OAS disconformity,1662980528751,YouTube_CommentsAndThreads_atlas_9,../target/test-data/YouTube_CommentsAndThreads_atlas_9/test-cases_1662980528751.csv,0,17,../target/test-data/YouTube_CommentsAndThreads_atlas_9/test-cases_1662980528751.csv;../target/test-data/YouTube_CommentsAndThreads_atlas_9/test-cases_1662980545474.csv;../target/test-data/YouTube_CommentsAndThreads_atlas_9/test-cases_1662980562087.csv;../target/test-data/YouTube_CommentsAndThreads_atlas_9/test-cases_1662980578973.csv,4

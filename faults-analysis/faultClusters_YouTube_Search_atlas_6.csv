@@ -1,0 +1,199 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1ji7qdhwyb9rm_youtubesearchlist,True,inter_parameter_dependency,False,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,videoCaption=none;part=snippet;forDeveloper=true;eventType=none;type=channel;videoSyndicated=any;videoLicense=youtube;locationRadius=931m;q=want;publishedAfter=2014-09-10T10%3A51%3A34Z;topicId=%2Fm%2F02hygl;videoCategoryId=42;channelId=UClzCn8DxRSCuMFv_WfzkcrQ;publishedBefore=2018-06-19T05%3A14%3A17Z;order=date;,,,test_1ji7qdhwyb9rm_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.,OAS disconformity,1662729791963,YouTube_Search_atlas_6,../target/test-data/YouTube_Search_atlas_6/test-cases_1662729791963.csv,0,48,../target/test-data/YouTube_Search_atlas_6/test-cases_1662729791963.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662729836014.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662729856804.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662729882707.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662729933006.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662729957508.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662729987818.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730013301.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730041383.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730071051.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730096512.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730166141.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730196931.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730227821.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730253866.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730280092.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730307038.csv,17
+test_t84kwlnos5t2_youtubesearchlist,False,null,True,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,locationRadius=857m;q=complete;publishedAfter=2013-03-05T21%3A40%3A19Z;topicId=%2Fm%2F05qjc;part=snippet;location=-33.924278%2C18.424572;videoDefinition=any;type=video;safeSearch=moderate;videoLicense=youtube;relevanceLanguage=PT;,,,test_t84kwlnos5t2_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""8RguIHCL-_gm6VdLyhPYlZBX5jo"",
+  ""nextPageToken"": ""CAUQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 6,
+    ""resultsPerPage"": 5
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""IXpE_beSN4KWyaHNyJbGN-TK7W4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""0fvEGM0Q2-Y""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-11-06T11:49:14Z"",
+        ""channelId"": ""UCRzoDnRyRPJI0caUh3Ze-nA"",
+        ""title"": ""Marimba Level 8 Performance Exam"",
+        ""description"": ""This recital performance showcases the very first group of students to complete the 8-level program of the Marimba Jam Syllabus ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/0fvEGM0Q2-Y/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/0fvEGM0Q2-Y/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/0fvEGM0Q2-Y/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Marimba Jam"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-11-06T11:49:14Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""FzVtiZ9zRKf5S7PfGlXgQUpMce8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""sx8UtV7SPzw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-04-03T16:13:12Z"",
+        ""channelId"": ""UCfvfNWrYrrmTOMpjqfmZvtw"",
+        ""title"": ""Walter White Breaking Bad Dancing for Daenerys Targaryen"",
+        ""description"": ""Walter White and Daenerys Targaryen partying and getting weird whilst chemically imbalanced!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/sx8UtV7SPzw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/sx8UtV7SPzw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/sx8UtV7SPzw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""danny.archer 13"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-04-03T16:13:12Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""XVTVPzt-p-LU_j9Yb5Aw6vi32Go"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""SxRVg7ExP4U""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-05-14T17:24:34Z"",
+        ""channelId"": ""UCkh3oqXzozsEo3i4DFWNVYA"",
+        ""title"": ""The Trumpet Shall Sound feat. Bongani Kubheka &amp; Mike Blake - Handel&#39;s Messiah"",
+        ""description"": ""\""Behold I Tell You A Mystery\"", \""The Trumpet Shall Sound\"" Bass: Bongani Kubheka Trumpet: Mike Blake Cape Town Youth Choir ..."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/SxRVg7ExP4U/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/SxRVg7ExP4U/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/SxRVg7ExP4U/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Cape Town Youth Choir"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-05-14T17:24:34Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""rLkmw17tVAQ_FAb4TVhq4bnu_OQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""3FFIMTyLgQA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-12T07:25:07Z"",
+        ""channelId"": ""UC7PMj-toh7Rh6egkrnchEPA"",
+        ""title"": ""Rachmaninov Symphony No. 2 Cape Town Philharmonic Orchestra {Preview}"",
+        ""description"": ""A magnificent work that helped re-establish the composer's self-confidence as a symphonist. Rachmaninov Symphony No."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/3FFIMTyLgQA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/3FFIMTyLgQA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/3FFIMTyLgQA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""BROOKLYN Theatre TV"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-12T07:25:07Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""RpYLCH2URsLjqXLBdjnItXx3LQ0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""g1NCW-HvKow""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-11-15T21:58:14Z"",
+        ""channelId"": ""UCJXSnSTK3VQvQUvhqgAFGeA"",
+        ""title"": ""Belly Dancer Cape Town - by AfrodizzyActs"",
+        ""description"": """",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/g1NCW-HvKow/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/g1NCW-HvKow/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/g1NCW-HvKow/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""AfrodizzyActs Entertainment Channel "",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-11-15T21:58:14Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,False,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]",OAS disconformity,1662730196931,YouTube_Search_atlas_6,../target/test-data/YouTube_Search_atlas_6/test-cases_1662730196931.csv,1,825,../target/test-data/YouTube_Search_atlas_6/test-cases_1662730196931.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662730334326.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662733057577.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662734397545.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735055728.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735269393.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735406512.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735552535.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735723706.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735836196.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662735935608.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736075466.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736213785.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736335305.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736447401.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736569308.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736677289.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736778611.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736881651.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662736983124.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737085861.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737195417.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737294542.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737402606.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737504041.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737607136.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737712643.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737817845.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662737922114.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738030084.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738135890.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738246171.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738357860.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738467407.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738575795.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738687438.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738796298.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662738914981.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1662739026022.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667477842411.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667479674688.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667480922792.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667487684518.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667488754311.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667490621796.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667577411156.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667578538964.csv;../target/test-data/YouTube_Search_atlas_6/test-cases_1667593724053.csv,48

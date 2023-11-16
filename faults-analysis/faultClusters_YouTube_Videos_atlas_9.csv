@@ -1,0 +1,134 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1ibbj9plf0oxf_youtubevideoslist,False,,True,youtube.videos.list,/youtube/v3/videos,GET,application/json,application/json,,,regionCode=US;maxHeight=5712;videoCategoryId=19;part=snippet%2CliveStreamingDetails%2Clocalizations%2Cstatus;chart=mostPopular;maxWidth=150;,,,test_1ibbj9plf0oxf_youtubevideoslist,404,"{
+  ""error"": {
+    ""code"": 404,
+    ""message"": ""Requested entity was not found."",
+    ""errors"": [
+      {
+        ""message"": ""Requested entity was not found."",
+        ""domain"": ""global"",
+        ""reason"": ""notFound""
+      }
+    ],
+    ""status"": ""NOT_FOUND""
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 404 not defined for path '/youtube/v3/videos'.,OAS disconformity,1662983163336,YouTube_Videos_atlas_9,../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983163336.csv,0,28,../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983163336.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983269858.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983316959.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983366170.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983416435.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983464846.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983511539.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983558265.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983605215.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983852493.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984105021.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984156027.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984323960.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984517985.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984680521.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984794019.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984848673.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984913968.csv,18
+test_uvbee23m3ygi_youtubevideoslist,False,null,True,youtube.videos.list,/youtube/v3/videos,GET,application/json,application/json,,,regionCode=FI;hl=fr;maxHeight=5759;maxResults=2;videoCategoryId=10;part=status%2Csnippet%2Clocalizations;chart=mostPopular;,,,test_uvbee23m3ygi_youtubevideoslist,200,"{
+  ""kind"": ""youtube#videoListResponse"",
+  ""etag"": ""Hb9MXj_TqU_X7uoF67USh3Nbuqo"",
+  ""items"": [
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""9ZQva1vxMSFHU7Ba4V66BZ078sQ"",
+      ""id"": ""8eo8xm7N5xE"",
+      ""snippet"": {
+        ""publishedAt"": ""2022-09-09T06:00:05Z"",
+        ""channelId"": ""UCRmjtDQlW0-TyWY38jWcIvQ"",
+        ""title"": ""Erika Vikman - Kateus (Virallinen musiikkivideo)"",
+        ""description"": ""Erika Vikman - Kateus (Virallinen musiikkivideo)\n\nErika Vikman\nhttps://www.instagram.com/erikavikman/\nhttps://www.facebook.com/erikavikman.official\nhttps://www.tiktok.com/@erikavikmanofficial?lang=fi-FI\nhttps://open.spotify.com/artist/6JVB6uiYxpF2K1PGsPRpWR?si=Ini1LP7QQB6re8CzWn6hqA"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/8eo8xm7N5xE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/8eo8xm7N5xE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/8eo8xm7N5xE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/8eo8xm7N5xE/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/8eo8xm7N5xE/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Warner Music Finland"",
+        ""categoryId"": ""10"",
+        ""liveBroadcastContent"": ""none"",
+        ""localized"": {
+          ""title"": ""Erika Vikman - Kateus (Virallinen musiikkivideo)"",
+          ""description"": ""Erika Vikman - Kateus (Virallinen musiikkivideo)\n\nErika Vikman\nhttps://www.instagram.com/erikavikman/\nhttps://www.facebook.com/erikavikman.official\nhttps://www.tiktok.com/@erikavikmanofficial?lang=fi-FI\nhttps://open.spotify.com/artist/6JVB6uiYxpF2K1PGsPRpWR?si=Ini1LP7QQB6re8CzWn6hqA""
+        }
+      },
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      }
+    },
+    {
+      ""kind"": ""youtube#video"",
+      ""etag"": ""SQFgbY1k-Fou9-S3XRW7v1PwJmI"",
+      ""id"": ""nZltCSWXIUI"",
+      ""snippet"": {
+        ""publishedAt"": ""2022-09-02T07:00:52Z"",
+        ""channelId"": ""UCRmjtDQlW0-TyWY38jWcIvQ"",
+        ""title"": ""Vesala x Kaija Koo - Nopee hopee (Lyriikkavideo)"",
+        ""description"": ""Vesala x Kaija Koo - Nopee hopee (Lyriikkavideo)\n\nVideo\nTuotantoyhtiö: Grillifilms @grillifilms\nOhjaaja: Miikka Lommi @vantaalainenmies\nTuottaja: Katja Jokinen\nTuotantopäällikkö: Ronja Pero @ronjaleontiina\nTuotantoassistentti: Wille Seppänen @willewho\nKuvaaja: Kim Koponen @gushmann\nKamera-assistentti: Emma Hilska @emmahilska\nValaisija: Kalle Penttilä @kalle.pnt\nBest Boy: Kristian Lehdesniitty @lehdesniiitty\nStylisti: Martina Martiala @martinamartiala\nStylistin assistentti: Jasmina Puumala\nMUAH Vesala: Satu Arvo @satuarvo\nMUAH Kaija: Miia Ollulla\nStill valokuvaaja: Risto Vauras @ristosphotos\nLeikkaus: Miikka Lommi @vantaalainenmies\nVärimäärittely ja jälkituotanto : Toast Post\nKiitos: Valofirma, Kamerafirma ja Vantaa Circuit\n\nVesala x Kaija Koo - Nopee hopee\nSäv. Vesala, Joonas Angeria\nSan. Vesala, Kaija Koo\nTuotanto Jukka Immonen, Joonas Angeria"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/nZltCSWXIUI/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/nZltCSWXIUI/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/nZltCSWXIUI/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/nZltCSWXIUI/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/nZltCSWXIUI/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Warner Music Finland"",
+        ""categoryId"": ""10"",
+        ""liveBroadcastContent"": ""none"",
+        ""localized"": {
+          ""title"": ""Vesala x Kaija Koo - Nopee hopee (Lyriikkavideo)"",
+          ""description"": ""Vesala x Kaija Koo - Nopee hopee (Lyriikkavideo)\n\nVideo\nTuotantoyhtiö: Grillifilms @grillifilms\nOhjaaja: Miikka Lommi @vantaalainenmies\nTuottaja: Katja Jokinen\nTuotantopäällikkö: Ronja Pero @ronjaleontiina\nTuotantoassistentti: Wille Seppänen @willewho\nKuvaaja: Kim Koponen @gushmann\nKamera-assistentti: Emma Hilska @emmahilska\nValaisija: Kalle Penttilä @kalle.pnt\nBest Boy: Kristian Lehdesniitty @lehdesniiitty\nStylisti: Martina Martiala @martinamartiala\nStylistin assistentti: Jasmina Puumala\nMUAH Vesala: Satu Arvo @satuarvo\nMUAH Kaija: Miia Ollulla\nStill valokuvaaja: Risto Vauras @ristosphotos\nLeikkaus: Miikka Lommi @vantaalainenmies\nVärimäärittely ja jälkituotanto : Toast Post\nKiitos: Valofirma, Kamerafirma ja Vantaa Circuit\n\nVesala x Kaija Koo - Nopee hopee\nSäv. Vesala, Joonas Angeria\nSan. Vesala, Kaija Koo\nTuotanto Jukka Immonen, Joonas Angeria""
+        }
+      },
+      ""status"": {
+        ""uploadStatus"": ""processed"",
+        ""privacyStatus"": ""public"",
+        ""license"": ""youtube"",
+        ""embeddable"": true,
+        ""publicStatsViewable"": true,
+        ""madeForKids"": false
+      }
+    }
+  ],
+  ""nextPageToken"": ""CAIQAA"",
+  ""pageInfo"": {
+    ""totalResults"": 30,
+    ""resultsPerPage"": 2
+  }
+}
+",application/json; charset=UTF-8,False,"OAS disconformity: [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]",OAS disconformity,1662983229327,YouTube_Videos_atlas_9,../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983229327.csv,1,146,../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983229327.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983269858.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983316959.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983366170.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983416435.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983464846.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983511539.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983558265.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983605215.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983652769.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983700321.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983749474.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983802118.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983852493.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983903778.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662983953547.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984003333.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984053738.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984105021.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984156027.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984216748.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984271048.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984323960.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984375803.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984442763.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984517985.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984571681.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984625522.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984680521.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984739027.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984794019.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984848673.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662984913968.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985059158.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985116709.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985174579.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985316928.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985434308.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985526037.csv;../target/test-data/YouTube_Videos_atlas_9/test-cases_1662985587688.csv,40

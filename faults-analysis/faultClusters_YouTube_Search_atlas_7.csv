@@ -1,0 +1,63 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_r1csit7awqb5_youtubesearchlist,True,inter_parameter_dependency,False,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,videoCaption=none;part=snippet;forDeveloper=false;channelType=any;eventType=upcoming;locationRadius=161km;publishedAfter=2015-06-09T03%3A21%3A50Z;regionCode=JP;videoDuration=short;videoEmbeddable=true;videoCategoryId=36;channelId=UCCj956IF62FbT7Gouszaj9w;,,,test_r1csit7awqb5_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.,OAS disconformity,1662812642405,YouTube_Search_atlas_7,../target/test-data/YouTube_Search_atlas_7/test-cases_1662812642405.csv,0,56,../target/test-data/YouTube_Search_atlas_7/test-cases_1662812642405.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812662503.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812682810.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812703649.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812724614.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812745764.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812766484.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812787631.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812813121.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812834781.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812856865.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812881205.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812903083.csv,13
+test_1jezd355a3z39_youtubesearchlist,False,null,True,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,q=you%7CI+-from+-do+-child+-person;publishedAfter=2012-10-28T06%3A16%3A32Z;regionCode=NO;topicId=%2Fm%2F02ntfj;maxResults=1;videoType=any;part=snippet;videoDefinition=any;eventType=live;type=video;publishedBefore=2019-11-21T16%3A35%3A27Z;,,,test_1jezd355a3z39_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""ucc3Zm3r-mTh5r72nbHnA5orDdU"",
+  ""nextPageToken"": ""CAEQAA"",
+  ""regionCode"": ""NO"",
+  ""pageInfo"": {
+    ""totalResults"": 5,
+    ""resultsPerPage"": 1
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""uK2i7DWigs4G4gRMEEhxaVXpzgA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""cFaw-tfZMOw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-11-12T10:50:18Z"",
+        ""channelId"": ""UCxJQeTC6eaUrqQD8REkee3w"",
+        ""title"": ""LEGO Marvel Superheroes 2 Gameplay"",
+        ""description"": ""A Channel I made to make people happy!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/cFaw-tfZMOw/default_live.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/cFaw-tfZMOw/mqdefault_live.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/cFaw-tfZMOw/hqdefault_live.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""The Shady Shard"",
+        ""liveBroadcastContent"": ""live"",
+        ""publishTime"": ""2019-11-12T10:50:18Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,False,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]",OAS disconformity,1662812947104,YouTube_Search_atlas_7,../target/test-data/YouTube_Search_atlas_7/test-cases_1662812947104.csv,1,909,../target/test-data/YouTube_Search_atlas_7/test-cases_1662812947104.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662812992498.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813019005.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813045073.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813130766.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813467097.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813604491.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813699526.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813805066.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662813918844.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814015909.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814112701.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814222364.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814331860.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814424977.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814553980.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814701724.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662814848070.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662815018886.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662815155210.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662815351874.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662815509742.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662815670116.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662815843504.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662816054309.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662816274841.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662816443542.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662816628787.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662816790758.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817012478.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817164491.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817295578.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817446128.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817607673.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817797856.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662817970754.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662818169176.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662818328419.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662818526068.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662818704992.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662818875320.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1662819086420.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667491782550.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667492274926.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667493287362.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667493987797.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667494823248.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667495983458.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667583504910.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667584750086.csv;../target/test-data/YouTube_Search_atlas_7/test-cases_1667594870035.csv,51

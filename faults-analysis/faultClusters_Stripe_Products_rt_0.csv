@@ -1,0 +1,442 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1jeaendfsybzt_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,shippable=true;limit=27;created%5Blte%5D=1628254989;created%5Blt%5D=1631656978;,,,test_1jeaendfsybzt_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqvuvLm6nYJTKo"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1583392992,
+      ""default_price"": ""plan_GqvvYiJm16Rqxp"",
+      ""description"": ""cleanly"",
+      ""images"": [
+        ""inconsistently""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""chitter"",
+      ""package_dimensions"": {
+        ""height"": 55.0,
+        ""length"": 42.0,
+        ""weight"": 95.0,
+        ""width"": 16.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32010001"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1652486602,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_Gqvu271tZyj1HY"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583392944,
+      ""default_price"": null,
+      ""description"": ""white-lipped"",
+      ""images"": [
+        ""shellack""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""downstairs"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 97.0,
+        ""weight"": 11.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635459557,
+      ""url"": ""effectually""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]",OAS disconformity,1671633200468,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633200468.csv,0,44,../target/test-data/Stripe_Products_rt_0/test-cases_1671633200468.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633267170.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633318815.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633478882.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633589602.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633639550.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633691509.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633741862.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633853713.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633905302.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633956667.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634013353.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634073569.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634193505.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634252681.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634366855.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634481384.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634643743.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634699160.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634814511.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634932763.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634987669.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635046312.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635109152.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635234404.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635353243.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635416659.csv,28
+test_1iyqjt6btvl9d_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1629216238;expand%5B%5D=data;created%5Bgte%5D=1629736351;,,,test_1iyqjt6btvl9d_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""XM5OSvsY4PrFHoYn9kG"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001856,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""illegitimately""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""hagbut"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 23.0,
+        ""weight"": 24.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""pilotage"",
+      ""tax_code"": ""txcd_37010000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001856,
+      ""url"": null
+    },
+    {
+      ""id"": ""x9ZxqYz9boKGFH3O4kND"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001855,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""largo""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""neuroanatomy"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""icQOcJQ4Kb"",
+      ""updated"": 1637001855,
+      ""url"": ""costumer""
+    },
+    {
+      ""id"": ""s3u6PABpNDmClYM8F"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001855,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""alveolitis"",
+      ""package_dimensions"": {
+        ""height"": 23.0,
+        ""length"": 56.0,
+        ""weight"": 37.0,
+        ""width"": 10.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10304000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001855,
+      ""url"": null
+    },
+    {
+      ""id"": ""lZil4v70m5GEFEyFoNp"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001854,
+      ""default_price"": null,
+      ""description"": ""ready"",
+      ""images"": [
+        ""good""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""ceterach"",
+      ""package_dimensions"": {
+        ""height"": 1.0,
+        ""length"": 14.0,
+        ""weight"": 74.0,
+        ""width"": 69.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31030001"",
+      ""type"": ""service"",
+      ""unit_label"": ""z"",
+      ""updated"": 1637001854,
+      ""url"": null
+    },
+    {
+      ""id"": ""VN8dQ5TjzVZTl4t"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001853,
+      ""default_price"": null,
+      ""description"": ""resonate"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""bise"",
+      ""package_dimensions"": {
+        ""height"": 17.0,
+        ""length"": 89.0,
+        ""weight"": 32.0,
+        ""width"": 31.0
+      },
+      ""shippable"": null,
+      ""statement_descriptor"": ""bullheadedness"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""PuogmsOEauoY"",
+      ""updated"": 1637001853,
+      ""url"": null
+    },
+    {
+      ""id"": ""WsHsQGMnpZ78ghB4"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001853,
+      ""default_price"": null,
+      ""description"": ""approach"",
+      ""images"": [
+        ""jubilantly""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""transfer"",
+      ""package_dimensions"": {
+        ""height"": 79.0,
+        ""length"": 96.0,
+        ""weight"": 11.0,
+        ""width"": 94.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""seating"",
+      ""tax_code"": ""txcd_34020005"",
+      ""type"": ""service"",
+      ""unit_label"": ""6rgOPNke"",
+      ""updated"": 1637001853,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMtuNFweoVPaD"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001852,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""playfully""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""diagramming"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": ""deliverance"",
+      ""tax_code"": ""txcd_20060009"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001852,
+      ""url"": ""melissa""
+    },
+    {
+      ""id"": ""prod_KbMtQQwOYmpRgW"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001851,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""actress"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001851,
+      ""url"": ""capsid""
+    },
+    {
+      ""id"": ""1L7GTfjyxOje"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001851,
+      ""default_price"": null,
+      ""description"": ""colorcast"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""islander"",
+      ""package_dimensions"": {
+        ""height"": 54.0,
+        ""length"": 24.0,
+        ""weight"": 48.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""sarracenia"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""TGiDbR"",
+      ""updated"": 1637001851,
+      ""url"": null
+    },
+    {
+      ""id"": ""jDmnHeSQwgHvbM"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001850,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""elephas"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": ""parliamentarian"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""pjt"",
+      ""updated"": 1637001850,
+      ""url"": null
+    }
+  ],
+  ""has_more"": true,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1671633267170,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633267170.csv,1,61,../target/test-data/Stripe_Products_rt_0/test-cases_1671633267170.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633377288.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633478882.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633639550.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633691509.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633741862.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633853713.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633905302.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633956667.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634013353.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634073569.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634133512.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634193505.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634366855.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634420386.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634534804.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634588528.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634699160.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634759775.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634814511.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634877172.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634987669.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635046312.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635109152.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635234404.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635290355.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635353243.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635416659.csv,29
+test_1hv8r2rvzy6hx_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1628063389;limit=24;active=true;url=scathingly;,,,test_1hv8r2rvzy6hx_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""1unUuxUYeKocu"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636788165,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""slowpoke"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636788165,
+      ""url"": ""scathingly""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1671633428575,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv,2,4,../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633741862.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634588528.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635353243.csv,4
+test_qy4f5ntxlb36_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,shippable=false;limit=48;url=minutely;created%5Bgte%5D=1630981837;,,,test_qy4f5ntxlb36_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""pT3axvRqRjv3IHfqx7"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636666790,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""diploma""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""modulated"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_30071000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636666790,
+      ""url"": ""minutely""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2)",OAS disconformity,1671633794527,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv,3,1,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv,1
+test_ts2ewxqwden6_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1631626983;active=true;url=luxuriantly;,,,test_ts2ewxqwden6_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""JA56GiJ51ccZb7Om"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636483374,
+      ""default_price"": null,
+      ""description"": ""pennilessness"",
+      ""images"": [
+        ""geothermally""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""limnologically"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 35.0,
+        ""weight"": 31.0,
+        ""width"": 29.0
+      },
+      ""shippable"": null,
+      ""statement_descriptor"": ""wooly"",
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636483374,
+      ""url"": ""luxuriantly""
+    },
+    {
+      ""id"": ""prod_KYAbOfS8J5dfgb"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636264189,
+      ""default_price"": null,
+      ""description"": ""remicade"",
+      ""images"": [
+        ""caterpillar-tracked""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""well-mannered"",
+      ""package_dimensions"": {
+        ""height"": 7.0,
+        ""length"": 100.0,
+        ""weight"": 17.0,
+        ""width"": 88.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636405439,
+      ""url"": ""luxuriantly""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1671633794527,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv,4,3,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634534804.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635109152.csv,3

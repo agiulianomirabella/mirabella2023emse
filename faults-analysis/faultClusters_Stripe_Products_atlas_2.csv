@@ -1,0 +1,437 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1jy5h9stuqlph_GetProducts,False,,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,shippable=false;limit=64;created%5Blte%5D=1631281878;,,,test_1jy5h9stuqlph_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqlEEiYohkggIq"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583353262,
+      ""default_price"": null,
+      ""description"": ""labial"",
+      ""images"": [
+        ""smite""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dasymeter"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 27.0,
+        ""weight"": 47.0,
+        ""width"": 80.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31040002"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635477746,
+      ""url"": ""technically""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]",OAS disconformity,1662111159550,Stripe_Products_atlas_2,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111159550.csv,0,18,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111159550.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111584270.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111649553.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111842131.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111907002.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111972740.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112037790.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112103637.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112235272.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112927769.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112997464.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113072260.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113147117.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113218792.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113290216.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113436639.csv,16
+test_u7r9fbksrfw4_GetProducts,False,,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1629770038;shippable=true;expand%5B%5D=data;active=false;,,,test_u7r9fbksrfw4_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""lZil4v70m5GEFEyFoNp"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001854,
+      ""default_price"": null,
+      ""description"": ""ready"",
+      ""images"": [
+        ""good""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""ceterach"",
+      ""package_dimensions"": {
+        ""height"": 1.0,
+        ""length"": 14.0,
+        ""weight"": 74.0,
+        ""width"": 69.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31030001"",
+      ""type"": ""service"",
+      ""unit_label"": ""z"",
+      ""updated"": 1637001854,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMtUXu4Cejdu2"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001848,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""squib"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": ""melancholia"",
+      ""tax_code"": ""txcd_31031202"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001848,
+      ""url"": null
+    },
+    {
+      ""id"": ""6HHR9fPDuz5LmjkMojoJ"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636998160,
+      ""default_price"": null,
+      ""description"": ""lure"",
+      ""images"": [
+        ""nontoxic""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""knee-high"",
+      ""package_dimensions"": {
+        ""height"": 19.0,
+        ""length"": 43.0,
+        ""weight"": 56.0,
+        ""width"": 54.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""bloodily"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636998160,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbLkdqfiWeHns7"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636997558,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""classified""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""bullace"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636997559,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbKu7TC0Ghibl6"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636994467,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""jingle-jangle""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""conically"",
+      ""package_dimensions"": {
+        ""height"": 80.0,
+        ""length"": 31.0,
+        ""weight"": 42.0,
+        ""width"": 44.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""EGyBozCM0"",
+      ""updated"": 1636994467,
+      ""url"": ""semidiameter""
+    },
+    {
+      ""id"": ""JOhPOgxsIbOOj8tX"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636989544,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""inapplicable"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636989544,
+      ""url"": null
+    },
+    {
+      ""id"": ""0Wv3S31rBnfgmM"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636989498,
+      ""default_price"": null,
+      ""description"": ""genital"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""arhat"",
+      ""package_dimensions"": {
+        ""height"": 76.0,
+        ""length"": 49.0,
+        ""weight"": 55.0,
+        ""width"": 26.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""cdcWGDT"",
+      ""updated"": 1636989498,
+      ""url"": ""olive-coloured""
+    },
+    {
+      ""id"": ""ToLUoRrUYVXdc"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636987053,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""suggestively"",
+      ""package_dimensions"": {
+        ""height"": 13.0,
+        ""length"": 58.0,
+        ""weight"": 37.0,
+        ""width"": 42.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636987053,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbIWdWIdxsbyzI"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636985563,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""re-afforest"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636985563,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbIWJMWzLAtIkS"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636985547,
+      ""default_price"": null,
+      ""description"": ""illegally"",
+      ""images"": [
+        ""uninterestingly""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""dawn"",
+      ""package_dimensions"": null,
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636985547,
+      ""url"": ""second-class""
+    }
+  ],
+  ""has_more"": true,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1662111159550,Stripe_Products_atlas_2,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111159550.csv,1,436,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111159550.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111394066.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111457229.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111520598.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111584270.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111649553.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111714130.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111777493.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111842131.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111907002.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111972740.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112037790.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112103637.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112169244.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112235272.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112302441.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112370310.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112438322.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112506088.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112573842.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112642394.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112711141.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112779587.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112854846.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112927769.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112997464.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113072260.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113147117.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113218792.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113290216.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113363479.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113436639.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113511749.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113587946.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113663793.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113742978.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113818551.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113893965.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113971553.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662114052318.csv,40
+test_1h7z9orgsezw4_GetProducts,False,null,True,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,limit=16;url=tendentiously;,,,test_1h7z9orgsezw4_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_KWFE14esURjleX"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1635820144,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""propound""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""asperse"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635820144,
+      ""url"": ""tendentiously""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1662111394066,Stripe_Products_atlas_2,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111394066.csv,2,35,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111394066.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111520598.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111584270.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111649553.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111842131.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111972740.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112169244.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112235272.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112302441.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112642394.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113072260.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113218792.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113363479.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113436639.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113511749.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113587946.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113818551.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113893965.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662114052318.csv,19
+test_s4p18psgncrn_GetProducts,False,null,True,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,expand%5B%5D=data;limit=4;url=distractedly;,,,test_s4p18psgncrn_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""9KaKKcA1QI"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1635822931,
+      ""default_price"": null,
+      ""description"": ""envy"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""blear"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_41040004"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635822931,
+      ""url"": ""distractedly""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2)",OAS disconformity,1662111394066,Stripe_Products_atlas_2,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111394066.csv,3,15,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111394066.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111649553.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111714130.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111842131.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111907002.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112169244.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112235272.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112370310.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112438322.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662112997464.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113218792.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113511749.csv,12
+test_1hrggnfox1xyq_GetProducts,False,null,True,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,limit=22;active=false;url=unaided;,,,test_1hrggnfox1xyq_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""B1w4XpnNP0k"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1636234425,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""supraocular"",
+      ""package_dimensions"": {
+        ""height"": 82.0,
+        ""length"": 91.0,
+        ""weight"": 38.0,
+        ""width"": 94.0
+      },
+      ""shippable"": null,
+      ""statement_descriptor"": ""deny"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636234425,
+      ""url"": ""unaided""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1662111457229,Stripe_Products_atlas_2,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111457229.csv,4,11,../target/test-data/Stripe_Products_atlas_2/test-cases_1662111457229.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111649553.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662111907002.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113363479.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113511749.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113587946.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113971553.csv,7
+test_skkhwcvnh1t0_GetProducts,False,null,True,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,url=unscrupulously;,,,test_skkhwcvnh1t0_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_KXk3dTTyFMARRf"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636165411,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""frustrated""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""framer"",
+      ""package_dimensions"": {
+        ""height"": 15.0,
+        ""length"": 97.0,
+        ""weight"": 70.0,
+        ""width"": 99.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_36010002"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636165411,
+      ""url"": ""unscrupulously""
+    },
+    {
+      ""id"": ""YTh7iVRYqboqJ"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1635957573,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""buffalo""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""iguassu"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": ""afoot"",
+      ""tax_code"": ""txcd_33080201"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635957574,
+      ""url"": ""unscrupulously""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]",OAS disconformity,1662113072260,Stripe_Products_atlas_2,../target/test-data/Stripe_Products_atlas_2/test-cases_1662113072260.csv,5,3,../target/test-data/Stripe_Products_atlas_2/test-cases_1662113072260.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113218792.csv;../target/test-data/Stripe_Products_atlas_2/test-cases_1662113663793.csv,3

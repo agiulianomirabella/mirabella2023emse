@@ -1,0 +1,17 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1ji79arixni9e_youtubecommentThreadslist,True,inter_parameter_dependency,False,youtube.commentThreads.list,/youtube/v3/commentThreads,GET,application/json,application/json,,,searchTerms=emphasise;part=replies;moderationStatus=rejected;,,,test_1ji79arixni9e_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+    ""errors"": [
+      {
+        ""message"": ""No filter selected. Expected one of: id, videoId, channelId, allThreadsRelatedToChannelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""missingRequiredParameter"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.,OAS disconformity,1662035183072,YouTube_CommentsAndThreads_atlas_1,../target/test-data/YouTube_CommentsAndThreads_atlas_1/test-cases_1662035183072.csv,0,3,../target/test-data/YouTube_CommentsAndThreads_atlas_1/test-cases_1662035183072.csv,1

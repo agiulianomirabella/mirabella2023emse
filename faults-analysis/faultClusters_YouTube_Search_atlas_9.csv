@@ -1,0 +1,382 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_qe3v9cj2vyuq_youtubesearchlist,True,inter_parameter_dependency,False,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,videoCaption=closedCaption;relatedToVideoId=TUJWx7vo44c;videoType=movie;part=snippet;forDeveloper=true;channelType=channelTypeUnspecified;eventType=none;videoSyndicated=videoSyndicatedUnspecified;safeSearch=safeSearchSettingUnspecified;videoLicense=any;q=other%7Cnext;topicId=%2Fm%2F04q1x3q;videoEmbeddable=videoEmbeddableUnspecified;maxResults=43;videoCategoryId=23;videoDimension=any;location=50.447273%2C+30.520903;channelId=UCYfdidRxbB8Qhf0Nx7ioOYw;relevanceLanguage=IT;order=date;,,,test_qe3v9cj2vyuq_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: relatedToVideoId, forDeveloper"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.,OAS disconformity,1662985647900,YouTube_Search_atlas_9,../target/test-data/YouTube_Search_atlas_9/test-cases_1662985647900.csv,0,25,../target/test-data/YouTube_Search_atlas_9/test-cases_1662985647900.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985668245.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985688706.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985709942.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985816776.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985862304.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985884171.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985939008.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985968204.csv,9
+test_1hrbg7apk4j7b_youtubesearchlist,False,null,True,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,videoCaption=any;relatedToVideoId=n8I-YVuaSR0;videoType=episode;part=snippet;channelType=any;videoDefinition=standard;eventType=none;type=video;videoLicense=creativeCommon;q=mitt;topicId=%2Fm%2F0f2f9;videoDuration=videoDurationUnspecified;videoEmbeddable=videoEmbeddableUnspecified;maxResults=9;videoCategoryId=0;videoDimension=2d;channelId=UCMtFAi84ehTSYSE9XoHefig;publishedBefore=2016-06-23T01%3A12%3A56Z;order=videoCount;,,,test_1hrbg7apk4j7b_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""zMU9ThIeIOR1LzxXLQNrwi8tDOg"",
+  ""nextPageToken"": ""CAkQAA"",
+  ""regionCode"": ""ES"",
+  ""pageInfo"": {
+    ""totalResults"": 172,
+    ""resultsPerPage"": 9
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""yOAgEO-Qcx70zENyFmJ0pzL0HuU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""XdnpIz05khA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-05-21T11:32:09Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""EL JUEGO DEL EGO: ¿Cuánto se gustan los artistas de LOS40 PRIMAVERA POP?"",
+        ""description"": ""Un año más, Karín Herrero pone a los artistas de LOS40 PRIMAVERA POP contra las cuerdas. ¿Conocerán las trayectorias de sus compañeros de cartel o sólo se miran el ombligo? Ana Guerra, Blas Cantó, Efecto Pasillo y Ana Mena entre otros se la juegan.\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/XdnpIz05khA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-05-21T11:32:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""Vq7b2PApBxKORO4WNngR7VAy2LM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Rn5tKkuIBLM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-11-13T16:52:56Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""Nuestros artistas confiesan su fantasía SEXUAL y a qué partido VOTAN | Anda Ya en LOS40"",
+        ""description"": ""Nuestro Karin Herrero de Anda Ya sometió a los artistas invitados a LOS40 Music Awards a las 5 preguntas más comprometidas de sus vidas. ¿Qué vídeos porno suelen ver? ¿Cuáles son sus fantasías sexuales? ¿A qué partido político votan? ¡ Dale al play y FLIPA con sus respuestas!\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n#LOS40 #LOS40MusicAwards #AndaYa"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Rn5tKkuIBLM/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-11-13T16:52:56Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""R2Wki2BowwlLhc7njXdywo6kXEo"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2oIo6sKiN4o""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-07-19T15:35:06Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""El pique de los artistas de LOS40 con nuestras ‘Preguntas encadenadas’"",
+        ""description"": ""Beret, Aitana, Ava Max y otros cantantes se dejan la piel en nuestro juego más top\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2oIo6sKiN4o/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-07-19T15:35:06Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""arDDI1SA-mrhJ41JT5HNX4w18Ko"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""6QUw431GBTA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-07-15T11:56:58Z"",
+        ""channelId"": ""UCfH6YOxZPvghAlxKosBCCkw"",
+        ""title"": ""Aitana: El test de las canciones del verano | Elle España"",
+        ""description"": ""Quedamos con la cantante Aitana y la ponemos a prueba con nuestro test de las canciones del verano. Le decimos un par de frases icónicas de la letra y a ver si descubre el temazo del que le estamos hablando. Aprovechamos nuestro encuentro con Aitana como nueva embajadora de Pantene, para plantearle una de nuestras pruebas musicales más divertidas y se vino muy arriba.\n\nCanal en el que encontrarás vídeos sobre el mundo de la moda, las últimas tendencias, las pasarelas más importantes y tutoriales de belleza.\r\n\r\nMás vídeos de ELLE: http://cort.as/-_MFN \r\nSuscríbete al canal de ELLE: http://cort.as/-_OLg\r\nSíguenos en: \r\nFacebook: https://www.facebook.com/elle.es\r\nTwitter: https://twitter.com/elle_es\r\nPinterest: https://www.pinterest.es/ellespain/ \r\nInstagram: https://www.instagram.com/elle_spain/"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/6QUw431GBTA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/6QUw431GBTA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/6QUw431GBTA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/6QUw431GBTA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/6QUw431GBTA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""ELLE España"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-07-15T11:56:58Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""sxeUykq1a6SmrGqcl--4Ly14hUE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""MoJLiIPfR84""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-11-06T16:34:30Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""Aitana, Lola Índigo, Vanesa Martín, Manuel Carrasco... ¡La han vuelto a liar! | LOS40 Music Awards"",
+        ""description"": ""¡Morat, Ana Guerra, Vanesa Martín, Ana Mena, Aitana, Dani Fernández, Sinsinati, Sofía Reyes, Miki Núñez, Estopa, Blas Cantó, Lola Índigo, Ana Fernández, Macaco, Dvicio, Don Patricio, Alfred García, Pol Granch, Manuel Carrasco y Lalo Ebratt... (artistas en orden de aparición) han vuelto a liarla! Son los protagonistas de la promo oficial de LOS40 Music Awards 2019 que, bajo la supervisión de Okuda San Miguel (artista que ha generado toda la imagen gráfica esta edición del evento) se ven en una ficticia clase de pintura para la que no están preparados. ¿Sabrán salir airosos de la situación para reproducir fielmente al modelo que tienen que reproducir en esta clase avanzada de pintura?\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nO nuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90: https://play.los40.com/emisora/los40_classic/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n#LOS40MusicAwards #Premios #LOS40"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/MoJLiIPfR84/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/MoJLiIPfR84/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/MoJLiIPfR84/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/MoJLiIPfR84/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/MoJLiIPfR84/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-11-06T16:34:30Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""va63z15frirkerEx8XB8o3Q0bOs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""-rgEs32JGmQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-12-05T14:06:21Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""Las INCÓMODAS ‘PCR’ a lxs ARTISTAS e INVITADXS | PRESHOW LOS40 Music Awards 2020"",
+        ""description"": ""Las PCR son algo molestas... ¡tanto como las preguntas incómodas que hemos realizado a lxs invitadxs de #LOS40MusicAwards 2020 con Karin Herrero! PRC: ¡pregunta, contesta, rápido! Con: Pablo López, Lola Rodríguez, Daniela Santiago, Lola Índigo, Willy Bárcenas, Taburete, Ana Mena, Vanesa Martín, Natalia Lacunza, Pablo Álborán, Camilo, Beret, Nil Moliner, Dulceida, David Bisbal ¡y muchos más!\n\nSi quieres música y entretenimiento, cine y TV, bromas o juegos y challenges con los artistas, influencers y celebrities del momento, no olvides suscribirte a nuestro canal:\nhttp://www.youtube.com/subscription_center?add_user=los40principales\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n\nNuestras redes sociales:\n\nhttps://twitter.com/Los40\nhttps://www.facebook.com/los40/\nhttp://instagram.com/los40spain\n\nEscucha la radio más global y con mejores canciones del momento: https://play.los40.com/\nNuestra hermana mayor, LOS40 Classic, una radio llena de los grandes éxitos de los años 80 o los 90:\nhttps://play.los40.com/emisora/los40_classic/\nLa mejor música dance, en LOS40 Dance: https://play.los40.com/emisora/los40_dance/\nO perrea con LOS40 Urban:\nhttps://play.los40.com/emisora/los40_urban/\nConsulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40\n\nY diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/\n\n⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\n#LOS40MusicAwards #PRESHOW"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/-rgEs32JGmQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/-rgEs32JGmQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/-rgEs32JGmQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/-rgEs32JGmQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/-rgEs32JGmQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-12-05T14:06:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""TRbQEf8TeiVT1bKhjKtqTfSfVbE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2EBoupU3xEc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-07-18T07:46:28Z"",
+        ""channelId"": ""UCDwjiSF4qEb3aeT3ZLkPc_Q"",
+        ""title"": ""¡AITANA reacciona a sus peores cagadas! 🥵 | Anda Ya en  LOS40"",
+        ""description"": ""Aitana se enfrenta a sus errores del pasado en su última visita a Anda Ya en LOS40. Dani Moreno \""El Gallo\"" y Cristina Boscá le han dado a Aitana la oportunidad de enmendar algunas de sus cagas más míticas en algunas de las entrevistas de Karin Herrero, ¿conseguirá responder correctamente esta vez?\n\nSi quieres música y entretenimiento, cine y TV, curiosidades, bromas o juegos y challenges con los artistas del momento, no olvides suscribirte a nuestro canal: http://www.youtube.com/subscription_center?add_user=los40principales\n\nTambién estamos en tu móvil 📲 Descárgate la APP de LOS40: http://onelink.to/los40app \n\n🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤🎤 \n\nNuestras redes sociales:  \n\nhttp://instagram.com/los40spain \nhttps://twitter.com/Los40 \nhttps://www.facebook.com/los40/ \nhttps://www.tiktok.com/@los40spain\n\n📻 📻 📻 📻 📻 📻 📻 📻 📻 📻 📻 📻 📻 \n\n* Escucha la radio más global y con los éxitos del momento: https://play.los40.com/ \n* Consulta el chart musical más potente del mundo hispanohablante: la Lista de LOS40: http://los40.com/lista40/?o=VL40 \n* Diviértete con nosotros y con los cantantes y grupos más exitosos del momento: http://los40.com/  \n\n#LOS40 #Aitana #AndaYa"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2EBoupU3xEc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2EBoupU3xEc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2EBoupU3xEc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2EBoupU3xEc/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2EBoupU3xEc/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""LOS40"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-07-18T07:46:28Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""VMcxduSW8t6Pq0JMQFOAkEcyO74"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""YKG8HXB1ya4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-06-07T15:52:47Z"",
+        ""channelId"": ""UCiHgT5MwyPZ9lQF48iqFW1g"",
+        ""title"": ""Lunay se confiesa en Kienyke.com"",
+        ""description"": ""Visita nuestro sitio: https://www.kienyke.com\nSíguenos en nuestras redes sociales oficiales: \n\nFacebook: https://www.facebook.com/kienyke\nTwitter: https://twitter.com/kienyke\nInstagram: https://www.instagram.com/kienyke/\nYoutube: https://www.youtube.com/user/kienyketv\n\nKienyke.com es un medio nativo digital con las mejores historias, noticias, información en deporte, cultura, entretenimiento, cine, tecnología y mucho más.\n\n¡Kienyke.com, el placer de saber, ver y oír más!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/YKG8HXB1ya4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/YKG8HXB1ya4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/YKG8HXB1ya4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/YKG8HXB1ya4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/YKG8HXB1ya4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Kienyke"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-06-07T15:52:47Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,False,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]",OAS disconformity,1662985752494,YouTube_Search_atlas_9,../target/test-data/YouTube_Search_atlas_9/test-cases_1662985752494.csv,1,747,../target/test-data/YouTube_Search_atlas_9/test-cases_1662985752494.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985884171.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985968204.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662985996347.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662986465123.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987165163.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987447276.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987551377.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987643750.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987737861.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987831147.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662987925319.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988016114.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988115878.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988209390.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988333439.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988469481.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988611854.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988753608.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662988895011.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662989054264.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662989184047.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662989370605.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662989513421.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662989648549.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662989803533.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662990014703.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662990200347.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662990415881.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662990604982.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662990792958.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662990946409.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662991076201.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662991244041.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662991376527.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662991567610.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662991728009.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662991916945.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662992156610.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662992343603.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662992495551.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1662992754230.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667549452872.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667550418052.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667551742863.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667553005915.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667554543336.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667555622796.csv;../target/test-data/YouTube_Search_atlas_9/test-cases_1667594363120.csv,49

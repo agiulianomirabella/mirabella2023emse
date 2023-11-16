@@ -1,0 +1,17 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_r1alec9kvqk3_youtubecommentThreadslist,True,inter_parameter_dependency,False,youtube.commentThreads.list,/youtube/v3/commentThreads,GET,application/json,application/json,,,maxResults=81;part=replies%2Csnippet%2Cid;moderationStatus=published;id=UgyyScM63hUgS_x7IXp4AaABAg;channelId=UCvosUrZ7hXpzAyobhfztg4w;order=orderUnspecified;textFormat=html;,,,test_r1alec9kvqk3_youtubecommentThreadslist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+    ""errors"": [
+      {
+        ""message"": ""Incompatible parameters specified in the request: id, channelId"",
+        ""domain"": ""youtube.parameter"",
+        ""reason"": ""incompatibleParameters"",
+        ""location"": ""parameters."",
+        ""locationType"": ""other""
+      }
+    ]
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/commentThreads'.,OAS disconformity,1662462248350,YouTube_CommentsAndThreads_atlas_4,../target/test-data/YouTube_CommentsAndThreads_atlas_4/test-cases_1662462248350.csv,0,4,../target/test-data/YouTube_CommentsAndThreads_atlas_4/test-cases_1662462248350.csv,1

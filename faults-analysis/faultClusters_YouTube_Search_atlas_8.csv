@@ -1,0 +1,1280 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1ib3qkks7uc85_youtubesearchlist,True,inter_parameter_dependency,False,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,relatedToVideoId=eVIozKR9p50;part=snippet;channelType=channelTypeUnspecified;type=playlist;videoSyndicated=true;videoLicense=creativeCommon;q=computerise;publishedAfter=2010-12-13T17%3A29%3A53Z;regionCode=JP;videoDuration=short;videoEmbeddable=true;maxResults=10;videoDimension=2d;publishedBefore=2022-10-05T03%3A32%3A20Z;relevanceLanguage=JA;,,,test_1ib3qkks7uc85_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.,OAS disconformity,1662899054949,YouTube_Search_atlas_8,../target/test-data/YouTube_Search_atlas_8/test-cases_1662899054949.csv,0,87,../target/test-data/YouTube_Search_atlas_8/test-cases_1662899054949.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899074943.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899095229.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899116013.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899136954.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899157890.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899179085.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899200128.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899221558.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899242957.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899264425.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899285867.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899307507.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899329046.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899351003.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899372987.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899400817.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899432408.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899454944.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899499966.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899619693.csv,21
+test_1ibhkqly7jygk_youtubesearchlist,False,null,True,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,regionCode=IT;relatedToVideoId=zZa8PFYtWr4;videoEmbeddable=videoEmbeddableUnspecified;maxResults=30;videoDimension=any;videoType=movie;part=snippet;type=video;videoSyndicated=any;relevanceLanguage=FI;,,,test_1ibhkqly7jygk_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""eN5F-jRScaX6t2Xk__Pecwhrocc"",
+  ""nextPageToken"": ""CB4QAA"",
+  ""regionCode"": ""IT"",
+  ""pageInfo"": {
+    ""totalResults"": 165,
+    ""resultsPerPage"": 30
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""aY9X9zX_CDZG9fqzgiU8rQA_waw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Pg1eebAdhr4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-12-19T20:08:02Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista al Gran Wyoming | Parte 2 | #LaResistencia 19.12.2019"",
+        ""description"": ""La Resistencia 3x58 | Segunda parte de la entrevista al cómico José Miguel Monzón, presentador de El intermedio.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Pg1eebAdhr4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-12-19T20:08:02Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ZEiQN-On8SvIu5ZMfGRjbe6YxJA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""q9zUXu-KNlw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-10-24T20:12:59Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Jordi Évole | #LaResistencia 24.10.2018"",
+        ""description"": ""La Resistencia 2x27 | El faro que guía a España.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/q9zUXu-KNlw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/q9zUXu-KNlw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/q9zUXu-KNlw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/q9zUXu-KNlw/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/q9zUXu-KNlw/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-10-24T20:12:59Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""NyQSnB0uQp3xpMdt70PeXO3wW1E"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""_DalzenKr4k""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2016-12-22T21:18:07Z"",
+        ""channelId"": ""UC2MXy4PrVCDt9nduHrdPtuQ"",
+        ""title"": ""LATE MOTIV - Berto Romero y David Broncano... juntos | #LateMotivNavidad"",
+        ""description"": ""Esto es un regalo navideño, Berto Romero y David Broncano compartiendo sección. ¡Qué lo disfrutéis!"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/_DalzenKr4k/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Late Motiv en Movistar+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2016-12-22T21:18:07Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""YcgU48H9ppfFstNo8X7JZ1Bjy-M"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""FclCrLq6XIQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-02-07T20:32:17Z"",
+        ""channelId"": ""UC2MXy4PrVCDt9nduHrdPtuQ"",
+        ""title"": ""LATE MOTIV -  El Gran Wyoming. “El relator” | #LateMotiv500"",
+        ""description"": ""Dice que se entera de lo que opina cuando lo dice en voz alta, que a los políticos se les exige menos que a cualquier ciudadano, y que el público es sagrado. Habla y habla, y habla muy bien, pero lo que le apasiona es rocanrolear, y eso también lo ha hecho con nosotros.\nHoy os dedicamos #LateMotiv500 a vosotros, los que estáis al otro lado.\n\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: http://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/FclCrLq6XIQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Late Motiv en Movistar+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-02-07T20:32:17Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""qW1SwZZRoxaxr4K1ClaKaLEW0Dg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""3n4GNPbqYpY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-02-01T21:05:19Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Carlos Sobera | #LaResistencia 01.02.2021"",
+        ""description"": ""La Resistencia 4x71 | Carlos Sobera presenta la obra de teatro que protagoniza, ‘Asesinos todos’.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/3n4GNPbqYpY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-02-01T21:05:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""0yc4wpzp0vbjwTdqjmAHt0TFgDc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""teAGAJzPvoY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-02-25T00:02:48Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Florentino Fernández y José Mota | #LaResistencia 24.02.2020"",
+        ""description"": ""La Resistencia 3x86 | Los cómicos José Mota y Florentino Fernández presentan su show ‘Dos tontos y yo’\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/teAGAJzPvoY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/teAGAJzPvoY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/teAGAJzPvoY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/teAGAJzPvoY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/teAGAJzPvoY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-02-25T00:02:48Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""197P2oeDFvfRTsT3uQzaRb-daYQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""PlhHPEoMSlA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-03-13T22:22:29Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Evaristo Páramos | #LaResistencia 13.03.2019"",
+        ""description"": ""La Resistencia 2x97 | La Polla Records se reúne para celebrar su 40 aniversario. Historia de la música.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/PlhHPEoMSlA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/PlhHPEoMSlA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/PlhHPEoMSlA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/PlhHPEoMSlA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/PlhHPEoMSlA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-03-13T22:22:29Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""JXnh-NQbGiYgg2nO8Ms-g3yRJcI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""FwVgoO5ru1o""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2019-05-16T11:03:57Z"",
+        ""channelId"": ""UC8wTihqgCBp4cSnHFEtHthw"",
+        ""title"": ""⚠️ ESTAFA en torno al BITCOIN denunciada por PABLO MOTOS"",
+        ""description"": ""Desde hace mas de un año existe una estafa que gira en torno a la inversión en #bitcoin y que incluso Pablo Motos de el Hormiguero ha denunciado su programa.\n\nEn este video te quiero explicar de que se trata y las páginas que puedes encontrarte como Cryptos Cube, Cryptos Wealth, Bitcoin Revolution, The Bit Code, global markets, Bitcoin Code y otras mas.\n\nTambién te explicaré como darte cuenta de estas estafas que existen en las redes sociales.\n\nAlgunos de los famosos que suelen poner en la publicidad de esta estafa son: Pablo motos, Amaneció Ortega, Jordi Cruz de Master Cheff,  Risto Mejide, Fernando Alonso, Bad Bunny,...\n\n🔥 Mi curso para aprender a utilizar tu dinero e invertirlo desde 0\nhttps://josenavarrodai.com/aprende-utilizar-dinero-invertirlo-largo-plazo/\n\n-----------------------------------------------\nVIDEOS QUE TE PUEDEN INTERESAR\n----------------------------------------------------\n\n\n✅ EL FRAUDE DE LAS OPCIONES BINARIAS\nhttps://youtu.be/9BXiK99tmH4\n\n✅ ¡CUIDADO! CON LAS ESTRATEGIAS UNICORNIO\nhttps://youtu.be/mQvxLkCBbHs\n\n✅  ¿SON LAS MULTINIVELES UN FRAUDE?\nhttps://youtu.be/8P5xv5H-15c\n\n✅  EL FRAUDE DE LOS PLANES DE PENSIONES\nhttps://youtu.be/v9mLM84kIjU\n\n\nMIS OTRAS REDES SOCIALES\n----------------------------------------------------\n\nFacebook: https://www.facebook.com/metododai/\nTwiter: https://twitter.com/metododai\nInstagram: https://www.instagram.com/josenavarroDAI\nPágina web:  https://metododai.com\n\n#fraudes #estafas #criptomonedas"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/FwVgoO5ru1o/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/FwVgoO5ru1o/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/FwVgoO5ru1o/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/FwVgoO5ru1o/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/FwVgoO5ru1o/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Jose Navarro DAI"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2019-05-16T11:03:57Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""FjM9u0Xt7X2F-O02KUDx_K09mG4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""_HgzlW_B3UE""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-05-10T18:49:23Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Ernesto Sevilla dice \""Say perhaps to drugs\"" | #LaResistencia 10.05.2018"",
+        ""description"": ""La Resistencia 1x52 | En las fiestas en casa de Ernesto Sevilla no sabes ni cómo ni cuándo sales. Y él no sabe quién entra.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: http://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/_HgzlW_B3UE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/_HgzlW_B3UE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/_HgzlW_B3UE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/_HgzlW_B3UE/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/_HgzlW_B3UE/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-05-10T18:49:23Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""jwo3_xxGw-WX3W5UCANvqk41Fps"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""g9eqLONM7Cw""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-02-14T21:50:56Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Alejandro Cao de Benós | #LaResistencia 14.02.2018"",
+        ""description"": ""La Resistencia 1x08 | Kim Jong-un, cobetes gordos, Donald Trump, Uf...El picorsito. Entrevistamos a la única persona que conocemos que ha estado cerca del amado líder de Corea La Buena."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/g9eqLONM7Cw/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/g9eqLONM7Cw/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/g9eqLONM7Cw/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/g9eqLONM7Cw/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/g9eqLONM7Cw/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-02-14T21:50:56Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""T6StLTqPOyCgN0DSpJe28FKnfBQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""yVfm2twvzz4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-12-20T19:43:42Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Arturo Valls | #LaResistencia 20.12.2018"",
+        ""description"": ""La Resistencia 2x58 | Entrevista al cómico y actor Arturo Valls, uno de los protagonistas de 'Tiempo después', la nueva película del gran José Luis Cuerda. \n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/yVfm2twvzz4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/yVfm2twvzz4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/yVfm2twvzz4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/yVfm2twvzz4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/yVfm2twvzz4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-12-20T19:43:42Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""AcnziMQqZwNskfDwGfU6JFFUufs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2LCqGE6mKTo""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-02-02T11:15:59Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Antonio Resines, un goya... respect! | #LaResistencia 01.02.2018"",
+        ""description"": ""Antonio Resines, que no sabemos si llevaba el pelo crespado por estar muy cerca de la 'resistencia' o porque ha conseguido papel en un remake de \""Hellraiser\"", fue el teórico primer invitado... pues le veremos muchas más veces compartiendo risas con Broncano."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2LCqGE6mKTo/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2LCqGE6mKTo/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2LCqGE6mKTo/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/2LCqGE6mKTo/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/2LCqGE6mKTo/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-02-02T11:15:59Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""LZDHUZylOvJTeIB74lGGvIUWSog"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""HcKCttbUHIY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-10-29T20:52:16Z"",
+        ""channelId"": ""UCGcrawQTpRuT6p7PO4UFZOw"",
+        ""title"": ""ALAIN TOURAINE - Un nuevo paradigma para comprender el mundo de hoy"",
+        ""description"": ""Conferencia impartida por Alain Touraine en la que el reconocido sociólogo francés realiza un recorrido histórico por los diferentes paradigmas de la sociología hasta llegar a los nuevos actores en el nuevo paradigma social."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/HcKCttbUHIY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/HcKCttbUHIY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/HcKCttbUHIY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Cátedra Alfonso Reyes"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-10-29T20:52:16Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""xQC22uvJpqh9CxeTQy7Z6vHOyi8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""NJugY3Jz_jg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2011-05-29T22:43:37Z"",
+        ""channelId"": ""UCL4ekHlhET604Wvripi9d0Q"",
+        ""title"": ""Wyoming en BFN entrevista completa"",
+        ""description"": ""El Gran Wyoming es entrevistado y canta en BFN (video completo)"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/NJugY3Jz_jg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/NJugY3Jz_jg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/NJugY3Jz_jg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/NJugY3Jz_jg/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""Towie Rodriguez"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2011-05-29T22:43:37Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""bcZhhIW5MU0Fi-OiREK5UoPw3zk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""WU9wlDoAiPE""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-01-22T22:58:40Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Manuela Carmena | Parte 1 | #LaResistencia 22.01.2020"",
+        ""description"": ""La Resistencia 3x68 | La exalcaldesa de Madrid presenta su libro ‘A los que vienen’\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/WU9wlDoAiPE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/WU9wlDoAiPE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/WU9wlDoAiPE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/WU9wlDoAiPE/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/WU9wlDoAiPE/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-01-22T22:58:40Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""o8dfZHghcf2fDylEQgJNGB_3FPc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""cnw5-4TxgmQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-06-13T21:08:43Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Javier Cansado | #LaResistencia 13.06.2018"",
+        ""description"": ""La Resistencia 1x71 | El cómico que está en la cima de la cadena alimenticia de los cómico.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: http://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/cnw5-4TxgmQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/cnw5-4TxgmQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/cnw5-4TxgmQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/cnw5-4TxgmQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/cnw5-4TxgmQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-06-13T21:08:43Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""2kOWcR-_3Vl8f2IKVzrQawhm51Q"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""jChDuSQOrUQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-04-04T20:42:35Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Nicky Jam | #LaResistencia 04.04.2022"",
+        ""description"": ""La Resistencia 5X105 | El cantante, compositor y actor Nicky Jam presenta su nuevo single ‘#OjosRojos’ junto a su gira internacional ‘#InfinityTour’.\n\nLos programas completos de La Resistencia y mucho más en Movistar+ Lite: https://www.movistar.es/particulares/la-resistencia/\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/jChDuSQOrUQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/jChDuSQOrUQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/jChDuSQOrUQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/jChDuSQOrUQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/jChDuSQOrUQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-04-04T20:42:35Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""6YWZriSNEwngCiFUJaQcwIwn9os"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""xPCtt1nRR44""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-10-05T19:52:09Z"",
+        ""channelId"": ""UC4U2sJAn4ePRzGjZSsF6slA"",
+        ""title"": ""IMMEDIATE EDGE es ⛔ESTAFA!!⛔ - OPINIONES 2020 - ¿QUÉ ES?¿FIABLE? - 🔥FAKE NEWS CARLOS SIM🔥"",
+        ""description"": ""✅UNIRSE a la ⭐COMUNIDAD SOCIAL TRADING⭐\nhttps://bit.ly/2ZAzh1K\n\n⛔La ESTAFA BITCON UP⛔: https://youtu.be/r6mu4-ah6Qk \n\n📧Contacto: https://alertastrading.com/contactar/"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/xPCtt1nRR44/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/xPCtt1nRR44/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/xPCtt1nRR44/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/xPCtt1nRR44/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/xPCtt1nRR44/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Alertas Trading"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-10-05T19:52:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""K0zzNve9Xd8PTU311WcZgCviOxk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""W-V_j0xlPDQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-02-10T22:12:06Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Dani Rovira | #LaResistencia 10.02.2021"",
+        ""description"": ""La Resistencia 4x75 | El cómico Dani Rovira presenta ‘Odio’, su nuevo monólogo que se estrena en Netflix.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/W-V_j0xlPDQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/W-V_j0xlPDQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/W-V_j0xlPDQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/W-V_j0xlPDQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/W-V_j0xlPDQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-02-10T22:12:06Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""f3tl1_BXdhiJ8QhIEJEYigc_6ew"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""rXEMF0aEDjU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-01-23T20:44:42Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Chon Álvarez, la abuela de Grison  | #LaResistencia 23.01.2020"",
+        ""description"": ""La Resistencia 3x69 | La última invitada de la Yaya's Week: Chon Álvarez, la abuela de Grison.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/rXEMF0aEDjU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/rXEMF0aEDjU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/rXEMF0aEDjU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/rXEMF0aEDjU/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/rXEMF0aEDjU/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-01-23T20:44:42Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""x3ZWQawUkIOGYJvL9XtZ_Qh2Qrg"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ovVM9tLu5lY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2015-09-18T10:13:32Z"",
+        ""channelId"": ""UCOJzAHs3KOn9rwdxWJB7UAQ"",
+        ""title"": ""El Gran Wyoming: \""El ser humano es idiota\"" - El Club de la Comedia"",
+        ""description"": ""Suscríbete a nuestro canal: http://www.youtube.com/user/toptrendingvideo?sub_confirmation=1\nEl ser humano es idiota. Sustituyó la cabeza por el culo. Continua Gran Hermano, Hitler ganara las elecciones, seguir confiando nuestro dinero en los bancos... En resumen, es tonto del culo."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ovVM9tLu5lY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ovVM9tLu5lY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ovVM9tLu5lY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ovVM9tLu5lY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ovVM9tLu5lY/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""TopTrendingVideo"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2015-09-18T10:13:32Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""fhh15mAJOr-2nzljT4FGBzMCfFk"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ClWxIWdYQGo""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-08-01T09:16:18Z"",
+        ""channelId"": ""UC_Q7-uOJy3BPWjKNdATqrag"",
+        ""title"": ""WYOMING habla del FRANQUISMO sin PELOS EN LA LENGUA (CONFERENCIA COMPLETA)"",
+        ""description"": ""WYOMING habla del FRANQUISMO sin PELOS EN LA LENGUA (CONFERENCIA COMPLETA)"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ClWxIWdYQGo/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ClWxIWdYQGo/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ClWxIWdYQGo/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ClWxIWdYQGo/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ClWxIWdYQGo/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Rubén Hood"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-08-01T09:16:18Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""Dmke7_LVgvshR8uAyRTisM9eQAQ"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""yplPd3mw7UA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-09-13T20:02:44Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Joaquín Reyes y Ernesto Sevilla | #LaResistencia 12.09.2018"",
+        ""description"": ""La Resistencia 2x04 | Vienen a presentar la serie 'Capítulo 0' y a hablar de movidas.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/yplPd3mw7UA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/yplPd3mw7UA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/yplPd3mw7UA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/yplPd3mw7UA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/yplPd3mw7UA/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-09-13T20:02:44Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ax_shjG09BVYAiuoEQ-AEJ1FGg4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Myt_D24Pn5w""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-03-01T21:37:21Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Patricia Conde | #LaResistencia 01.03.2021"",
+        ""description"": ""La Resistencia 4x87 | Patricia Conde presenta su programa, ‘Nadie al volante’.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Myt_D24Pn5w/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Myt_D24Pn5w/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Myt_D24Pn5w/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Myt_D24Pn5w/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Myt_D24Pn5w/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-03-01T21:37:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""Q79u87U5B7FG4iqMP2dNLZRPb4A"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""0v5VjUKJULM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-11-20T21:38:44Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Iñaki Gabilondo | #LaResistencia 20.11.2018"",
+        ""description"": ""La Resistencia 2x41 | El faro de Europa.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/0v5VjUKJULM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/0v5VjUKJULM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/0v5VjUKJULM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/0v5VjUKJULM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/0v5VjUKJULM/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-11-20T21:38:44Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""iqVHcXJcYlC-fK5JZFu_impINLU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Vpn01ujFQpk""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-05-31T18:34:25Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Raúl Cimas | #LaResistencia 31.05.2018"",
+        ""description"": ""La Resistencia 1x64 | La vieja guardia de los monólogo y colaborador del programa del señor mayor: Raúl motherfucking Cimas.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: http://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Vpn01ujFQpk/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Vpn01ujFQpk/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Vpn01ujFQpk/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Vpn01ujFQpk/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Vpn01ujFQpk/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-05-31T18:34:25Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""d_608cLZqROiS0UcXqV34aUJ2i4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""LjfYDKAf72Y""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-07-07T21:20:21Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Kiko Rivera | #LaResistencia 07.07.2021"",
+        ""description"": ""La Resistencia 4x157 | Kiko Rivera presenta su último single ‘El conejo de la suerte’.\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/LjfYDKAf72Y/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/LjfYDKAf72Y/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/LjfYDKAf72Y/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/LjfYDKAf72Y/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/LjfYDKAf72Y/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-07-07T21:20:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""E3WN5jZjL-Za6Q5PKspwpV7VOQ8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""CMhvFDMyWkI""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-06-22T20:46:36Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Entrevista a Berto Romero | #LaResistencia 22.06.2020"",
+        ""description"": ""La Resistencia 3x155 | El cómico Berto Romero presenta la tercera temporada de ‘Mira lo que has hecho’, disponible en Movistar + \n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/CMhvFDMyWkI/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/CMhvFDMyWkI/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/CMhvFDMyWkI/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/CMhvFDMyWkI/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/CMhvFDMyWkI/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-06-22T20:46:36Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""RQVZZhYzX0TUM3bn67_I1wnSxek"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""pRcclO-bzBM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-06-23T20:53:30Z"",
+        ""channelId"": ""UCvosUrZ7hXpzAyobhfztg4w"",
+        ""title"": ""LA RESISTENCIA - Antonio Resines, el verdadero Gruber | #LaResistencia 21.06.2022"",
+        ""description"": ""La Resistencia 5x146 | Es el mejor.\n\nLos programas completos de La Resistencia y mucho más en Movistar+ Lite: https://www.movistar.es/particulares/la-resistencia/\n\nSuscríbete a /cerotube para tener lo mejor de #0, HAZ CLICK AQUÍ: \nhttp://www.youtube.com/channel/UCPgvCUSmHWm2177LkwLtZQw?sub_confirmation=1\n\nDescarga la aplicación de Movistar+:\n\niOS: https://apps.apple.com/es/app/movistar/id540674767\n\nAndroid: https://play.google.com/store/apps/details?id=es.plus.yomvi&hl=es\n\nO sigue viendo el contenido en tu navegador: http://ver.movistarplus.es/?nv=2\n\nY DESCUBRE MÁS EN: http://www.movistarplus.es/cero"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/pRcclO-bzBM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/pRcclO-bzBM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/pRcclO-bzBM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""La Resistencia por Movistar Plus+"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-06-23T20:53:30Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,False,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]",OAS disconformity,1662899676853,YouTube_Search_atlas_8,../target/test-data/YouTube_Search_atlas_8/test-cases_1662899676853.csv,1,783,../target/test-data/YouTube_Search_atlas_8/test-cases_1662899676853.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899700838.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899821510.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662899850633.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900028007.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900119181.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900220086.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900315452.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900410801.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900505795.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900604806.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900698704.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900794316.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900892539.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662900988300.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901084735.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901181064.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901281548.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901375944.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901473562.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901573864.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901670369.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901790540.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662901926177.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662902091101.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662902256791.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662902392875.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662902545430.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662902758654.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662902991573.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662903163994.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662903383529.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662903514525.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662903696633.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662903889421.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662904105385.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662904281531.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662904476986.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662904647325.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1662904884743.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1667547299240.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1667547571463.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1667547809865.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1667548093949.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1667548566449.csv;../target/test-data/YouTube_Search_atlas_8/test-cases_1667548872470.csv,46

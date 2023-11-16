@@ -1,0 +1,543 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1jeaendfsybzt_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,shippable=true;limit=27;created%5Blte%5D=1628254989;created%5Blt%5D=1631656978;,,,test_1jeaendfsybzt_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""prod_GqvuvLm6nYJTKo"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1583392992,
+      ""default_price"": ""plan_GqvvYiJm16Rqxp"",
+      ""description"": ""cleanly"",
+      ""images"": [
+        ""inconsistently""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""chitter"",
+      ""package_dimensions"": {
+        ""height"": 55.0,
+        ""length"": 42.0,
+        ""weight"": 95.0,
+        ""width"": 16.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_32010001"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1652486602,
+      ""url"": ""effectually""
+    },
+    {
+      ""id"": ""prod_Gqvu271tZyj1HY"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1583392944,
+      ""default_price"": null,
+      ""description"": ""white-lipped"",
+      ""images"": [
+        ""shellack""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""downstairs"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 97.0,
+        ""weight"": 11.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1635459557,
+      ""url"": ""effectually""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]",OAS disconformity,1671633200468,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633200468.csv,0,464,../target/test-data/Stripe_Products_rt_0/test-cases_1671633200468.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633267170.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633318815.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633478882.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633589602.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633639550.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633691509.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633741862.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633853713.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633905302.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633956667.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634013353.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634073569.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634193505.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634252681.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634366855.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634481384.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634643743.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634699160.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634814511.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634932763.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634987669.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635046312.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635109152.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635234404.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635353243.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635416659.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636520700.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636635729.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636695258.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636752858.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636854923.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636904791.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636966024.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637085894.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637147091.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637353972.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637566447.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637620040.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637728915.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638004849.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638058872.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638286015.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638341925.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638514295.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638570144.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639262808.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639477755.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639697862.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639815670.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639867720.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639920771.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639981075.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640033740.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640152317.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640393328.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640454628.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640569038.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640629042.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640683517.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640737719.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640798893.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640861290.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640922365.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640977879.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641032239.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641087702.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641143779.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641261183.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641323288.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641379274.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642072096.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642132778.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642282686.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642390540.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642441712.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642492304.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642593647.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642697394.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642750065.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642804601.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642911000.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642969982.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643032524.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643138367.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643192890.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643249051.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643303397.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643357286.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643409692.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643463438.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643571021.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643679079.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643740450.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643795089.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643905619.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643959752.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644022929.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644077795.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644132305.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644187149.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645652801.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645703530.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645754796.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645812854.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645923695.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645982789.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646142989.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646244626.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646295746.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646348712.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646400609.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646452513.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646503718.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646562455.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646623188.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646677460.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646729600.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646782317.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646834569.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646998457.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647053172.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647113110.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647565392.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647621376.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647676794.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647732035.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671647847657.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671647953765.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648003872.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648052905.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648103231.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648156329.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648207234.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648265005.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648315109.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648364425.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648627526.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648679540.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648738815.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648791965.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648847365.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648900286.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648956468.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649012505.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649068114.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649232572.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649356056.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649466119.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649522457.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649577991.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649634132.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649864240.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649920706.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649977069.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651371255.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651432906.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651484087.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651541151.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651591850.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651642290.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651795304.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651845988.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651946954.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652097601.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652208616.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652260482.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652365149.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652527843.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652582427.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652635938.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652852170.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652904510.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653015116.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653071861.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653127603.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653243833.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653358891.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653414307.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653469206.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697322223.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697612788.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697671925.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697785938.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697900306.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697952419.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698003332.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698054602.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698106820.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698158100.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698316261.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698476143.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698631893.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698800415.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698857221.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698915700.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698969195.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699247114.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699301815.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699358175.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699413752.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699469168.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699577802.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699696398.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699752642.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699910454.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699960483.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700068972.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700120967.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700180883.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700354338.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700478310.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700538961.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700593408.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700654038.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700762857.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700827589.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700889824.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700953225.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701006009.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701059141.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701111865.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701166572.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701227508.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701289723.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701407986.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701525087.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701582672.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701647046.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701702098.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701766249.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701821821.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703020233.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703083559.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703142481.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703200139.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703249731.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703308396.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703366300.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703418576.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703479102.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703654198.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703715008.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703767235.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703827618.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703887884.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703950828.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704014894.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704068845.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704129764.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704250231.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704313527.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704367229.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704482117.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704547506.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704602178.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704656889.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704712890.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704819923.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704931614.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705041763.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705097667.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705153253.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705268176.csv,265
+test_1iyqjt6btvl9d_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1629216238;expand%5B%5D=data;created%5Bgte%5D=1629736351;,,,test_1iyqjt6btvl9d_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""XM5OSvsY4PrFHoYn9kG"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001856,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""illegitimately""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""hagbut"",
+      ""package_dimensions"": {
+        ""height"": 58.0,
+        ""length"": 23.0,
+        ""weight"": 24.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""pilotage"",
+      ""tax_code"": ""txcd_37010000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001856,
+      ""url"": null
+    },
+    {
+      ""id"": ""x9ZxqYz9boKGFH3O4kND"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001855,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""largo""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""neuroanatomy"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""icQOcJQ4Kb"",
+      ""updated"": 1637001855,
+      ""url"": ""costumer""
+    },
+    {
+      ""id"": ""s3u6PABpNDmClYM8F"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001855,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""alveolitis"",
+      ""package_dimensions"": {
+        ""height"": 23.0,
+        ""length"": 56.0,
+        ""weight"": 37.0,
+        ""width"": 10.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10304000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001855,
+      ""url"": null
+    },
+    {
+      ""id"": ""lZil4v70m5GEFEyFoNp"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001854,
+      ""default_price"": null,
+      ""description"": ""ready"",
+      ""images"": [
+        ""good""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""ceterach"",
+      ""package_dimensions"": {
+        ""height"": 1.0,
+        ""length"": 14.0,
+        ""weight"": 74.0,
+        ""width"": 69.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_31030001"",
+      ""type"": ""service"",
+      ""unit_label"": ""z"",
+      ""updated"": 1637001854,
+      ""url"": null
+    },
+    {
+      ""id"": ""VN8dQ5TjzVZTl4t"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001853,
+      ""default_price"": null,
+      ""description"": ""resonate"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""bise"",
+      ""package_dimensions"": {
+        ""height"": 17.0,
+        ""length"": 89.0,
+        ""weight"": 32.0,
+        ""width"": 31.0
+      },
+      ""shippable"": null,
+      ""statement_descriptor"": ""bullheadedness"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""PuogmsOEauoY"",
+      ""updated"": 1637001853,
+      ""url"": null
+    },
+    {
+      ""id"": ""WsHsQGMnpZ78ghB4"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001853,
+      ""default_price"": null,
+      ""description"": ""approach"",
+      ""images"": [
+        ""jubilantly""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""transfer"",
+      ""package_dimensions"": {
+        ""height"": 79.0,
+        ""length"": 96.0,
+        ""weight"": 11.0,
+        ""width"": 94.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""seating"",
+      ""tax_code"": ""txcd_34020005"",
+      ""type"": ""service"",
+      ""unit_label"": ""6rgOPNke"",
+      ""updated"": 1637001853,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMtuNFweoVPaD"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001852,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""playfully""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""diagramming"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": ""deliverance"",
+      ""tax_code"": ""txcd_20060009"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001852,
+      ""url"": ""melissa""
+    },
+    {
+      ""id"": ""prod_KbMtQQwOYmpRgW"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001851,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""actress"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001851,
+      ""url"": ""capsid""
+    },
+    {
+      ""id"": ""1L7GTfjyxOje"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001851,
+      ""default_price"": null,
+      ""description"": ""colorcast"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""islander"",
+      ""package_dimensions"": {
+        ""height"": 54.0,
+        ""length"": 24.0,
+        ""weight"": 48.0,
+        ""width"": 51.0
+      },
+      ""shippable"": true,
+      ""statement_descriptor"": ""sarracenia"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""TGiDbR"",
+      ""updated"": 1637001851,
+      ""url"": null
+    },
+    {
+      ""id"": ""jDmnHeSQwgHvbM"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001850,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""elephas"",
+      ""package_dimensions"": null,
+      ""shippable"": null,
+      ""statement_descriptor"": ""parliamentarian"",
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": ""pjt"",
+      ""updated"": 1637001850,
+      ""url"": null
+    }
+  ],
+  ""has_more"": true,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1671633267170,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633267170.csv,1,641,../target/test-data/Stripe_Products_rt_0/test-cases_1671633267170.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633377288.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633478882.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633639550.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633691509.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633741862.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633853713.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633905302.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633956667.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634013353.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634073569.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634133512.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634193505.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634366855.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634420386.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634534804.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634588528.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634699160.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634759775.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634814511.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634877172.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634987669.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635046312.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635109152.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635234404.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635290355.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635353243.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635416659.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636398277.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636468690.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636520700.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636584582.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636695258.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636752858.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636804137.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636854923.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636904791.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636966024.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637085894.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637147091.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637198866.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637250265.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637302324.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637408837.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637461160.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637514083.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637566447.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637620040.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637675478.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637728915.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637783008.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637837983.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637893736.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637949489.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638058872.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638112903.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638167797.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638224529.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638286015.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638341925.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638397215.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638458001.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638514295.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638570144.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639200908.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639262808.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639374685.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639425288.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639477755.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639535249.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639697862.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639757446.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639815670.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639920771.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639981075.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640093138.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640152317.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640215142.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640268560.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640329722.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640393328.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640454628.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640514935.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640629042.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640683517.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640737719.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640861290.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640922365.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640977879.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641087702.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641143779.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641206104.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641261183.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641323288.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641444806.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642072096.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642132778.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642183199.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642232760.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642282686.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642340180.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642390540.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642441712.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642492304.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642542915.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642646124.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642750065.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642804601.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642858248.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642911000.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642969982.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643085056.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643138367.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643249051.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643357286.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643463438.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643516981.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643571021.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643679079.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643795089.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643849415.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643905619.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643959752.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644022929.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644132305.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645590506.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645652801.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645703530.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645754796.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645812854.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645865644.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645923695.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645982789.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646040988.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646091976.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646142989.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646193649.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646295746.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646348712.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646400609.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646503718.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646562455.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646623188.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646677460.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646729600.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646998457.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647053172.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647230508.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647287752.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647343700.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647399442.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647454469.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647510742.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647565392.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647621376.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647732035.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671647847657.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671647903620.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671647953765.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648052905.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648103231.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648156329.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648207234.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648265005.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648364425.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648466295.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648517594.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648568711.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648627526.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648679540.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648738815.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648791965.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648847365.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648900286.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648956468.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649012505.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649121559.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649175387.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649232572.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649294738.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649356056.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649410758.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649522457.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649577991.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649634132.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649689797.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649744148.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649799697.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649864240.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649920706.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671649977069.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651371255.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651432906.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651484087.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651541151.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651591850.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651642290.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651694143.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651745737.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651795304.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651845988.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651895890.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651946954.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651997007.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652097601.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652158100.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652208616.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652260482.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652419501.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652635938.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652689809.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652743300.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652795659.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652852170.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652904510.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652958976.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653015116.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653071861.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653127603.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653181122.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653302798.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653358891.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653414307.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671653469206.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697322223.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697385389.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697503672.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697554741.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697612788.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697671925.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697724423.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697785938.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697839183.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697900306.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671697952419.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698054602.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698106820.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698158100.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698263357.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698316261.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698369067.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698423409.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698476143.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698527589.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698580675.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698631893.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698800415.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698857221.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698915700.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699078207.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699134717.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699191612.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699301815.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699358175.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699469168.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699577802.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699646841.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699696398.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699752642.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699802492.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699860000.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699910454.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699960483.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700010677.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700068972.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700120967.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700180883.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700239021.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700293185.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700354338.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700478310.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700538961.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700708520.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700762857.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700827589.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700889824.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700953225.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701006009.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701059141.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701111865.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701166572.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701289723.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701351503.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701407986.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701470179.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701525087.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701582672.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701647046.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701702098.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701766249.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701821821.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703020233.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703083559.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703142481.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703200139.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703249731.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703308396.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703366300.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703418576.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703479102.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703540771.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703592941.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703654198.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703715008.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703767235.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703887884.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703950828.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704129764.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704250231.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704313527.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704367229.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704421168.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704482117.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704547506.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704602178.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704656889.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704712890.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704819923.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704875415.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704931614.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704985775.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705041763.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705097667.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705153253.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705211570.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705268176.csv,327
+test_1hv8r2rvzy6hx_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1628063389;limit=24;active=true;url=scathingly;,,,test_1hv8r2rvzy6hx_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""1unUuxUYeKocu"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636788165,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""slowpoke"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636788165,
+      ""url"": ""scathingly""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1671633428575,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv,2,48,../target/test-data/Stripe_Products_rt_0/test-cases_1671633428575.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671633741862.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634588528.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635353243.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637025824.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637147091.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637250265.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637408837.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637566447.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637837983.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638224529.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639867720.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639981075.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640629042.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640683517.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671641323288.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642183199.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642340180.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671642969982.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643463438.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643624814.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671644132305.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646452513.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646782317.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647343700.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671647903620.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648052905.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648315109.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648364425.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651845988.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671651997007.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652158100.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698054602.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698316261.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698476143.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699023435.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671699247114.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700654038.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700953225.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701227508.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701525087.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671701647046.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704014894.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705097667.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705153253.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705268176.csv,46
+test_qy4f5ntxlb36_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,shippable=false;limit=48;url=minutely;created%5Bgte%5D=1630981837;,,,test_qy4f5ntxlb36_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""pT3axvRqRjv3IHfqx7"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636666790,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [
+        ""diploma""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""modulated"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_30071000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636666790,
+      ""url"": ""minutely""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2)",OAS disconformity,1671633794527,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv,3,16,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671638004849.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639374685.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671639815670.csv;../target/test-data/Stripe_Products_rt_2/test-cases_1671640033740.csv;../target/test-data/Stripe_Products_rt_3/test-cases_1671643357286.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671645590506.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671647176181.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648315109.csv;../target/test-data/Stripe_Products_rt_6/test-cases_1671652958976.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699860000.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700827589.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703654198.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703887884.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671705153253.csv,15
+test_ts2ewxqwden6_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1631626983;active=true;url=luxuriantly;,,,test_ts2ewxqwden6_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""JA56GiJ51ccZb7Om"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636483374,
+      ""default_price"": null,
+      ""description"": ""pennilessness"",
+      ""images"": [
+        ""geothermally""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""limnologically"",
+      ""package_dimensions"": {
+        ""height"": 61.0,
+        ""length"": 35.0,
+        ""weight"": 31.0,
+        ""width"": 29.0
+      },
+      ""shippable"": null,
+      ""statement_descriptor"": ""wooly"",
+      ""tax_code"": ""txcd_33020200"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636483374,
+      ""url"": ""luxuriantly""
+    },
+    {
+      ""id"": ""prod_KYAbOfS8J5dfgb"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1636264189,
+      ""default_price"": null,
+      ""description"": ""remicade"",
+      ""images"": [
+        ""caterpillar-tracked""
+      ],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""well-mannered"",
+      ""package_dimensions"": {
+        ""height"": 7.0,
+        ""length"": 100.0,
+        ""weight"": 17.0,
+        ""width"": 88.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": null,
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1636405439,
+      ""url"": ""luxuriantly""
+    }
+  ],
+  ""has_more"": false,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""] --- [Path '/data/[item]/tax_code'] Instance failed to match at least one required schema among 2",OAS disconformity,1671633794527,Stripe_Products_rt_0,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv,4,13,../target/test-data/Stripe_Products_rt_0/test-cases_1671633794527.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671634534804.csv;../target/test-data/Stripe_Products_rt_0/test-cases_1671635109152.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636468690.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636695258.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671636804137.csv;../target/test-data/Stripe_Products_rt_1/test-cases_1671637949489.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646193649.csv;../target/test-data/Stripe_Products_rt_4/test-cases_1671646834569.csv;../target/test-data/Stripe_Products_rt_7/test-cases_1671698631893.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699752642.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671699910454.csv;../target/test-data/Stripe_Products_rt_8/test-cases_1671700354338.csv,13
+test_1jy87h81uxm5i_GetProducts,False,null,False,GetProducts,/v1/products,GET,application/x-www-form-urlencoded,application/json,Authorization=,,created%5Bgt%5D=1630973263;shippable=false;limit=4;created%5Bgte%5D=1628467661;,,,test_1jy87h81uxm5i_GetProducts,200,"{
+  ""object"": ""list"",
+  ""data"": [
+    {
+      ""id"": ""s3u6PABpNDmClYM8F"",
+      ""object"": ""product"",
+      ""active"": false,
+      ""attributes"": [],
+      ""created"": 1637001855,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""alveolitis"",
+      ""package_dimensions"": {
+        ""height"": 23.0,
+        ""length"": 56.0,
+        ""weight"": 37.0,
+        ""width"": 10.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10304000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001855,
+      ""url"": null
+    },
+    {
+      ""id"": ""prod_KbMtKTUXJVfH4M"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001845,
+      ""default_price"": null,
+      ""description"": ""yelp"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""iridotomy"",
+      ""package_dimensions"": {
+        ""height"": 81.0,
+        ""length"": 97.0,
+        ""weight"": 53.0,
+        ""width"": 3.0
+      },
+      ""shippable"": false,
+      ""statement_descriptor"": ""strychnine"",
+      ""tax_code"": ""txcd_32050015"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001845,
+      ""url"": ""nexus""
+    },
+    {
+      ""id"": ""EW5q5RsXCvlEMNI"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001843,
+      ""default_price"": null,
+      ""description"": null,
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""normalization"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10503000"",
+      ""type"": ""service"",
+      ""unit_label"": ""SVmBjm"",
+      ""updated"": 1637001843,
+      ""url"": ""sightreader""
+    },
+    {
+      ""id"": ""prod_KbMt4KbZQUg6as"",
+      ""object"": ""product"",
+      ""active"": true,
+      ""attributes"": [],
+      ""created"": 1637001843,
+      ""default_price"": null,
+      ""description"": ""underrun"",
+      ""images"": [],
+      ""livemode"": false,
+      ""metadata"": {},
+      ""name"": ""serger"",
+      ""package_dimensions"": null,
+      ""shippable"": false,
+      ""statement_descriptor"": null,
+      ""tax_code"": ""txcd_10102000"",
+      ""type"": ""service"",
+      ""unit_label"": null,
+      ""updated"": 1637001843,
+      ""url"": null
+    }
+  ],
+  ""has_more"": true,
+  ""url"": ""/v1/products""
+}",application/json,False,"OAS disconformity: [Path '/data/[item]'] Object instance has properties which are not allowed by the schema: [""attributes"";""default_price"";""type""] --- [Path '/data/[item]/package_dimensions'] Instance failed to match exactly one schema (matched 0 out of 2) --- [Path '/data/[item]/package_dimensions'] Object instance has properties which are not allowed by the schema: [""height"";""length"";""weight"";""width""]",OAS disconformity,1671642593647,Stripe_Products_rt_3,../target/test-data/Stripe_Products_rt_3/test-cases_1671642593647.csv,5,4,../target/test-data/Stripe_Products_rt_3/test-cases_1671642593647.csv;../target/test-data/Stripe_Products_rt_5/test-cases_1671648847365.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671703418576.csv;../target/test-data/Stripe_Products_rt_9/test-cases_1671704482117.csv,4

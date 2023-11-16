@@ -1,0 +1,1741 @@
+testCaseId,faulty,faultyReason,fulfillsDependencies,operationId,path,httpMethod,inputContentType,outputContentType_x,headerParameters,pathParameters,queryParameters,formParameters,bodyParameter,testResultId,statusCode,responseBody,outputContentType_y,passed,failReason,failReasonCategory,timestamp,api,bot,faultClusterIndex,totalFailures,uncoveredByBots,totalUncoveredByBots
+test_1iyc8908e1pb8_youtubesearchlist,True,inter_parameter_dependency,False,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,videoType=any;part=snippet;channelType=show;videoDefinition=high;eventType=live;safeSearch=none;q=do;regionCode=PT;topicId=%2Fm%2F037hz;videoEmbeddable=any;maxResults=42;videoCategoryId=35;videoDimension=3d;channelId=UClzCn8DxRSCuMFv_WfzkcrQ;relevanceLanguage=DE;,,,test_1iyc8908e1pb8_youtubesearchlist,400,"{
+  ""error"": {
+    ""code"": 400,
+    ""message"": ""Request contains an invalid argument."",
+    ""errors"": [
+      {
+        ""message"": ""Request contains an invalid argument."",
+        ""domain"": ""global"",
+        ""reason"": ""badRequest""
+      }
+    ],
+    ""status"": ""INVALID_ARGUMENT""
+  }
+}
+",application/json; charset=UTF-8,False,OAS disconformity: Response status 400 not defined for path '/youtube/v3/search'.,OAS disconformity,1662125310052,YouTube_Search_atlas_1,../target/test-data/YouTube_Search_atlas_1/test-cases_1662125310052.csv,0,16,../target/test-data/YouTube_Search_atlas_1/test-cases_1662125310052.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125350936.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125371626.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125499116.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125542922.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125587119.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125912202.csv,7
+test_skxux205fa04_youtubesearchlist,False,null,True,youtube.search.list,/youtube/v3/search,GET,application/json,application/json,,,relatedToVideoId=eVIozKR9p50;part=snippet;channelType=channelTypeUnspecified;videoDefinition=any;type=video;safeSearch=none;locationRadius=166km;regionCode=FR;topicId=%2Fm%2F0ggq0m;maxResults=42;location=13.753789%2C+100.501572;relevanceLanguage=DE;,,,test_skxux205fa04_youtubesearchlist,200,"{
+  ""kind"": ""youtube#searchListResponse"",
+  ""etag"": ""3FAtNSO6tsUd7tA_w16H6AQL4Kc"",
+  ""nextPageToken"": ""CCoQAA"",
+  ""regionCode"": ""FR"",
+  ""pageInfo"": {
+    ""totalResults"": 163,
+    ""resultsPerPage"": 42
+  },
+  ""items"": [
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""_QyRWRQDS_h3ScIbhROcpVBIWGE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""XSFtQ8JsaDs""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""UmyxCAeo6Is3Da_PFYRIjttWMI0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""e2vBLd5Egnk""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2017-01-26T21:40:31Z"",
+        ""channelId"": ""UC5H_KXkPbEsGs0tFt8R35mA"",
+        ""title"": ""Martin Garrix & Dua Lipa - Scared To Be Lonely (Official Video)"",
+        ""description"": ""Martin Garrix & Dua Lipa - Scared To Be Lonely (Official Video)\nListen / Download: http://stmpd.co/STBLID\n♫ Follow with Zedd is out now: http://stmpd.co/E3o4MiPtID\n\nMy collaboration Scared To Be Lonely with Dua Lipa is out now!\n\nFollow Martin Garrix: \nFacebook: http://facebook.com/MartinGarrix\nTwitter: http://twitter.com/MartinGarrix\nInstagram: http://instagram.com/MartinGarrix\nYouTube: http://youtube.com/MartinGarrix\n\nFollow Dua Lipa:\nFacebook: http://facebook.com/DuaLipaOfficial\nTwitter: http://twitter.com/DuaLipa\nInstagram: http://instagram.com/DuaLipa\nYouTube: http://youtube.com/DuaLipa1\n\nScared To Be Lonely - Martin Garrix and Dua Lipa\nDirected & Written by Blake Claridge\nProduced by Craft London & Lois Newcombe\nEdited by Phil Conway \nAdditional Editing by Damian Karsznia\nExecutive Producer: Sergio Lopez\nSpecial Thanks: McCann London & Jaclyn Kaminski\n\n#Garrix #DuaLipa #ScaredToBeLonely"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/e2vBLd5Egnk/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/e2vBLd5Egnk/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/e2vBLd5Egnk/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/e2vBLd5Egnk/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/e2vBLd5Egnk/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Martin Garrix"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2017-01-26T21:40:31Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""H-V-K2FiIP73ocgArtsT9f2ySD0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""oC-GflRB0y4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-04-10T12:18:45Z"",
+        ""channelId"": ""UC1l7wYrva1qCH-wgqcHaaRg"",
+        ""title"": ""David Guetta & Showtek - Bad ft.Vassy (Lyrics Video)"",
+        ""description"": ""Directed by Olivier Boscovitch & Dominique Pochat\nBUY/LISTEN THE NEW DAVID GUETTA ALBUM NOW : https://davidguetta.lnk.to/Album7AY\n\nDAVID GUETTA & SHOWTEK - BAD (FEAT. VASSY)\n(David Guetta, Wouter Janssen, Sjoerd Janssen, Giorgio Tuinfort, Ossama Al Sarraf, Ned Shepard, Manuel Reuter, Vassy, Nick Turpin)\nProduced by David Guetta, Showtek, Sultan & Ned Shepard, Manuel Reuter\nPublishers: What A Publishing; Piano Songs / BMG Talpa Music B.V. (BUMA) / Sony ATV (BMI); 2-Dutch Publishing (Strengholt Music Group), Administered by Downtown Publishing ; Edition Manian/BMG Rights Management GmbH ; Kiss My Vassy/Green & Bloom Talent/BMG Platinum Songs ; BMI/Sony ATV Publishing.\n(P) & (C) 2014 What A Music Ltd, Under Exclusive Licence to Parlophone/Warner Music France, a Warner Music Group Company\n\nFollow David Guetta:\nhttps://www.davidguetta.com\nhttps://facebook.com/DavidGuetta\nhttps://www.twitter.com/DavidGuetta\nhttps://www.instagram.com/davidguetta\nhttps://www.tiktok.com/@davidguetta"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/oC-GflRB0y4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/oC-GflRB0y4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/oC-GflRB0y4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/oC-GflRB0y4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""David Guetta"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-04-10T12:18:45Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""tfWLVhjba-BQ-y4GErqrjySIxKw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""D67oEsV7Syk""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-16T03:48:21Z"",
+        ""channelId"": ""UCX-USfenzQlhrEJR1zD5IYw"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me [Vol.2]"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me [Vol.2]\n\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nSubmit music: https://bit.ly/2VcIDxx \n------------------------------------------------------------------------------------------------------------\nTag: #SummerMusicMix #HotSummer #DeepHouse #SummerMix2022\n\n🌿 Video by Lilian Pang \n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/ \n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n📸 Photo By : https://www.instagram.com/jon.snip/\n👤 Model : https://www.instagram.com/shaelahmcgilton/\n\n ✔️Deep Mood is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Deep Mood\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h 💌 channel@queenmusik.com 💌"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/D67oEsV7Syk/default_live.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/D67oEsV7Syk/mqdefault_live.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/D67oEsV7Syk/hqdefault_live.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/D67oEsV7Syk/sddefault_live.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/D67oEsV7Syk/maxresdefault_live.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Deep Mood."",
+        ""liveBroadcastContent"": ""live"",
+        ""publishTime"": ""2022-08-16T03:48:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""a8-REm3k8862Ws_zPJSOLgebXXA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Lpjcm1F8tY8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2018-07-30T13:51:15Z"",
+        ""channelId"": ""UC5H_KXkPbEsGs0tFt8R35mA"",
+        ""title"": ""Martin Garrix feat. Bonn - High On Life (Official Video)"",
+        ""description"": ""Martin Garrix feat. Bonn - High On Life (Official Video)\n♫ High On Life feat. Bonn is out now: http://stmpd.co/MGHOLID\n♫ Follow with Zedd is out now: http://stmpd.co/E3o4MiPtID\n\nPremiered my new track High On Life featuring Bonn on Tomorrowland 2018 and the official video is also my aftermovie for this amazing festival. Hope you enjoy it!\n\nClick on subtitles to turn lyrics on/off.\n\nFollow Martin Garrix: \nFacebook: http://facebook.com/MartinGarrix\nTwitter: http://twitter.com/MartinGarrix\nInstagram: http://instagram.com/MartinGarrix\nYouTube: http://youtube.com/MartinGarrix\n\nFollow STMPD RCRDS\nYouTube: http://www.youtube.com/c/stmpdrcrds\nFacebook: https://www.facebook.com/STMPDRCRDS/\nInstagram: https://www.instagram.com/stmpdrcrds/\nTwitter: https://twitter.com/stmpdrcrds\nSpotify: http://stmpd.co/ST50SPID\n\nDirected and edited by: Damian Karsznia\n\nCinematography by: \n- Sjors Ruijters \n- Fabian de Prieëlle\n- Mathias Normann\n- Mees Roozen\n- Joris Hoevenberg\n- Damian Karsznia\n\n#HighOnLife #Garrix #Bonn\n#MartinGarrix #Tomorrowland #Aftermovie #Tomorrowland2018"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Lpjcm1F8tY8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Lpjcm1F8tY8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Lpjcm1F8tY8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Lpjcm1F8tY8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Lpjcm1F8tY8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Martin Garrix"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2018-07-30T13:51:15Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""rgWu5eHq1OOdL1LiuXhq86WBuFc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""xfgBijPAR6s""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-02-15T04:27:55Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #2"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #2\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:    @HuyDZ Official @Deep Mood Radio @RU - DEEP \n\n00:00 | 0. Linkin Park - In The End (Dj Dark & Nesco Cover Remix)\n03:14 | 1. Alan Walker - Faded (Dj Dark & Dj Vianu Extended Remix)\n08:36 | 2. Avicii - SOS (Pascal Junior Remix)\n11:57 | 3. DJ Goja - I Never Let You Go\n14:52 | 4. Tonight - Tabba x Dj Goja\n17:44 | 5. Dj Goja x Vanessa Campagna - Human\n20:49 | 6. Dj Goja x Vanessa Campagna - Save Me (SOS)\nhttps://spoti.fi/2RNLpwH\n23:59 | 7. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n26:19 | 8. Summer Wave - Solven & Hysaze\n29:43 | 9. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n34:00 | 10. Stoto - My Love\nhttps://spoti.fi/2EJyplh\n38:33 | 11. Stay With Me - LeXxìv & Victor Perry\nhttps://spoti.fi/3kGUsZf\n41:17 | 12. Soundwaves - Found My Way\nhttps://fanlink.to/soundwavesfoundmyway\n44:34 | 13. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n47:41 | 14. Horbatso - Never Again\nhttps://spoti.fi/38Nh8nx\n50:23 | 15. Hinsley - Trail (of broken hearts)\nhttps://spoti.fi/2ZXS3kV\n53:54 | 16. Feel It Too - Someone Else\n57:27 | 17. Ela Van Wolf - Way We Feel (Lyric Video)\n59:56 | 18. Alone w u - Modern Culture\n01:02:25 | 19. Kenn Colt - Sun Goes Down\nhttps://flh.lnk.to/SunGoesDown\n01:05:13 | 20. Kallisto- Save Tonight ft Simon Öbom\nhttps://spoti.fi/3omoxyn\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/kinsey/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/xfgBijPAR6s/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/xfgBijPAR6s/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/xfgBijPAR6s/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/xfgBijPAR6s/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/xfgBijPAR6s/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-02-15T04:27:55Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ZizritJStmFl9WOuIY12h62Zn0w"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""5dbEhBKGOtY""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-04-22T08:56:33Z"",
+        ""channelId"": ""UC1l7wYrva1qCH-wgqcHaaRg"",
+        ""title"": ""David Guetta - Play Hard ft. Ne-Yo, Akon (Official Video)"",
+        ""description"": ""BUY/LISTEN THE NEW DAVID GUETTA ALBUM NOW : https://davidguetta.lnk.to/Album7AY\n\nThis piece reveals the real story behind the \""Play Hard\"" video: http://youtu.be/Ct-gq8BSZiw\n\nFrom the album Nothing But The Beat Ultimate - Download on iTunes here: http://smarturl.it/NBTBiTunes?IQid=vevo ft Sia, Ne-Yo, Akon, Nicki Minaj, Flo Rida, Will.I.Am, Jessie J, Usher & more.\n\nDownload the TuneMoji® App for iPhone & send FREE music GIFs: http://bit.ly/TuneMoji1TuCWWR\n\nPLAY HARD (FEAT AKON & NE-YO)\n(Aliaume Thiam, David Guetta, Frédéric Riesterer, Giorgio H. Tuinfort, Shaffer Smith)\nProduced by David Guetta, Giorgio Tuinfort & Frédéric Riesterer\nContains an excerpt of \""Better of Alone\"" (S. Molijn and E. Kalberg aka Pronti & Kalmani), published by Talpa Music BV and Violent Publishing BVPublishers: Sony ATV Byefall Productions Inc. (ASCAP) ; Universal Music - Z Tunes LLC / Pen In The Ground Publishing (ASCAP); What A publishing Ltd; Piano Songs / Talpa Music / Sony ATV Music PublishingAkon appears courtesy of Upfront / Konvict / SRC / Universal Records. Ne-Yo appears courtesy of Compound / Motown Records\n(P) & (C) 2013 What A Music Ltd, Under Exclusive Licence to EMI Music France\n\nhttp://www.davidguetta.com\nhttp://facebook.com/DavidGuetta\nhttp://www.twitter.com/DavidGuetta\nhttp://www.instagram.com/davidguetta\nhttps://www.tiktok.com/@davidguetta"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/5dbEhBKGOtY/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/5dbEhBKGOtY/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/5dbEhBKGOtY/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/5dbEhBKGOtY/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""David Guetta"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-04-22T08:56:33Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""81ZGawnjjTkhSy1-cfXw5w31UQo"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""KrVC5dm5fFc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2012-05-09T19:59:52Z"",
+        ""channelId"": ""UCQpq_RNkh6ObPsULJeTJTvw"",
+        ""title"": ""Nicky Romero - Toulouse"",
+        ""description"": ""Directed by Timo Pierre Rositzki, Cinematography by Nicolas Chibac.\n♫ WATCH A SIMILAR SINGLE ➤➤➤ https://youtu.be/kRf_wZ9CydU\n📌 SUBSCRIBE, BRO! ➤➤➤ http://bit.ly/DJkameleon ☚☚☚\n\n--------------------------------------------------------------\n--------------------------------------------------------------\n➤ Regarding cooperation - mixsmedia@gmail.com\n➤ Concerning advertising and brands - mixsmediatv@gmail.com\n\n© Copyright 2012-2018 by Spinnin' Records under exclusive license to Mixs Media™ Label Ltd.\nOfficial content distributor: MixsRecords® Music LLC, a division of company.\nAll rights reserved."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/KrVC5dm5fFc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/KrVC5dm5fFc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/KrVC5dm5fFc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/KrVC5dm5fFc/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/KrVC5dm5fFc/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""DJ Stant & Kameleon"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2012-05-09T19:59:52Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""3aTz2iOiQJ_LDqXQRwnmmj3pD2c"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""dzHdo4yxidc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2014-08-25T07:33:49Z"",
+        ""channelId"": ""UCpDJl2EmP7Oh90Vylx0dZtA"",
+        ""title"": ""Afrojack & Martin Garrix - Turn Up The Speakers (Official Music Video)"",
+        ""description"": ""Afrojack & Martin Garrix - Turn Up The Speakers. Like this track? Add it to your playlist on Spotify or Apple Music: https://spinninrecords.lnk.to/turnupthespeakers!YT\n\nSubscribe to Spinnin' TV HERE : http://bit.ly/SPINNINTV\n\nThis might just be the team-up of the century. The legendary Afrojack joins forces with dance music prodigy Martin Garrix on Turn Up The Speakers. The result is an enourmous main stage, peak time, big room breaker of the highest possible quality. What can we say, it doesn’t get any bigger than this! \n\nDJ Feedback:\nHardwell: Full support!\nTiesto: Supporting! \nDavid Guetta: Played @ Tomorrowland!\nDimitri Vegas & Like Mike: Supported in our Tomorrowland sets!\nNicky Romero: Supporting\nSteve Aoki: Support!\nW&W: Playing in all our sets!\nDada Life: Supporting\nSander van Doorn: Supporting!\nBingo Players: Nice!\nR3hab: Supporting!\nUmmet Ozcan: Cool! Support!\nDannic: Support!\nBlasterjaxx: Full support!\nAntoine: Support\nTritonal: Supporting\nThomas Gold: big!!\nBassjackers: Hugeeee\nTommie Sunshine: FULL SUPPORT!!\nDeniz Koyu: Support in my radioshow\nClockwork: Cool\nMAKJ: Support\nSidney Samson: Supporting\nAustin Kramer / Sirius XM: Coool\n\nJoin Afrojack:\nhttp://facebook.com/djafrojack\nhttp://twitter.com/djafrojack\n\nJoin Martin Garrix:\nhttp://facebook.com/martingarrix\nhttp://twitter.com/martingarrix\n---\n\nThe Spinnin’ Records YouTube channel is the home for all music videos of the world’s leading dance record label!\n\nWe feature the latest music videos by Spinnin’ artists like Oliver Heldens, Sam Feldt, KSHMR, Ummet Ozcan, Blasterjaxx, Merk & Kremont, Timmy Trumpet, Tujamo, Alok, Curbi, Mike Williams, Lucas & Steve and many, many more! Expect daily uploads of official music videos, lyric videos and artwork videos across genres like dance, house, electro house, future house, deep house, big room and trap.\n\nMake sure to subscribe to Spinnin' Records: http://bit.do/spinnintv \n..and turn on notifications to stay updated with all new uploads!🔔\n\nFollow Spinnin’ Records:\nhttps://open.spotify.com/user/spinninrecordsofficial\nhttps://soundcloud.com/spinninrecords\nhttps://facebook.com/SpinninRecords\nhttps://instagram.com/spinninrecords\nhttps://twitter.com/SpinninRecords\nhttps://spinninrecords.com\n\n#Afrojack\n#MartinGarrix\n#SpinninRecords\n#Spinnin"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/dzHdo4yxidc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/dzHdo4yxidc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/dzHdo4yxidc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/dzHdo4yxidc/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""Spinnin' Records"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2014-08-25T07:33:49Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""YUjUfk3xaoayXp5O-8mMaoxDPfc"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""KnL2RJZTdA4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2013-11-19T14:37:04Z"",
+        ""channelId"": ""UCpDJl2EmP7Oh90Vylx0dZtA"",
+        ""title"": ""Martin Garrix & Jay Hardway - Wizard (Official Music Video)"",
+        ""description"": ""Download 'Wizard' by Martin Garrix & Jay Hardway' HERE  http://smarturl.it/itunes_wizard\n\nOr you can grab your copy on Beatport : http://btprt.dj/1bDcC8j\n\nSubscribe to Spinnin TV now: http://bit.ly/SPINNINTV\n\nJoin Martin Garrix:\nhttp://www.facebook.com/MartinGarrix\nhttp://www.twitter.com/MartinGarrix\nhttp://www.soundcloud.com/MartinGarrix\n\nJoin Jay Hardway:\nhttp://www.facebook.com/JayHardwayOfficial\nhttp://www.twitter.com/JayHardway\nhttp://www.soundcloud.com/Jay-Hardway\n\nDirected by: http://markloonen.nl\n---\n\nThe Spinnin’ Records YouTube channel is the home for all music videos of the world’s leading dance record label!\n\nWe feature the latest music videos by Spinnin’ artists like Oliver Heldens, Sam Feldt, KSHMR, Ummet Ozcan, Blasterjaxx, Merk & Kremont, Timmy Trumpet, Tujamo, Alok, Curbi, Mike Williams, Lucas & Steve and many, many more! Expect daily uploads of official music videos, lyric videos and artwork videos across genres like dance, house, electro house, future house, deep house, big room and trap.\n\nMake sure to subscribe to Spinnin' Records: http://bit.do/spinnintv \n..and turn on notifications to stay updated with all new uploads!🔔\n\nFollow Spinnin’ Records:\nhttps://open.spotify.com/user/spinninrecordsofficial\nhttps://soundcloud.com/spinninrecords\nhttps://facebook.com/SpinninRecords\nhttps://instagram.com/spinninrecords\nhttps://twitter.com/SpinninRecords\nhttps://spinninrecords.com\n\n#MartinGarrix\n#JayHardway\n#SpinninRecords\n#Spinnin"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/KnL2RJZTdA4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/KnL2RJZTdA4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/KnL2RJZTdA4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/KnL2RJZTdA4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""Spinnin' Records"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2013-11-19T14:37:04Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ZtRlDoV3zw4HgXNRkRPkkkUgA-o"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""jx49KuqI2vU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-06-09T23:36:53Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Summer Music Mix 2022 | Best Of Tropical & Deep House Sessions Chill Out #1 Mix By HuyDZ"",
+        ""description"": ""Summer Music Mix 2022 | Best Of Tropical & Deep House Sessions Chill Out #1 Mix By HuyDZ\n\n#SummerMusicMix #DeepHouse #VocalHouse #DeepHouseMix \n\n🎧 ➡️ Thanks To: Deep Disco Records & Deep Territory Records\n\nFollow Deep Disco Records\n◉ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n◉ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n◉ Soundcloud → https://soundcloud.com/deepdiscorecords \n◉ Website → https://www.deepdiscomusic.com\n\n♛ Tropical Deep House | Summer Mix 2022 ✌️\n\n0:00 Marc Philippe - Dancer In The Dark (GeoM Remix) https://vibe.deepdiscomusic.com/motivationhouse\n4:15 Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix) https://fanlink.to/ddr32\n9:39 Pete Bellis & Tommy - I Was Loving You (Original Mix) https://vibe.deepdiscomusic.com/bestofdd\n14:05 Housenick - Going Down (GeoM Remix) https://vibe.deepdiscomusic.com/motivationhouse\n18:29 Pete Bellis & Tommy - Looking For A New Home (Nikko Culture Remix) https://fanlink.to/ddr41\n22:25 Marc Philippe - Wait For This (GeoM Remix) https://fanlink.to/ddr39 \n25:03 Costa Mee - Waiting For The Light (Original Mix) https://fanlink.to/ddr27   \n29:04 Costa Mee - Around This World (Original Mix) https://fanlink.to/ddr43\n34:36 GeoM - Desert Rose (Nikko Culture Remix) https://fanlink.to/geom2\n40:29 Housenick - Be The One (Bruno Motta Remix) https://fanlink.to/ddr17  \n46:06 GeoM - The Beating of My Broken Heart (Housenick Remix) https://fanlink.to/ddr33\n50:49 GeoM - Something's Missing (Original Mix) https://fanlink.to/DDR13\n56:03 Pete Bellis & Tommy - Do You Wanna Know (Marc Philippe Remix) https://fanlink.to/ddr47\n1:00:15 Marc Philippe - Broken Mess (Pete Bellis & Tommy Remix) http://bit.ly/2tNE2pc\n1:04:17 Pete Bellis & Tommy - Draw the Line (Original Mix) https://fanlink.to/Qed\n1:08:53 Marc Philippe - Wait For This (Nikko Culture Remix) https://fanlink.to/ddr39 \n1:12:06 Luxx Daze - Sensation (Costa Mee Remix) https://fanlink.to/dtr25\n1:16:15 John Castel & Xan Castel - Be With You (Pete Bellis & Tommy Remix) https://fanlink.to/ddr45  \n1:20:21 Costa Mee - Hypocrite (Andomalix Remix) https://fanlink.to/ddr40 \n1:23:47 Housenick - Forgret This Love (Original Mix) https://fanlink.to/dtr20 \n1:27:50 Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix) https://fanlink.to/ddr32\n1:33:17 Marc Philippe - Dancer In The Dark (GeoM Remix) https://vibe.deepdiscomusic.com/dancehouse\n1:37:25 Pete Bellis & Tommy - I Was Loving You (Original Mix) https://fanlink.to/ddr21 \n1:41:47 Pete Bellis & Tommy - Looking For A New Home (Nikko Culture Remix) https://fanlink.to/ddr41\n1:45:46 Housenick - Going Down (GeoM Remix) https://fanlink.to/ddr42 \n1:50:15 Costa Mee - Waiting For The Light (Original Mix) https://fanlink.to/ddr27 \n1:55:15 Pete Bellis & Tommy - Draw the Line (Original Mix) https://fanlink.to/Qed\n1:59:36 GeoM - Something's Missing (Original Mix) https://fanlink.to/DDR13\n\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/florina__toma/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/jx49KuqI2vU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/jx49KuqI2vU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/jx49KuqI2vU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/jx49KuqI2vU/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/jx49KuqI2vU/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-06-09T23:36:53Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""X1UefZ94GwhPh5WFhpy2VKD6lY0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""_nC0KXtrD4Y""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-25T06:59:19Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #23"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #23\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Deep Mood. @Ru Deep Radio @Wonder Deep \n\n🌿 Music by Deep Universe\n➤Spotify: https://deepuniverse.fanlink.to/Spotify \n➤Facebook: https://deepuniverse.fanlink.to/Facebook \n➤Instagram: https://deepuniverse.fanlink.to/Instagram \n➤TikTok: https://deepuniverse.fanlink.to/TikTok\n\n🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\n\n🌿Follow Nora Van Elken:\nhttps://twitter.com/noravanelken\nhttps://soundcloud.com/noravanelken\nhttps://www.instagram.com/noravanelken\nhttps://www.facebook.com/noravanelken\n\n✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA\n\n🎵Follow Hikend for new release every week: \n➤ Spotify: https://music.hitkend.me/House  \n➤ Instagram: https://music.hitkend.me/ig  \n➤ Sub Instagram: https://music.hitkend.me/IG  \n➤ Youtube: https://music.hitkend.me/YTB\n\n\n00:00 | 0. Dj Goja x Lunis - Crazy\nhttps://deepuniverse.fanlink.to/Crazy\n02:37 | 1. Reman, Nito-Onna, Tabba - Leave The Lights On\nhttps://deepuniverse.fanlink.to/LeaveTheLightsOn\n05:04 | 2. Dj Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n07:57 | 3. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n12:30 | 4. Dj Goja x Vanessa Campagna - Human (Official Single)\nhttps://spoti.fi/3EaMCRq\n15:35 | 5. Lady Ocean - Painter (Original Mix)\nhttps://fanlink.to/PAINTER\n18:57 | 6. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n23:05 | 7. Stoto - My Love\nhttps://spoti.fi/2EJyplh\n27:35 | 8. Ela Van Wolf - Way We Feel (Lyric Video)\n29:56 | 9. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\n33:08 | 10. Kenn Colt - Sun Goes Down\nhttps://flh.lnk.to/SunGoesDown\n35:53 | 11. Kallisto- Save Tonight ft Simon Öbom\nhttps://spoti.fi/3omoxyn\n39:23 | 12. Solven & Hysaze - Summer Wave\nhttps://fanlink.to/SummerWave\n42:43 | 13. Stay With Me - LeXxìv & Victor Perry\nhttps://spoti.fi/3kGUsZf\n45:23 | 14. Soundwaves - Found My Way\nhttps://fanlink.to/soundwavesfoundmyway\n48:35 | 15. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n50:54 | 16. Tabba x Dj Goja - Tonight\nhttps://deepuniverse.fanlink.to/Tonight\n53:45 | 17. Carda, Keeks - Need You Now\nhttps://spoti.fi/36kfaJl\n57:12 | 18. Carda - Wasted (Ft. Emily Falvey)\nhttps://spoti.fi/3qThrmB\n59:54 | 19. Loran - Let me go\n01:02:40 | 20. Save Me - Hounar\nhttps://spoti.fi/3OBT7Ci\n01:05:19 | 21. Nora Van Elken - All Night Long (Y.V.E 48 Remix)\nhttps://fanlink.to/NoraYve\n01:07:57 | 22. Nora Van Elken - Stay Right There [Official Audio]\nhttps://fanlink.to/noravanelken\n01:11:07 | 23. Nora Van Elken - The Life We Live\nhttps://fanlink.to/noravanelken\n01:13:53 | 24. Nora Van Elken - Missing You (ft. Zack Gray)\nhttps://fanlink.to/noravanelken\n01:16:49 | 25. MRLN & Robbie Hutton - By My Side\nhttps://deepuniverse.fanlink.to/ByMySide\n01:18:58 | 26. Dj Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n\nCredit for the Photo: https://www.instagram.com/svetabily/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/_nC0KXtrD4Y/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/_nC0KXtrD4Y/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/_nC0KXtrD4Y/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/_nC0KXtrD4Y/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/_nC0KXtrD4Y/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-25T06:59:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""J8ARLYMyxIDYQpvbdxWoTq659pE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""VAJRCKweDRk""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-04-15T12:19:31Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #55"",
+        ""description"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #55\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:   @HuyDZ Official @RU - DEEP @Deep Mood Radio \n\nTrack:\n\nFollow Deep Disco Records\n◉ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n◉ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n◉ Soundcloud → https://soundcloud.com/deepdiscorecords \n◉ Website → https://www.deepdiscomusic.com\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/itsdoina/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/VAJRCKweDRk/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/VAJRCKweDRk/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/VAJRCKweDRk/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/VAJRCKweDRk/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/VAJRCKweDRk/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-04-15T12:19:31Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""6orYVoQ69Yq2ZOmAjwgOu47yf1E"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ne-vXWvLbuo""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-06-12T04:20:16Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Summer Music Mix 2022 | Best Of Tropical & Deep House Sessions Chill Out #2 Mix By HuyDZ"",
+        ""description"": ""Summer Music Mix 2022 | Best Of Tropical & Deep House Sessions Chill Out #1 Mix By HuyDZ\n\n#SummerMusicMix #DeepHouse #VocalHouse #DeepHouseMix\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:  @Queen Musicas. @Deep Mood Radio @Trap Cloudx \n\nTrack:\n00:00 | 0. Linkin Park - In The End (Dj Dark & Nesco Cover Remix)\n03:13 | 1. Suprafive & Nesco - Stranger (Original Mix)\n07:31 | 2. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix)\n12:32 | 3. Cut Off - Lonely\nhttps://spoti.fi/3hdBxmy\n17:10 | 4. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n21:58 | 5. Pascal Junior - Feelings\nhttps://EpicTonesRecords.lnk.to/l8zxF\n25:23 | 6. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n29:27 | 7. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n33:14 | 8. Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix)\n38:42 | 9. Pete Bellis & Tommy - Missing The Way (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n43:06 | 10. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n46:12 | 11. Marc Philippe - Summer Of Love (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n50:04 | 12. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n53:35 | 13. Nando Fortunato - Important Story (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n59:21 | 14. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n01:02:52 | 15. Paul Lock, Pete Bellis & Tommy - Forgive Me\nhttps://vibe.deepdiscomusic.com/hits\n01:08:23 | 16. Lady Ocean - Painter (Original Mix)\nhttps://fanlink.to/PAINTER\n01:11:44 | 17. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n01:15:57 | 18. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\nFollow Deep Disco Records\n◉ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n◉ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n◉ Soundcloud → https://soundcloud.com/deepdiscorecords \n◉ Website → https://www.deepdiscomusic.com\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/itsdoina/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ne-vXWvLbuo/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ne-vXWvLbuo/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ne-vXWvLbuo/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ne-vXWvLbuo/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ne-vXWvLbuo/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-06-12T04:20:16Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""wvq9w4SRYn6C-gCNqWied_cXsQ4"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""zQUOTDI0vRQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-25T18:25:55Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #9"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #9\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Haa Taa Deep @Wonder Deep @Deep Mood. \n\n🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/deephouse  \n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic \n➤ Soundcloud → https://soundcloud.com/deepdiscorecords  \n➤ Website → https://www.deepdiscomusic.com/\n\n0. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix)\n1. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n2. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n3.  Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n4. GeoM - Back To You (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n5. Marc Philippe - Summer Of Love (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n6. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n7. Marc Philippe - Is Someone Waiting For Me (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n8. Marc Philippe - Dancing With Your Eyes (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n9. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n10. Costa Mee - Around This World (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n11. Costa Mee - With A Kiss (Original Mix)\n12. Marc Philippe - Broken Mess (Costa Mee Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n13. GeoM, Pete Bellis & Tommy - Love You Enough (Housenick Remix)\n14. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n15. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n\nCredit for the Photo: https://www.instagram.com/charlyjordan/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/zQUOTDI0vRQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/zQUOTDI0vRQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/zQUOTDI0vRQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/zQUOTDI0vRQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/zQUOTDI0vRQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-25T18:25:55Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""U4Lqr2S6RFQ7GF8s10suRM4T7zo"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""LCLVwfDhoLo""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-30T17:14:11Z"",
+        ""channelId"": ""UCMtkk8LXf0wQ3VFAzoyN_og"",
+        ""title"": ""Avicii, Kygo, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes [Vol.4]"",
+        ""description"": ""Avicii, Kygo, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes [Vol.4]\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow Deep Mood Radio.\nYoutube: @Ru Deep Radio @RU - DEEP @Deep Mood. \n\nTracklist:\n00:00:00 | 1. Galaxy - Dj Goja\nhttps://spoti.fi/323YhA4\n00:02:22 | 2. Illusion - Pascal Junior \nhttps://epictonesrecords.lnk.to/jJIeG03m\n00:05:15 | 3. Feelings - Pascal Junior \nhttps://EpicTonesRecords.lnk.to/l8zxF\n00:08:42 | 4. Light Up (ft. Rachel Woznow) - C'SAR \nhttps://EpicTonesRecords.lnk.to/EJg93DNw\n00:11:24 | 5. Slow Down - Pascal Junior \nhttps://EpicTonesRecords.lnk.to/l8zxF\n00:14:42 | 6. Away - CDC, 7Harder \nhttps://EpicTonesRecords.lnk.to/21z9IOyN\n00:18:32 | 7. If I Wouldn't know - Pascal Junior \nhttps://EpicTonesRecords.lnk.to/l8zxF\n00:21:41 | 8. Make It Better - Manda \nhttps://EpicTonesRecords.lnk.to/TTOUj\n00:24:30 | 9. Around This World - Stefanescu \nhttps://EpicTonesRecords.lnk.to/MuN0A\n00:28:05 | 10. Moving On - Mourad Hany \nhttps://EpicTonesRecords.lnk.to/9FJ81ZqZ\n00:31:29 | 11. Here For You - Pascal Junior \nhttps://epictonesrecords.lnk.to/CmZcL\n00:34:33 | 12. Empty Street - Bigda \nhttps://EpicTonesRecords.lnk.to/nWy0i72c\n00:38:34 | 13. Here With Me - NuKey \nhttps://EpicTonesRecords.lnk.to/tXq21bTx\n00:41:49 | 14. Anymore - Doppe, Felix P \nhttps://EpicTonesRecords.lnk.to/DSYYSpL3\n00:44:49 | 15. After All - Pascal Junior \nhttps://epictonesrecords.lnk.to/8pZAT1n5\n00:48:07 | 16. In My Dreams - Pascal Junior \nhttps://EpicTonesRecords.lnk.to/l8zxF\n00:51:04 | 17. Little Bit - Pascal Junior \nhttps://EpicTonesRecords.lnk.to/l8zxF\n00:54:19 | 18. Right Time - Mattsu \nhttps://EpicTonesRecords.lnk.to/v1mJI89r\n00:56:37 | 19. You - Mourad Hany \nhttps://EpicTonesRecords.lnk.to/9FJ81ZqZ\n01:00:14 | 20. Close Your Eyes - G.Voudouris, Dcoverz \nhttps://EpicTonesRecords.lnk.to/lAsreosv\n01:04:38 | 21. Rewind - Softbeat \nhttps://EpicTonesRecords.lnk.to/vFl7Y\n01:08:42 | 22. Break My Heart - Remundo \nhttps://EpicTonesRecords.lnk.to/1IpwEb3S\n01:11:06 | 23. Voices In My Head - Eppers \nhttps://EpicTonesRecords.lnk.to/qUVgpfuc\n\n✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/svetabily/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n\nFor any copyright issue,  PLEASE contact us or leave us a personal message here and we will remove your material right away. PLEASE do not opt for a youtube strike. \n💌 channel@queenmusik.com 💌"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/LCLVwfDhoLo/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/LCLVwfDhoLo/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/LCLVwfDhoLo/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/LCLVwfDhoLo/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/LCLVwfDhoLo/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Deep Mood Radio."",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-30T17:14:11Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""AeTWoN6gUAbH5n4-FkGtmA4yGfM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""-6GpzquEI74""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-02-23T09:35:12Z"",
+        ""channelId"": ""UCNpUrH2KLq5dfwU_wohD9fA"",
+        ""title"": ""Ibiza Summer Mix 2021 🍓 Best Of Tropical Deep House Music Chill Out Mix By Deep Legacy #60"",
+        ""description"": ""Ibiza Summer Mix 2021 🍓 Best Of Tropical Deep House Music Chill Out Mix By Deep Legacy #60\n\n#SummerMusicMix #BestOfDeepHouse #HotSummer #SUMMERMIX2021 #SUMMERMUSIC2021\n\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nYoutube: https://www.youtube.com/channel/UCNpUrH2KLq5dfwU_wohD9fA\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nCredit Video: \n\n🌿 Video By: Gavin Beals\n» Youtube: https://www.youtube.com/user/gbeals100\n» Instagram: https://www.instagram.com/th3venture/\n\n🌿 Video By: Gaëtan Piolot\n» Youtube: https://bit.ly/34EUPLa\n» Instagram: @gaetanpiolot\n\n🌿 Video by ThinLineMedia\n»Youtube: https://bit.ly/3bgId0I\n»Facebook: https://bit.ly/3c4ojWQ\n»Instagram: https://bit.ly/2VoEOX4\n»Website: thinlinemedia.com\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿 Video By Ben Mikha\n➤ https://bit.ly/2EDRPUj\n➤ https://instagram.com/benmikha\n➤ https://benmikha.com/\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿Videos by Juhani Sarglep: \nInstargram : https://bit.ly/2L6er3s\nInstargram : https://bit.ly/2W5Rh3y\nYouTube : https://bit.ly/3c9JFTk\nWebsite : https://www.foureyestwosouls.com\n\nMusic By:\n\n🌿 Follow / Ace Kings:\nhttps://soundcloud.com/acekings\n\n🌿 Follow Cut Off:\nhttps://bit.ly/313CjLf\n\n🌿 Follow Deep Disco Records \n➤ Spotify → https://spoti.fi/2U7HoTN\n➤ Apple Music → https://apple.co/2UeA9YW \n➤ Soundcloud → https://goo.gl/1zaGz5 \n➤ Website → https://goo.gl/n2vMnq \n\n🌿Follow Deep Territory Records: \n➤ Spotify → https://spoti.fi/2TlaFVM \n➤ Apple Music → https://apple.co/2H2cIwg\n➤ Soundcloud → http://bit.ly/2vG6OsY\n\n🌿 Music by Nora Van Elken\n➤ Twitter: https://bit.ly/2yOc5Dt \n➤ Soundcloud: https://bit.ly/3c6aRC2 \n➤ Instagram: https://bit.ly/34yOUcf \n➤ Facebook: https://bit.ly/2JZnFht \n➤ Youtube : https://bit.ly/2yAFu4d\n\n🌿 Music by Lady Ocean\nSpotify: https://spoti.fi/2X81ptq\nInstagram: https://bit.ly/3a5nQTd\nTwitter: twitter.com/ladyxocean \nYoutube : https://bit.ly/3dS8fsZ\n\n🌿 Music by Mar G Rock\n➤ Facebook: https://bit.ly/2SYJjqU\n➤ Instagram: https://bit.ly/2WVmKox\n➤ Soundcloud: https://bit.ly/3brKwxz\n➤ Youtube: https://bit.ly/3dHsOYp\n\n🌿 Music by TFB Records:\n➤ Spotify: https://spoti.fi/3csUE9X \n➤ Youtube : https://bit.ly/3dmM6CF \n➤ Instagram: https://bit.ly/2zGkUAl\n\nTracklist:\nAllena - Appelle Moi (Demeter Remix): https://spoti.fi/3eUnPoS\nAlone w u - Modern Culture: https://fanlink.to/AloneWU\nFeel It Too - Someone Else: https://fanlink.to/FeelItToo\nIt's Love - Solven: https://fanlink.to/ItsLoveSolven\nDj Goja - I Never Let You Go: https://spoti.fi/2Gs8Be2\nDj Goja - Cause I'm Crazy: https://spoti.fi/36kOY0H\nDj Goja - Wrong Way: https://spoti.fi/3erYUsy\nGeoM - Back To You (Housenick Remix): https://fanlink.to/ddr86\nMarc Philippe - Dancer In The Dark (Original Mix): https://apple.co/2wtgVEB\nEla Van Wolf - Way We Feel: https://spoti.fi/30Bv7r2\nMarc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix): https://fanlink.to/ddr82\nMarc Philippe - We Were Younger: https://fanlink.to/dtr10\nMelih Aydogan - You Tell Me (Original Mix): https://spoti.fi/3h0v3ck\nDJ Sava feat.IOVA - Magical place (Dj Dark & MD Dj Remix): http://spoti.fi/3q92HQc\nAfendi - My Feelings For You (Original Mix)\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/-6GpzquEI74/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/-6GpzquEI74/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/-6GpzquEI74/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/-6GpzquEI74/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/-6GpzquEI74/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Deep Legacy."",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-02-23T09:35:12Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""19oLPvR7p2rczxk0T5Z-0ZScifY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""uO2SCxEvnR8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-07-02T02:46:21Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #127"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #127\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:    @Trap Cloudx @Queen Deep Radio @Deep Mood Radio  \n\nTrack:\n00:00 | 0. Halsey - Without Me (Dj Dark & Nesco Remix)\n03:11 | 1. Linkin Park - In The End (Dj Dark & Nesco Cover Remix)\n06:24 | 2. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix) \n11:26 | 3. Marc Philippe - Dancer In The Dark (GeoM Remix)\n15:16 | 4. Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix)\n20:26 | 5. Housenick - Be The One (Bruno Motta Remix)\n26:12 | 6. GeoM - Something's Missing (Original Mix)\n31:57 | 7. Marc Philippe - Broken Mess (Costa Mee Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n36:49 | 8. Luxx Daze - Sensation (Costa Mee Remix)\n40:49 | 9. John Castel & Xan Castel - Be With You (Pete Bellis & Tommy Remix)\n45:06 | 10. Dj Marlon - Coming Back To You\n49:11 | 11. Dj Marlon - I Need Your Love Tonight (Original Mix)\n53:43 | 12. Dj Marlon - No More Tears (Housenick Remix)\n58:29 | 13. GeoM - Back To You (Housenick Remix)\n01:04:05 | 14. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n01:07:51 | 15. GeoM - Ashes (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n01:12:42 | 16. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix) \nhttps://vibe.deepdiscomusic.com/motivationhouse\n01:16:56 | 17. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n01:25:05 | 19. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n\nFollow Deep Disco Records\n◉ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n◉ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n◉ Soundcloud → https://soundcloud.com/deepdiscorecords \n◉ Website → https://www.deepdiscomusic.com\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/itsdoina/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/uO2SCxEvnR8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/uO2SCxEvnR8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/uO2SCxEvnR8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/uO2SCxEvnR8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/uO2SCxEvnR8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-07-02T02:46:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""ZKUgRN4Fpq3xkXqSdiBZ3Vg89o8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ThBTHgt8XN4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-25T09:13:19Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #8"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #8\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Haa Taa Deep @RU - DEEP @Ru Deep Radio \n\n🌿 Music by Deep Universe\n➤Spotify: https://deepuniverse.fanlink.to/Spotify \n➤Facebook: https://deepuniverse.fanlink.to/Facebook \n➤Instagram: https://deepuniverse.fanlink.to/Instagram \n➤TikTok: https://deepuniverse.fanlink.to/TikTok\n\n✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA\n\n🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\n\n1. Alan Walker - Faded (Dj Dark & Dj Vianu Extended Remix)\n2. Avicii - SOS (Pascal Junior Remix)\n3. DJ Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n4. Tonight - Tabba x Dj Goja\nhttps://deepuniverse.fanlink.to/Tonight\n5. Dj Goja x Vanessa Campagna - Human\nhttps://spoti.fi/3EaMCRq\n6. Dj Goja x Vanessa Campagna - Save Me (SOS)\nhttps://spoti.fi/2RNLpwH\n7. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n8. Summer Wave - Solven & Hysaze\nhttps://fanlink.to/SummerWave\n9. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n10. Stoto - My Love\nhttps://spoti.fi/2EJyplh\n11. Stay With Me - LeXxìv & Victor Perry\nhttps://spoti.fi/3kGUsZf\n12. Soundwaves - Found My Way\nhttps://fanlink.to/soundwavesfoundmyway\n13. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n14. Horbatso - Never Again\nhttps://spoti.fi/38Nh8nx\n15. Hinsley - Trail (of broken hearts)\nhttps://spoti.fi/2ZXS3kV\n16. Feel It Too - Someone Else\nhttps://fanlink.to/FeelItToo\n17. Ela Van Wolf - Way We Feel (Lyric Video)\n18. Alone w u - Modern Culture\nhttps://fanlink.to/AloneWU\n19. Kenn Colt - Sun Goes Down\nhttps://flh.lnk.to/SunGoesDown\n20. Kallisto- Save Tonight ft Simon Öbom\nhttps://spoti.fi/3omoxyn\n\nCredit for the Photo: https://www.instagram.com/villacellabella/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ThBTHgt8XN4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ThBTHgt8XN4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ThBTHgt8XN4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-25T09:13:19Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""fKp-C4xtU3D4KXhcCdn-A5QJlPM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""l1x63nirUVs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-10-07T07:29:22Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #44"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #44\n\n#SummerMusicMix #BestOfDeepHouse #HotSummer #SUMMERMIX2020 #SUMMERMUSIC2020\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\n🌿 Video By: Gavin Beals\n» Youtube: https://www.youtube.com/user/gbeals100\n» Instagram: https://www.instagram.com/th3venture/\n\n🌿 Video By: Gaëtan Piolot\n» Youtube: https://bit.ly/34EUPLa\n» Instagram: @gaetanpiolot\n\n🌿 Video by ThinLineMedia\n»Youtube: https://bit.ly/3bgId0I\n»Facebook: https://bit.ly/3c4ojWQ\n»Instagram: https://bit.ly/2VoEOX4\n»Website: thinlinemedia.com\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿 Video By Ben Mikha\n➤ https://bit.ly/2EDRPUj\n➤ https://instagram.com/benmikha\n➤ https://benmikha.com/\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿Videos by Juhani Sarglep: \nInstargram : https://bit.ly/2L6er3s\nInstargram : https://bit.ly/2W5Rh3y\nYouTube : https://bit.ly/3c9JFTk\nWebsite : https://www.foureyestwosouls.com\n\n🌿 Music by Tipsy Records\n➤ Instagram: https://bit.ly/2TIzMVl\n➤ Soundcloud: https://bit.ly/3ekPfD1\n➤ Mail: darren@tipsyrecordings.com\n➤ Spotify: https://spoti.fi/2B5XDIg\n\n🌿 Follow Deep Disco Records \n➤ Spotify → https://spoti.fi/2U7HoTN\n➤ Apple Music → https://apple.co/2UeA9YW \n➤ Soundcloud → https://goo.gl/1zaGz5 \n➤ Website → https://goo.gl/n2vMnq \n\n🌿Follow Deep Territory Records: \n➤ Spotify → https://spoti.fi/2TlaFVM \n➤ Apple Music → https://apple.co/2H2cIwg\n➤ Soundcloud → http://bit.ly/2vG6OsY\n\n🌿 Music by Nora Van Elken\n➤ Twitter: https://bit.ly/2yOc5Dt \n➤ Soundcloud: https://bit.ly/3c6aRC2 \n➤ Instagram: https://bit.ly/34yOUcf \n➤ Facebook: https://bit.ly/2JZnFht \n➤ Youtube : https://bit.ly/2yAFu4d\n\n🌿 Music by Lady Ocean\nSpotify: https://spoti.fi/2X81ptq\nInstagram: https://bit.ly/3a5nQTd\nTwitter: twitter.com/ladyxocean \nYoutube : https://bit.ly/3dS8fsZ\n\n🌿 Music by Mar G Rock\n➤ Facebook: https://bit.ly/2SYJjqU\n➤ Instagram: https://bit.ly/2WVmKox\n➤ Soundcloud: https://bit.ly/3brKwxz\n➤ Youtube: https://bit.ly/3dHsOYp\n\n🌿 Music by TFB Records:\n➤ Spotify: https://spoti.fi/3csUE9X \n➤ Youtube : https://bit.ly/3dmM6CF \n➤ Instagram: https://bit.ly/2zGkUAl\n\nTracklist:\nMarc Philippe - We Were Younger: https://fanlink.to/dtr10  \nGeoM - Back To You (Housenick Remix): https://fanlink.to/ddr86\nMarc Philippe - September Rain (Original Mix): https://fanlink.to/ddr92\nMarc Philippe - Dancer In The Dark (Original Mix): https://apple.co/2wtgVEB\nMarc Philippe - Wait For This (GeoM Remix): https://fanlink.to/ddr39 \nMarc Philippe - Deepest Blue: https://fanlink.to/dtr53\nPete Bellis & Tommy - Treat Me Right (Nikko Culture Remix): https://fanlink.to/ddr32\nGeoM - Lost Paradise (Nikko Culture Remix): https://fanlink.to/ddr55 \nMarc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix): https://fanlink.to/ddr82\nCosta Mee - Around This World (Original Mix): https://fanlink.to/ddr43\n\nThumbnail by: https://www.instagram.com/natalee.007/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@queenmusik.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/l1x63nirUVs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/l1x63nirUVs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/l1x63nirUVs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/l1x63nirUVs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-10-07T07:29:22Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""P5kehMipAy4GBMAXeuB4pCMkc5s"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""DcZdTfTlE9A""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-30T01:30:41Z"",
+        ""channelId"": ""UCMtkk8LXf0wQ3VFAzoyN_og"",
+        ""title"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes [Vol.3]"",
+        ""description"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes [Vol.3]\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow Deep Mood Radio.\nYoutube: @RU - DEEP @Deep Mood. @Ru Deep Radio \n\nTracklist:\n00:00:00 | 1. Tonight - Tabba x Dj Goja\nhttps://deepuniverse.fanlink.to/Tonight\n00:02:54 | 2. Hurt Me - Robert Frest\nhttps://spoti.fi/2Q9OeH5\n00:06:17 | 3. Human (Official Single) - Vanessa Campagna \nhttps://spoti.fi/3EaMCRq\n00:09:24 | 4. Save Me (SOS) - nessa Campagna \nhttps://spoti.fi/2RNLpwH\n00:12:34 | 5. So Crazy - Dj Goja, Tabba\nhttps://spoti.fi/2PTIgKL\n00:15:15 | 6. Can't Escape - Tabba\nhttps://spoti.fi/3fVZzVZ\n00:18:07 | 7. Light Up (ft. Rachel Woznow) - C'SAR \nhttps://EpicTonesRecords.lnk.to/EJg93DNw\n00:20:50 | 8. Time - Pascal Junior \nhttps://epictonesrecords.lnk.to/VuN2TRGj\n00:23:23 | 9. Stay Right There - Nora Van Elken \nhttps://fanlink.to/noravanelken\n00:26:34 | 10. Needed You (feat. Trove) - Nora Van Elken \nhttps://fanlink.to/noraneededyou\n00:29:21 | 11. I Told You - Nora Van Elken \nhttps://fanlink.to/noravanelken\n00:32:42 | 12. Slow Down - Pascal Junior \nhttps://EpicTonesRecords.lnk.to/l8zxF\n00:36:01 | 13. Over You - Nora Van Elken \nhttps://fanlink.to/noravanelken\n00:39:36 | 14. I Don't Need You - Nora Van Elken \nhttps://fanlink.to/noraidny\n00:42:34 | 15. All Night Long (Y.V.E 48 Remix) - Nora Van Elken \nhttps://fanlink.to/NoraYve\n00:45:11 | 16. Sun Goes Down - Kenn Colt\nhttps://flh.lnk.to/SunGoesDown\n00:47:56 | 17. There For You - Voster Gallardo\nhttps://spoti.fi/2RhXMwR\n00:51:21 | 18. Right Back - Stoto \nhttps://spoti.fi/34YGOM7\n00:55:34 | 19. Take It - Nuovo x Jarico\nhttps://bit.ly/3bFcqZO\n00:58:52 | 20. Tribe - Nora Van Elken \nhttps://fanlink.to/noratribe\n01:01:44 | 21. Wrong Way - Dj Goja\nhttps://spoti.fi/3erYUsy\n01:04:25 | 22. Never Let You Go - KeyBi\nhttps://spoti.fi/2WAGRc2\n01:07:50 | 23. See you again - Aligee\nhttps://lnkfi.re/aligeenew\n01:11:16 | 24. Let It Go - Nora Van Elken \nhttps://fanlink.to/eternalchristmas\n\n🌿 Music by Deep Universe\n➤Spotify: https://deepuniverse.fanlink.to/Spotify \n➤Facebook: https://deepuniverse.fanlink.to/Facebook \n➤Instagram: https://deepuniverse.fanlink.to/Instagram \n➤TikTok: https://deepuniverse.fanlink.to/TikTok\n\n✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA\n\n🌿Follow Nora Van Elken:\nhttps://twitter.com/noravanelken\nhttps://soundcloud.com/noravanelken\nhttps://www.instagram.com/noravanelken\nhttps://www.facebook.com/noravanelken\n\n◉ Photo by \n◉ Thumbnail by: Cynthia Addai Robinson\nhttps://www.wallpaperkiss.com/users/8413/\nhttps://prnt.sc/1s8idm0\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n\nFor any copyright issue,  PLEASE contact us or leave us a personal message here and we will remove your material right away. PLEASE do not opt for a youtube strike. \n💌 channel@queenmusik.com 💌"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/DcZdTfTlE9A/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/DcZdTfTlE9A/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/DcZdTfTlE9A/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/DcZdTfTlE9A/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/DcZdTfTlE9A/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Deep Mood Radio."",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-30T01:30:41Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""98PeQ46s4x0htPFdY-CpJipnPoE"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""iuhJo4cDZEE""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-26T07:40:45Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #35"",
+        ""description"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #35\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nTag: #SummerMusicMix #HotSummer #DeepHouse\n\nYoutube: @Wonder Deep @Haa Taa Deep @Deep Mood. \n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n0. GeoM - Back To You (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n1. GeoM - Ashes (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n2. Marc Philippe - Diva Tonight\nhttps://vibe.deepdiscomusic.com/ddr396\n3. Marc Philippe - Mirror Of Myself\nhttps://vibe.deepdiscomusic.com/ddr371\n4. Marc Philippe - If You Love Me\nhttps://vibe.deepdiscomusic.com/ddr379\n5. Marc Philippe - A Little Closer\nhttps://vibe.deepdiscomusic.com/ddr355\n6. Marc Philippe, Pete Bellis & Tommy - Sometimes\nhttps://vibe.deepdiscomusic.com/ddr346\n7. Marc Philippe - Stay All Night\nhttps://vibe.deepdiscomusic.com/ddr333\n8. Marc Philippe - You Got It Baby\nhttps://vibe.deepdiscomusic.com/ddr339\n9. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n10. GeoM - Bleeding In Love (Nando Fortunato Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n11. GeoM - Desert Rose (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/hits\n12. GeoM - With You (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n13. Marc Philippe - Broken Mess (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n14. Costa Mee - Angel Heart (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n15. Costa Mee, Pete Bellis & Tommy - Break Through\nhttps://vibe.deepdiscomusic.com/aboutddr\n16. Costa Mee, Pete Bellis & Tommy - Unspoken War\nhttps://vibe.deepdiscomusic.com/ddr327\n17. Costa Mee - Think In Love\nhttps://vibe.deepdiscomusic.com/ddr377\n18. Costa Mee, Pete Bellis & Tommy - Kiss The Day (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr196\n19. Pete Bellis & Tommy, Marc Philippe - To Me (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately.\n\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/iuhJo4cDZEE/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/iuhJo4cDZEE/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/iuhJo4cDZEE/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-26T07:40:45Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""5v-X6lPZHllWOZupPFX0ZTsacsY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Qv4feNjvyp4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-04-21T03:20:31Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #60"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #60\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:     @RU - DEEP @HuyDZ Official @Deep Mood Radio \n\nTrack:\n00:00 | 0. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix)\n05:01 | 1. The Cranberries - Zombie (Kapral Remix)\n09:11 | 2. Linkin Park - In The End (Dj Dark & Nesco Cover Remix)\n12:26 | 3. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n16:31 | 4. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n20:03 | 5. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n23:35 | 6. Nando Fortunato - Important Story (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n29:21 | 7. Marc Philippe - Summer Of Love (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n33:13 | 8. Paul Lock, Pete Bellis & Tommy - Forgive Me\nhttps://vibe.deepdiscomusic.com/hits\n38:43 | 9. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n41:03 | 10. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n45:14 | 11. Dj Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n48:08 | 12. Nuovo x Jarico - Take It\nhttps://bit.ly/3bFcqZO\n51:25 | 13. Horbatso - Never Again\nhttps://spoti.fi/38Nh8nx\n54:07 | 14. Dj Goja x Vanessa Campagna - Save Me (SOS) [John Neo Remix]\nhttps://spoti.fi/2RNLpwH\n56:38 | 15. Dj Goja x Lemon Tears - It's Love (Official Single)\nhttps://open.spotify.com/track/4t5F1qtvNYoWIOq13GxBJL\n59:58 | 16. Carda, Keeks - Need You Now\nhttps://spoti.fi/36kfaJl\n01:03:25 | 17. Carda - Wasted (Ft. Emily Falvey)\nhttps://spoti.fi/3qThrmB\n01:06:08 | 18. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n01:10:57 | 19. Lady Ocean - Painter (Original Mix)\nhttps://fanlink.to/PAINTER\n01:14:22 | 20. Dj Goja - Eyes On You\nhttps://spoti.fi/2Gy6uFM\n01:17:08 | 21. Dj Goja - Cause I'm Crazy\n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deeph...)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deeph...\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/itsdoina/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Qv4feNjvyp4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Qv4feNjvyp4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Qv4feNjvyp4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Qv4feNjvyp4/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Qv4feNjvyp4/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-04-21T03:20:31Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""PGq_PDSVQUAUwD5m9qSkNf_hPQo"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""62emPVtIesQ""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-25T18:30:23Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #23"",
+        ""description"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #23\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @RU - DEEP @Deep Mood. @Haa Taa Deep \n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n00:00 | 0. Cupido - In My Mind\n03:10 | 1. Cigarettes After Sex- K. (Klesh Remix)\n07:33 | 2. Black Eyed Peas - Where Is The Love (BCX feat. Ellena Soule Remix)\n12:48 | 3. Alan Crime - Only One\n16:31 | 4. Meiko - Leave The Lights On (Stoto Remix)\nhttps://bit.ly/3lNfupj\n21:52 | 5. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n26:45 | 6. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n30:53 | 7. Cut Off - Lonely\nhttps://spoti.fi/3hdBxmy\n35:36 | 8. Around This World - Costa Mee (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n40:36 | 9. Costa Mee- With A Kiss\nhttps://vibe.deepdiscomusic.com/ddr324\n43:59 | 10. Nando Fortunato - New Love Life\nhttps://vibe.deepdiscomusic.com/ddr319\n48:15 | 11. Nando Fortunato - Important Story (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n54:05 | 12. Costa Mee - Call Me (Original Mix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n57:48 | 13. GeoM - Need You(Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n01:02:34 | 14. Marc Philippe - Dancing With Your Eyes (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n01:05:58 | 15. Costa Mee - You (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n01:10:54 | 16. Paul Lock - We Made It (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr274\n01:14:45 | 17. Paul Lock - Islands In The Sky (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n01:20:53 | 18. Marc Philippe - Dropouts (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr221\n01:24:17 | 19. Pete Bellis _ Tommy - All I Want (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n01:27:50 | 20. Marc Philippe - Goodbye Moonlight (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr193\n01:31:08 | 21. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n01:34:41 | 22. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n01:37:49 | 23. Marc Philippe - In A Changing World (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr273\n\nCredit for the Photo: @unknown (if you know, please share the info with us). \n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/62emPVtIesQ/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/62emPVtIesQ/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/62emPVtIesQ/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/62emPVtIesQ/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/62emPVtIesQ/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-25T18:30:23Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""6NeH46JYxvRgtth_Io0SOIJtin8"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""2UvJgBDcOQU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-05-23T16:52:43Z"",
+        ""channelId"": ""UCJW3ePyqjsvKfHGsz7eetQA"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #141"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #141\nhttps://youtu.be/2UvJgBDcOQU\n\nAll songs in this spotify playlist: https://spoti.fi/2TJ4Dyj\n#wonderdeep #deephouse2022 #bestofdeephouse2022\n\nSubmit music: https://bit.ly/2VcIDxx\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n📷 Picture credit: \n@unknown (if you know, please share the info with us). \n\nVideo By:\n\n🌿 Gaëtan Piolot\n➤ Youtube: https://bit.ly/34EUPLa\n➤ Instagram: @gaetanpiolot\n\n🌿 Video By: Hi Hai\nSubscribe and keep up to date with Hi Hai!\n➤ https://rebrand.ly/hihai\n\nInstagram\n➤https://rebrand.ly/hihaifly\n➤https://rebrand.ly/hihaiphan\n➤https://rebrand.ly/hihaifit\n\nHXP Creative Agency \n➤https://rebrand.ly/hxpcreative\n\nHiHai Photography\n➤https://rebrand.ly/hihaico\n\nMusic By:\n\n0. Around This World - Costa Mee (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n1. Paul Lock - Like, Whatever (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n2. Marc Philippe - We Were Younger (Pete Bellis _ Tommy Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n3. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n4. Nando Fortunato - Important Story (Costa Mee Remix)\nhttps://vibe.deepdiscomusic.com/hits\n5. Marc Philippe - Deepest Blue (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n6. Costa Mee - Call Me (Original Mix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n7. GeoM - Desert Rose (Pete Bellis _ Tommy Remix)\nhttps://vibe.deepdiscomusic.com/hits\n8. Housenick - Take My Hand (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/ddr186\n9. Housenick - I Am Ok (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n10. Paul Lock - Night Into Day - (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr240\n11. Marc Phillipe - Dropouts (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/ddr221\n12. Marc Philippe - September Rain (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n13. Chunkee - Same Things\nhttps://vibe.deepdiscomusic.com/ddr229\n14. Chunkee - I`m So Wrong (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr202\n15. Costa Mee - Fallen\nhttps://vibe.deepdiscomusic.com/deephousemusic\n16. Costa Mee, GeoM - Everything About Love (Pete Bellis _ Tommy Remix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n17. Costa Mee, Pete Bellis _ Tommy - I Can_t Believe\nhttps://vibe.deepdiscomusic.com/ddr233\n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@hitkend.com 💌\n\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately.\n\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/2UvJgBDcOQU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/2UvJgBDcOQU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/2UvJgBDcOQU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Wonder Deep"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-05-23T16:52:43Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""TorO_G2mX0dUIVTfmeyQz_0AB_U"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""SvG0ATfrm3M""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-29T07:38:26Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #38"",
+        ""description"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #38\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nTag: #SummerMusicMix #HotSummer #DeepHouse\n\nYoutube: @Deep Mood. @Ru Deep Radio @Wonder Deep \n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n0. Marc Philippe - A Little Closer\nhttps://vibe.deepdiscomusic.com/ddr355\n1. Marc Philippe - Aloe Vera (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr181\u200b\n2. Marc Philippe - Broken Mess (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/ddm\n3. Pete Bellis Tommy - Slow Down (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n4. Marc Philippe - Dancing With Your Eyes (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n5. GeoM - Need You (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n6. GeoM - Ashes (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n7. Housenick - Believe (Marc Philippe Remix) \nhttps://vibe.deepdiscomusic.com/ddr180\n8. Housenick - I Am Ok (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n9. Dimitris Athanasiou - A Beautiful Girl (Original Mix )\nhttps://vibe.deepdiscomusic.com/hits\n10. GeoM - With You (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n11. GeoM, Pete Bellis & Tommy - Love you Enough (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n12. Pete Bellis & Tommy - All I Want (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n13. Pete Bellis Tommy - Slow Down (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately.\n\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/SvG0ATfrm3M/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/SvG0ATfrm3M/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/SvG0ATfrm3M/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-29T07:38:26Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""HMUBJvwj8p-6BXD8ee5Kj_eNBUI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""H_0fb5Rg3SM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-29T09:32:38Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #24"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #24\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Deep Mood Radio. @Deep Mood. @RU - DEEP \n\n🌿Follow Nora Van Elken:\nhttps://twitter.com/noravanelken\nhttps://soundcloud.com/noravanelken\nhttps://www.instagram.com/noravanelken\nhttps://www.facebook.com/noravanelken\n\n🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\n\n🌿 Music by MUSIC ON THE BEACH\n➤ Soundcloud: https://bit.ly/2JXOqms\n➤ Facebook: http://bit.ly/3a6jLy3\n➤ Twitter: https://bit.ly/2Xw2n36\n➤ Instagram: https://bit.ly/35hj8SI\n➤ Youtube: http://bit.ly/3hXMgDG\n➤ Spotify: http://spoti.fi/2JRO8B7\n\n✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA\n\n0. DJ Vianu - Only You\nfanlink.to/onlyU\n1. Avicii ft. Aloe Blacc - SOS (Pascal Junior Remix)\nhttps://bit.ly/2IV53lT\n2. Alan Walker - Faded (Dj Dark _ Dj Vianu Extended Remix)\n3. Nora Van Elken  - All Night Long\nhttps://fanlink.to/NoraYve\n4. Nora Van Elken - Stay Right There \nhttps://fanlink.to/noravanelken\n5. Nora Van Elken - I Told You \nhttps://fanlink.to/noravanelken\n6. Nora Van Elken - Best I Ever Had \nhttps://fanlink.to/noravanelken\n7. Nora Van Elken - I Don't Need You\nhttps://fanlink.to/noraidny\n8. Nora Van Elken  - Smile (feat. NEVRMIND)\nhttps://fanlink.to/smilenora\n9. Nora Van Elken  - Find You (Adon Remix)\nhttps://fanlink.to/noravanelken\n10. Mourad Hany - Moving On\nhttps://EpicTonesRecords.lnk.to/9FJ81ZqZ\n11. Mourad Hany - You\nhttps://EpicTonesRecords.lnk.to/9FJ81ZqZ\n12. NuKey - Here With Me\nhttps://EpicTonesRecords.lnk.to/tXq21bTx\n13. Moonlight - Ocean\nhttps://spoti.fi/2ItaI1Y\n14. Stefanescu - Around This World\nhttps://EpicTonesRecords.lnk.to/MuN0A\n15. Kallisto- Save Tonight ft Simon Öbom\nhttps://spoti.fi/3omoxyn\n16. Moonlight - Muchacho\nhttps://spoti.fi/35pu4Ol\n17. Nikko Alonzo - Feel The Fire\nhttps://bit.ly/35lvQjA\n18. Manda - Make It Better\nhttps://EpicTonesRecords.lnk.to/TTOUj\n19. Pascal Junior - In My Dreams\nhttps://EpicTonesRecords.lnk.to/l8zxF\n20. Pascal Junior - Feelings (Afgo Remix)\nhttps://EpicTonesRecords.lnk.to/As8nj\n21. Dj Goja x John Neo - Puerto Rico\nhttps://spoti.fi/3bG3Dra\n22. Dj Goja x Vanessa Campagna - Save Me (SOS)\nhttps://spoti.fi/2RNLpwH\n23. Efemero - Amelia\nhttps://spoti.fi/3uBjfmg\n24. SVET - Somebody (Original Mix) \nhttps://spoti.fi/2MMwo87\n25. Dj Marlon - Coming Home (Alexander Hristov Remix) \nhttps://spoti.fi/2XOob9I\n26. SVET - I Like It (The Distance & Igi Remix) \nhttps://spoti.fi/2UzZA6J\n\nCredit for the Photo: https://www.instagram.com/svetabily/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/H_0fb5Rg3SM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/H_0fb5Rg3SM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/H_0fb5Rg3SM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/H_0fb5Rg3SM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-29T09:32:38Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""5beUUKSjkOPxqOsyYO6yGk1W3rA"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""dJ9flO7G0Q0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-01-28T01:36:46Z"",
+        ""channelId"": ""UCwuMGwU6kX_lvkrYoVQWBGw"",
+        ""title"": ""Mega Hits 2021 🌱 The Best Of Vocal Deep House Music Mix 2021 🌱 Summer Music Mix 2021 #22"",
+        ""description"": ""Mega Hits 2021 🌱 The Best Of Vocal Deep House Music Mix 2021 🌱 Summer Music Mix 2021 #22\n\n#SummerMusicMix #BestOfDeepHouse #HotSummer #SUMMERMIX2021 #SUMMERMUSIC2021\n\n✔ Leave a like on the video to show your support\n\n─────────── Support Tropical House ☼ ───────────\n🌿Follow THR\nhttp://bit.ly/SubscribeTropicalHouseRecords\nhttp://bit.ly/Spotify_THR\nhttp://bit.ly/Instagram_THR\nhttp://bit.ly/Facebook_THR\n\n★Follow us on spotify: https://spoti.fi/2TJ4Dyj\n★Submit music: https://bit.ly/2VcIDxx\n★YouTube: https://www.youtube.com/c/THRKygo\n★Facebook: https://www.facebook.com/ChillTownMusic/\n★Instagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n★ Music By ★\n\n🌿 Follow / Ace Kings:\nhttps://soundcloud.com/acekings\n\n🌿 Follow Cut Off:\nhttps://bit.ly/313CjLf\n\n🌿 Music by Tipsy Records\n➤ Instagram: https://bit.ly/2TIzMVl\n➤ Soundcloud: https://bit.ly/3ekPfD1\n➤ Mail: darren@tipsyrecordings.com\n➤ Spotify: https://spoti.fi/2B5XDIg\n\n🌿 Follow Deep Disco Records \n➤ Spotify → https://spoti.fi/2U7HoTN\n➤ Apple Music → https://apple.co/2UeA9YW \n➤ Soundcloud → https://goo.gl/1zaGz5 \n➤ Website → https://goo.gl/n2vMnq \n\n🌿Follow Deep Territory Records: \n➤ Spotify → https://spoti.fi/2TlaFVM \n➤ Apple Music → https://apple.co/2H2cIwg\n➤ Soundcloud → http://bit.ly/2vG6OsY\n\n🌿 Music by Nora Van Elken\n➤ Twitter: https://bit.ly/2yOc5Dt \n➤ Soundcloud: https://bit.ly/3c6aRC2 \n➤ Instagram: https://bit.ly/34yOUcf \n➤ Facebook: https://bit.ly/2JZnFht \n➤ Youtube : https://bit.ly/2yAFu4d\n\n🌿 Music by Lady Ocean\nSpotify: https://spoti.fi/2X81ptq\nInstagram: https://bit.ly/3a5nQTd\nTwitter: twitter.com/ladyxocean \nYoutube : https://bit.ly/3dS8fsZ\n\n🌿 Music by Mar G Rock\n➤ Facebook: https://bit.ly/2SYJjqU\n➤ Instagram: https://bit.ly/2WVmKox\n➤ Soundcloud: https://bit.ly/3brKwxz\n➤ Youtube: https://bit.ly/3dHsOYp\n\n🌿 Music by TFB Records:\n➤ Spotify: https://spoti.fi/3csUE9X \n➤ Youtube : https://bit.ly/3dmM6CF \n➤ Instagram: https://bit.ly/2zGkUAl\n\n★ Credit Video ★\n\n🌿 Video By: Gavin Beals\n» Youtube: https://www.youtube.com/user/gbeals100\n» Instagram: https://www.instagram.com/th3venture/\n\n🌿 Video By: Gaëtan Piolot\n» Youtube: https://bit.ly/34EUPLa\n» Instagram: @gaetanpiolot\n\n🌿 Video by ThinLineMedia\n»Youtube: https://bit.ly/3bgId0I\n»Facebook: https://bit.ly/3c4ojWQ\n»Instagram: https://bit.ly/2VoEOX4\n»Website: thinlinemedia.com\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿 Video By Ben Mikha\n➤ https://bit.ly/2EDRPUj\n➤ https://instagram.com/benmikha\n➤ https://benmikha.com/\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿Videos by Juhani Sarglep: \nInstargram : https://bit.ly/2L6er3s\nInstargram : https://bit.ly/2W5Rh3y\nYouTube : https://bit.ly/3c9JFTk\nWebsite : https://www.foureyestwosouls.com\n\nTracklist:\nMarc Philippe - We Were Younger: https://fanlink.to/dtr10\nAllena - Appelle Moi (Demeter Remix): https://spoti.fi/3eUnPoS\nAlone w u - Modern Culture: https://fanlink.to/AloneWU\nFeel It Too - Someone Else: https://fanlink.to/FeelItToo\nIt's Love - Solven: https://fanlink.to/ItsLoveSolven\nSoundwaves - Found My Way: https://fanlink.to/soundwavesfoundmyway\nTabba x Dj Goja - Tonight: https://fanlink.to/eggU\nDj Goja - I Never Let You Go: https://spoti.fi/2Gs8Be2\nDj Goja - Cause I'm Crazy: https://spoti.fi/36kOY0H\nDj Goja - Wrong Way: https://spoti.fi/3erYUsy\nMarc Philippe - Dancer In The Dark (Original Mix): https://apple.co/2wtgVEB\nEla Van Wolf - Way We Feel (https://open.spotify.com/album/5IBX0U5Ryc9y0ZjBuiMZ0v?highlight=spotify:track:3y7v7mbvytVoytQY3BcW68)\nGeoM - Back To You (Marc Philippe Remix)(https://fanlink.to/ddr86)\nMarc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix): https://fanlink.to/ddr82\nMelih Aydogan - You Tell Me (Original Mix): https://spoti.fi/3h0v3ck\nAfendi - My Feelings For You (Original Mix)\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/dJ9flO7G0Q0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/dJ9flO7G0Q0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/dJ9flO7G0Q0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/dJ9flO7G0Q0/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/dJ9flO7G0Q0/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Tropical House Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-01-28T01:36:46Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""qFoBbWkL2bAgurreL2le8L-DswY"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""9fPQU4nRBO8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-24T04:08:26Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #24"",
+        ""description"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #24\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Ru Deep Radio @Deep Mood. @RU - DEEP \n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n00:00:00 | 0. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n00:04:08 | 1. GeoM - Ashes (Nando Fortunato Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n00:09:04 | 2. GeoM - Back To You (Origianl Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n00:12:54 | 3. Nando Fortunato - Important Story (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n00:18:43 | 4. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n00:22:16 | 5. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n00:26:06 | 6. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n00:30:24 | 7. Costa Mee - Call Me (Original Mix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n00:34:07 | 8. Costa Mee - You (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n00:38:59 | 9. Housenick - Everything I Need (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr307\n00:42:34 | 10. Pete Bellis & Tommy - Treat Me Right (Original Mix)\nhttps://vibe.deepdiscomusic.com/dancehouse\n00:47:01 | 11. GeoM - Need You(Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n00:51:40 | 12. Marc Philippe - Dancing With Your Eyes (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n00:55:03 | 13. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n00:58:10 | 14. Marc Philippe - Deepest Blue (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n01:01:40 | 15. Costa Mee - Angel Heart (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n01:05:35 | 16. Costa Mee - Around This World (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n01:09:57 | 17. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n01:13:31 | 18. Nando Fortunato - To Love Again\nhttps://vibe.deepdiscomusic.com/ddr312\n\nCredit for the Photo: @unknown (if you know, please share the info with us). \n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/9fPQU4nRBO8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/9fPQU4nRBO8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/9fPQU4nRBO8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/9fPQU4nRBO8/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/9fPQU4nRBO8/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-24T04:08:26Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""V64ioiPXqcd5kwY_MEQQoPr7GhI"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""9jHHGrPjWfM""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-01-20T04:23:46Z"",
+        ""channelId"": ""UCTiXaqByXkH-h97DLlLkx1Q"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #31"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #31\nAll songs in this spotify playlist: https://spoti.fi/2TJ4Dyj\n#queenclub #deephouse2021 #bestofdeephouse2021\n\n◢Follow Queen Club:\n★ Youtube: https://fanlink.to/YouTubeQueenClub\n★ Instargram: www.instagram.com/deep_house_club\n★ Twitter: https://twitter.com/deephouse_club\n★ Facebook: https://bit.ly/3dzyPXD\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n◢Tracklist: \n0. Costa Mee - Deep Inside My Mind (Original Mix)\nhttps://fanlink.to/ddr137\n1. Costa Me, Pete Bellis & Tommy - Higher Mountains (Nando Fortunato Remix)\nhttps://vibe.deepdiscomusic.com/ddr179\n2. Around This World - Costa Mee (Original Mix)\nhttps://fanlink.to/ddr43\n3. Pascal Junior - If I Wouldn't Know (Aldi Be Cool Remix)\nhttps://EpicTonesRecords.lnk.to/btsuXi9W\n4. Dimitris Athanasiou - Around You\nhttps://fanlink.to/dtr39\n5. Pete Bellis & Tommy - Missing The Way (Original Mix)\nhttps://fanlink.to/ddr64\n6. Costa Mee - The Weekend Sun (Original Mix)\nhttps://www.fanlink.to/ddr51\n7. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix)\nhttps://fanlink.to/ddr82\n8. Pete Bellis & Tommy - Treat Me Right (Marc Philippe Remix)\nhttps://fanlink.to/ddr32\n9. Anton Ishutin - Selfish Desires (Original Mix)\nhttps://spoti.fi/3r6SftL\n10. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n11. Afendi - My Feelings For You (Original Mix)\nhttp://spoti.fi/381JE4j\n12. Dimitris Athanasiou - Moon & Stars (Original Mix)\nhttps://fanlink.to/dtr56\n13. Marc Philippe - I Wanna Be Somebody (Original Mix)\nhttps://fanlink.to/ddra10\n14. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n15. Pete Bellis & Tommy - Diamonds (GeoM Remix)\nhttps://fanlink.to/dtr18\n16. Pete Bellis & Tommy - You Should Know (Costa Mee Remix)\nhttps://fanlink.to/ddr78\n\n🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com\n\n\""🌿 Video by Lilian Pang\n➤ Website: https://bit.ly/3caSRXd \n➤ Youtube: https://bit.ly/3a6kr6y \n➤ Instagram: https://bit.ly/2XxjUYM\n➤ Facebook: https://bit.ly/34B8qF8\""\n\n\""🌿 Video By: Gavin Beals \n➤ Youtube: https://bit.ly/3b6CVoP \n➤ Instagram: https://bit.ly/2Xv7not\""\n\n🌿 Photo by: https://www.instagram.com/carina/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n♦ If any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n♦ We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h - \n💌 channel@queenmusik.com 💌\n----------------------------------------------------------------------\n» Thank you for watching! Have a nice day!\n» Do not forget LIKE-SHARE-COMMENT\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/9jHHGrPjWfM/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/9jHHGrPjWfM/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/9jHHGrPjWfM/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/9jHHGrPjWfM/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/9jHHGrPjWfM/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Queen Club"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-01-20T04:23:46Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""eneTTueybL6aJia3178q8I2pO94"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""oVl5QOomN-I""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-29T03:42:52Z"",
+        ""channelId"": ""UCMtkk8LXf0wQ3VFAzoyN_og"",
+        ""title"": ""Avicii, Kygo, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes [Vol.3]"",
+        ""description"": ""Avicii, Kygo, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes [Vol.3]\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow Deep Mood Radio.\nYoutube: @Ru Deep Radio @RU - DEEP @Deep Mood. \n\nTracklist:\n00:00:00 | 1. Tonight - Markvard\nhttps://spoti.fi/2YyJBaS\n00:03:23 | 2. Insomnia - Efemero\nhttps://spoti.fi/3s7ixeX\n00:06:24 | 3. Summer Rain - Efemero x Massy \nhttps://spoti.fi/2XX3w5X\n00:09:49 | 4. Back to life  (Official Single) - Leya D\nhttps://spoti.fi/3nybc9i\n00:13:10 | 5. You Tell Me (Original Mix) - Melih Aydogan \nhttps://spoti.fi/3h0v3ck\n00:18:02 | 6. Complicated - Dj Goja\nhttps://spoti.fi/3qOvNod\n00:21:00 | 7. For You - Veneta, ilkan Gunuc \nhttps://spoti.fi/3qzWk8s\n00:24:18 | 8. Save Me (SOS) - nessa Campagna \nhttps://spoti.fi/2RNLpwH\n00:27:29 | 9. I Never Let You Go - Dj Goja\nhttps://spoti.fi/2Gs8Be2\n00:30:24 | 10. It's Love (Official Single) - Lemon Tears \nhttps://spoti.fi/3LicSwU\n00:33:45 | 11. Go - Dj Goja\nhttps://spoti.fi/3bF6PTP\n00:36:47 | 12. Human (Official Single) - Vanessa Campagna \nhttps://spoti.fi/3EaMCRq\n00:39:53 | 13. Need U - John Neo \nhttps://spoti.fi/39UnrFR\n00:42:04 | 14. You Still Want Me - Markvard\nhttps://spoti.fi/31rRjp7\n00:44:55 | 15. Right (Radio Edit) - M.O.O.N. Pro \nhttps://bit.ly/37fXVs9\n00:47:49 | 16. Sun Goes Down - Kenn Colt\nhttps://flh.lnk.to/SunGoesDown\n00:50:37 | 17. Save Tonight - Simon Öbom, Kallisto\nhttps://spoti.fi/3omoxyn\n00:54:11 | 18. Stay With Me - Victor Perry \nhttps://spoti.fi/3kGUsZf\n00:56:54 | 19. See you again - Aligee\nhttps://lnkfi.re/aligeenew\n01:00:20 | 20. Take It - Nuovo x Jarico\nhttps://bit.ly/3bFcqZO\n01:03:38 | 21. Memories - Markvard\nhttps://spoti.fi/32u9kCm\n01:06:55 | 22. Summer Wild - Markvard\nhttps://spoti.fi/2Qu0fE0\n01:09:42 | 23. Time - Markvard\nhttps://spoti.fi/3gsOzfC\n\n✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA\n\n\""🌿 Video by Lilian Pang\n➤ Website: https://bit.ly/3caSRXd \n➤ Youtube: https://bit.ly/3a6kr6y \n➤ Instagram: https://bit.ly/2XxjUYM\n➤ Facebook: https://bit.ly/34B8qF8\""\n\n\""🌿 Video By: Gavin Beals \n➤ Youtube: https://bit.ly/3b6CVoP \n➤ Instagram: https://bit.ly/2Xv7not\""\n\n\""🌿 Video by Wild World Travel\n➤ Youtube : https://bit.ly/2H88eUH \n➤ Instagram : https://bit.ly/2J1RQHl \""\n\n◉ Photo by \n◉ Thumbnail by: @unknown (if you know, please share the info with us). \n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n\nFor any copyright issue,  PLEASE contact us or leave us a personal message here and we will remove your material right away. PLEASE do not opt for a youtube strike. \n💌 channel@queenmusik.com 💌"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/oVl5QOomN-I/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/oVl5QOomN-I/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/oVl5QOomN-I/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/oVl5QOomN-I/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/oVl5QOomN-I/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Deep Mood Radio."",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-29T03:42:52Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""CP4AmFVE3xa4yDj5wi29MXxP47U"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""sJQaLuHqEF0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-04-20T04:03:09Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #59"",
+        ""description"": ""Alok, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #59\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:    @HuyDZ Official @Deep Mood Radio \n\nTrack:\n\n0. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n1. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n2. Marc Philippe - Deepest Blue (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n3. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n4. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n5. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n6. Costa Mee - Angel Heart (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n7. Costa Mee- With A Kiss\nhttps://vibe.deepdiscomusic.com/ddr324\n8. Marc Philippe - Dancing With Your Eyes (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n9. Nando Fortunato - New Love Life\nhttps://vibe.deepdiscomusic.com/ddr319\n10. Nando Fortunato - Important Story (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n12. Marc Philippe - Broken Mess (Costa Mee Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n13. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n14. Costa Mee - Around This World (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n15. GeoM - Ashes (Nando Fortunato Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n16. Costa Mee, Pete Bellis _ Tommy - Higher Mountains\nhttps://vibe.deepdiscomusic.com/ddr179\n17. Costa Mee, Pete Bellis _ Tommy - Left Me In The Rain (GeoM Remix)\nhttps://vibe.deepdiscomusic.com/ddr185\n18. Housenick - Believe (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/ddr180\n19. Housenick - Believe (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr180\n20. Marc Philippe - Aloe Vera (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr181\u200b\n21. Nando Fortunato - Never Go (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr183\n22. Paul Lock - Give It Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr\n\nFollow Deep Disco Records\n◉ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n◉ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n◉ Soundcloud → https://soundcloud.com/deepdiscorecords \n◉ Website → https://www.deepdiscomusic.com\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/itsdoina/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/sJQaLuHqEF0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/sJQaLuHqEF0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/sJQaLuHqEF0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/sJQaLuHqEF0/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/sJQaLuHqEF0/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-04-20T04:03:09Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""BePKzVfufo1_69qZpFu723zUV0I"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""wabxEPq6Nz0""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-29T05:55:53Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #10"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #10\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @RU - DEEP @Ru Deep Radio @Deep Mood. \n\n🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/deephouse  \n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic \n➤ Soundcloud → https://soundcloud.com/deepdiscorecords  \n➤ Website → https://www.deepdiscomusic.com/ \n\n🌿 Music by Deep Universe\n➤Spotify: https://deepuniverse.fanlink.to/Spotify \n➤Facebook: https://deepuniverse.fanlink.to/Facebook \n➤Instagram: https://deepuniverse.fanlink.to/Instagram \n➤TikTok: https://deepuniverse.fanlink.to/TikTok\n\n🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\n\n0. Halsey - Without Me (Dj Dark _ Nesco Remix)\n1. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix)\n2. GeoM - Back To You (Housenick Remix)\n3. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n4. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n5. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n6. Marc Philippe - Summer Of Love (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n7. Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n8. Kristal Gandhi - You Love Me Tonight\n9. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n10. Lady Ocean - Painter (Original Mix)\nhttps://fanlink.to/PAINTER\n11. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\n12. Ela Van Wolf - Way We Feel (Lyric Video)\n13. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n14. Horbatso - Never Again\nhttps://spoti.fi/38Nh8nx\n15. Tabba x Dj Goja - Tonight\nhttps://deepuniverse.fanlink.to/Tonight\n16. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n17. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n18. Kenn Colt - Sun Goes Down\nhttps://flh.lnk.to/SunGoesDown\n19. Kallisto- Save Tonight ft Simon Öbom\nhttps://spoti.fi/3omoxyn\n20. Nora Van Elken - The Life We Live\nhttps://fanlink.to/noravanelken\n21. Nora Van Elken - Missing You (ft. Zack Gray)\nhttps://fanlink.to/noravanelken\n22. Nora Van Elken - Stay Right There [Official Audio]\nhttps://fanlink.to/noravanelken\n\nCredit for the Photo: https://www.instagram.com/antomantovano/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/wabxEPq6Nz0/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/wabxEPq6Nz0/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/wabxEPq6Nz0/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/wabxEPq6Nz0/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/wabxEPq6Nz0/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-29T05:55:53Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""joewz27Q3nVA7v_Fbzxlkxp-qQU"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Prtdm2ec4w4""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-30T07:47:38Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #39"",
+        ""description"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #39\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nTag: #SummerMusicMix #HotSummer #DeepHouse\n\nYoutube: @4pm @RU - DEEP @Deep Mood. \n\n🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/deephouse  \n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic \n➤ Soundcloud → https://soundcloud.com/deepdiscorecords  \n➤ Website → https://www.deepdiscomusic.com/\n\n0. Costa Mee, Pete Bellis & Tommy - Break Through\nhttps://vibe.deepdiscomusic.com/aboutddr\n1. Costa Mee, Pete Bellis & Tommy - Looking For You (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n2. Costa Mee, Pete Bellis & Tommy - Stay With Me (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n3. GeoM - Somethings Missing (Pete Bellis & Tommy Remix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n4. Costa Mee - Feel Your Lovin (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n5. GeoM - Holding On (Dimitris Athanasiou Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n6. Marc Philippe - I Wanna Be Somebody (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n7. Marc Philippe - September Rain (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n8. Marc Philippe - Diva Tonight\nhttps://vibe.deepdiscomusic.com/ddr396\n9. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n10. Nando Fortunato - I Wanna change (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddm\n11. Paul Lock, Pete Bellis & Tommy - Pill Of Love\nhttps://vibe.deepdiscomusic.com/ddr298\n12. Pete Bellis & Tommy - Lesson (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n13. Pete Bellis & Tommy - You Should Know (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/ddm\n14. Pete Bellis & Tommy - Treat Me Right (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/ddm\n15. Paul Lock, Pete Bellis & Tommy - My Life\nhttps://vibe.deepdiscomusic.com/ddr336\n16. Paul Lock - Give It Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately.\n\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Prtdm2ec4w4/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Prtdm2ec4w4/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Prtdm2ec4w4/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-30T07:47:38Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""u8J6Ij6OVjXqxuHicc8cqUlyCog"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""b9aE3ObTWvg""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-07-05T19:33:21Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #131"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #131\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\nFollow HuyDZ           Follow Deep Mood Radio\nYoutube:  \n\nTrack:\n00:00 | 0. Cut Off - Lonely\nhttps://spoti.fi/3hdBxmy\n04:35 | 1. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n08:39 | 2. Marc Philippe - September Rain (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n12:09 | 3. GeoM - Back To You (Housenick Remix)\n17:45 | 4. Marc Philippe - Single Nights (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr316\n21:16 | 5. Marc Philippe - Dancing With Your Eyes (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n24:35 | 6. Dj Marlon - I Need Your Love Tonight (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr321\n33:45 | 8. SVET - Somebody (Original Mix)\nhttps://spoti.fi/2MMwo87\n36:31 | 9. Pete Bellis & Tommy - Do You Wanna Know (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n40:33 | 10. Pete Bellis & Tommy - As We Fly (Marc Philippe Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n44:48 | 11. GeoM - Ashes (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n49:41 | 12. Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix)\n55:09 | 13. Pete Bellis & Tommy - Missing The Way (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n59:32 | 14. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n01:04:21 | 15. Lady Ocean - Painter (Original Mix)\nhttps://fanlink.to/PAINTER\n01:07:42 | 16. Pascal Junior - Illusion\nhttps://epictonesrecords.lnk.to/jJIeG03m\n01:10:33 | 17. Pascal Junior - Feelings\nhttps://EpicTonesRecords.lnk.to/l8zxF\n01:13:58 | 18. Pascal Junior - If I Wouldn't Know\nhttps://EpicTonesRecords.lnk.to/l8zxF\n01:17:06 | 19. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n01:19:26 | 20. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n\nFollow Deep Disco Records\n◉ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n◉ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n◉ Soundcloud → https://soundcloud.com/deepdiscorecords \n◉ Website → https://www.deepdiscomusic.com\n\n🌿  Music by Deep Universe\n◉ Spotify: https://fanlink.to/deepuniverse\n◉ Instagram: https://www.instagram.com/deepuniverse__/\n◉ Tiktok: https://www.tiktok.com/@deepuniverse_official\n◉ Youtube: https://bit.ly/2O2zuZF\n◉ Facebook: https://www.facebook.com/DeepUniverse.music\n\n🌿 Video By: Gavin Beals \n◉ Youtube: https://bit.ly/3b6CVoP \n◉ Instagram: https://bit.ly/2Xv7not\n\n🌿 Video By: Gaëtan Piolot\n◉ Youtube: https://bit.ly/34EUPLa\n◉ Instagram: @gaetanpiolot\n\n🌿 Video by Lilian Pang\n◉ Website: https://bit.ly/3caSRXd \n◉ Youtube: https://bit.ly/3a6kr6y \n◉ Instagram: https://bit.ly/2XxjUYM\n◉ Facebook: https://bit.ly/34B8qF8\n\n🌿Videos by Juhani Sarglep: \n◉ Instargram : https://bit.ly/2L6er3s \n◉ Instargram : https://bit.ly/2W5Rh3y \n◉ YouTube : https://bit.ly/3c9JFTk\n◉ Website : https://bit.ly/3hpKdaR\n\n◉ Photo by \n◉ Thumbnail by: https://www.instagram.com/itsdoina/\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/b9aE3ObTWvg/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/b9aE3ObTWvg/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/b9aE3ObTWvg/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/b9aE3ObTWvg/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/b9aE3ObTWvg/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-07-05T19:33:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""XmSNyVK7Echa5LjVExHe2oNBfL0"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""1ynX0hgHfvs""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-12-27T07:25:34Z"",
+        ""channelId"": ""UCmkzwRz2b_Bzi7CnWcCqGZA"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #19"",
+        ""description"": ""#Summermix #DeepHouse #DeepHouseSummerMix\n\nDua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #19\n\n🎵 All songs in this spotify playlist: https://spoti.fi/2TJ4Dyj\nSubmit music: https://bit.ly/2VcIDxx\nYouTube: https://bom.to/5wdB2x\n\n🌿 Juhani Sarglep\n➤ Juhani: https://www.instagram.com/juhanisarglep\n➤ Katri: https://www.instagram.com/katrikats/\n➤ Youtube: https://www.youtube.com/user/JuhaniSa...\n➤ Website: http://www.foureyestwosouls.com\""\""\n\n🌿 Video by Lilian Pang \n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/ \n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿 Gaëtan Piolot\n➤ Youtube: https://bit.ly/34EUPLa\n➤ Instagram: @gaetanpiolot\n\n🌿  Video by Sean Kitching:\n➤Youtube: https://bit.ly/3a40wFj\n➤Instargram: https://bit.ly/2K2ZBKy \n➤Facebook: https://bit.ly/3a7Cx82\n\n\""🌿 Video By: Gavin Beals\n » Youtube: https://bit.ly/3b6CVoP\n » Instagram: https://bit.ly/2Xv7not\""\n\nThumbnail by: https://www.instagram.com/villacellabella/\n\n\""🔮 Music by Deep Universe\n➤ Spotify: https://fanlink.to/deepuniverse\n➤ Instagram: https://www.instagram.com/deepuniverse__/\n➤ Tiktok: https://www.tiktok.com/@deepuniverse_official\n➤ Youtube: https://bit.ly/2O2zuZF\n➤ Facebook: https://www.facebook.com/DeepUniverse.music\""\n\n\""✖ Music by: Out Of Dimension Music\n➤ https://open.spotify.com/user/j463bge3hf1cqpf75ituy3ik2\n➤ https://www.instagram.com/out_of_dimension_music/ \n➤ https://www.youtube.com/channel/UCNeAiZunHvEdc-_PY1c7jfA \""\n\n\""🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\""\n\n\""🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/bestofdd\n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com \""\n\n\""🌿 Follow Deep Territory Records: \n➤ Spotify →  https://spoti.fi/2FMjwPt   \n➤ Apple Music → https://apple.co/2H2cIwg\n➤ Soundcloud →  https://soundcloud.com/deepterritoryofficial\""\n\n\""🌿Follow Nora Van Elken:\nhttps://twitter.com/noravanelken\nhttps://soundcloud.com/noravanelken\nhttps://www.instagram.com/noravanelken\nhttps://www.facebook.com/noravanelken\""\n\nTracklist:\n\n0. Pete Bellis & Tommy - Treat Me Right (Marc Philippe Remix)\nhttps://fanlink.to/ddr32\n1. Marc Philippe - We Were Younger (Original Mix)\nhttps://fanlink.to/dtr10\n2. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n3. Soundwaves - Found My Way\nhttps://fanlink.to/soundwavesfoundmyway\n4. Kallisto - Save Tonight (Lyrics) ft. Simon Öbom\nhttps://spoti.fi/3omoxyn\n5. Stay With Me - LeXxìv & Victor Perry\nhttps://spoti.fi/3kGUsZf\n6. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix)\nhttps://fanlink.to/ddr82\n7. Marc Philippe - Deepest Blue\nhttps://fanlink.to/dtr53\n8. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n9. Nuovo x Jarico - Take It\nhttps://bit.ly/3bFcqZO\n10. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\n11. ADGY & BOKSAY - Like You Do\nhttps://spoti.fi/36m6xNy\n12. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n13. Marc Philippe - Broken Mess (Original Mix)\nhttps://fanlink.to/ddr12\n14. Dj Goja - Cause I'm Crazy\nhttps://spoti.fi/36kOY0H\n15. Dj Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n16. Dj Goja - Wrong Way (Official Single)\nhttps://spoti.fi/3erYUsy\n17. Tabba x Dj Goja - So Crazy\nhttps://spoti.fi/2PTIgKL\n18. Carda, Keeks - Need You Now (Lyrics)\nhttps://spoti.fi/36kfaJl\n19. Carda - Wasted (Ft. Emily Falvey)\nhttps://spoti.fi/3qThrmB\n20. Alone w u - Modern Culture\nhttps://fanlink.to/AloneWU\n21. It's Love - Solven (Deep Universe Release)\nhttps://fanlink.to/ItsLoveSolven\n22. Tonight - Tabba x Dj Goja\nhttps://deepuniverse.fanlink.to/Tonight\n23. Daylight - Soundwaves, Hysaze, Britt Lari\nhttps://deepuniverse.fanlink.to/Daylight\n24. Nora Van Elken  - All Night Long\nhttps://fanlink.to/allnightlongnora\n\n✔️RU - DEEP is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on RU - DEEP\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h 💌 channel@queenmusik.com 💌"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/1ynX0hgHfvs/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/1ynX0hgHfvs/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/1ynX0hgHfvs/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/1ynX0hgHfvs/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""RU - DEEP"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-12-27T07:25:34Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""eGnIvhvXI6Y_2zYM__QvdY1PwmM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""CSPs8G1vyl8""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-31T07:48:16Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #40"",
+        ""description"": ""Ed Sheeran, Martin Garrix, Kygo, Dua Lipa, Avicii, The Chainsmokers Style - Feeling Me #40\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nTag: #SummerMusicMix #HotSummer #DeepHouse\n\nYoutube: @RU - DEEP @Wonder Deep @Deep Mood. \n\n🌿Follow Deep Disco Records\n➤ Spotify → (https://vibe.deepdiscomusic.com/deephouse)  \n➤ Apple Music → (https://vibe.deepdiscomusic.com/deephousemusic\n➤ Soundcloud → https://soundcloud.com/deepdiscorecords \n➤ Website → https://www.deepdiscomusic.com/\n\n0. Paul Lock - Islands In The Sky (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/hits\n1. Housenick - Level Up (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/ddr260\n2. Housenick - Take My Hand (Paul Lock Remix)\nhttps://vibe.deepdiscomusic.com/ddr186\n3. Nando Fortunato - New Love Life\nhttps://vibe.deepdiscomusic.com/ddr319\n4. Costa Mee - Call Me ( Dimitris Athanasiou Remix)\nhttps://vibe.deepdiscomusic.com/ddm\n5. Costa Mee - Always Been You\nhttps://vibe.deepdiscomusic.com/ddr395\n6. Costa Mee, Pete Bellis & Tommy - Rock My World\nhttps://vibe.deepdiscomusic.com/ddr350\n7. Marc Philippe - Pull Up (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr309\n8. Marc Philippe - In A Changing World (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr273\n9. Nando Fortunato - I Really Like You (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr358\n10. Nando Fortunato - Romance (Extended Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n11. Paul Lock - Love Of Yesterday\nhttps://vibe.deepdiscomusic.com/ddr310\n12. Geom - Back To You (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n13. Geom - Dont Stop (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n14. GeoM - With You (Original Mix)\nhttps://vibe.deepdiscomusic.com/hits\n15. Paul Lock, Pete Bellis & Tommy - Forgive Me\nhttps://vibe.deepdiscomusic.com/hits\n16. Housenick - Believe (Original Mix)\nhttps://vibe.deepdiscomusic.com/ddr180\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately.\n\nFor copyright issues, please contact us or leave us a personal message. We will remove your material immediately. PLEASE do not choose a Youtube strike."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/CSPs8G1vyl8/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/CSPs8G1vyl8/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/CSPs8G1vyl8/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-31T07:48:16Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""9YafykT6I2OtLorQCWp0Fk-DG-c"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Ma3okZc1Sac""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2021-04-13T06:04:21Z"",
+        ""channelId"": ""UCwuMGwU6kX_lvkrYoVQWBGw"",
+        ""title"": ""Mega Hits 2021 🌱 The Best Of Vocal Deep House Music Mix 2021 🌱 Summer Music Mix 2021 #95"",
+        ""description"": ""Mega Hits 2021 🌱 The Best Of Vocal Deep House Music Mix 2021 🌱 Summer Music Mix 2021 #95\n\n#SummerMusicMix #BestOfDeepHouse #HotSummer #SUMMERMIX2021 #SUMMERMUSIC2021\n\n✔ Leave a like on the video to show your support\n\n─────────── Support Tropical House ☼ ───────────\n🌿Follow THR\nhttp://bit.ly/SubscribeTropicalHouseRecords\nhttp://bit.ly/Spotify_THR\nhttp://bit.ly/Instagram_THR\nhttp://bit.ly/Facebook_THR\n\n★Follow us on spotify: https://spoti.fi/2TJ4Dyj\n★Submit music: https://bit.ly/2VcIDxx\n★YouTube: https://www.youtube.com/c/THRKygo\n★Facebook: https://www.facebook.com/ChillTownMusic/\n★Instagram: https://www.instagram.com/chilltownofficial/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n★ Music By ★\n\n🌿 Follow / Ace Kings:\nhttps://soundcloud.com/acekings\n\n🌿 Follow Cut Off:\nhttps://bit.ly/313CjLf\n\n🌿 Music by Tipsy Records\n➤ Instagram: https://bit.ly/2TIzMVl\n➤ Soundcloud: https://bit.ly/3ekPfD1\n➤ Mail: darren@tipsyrecordings.com\n➤ Spotify: https://spoti.fi/2B5XDIg\n\n🌿 Follow Deep Disco Records \n➤ Spotify → https://spoti.fi/2U7HoTN\n➤ Apple Music → https://apple.co/2UeA9YW \n➤ Soundcloud → https://goo.gl/1zaGz5 \n➤ Website → https://goo.gl/n2vMnq \n\n🌿Follow Deep Territory Records: \n➤ Spotify → https://spoti.fi/2TlaFVM \n➤ Apple Music → https://apple.co/2H2cIwg\n➤ Soundcloud → http://bit.ly/2vG6OsY\n\n🌿 Music by Nora Van Elken\n➤ Twitter: https://bit.ly/2yOc5Dt \n➤ Soundcloud: https://bit.ly/3c6aRC2 \n➤ Instagram: https://bit.ly/34yOUcf \n➤ Facebook: https://bit.ly/2JZnFht \n➤ Youtube : https://bit.ly/2yAFu4d\n\n🌿 Music by Lady Ocean\nSpotify: https://spoti.fi/2X81ptq\nInstagram: https://bit.ly/3a5nQTd\nTwitter: twitter.com/ladyxocean \nYoutube : https://bit.ly/3dS8fsZ\n\n🌿 Music by Mar G Rock\n➤ Facebook: https://bit.ly/2SYJjqU\n➤ Instagram: https://bit.ly/2WVmKox\n➤ Soundcloud: https://bit.ly/3brKwxz\n➤ Youtube: https://bit.ly/3dHsOYp\n\n🌿 Music by TFB Records:\n➤ Spotify: https://spoti.fi/3csUE9X \n➤ Youtube : https://bit.ly/3dmM6CF \n➤ Instagram: https://bit.ly/2zGkUAl\n\n★ Credit Video ★\n\n🌿 Video By: Gavin Beals\n» Youtube: https://www.youtube.com/user/gbeals100\n» Instagram: https://www.instagram.com/th3venture/\n\n🌿 Video By: Gaëtan Piolot\n» Youtube: https://bit.ly/34EUPLa\n» Instagram: @gaetanpiolot\n\n🌿 Video by ThinLineMedia\n»Youtube: https://bit.ly/3bgId0I\n»Facebook: https://bit.ly/3c4ojWQ\n»Instagram: https://bit.ly/2VoEOX4\n»Website: thinlinemedia.com\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿 Video By Ben Mikha\n➤ https://bit.ly/2EDRPUj\n➤ https://instagram.com/benmikha\n➤ https://benmikha.com/\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿Videos by Juhani Sarglep: \nInstargram : https://bit.ly/2L6er3s\nInstargram : https://bit.ly/2W5Rh3y\nYouTube : https://bit.ly/3c9JFTk\nWebsite : https://www.foureyestwosouls.com\n\nTracklist:\nMarc Philippe - We Were Younger: https://fanlink.to/dtr10\nAllena - Appelle Moi (Demeter Remix): https://spoti.fi/3eUnPoS\nAlone w u - Modern Culture: https://fanlink.to/AloneWU\nFeel It Too - Someone Else: https://fanlink.to/FeelItToo\nIt's Love - Solven: https://fanlink.to/ItsLoveSolven\nSoundwaves - Found My Way: https://fanlink.to/soundwavesfoundmyway\nTabba x Dj Goja - Tonight: https://fanlink.to/eggU\nDj Goja - I Never Let You Go: https://spoti.fi/2Gs8Be2\nDj Goja - Cause I'm Crazy: https://spoti.fi/36kOY0H\nDj Goja - Wrong Way: https://spoti.fi/3erYUsy\nMarc Philippe - Dancer In The Dark (Original Mix): https://apple.co/2wtgVEB\nEla Van Wolf - Way We Feel (https://open.spotify.com/album/5IBX0U5Ryc9y0ZjBuiMZ0v?highlight=spotify:track:3y7v7mbvytVoytQY3BcW68)\nGeoM - Back To You (Marc Philippe Remix)(https://fanlink.to/ddr86)\nMarc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix): https://fanlink.to/ddr82\nMelih Aydogan - You Tell Me (Original Mix): https://spoti.fi/3h0v3ck\nAfendi - My Feelings For You (Original Mix)\n\nPicture credit: https://www.instagram.com/daniellachavezofficial/\n\n🎬  If you’re a filmmaker interested in promoting your content, contact us at 💌 channel@queenmusik.com 💌\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🚫  The music and the background in the following video are not free to use, if you'd like to use the music/background in this video, please contact the artist. \n\n⚠️ These videos may cause people with photosensitive epilepsy to convulse in seizures. Viewer discretion is advised. ⚠️\n\n☢ If any producer or label has an issue with any of the uploads please get in contact with me and us will delete it immediately."",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Ma3okZc1Sac/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Ma3okZc1Sac/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Ma3okZc1Sac/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Ma3okZc1Sac/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/Ma3okZc1Sac/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Tropical House Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2021-04-13T06:04:21Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cncgGaPzVTLGazR0F0O2M510EHs"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""1rXQtHB62MU""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-06-08T06:56:37Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #24"",
+        ""description"": ""Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Feeling Me #24\n\n#SummerMusicMix #BestOfDeepHouse #HotSummer #SUMMERMIX2020 #SUMMERMUSIC2020\n\n✔️ Follow Miracle Music\n\n🌿 Video By: Gavin Beals\n» Youtube: https://www.youtube.com/user/gbeals100\n» Instagram: https://www.instagram.com/th3venture/\n\n🌿 Video By: Gaëtan Piolot\n» Youtube: https://bit.ly/34EUPLa\n» Instagram: @gaetanpiolot\n\n🌿 Video by ThinLineMedia\n»Youtube: https://bit.ly/3bgId0I\n»Facebook: https://bit.ly/3c4ojWQ\n»Instagram: https://bit.ly/2VoEOX4\n»Website: thinlinemedia.com\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿 Video By Ben Mikha\n➤ https://bit.ly/2EDRPUj\n➤ https://instagram.com/benmikha\n➤ https://benmikha.com/\n\n🌿 Video by Lilian Pang\n➤ Website: http://www.lilianpang.com \n➤ Youtube: https://www.youtube.com/c/LilianPang\n➤ Instagram: https://www.instagram.com/lilianxpang/\n➤ Facebook: https://m.facebook.com/lilianxpang/\n\n🌿Videos by Juhani Sarglep: \nInstargram : https://bit.ly/2L6er3s\nInstargram : https://bit.ly/2W5Rh3y\nYouTube : https://bit.ly/3c9JFTk\nWebsite : https://www.foureyestwosouls.com\n\n🌿 Music by Nora Van Elken\nhttps://twitter.com/noravanelken\nhttps://soundcloud.com/noravanelken\nhttps://www.instagram.com/noravanelken\nhttps://www.facebook.com/noravanelken\n\n🌿 Follow Epic Tones Online:\n  » Spotify: https://spoti.fi/2Lrvprh\n  » Instagram: https://bit.ly/2sPVxnR\n  » SoundCloud: https://bit.ly/2Ooi6uC\n  » Facebook: https://bit.ly/2XkKPF1\n\n🌿 Music by Lady Ocean\nSpotify: https://open.spotify.com/artist/6E4wyKIW6mC6zKaRgufLQn?si=auBVVXh3R4u-JCGhzyktcA\nInstagram: Instagram.com/ladyocean\nTwitter: twitter.com/ladyxocean\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@queenmusik.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/1rXQtHB62MU/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/1rXQtHB62MU/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/1rXQtHB62MU/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/1rXQtHB62MU/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/1rXQtHB62MU/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-06-08T06:56:37Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""jgy-PMRjv9YauEhv07umvqrUUtM"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""f9SuicAxh48""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-08-31T04:47:03Z"",
+        ""channelId"": ""UCTJ9Qg-1vBu2pP_YrWUfGnQ"",
+        ""title"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #25"",
+        ""description"": ""Avicii, Dua Lipa, Coldplay, Martin Garrix & Kygo, The Chainsmokers Style - Summer Vibes #25\n\n#DeepHouse #VocalHouse #DeepHouseMix #SummerVibes\n\n✔️ Follow Miracle Music\nFollow us on spotify: https://spoti.fi/2TJ4Dyj\nChill Music Hits 2021: https://spoti.fi/3e2o9Ua\nFacebook: https://www.facebook.com/ChillTownMusic/\nInstagram: https://www.instagram.com/chilltownofficial/\n\nYoutube: @Ru Deep Radio @Deep Mood. @Wonder Deep \n\n🌿Follow Deep Disco Records\n➤ Spotify → https://vibe.deepdiscomusic.com/deephouse  \n➤ Apple Music → https://vibe.deepdiscomusic.com/deephousemusic \n➤ Soundcloud → https://soundcloud.com/deepdiscorecords  \n➤ Website → https://www.deepdiscomusic.com/\n\n🌿 Music by Deep Universe\n➤Spotify: https://deepuniverse.fanlink.to/Spotify \n➤Facebook: https://deepuniverse.fanlink.to/Facebook \n➤Instagram: https://deepuniverse.fanlink.to/Instagram \n➤TikTok: https://deepuniverse.fanlink.to/TikTok\n\n🌿 Follow Pink Elephant:\n➤ Website: www.itspinkelephant.com\n➤ Youtube: http://bit.ly/2Xkw71E\n➤ Facebook: http://bit.ly/38m1b7t\n➤ Soundcloud: http://bit.ly/3s4o0nI\n➤ Instagram:https://bit.ly/2MInGLt\n➤ Twitter: https://bit.ly/3pUtU9i\n\n00:00 | 0. Cut Off - Lonely\nhttps://spoti.fi/3hdBxmy\n04:35 | 1. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix)\n09:36 | 2. Linkin Park - In The End (Dj Dark & Nesco Cover Remix)\n12:50 | 3. Marc Philippe - Dancer In The Dark (Original Mix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n16:53 | 4. Marc Philippe - We Were Younger (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephouse\n20:40 | 5. Pete Bellis & Tommy - Treat Me Right (Nikko Culture Remix)\nhttps://vibe.deepdiscomusic.com/ddm\n26:07 | 6. GeoM - Back To You (Housenick Remix)\nhttps://vibe.deepdiscomusic.com/motivationhouse\n31:43 | 7. Melih Aydogan - You Tell Me (Original Mix)\nhttps://spoti.fi/3h0v3ck\n36:32 | 8. Pete Bellis & Tommy - Missing The Way (Original Mix)\nhttps://vibe.deepdiscomusic.com/deephousemusic\n40:54 | 9. Pete Bellis & Tommy - You Should Know (Costa Mee Remix)\nhttps://vibe.deepdiscomusic.com/aboutddr\n45:07 | 10. Tabba x Dj Goja - Tonight\nhttps://deepuniverse.fanlink.to/Tonight\n47:58 | 11. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n52:08 | 12. Pascal Junior - Feelings\nhttps://EpicTonesRecords.lnk.to/l8zxF\n55:32 | 13. Marc Philippe - I Wanna Be Somebody (Original Mix)\nhttps://vibe.deepdiscomusic.com/bestofdd\n58:55 | 14. Lady Ocean - Painter (Original Mix)\nhttps://fanlink.to/PAINTER\n01:02:16 | 15. Zomando - I Don't Wanna Say Goodbye\nhttps://spoti.fi/3mhVoo5\n01:04:35 | 16. Modern Culture - Alone w u\nhttps://fanlink.to/AloneWU\n01:06:59 | 17. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n01:10:02 | 18. Horbatso - Never Again\nhttps://spoti.fi/38Nh8nx\n01:12:41 | 19. Hinsley - Trail (of broken hearts)\nhttps://spoti.fi/2ZXS3kV\n01:16:04 | 20. Loran - Let me go\nhttps://spoti.fi/3yHWIsL\n01:18:51 | 21. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\n01:22:09 | 22. Ela Van Wolf - Way We Feel (Lyric Video)\nhttps://spoti.fi/3eJVW1o\n01:24:38 | 23. Kallisto- Save Tonight ft Simon Öbom\nhttps://spoti.fi/3omoxyn\n01:28:13 | 24. Kenn Colt - Sun Goes Down\nhttps://flh.lnk.to/SunGoesDown\n01:31:01 | 25. Carda, Keeks - Need You Now\nhttps://spoti.fi/36kfaJl\n01:34:29 | 26. Carda - Wasted (Ft. Emily Falvey)\nhttps://spoti.fi/3qThrmB\n\n👑 Image by Denis Petrov:\n➤ Instagram: https://www.instagram.com/denis_petrov_photography/  \n➤ 500px: https://500px.com/photo/203736681/Beautiful-Angelina-at-the-sunset-on-Maldives-by-Denis-Petrov/\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n✔️Miracle Music is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on Miracle Music\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h  \n💌 channel@hgmusicgroup.com 💌\n✚ Please share this video in social sites (Facebook, Google +, Twitter.) ✚\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/f9SuicAxh48/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/f9SuicAxh48/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/f9SuicAxh48/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/f9SuicAxh48/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/f9SuicAxh48/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Miracle Music"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-08-31T04:47:03Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""cxG3ztRaAfLRl8CLYjXvESt74gw"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""ud2tjUvr_Oc""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2022-01-30T05:11:37Z"",
+        ""channelId"": ""UCopEUD22VBdNd80muYA7sYA"",
+        ""title"": ""[NEW] Deep House Mix 2022 Vol.1 | Best Of Vocal House Music | Mixed By HuyDZ"",
+        ""description"": ""[NEW] Deep House Mix 2022 Vol.1 | Best Of Vocal House Music | Mixed By HuyDZ\n\n#DeepHouse #VocalHouse #DeepHouseMix\n\nFollow HuyDZ\nYoutube:   @HuyDZ @Deep Mood Radio \n\n00:00 | 0. Linkin Park - In The End (Dj Dark & Nesco Remix) [Extended]\nhttps://spoti.fi/2WkJlLM\n04:48 | 1. Alan Walker - Faded (Dj Dark & Dj Vianu Extended Remix)\n10:10 | 2. Avicii ft. Aloe Blacc - SOS (Pascal Junior Remix)\n15:03 | 3. Edward Maya & Vika Jigulina - Stereo Love (Jay Latune Remix)\n20:06 | 4. Melih Aydogan - You Tell Me\nhttps://spoti.fi/3h0v3ck\n24:55 | 5. Pascal Junior - Feelings\nhttps://EpicTonesRecords.lnk.to/l8zxF\n28:21 | 6. ilkan Gunuc - Can't Get You Out Of My Head (Original Mix)\nhttps://spoti.fi/3cLL1TM\n32:08 | 7. DJ Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n35:02 | 8. Dj Goja - Cause I'm Crazy\nhttps://spoti.fi/39Vglkk\n38:05 | 9. Dj Goja x Vanessa Campagna - Human\nhttps://spoti.fi/3vkIrOX\n41:13 | 10. Allena - Appelle Moi (Demeter Remix)\nhttps://spoti.fi/3eUnPoS\n44:31 | 11. Jon Sine - All About\nhttps://spoti.fi/2GpvKxw\n47:38 | 12. Hinsley - Trail (of broken hearts)\nhttps://spoti.fi/2ZXS3kV\n51:10 | 13. Stoto - Right Back\nhttps://spoti.fi/34YGOM7\n55:26 | 14. Stoto - My Love\nhttps://spoti.fi/2EJyplh\n59:59 | 15. Nuovo x Jarico - Take It\nhttps://bit.ly/3bFcqZO\n01:03:18 | 16. Meiko - Leave The Lights On (Stoto Remix)\nhttps://bit.ly/3lNfupj\n\n\n◉ Photo by \n◉ ?\n\n®️ Ru Deep Radio"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/ud2tjUvr_Oc/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/ud2tjUvr_Oc/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/ud2tjUvr_Oc/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/ud2tjUvr_Oc/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          },
+          ""maxres"": {
+            ""url"": ""https://i.ytimg.com/vi/ud2tjUvr_Oc/maxresdefault.jpg"",
+            ""width"": 1280,
+            ""height"": 720
+          }
+        },
+        ""channelTitle"": ""Ru Deep Radio"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2022-01-30T05:11:37Z""
+      }
+    },
+    {
+      ""kind"": ""youtube#searchResult"",
+      ""etag"": ""AU-pWo9k_L3MciDBw2VgPtJeh-M"",
+      ""id"": {
+        ""kind"": ""youtube#video"",
+        ""videoId"": ""Ja3RfIcSXBA""
+      },
+      ""snippet"": {
+        ""publishedAt"": ""2020-12-18T05:51:24Z"",
+        ""channelId"": ""UCOTCvT8_hERSqkORg9qQgUQ"",
+        ""title"": ""Mega Hits 2021 🌱 The Best Of Vocal Deep House Music Mix 2021 🌱 Summer Music Mix 2021"",
+        ""description"": ""#Summermix #DeepHouse #DeepHouseSummerMix\n\n🎵 All songs in this spotify playlist: https://spoti.fi/2TJ4Dyj\nSubmit music: https://bit.ly/2VcIDxx\nYouTube: https://bitly.com.vn/oRtC9\n\nMega Hits 2021 🌱 The Best Of Vocal Deep House Music Mix 2021 🌱 Summer Music Mix 2021\n\nPlease send the most special thanks to\n\n📸 Photo By : https://www.instagram.com/stanijadobrojevic/\n\n\""🌿 Video by 2witness\n➤Vimeo : https://bit.ly/2K3ceFr\n➤Facebook : https://bit.ly/2JZjJgy \n➤Instagram : https://bit.ly/3a3Wahi \""\n\""🌿 Video By: Lukáš Bláha\n»Youtube : https://bit.ly/2Je4LmQ\n»Website : https://www.cestaspolu.cz \n»Facebook : https://bit.ly/2x9vf6x\n»Instagram : https://bit.ly/2Vq16Ii \""\n\""🌿 Video By: Gavin Beals\n» Youtube: https://bit.ly/3b6CVoP\n» Instagram: https://bit.ly/2Xv7not\""\n\n◢Tracklist: \n0. Cut Off - Lonely (Original Mix)\nhttps://spoti.fi/3hdBxmy\n1. Dj Goja - Cause I'm Crazy\nhttps://spoti.fi/36kOY0H\n2. Pete Bellis & Tommy - Treat Me Right (Marc Philippe Remix)\nhttps://fanlink.to/ddr32\n3. Meiko - Leave The Lights On (Stoto Remix)\nhttps://bit.ly/3lNfupj\n4. GeoM - Desert Rose (Marc Philippe Remix)\nhttps://fanlink.to/dtr23\n5. Nando Fortunato - Waiting For You (Original Mix)\nhttps://fanlink.to/ddr129\n6. Dj Goja - I Never Let You Go\nhttps://spoti.fi/2Gs8Be2\n7. FREEZONES - Sweet Dreams (ft. NEYBA)\nhttps://music.yandex.ru/album/12522578\n8. Pete Bellis & Tommy - Show Me How (Marc Philippe Remix)\nhttps://fanlink.to/ddr69\n9. Marc Philippe - Deepest Blue\nhttps://fanlink.to/dtr533\n10. Marc Philippe - You Love Me Tonight (Pete Bellis & Tommy Remix) #DeepDiscoRecords\nhttps://fanlink.to/ddr82     \n11. Pete Bellis & Tommy - You Should Know (Costa Mee Remix)\nhttps://fanlink.to/ddr78\n12. Dimitris Athanasiou - Moon & Stars\nhttps://fanlink.to/dtr56\n13. GeoM - Walk Away (Original Mix)\n\n🌿 Follow Deep Disco Records \n➤ Spotify → https://spoti.fi/2U7HoTN\n➤ Apple Music → https://apple.co/2UeA9YW \n➤ Soundcloud → https://goo.gl/1zaGz5 \n➤ Website → https://goo.gl/n2vMnq \n\n🌿Follow Deep Territory Records: \n➤ Spotify → https://spoti.fi/2TlaFVM \n➤ Apple Music → https://apple.co/2H2cIwg\n➤ Soundcloud → http://bit.ly/2vG6OsY\n\n🌿 Music by FREEZONES:\nhttps://linktr.ee/freezones\n\n✔️4pm is created to promote and support new artists, (musicians/labels, composers, producers, photographers/filmmakers) who want to create a fan base. Send your song or video on 4pm\nIf any producer, label, artist or photographer has an issue with any of the music or video uploads please contact us and we will remove your work immediately. Thank you!\n🔔 We strive to find the best and most enjoyable music for you guys! We hope to make your days more beautiful with the music we share ! Peace love and music.\nI'm also a music producer, I'm working on this project !\n🚫 If you have any problem with copyright issues, or question please do not report me, take your time to contact us via mail, and we will response within 48h 💌 channel@queenmusik.com 💌"",
+        ""thumbnails"": {
+          ""default"": {
+            ""url"": ""https://i.ytimg.com/vi/Ja3RfIcSXBA/default.jpg"",
+            ""width"": 120,
+            ""height"": 90
+          },
+          ""medium"": {
+            ""url"": ""https://i.ytimg.com/vi/Ja3RfIcSXBA/mqdefault.jpg"",
+            ""width"": 320,
+            ""height"": 180
+          },
+          ""high"": {
+            ""url"": ""https://i.ytimg.com/vi/Ja3RfIcSXBA/hqdefault.jpg"",
+            ""width"": 480,
+            ""height"": 360
+          },
+          ""standard"": {
+            ""url"": ""https://i.ytimg.com/vi/Ja3RfIcSXBA/sddefault.jpg"",
+            ""width"": 640,
+            ""height"": 480
+          }
+        },
+        ""channelTitle"": ""4pm"",
+        ""liveBroadcastContent"": ""none"",
+        ""publishTime"": ""2020-12-18T05:51:24Z""
+      }
+    }
+  ]
+}
+",application/json; charset=UTF-8,False,"OAS disconformity: [Path '/items/[item]/snippet'] Object instance has properties which are not allowed by the schema: [""publishTime""] --- [Path '/items/[item]/snippet/thumbnails'] Object instance has properties which are not allowed by the schema: [""default""]",OAS disconformity,1662125520716,YouTube_Search_atlas_1,../target/test-data/YouTube_Search_atlas_1/test-cases_1662125520716.csv,1,884,../target/test-data/YouTube_Search_atlas_1/test-cases_1662125520716.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125565110.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125676983.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125832445.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125885528.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125938762.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662125965693.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662126312213.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662127799583.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662128744545.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662129165503.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662129565234.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662129788842.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662129916827.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130033094.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130140376.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130268033.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130362749.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130460270.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130582828.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130680084.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130779768.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130876536.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662130975585.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131075968.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131178677.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131278928.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131382125.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131486983.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131588269.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131692613.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131797256.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662131902266.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132009774.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132115881.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132222299.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132329060.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132460518.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132570046.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132690510.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132800677.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662132937540.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662133048384.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1662133159517.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1667374701305.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1667375392858.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1667376530711.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1667377935941.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1667379261547.csv;../target/test-data/YouTube_Search_atlas_1/test-cases_1667380969415.csv,50
