@@ -1,5 +1,4 @@
-# mirabella2023emse
-Machine Learning-driven Testing of Web APIs
+# [Supplementary material] Machine Learning-driven Testing of Web APIs
 
 Steps to reproduce the experiments:
 - `pip install -r requirements.txt`
